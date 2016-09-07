@@ -97,8 +97,8 @@ function updateFb(){
 
 }
 
-(function(){
+/*(function(){
     // do some stuff
     updateFb();
     setTimeout(arguments.callee, 6000);
-})();
+})();*/

@@ -23,18 +23,19 @@
             <file leaf-file-name="allPosts.html.twig" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/allPosts.html.twig">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="550">
-                    <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+                  <state relative-caret-position="484">
+                    <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
                     <folding>
-                      <marker date="1473259236881" expanded="true" signature="901:2437" ph="..." />
-                      <marker date="1473259236881" expanded="true" signature="945:1861" ph="..." />
-                      <marker date="1473259236881" expanded="true" signature="947:1835" ph="..." />
-                      <marker date="1473259236881" expanded="true" signature="1015:1206" ph="..." />
-                      <marker date="1473259236881" expanded="true" signature="1276:1580" ph="..." />
-                      <marker date="1473259236881" expanded="true" signature="1400:1545" ph="..." />
-                      <marker date="1473259236881" expanded="true" signature="1464:1539" ph="..." />
-                      <marker date="1473259236881" expanded="true" signature="1649:1808" ph="..." />
-                      <marker date="1473259236881" expanded="true" signature="1904:2414" ph="..." />
+                      <marker date="1473260280874" expanded="true" signature="429:2154" ph="..." />
+                      <marker date="1473260280874" expanded="true" signature="473:1578" ph="..." />
+                      <marker date="1473260280874" expanded="true" signature="475:1552" ph="..." />
+                      <marker date="1473260280874" expanded="true" signature="543:734" ph="..." />
+                      <marker date="1473260280874" expanded="true" signature="804:1108" ph="..." />
+                      <marker date="1473260280874" expanded="true" signature="928:1073" ph="..." />
+                      <marker date="1473260280874" expanded="true" signature="992:1067" ph="..." />
+                      <marker date="1473260280874" expanded="true" signature="1180:1321" ph="..." />
+                      <marker date="1473260280874" expanded="true" signature="1390:1549" ph="..." />
+                      <marker date="1473260280874" expanded="true" signature="1621:2131" ph="..." />
                     </folding>
                   </state>
                 </provider>
@@ -81,7 +82,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addNewPost.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="addNewPost.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/form/addNewPost.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="484">
@@ -124,8 +125,8 @@
       <file leaf-file-name="jqwery.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/js/jqwery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="57" />
+            <state relative-caret-position="440">
+              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
               <folding>
                 <element signature="n#!!doc;n#updateFb#0" expanded="false" />
               </folding>
@@ -143,11 +144,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PostController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/PostController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="743">
-              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+            <state relative-caret-position="633">
+              <caret line="77" column="55" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
               <folding>
                 <element signature="e#135#172#0#PHP" expanded="true" />
               </folding>
@@ -205,10 +206,10 @@
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/js/Angular/Controllers/allPosts.js" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/form/addNewPost.html.twig" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/js/Angular/app.js" />
-        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/PostController.php" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/js/Angular/Controllers/allPostsCtrl.js" />
-        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/js/jqwery.js" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig" />
+        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/js/jqwery.js" />
+        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/PostController.php" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/allPosts.html.twig" />
       </list>
     </option>
@@ -1105,12 +1106,12 @@
       <workItem from="1472573253885" duration="14978000" />
       <workItem from="1473174744229" duration="588000" />
       <workItem from="1473175409945" duration="2232000" />
-      <workItem from="1473232030724" duration="26186000" />
+      <workItem from="1473232030724" duration="27229000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50166000" />
+    <option name="totallyTimeSpent" value="51209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2391" y="-9" width="2418" height="1318" extended-state="6" />
@@ -1474,16 +1475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/PostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding>
-            <element signature="e#135#172#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/ApiBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1497,16 +1488,6 @@
         <state relative-caret-position="616">
           <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="37" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/js/jqwery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="57" />
-          <folding>
-            <element signature="n#!!doc;n#updateFb#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1534,20 +1515,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/js/jqwery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!doc;n#updateFb#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="77" column="55" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
+          <folding>
+            <element signature="e#135#172#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/allPosts.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        <state relative-caret-position="484">
+          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
           <folding>
-            <marker date="1473259236881" expanded="true" signature="901:2437" ph="..." />
-            <marker date="1473259236881" expanded="true" signature="945:1861" ph="..." />
-            <marker date="1473259236881" expanded="true" signature="947:1835" ph="..." />
-            <marker date="1473259236881" expanded="true" signature="1015:1206" ph="..." />
-            <marker date="1473259236881" expanded="true" signature="1276:1580" ph="..." />
-            <marker date="1473259236881" expanded="true" signature="1400:1545" ph="..." />
-            <marker date="1473259236881" expanded="true" signature="1464:1539" ph="..." />
-            <marker date="1473259236881" expanded="true" signature="1649:1808" ph="..." />
-            <marker date="1473259236881" expanded="true" signature="1904:2414" ph="..." />
+            <marker date="1473260280874" expanded="true" signature="429:2154" ph="..." />
+            <marker date="1473260280874" expanded="true" signature="473:1578" ph="..." />
+            <marker date="1473260280874" expanded="true" signature="475:1552" ph="..." />
+            <marker date="1473260280874" expanded="true" signature="543:734" ph="..." />
+            <marker date="1473260280874" expanded="true" signature="804:1108" ph="..." />
+            <marker date="1473260280874" expanded="true" signature="928:1073" ph="..." />
+            <marker date="1473260280874" expanded="true" signature="992:1067" ph="..." />
+            <marker date="1473260280874" expanded="true" signature="1180:1321" ph="..." />
+            <marker date="1473260280874" expanded="true" signature="1390:1549" ph="..." />
+            <marker date="1473260280874" expanded="true" signature="1621:2131" ph="..." />
           </folding>
         </state>
       </provider>

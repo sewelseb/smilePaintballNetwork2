@@ -15,8 +15,8 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e969bac7b043d27e566071dfd0b1ddfae374e99919781753f1793e46a54da25d = $this->env->getExtension("native_profiler");
-        $__internal_e969bac7b043d27e566071dfd0b1ddfae374e99919781753f1793e46a54da25d->enter($__internal_e969bac7b043d27e566071dfd0b1ddfae374e99919781753f1793e46a54da25d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
+        $__internal_08dc709fab76d27c625dd6c55cbc8f94d946e59dfa0474e04171504eed030220 = $this->env->getExtension("native_profiler");
+        $__internal_08dc709fab76d27c625dd6c55cbc8f94d946e59dfa0474e04171504eed030220->enter($__internal_08dc709fab76d27c625dd6c55cbc8f94d946e59dfa0474e04171504eed030220_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
 
         // line 1
         echo "<!-- Project One -->
@@ -28,12 +28,12 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
     <div id=\"spiningWheelAllPosts\">
         <i class=\"fa fa-spinner fa-spin fa-5x\"></i> <H3>Loading</H3>
     </div>
-    <!--<div class=\"fb-video\" data-href=\"https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater\" data-width=\"500\" data-show-text=\"false\"><blockquote cite=\"https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater\" class=\"fb-xfbml-parse-ignore\"><a href=\"https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater\"></a>
-        </blockquote></div>-->
+
+
     <div id=\"contentAllPosts\" hidden>
         <div ng-repeat=\"post in posts | orderBy: '-creationTime'\">
             ";
-        // line 35
+        // line 38
         echo "
                 <div class=\"row\" >
                     <div class=\"col-md-7\">
@@ -45,11 +45,14 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
                                 <div class=\"fb-video\" data-href=\"{{ post.url }}\" data-width=\"700px\" data-show-text=\"false\"><blockquote cite=\"{{ post.url }}\" class=\"fb-xfbml-parse-ignore\"><a href=\"{{ post.url }}\"></a>
                                 </blockquote></div>
                             </div>
+                            <div ng-if=\"post.type=='picture_facebook'\">
+                                <div data-width=\"460px\" class=\"fb-post\" data-href=\"{{ post.url }}\"></div>
+                            </div>
                             <div ng-if=\"post.type=='picture_local'\">
                                 <img class=\"img-responsive\" ng-src=\"{{post.picture.uploadDir}}{{post.picture.url}}\" alt=\"\">
                             </div>
 
-                        
+
                     </div>
                     <div class=\"col-md-5\">
                         <h3>{{ post.title }}</h3>
@@ -71,7 +74,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
 ";
         
-        $__internal_e969bac7b043d27e566071dfd0b1ddfae374e99919781753f1793e46a54da25d->leave($__internal_e969bac7b043d27e566071dfd0b1ddfae374e99919781753f1793e46a54da25d_prof);
+        $__internal_08dc709fab76d27c625dd6c55cbc8f94d946e59dfa0474e04171504eed030220->leave($__internal_08dc709fab76d27c625dd6c55cbc8f94d946e59dfa0474e04171504eed030220_prof);
 
     }
 
@@ -87,7 +90,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
     public function getDebugInfo()
     {
-        return array (  37 => 35,  26 => 3,  22 => 1,);
+        return array (  37 => 38,  26 => 3,  22 => 1,);
     }
 }
 /* <!-- Project One -->*/
@@ -96,8 +99,8 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 /*     <div id="spiningWheelAllPosts">*/
 /*         <i class="fa fa-spinner fa-spin fa-5x"></i> <H3>Loading</H3>*/
 /*     </div>*/
-/*     <!--<div class="fb-video" data-href="https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater" data-width="500" data-show-text="false"><blockquote cite="https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater"></a>*/
-/*         </blockquote></div>-->*/
+/* */
+/* */
 /*     <div id="contentAllPosts" hidden>*/
 /*         <div ng-repeat="post in posts | orderBy: '-creationTime'">*/
 /*             {% verbatim %}*/
@@ -111,11 +114,14 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 /*                                 <div class="fb-video" data-href="{{ post.url }}" data-width="700px" data-show-text="false"><blockquote cite="{{ post.url }}" class="fb-xfbml-parse-ignore"><a href="{{ post.url }}"></a>*/
 /*                                 </blockquote></div>*/
 /*                             </div>*/
+/*                             <div ng-if="post.type=='picture_facebook'">*/
+/*                                 <div data-width="460px" class="fb-post" data-href="{{ post.url }}"></div>*/
+/*                             </div>*/
 /*                             <div ng-if="post.type=='picture_local'">*/
 /*                                 <img class="img-responsive" ng-src="{{post.picture.uploadDir}}{{post.picture.url}}" alt="">*/
 /*                             </div>*/
 /* */
-/*                         */
+/* */
 /*                     </div>*/
 /*                     <div class="col-md-5">*/
 /*                         <h3>{{ post.title }}</h3>*/

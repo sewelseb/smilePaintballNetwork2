@@ -62,14 +62,20 @@ class PostController extends Controller
 
                 $urlFb = explode('facebook.com', $post->getUrl());
                 $urlVideoFb=0;
+                $urlPictureFb=0;
                 if(count($urlFb)>1)
                 {
                     $urlVideoFb = explode('/videos/', $post->getUrl());
+                    $urlPictureFb = explode('/photos/', $post->getUrl());
                 }
 
                 if (count($urlVideoFb)>1)
                 {
                     $post->setType('video_facebook');
+                }
+                elseif (count($urlPictureFb)>1)
+                {
+                    $post->setType('picture_facebook');
                 }
 
 
