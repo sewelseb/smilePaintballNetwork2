@@ -55,9 +55,14 @@
             <div>
                 {{ post.upvotes-post.downvotes }} points
             </div>
-            <div class="row">
-                Comments:
-                
+            <div class="col-md-11">
+                <span id="postCommentUrl" hidden>{{ path('smile_api_comment_addNew') }}</span>
+                <strong>Comments:</strong>
+                {% if app.user %}
+                    <textarea class="form-control input-lg" placeholder="Your comment..." with="95%" id="textToUseToComment"></textarea><br/>
+                    <div class="clearfix"></div>
+                    <button class="btn btn-primary" onclick="sendComment({{ post.id }})">Send</button>
+                {% endif %}
             </div>
         </div>
 

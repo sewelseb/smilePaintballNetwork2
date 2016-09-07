@@ -66,3 +66,16 @@ function downvote(postId)
         }
     });
 };
+
+function sendComment(postId)
+{
+    $.post( document.getElementById('postCommentUrl').innerHTML,
+        {
+            post: postId,
+            text: document.getElementById('textToUseToComment').value })
+        .done(function( data ) {
+
+        })  .fail(function(response) {
+            console.log(response.responseText);
+        });
+}

@@ -15,3 +15,7 @@ smile_api_post_udownvote:
 smile_api_post_downvote_url:
   path: /post/downvote/
   defaults: { _controller: SmileApiBundle:Posts:downvote }
+
+smile_api_comment_addNew:
+  path: /comment/addNew
+  defaults: { _controller: SmileApiBundle:Comment:newComment }

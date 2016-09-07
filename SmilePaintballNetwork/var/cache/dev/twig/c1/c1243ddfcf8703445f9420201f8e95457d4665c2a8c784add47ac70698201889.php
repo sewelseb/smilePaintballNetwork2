@@ -22,34 +22,34 @@ class __TwigTemplate_a0fff5a2876031889bad0be075ee524006978439889aff66024de88ad4f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_4162bd969deb9efc04b2ef8cee5e0843ce5a63d738a98b80ee0769c3ad435d67 = $this->env->getExtension("native_profiler");
-        $__internal_4162bd969deb9efc04b2ef8cee5e0843ce5a63d738a98b80ee0769c3ad435d67->enter($__internal_4162bd969deb9efc04b2ef8cee5e0843ce5a63d738a98b80ee0769c3ad435d67_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/post.html.twig"));
+        $__internal_d4e60da46011235fbb5b1227240f61503e1da49bef0d4a520df2483303131a59 = $this->env->getExtension("native_profiler");
+        $__internal_d4e60da46011235fbb5b1227240f61503e1da49bef0d4a520df2483303131a59->enter($__internal_d4e60da46011235fbb5b1227240f61503e1da49bef0d4a520df2483303131a59_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/post.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_4162bd969deb9efc04b2ef8cee5e0843ce5a63d738a98b80ee0769c3ad435d67->leave($__internal_4162bd969deb9efc04b2ef8cee5e0843ce5a63d738a98b80ee0769c3ad435d67_prof);
+        $__internal_d4e60da46011235fbb5b1227240f61503e1da49bef0d4a520df2483303131a59->leave($__internal_d4e60da46011235fbb5b1227240f61503e1da49bef0d4a520df2483303131a59_prof);
 
     }
 
     // line 3
     public function block_pageHeader($context, array $blocks = array())
     {
-        $__internal_bf3eb7d3508ab860850318363c3feee452740b29bae981a10f7872d299d197a6 = $this->env->getExtension("native_profiler");
-        $__internal_bf3eb7d3508ab860850318363c3feee452740b29bae981a10f7872d299d197a6->enter($__internal_bf3eb7d3508ab860850318363c3feee452740b29bae981a10f7872d299d197a6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
+        $__internal_ccd6f28bcfce0044142655d5d583d3ed73f52df9195f06b75c05812f91a226a3 = $this->env->getExtension("native_profiler");
+        $__internal_ccd6f28bcfce0044142655d5d583d3ed73f52df9195f06b75c05812f91a226a3->enter($__internal_ccd6f28bcfce0044142655d5d583d3ed73f52df9195f06b75c05812f91a226a3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
 
         // line 4
         echo "
 ";
         
-        $__internal_bf3eb7d3508ab860850318363c3feee452740b29bae981a10f7872d299d197a6->leave($__internal_bf3eb7d3508ab860850318363c3feee452740b29bae981a10f7872d299d197a6_prof);
+        $__internal_ccd6f28bcfce0044142655d5d583d3ed73f52df9195f06b75c05812f91a226a3->leave($__internal_ccd6f28bcfce0044142655d5d583d3ed73f52df9195f06b75c05812f91a226a3_prof);
 
     }
 
     // line 7
     public function block_leftCollumn($context, array $blocks = array())
     {
-        $__internal_206213bda316e2b15d083dd57c21d7e2807c296a3a6e840ceb05734c056b5dcb = $this->env->getExtension("native_profiler");
-        $__internal_206213bda316e2b15d083dd57c21d7e2807c296a3a6e840ceb05734c056b5dcb->enter($__internal_206213bda316e2b15d083dd57c21d7e2807c296a3a6e840ceb05734c056b5dcb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
+        $__internal_ac81227023c131920eec5c4d85851455854392c7b3d72f794db76094297b410e = $this->env->getExtension("native_profiler");
+        $__internal_ac81227023c131920eec5c4d85851455854392c7b3d72f794db76094297b410e->enter($__internal_ac81227023c131920eec5c4d85851455854392c7b3d72f794db76094297b410e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
 
         // line 8
         echo "    <div class=\"row\" >
@@ -169,13 +169,33 @@ class __TwigTemplate_a0fff5a2876031889bad0be075ee524006978439889aff66024de88ad4f
         echo twig_escape_filter($this->env, ($this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "upvotes", array()) - $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "downvotes", array())), "html", null, true);
         echo " points
             </div>
+            <div class=\"col-md-11\">
+                <span id=\"postCommentUrl\" hidden>";
+        // line 59
+        echo $this->env->getExtension('routing')->getPath("smile_api_comment_addNew");
+        echo "</span>
+                <strong>Comments:</strong>
+                ";
+        // line 61
+        if ($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array())) {
+            // line 62
+            echo "                    <textarea class=\"form-control input-lg\" placeholder=\"Your comment...\" with=\"95%\" id=\"textToUseToComment\"></textarea><br/>
+                    <div class=\"clearfix\"></div>
+                    <button class=\"btn btn-primary\" onclick=\"sendComment(";
+            // line 64
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "id", array()), "html", null, true);
+            echo ")\">Send</button>
+                ";
+        }
+        // line 66
+        echo "            </div>
         </div>
 
 
     </div>
 ";
         
-        $__internal_206213bda316e2b15d083dd57c21d7e2807c296a3a6e840ceb05734c056b5dcb->leave($__internal_206213bda316e2b15d083dd57c21d7e2807c296a3a6e840ceb05734c056b5dcb_prof);
+        $__internal_ac81227023c131920eec5c4d85851455854392c7b3d72f794db76094297b410e->leave($__internal_ac81227023c131920eec5c4d85851455854392c7b3d72f794db76094297b410e_prof);
 
     }
 
@@ -191,7 +211,7 @@ class __TwigTemplate_a0fff5a2876031889bad0be075ee524006978439889aff66024de88ad4f
 
     public function getDebugInfo()
     {
-        return array (  169 => 56,  160 => 50,  154 => 47,  147 => 43,  139 => 38,  133 => 35,  128 => 33,  122 => 29,  114 => 27,  111 => 26,  105 => 24,  102 => 23,  96 => 21,  93 => 20,  82 => 17,  79 => 16,  73 => 14,  71 => 13,  66 => 11,  62 => 10,  58 => 9,  55 => 8,  49 => 7,  41 => 4,  35 => 3,  11 => 1,);
+        return array (  191 => 66,  186 => 64,  182 => 62,  180 => 61,  175 => 59,  169 => 56,  160 => 50,  154 => 47,  147 => 43,  139 => 38,  133 => 35,  128 => 33,  122 => 29,  114 => 27,  111 => 26,  105 => 24,  102 => 23,  96 => 21,  93 => 20,  82 => 17,  79 => 16,  73 => 14,  71 => 13,  66 => 11,  62 => 10,  58 => 9,  55 => 8,  49 => 7,  41 => 4,  35 => 3,  11 => 1,);
     }
 }
 /* {% extends "SmilePlatformBundle::Default/layout.html.twig" %}*/
@@ -250,6 +270,15 @@ class __TwigTemplate_a0fff5a2876031889bad0be075ee524006978439889aff66024de88ad4f
 /* */
 /*             <div>*/
 /*                 {{ post.upvotes-post.downvotes }} points*/
+/*             </div>*/
+/*             <div class="col-md-11">*/
+/*                 <span id="postCommentUrl" hidden>{{ path('smile_api_comment_addNew') }}</span>*/
+/*                 <strong>Comments:</strong>*/
+/*                 {% if app.user %}*/
+/*                     <textarea class="form-control input-lg" placeholder="Your comment..." with="95%" id="textToUseToComment"></textarea><br/>*/
+/*                     <div class="clearfix"></div>*/
+/*                     <button class="btn btn-primary" onclick="sendComment({{ post.id }})">Send</button>*/
+/*                 {% endif %}*/
 /*             </div>*/
 /*         </div>*/
 /* */
