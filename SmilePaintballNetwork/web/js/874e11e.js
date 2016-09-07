@@ -195,13 +195,21 @@ function downvote(postId)
 
 function sendComment(postId)
 {
+    var text= document.getElementById('textToUseToComment').value;
+    document.getElementById('textToUseToComment').value ='';
+
+    $('#textToUseToComment').change(function(){
+        $('#sendedMessage').hide('slow');
+    });
+
     $.post( document.getElementById('postCommentUrl').innerHTML,
         {
             post: postId,
-            text: document.getElementById('textToUseToComment').value })
+            text: text })
         .done(function( data ) {
-
+            $('#sendedMessage').show('slow');
         })  .fail(function(response) {
             console.log(response.responseText);
         });
 }
+

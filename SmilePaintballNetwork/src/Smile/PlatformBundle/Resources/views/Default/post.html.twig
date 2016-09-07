@@ -63,6 +63,17 @@
                     <div class="clearfix"></div>
                     <button class="btn btn-primary" onclick="sendComment({{ post.id }})">Send</button>
                 {% endif %}
+
+                <div id="sendedMessage" hidden>
+                    Sent ;)
+                </div>
+                {% for comment in comments %}
+                    <div class="row">
+                        <img src="{{ comment.user.picture.uploadDir }}/{{ comment.user.picture.url }}"  class="comment-profile-pic">
+                        <strong>{{ comment.user.username }}</strong><br>
+                        {{ comment.text }}
+                    </div>
+                {% endfor %}
             </div>
         </div>
 

@@ -18,8 +18,8 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_6c1fb26101ff9476ca1919b6ffd310129427d9b53a4aab6fa11ea35ec6a18de4 = $this->env->getExtension("native_profiler");
-        $__internal_6c1fb26101ff9476ca1919b6ffd310129427d9b53a4aab6fa11ea35ec6a18de4->enter($__internal_6c1fb26101ff9476ca1919b6ffd310129427d9b53a4aab6fa11ea35ec6a18de4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/layout.html.twig"));
+        $__internal_2064af3611bef28dd9f138f1d55a4de9642a7b8dc17200d30ecb8c01f30fc8bb = $this->env->getExtension("native_profiler");
+        $__internal_2064af3611bef28dd9f138f1d55a4de9642a7b8dc17200d30ecb8c01f30fc8bb->enter($__internal_2064af3611bef28dd9f138f1d55a4de9642a7b8dc17200d30ecb8c01f30fc8bb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/layout.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -44,33 +44,36 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
     <!-- Font awsome -->
     <link href=\"//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css\" rel=\"stylesheet\">
 
+    <!-- jQuery -->
+    <script src=\"js/jquery.js\"></script><script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js\"></script>
+
     <!-- Custom CSS -->
     <link href=\"css/1-col-portfolio.css\" rel=\"stylesheet\">
     ";
-        // line 25
+        // line 28
         if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
             // asset "6d14613_0"
             $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_6d14613_0") : $this->env->getExtension('asset')->getAssetUrl("_controller/css/6d14613_style_1.css");
-            // line 29
+            // line 32
             echo "
     <link rel=\"stylesheet\" href=\"";
-            // line 30
+            // line 33
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\" type=\"text/css\" />
     ";
         } else {
             // asset "6d14613"
             $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_6d14613") : $this->env->getExtension('asset')->getAssetUrl("_controller/css/6d14613.css");
-            // line 29
+            // line 32
             echo "
     <link rel=\"stylesheet\" href=\"";
-            // line 30
+            // line 33
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\" type=\"text/css\" />
     ";
         }
         unset($context["asset_url"]);
-        // line 32
+        // line 35
         echo "
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -82,11 +85,11 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
     <script type=\"text/javascript\" src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js\"></script>
     <script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-sanitize.min.js\"></script>
     ";
-        // line 42
+        // line 45
         if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
             // asset "874e11e_0"
             $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_874e11e_0") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/874e11e_app_1.js");
-            // line 49
+            // line 52
             echo "    <script type=\"text/javascript\" src=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"></script>
@@ -112,7 +115,7 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
     ";
         }
         unset($context["asset_url"]);
-        // line 51
+        // line 54
         echo "
 </head>
 
@@ -127,9 +130,9 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
     }(document, 'script', 'facebook-jssdk'));</script>
 
 ";
-        // line 64
-        $this->loadTemplate("SmilePlatformBundle::Default/Blocs/navbar.html.twig", "SmilePlatformBundle::Default/layout.html.twig", 64)->display($context);
-        // line 65
+        // line 67
+        $this->loadTemplate("SmilePlatformBundle::Default/Blocs/navbar.html.twig", "SmilePlatformBundle::Default/layout.html.twig", 67)->display($context);
+        // line 68
         echo "
 <!-- Page Content -->
 <div class=\"container\" >
@@ -138,23 +141,23 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
     <div class=\"row\">
         <div class=\"col-lg-12\">
             ";
-        // line 72
+        // line 75
         $this->displayBlock('pageHeader', $context, $blocks);
-        // line 77
+        // line 80
         echo "        </div>
     </div>
     <!-- /.row -->
     <div class=\"col-md-9\" id=\"postsNews\" ng-app=\"smile\">
         ";
-        // line 81
+        // line 84
         $this->displayBlock('leftCollumn', $context, $blocks);
-        // line 85
+        // line 88
         echo "    </div>
     <div class=\"col-md-3 right-bar\">
         ";
-        // line 87
+        // line 90
         $this->displayBlock('rightCollumn', $context, $blocks);
-        // line 169
+        // line 172
         echo "    </div>
 
     <!-- /.row -->
@@ -174,8 +177,7 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 </div>
 <!-- /.container -->
 
-<!-- jQuery -->
-<script src=\"js/jquery.js\"></script><script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js\"></script>
+
 <!-- Bootstrap Core JavaScript -->
 <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\" integrity=\"sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa\" crossorigin=\"anonymous\"></script>
 
@@ -183,50 +185,50 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 
 </html>";
         
-        $__internal_6c1fb26101ff9476ca1919b6ffd310129427d9b53a4aab6fa11ea35ec6a18de4->leave($__internal_6c1fb26101ff9476ca1919b6ffd310129427d9b53a4aab6fa11ea35ec6a18de4_prof);
+        $__internal_2064af3611bef28dd9f138f1d55a4de9642a7b8dc17200d30ecb8c01f30fc8bb->leave($__internal_2064af3611bef28dd9f138f1d55a4de9642a7b8dc17200d30ecb8c01f30fc8bb_prof);
 
     }
 
-    // line 72
+    // line 75
     public function block_pageHeader($context, array $blocks = array())
     {
-        $__internal_ee9867ac448b225272ce650b4cc2cb125dd641a8f91e1ae03e8e687ba6adea40 = $this->env->getExtension("native_profiler");
-        $__internal_ee9867ac448b225272ce650b4cc2cb125dd641a8f91e1ae03e8e687ba6adea40->enter($__internal_ee9867ac448b225272ce650b4cc2cb125dd641a8f91e1ae03e8e687ba6adea40_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
+        $__internal_99cf251a9da7430f2ad5c60341e9fd31b577c5938b51234125ed90767764d241 = $this->env->getExtension("native_profiler");
+        $__internal_99cf251a9da7430f2ad5c60341e9fd31b577c5938b51234125ed90767764d241->enter($__internal_99cf251a9da7430f2ad5c60341e9fd31b577c5938b51234125ed90767764d241_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
 
-        // line 73
+        // line 76
         echo "                <h1 class=\"page-header\">
                     Smile Paintball Network
                 </h1>
             ";
         
-        $__internal_ee9867ac448b225272ce650b4cc2cb125dd641a8f91e1ae03e8e687ba6adea40->leave($__internal_ee9867ac448b225272ce650b4cc2cb125dd641a8f91e1ae03e8e687ba6adea40_prof);
+        $__internal_99cf251a9da7430f2ad5c60341e9fd31b577c5938b51234125ed90767764d241->leave($__internal_99cf251a9da7430f2ad5c60341e9fd31b577c5938b51234125ed90767764d241_prof);
 
     }
 
-    // line 81
+    // line 84
     public function block_leftCollumn($context, array $blocks = array())
     {
-        $__internal_150817c6856192a3a8719ff35933a42c548296e501f84335ab91367648622632 = $this->env->getExtension("native_profiler");
-        $__internal_150817c6856192a3a8719ff35933a42c548296e501f84335ab91367648622632->enter($__internal_150817c6856192a3a8719ff35933a42c548296e501f84335ab91367648622632_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
+        $__internal_aa5cbcc6d6bbef4c5cbb461043829642368fe20c52e4e6237f65491315d1566a = $this->env->getExtension("native_profiler");
+        $__internal_aa5cbcc6d6bbef4c5cbb461043829642368fe20c52e4e6237f65491315d1566a->enter($__internal_aa5cbcc6d6bbef4c5cbb461043829642368fe20c52e4e6237f65491315d1566a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
 
-        // line 82
+        // line 85
         echo "            ";
         echo twig_include($this->env, $context, "SmilePlatformBundle:Default:Blocs/allPosts.html.twig");
         echo "
 
         ";
         
-        $__internal_150817c6856192a3a8719ff35933a42c548296e501f84335ab91367648622632->leave($__internal_150817c6856192a3a8719ff35933a42c548296e501f84335ab91367648622632_prof);
+        $__internal_aa5cbcc6d6bbef4c5cbb461043829642368fe20c52e4e6237f65491315d1566a->leave($__internal_aa5cbcc6d6bbef4c5cbb461043829642368fe20c52e4e6237f65491315d1566a_prof);
 
     }
 
-    // line 87
+    // line 90
     public function block_rightCollumn($context, array $blocks = array())
     {
-        $__internal_16cb7d6824976500b6d1757eb740eb6df7af952d3c148889551c0b370b27b626 = $this->env->getExtension("native_profiler");
-        $__internal_16cb7d6824976500b6d1757eb740eb6df7af952d3c148889551c0b370b27b626->enter($__internal_16cb7d6824976500b6d1757eb740eb6df7af952d3c148889551c0b370b27b626_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
+        $__internal_ae2641a9e0b5f5f039352127b8de9930016f1e7299397daf086e4a204944d6cc = $this->env->getExtension("native_profiler");
+        $__internal_ae2641a9e0b5f5f039352127b8de9930016f1e7299397daf086e4a204944d6cc->enter($__internal_ae2641a9e0b5f5f039352127b8de9930016f1e7299397daf086e4a204944d6cc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
 
-        // line 88
+        // line 91
         echo "            <div class=\"row\">
                 <h3>Latest Smile Paintball video</h3>
                 <div class=\"fb-video\" data-href=\"https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater\" data-width=\"700px\" data-show-text=\"false\"><blockquote cite=\"https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater\" class=\"fb-xfbml-parse-ignore\"><a href=\"https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater\"></a>
@@ -237,7 +239,7 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
                 <!-- top 10 -->
                 <h3>Top 10</h3>
                 ";
-        // line 97
+        // line 100
         echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("SmilePlatformBundle:Post:topTen"));
         echo "
             </div>
@@ -312,7 +314,7 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 
         ";
         
-        $__internal_16cb7d6824976500b6d1757eb740eb6df7af952d3c148889551c0b370b27b626->leave($__internal_16cb7d6824976500b6d1757eb740eb6df7af952d3c148889551c0b370b27b626_prof);
+        $__internal_ae2641a9e0b5f5f039352127b8de9930016f1e7299397daf086e4a204944d6cc->leave($__internal_ae2641a9e0b5f5f039352127b8de9930016f1e7299397daf086e4a204944d6cc_prof);
 
     }
 
@@ -328,7 +330,7 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 
     public function getDebugInfo()
     {
-        return array (  241 => 97,  230 => 88,  224 => 87,  213 => 82,  207 => 81,  197 => 73,  191 => 72,  158 => 169,  156 => 87,  152 => 85,  150 => 81,  144 => 77,  142 => 72,  133 => 65,  131 => 64,  116 => 51,  90 => 49,  86 => 42,  74 => 32,  68 => 30,  65 => 29,  58 => 30,  55 => 29,  51 => 25,  25 => 1,);
+        return array (  243 => 100,  232 => 91,  226 => 90,  215 => 85,  209 => 84,  199 => 76,  193 => 75,  161 => 172,  159 => 90,  155 => 88,  153 => 84,  147 => 80,  145 => 75,  136 => 68,  134 => 67,  119 => 54,  93 => 52,  89 => 45,  77 => 35,  71 => 33,  68 => 32,  61 => 33,  58 => 32,  54 => 28,  25 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -352,6 +354,9 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 /* */
 /*     <!-- Font awsome -->*/
 /*     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">*/
+/* */
+/*     <!-- jQuery -->*/
+/*     <script src="js/jquery.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>*/
 /* */
 /*     <!-- Custom CSS -->*/
 /*     <link href="css/1-col-portfolio.css" rel="stylesheet">*/
@@ -518,8 +523,7 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 /* </div>*/
 /* <!-- /.container -->*/
 /* */
-/* <!-- jQuery -->*/
-/* <script src="js/jquery.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>*/
+/* */
 /* <!-- Bootstrap Core JavaScript -->*/
 /* <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>*/
 /* */

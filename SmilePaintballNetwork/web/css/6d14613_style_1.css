@@ -23,6 +23,7 @@ footer {
 .btn-primary{
     border-radius: 0px;
     background-color: #555c30;
+    border-color: #555c30;
     background-image: none;
     color: #f2c716;
 }
@@ -36,8 +37,13 @@ footer {
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .right-bar{
         display: none;
     }
+}
+
+.comment-profile-pic{
+    max-width: 14px;
+    max-height: 14px;
 }

@@ -121,10 +121,17 @@ class PostController extends Controller
             ->getRepository('SmilePlatformBundle:Post');
         $post = $postRepo->find(intval($postId));
 
+        $commentRepo = $this
+            ->getDoctrine()
+            ->getManager()
+            ->getRepository('SmilePlatformBundle:Comment');
+        $comments = $commentRepo->getPostsComment($post);
+
+
         return $this->render('SmilePlatformBundle::Default/post.html.twig', array(
 
             'post' => $post,
-
+            'comments' => $comments
         ));
     }
 

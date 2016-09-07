@@ -1,6 +1,7 @@
 <?php
 
 namespace Smile\PlatformBundle\Repository;
+use Smile\PlatformBundle\Entity\Post;
 
 /**
  * CommentRepository
@@ -10,4 +11,17 @@ namespace Smile\PlatformBundle\Repository;
  */
 class CommentRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function getPostsComment(Post $post)
+    {
+        $qb = $this->createQueryBuilder('a');
+
+        $qb->where('a.post = :post')
+            ->setParameter('post', $post)
+            ->orderBy('a.publicationDate', 'DESC')
+        ;
+        return $qb
+            ->getQuery()
+            ->getResult()
+            ;
+    }
 }
