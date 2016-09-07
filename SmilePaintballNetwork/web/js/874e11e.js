@@ -50,6 +50,51 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
         });
     };
 
+    $scope.upvote = function(postId)
+    {
+        $('#updownVote_'+postId).hide('slow');
+        $('#upvoted_'+postId).show('slow');
+        $.ajax({
+            url : document.getElementById("smileApiUpvoteUrl").innerHTML+postId,
+            type : 'GET',
+            dataType : 'html',
+            success : function(results, status){
+
+
+            },
+            error : function(results, status, error){
+                console.log(results);
+                console.log(results.responseText);
+            },
+            complete : function(results, status){
+
+            }
+        });
+    };
+
+    $scope.downvote = function(postId)
+    {
+        $('#updownVote_'+postId).hide('slow');
+        $('#downvoted_'+postId).show('slow');
+
+        $.ajax({
+            url : document.getElementById("smileApiDownvoteUrl").innerHTML+postId,
+            type : 'GET',
+            dataType : 'html',
+            success : function(results, status){
+
+
+            },
+            error : function(results, status, error){
+                console.log(results);
+                console.log(results.responseText);
+            },
+            complete : function(results, status){
+
+            }
+        });
+    };
+
     $scope.facebookSafeApply = function(){
         console.log('test');
         FB.XFBML.parse();

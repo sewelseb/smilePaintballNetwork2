@@ -1,6 +1,8 @@
 <!-- Project One -->
 <div ng-controller="allPostsCtrl">
     <span id="smileApiGetLastPostsUrl" hidden>{{ path ('smile_api_getlastPosts') }}</span>
+    <span id="smileApiUpvoteUrl" hidden>{{ path ('smile_api_post_upvote_url') }}</span>
+    <span id="smileApiDownvoteUrl" hidden>{{ path ('smile_api_post_downvote_url') }}</span>
     <div id="spiningWheelAllPosts">
         <i class="fa fa-spinner fa-spin fa-5x"></i> <H3>Loading</H3>
     </div>
@@ -35,15 +37,23 @@
                         <h3>{{ post.title }}</h3>
                         <h4>{{ post.event }}</h4>
                         <p>
-                           <div class="col-md-6">
-                                <a href="">
-                                    <span ng-click="upvote({{post.id}})">Upvote</span>
-                                </a>
+                            <div id="updownVote_{{post.id}}">
+                                <div class="col-md-6">
+                                    <a href="">
+                                        <span ng-click="upvote(post.id)">Upvote</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="">
+                                        <span ng-click="downvote(post.id)">Downvote</span>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <a href="">
-                                    <span ng-click="downvote({{post.id}})">Downvote</span>
-                                </a>
+                           <div id="upvoted_{{post.id}}" hidden>
+                                  upvoted ;)
+                            </div>
+                            <div id="downvoted_{{post.id}}" hidden>
+                                downvoted :(
                             </div>
                         </p>
                         <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>

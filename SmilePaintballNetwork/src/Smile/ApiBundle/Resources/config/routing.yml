@@ -5,7 +5,13 @@ smile_api_getlastPosts:
 smile_api_post_upvote:
   path: /post/upvote/{postId}
   defaults: { _controller: SmileApiBundle:Posts:upvote }
+smile_api_post_upvote_url:
+  path: /post/upvote/
+  defaults: { _controller: SmileApiBundle:Posts:upvote }
 
-smile_api_post_downvote:
+smile_api_post_udownvote:
   path: /post/downvote/{postId}
+  defaults: { _controller: SmileApiBundle:Posts:downvote }
+smile_api_post_downvote_url:
+  path: /post/downvote/
   defaults: { _controller: SmileApiBundle:Posts:downvote }
