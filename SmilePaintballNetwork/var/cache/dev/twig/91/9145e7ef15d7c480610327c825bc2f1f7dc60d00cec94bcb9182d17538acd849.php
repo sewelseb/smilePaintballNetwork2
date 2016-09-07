@@ -15,8 +15,8 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_172bcb959a5c94a3eb191ecf2967130ee244c70d1fd31000e498f6296c16714f = $this->env->getExtension("native_profiler");
-        $__internal_172bcb959a5c94a3eb191ecf2967130ee244c70d1fd31000e498f6296c16714f->enter($__internal_172bcb959a5c94a3eb191ecf2967130ee244c70d1fd31000e498f6296c16714f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
+        $__internal_a48f8a897f27941a5aabfcd645636a3710c53118ec5b9782ad3acf626343f906 = $this->env->getExtension("native_profiler");
+        $__internal_a48f8a897f27941a5aabfcd645636a3710c53118ec5b9782ad3acf626343f906->enter($__internal_a48f8a897f27941a5aabfcd645636a3710c53118ec5b9782ad3acf626343f906_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
 
         // line 1
         echo "<!-- Project One -->
@@ -41,7 +41,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
     <div id=\"contentAllPosts\" hidden>
         <div ng-repeat=\"post in posts | orderBy: '-creationTime'\">
             ";
-        // line 70
+        // line 76
         echo "
                 <div class=\"row\" >
                     <div class=\"col-md-7\">
@@ -54,7 +54,9 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
                                 </blockquote></div>
                             </div>
                             <div ng-if=\"post.type=='picture_facebook'\">
-                                <div data-width=\"460px\" class=\"fb-post\" data-href=\"{{ post.url }}\"></div>
+                                <a ng-href=\"/app_dev.php/platform/post/{{ post.id }}\">
+                                    <div data-width=\"460px\" class=\"fb-post\" data-href=\"{{ post.url }}\"></div>
+                                </a>
                             </div>
                             <div ng-if=\"post.type=='picture_externalUrl'\">
                                 <img class=\"img-responsive\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" alt=\"\">
@@ -66,8 +68,12 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
                     </div>
                     <div class=\"col-md-5\">
-                        <h3>{{ post.title }}</h3>
-                        <h4>{{ post.event_name }}</h4>
+                        <h3><a ng-href=\"/app_dev.php/platform/post/{{ post.id }}\">{{ post.title }}</a></h3>
+                        <h4><a ng-href=\"/app_dev.php/platform/post/{{ post.id }}\">{{ post.event_name }}</a></h4>
+                        <a ng-href=\"/app_dev.php/platform/profile/{{ post.user.id }}\">
+                            by <strong>{{ post.user.username }}</strong>
+                            <img src=\"{{ post.user.picture.uploadDir }}/{{ post.user.picture.url }}\"  class=\"comment-profile-pic\"><br/>
+                        </a>
                         <p>
                             <div id=\"updownVote_{{post.id}}\">
                                 <div class=\"col-md-6\">
@@ -95,7 +101,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
                             </div>
                         </p>
                         <div>
-                            {{ post.upvotes-post.downvotes }} points
+                            {{ post.upvotes-post.downvotes }} points, {{ post.comments }} comments
                         </div>
                     </div>
                 </div>
@@ -112,7 +118,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
 ";
         
-        $__internal_172bcb959a5c94a3eb191ecf2967130ee244c70d1fd31000e498f6296c16714f->leave($__internal_172bcb959a5c94a3eb191ecf2967130ee244c70d1fd31000e498f6296c16714f_prof);
+        $__internal_a48f8a897f27941a5aabfcd645636a3710c53118ec5b9782ad3acf626343f906->leave($__internal_a48f8a897f27941a5aabfcd645636a3710c53118ec5b9782ad3acf626343f906_prof);
 
     }
 
@@ -128,7 +134,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
     public function getDebugInfo()
     {
-        return array (  45 => 70,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
+        return array (  45 => 76,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
     }
 }
 /* <!-- Project One -->*/
@@ -155,7 +161,9 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 /*                                 </blockquote></div>*/
 /*                             </div>*/
 /*                             <div ng-if="post.type=='picture_facebook'">*/
-/*                                 <div data-width="460px" class="fb-post" data-href="{{ post.url }}"></div>*/
+/*                                 <a ng-href="/app_dev.php/platform/post/{{ post.id }}">*/
+/*                                     <div data-width="460px" class="fb-post" data-href="{{ post.url }}"></div>*/
+/*                                 </a>*/
 /*                             </div>*/
 /*                             <div ng-if="post.type=='picture_externalUrl'">*/
 /*                                 <img class="img-responsive" ng-src="{{ trustAsResourceUrl(post.url) }}" alt="">*/
@@ -167,8 +175,12 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 /* */
 /*                     </div>*/
 /*                     <div class="col-md-5">*/
-/*                         <h3>{{ post.title }}</h3>*/
-/*                         <h4>{{ post.event_name }}</h4>*/
+/*                         <h3><a ng-href="/app_dev.php/platform/post/{{ post.id }}">{{ post.title }}</a></h3>*/
+/*                         <h4><a ng-href="/app_dev.php/platform/post/{{ post.id }}">{{ post.event_name }}</a></h4>*/
+/*                         <a ng-href="/app_dev.php/platform/profile/{{ post.user.id }}">*/
+/*                             by <strong>{{ post.user.username }}</strong>*/
+/*                             <img src="{{ post.user.picture.uploadDir }}/{{ post.user.picture.url }}"  class="comment-profile-pic"><br/>*/
+/*                         </a>*/
 /*                         <p>*/
 /*                             <div id="updownVote_{{post.id}}">*/
 /*                                 <div class="col-md-6">*/
@@ -196,7 +208,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 /*                             </div>*/
 /*                         </p>*/
 /*                         <div>*/
-/*                             {{ post.upvotes-post.downvotes }} points*/
+/*                             {{ post.upvotes-post.downvotes }} points, {{ post.comments }} comments*/
 /*                         </div>*/
 /*                     </div>*/
 /*                 </div>*/

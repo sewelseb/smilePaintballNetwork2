@@ -53,7 +53,7 @@
             </p>
 
             <div>
-                {{ post.upvotes-post.downvotes }} points
+                {{ post.upvotes-post.downvotes }} points, {{ post.comments }} comments
             </div>
             <div class="col-md-11">
                 <span id="postCommentUrl" hidden>{{ path('smile_api_comment_addNew') }}</span>
@@ -69,8 +69,10 @@
                 </div>
                 {% for comment in comments %}
                     <div class="row">
-                        <img src="{{ comment.user.picture.uploadDir }}/{{ comment.user.picture.url }}"  class="comment-profile-pic">
-                        <strong>{{ comment.user.username }}</strong><br>
+                        <a href="{{ path('smile_platform_profile', {'userId': comment.user.getId })  }}">
+                            <img src="{{ comment.user.picture.uploadDir }}/{{ comment.user.picture.url }}"  class="comment-profile-pic">
+                            <strong>{{ comment.user.username }}</strong><br>
+                        </a>
                         {{ comment.text }}
                     </div>
                 {% endfor %}

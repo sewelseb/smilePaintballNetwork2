@@ -198,9 +198,7 @@ function sendComment(postId)
     var text= document.getElementById('textToUseToComment').value;
     document.getElementById('textToUseToComment').value ='';
 
-    $('#textToUseToComment').change(function(){
-        $('#sendedMessage').hide('slow');
-    });
+
 
     $.post( document.getElementById('postCommentUrl').innerHTML,
         {
@@ -212,4 +210,8 @@ function sendComment(postId)
             console.log(response.responseText);
         });
 }
+
+$('#textToUseToComment').change(function(){
+    $('#sendedMessage').hide('slow');
+});
 

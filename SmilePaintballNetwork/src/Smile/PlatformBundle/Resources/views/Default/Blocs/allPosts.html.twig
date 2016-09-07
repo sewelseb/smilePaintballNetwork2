@@ -22,20 +22,30 @@
                                 </blockquote></div>
                             </div>
                             <div ng-if="post.type=='picture_facebook'">
-                                <div data-width="460px" class="fb-post" data-href="{{ post.url }}"></div>
+                                <a ng-href="/app_dev.php/platform/post/{{ post.id }}">
+                                    <div data-width="460px" class="fb-post" data-href="{{ post.url }}"></div>
+                                </a>
                             </div>
                             <div ng-if="post.type=='picture_externalUrl'">
-                                <img class="img-responsive" ng-src="{{ trustAsResourceUrl(post.url) }}" alt="">
+                                <a ng-href="/app_dev.php/platform/post/{{ post.id }}">
+                                    <img class="img-responsive" ng-src="{{ trustAsResourceUrl(post.url) }}" alt="">
+                                </a>
                             </div>
                             <div ng-if="post.type=='picture_local'">
-                                <img class="img-responsive" ng-src="{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">
+                                <a ng-href="/app_dev.php/platform/post/{{ post.id }}">
+                                    <img class="img-responsive" ng-src="{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">
+                                </a>
                             </div>
 
 
                     </div>
                     <div class="col-md-5">
-                        <h3>{{ post.title }}</h3>
-                        <h4>{{ post.event_name }}</h4>
+                        <h3><a ng-href="/app_dev.php/platform/post/{{ post.id }}">{{ post.title }}</a></h3>
+                        <h4><a ng-href="/app_dev.php/platform/post/{{ post.id }}">{{ post.event_name }}</a></h4>
+                        <a ng-href="/app_dev.php/platform/profile/{{ post.user.id }}">
+                            by <strong>{{ post.user.username }}</strong>
+                            <img src="{{ post.user.picture.uploadDir }}/{{ post.user.picture.url }}"  class="comment-profile-pic"><br/>
+                        </a>
                         <p>
                             <div id="updownVote_{{post.id}}">
                                 <div class="col-md-6">
@@ -63,7 +73,7 @@
                             </div>
                         </p>
                         <div>
-                            {{ post.upvotes-post.downvotes }} points
+                            <a ng-href="/app_dev.php/platform/post/{{ post.id }}">{{ post.upvotes-post.downvotes }} points, {{ post.comments }} comments</a>
                         </div>
                     </div>
                 </div>
