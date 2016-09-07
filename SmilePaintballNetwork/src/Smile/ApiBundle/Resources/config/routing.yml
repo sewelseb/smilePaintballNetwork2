@@ -1,0 +1,3 @@
+smile_api_getlastPosts:
+    path:     /posts/getLastPosts
+    defaults: { _controller: SmileApiBundle:Posts:getLastPosts }

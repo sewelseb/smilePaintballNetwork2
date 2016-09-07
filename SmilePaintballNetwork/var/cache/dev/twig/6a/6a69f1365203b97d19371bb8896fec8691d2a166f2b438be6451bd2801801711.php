@@ -15,8 +15,8 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_17a5f14a1930e04969197e37cfa69cf881d42e5fa09ed4606dbe0f9466456ca6 = $this->env->getExtension("native_profiler");
-        $__internal_17a5f14a1930e04969197e37cfa69cf881d42e5fa09ed4606dbe0f9466456ca6->enter($__internal_17a5f14a1930e04969197e37cfa69cf881d42e5fa09ed4606dbe0f9466456ca6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/layout.html.twig"));
+        $__internal_370b78d93263fef3ef45436c912b50d2837f11e865c7a5068ee90034c3bdf9b6 = $this->env->getExtension("native_profiler");
+        $__internal_370b78d93263fef3ef45436c912b50d2837f11e865c7a5068ee90034c3bdf9b6->enter($__internal_370b78d93263fef3ef45436c912b50d2837f11e865c7a5068ee90034c3bdf9b6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/layout.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -252,7 +252,7 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 
 </html>";
         
-        $__internal_17a5f14a1930e04969197e37cfa69cf881d42e5fa09ed4606dbe0f9466456ca6->leave($__internal_17a5f14a1930e04969197e37cfa69cf881d42e5fa09ed4606dbe0f9466456ca6_prof);
+        $__internal_370b78d93263fef3ef45436c912b50d2837f11e865c7a5068ee90034c3bdf9b6->leave($__internal_370b78d93263fef3ef45436c912b50d2837f11e865c7a5068ee90034c3bdf9b6_prof);
 
     }
 

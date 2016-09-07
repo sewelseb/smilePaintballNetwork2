@@ -4,6 +4,7 @@ imports:
     - { resource: services.yml }
     - { resource: "@SmilePlatformBundle/Resources/config/services.yml" }
     - { resource: "@SmileUserBundle/Resources/config/services.yml" }
+    - { resource: "@SmileApiBundle/Resources/config/services.yml" }
 
 
 # Put parameters here that don't need to change on each machine where the app is deployed
@@ -34,6 +35,8 @@ framework:
     fragments:       ~
     http_method_override: true
     assets: ~
+    serializer:
+      enabled: true
 
 # Twig Configuration
 twig:
@@ -83,3 +86,21 @@ fos_user:
   db_driver:     orm                       # Le type de BDD à utiliser, nous utilisons l'ORM Doctrine depuis le début
   firewall_name: main                      # Le nom du firewall derrière lequel on utilisera ces utilisateurs
   user_class:    Smile\UserBundle\Entity\User
+
+fos_rest:
+    param_fetcher_listener: true
+    body_listener: true
+    format_listener: true
+    view:
+        view_response_listener: 'force'
+        formats:
+            xml: false
+            json : true
+        templating_formats:
+            html: true
+        force_redirects:
+            html: true
+        failed_validation: HTTP_BAD_REQUEST
+        default_engine: twig
+    routing_loader:
+        default_format: json

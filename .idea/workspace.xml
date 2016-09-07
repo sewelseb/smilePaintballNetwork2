@@ -21,47 +21,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig">
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1475">
-              <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
-              <folding>
-                <element signature="e#6185#6192#0#HTML" expanded="true" />
-                <element signature="e#6764#6771#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="40" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="40" />
+            <state relative-caret-position="507">
+              <caret line="98" column="27" selection-start-line="98" selection-start-column="27" selection-end-line="98" selection-end-column="27" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navbar.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/navbar.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="38" column="105" selection-start-line="38" selection-start-column="105" selection-end-line="38" selection-end-column="105" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PostPicType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Form/PostPicType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-              <folding>
-                <element signature="e#45#85#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -69,8 +34,8 @@
       <file leaf-file-name="PostController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/PostController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+            <state relative-caret-position="677">
+              <caret line="56" column="84" selection-start-line="56" selection-start-column="84" selection-end-line="56" selection-end-column="84" />
               <folding>
                 <element signature="e#135#172#0#PHP" expanded="true" />
               </folding>
@@ -78,24 +43,74 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addNewPost.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/form/addNewPost.html.twig">
+      <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/app/AppKernel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            <state relative-caret-position="396">
+              <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Post.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Entity/Post.php">
+      <file leaf-file-name="addNewPost.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/form/addNewPost.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="262" column="0" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
+            <state relative-caret-position="484">
+              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/app/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/ApiBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="68" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/ApiBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostsController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/ApiBundle/Controller/PostsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
               <folding>
-                <element signature="e#47#79#0#PHP" expanded="true" />
+                <element signature="e#130#178#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/ApiBundle/Resources/views/Default/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,23 +123,6 @@
               <folding>
                 <element signature="e#47#79#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test6_test_1473241831.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/web/uploads/postPics/test6_test_1473241831.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/DefaultController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="57" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -145,16 +143,13 @@
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/app/config/config_dev.yml" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/css/style.css" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/composer.json" />
-        <option value="$PROJECT_DIR$/SmilePaintballNetwork/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/UserBundle/SmileUserBundle.php" />
-        <option value="$PROJECT_DIR$/SmilePaintballNetwork/app/config/config.yml" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/UserBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig.css" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/UserBundle/Resources/views/Security/login.html.twig" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/UserBundle/Controller/RegistrationController.php" />
-        <option value="$PROJECT_DIR$/SmilePaintballNetwork/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/app/config/parameters.yml.dist" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/UserBundle/Security/Core/User/FOSUBUserProvider.php" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/app/config/services.yml" />
@@ -164,12 +159,20 @@
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/css/style.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/navbar.html.twig" />
-        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/form/addNewPost.html.twig" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Form/PostPicType.php" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Entity/Post.php" />
-        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/PostController.php" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Entity/PostPic.php" />
+        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/navbar.html.twig" />
+        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/form/addNewPost.html.twig" />
+        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/PostController.php" />
+        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/AppBundle/Controller/Posts.php" />
+        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/ApiBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/ApiBundle/Controller/Posts.php" />
+        <option value="$PROJECT_DIR$/SmilePaintballNetwork/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/ApiBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/SmilePaintballNetwork/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/SmilePaintballNetwork/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/ApiBundle/Controller/PostsController.php" />
       </list>
     </option>
   </component>
@@ -636,6 +639,134 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Smile" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApiBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmilePaintballNetwork" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Smile" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApiBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Default" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmilePaintballNetwork" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Smile" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApiBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmilePaintballNetwork" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Smile" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApiBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmilePaintballNetwork" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="AppBundle" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -724,6 +855,7 @@
       <recent name="D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\PlatformBundle" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\ApiBundle\Controller" />
       <recent name="D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\PlatformBundle\public" />
       <recent name="D:\wamp64\www\smilePaintballNetwork2" />
     </key>
@@ -796,12 +928,12 @@
       <workItem from="1472573253885" duration="14978000" />
       <workItem from="1473174744229" duration="588000" />
       <workItem from="1473175409945" duration="2232000" />
-      <workItem from="1473232030724" duration="9837000" />
+      <workItem from="1473232030724" duration="12927000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33817000" />
+    <option name="totallyTimeSpent" value="36907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2391" y="-9" width="2418" height="1318" extended-state="6" />
@@ -833,35 +965,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/app/config/config_prod.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/app/config/config_test.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cacert.pem">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85030">
-          <caret line="3865" column="0" selection-start-line="3865" selection-start-column="0" selection-end-line="3865" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1518">
@@ -965,14 +1068,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig.css" />
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/AppBundle/AppBundle.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1030,20 +1125,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
-          <caret line="40" column="63" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/UserBundle/Controller/RegistrationController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2640">
           <caret line="120" column="5" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
           <folding>
-            <element signature="e#47#101#0#PHP" expanded="true" />
+            <element signature="e#47#101#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1068,14 +1155,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1848">
-          <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1136,22 +1215,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/navbar.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="38" column="105" selection-start-line="38" selection-start-column="105" selection-end-line="38" selection-end-column="105" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1475">
@@ -1171,24 +1234,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Entity/Post.php">
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="262" column="0" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
-          <folding>
-            <element signature="e#47#79#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="88">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/PostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
-          <folding>
-            <element signature="e#135#172#0#PHP" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/web/uploads/postPics/test6_test_1473241831.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Form/PostPicType.php">
@@ -1197,6 +1253,24 @@
           <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
           <folding>
             <element signature="e#45#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/navbar.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Entity/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="809">
+          <caret line="262" column="0" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
+          <folding>
+            <element signature="e#47#79#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1211,16 +1285,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/web/uploads/postPics/test6_test_1473241831.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/ApiBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/form/addNewPost.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        <state relative-caret-position="484">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/ApiBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/ApiBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="68" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="98" column="27" selection-start-line="98" selection-start-column="27" selection-end-line="98" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="56" column="84" selection-start-line="56" selection-start-column="84" selection-end-line="56" selection-end-column="84" />
+          <folding>
+            <element signature="e#135#172#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/ApiBundle/Controller/PostsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding>
+            <element signature="e#130#178#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

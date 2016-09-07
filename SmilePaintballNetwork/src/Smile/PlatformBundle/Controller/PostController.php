@@ -28,29 +28,33 @@ class PostController extends Controller
 
         $formBuilder
             ->add('title',     TextType::class)
-            ->add('eventName',     TextType::class)
-            ->add('picture', PostPicType::class)
+            ->add('eventName',     TextType::class, array('required' =>false))
+            ->add('picture', PostPicType::class, array('required' =>false))
+            ->add('url',     TextType::class, array('required' =>false))
             ->add('save',      SubmitType::class)
-            ->add('url',     TextType::class)
         ;
 
         $form = $formBuilder->getForm();
 
         if ($request->isMethod('POST') && $form->handleRequest($request)->isValid()) {
 
-            $post->setCreationTime(time());
-            $post->setUser($this->getUser());
-            $post->getPicture()->upload($post);
+            if($post->getPicture()!=null || $post->getUrl()!=null)
+            {
+                $post->setCreationTime(time());
+                $post->setUser($this->getUser());
+                $post->getPicture()->upload($post);
 
-            $em = $this->getDoctrine()->getManager();
+                $em = $this->getDoctrine()->getManager();
 
-            $em->persist($post);
+                $em->persist($post);
 
-            $em->flush();
+                $em->flush();
 
 
-            $request->getSession()->getFlashBag()->add('notice', 'Post created.');
+                $request->getSession()->getFlashBag()->add('notice', 'Post created.');
+            }
 
+            $request->getSession()->getFlashBag()->add('notice', 'Nothing to post :(.');
 
 
 

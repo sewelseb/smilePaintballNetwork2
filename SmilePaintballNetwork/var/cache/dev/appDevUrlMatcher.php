@@ -113,6 +113,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        // smile_api_getlastPosts
+        if (0 === strpos($pathinfo, '/api/posts/getLastPosts') && preg_match('#^/api/posts/getLastPosts(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'smile_api_getlastPosts')), array (  '_controller' => 'Smile\\ApiBundle\\Controller\\PostsController::getLastPostsAction',  '_format' => 'json',));
+        }
+
         // smile_platform_homepage
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {

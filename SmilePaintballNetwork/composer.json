@@ -31,7 +31,8 @@
         "symfony/assetic-bundle": "^2.8",
         "leafo/scssphp": "~0.6",
         "patchwork/jsqueeze": "~1.0",
-        "friendsofsymfony/user-bundle": "dev-master"
+        "friendsofsymfony/user-bundle": "dev-master",
+        "friendsofsymfony/rest-bundle": "^2.0"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",

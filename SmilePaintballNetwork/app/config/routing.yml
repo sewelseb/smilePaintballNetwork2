@@ -1,3 +1,8 @@
+smile_api:
+    type : rest
+    resource: "@SmileApiBundle/Resources/config/routing.yml"
+    prefix:   /api
+
 
 
 smile_platform_homepage:

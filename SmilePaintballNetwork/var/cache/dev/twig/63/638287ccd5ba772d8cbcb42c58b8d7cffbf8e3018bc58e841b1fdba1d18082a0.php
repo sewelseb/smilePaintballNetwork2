@@ -15,8 +15,8 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_fd563c34dbb3abdec43d1d5b9e5e454bccb06d9d3c5fee1dddbff325b030fddc = $this->env->getExtension("native_profiler");
-        $__internal_fd563c34dbb3abdec43d1d5b9e5e454bccb06d9d3c5fee1dddbff325b030fddc->enter($__internal_fd563c34dbb3abdec43d1d5b9e5e454bccb06d9d3c5fee1dddbff325b030fddc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
+        $__internal_6f3c9b990f211664cb68bae4a02449108ffe1a4277d4850bd0494c1bb9708a29 = $this->env->getExtension("native_profiler");
+        $__internal_6f3c9b990f211664cb68bae4a02449108ffe1a4277d4850bd0494c1bb9708a29->enter($__internal_6f3c9b990f211664cb68bae4a02449108ffe1a4277d4850bd0494c1bb9708a29_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
 
         // line 1
         echo "<!-- Navigation -->
@@ -60,15 +60,16 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
             <div class=\"modal-content\">
                 <div class=\"modal-header\">
                     <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>
-                    <h4 class=\"modal-title\" id=\"myModalLabel\">NewPost</h4>
+                    <h4 class=\"modal-title\" id=\"myModalLabel\">+ New Post</h4>
                 </div>
                 <div class=\"modal-body\">
                     ";
             // line 39
             echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("SmilePlatformBundle:Post:addNew", array("request" => $this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()))));
             echo "
+                    <div class=\"clearfix\"></div>
                 </div>
-
+                <div class=\"clearfix\"></div>
             </div>
         </div>
     </div>
@@ -76,7 +77,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 
 ";
         } else {
-            // line 48
+            // line 49
             echo "    <nav class=\"navbar navbar-inverse navbar-fixed-top\" role=\"navigation\">
         <div class=\"container\">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -117,7 +118,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
                 </div>
                 <div class=\"modal-body\">
                     ";
-            // line 87
+            // line 88
             echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("FOSUserBundle:Security:login"));
             echo "
                 </div>
@@ -135,7 +136,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
                 </div>
                 <div class=\"modal-body\">
                     ";
-            // line 102
+            // line 103
             echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("SmileUserBundle:Registration:register", array("originalRequest" => $this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()))));
             echo "
                     <div class=\"clearfix\"></div>
@@ -153,7 +154,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 ";
         }
         
-        $__internal_fd563c34dbb3abdec43d1d5b9e5e454bccb06d9d3c5fee1dddbff325b030fddc->leave($__internal_fd563c34dbb3abdec43d1d5b9e5e454bccb06d9d3c5fee1dddbff325b030fddc_prof);
+        $__internal_6f3c9b990f211664cb68bae4a02449108ffe1a4277d4850bd0494c1bb9708a29->leave($__internal_6f3c9b990f211664cb68bae4a02449108ffe1a4277d4850bd0494c1bb9708a29_prof);
 
     }
 
@@ -169,7 +170,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 
     public function getDebugInfo()
     {
-        return array (  139 => 102,  121 => 87,  80 => 48,  68 => 39,  48 => 22,  27 => 3,  25 => 2,  22 => 1,);
+        return array (  140 => 103,  122 => 88,  81 => 49,  68 => 39,  48 => 22,  27 => 3,  25 => 2,  22 => 1,);
     }
 }
 /* <!-- Navigation -->*/
@@ -207,12 +208,13 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 /*             <div class="modal-content">*/
 /*                 <div class="modal-header">*/
 /*                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>*/
-/*                     <h4 class="modal-title" id="myModalLabel">NewPost</h4>*/
+/*                     <h4 class="modal-title" id="myModalLabel">+ New Post</h4>*/
 /*                 </div>*/
 /*                 <div class="modal-body">*/
 /*                     {{ render(controller('SmilePlatformBundle:Post:addNew', {'request': app.request})) }}*/
+/*                     <div class="clearfix"></div>*/
 /*                 </div>*/
-/* */
+/*                 <div class="clearfix"></div>*/
 /*             </div>*/
 /*         </div>*/
 /*     </div>*/
