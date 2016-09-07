@@ -1,0 +1,4 @@
+services:
+#    smile_platform.example:
+#        class: Smile\PlatformBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

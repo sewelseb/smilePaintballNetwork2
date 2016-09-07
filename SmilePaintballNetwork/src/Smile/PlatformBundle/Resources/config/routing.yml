@@ -1,0 +1,4 @@
+
+smile_platform_homepage_co:
+    path:     /co
+    defaults: { _controller: SmilePlatformBundle:Default:index }
