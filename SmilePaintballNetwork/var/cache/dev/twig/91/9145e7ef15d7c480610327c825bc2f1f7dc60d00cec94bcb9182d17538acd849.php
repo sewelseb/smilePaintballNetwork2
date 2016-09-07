@@ -15,8 +15,8 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_128c6f41cc4db60a446e8056dc033f9c83c39eb696a283890849305b83c1487d = $this->env->getExtension("native_profiler");
-        $__internal_128c6f41cc4db60a446e8056dc033f9c83c39eb696a283890849305b83c1487d->enter($__internal_128c6f41cc4db60a446e8056dc033f9c83c39eb696a283890849305b83c1487d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
+        $__internal_bed18b035553a4223a3afe7b0144e8843231636af5523286bbec1deb795443e9 = $this->env->getExtension("native_profiler");
+        $__internal_bed18b035553a4223a3afe7b0144e8843231636af5523286bbec1deb795443e9->enter($__internal_bed18b035553a4223a3afe7b0144e8843231636af5523286bbec1deb795443e9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
 
         // line 1
         echo "<!-- Project One -->
@@ -33,7 +33,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
     <div id=\"contentAllPosts\" hidden>
         <div ng-repeat=\"post in posts | orderBy: '-creationTime'\">
             ";
-        // line 41
+        // line 52
         echo "
                 <div class=\"row\" >
                     <div class=\"col-md-7\">
@@ -59,8 +59,19 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
                     </div>
                     <div class=\"col-md-5\">
                         <h3>{{ post.title }}</h3>
-                        <h4>Subheading</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+                        <h4>{{ post.event }}</h4>
+                        <p>
+                           <div class=\"col-md-6\">
+                                <a href=\"\">
+                                    <span ng-click=\"upvote({{post.id}})\">Upvote</span>
+                                </a>
+                            </div>
+                            <div class=\"col-md-6\">
+                                <a href=\"\">
+                                    <span ng-click=\"downvote({{post.id}})\">Downvote</span>
+                                </a>
+                            </div>
+                        </p>
                         <a class=\"btn btn-primary\" href=\"#\">View Project <span class=\"glyphicon glyphicon-chevron-right\"></span></a>
                     </div>
                 </div>
@@ -77,7 +88,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
 ";
         
-        $__internal_128c6f41cc4db60a446e8056dc033f9c83c39eb696a283890849305b83c1487d->leave($__internal_128c6f41cc4db60a446e8056dc033f9c83c39eb696a283890849305b83c1487d_prof);
+        $__internal_bed18b035553a4223a3afe7b0144e8843231636af5523286bbec1deb795443e9->leave($__internal_bed18b035553a4223a3afe7b0144e8843231636af5523286bbec1deb795443e9_prof);
 
     }
 
@@ -93,7 +104,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
     public function getDebugInfo()
     {
-        return array (  37 => 41,  26 => 3,  22 => 1,);
+        return array (  37 => 52,  26 => 3,  22 => 1,);
     }
 }
 /* <!-- Project One -->*/
@@ -131,8 +142,19 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 /*                     </div>*/
 /*                     <div class="col-md-5">*/
 /*                         <h3>{{ post.title }}</h3>*/
-/*                         <h4>Subheading</h4>*/
-/*                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>*/
+/*                         <h4>{{ post.event }}</h4>*/
+/*                         <p>*/
+/*                            <div class="col-md-6">*/
+/*                                 <a href="">*/
+/*                                     <span ng-click="upvote({{post.id}})">Upvote</span>*/
+/*                                 </a>*/
+/*                             </div>*/
+/*                             <div class="col-md-6">*/
+/*                                 <a href="">*/
+/*                                     <span ng-click="downvote({{post.id}})">Downvote</span>*/
+/*                                 </a>*/
+/*                             </div>*/
+/*                         </p>*/
 /*                         <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>*/
 /*                     </div>*/
 /*                 </div>*/

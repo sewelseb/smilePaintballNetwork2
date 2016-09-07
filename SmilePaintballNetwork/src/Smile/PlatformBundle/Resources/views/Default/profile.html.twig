@@ -50,6 +50,14 @@
         {{ user.lastname }}
     {% endif %}<br/>
 
+    <H3>Team:</H3>
+    {%  if user.teamName %}
+        {{ user.teamName }}<br/>
+    {%  endif %}
+    {%  if user.teamPicture  %}
+        <img class="img-responsive" src="{{user.teamPicture.uploadDir}}/{{user.teamPicture.url}}" alt="{{ user.teamName }}">
+    {%  endif %}
+
     <div>
         {% if user.id == app.user.id %}
             <button class="btn btn-primary" data-toggle="modal" data-target="#editProfileModal">Edit my profile</button>

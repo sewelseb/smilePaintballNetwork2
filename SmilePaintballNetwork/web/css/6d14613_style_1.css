@@ -15,3 +15,18 @@ footer {
 .yellow-text{
     color: #f2c716;
 }
+
+.btn{
+    border-radius: 0px;
+}
+
+.btn-primary{
+    border-radius: 0px;
+    background-color: #555c30;
+    background-image: none;
+    color: #f2c716;
+}
+
+.logo{
+    height: 1.5em;
+}

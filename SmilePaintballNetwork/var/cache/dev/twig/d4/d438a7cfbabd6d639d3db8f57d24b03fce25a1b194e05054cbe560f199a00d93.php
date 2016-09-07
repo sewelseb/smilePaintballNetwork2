@@ -23,34 +23,34 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_3b4e9cd3d523f2abdb5a98bc83724b07467f90869579502263dc66e5efa9d943 = $this->env->getExtension("native_profiler");
-        $__internal_3b4e9cd3d523f2abdb5a98bc83724b07467f90869579502263dc66e5efa9d943->enter($__internal_3b4e9cd3d523f2abdb5a98bc83724b07467f90869579502263dc66e5efa9d943_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:profile.html.twig"));
+        $__internal_c596f26a123602908909ce0d016fcfe31f2bbcaf0d1897404b49b418b783270a = $this->env->getExtension("native_profiler");
+        $__internal_c596f26a123602908909ce0d016fcfe31f2bbcaf0d1897404b49b418b783270a->enter($__internal_c596f26a123602908909ce0d016fcfe31f2bbcaf0d1897404b49b418b783270a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:profile.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_3b4e9cd3d523f2abdb5a98bc83724b07467f90869579502263dc66e5efa9d943->leave($__internal_3b4e9cd3d523f2abdb5a98bc83724b07467f90869579502263dc66e5efa9d943_prof);
+        $__internal_c596f26a123602908909ce0d016fcfe31f2bbcaf0d1897404b49b418b783270a->leave($__internal_c596f26a123602908909ce0d016fcfe31f2bbcaf0d1897404b49b418b783270a_prof);
 
     }
 
     // line 3
     public function block_pageHeader($context, array $blocks = array())
     {
-        $__internal_47ca0dfbd4a51f634d8001bf5ddd0d1092eef62c2436170ce47d7759c1e09420 = $this->env->getExtension("native_profiler");
-        $__internal_47ca0dfbd4a51f634d8001bf5ddd0d1092eef62c2436170ce47d7759c1e09420->enter($__internal_47ca0dfbd4a51f634d8001bf5ddd0d1092eef62c2436170ce47d7759c1e09420_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
+        $__internal_b856486ffa704b287e29f866bddeac9c7467922ab128608ad1a15c89f021071d = $this->env->getExtension("native_profiler");
+        $__internal_b856486ffa704b287e29f866bddeac9c7467922ab128608ad1a15c89f021071d->enter($__internal_b856486ffa704b287e29f866bddeac9c7467922ab128608ad1a15c89f021071d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
 
         // line 4
         echo "
 ";
         
-        $__internal_47ca0dfbd4a51f634d8001bf5ddd0d1092eef62c2436170ce47d7759c1e09420->leave($__internal_47ca0dfbd4a51f634d8001bf5ddd0d1092eef62c2436170ce47d7759c1e09420_prof);
+        $__internal_b856486ffa704b287e29f866bddeac9c7467922ab128608ad1a15c89f021071d->leave($__internal_b856486ffa704b287e29f866bddeac9c7467922ab128608ad1a15c89f021071d_prof);
 
     }
 
     // line 7
     public function block_leftCollumn($context, array $blocks = array())
     {
-        $__internal_d6998e03c31fdac48eaa74d8390da901f1c5884359546fbddddef20a5b6a3ea3 = $this->env->getExtension("native_profiler");
-        $__internal_d6998e03c31fdac48eaa74d8390da901f1c5884359546fbddddef20a5b6a3ea3->enter($__internal_d6998e03c31fdac48eaa74d8390da901f1c5884359546fbddddef20a5b6a3ea3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
+        $__internal_e1da9bbb481fa50ecd66a51e829b91bc1dd611954efb43f87977870d19306990 = $this->env->getExtension("native_profiler");
+        $__internal_e1da9bbb481fa50ecd66a51e829b91bc1dd611954efb43f87977870d19306990->enter($__internal_e1da9bbb481fa50ecd66a51e829b91bc1dd611954efb43f87977870d19306990_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
 
         // line 8
         echo "    ";
@@ -131,15 +131,15 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['post'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         
-        $__internal_d6998e03c31fdac48eaa74d8390da901f1c5884359546fbddddef20a5b6a3ea3->leave($__internal_d6998e03c31fdac48eaa74d8390da901f1c5884359546fbddddef20a5b6a3ea3_prof);
+        $__internal_e1da9bbb481fa50ecd66a51e829b91bc1dd611954efb43f87977870d19306990->leave($__internal_e1da9bbb481fa50ecd66a51e829b91bc1dd611954efb43f87977870d19306990_prof);
 
     }
 
     // line 39
     public function block_rightCollumn($context, array $blocks = array())
     {
-        $__internal_53cee420785af3dd356b4afe14ee7b8f7fd48f6d29d9087f6d484583fec8e884 = $this->env->getExtension("native_profiler");
-        $__internal_53cee420785af3dd356b4afe14ee7b8f7fd48f6d29d9087f6d484583fec8e884->enter($__internal_53cee420785af3dd356b4afe14ee7b8f7fd48f6d29d9087f6d484583fec8e884_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
+        $__internal_924ecf89c8996ea57619ba1038fda0e2bc5596d479a53b70d811361a6e237dcd = $this->env->getExtension("native_profiler");
+        $__internal_924ecf89c8996ea57619ba1038fda0e2bc5596d479a53b70d811361a6e237dcd->enter($__internal_924ecf89c8996ea57619ba1038fda0e2bc5596d479a53b70d811361a6e237dcd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
 
         // line 40
         echo "    ";
@@ -183,15 +183,40 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
         // line 51
         echo "<br/>
 
+    <H3>Team:</H3>
+    ";
+        // line 54
+        if ($this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "teamName", array())) {
+            // line 55
+            echo "        ";
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "teamName", array()), "html", null, true);
+            echo "<br/>
+    ";
+        }
+        // line 57
+        echo "    ";
+        if ($this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "teamPicture", array())) {
+            // line 58
+            echo "        <img class=\"img-responsive\" src=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "teamPicture", array()), "uploadDir", array()), "html", null, true);
+            echo "/";
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "teamPicture", array()), "url", array()), "html", null, true);
+            echo "\" alt=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "teamName", array()), "html", null, true);
+            echo "\">
+    ";
+        }
+        // line 60
+        echo "
     <div>
         ";
-        // line 54
+        // line 62
         if (($this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "id", array()) == $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()), "id", array()))) {
-            // line 55
+            // line 63
             echo "            <button class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#editProfileModal\">Edit my profile</button>
         ";
         }
-        // line 57
+        // line 65
         echo "    </div>
 
     <div class=\"modal fade\" id=\"editProfileModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"loginModal\">
@@ -203,7 +228,7 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
                 </div>
                 <div class=\"modal-body\">
                     ";
-        // line 67
+        // line 75
         echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("SmilePlatformBundle:User:editMyProfile", array("request" => $this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()))));
         echo "
                     <div class=\"clearfix\"></div>
@@ -215,7 +240,7 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
 
 ";
         
-        $__internal_53cee420785af3dd356b4afe14ee7b8f7fd48f6d29d9087f6d484583fec8e884->leave($__internal_53cee420785af3dd356b4afe14ee7b8f7fd48f6d29d9087f6d484583fec8e884_prof);
+        $__internal_924ecf89c8996ea57619ba1038fda0e2bc5596d479a53b70d811361a6e237dcd->leave($__internal_924ecf89c8996ea57619ba1038fda0e2bc5596d479a53b70d811361a6e237dcd_prof);
 
     }
 
@@ -231,7 +256,7 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
 
     public function getDebugInfo()
     {
-        return array (  207 => 67,  195 => 57,  191 => 55,  189 => 54,  184 => 51,  178 => 50,  175 => 49,  169 => 47,  167 => 46,  162 => 45,  158 => 43,  148 => 41,  145 => 40,  139 => 39,  120 => 29,  116 => 27,  108 => 25,  105 => 24,  99 => 22,  96 => 21,  90 => 19,  87 => 18,  76 => 15,  73 => 14,  67 => 12,  65 => 11,  61 => 9,  56 => 8,  50 => 7,  42 => 4,  36 => 3,  11 => 1,);
+        return array (  232 => 75,  220 => 65,  216 => 63,  214 => 62,  210 => 60,  200 => 58,  197 => 57,  191 => 55,  189 => 54,  184 => 51,  178 => 50,  175 => 49,  169 => 47,  167 => 46,  162 => 45,  158 => 43,  148 => 41,  145 => 40,  139 => 39,  120 => 29,  116 => 27,  108 => 25,  105 => 24,  99 => 22,  96 => 21,  90 => 19,  87 => 18,  76 => 15,  73 => 14,  67 => 12,  65 => 11,  61 => 9,  56 => 8,  50 => 7,  42 => 4,  36 => 3,  11 => 1,);
     }
 }
 /* {% extends "SmilePlatformBundle::Default/layout.html.twig" %}*/
@@ -285,6 +310,14 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
 /*     {% if user.lastname %}*/
 /*         {{ user.lastname }}*/
 /*     {% endif %}<br/>*/
+/* */
+/*     <H3>Team:</H3>*/
+/*     {%  if user.teamName %}*/
+/*         {{ user.teamName }}<br/>*/
+/*     {%  endif %}*/
+/*     {%  if user.teamPicture  %}*/
+/*         <img class="img-responsive" src="{{user.teamPicture.uploadDir}}/{{user.teamPicture.url}}" alt="{{ user.teamName }}">*/
+/*     {%  endif %}*/
 /* */
 /*     <div>*/
 /*         {% if user.id == app.user.id %}*/

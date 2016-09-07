@@ -33,8 +33,19 @@
                     </div>
                     <div class="col-md-5">
                         <h3>{{ post.title }}</h3>
-                        <h4>Subheading</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+                        <h4>{{ post.event }}</h4>
+                        <p>
+                           <div class="col-md-6">
+                                <a href="">
+                                    <span ng-click="upvote({{post.id}})">Upvote</span>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="">
+                                    <span ng-click="downvote({{post.id}})">Downvote</span>
+                                </a>
+                            </div>
+                        </p>
                         <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
                     </div>
                 </div>

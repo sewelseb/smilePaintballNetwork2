@@ -15,8 +15,8 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_615b01c4a7bd44e01f25a217011e785849558f32f349144050a915174ef03d59 = $this->env->getExtension("native_profiler");
-        $__internal_615b01c4a7bd44e01f25a217011e785849558f32f349144050a915174ef03d59->enter($__internal_615b01c4a7bd44e01f25a217011e785849558f32f349144050a915174ef03d59_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
+        $__internal_31403fefe81d50f3183ee5b1e1eada2a7ae0029d2f5d10a3200d1ab9da333746 = $this->env->getExtension("native_profiler");
+        $__internal_31403fefe81d50f3183ee5b1e1eada2a7ae0029d2f5d10a3200d1ab9da333746->enter($__internal_31403fefe81d50f3183ee5b1e1eada2a7ae0029d2f5d10a3200d1ab9da333746_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
 
         // line 1
         echo "<!-- Navigation -->
@@ -34,7 +34,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
                     <span class=\"icon-bar\"></span>
                     <span class=\"icon-bar\"></span>
                 </button>
-                <a class=\"navbar-brand yellow-text\" href=\"#\"><span class=\"yellow-text\">Smile Paintball Network</span></a>
+                <a class=\"navbar-brand yellow-text\" href=\"#\"><span class=\"yellow-text\"><img class=\"logo\" src=\"/images/logo.png\" alt=\"SMILE\"></span></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class=\"collapse navbar-collapse pull-right\" id=\"bs-example-navbar-collapse-1\">
@@ -160,7 +160,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 ";
         }
         
-        $__internal_615b01c4a7bd44e01f25a217011e785849558f32f349144050a915174ef03d59->leave($__internal_615b01c4a7bd44e01f25a217011e785849558f32f349144050a915174ef03d59_prof);
+        $__internal_31403fefe81d50f3183ee5b1e1eada2a7ae0029d2f5d10a3200d1ab9da333746->leave($__internal_31403fefe81d50f3183ee5b1e1eada2a7ae0029d2f5d10a3200d1ab9da333746_prof);
 
     }
 
@@ -191,7 +191,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 /*                     <span class="icon-bar"></span>*/
 /*                     <span class="icon-bar"></span>*/
 /*                 </button>*/
-/*                 <a class="navbar-brand yellow-text" href="#"><span class="yellow-text">Smile Paintball Network</span></a>*/
+/*                 <a class="navbar-brand yellow-text" href="#"><span class="yellow-text"><img class="logo" src="/images/logo.png" alt="SMILE"></span></a>*/
 /*             </div>*/
 /*             <!-- Collect the nav links, forms, and other content for toggling -->*/
 /*             <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">*/
