@@ -18,10 +18,14 @@ class PostsController extends FOSRestController
 {
     public function getLastPostsAction()
     {
-        $posts=new Post();
-        $posts->setUser($this->getUser());
 
-        $view = $this->view("test", 200)
+        $postRepo = $this
+            ->getDoctrine()
+            ->getManager()
+            ->getRepository('SmilePlatformBundle:Post');
+        $posts = $postRepo->getLastXPosts();
+
+        $view = $this->view($posts, 200)
             ->setTemplate("SmileApiBundle:Default:index.html.twig")
             ->setTemplateVar('posts')
         ;

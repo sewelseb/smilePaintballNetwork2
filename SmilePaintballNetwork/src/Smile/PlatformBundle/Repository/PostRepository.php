@@ -10,4 +10,15 @@ namespace Smile\PlatformBundle\Repository;
  */
 class PostRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function getLastXPosts($numberOfPosts = 10)
+    {
+        $qb = $this->createQueryBuilder('a');
+
+        $qb->orderBy('a.creationTime', 'DESC')
+            ->setMaxResults($numberOfPosts);
+        return $qb
+            ->getQuery()
+            ->getResult()
+            ;
+    }
 }
