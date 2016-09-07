@@ -47,3 +47,19 @@ Temporary Items
 .apdisk
 
 ./smilePaintballNetwork2/SmilePaintballNetwork/var/cache/*
+
+/smilePaintballNetwork2/SmilePaintballNetwork/web/uploads/*
+/smilePaintballNetwork2/SmilePaintballNetwork/app/bootstrap.php.cache
+/smilePaintballNetwork2/SmilePaintballNetwork/app/cache/*
+!smilePaintballNetwork2/SmilePaintballNetwork/app/cache/.gitkeep
+/smilePaintballNetwork2/SmilePaintballNetwork/app/config/parameters.yml
+/bsmilePaintballNetwork2/SmilePaintballNetwork/app/config/parameters.yml.dist
+/smilePaintballNetwork2/SmilePaintballNetwork/app/logs/*
+!smilePaintballNetwork2/SmilePaintballNetwork/app/logs/.gitkeep
+/smilePaintballNetwork2/SmilePaintballNetwork/app/phpunit.xml
+/smilePaintballNetwork2/SmilePaintballNetwork/bin/
+/smilePaintballNetwork2/SmilePaintballNetwork/composer.phar
+/smilePaintballNetwork2/SmilePaintballNetwork/vendor/
+/smilePaintballNetwork2/SmilePaintballNetwork/web/bundles/
+/idea/workspace.xml
+/smilePaintballNetwork2/SmilePaintballNetwork/web/js/*

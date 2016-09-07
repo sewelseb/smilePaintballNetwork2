@@ -4,5 +4,7 @@
  */
 
 myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope) {
+    alert('test');
+
 
 });

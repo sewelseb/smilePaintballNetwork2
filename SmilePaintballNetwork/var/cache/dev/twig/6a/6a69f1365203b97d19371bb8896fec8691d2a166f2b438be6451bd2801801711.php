@@ -15,8 +15,8 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_99c90a44d6ea1f50f80a887e933ce99d4b81b519d1a4b6b4c90182e849c8d1dc = $this->env->getExtension("native_profiler");
-        $__internal_99c90a44d6ea1f50f80a887e933ce99d4b81b519d1a4b6b4c90182e849c8d1dc->enter($__internal_99c90a44d6ea1f50f80a887e933ce99d4b81b519d1a4b6b4c90182e849c8d1dc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/layout.html.twig"));
+        $__internal_0c5d98ea2ee880cb906b12a17dfab352dbcea5fa48dd309d309b4d6f3eeb29e3 = $this->env->getExtension("native_profiler");
+        $__internal_0c5d98ea2ee880cb906b12a17dfab352dbcea5fa48dd309d309b4d6f3eeb29e3->enter($__internal_0c5d98ea2ee880cb906b12a17dfab352dbcea5fa48dd309d309b4d6f3eeb29e3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/layout.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -81,22 +81,22 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
     ";
         // line 42
         if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
-            // asset "3bded0f_0"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_3bded0f_0") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/3bded0f_app_1.js");
+            // asset "63a3082_0"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_63a3082_0") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/63a3082_app_1.js");
             // line 49
             echo "    <script type=\"text/javascript\" src=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"></script>
     ";
-            // asset "3bded0f_1"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_3bded0f_1") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/3bded0f_allPosts_2.js");
+            // asset "63a3082_1"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_63a3082_1") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/63a3082_allPostsCtrl_2.js");
             echo "    <script type=\"text/javascript\" src=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"></script>
     ";
         } else {
-            // asset "3bded0f"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_3bded0f") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/3bded0f.js");
+            // asset "63a3082"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_63a3082") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/63a3082.js");
             echo "    <script type=\"text/javascript\" src=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"></script>
@@ -107,7 +107,7 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
         echo "
 </head>
 
-<body>
+<body ng-app=\"smile\">
 
 ";
         // line 56
@@ -128,125 +128,12 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
     <!-- /.row -->
     <div class=\"col-md-9\">
 
-        <!-- Project One -->
-        <div class=\"row\">
-            <div class=\"col-md-7\">
-                <a href=\"#\">
-                    <img class=\"img-responsive\" src=\"http://placehold.it/700x300\" alt=\"\">
-                </a>
-            </div>
-            <div class=\"col-md-5\">
-                <h3>Project One</h3>
-                <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-                <a class=\"btn btn-primary\" href=\"#\">View Project <span class=\"glyphicon glyphicon-chevron-right\"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
+        ";
+        // line 72
+        echo twig_include($this->env, $context, "SmilePlatformBundle:Default:Blocs/allPosts.html.twig");
+        echo "
 
-        <hr>
 
-        <!-- Project Two -->
-        <div class=\"row\">
-            <div class=\"col-md-7\">
-                <a href=\"#\">
-                    <img class=\"img-responsive\" src=\"http://placehold.it/700x300\" alt=\"\">
-                </a>
-            </div>
-            <div class=\"col-md-5\">
-                <h3>Project Two</h3>
-                <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-                <a class=\"btn btn-primary\" href=\"#\">View Project <span class=\"glyphicon glyphicon-chevron-right\"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Three -->
-        <div class=\"row\">
-            <div class=\"col-md-7\">
-                <a href=\"#\">
-                    <img class=\"img-responsive\" src=\"http://placehold.it/700x300\" alt=\"\">
-                </a>
-            </div>
-            <div class=\"col-md-5\">
-                <h3>Project Three</h3>
-                <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-                <a class=\"btn btn-primary\" href=\"#\">View Project <span class=\"glyphicon glyphicon-chevron-right\"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Four -->
-        <div class=\"row\">
-
-            <div class=\"col-md-7\">
-                <a href=\"#\">
-                    <img class=\"img-responsive\" src=\"http://placehold.it/700x300\" alt=\"\">
-                </a>
-            </div>
-            <div class=\"col-md-5\">
-                <h3>Project Four</h3>
-                <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
-                <a class=\"btn btn-primary\" href=\"#\">View Project <span class=\"glyphicon glyphicon-chevron-right\"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Five -->
-        <div class=\"row\">
-            <div class=\"col-md-7\">
-                <a href=\"#\">
-                    <img class=\"img-responsive\" src=\"http://placehold.it/700x300\" alt=\"\">
-                </a>
-            </div>
-            <div class=\"col-md-5\">
-                <h3>Project Five</h3>
-                <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam facilis dolorum.</p>
-                <a class=\"btn btn-primary\" href=\"#\">View Project <span class=\"glyphicon glyphicon-chevron-right\"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Pagination -->
-        <div class=\"row text-center\">
-            <div class=\"col-lg-12\">
-                <ul class=\"pagination\">
-                    <li>
-                        <a href=\"#\">&laquo;</a>
-                    </li>
-                    <li class=\"active\">
-                        <a href=\"#\">1</a>
-                    </li>
-                    <li>
-                        <a href=\"#\">2</a>
-                    </li>
-                    <li>
-                        <a href=\"#\">3</a>
-                    </li>
-                    <li>
-                        <a href=\"#\">4</a>
-                    </li>
-                    <li>
-                        <a href=\"#\">5</a>
-                    </li>
-                    <li>
-                        <a href=\"#\">&raquo;</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </div>
     <div class=\"col-md-3\">
         <h3>Project One</h3>
@@ -281,7 +168,7 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 
 </html>";
         
-        $__internal_99c90a44d6ea1f50f80a887e933ce99d4b81b519d1a4b6b4c90182e849c8d1dc->leave($__internal_99c90a44d6ea1f50f80a887e933ce99d4b81b519d1a4b6b4c90182e849c8d1dc_prof);
+        $__internal_0c5d98ea2ee880cb906b12a17dfab352dbcea5fa48dd309d309b4d6f3eeb29e3->leave($__internal_0c5d98ea2ee880cb906b12a17dfab352dbcea5fa48dd309d309b4d6f3eeb29e3_prof);
 
     }
 
@@ -297,7 +184,7 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 
     public function getDebugInfo()
     {
-        return array (  116 => 57,  114 => 56,  107 => 51,  87 => 49,  83 => 42,  71 => 32,  65 => 30,  62 => 29,  55 => 30,  52 => 29,  48 => 25,  22 => 1,);
+        return array (  133 => 72,  116 => 57,  114 => 56,  107 => 51,  87 => 49,  83 => 42,  71 => 32,  65 => 30,  62 => 29,  55 => 30,  52 => 29,  48 => 25,  22 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -343,7 +230,7 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 /*     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-sanitize.min.js"></script>*/
 /*     {% javascripts*/
 /*     '@SmilePlatformBundle/public/js/Angular/app.js' filter='cssrewrite'*/
-/*     '@SmilePlatformBundle/public/js/Angular/Controllers/allPosts.js' filter='cssrewrite'*/
+/*     '@SmilePlatformBundle/public/js/Angular/Controllers/allPostsCtrl.js' filter='cssrewrite'*/
 /* */
 /* */
 /* */
@@ -353,7 +240,7 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 /* */
 /* </head>*/
 /* */
-/* <body>*/
+/* <body ng-app="smile">*/
 /* */
 /* {% include 'SmilePlatformBundle::Default/Blocs/navbar.html.twig' %}*/
 /* */
@@ -371,125 +258,9 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 /*     <!-- /.row -->*/
 /*     <div class="col-md-9">*/
 /* */
-/*         <!-- Project One -->*/
-/*         <div class="row">*/
-/*             <div class="col-md-7">*/
-/*                 <a href="#">*/
-/*                     <img class="img-responsive" src="http://placehold.it/700x300" alt="">*/
-/*                 </a>*/
-/*             </div>*/
-/*             <div class="col-md-5">*/
-/*                 <h3>Project One</h3>*/
-/*                 <h4>Subheading</h4>*/
-/*                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>*/
-/*                 <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>*/
-/*             </div>*/
-/*         </div>*/
-/*         <!-- /.row -->*/
+/*         {{ include ('SmilePlatformBundle:Default:Blocs/allPosts.html.twig') }}*/
 /* */
-/*         <hr>*/
 /* */
-/*         <!-- Project Two -->*/
-/*         <div class="row">*/
-/*             <div class="col-md-7">*/
-/*                 <a href="#">*/
-/*                     <img class="img-responsive" src="http://placehold.it/700x300" alt="">*/
-/*                 </a>*/
-/*             </div>*/
-/*             <div class="col-md-5">*/
-/*                 <h3>Project Two</h3>*/
-/*                 <h4>Subheading</h4>*/
-/*                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>*/
-/*                 <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>*/
-/*             </div>*/
-/*         </div>*/
-/*         <!-- /.row -->*/
-/* */
-/*         <hr>*/
-/* */
-/*         <!-- Project Three -->*/
-/*         <div class="row">*/
-/*             <div class="col-md-7">*/
-/*                 <a href="#">*/
-/*                     <img class="img-responsive" src="http://placehold.it/700x300" alt="">*/
-/*                 </a>*/
-/*             </div>*/
-/*             <div class="col-md-5">*/
-/*                 <h3>Project Three</h3>*/
-/*                 <h4>Subheading</h4>*/
-/*                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>*/
-/*                 <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>*/
-/*             </div>*/
-/*         </div>*/
-/*         <!-- /.row -->*/
-/* */
-/*         <hr>*/
-/* */
-/*         <!-- Project Four -->*/
-/*         <div class="row">*/
-/* */
-/*             <div class="col-md-7">*/
-/*                 <a href="#">*/
-/*                     <img class="img-responsive" src="http://placehold.it/700x300" alt="">*/
-/*                 </a>*/
-/*             </div>*/
-/*             <div class="col-md-5">*/
-/*                 <h3>Project Four</h3>*/
-/*                 <h4>Subheading</h4>*/
-/*                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>*/
-/*                 <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>*/
-/*             </div>*/
-/*         </div>*/
-/*         <!-- /.row -->*/
-/* */
-/*         <hr>*/
-/* */
-/*         <!-- Project Five -->*/
-/*         <div class="row">*/
-/*             <div class="col-md-7">*/
-/*                 <a href="#">*/
-/*                     <img class="img-responsive" src="http://placehold.it/700x300" alt="">*/
-/*                 </a>*/
-/*             </div>*/
-/*             <div class="col-md-5">*/
-/*                 <h3>Project Five</h3>*/
-/*                 <h4>Subheading</h4>*/
-/*                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam facilis dolorum.</p>*/
-/*                 <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>*/
-/*             </div>*/
-/*         </div>*/
-/*         <!-- /.row -->*/
-/* */
-/*         <hr>*/
-/* */
-/*         <!-- Pagination -->*/
-/*         <div class="row text-center">*/
-/*             <div class="col-lg-12">*/
-/*                 <ul class="pagination">*/
-/*                     <li>*/
-/*                         <a href="#">&laquo;</a>*/
-/*                     </li>*/
-/*                     <li class="active">*/
-/*                         <a href="#">1</a>*/
-/*                     </li>*/
-/*                     <li>*/
-/*                         <a href="#">2</a>*/
-/*                     </li>*/
-/*                     <li>*/
-/*                         <a href="#">3</a>*/
-/*                     </li>*/
-/*                     <li>*/
-/*                         <a href="#">4</a>*/
-/*                     </li>*/
-/*                     <li>*/
-/*                         <a href="#">5</a>*/
-/*                     </li>*/
-/*                     <li>*/
-/*                         <a href="#">&raquo;</a>*/
-/*                     </li>*/
-/*                 </ul>*/
-/*             </div>*/
-/*         </div>*/
 /*     </div>*/
 /*     <div class="col-md-3">*/
 /*         <h3>Project One</h3>*/

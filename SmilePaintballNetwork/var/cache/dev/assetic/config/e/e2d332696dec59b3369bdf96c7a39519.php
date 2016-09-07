@@ -23,12 +23,12 @@ return array (
       ),
     ),
   ),
-  '3bded0f' => 
+  '63a3082' => 
   array (
     0 => 
     array (
       0 => '@SmilePlatformBundle/public/js/Angular/app.js',
-      1 => '@SmilePlatformBundle/public/js/Angular/Controllers/allPosts.js',
+      1 => '@SmilePlatformBundle/public/js/Angular/Controllers/allPostsCtrl.js',
     ),
     1 => 
     array (
@@ -37,8 +37,8 @@ return array (
     ),
     2 => 
     array (
-      'output' => '_controller/js/3bded0f.js',
-      'name' => '3bded0f',
+      'output' => '_controller/js/63a3082.js',
+      'name' => '63a3082',
       'debug' => NULL,
       'combine' => NULL,
       'vars' => 
