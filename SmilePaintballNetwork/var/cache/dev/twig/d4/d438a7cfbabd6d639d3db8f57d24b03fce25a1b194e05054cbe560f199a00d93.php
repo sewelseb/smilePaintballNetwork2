@@ -23,34 +23,34 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_12af1d863ff31a41a843970130129b53aeeab97c1ea06c54d40b65d8cd878a16 = $this->env->getExtension("native_profiler");
-        $__internal_12af1d863ff31a41a843970130129b53aeeab97c1ea06c54d40b65d8cd878a16->enter($__internal_12af1d863ff31a41a843970130129b53aeeab97c1ea06c54d40b65d8cd878a16_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:profile.html.twig"));
+        $__internal_f4442f0a1083dd8798dbc6771e6d70a9f3cb5f53cece912093a0e7554200f2db = $this->env->getExtension("native_profiler");
+        $__internal_f4442f0a1083dd8798dbc6771e6d70a9f3cb5f53cece912093a0e7554200f2db->enter($__internal_f4442f0a1083dd8798dbc6771e6d70a9f3cb5f53cece912093a0e7554200f2db_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:profile.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_12af1d863ff31a41a843970130129b53aeeab97c1ea06c54d40b65d8cd878a16->leave($__internal_12af1d863ff31a41a843970130129b53aeeab97c1ea06c54d40b65d8cd878a16_prof);
+        $__internal_f4442f0a1083dd8798dbc6771e6d70a9f3cb5f53cece912093a0e7554200f2db->leave($__internal_f4442f0a1083dd8798dbc6771e6d70a9f3cb5f53cece912093a0e7554200f2db_prof);
 
     }
 
     // line 3
     public function block_pageHeader($context, array $blocks = array())
     {
-        $__internal_73299ca2fc7a7cb948944476e8a903987e099b2c5f9e22e6a02028e7181d5f9f = $this->env->getExtension("native_profiler");
-        $__internal_73299ca2fc7a7cb948944476e8a903987e099b2c5f9e22e6a02028e7181d5f9f->enter($__internal_73299ca2fc7a7cb948944476e8a903987e099b2c5f9e22e6a02028e7181d5f9f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
+        $__internal_b9fdf678e8dfc70a98e825560126ed8ef517f2359181c356b3d86ae607167b96 = $this->env->getExtension("native_profiler");
+        $__internal_b9fdf678e8dfc70a98e825560126ed8ef517f2359181c356b3d86ae607167b96->enter($__internal_b9fdf678e8dfc70a98e825560126ed8ef517f2359181c356b3d86ae607167b96_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
 
         // line 4
         echo "
 ";
         
-        $__internal_73299ca2fc7a7cb948944476e8a903987e099b2c5f9e22e6a02028e7181d5f9f->leave($__internal_73299ca2fc7a7cb948944476e8a903987e099b2c5f9e22e6a02028e7181d5f9f_prof);
+        $__internal_b9fdf678e8dfc70a98e825560126ed8ef517f2359181c356b3d86ae607167b96->leave($__internal_b9fdf678e8dfc70a98e825560126ed8ef517f2359181c356b3d86ae607167b96_prof);
 
     }
 
     // line 7
     public function block_leftCollumn($context, array $blocks = array())
     {
-        $__internal_29e436936865b074e399ba3f8ed503816a1caf074e8c336231fe1846362e9619 = $this->env->getExtension("native_profiler");
-        $__internal_29e436936865b074e399ba3f8ed503816a1caf074e8c336231fe1846362e9619->enter($__internal_29e436936865b074e399ba3f8ed503816a1caf074e8c336231fe1846362e9619_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
+        $__internal_d0ae6b22c79410b2dab9cbe22e1f6556baf8725423098570bf3f20f486d3a759 = $this->env->getExtension("native_profiler");
+        $__internal_d0ae6b22c79410b2dab9cbe22e1f6556baf8725423098570bf3f20f486d3a759->enter($__internal_d0ae6b22c79410b2dab9cbe22e1f6556baf8725423098570bf3f20f486d3a759_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
 
         // line 8
         echo "    ";
@@ -130,21 +130,60 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['post'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         
-        $__internal_29e436936865b074e399ba3f8ed503816a1caf074e8c336231fe1846362e9619->leave($__internal_29e436936865b074e399ba3f8ed503816a1caf074e8c336231fe1846362e9619_prof);
+        $__internal_d0ae6b22c79410b2dab9cbe22e1f6556baf8725423098570bf3f20f486d3a759->leave($__internal_d0ae6b22c79410b2dab9cbe22e1f6556baf8725423098570bf3f20f486d3a759_prof);
 
     }
 
     // line 39
     public function block_rightCollumn($context, array $blocks = array())
     {
-        $__internal_e22c018a2ed019fa10a1b30aff6afc555126f284e8c2544df5ee84a36143e21d = $this->env->getExtension("native_profiler");
-        $__internal_e22c018a2ed019fa10a1b30aff6afc555126f284e8c2544df5ee84a36143e21d->enter($__internal_e22c018a2ed019fa10a1b30aff6afc555126f284e8c2544df5ee84a36143e21d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
+        $__internal_b9fd6713b892e82c09a8598097968ada386a0a15b82ba4cfb6a878a5a114ee54 = $this->env->getExtension("native_profiler");
+        $__internal_b9fd6713b892e82c09a8598097968ada386a0a15b82ba4cfb6a878a5a114ee54->enter($__internal_b9fd6713b892e82c09a8598097968ada386a0a15b82ba4cfb6a878a5a114ee54_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
 
         // line 40
+        echo "    ";
+        if (($this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "picture", array()) != null)) {
+            // line 41
+            echo "
+    ";
+        }
+        // line 43
+        echo "    ";
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "username", array()), "html", null, true);
         echo "
+    <div>
+        ";
+        // line 45
+        if (($this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "id", array()) == $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()), "id", array()))) {
+            // line 46
+            echo "            <button class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#editProfileModal\">Edit my profile</button>
+        ";
+        }
+        // line 48
+        echo "    </div>
+
+    <div class=\"modal fade\" id=\"editProfileModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"loginModal\">
+        <div class=\"modal-dialog\" role=\"document\">
+            <div class=\"modal-content\">
+                <div class=\"modal-header\">
+                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>
+                    <h4 class=\"modal-title\" id=\"myModalLabel\">Edit profile</h4>
+                </div>
+                <div class=\"modal-body\">
+                    ";
+        // line 58
+        echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("SmilePlatformBundle:User:editMyProfile", array("request" => $this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()))));
+        echo "
+                    <div class=\"clearfix\"></div>
+                </div>
+                <div class=\"clearfix\"></div>
+            </div>
+        </div>
+    </div>
+
 ";
         
-        $__internal_e22c018a2ed019fa10a1b30aff6afc555126f284e8c2544df5ee84a36143e21d->leave($__internal_e22c018a2ed019fa10a1b30aff6afc555126f284e8c2544df5ee84a36143e21d_prof);
+        $__internal_b9fd6713b892e82c09a8598097968ada386a0a15b82ba4cfb6a878a5a114ee54->leave($__internal_b9fd6713b892e82c09a8598097968ada386a0a15b82ba4cfb6a878a5a114ee54_prof);
 
     }
 
@@ -160,7 +199,7 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
 
     public function getDebugInfo()
     {
-        return array (  144 => 40,  138 => 39,  119 => 29,  115 => 27,  108 => 25,  105 => 24,  99 => 22,  96 => 21,  90 => 19,  87 => 18,  76 => 15,  73 => 14,  67 => 12,  65 => 11,  61 => 9,  56 => 8,  50 => 7,  42 => 4,  36 => 3,  11 => 1,);
+        return array (  175 => 58,  163 => 48,  159 => 46,  157 => 45,  151 => 43,  147 => 41,  144 => 40,  138 => 39,  119 => 29,  115 => 27,  108 => 25,  105 => 24,  99 => 22,  96 => 21,  90 => 19,  87 => 18,  76 => 15,  73 => 14,  67 => 12,  65 => 11,  61 => 9,  56 => 8,  50 => 7,  42 => 4,  36 => 3,  11 => 1,);
     }
 }
 /* {% extends "SmilePlatformBundle::Default/layout.html.twig" %}*/
@@ -202,5 +241,30 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
 /* {% endblock %}*/
 /* */
 /* {% block rightCollumn %}*/
+/*     {% if user.picture != null %}*/
+/* */
+/*     {% endif %}*/
+/*     {{ user.username }}*/
+/*     <div>*/
+/*         {% if user.id == app.user.id %}*/
+/*             <button class="btn btn-primary" data-toggle="modal" data-target="#editProfileModal">Edit my profile</button>*/
+/*         {% endif %}*/
+/*     </div>*/
+/* */
+/*     <div class="modal fade" id="editProfileModal" tabindex="-1" role="dialog" aria-labelledby="loginModal">*/
+/*         <div class="modal-dialog" role="document">*/
+/*             <div class="modal-content">*/
+/*                 <div class="modal-header">*/
+/*                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>*/
+/*                     <h4 class="modal-title" id="myModalLabel">Edit profile</h4>*/
+/*                 </div>*/
+/*                 <div class="modal-body">*/
+/*                     {{ render(controller('SmilePlatformBundle:User:editMyProfile', {'request': app.request})) }}*/
+/*                     <div class="clearfix"></div>*/
+/*                 </div>*/
+/*                 <div class="clearfix"></div>*/
+/*             </div>*/
+/*         </div>*/
+/*     </div>*/
 /* */
 /* {% endblock %}*/

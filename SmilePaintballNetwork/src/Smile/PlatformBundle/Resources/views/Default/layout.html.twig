@@ -64,7 +64,7 @@
 {% include 'SmilePlatformBundle::Default/Blocs/navbar.html.twig' %}
 
 <!-- Page Content -->
-<div class="container" ng-app="smile">
+<div class="container" >
 
     <!-- Page Heading -->
     <div class="row">
@@ -77,7 +77,7 @@
         </div>
     </div>
     <!-- /.row -->
-    <div class="col-md-9" id="postsNews">
+    <div class="col-md-9" id="postsNews" ng-app="smile">
         {% block leftCollumn %}
             {{ include ('SmilePlatformBundle:Default:Blocs/allPosts.html.twig') }}
 

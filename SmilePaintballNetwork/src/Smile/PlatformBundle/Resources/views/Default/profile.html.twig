@@ -37,7 +37,30 @@
 {% endblock %}
 
 {% block rightCollumn %}
-    {% if user.profilePic %}
+    {% if user.picture != null %}
 
     {% endif %}
+    {{ user.username }}
+    <div>
+        {% if user.id == app.user.id %}
+            <button class="btn btn-primary" data-toggle="modal" data-target="#editProfileModal">Edit my profile</button>
+        {% endif %}
+    </div>
+
+    <div class="modal fade" id="editProfileModal" tabindex="-1" role="dialog" aria-labelledby="loginModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Edit profile</h4>
+                </div>
+                <div class="modal-body">
+                    {{ render(controller('SmilePlatformBundle:User:editMyProfile', {'request': app.request})) }}
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
 {% endblock %}

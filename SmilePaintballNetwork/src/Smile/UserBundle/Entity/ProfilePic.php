@@ -3,6 +3,8 @@
 namespace Smile\UserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * ProfilePic
@@ -165,6 +167,6 @@ class ProfilePic
         $this->picture = $picture;
     }
 
-    
+
 }
 
