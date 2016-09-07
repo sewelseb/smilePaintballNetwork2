@@ -49,6 +49,13 @@ class Post
     private $downvotes=0;
 
     /**
+     * @var integer
+     *
+     * @ORM\Column(name="comments", type="integer", nullable=true)
+     */
+    private $comments=0;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="event_name", type="string", length=255, nullable=true)
@@ -259,6 +266,22 @@ class Post
     public function setUrl($url)
     {
         $this->url = $url;
+    }
+
+    /**
+     * @return int
+     */
+    public function getComments()
+    {
+        return $this->comments;
+    }
+
+    /**
+     * @param int $comments
+     */
+    public function setComments($comments)
+    {
+        $this->comments = $comments;
     }
 
 
