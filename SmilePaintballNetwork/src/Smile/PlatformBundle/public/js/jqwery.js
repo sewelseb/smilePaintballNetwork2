@@ -21,3 +21,48 @@ function updateFb(){
     updateFb();
     setTimeout(arguments.callee, 6000);
 })();*/
+
+function upvote(postId)
+{
+    $('#updownVote_'+postId).hide('slow');
+    $('#upvoted_'+postId).show('slow');
+    $.ajax({
+        url : document.getElementById("smileApiUpvoteUrl").innerHTML+postId,
+        type : 'GET',
+        dataType : 'html',
+        success : function(results, status){
+
+
+        },
+        error : function(results, status, error){
+            console.log(results);
+            console.log(results.responseText);
+        },
+        complete : function(results, status){
+
+        }
+    });
+};
+
+function downvote(postId)
+{
+    $('#updownVote_'+postId).hide('slow');
+    $('#downvoted_'+postId).show('slow');
+
+    $.ajax({
+        url : document.getElementById("smileApiDownvoteUrl").innerHTML+postId,
+        type : 'GET',
+        dataType : 'html',
+        success : function(results, status){
+
+
+        },
+        error : function(results, status, error){
+            console.log(results);
+            console.log(results.responseText);
+        },
+        complete : function(results, status){
+
+        }
+    });
+};

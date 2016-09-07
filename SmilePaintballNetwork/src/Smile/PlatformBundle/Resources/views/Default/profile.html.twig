@@ -7,6 +7,8 @@
 {% block leftCollumn %}
     {% for post in posts %}
         <div class="row" >
+            <span id="smileApiUpvoteUrl" hidden>{{ path ('smile_api_post_upvote_url') }}</span>
+            <span id="smileApiDownvoteUrl" hidden>{{ path ('smile_api_post_downvote_url') }}</span>
             <div class="col-md-7">
                 {% if post.type=='video_youtube' %}
                     <iframe  width="100%"  height="300px" ng-src="{{ post.url }}" frameborder="0" allowfullscreen></iframe>
@@ -26,11 +28,33 @@
                 {% endif %}
             </div>
             <div class="col-md-5">
-                <h3>{{ post.title }}</h3>
-                <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
+
+                    <h3>{{ post.title }}</h3>
+                    <h4>{{ post.eventName }}</h4>
+                    <p>
+                    <div id="updownVote_{{post.id}}">
+                        <div class="col-md-6">
+                            <a href="">
+                                <span onclick="upvote({{ post.id }})">Upvote</span>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="">
+                                <span onclick="downvote({{ post.id }})">Downvote</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="upvoted_{{post.id}}" hidden>
+                        upvoted ;)
+                    </div>
+                    <div id="downvoted_{{post.id}}" hidden>
+                        downvoted :(
+                    </div>
+                    </p>
+                    <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+
+
         </div>
         <hr/>
     {% endfor %}
