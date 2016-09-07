@@ -5,7 +5,7 @@ security:
     # http://symfony.com/doc/current/book/security.html#where-do-users-come-from-user-providers
 
     encoders:
-        Smile\UserBundle\Entity\User: plaintext
+        Smile\UserBundle\Entity\User: bcrypt
 
     role_hierarchy:
       ROLE_ADMIN:       ROLE_USER

@@ -619,7 +619,7 @@
                   <tag name="cache.pool"/>
                   <argument>Nu0jsGmjb0</argument>
                   <argument></argument>
-                  <argument>sB4HEjFMp0VvJTAUWQ0hiw</argument>
+                  <argument>HQ9GDySfOnYyn0Tyum9YqA</argument>
                   <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\var\cache\dev/pools</argument>
                   <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                   <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -632,7 +632,7 @@
                   <tag name="cache.pool"/>
                   <argument>JbT9uhreDC</argument>
                   <argument></argument>
-                  <argument>sB4HEjFMp0VvJTAUWQ0hiw</argument>
+                  <argument>HQ9GDySfOnYyn0Tyum9YqA</argument>
                   <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\var\cache\dev/pools</argument>
                   <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                   <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -964,7 +964,7 @@
       <tag name="cache.pool"/>
       <argument>T9m8TNBBth</argument>
       <argument></argument>
-      <argument>sB4HEjFMp0VvJTAUWQ0hiw</argument>
+      <argument>HQ9GDySfOnYyn0Tyum9YqA</argument>
       <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -1913,7 +1913,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>57cff46bc84e87.16403137</argument>
+            <argument>57cff61a588c92.28899376</argument>
           </service>
         </argument>
       </argument>
@@ -2308,7 +2308,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>57cff46bc84e87.16403137</argument>
+            <argument>57cff61a588c92.28899376</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -3992,9 +3992,9 @@
     <service id="security.encoder_factory" class="Symfony\Component\Security\Core\Encoder\EncoderFactory">
       <argument type="collection">
         <argument key="Smile\UserBundle\Entity\User" type="collection">
-          <argument key="class">Symfony\Component\Security\Core\Encoder\PlaintextPasswordEncoder</argument>
+          <argument key="class">Symfony\Component\Security\Core\Encoder\BCryptPasswordEncoder</argument>
           <argument key="arguments" type="collection">
-            <argument>false</argument>
+            <argument>13</argument>
           </argument>
         </argument>
       </argument>

@@ -23,4 +23,27 @@ return array (
       ),
     ),
   ),
+  '3bded0f' => 
+  array (
+    0 => 
+    array (
+      0 => '@SmilePlatformBundle/public/js/Angular/app.js',
+      1 => '@SmilePlatformBundle/public/js/Angular/Controllers/allPosts.js',
+    ),
+    1 => 
+    array (
+      0 => 'cssrewrite',
+      1 => 'cssrewrite',
+    ),
+    2 => 
+    array (
+      'output' => '_controller/js/3bded0f.js',
+      'name' => '3bded0f',
+      'debug' => NULL,
+      'combine' => NULL,
+      'vars' => 
+      array (
+      ),
+    ),
+  ),
 );
