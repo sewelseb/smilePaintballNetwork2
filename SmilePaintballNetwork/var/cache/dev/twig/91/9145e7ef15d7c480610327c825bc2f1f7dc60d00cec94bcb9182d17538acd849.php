@@ -15,8 +15,8 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d004677b4efeec08b8974614b127ab4017cbe66334682e59c4ed1095d1b5178f = $this->env->getExtension("native_profiler");
-        $__internal_d004677b4efeec08b8974614b127ab4017cbe66334682e59c4ed1095d1b5178f->enter($__internal_d004677b4efeec08b8974614b127ab4017cbe66334682e59c4ed1095d1b5178f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
+        $__internal_172bcb959a5c94a3eb191ecf2967130ee244c70d1fd31000e498f6296c16714f = $this->env->getExtension("native_profiler");
+        $__internal_172bcb959a5c94a3eb191ecf2967130ee244c70d1fd31000e498f6296c16714f->enter($__internal_172bcb959a5c94a3eb191ecf2967130ee244c70d1fd31000e498f6296c16714f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
 
         // line 1
         echo "<!-- Project One -->
@@ -74,7 +74,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
                                     <a href=\"\">
                                         <span ng-click=\"upvote(post.id)\">
                                             <img src=\"/images/upvote.png\" class=\"vote-img\">
-                                            
+
                                         </span>
                                     </a>
                                 </div>
@@ -112,7 +112,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
 ";
         
-        $__internal_d004677b4efeec08b8974614b127ab4017cbe66334682e59c4ed1095d1b5178f->leave($__internal_d004677b4efeec08b8974614b127ab4017cbe66334682e59c4ed1095d1b5178f_prof);
+        $__internal_172bcb959a5c94a3eb191ecf2967130ee244c70d1fd31000e498f6296c16714f->leave($__internal_172bcb959a5c94a3eb191ecf2967130ee244c70d1fd31000e498f6296c16714f_prof);
 
     }
 
@@ -175,7 +175,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 /*                                     <a href="">*/
 /*                                         <span ng-click="upvote(post.id)">*/
 /*                                             <img src="/images/upvote.png" class="vote-img">*/
-/*                                             */
+/* */
 /*                                         </span>*/
 /*                                     </a>*/
 /*                                 </div>*/

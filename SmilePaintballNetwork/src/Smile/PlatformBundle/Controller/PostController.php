@@ -21,34 +21,31 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 
 class PostController extends Controller
 {
-    public function addNewAction(Request $request){
+    public function addNewAction(Request $request)
+    {
         $post = new Post();
 
         $formBuilder = $this->get('form.factory')->createBuilder(FormType::class, $post);
 
         $formBuilder
-            ->add('title',     TextType::class)
-            ->add('eventName',     TextType::class, array('required' =>false))
-            ->add('picture', PostPicType::class, array('required' =>false))
-            ->add('url',     TextType::class, array('required' =>false))
-            ->add('save',      SubmitType::class)
-        ;
+            ->add('title', TextType::class)
+            ->add('eventName', TextType::class, array('required' => false))
+            ->add('picture', PostPicType::class, array('required' => false))
+            ->add('url', TextType::class, array('required' => false))
+            ->add('save', SubmitType::class);
 
         $form = $formBuilder->getForm();
 
         if ($request->isMethod('POST') && $form->handleRequest($request)->isValid()) {
 
-            if($post->getPicture()!=null || $post->getUrl()!=null)
-            {
+            if ($post->getPicture() != null || $post->getUrl() != null) {
                 $post->setType('picture_local');
-                if ($post->getUrl()!=null)
-                {
+                if ($post->getUrl() != null) {
                     $post->setType('picture_externalUrl');
                 }
                 $post->setCreationTime(time());
                 $post->setUser($this->getUser());
-                if($post->getPicture()!=null)
-                {
+                if ($post->getPicture() != null) {
                     $post->getPicture()->upload($post);
                 }
 
@@ -56,7 +53,7 @@ class PostController extends Controller
                 $regex_youtube_pattern = "/(youtube.com|youtu.be)\/(watch)?(\?v=)?(\S+)?/";
 
 
-                if(preg_match($regex_youtube_pattern, $post->getUrl(), $match)){
+                if (preg_match($regex_youtube_pattern, $post->getUrl(), $match)) {
                     $post->setUrl(preg_replace(
                         "/\s*[a-zA-Z\/\/:\.]*youtu(be.com\/watch\?v=|.be\/)([a-zA-Z0-9\-_]+)([a-zA-Z0-9\/\*\-\_\?\&\;\%\=\.]*)/i",
                         "//www.youtube.com/embed/$2",
@@ -65,26 +62,18 @@ class PostController extends Controller
                 }
 
                 $urlFb = explode('facebook.com', $post->getUrl());
-                $urlVideoFb=0;
-                $urlPictureFb=0;
-                if(count($urlFb)>1)
-                {
+                $urlVideoFb = 0;
+                $urlPictureFb = 0;
+                if (count($urlFb) > 1) {
                     $urlVideoFb = explode('/videos/', $post->getUrl());
                     $urlPictureFb = explode('/photos/', $post->getUrl());
                 }
 
-                if (count($urlVideoFb)>1)
-                {
+                if (count($urlVideoFb) > 1) {
                     $post->setType('video_facebook');
-                }
-                elseif (count($urlPictureFb)>1)
-                {
+                } elseif (count($urlPictureFb) > 1) {
                     $post->setType('picture_facebook');
                 }
-
-
-
-
 
 
                 $em = $this->getDoctrine()->getManager();
@@ -98,7 +87,6 @@ class PostController extends Controller
             }
 
             $request->getSession()->getFlashBag()->add('notice', 'Nothing to post :(.');
-
 
 
         }
@@ -124,4 +112,20 @@ class PostController extends Controller
 
         ));
     }
+
+    public function showPostAction($postId)
+    {
+        $postRepo = $this
+            ->getDoctrine()
+            ->getManager()
+            ->getRepository('SmilePlatformBundle:Post');
+        $post = $postRepo->find(intval($postId));
+
+        return $this->render('SmilePlatformBundle::Default/post.html.twig', array(
+
+            'post' => $post,
+
+        ));
+    }
+
 }
