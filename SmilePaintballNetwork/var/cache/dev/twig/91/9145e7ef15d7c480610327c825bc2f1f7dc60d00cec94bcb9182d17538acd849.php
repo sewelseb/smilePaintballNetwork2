@@ -15,8 +15,8 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_640366421deee47d1eafab5aa6f120aaf9fce2aa692aec44cd139c65466e0b38 = $this->env->getExtension("native_profiler");
-        $__internal_640366421deee47d1eafab5aa6f120aaf9fce2aa692aec44cd139c65466e0b38->enter($__internal_640366421deee47d1eafab5aa6f120aaf9fce2aa692aec44cd139c65466e0b38_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
+        $__internal_128c6f41cc4db60a446e8056dc033f9c83c39eb696a283890849305b83c1487d = $this->env->getExtension("native_profiler");
+        $__internal_128c6f41cc4db60a446e8056dc033f9c83c39eb696a283890849305b83c1487d->enter($__internal_128c6f41cc4db60a446e8056dc033f9c83c39eb696a283890849305b83c1487d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
 
         // line 1
         echo "<!-- Project One -->
@@ -52,7 +52,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
                                 <img class=\"img-responsive\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" alt=\"\">
                             </div>
                             <div ng-if=\"post.type=='picture_local'\">
-                                <img class=\"img-responsive\" ng-src=\"{{post.picture.uploadDir}}{{post.picture.url}}\" alt=\"\">
+                                <img class=\"img-responsive\" ng-src=\"{{post.picture.uploadDir}}/{{post.picture.url}}\" alt=\"\">
                             </div>
 
 
@@ -77,7 +77,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
 ";
         
-        $__internal_640366421deee47d1eafab5aa6f120aaf9fce2aa692aec44cd139c65466e0b38->leave($__internal_640366421deee47d1eafab5aa6f120aaf9fce2aa692aec44cd139c65466e0b38_prof);
+        $__internal_128c6f41cc4db60a446e8056dc033f9c83c39eb696a283890849305b83c1487d->leave($__internal_128c6f41cc4db60a446e8056dc033f9c83c39eb696a283890849305b83c1487d_prof);
 
     }
 
@@ -124,7 +124,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 /*                                 <img class="img-responsive" ng-src="{{ trustAsResourceUrl(post.url) }}" alt="">*/
 /*                             </div>*/
 /*                             <div ng-if="post.type=='picture_local'">*/
-/*                                 <img class="img-responsive" ng-src="{{post.picture.uploadDir}}{{post.picture.url}}" alt="">*/
+/*                                 <img class="img-responsive" ng-src="{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">*/
 /*                             </div>*/
 /* */
 /* */

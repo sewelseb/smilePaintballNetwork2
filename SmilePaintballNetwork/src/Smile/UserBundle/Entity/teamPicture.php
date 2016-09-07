@@ -144,7 +144,7 @@ class teamPicture
     public function getUploadDir()
     {
         // On retourne le chemin relatif vers l'image pour un navigateur (relatif au répertoire /web donc)
-        return 'uploads/profilePics';
+        return '/teamPicture/profilePics';
     }
     protected function getUploadRootDir()
     {

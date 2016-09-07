@@ -23,34 +23,34 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f4442f0a1083dd8798dbc6771e6d70a9f3cb5f53cece912093a0e7554200f2db = $this->env->getExtension("native_profiler");
-        $__internal_f4442f0a1083dd8798dbc6771e6d70a9f3cb5f53cece912093a0e7554200f2db->enter($__internal_f4442f0a1083dd8798dbc6771e6d70a9f3cb5f53cece912093a0e7554200f2db_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:profile.html.twig"));
+        $__internal_3b4e9cd3d523f2abdb5a98bc83724b07467f90869579502263dc66e5efa9d943 = $this->env->getExtension("native_profiler");
+        $__internal_3b4e9cd3d523f2abdb5a98bc83724b07467f90869579502263dc66e5efa9d943->enter($__internal_3b4e9cd3d523f2abdb5a98bc83724b07467f90869579502263dc66e5efa9d943_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:profile.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_f4442f0a1083dd8798dbc6771e6d70a9f3cb5f53cece912093a0e7554200f2db->leave($__internal_f4442f0a1083dd8798dbc6771e6d70a9f3cb5f53cece912093a0e7554200f2db_prof);
+        $__internal_3b4e9cd3d523f2abdb5a98bc83724b07467f90869579502263dc66e5efa9d943->leave($__internal_3b4e9cd3d523f2abdb5a98bc83724b07467f90869579502263dc66e5efa9d943_prof);
 
     }
 
     // line 3
     public function block_pageHeader($context, array $blocks = array())
     {
-        $__internal_b9fdf678e8dfc70a98e825560126ed8ef517f2359181c356b3d86ae607167b96 = $this->env->getExtension("native_profiler");
-        $__internal_b9fdf678e8dfc70a98e825560126ed8ef517f2359181c356b3d86ae607167b96->enter($__internal_b9fdf678e8dfc70a98e825560126ed8ef517f2359181c356b3d86ae607167b96_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
+        $__internal_47ca0dfbd4a51f634d8001bf5ddd0d1092eef62c2436170ce47d7759c1e09420 = $this->env->getExtension("native_profiler");
+        $__internal_47ca0dfbd4a51f634d8001bf5ddd0d1092eef62c2436170ce47d7759c1e09420->enter($__internal_47ca0dfbd4a51f634d8001bf5ddd0d1092eef62c2436170ce47d7759c1e09420_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
 
         // line 4
         echo "
 ";
         
-        $__internal_b9fdf678e8dfc70a98e825560126ed8ef517f2359181c356b3d86ae607167b96->leave($__internal_b9fdf678e8dfc70a98e825560126ed8ef517f2359181c356b3d86ae607167b96_prof);
+        $__internal_47ca0dfbd4a51f634d8001bf5ddd0d1092eef62c2436170ce47d7759c1e09420->leave($__internal_47ca0dfbd4a51f634d8001bf5ddd0d1092eef62c2436170ce47d7759c1e09420_prof);
 
     }
 
     // line 7
     public function block_leftCollumn($context, array $blocks = array())
     {
-        $__internal_d0ae6b22c79410b2dab9cbe22e1f6556baf8725423098570bf3f20f486d3a759 = $this->env->getExtension("native_profiler");
-        $__internal_d0ae6b22c79410b2dab9cbe22e1f6556baf8725423098570bf3f20f486d3a759->enter($__internal_d0ae6b22c79410b2dab9cbe22e1f6556baf8725423098570bf3f20f486d3a759_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
+        $__internal_d6998e03c31fdac48eaa74d8390da901f1c5884359546fbddddef20a5b6a3ea3 = $this->env->getExtension("native_profiler");
+        $__internal_d6998e03c31fdac48eaa74d8390da901f1c5884359546fbddddef20a5b6a3ea3->enter($__internal_d6998e03c31fdac48eaa74d8390da901f1c5884359546fbddddef20a5b6a3ea3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
 
         // line 8
         echo "    ";
@@ -107,6 +107,7 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
                 // line 25
                 echo "                    <img class=\"img-responsive\" ng-src=\"";
                 echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["post"], "picture", array()), "uploadDir", array()), "html", null, true);
+                echo "/";
                 echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["post"], "picture", array()), "url", array()), "html", null, true);
                 echo "\" alt=\"\">
                 ";
@@ -130,36 +131,67 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['post'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         
-        $__internal_d0ae6b22c79410b2dab9cbe22e1f6556baf8725423098570bf3f20f486d3a759->leave($__internal_d0ae6b22c79410b2dab9cbe22e1f6556baf8725423098570bf3f20f486d3a759_prof);
+        $__internal_d6998e03c31fdac48eaa74d8390da901f1c5884359546fbddddef20a5b6a3ea3->leave($__internal_d6998e03c31fdac48eaa74d8390da901f1c5884359546fbddddef20a5b6a3ea3_prof);
 
     }
 
     // line 39
     public function block_rightCollumn($context, array $blocks = array())
     {
-        $__internal_b9fd6713b892e82c09a8598097968ada386a0a15b82ba4cfb6a878a5a114ee54 = $this->env->getExtension("native_profiler");
-        $__internal_b9fd6713b892e82c09a8598097968ada386a0a15b82ba4cfb6a878a5a114ee54->enter($__internal_b9fd6713b892e82c09a8598097968ada386a0a15b82ba4cfb6a878a5a114ee54_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
+        $__internal_53cee420785af3dd356b4afe14ee7b8f7fd48f6d29d9087f6d484583fec8e884 = $this->env->getExtension("native_profiler");
+        $__internal_53cee420785af3dd356b4afe14ee7b8f7fd48f6d29d9087f6d484583fec8e884->enter($__internal_53cee420785af3dd356b4afe14ee7b8f7fd48f6d29d9087f6d484583fec8e884_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
 
         // line 40
         echo "    ";
         if (($this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "picture", array()) != null)) {
             // line 41
+            echo "        <img class=\"img-responsive\" src=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "picture", array()), "uploadDir", array()), "html", null, true);
+            echo "/";
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "picture", array()), "url", array()), "html", null, true);
+            echo "\" alt=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "username", array()), "html", null, true);
+            echo "\">
+    ";
+        } else {
+            // line 43
             echo "
     ";
         }
-        // line 43
+        // line 45
         echo "    ";
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "username", array()), "html", null, true);
-        echo "
+        echo "<br/>
+    ";
+        // line 46
+        if ($this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "firstname", array())) {
+            // line 47
+            echo "        ";
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "firstname", array()), "html", null, true);
+            echo "
+    ";
+        }
+        // line 49
+        echo "    ";
+        if ($this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "lastname", array())) {
+            // line 50
+            echo "        ";
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "lastname", array()), "html", null, true);
+            echo "
+    ";
+        }
+        // line 51
+        echo "<br/>
+
     <div>
         ";
-        // line 45
+        // line 54
         if (($this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "id", array()) == $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()), "id", array()))) {
-            // line 46
+            // line 55
             echo "            <button class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#editProfileModal\">Edit my profile</button>
         ";
         }
-        // line 48
+        // line 57
         echo "    </div>
 
     <div class=\"modal fade\" id=\"editProfileModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"loginModal\">
@@ -171,7 +203,7 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
                 </div>
                 <div class=\"modal-body\">
                     ";
-        // line 58
+        // line 67
         echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("SmilePlatformBundle:User:editMyProfile", array("request" => $this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()))));
         echo "
                     <div class=\"clearfix\"></div>
@@ -183,7 +215,7 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
 
 ";
         
-        $__internal_b9fd6713b892e82c09a8598097968ada386a0a15b82ba4cfb6a878a5a114ee54->leave($__internal_b9fd6713b892e82c09a8598097968ada386a0a15b82ba4cfb6a878a5a114ee54_prof);
+        $__internal_53cee420785af3dd356b4afe14ee7b8f7fd48f6d29d9087f6d484583fec8e884->leave($__internal_53cee420785af3dd356b4afe14ee7b8f7fd48f6d29d9087f6d484583fec8e884_prof);
 
     }
 
@@ -199,7 +231,7 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
 
     public function getDebugInfo()
     {
-        return array (  175 => 58,  163 => 48,  159 => 46,  157 => 45,  151 => 43,  147 => 41,  144 => 40,  138 => 39,  119 => 29,  115 => 27,  108 => 25,  105 => 24,  99 => 22,  96 => 21,  90 => 19,  87 => 18,  76 => 15,  73 => 14,  67 => 12,  65 => 11,  61 => 9,  56 => 8,  50 => 7,  42 => 4,  36 => 3,  11 => 1,);
+        return array (  207 => 67,  195 => 57,  191 => 55,  189 => 54,  184 => 51,  178 => 50,  175 => 49,  169 => 47,  167 => 46,  162 => 45,  158 => 43,  148 => 41,  145 => 40,  139 => 39,  120 => 29,  116 => 27,  108 => 25,  105 => 24,  99 => 22,  96 => 21,  90 => 19,  87 => 18,  76 => 15,  73 => 14,  67 => 12,  65 => 11,  61 => 9,  56 => 8,  50 => 7,  42 => 4,  36 => 3,  11 => 1,);
     }
 }
 /* {% extends "SmilePlatformBundle::Default/layout.html.twig" %}*/
@@ -226,7 +258,7 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
 /*                     <img class="img-responsive" ng-src="{{ post.url }}" alt="">*/
 /*                 {% endif %}*/
 /*                 {% if post.type=='picture_local' %}*/
-/*                     <img class="img-responsive" ng-src="{{post.picture.uploadDir}}{{post.picture.url}}" alt="">*/
+/*                     <img class="img-responsive" ng-src="{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">*/
 /*                 {% endif %}*/
 /*             </div>*/
 /*             <div class="col-md-5">*/
@@ -242,9 +274,18 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
 /* */
 /* {% block rightCollumn %}*/
 /*     {% if user.picture != null %}*/
+/*         <img class="img-responsive" src="{{user.picture.uploadDir}}/{{user.picture.url}}" alt="{{ user.username }}">*/
+/*     {% else %}*/
 /* */
 /*     {% endif %}*/
-/*     {{ user.username }}*/
+/*     {{ user.username }}<br/>*/
+/*     {% if user.firstname%}*/
+/*         {{ user.firstname }}*/
+/*     {% endif %}*/
+/*     {% if user.lastname %}*/
+/*         {{ user.lastname }}*/
+/*     {% endif %}<br/>*/
+/* */
 /*     <div>*/
 /*         {% if user.id == app.user.id %}*/
 /*             <button class="btn btn-primary" data-toggle="modal" data-target="#editProfileModal">Edit my profile</button>*/

@@ -139,7 +139,7 @@ class PostPic
     public function getUploadDir()
     {
         // On retourne le chemin relatif vers l'image pour un navigateur (relatif au répertoire /web donc)
-        return 'uploads/postPics';
+        return '/uploads/postPics';
     }
     protected function getUploadRootDir()
     {

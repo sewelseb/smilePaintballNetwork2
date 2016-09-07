@@ -64,10 +64,10 @@ class User extends \Smile\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'id', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'locked', 'expired', 'expiresAt', 'roles', 'credentialsExpired', 'credentialsExpireAt'];
+            return ['__isInitialized__', 'id', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'picture', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'firstName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'lastName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamPicture', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'locked', 'expired', 'expiresAt', 'roles', 'credentialsExpired', 'credentialsExpireAt'];
         }
 
-        return ['__isInitialized__', 'id', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'locked', 'expired', 'expiresAt', 'roles', 'credentialsExpired', 'credentialsExpireAt'];
+        return ['__isInitialized__', 'id', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'picture', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'firstName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'lastName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamPicture', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'locked', 'expired', 'expiresAt', 'roles', 'credentialsExpired', 'credentialsExpireAt'];
     }
 
     /**
@@ -186,6 +186,116 @@ class User extends \Smile\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getId', []);
 
         return parent::getId();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getPicture()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPicture', []);
+
+        return parent::getPicture();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setPicture($picture)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setPicture', [$picture]);
+
+        return parent::setPicture($picture);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getFirstName()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFirstName', []);
+
+        return parent::getFirstName();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setFirstName($firstName)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setFirstName', [$firstName]);
+
+        return parent::setFirstName($firstName);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getLastName()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getLastName', []);
+
+        return parent::getLastName();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setLastName($lastName)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setLastName', [$lastName]);
+
+        return parent::setLastName($lastName);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getTeamName()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getTeamName', []);
+
+        return parent::getTeamName();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setTeamName($teamName)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setTeamName', [$teamName]);
+
+        return parent::setTeamName($teamName);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getTeamPicture()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getTeamPicture', []);
+
+        return parent::getTeamPicture();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setTeamPicture($teamPicture)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setTeamPicture', [$teamPicture]);
+
+        return parent::setTeamPicture($teamPicture);
     }
 
     /**

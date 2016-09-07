@@ -22,7 +22,7 @@
                     <img class="img-responsive" ng-src="{{ post.url }}" alt="">
                 {% endif %}
                 {% if post.type=='picture_local' %}
-                    <img class="img-responsive" ng-src="{{post.picture.uploadDir}}{{post.picture.url}}" alt="">
+                    <img class="img-responsive" ng-src="{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">
                 {% endif %}
             </div>
             <div class="col-md-5">
@@ -38,9 +38,18 @@
 
 {% block rightCollumn %}
     {% if user.picture != null %}
+        <img class="img-responsive" src="{{user.picture.uploadDir}}/{{user.picture.url}}" alt="{{ user.username }}">
+    {% else %}
 
     {% endif %}
-    {{ user.username }}
+    {{ user.username }}<br/>
+    {% if user.firstname%}
+        {{ user.firstname }}
+    {% endif %}
+    {% if user.lastname %}
+        {{ user.lastname }}
+    {% endif %}<br/>
+
     <div>
         {% if user.id == app.user.id %}
             <button class="btn btn-primary" data-toggle="modal" data-target="#editProfileModal">Edit my profile</button>
