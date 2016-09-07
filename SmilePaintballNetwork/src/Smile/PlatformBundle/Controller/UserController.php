@@ -28,7 +28,8 @@ class UserController extends Controller
         $posts = $postRepo->getUsersPost($user);
 
         return $this->render('SmilePlatformBundle:Default:profile.html.twig', array(
-            'posts' => $posts
+            'posts' => $posts,
+            'user' =>$user
         ));
     }
 }

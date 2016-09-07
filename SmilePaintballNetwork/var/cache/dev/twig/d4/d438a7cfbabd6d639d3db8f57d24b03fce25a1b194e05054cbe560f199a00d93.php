@@ -23,34 +23,34 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_04c7c61a486560364d8df89c69c72703c7407645ad19c630893936d2662df36c = $this->env->getExtension("native_profiler");
-        $__internal_04c7c61a486560364d8df89c69c72703c7407645ad19c630893936d2662df36c->enter($__internal_04c7c61a486560364d8df89c69c72703c7407645ad19c630893936d2662df36c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:profile.html.twig"));
+        $__internal_12af1d863ff31a41a843970130129b53aeeab97c1ea06c54d40b65d8cd878a16 = $this->env->getExtension("native_profiler");
+        $__internal_12af1d863ff31a41a843970130129b53aeeab97c1ea06c54d40b65d8cd878a16->enter($__internal_12af1d863ff31a41a843970130129b53aeeab97c1ea06c54d40b65d8cd878a16_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:profile.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_04c7c61a486560364d8df89c69c72703c7407645ad19c630893936d2662df36c->leave($__internal_04c7c61a486560364d8df89c69c72703c7407645ad19c630893936d2662df36c_prof);
+        $__internal_12af1d863ff31a41a843970130129b53aeeab97c1ea06c54d40b65d8cd878a16->leave($__internal_12af1d863ff31a41a843970130129b53aeeab97c1ea06c54d40b65d8cd878a16_prof);
 
     }
 
     // line 3
     public function block_pageHeader($context, array $blocks = array())
     {
-        $__internal_25f74c2145b47c42d0d1ee783f5f121e1011e182cc8db689da1d5fd25328d223 = $this->env->getExtension("native_profiler");
-        $__internal_25f74c2145b47c42d0d1ee783f5f121e1011e182cc8db689da1d5fd25328d223->enter($__internal_25f74c2145b47c42d0d1ee783f5f121e1011e182cc8db689da1d5fd25328d223_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
+        $__internal_73299ca2fc7a7cb948944476e8a903987e099b2c5f9e22e6a02028e7181d5f9f = $this->env->getExtension("native_profiler");
+        $__internal_73299ca2fc7a7cb948944476e8a903987e099b2c5f9e22e6a02028e7181d5f9f->enter($__internal_73299ca2fc7a7cb948944476e8a903987e099b2c5f9e22e6a02028e7181d5f9f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
 
         // line 4
         echo "
 ";
         
-        $__internal_25f74c2145b47c42d0d1ee783f5f121e1011e182cc8db689da1d5fd25328d223->leave($__internal_25f74c2145b47c42d0d1ee783f5f121e1011e182cc8db689da1d5fd25328d223_prof);
+        $__internal_73299ca2fc7a7cb948944476e8a903987e099b2c5f9e22e6a02028e7181d5f9f->leave($__internal_73299ca2fc7a7cb948944476e8a903987e099b2c5f9e22e6a02028e7181d5f9f_prof);
 
     }
 
     // line 7
     public function block_leftCollumn($context, array $blocks = array())
     {
-        $__internal_286c22b115bd0070e5667dd9d80dab76f7b05de385c4eec1db2dbe21c3e5d4a7 = $this->env->getExtension("native_profiler");
-        $__internal_286c22b115bd0070e5667dd9d80dab76f7b05de385c4eec1db2dbe21c3e5d4a7->enter($__internal_286c22b115bd0070e5667dd9d80dab76f7b05de385c4eec1db2dbe21c3e5d4a7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
+        $__internal_29e436936865b074e399ba3f8ed503816a1caf074e8c336231fe1846362e9619 = $this->env->getExtension("native_profiler");
+        $__internal_29e436936865b074e399ba3f8ed503816a1caf074e8c336231fe1846362e9619->enter($__internal_29e436936865b074e399ba3f8ed503816a1caf074e8c336231fe1846362e9619_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
 
         // line 8
         echo "    ";
@@ -60,21 +60,19 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
             // line 9
             echo "        <div class=\"row\" >
             <div class=\"col-md-7\">
-
-
                 ";
-            // line 13
+            // line 11
             if (($this->getAttribute($context["post"], "type", array()) == "video_youtube")) {
-                // line 14
+                // line 12
                 echo "                    <iframe  width=\"100%\"  height=\"300px\" ng-src=\"";
                 echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "url", array()), "html", null, true);
                 echo "\" frameborder=\"0\" allowfullscreen></iframe>
                 ";
             }
-            // line 16
+            // line 14
             echo "                ";
             if (($this->getAttribute($context["post"], "type", array()) == "video_facebook")) {
-                // line 17
+                // line 15
                 echo "                    <div class=\"fb-video\" data-href=\"";
                 echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "url", array()), "html", null, true);
                 echo "\" data-width=\"700px\" data-show-text=\"false\"><blockquote cite=\"";
@@ -85,41 +83,39 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
                         </blockquote></div>
                 ";
             }
-            // line 20
+            // line 18
             echo "                ";
             if (($this->getAttribute($context["post"], "type", array()) == "picture_facebook")) {
-                // line 21
+                // line 19
                 echo "                    <div data-width=\"460px\" class=\"fb-post\" data-href=\"";
                 echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "url", array()), "html", null, true);
                 echo "\"></div>
                 ";
             }
-            // line 23
+            // line 21
             echo "                ";
             if (($this->getAttribute($context["post"], "type", array()) == "picture_externalUrl")) {
-                // line 24
+                // line 22
                 echo "                    <img class=\"img-responsive\" ng-src=\"";
                 echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "url", array()), "html", null, true);
                 echo "\" alt=\"\">
                 ";
             }
-            // line 26
+            // line 24
             echo "                ";
             if (($this->getAttribute($context["post"], "type", array()) == "picture_local")) {
-                // line 27
+                // line 25
                 echo "                    <img class=\"img-responsive\" ng-src=\"";
                 echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["post"], "picture", array()), "uploadDir", array()), "html", null, true);
                 echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["post"], "picture", array()), "url", array()), "html", null, true);
                 echo "\" alt=\"\">
                 ";
             }
-            // line 29
-            echo "
-
-            </div>
+            // line 27
+            echo "            </div>
             <div class=\"col-md-5\">
                 <h3>";
-            // line 33
+            // line 29
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "title", array()), "html", null, true);
             echo "</h3>
                 <h4>Subheading</h4>
@@ -134,21 +130,21 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['post'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         
-        $__internal_286c22b115bd0070e5667dd9d80dab76f7b05de385c4eec1db2dbe21c3e5d4a7->leave($__internal_286c22b115bd0070e5667dd9d80dab76f7b05de385c4eec1db2dbe21c3e5d4a7_prof);
+        $__internal_29e436936865b074e399ba3f8ed503816a1caf074e8c336231fe1846362e9619->leave($__internal_29e436936865b074e399ba3f8ed503816a1caf074e8c336231fe1846362e9619_prof);
 
     }
 
-    // line 43
+    // line 39
     public function block_rightCollumn($context, array $blocks = array())
     {
-        $__internal_e1163d1bb524c41d79cb02ffeed897814f094dc4f7ef11fbaf5f9b6fbdf23cff = $this->env->getExtension("native_profiler");
-        $__internal_e1163d1bb524c41d79cb02ffeed897814f094dc4f7ef11fbaf5f9b6fbdf23cff->enter($__internal_e1163d1bb524c41d79cb02ffeed897814f094dc4f7ef11fbaf5f9b6fbdf23cff_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
+        $__internal_e22c018a2ed019fa10a1b30aff6afc555126f284e8c2544df5ee84a36143e21d = $this->env->getExtension("native_profiler");
+        $__internal_e22c018a2ed019fa10a1b30aff6afc555126f284e8c2544df5ee84a36143e21d->enter($__internal_e22c018a2ed019fa10a1b30aff6afc555126f284e8c2544df5ee84a36143e21d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
 
-        // line 44
+        // line 40
         echo "
 ";
         
-        $__internal_e1163d1bb524c41d79cb02ffeed897814f094dc4f7ef11fbaf5f9b6fbdf23cff->leave($__internal_e1163d1bb524c41d79cb02ffeed897814f094dc4f7ef11fbaf5f9b6fbdf23cff_prof);
+        $__internal_e22c018a2ed019fa10a1b30aff6afc555126f284e8c2544df5ee84a36143e21d->leave($__internal_e22c018a2ed019fa10a1b30aff6afc555126f284e8c2544df5ee84a36143e21d_prof);
 
     }
 
@@ -164,7 +160,7 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
 
     public function getDebugInfo()
     {
-        return array (  148 => 44,  142 => 43,  123 => 33,  117 => 29,  110 => 27,  107 => 26,  101 => 24,  98 => 23,  92 => 21,  89 => 20,  78 => 17,  75 => 16,  69 => 14,  67 => 13,  61 => 9,  56 => 8,  50 => 7,  42 => 4,  36 => 3,  11 => 1,);
+        return array (  144 => 40,  138 => 39,  119 => 29,  115 => 27,  108 => 25,  105 => 24,  99 => 22,  96 => 21,  90 => 19,  87 => 18,  76 => 15,  73 => 14,  67 => 12,  65 => 11,  61 => 9,  56 => 8,  50 => 7,  42 => 4,  36 => 3,  11 => 1,);
     }
 }
 /* {% extends "SmilePlatformBundle::Default/layout.html.twig" %}*/
@@ -177,8 +173,6 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
 /*     {% for post in posts %}*/
 /*         <div class="row" >*/
 /*             <div class="col-md-7">*/
-/* */
-/* */
 /*                 {% if post.type=='video_youtube' %}*/
 /*                     <iframe  width="100%"  height="300px" ng-src="{{ post.url }}" frameborder="0" allowfullscreen></iframe>*/
 /*                 {% endif %}*/
@@ -195,8 +189,6 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
 /*                 {% if post.type=='picture_local' %}*/
 /*                     <img class="img-responsive" ng-src="{{post.picture.uploadDir}}{{post.picture.url}}" alt="">*/
 /*                 {% endif %}*/
-/* */
-/* */
 /*             </div>*/
 /*             <div class="col-md-5">*/
 /*                 <h3>{{ post.title }}</h3>*/

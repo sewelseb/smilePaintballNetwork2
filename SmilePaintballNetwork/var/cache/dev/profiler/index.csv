@@ -816,3 +816,11 @@ c9f849,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/platform/profile/js/
 805fdb,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/platform/profile/js/jquery.js,1473262634,,404
 02006d,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/platform/profile/js/jquery.js,1473262636,9758e5,200
 9758e5,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/platform/profile/js/jquery.js,1473262636,,404
+c1b5d7,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DSmilePlatformBundle%253APost%253AaddNew,1473262765,6fc1a5,200
+6fc1a5,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/platform/profile/5,1473262765,,200
+00aefb,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/platform/profile/js/jquery.js,1473262767,a737b8,200
+a737b8,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/platform/profile/js/jquery.js,1473262767,,404
+79f7f2,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/platform/profile/css/1-col-portfolio.css,1473262767,f289b8,200
+f289b8,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/platform/profile/css/1-col-portfolio.css,1473262767,,404
+82aa5c,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/platform/profile/js/jquery.js,1473262776,d59f2d,200
+d59f2d,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/platform/profile/js/jquery.js,1473262777,,404
