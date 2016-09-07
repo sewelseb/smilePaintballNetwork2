@@ -2,3 +2,7 @@
 smile_platform_homepage_co:
     path:     /co
     defaults: { _controller: SmilePlatformBundle:Default:index }
+
+smile_platform_profile:
+  path: /profile/{userId}
+  defaults: { _controller: SmilePlatformBundle:User:userProfile }

@@ -19,6 +19,9 @@
                         <a href="" data-toggle="modal" data-target="#newPostModal"><span class="yellow-text">+ Post</span></a>
                     </li>
                     <li>
+                        <a href="{{ path('smile_platform_profile', {'userId': app.user.getId }) }}"><span class="yellow-text">My profile</span></a>
+                    </li>
+                    <li>
                         <a href="{{ path('fos_user_security_logout') }}" class="#f2c716"><span class="yellow-text">Logout</span></a>
                     </li>
                 </ul>

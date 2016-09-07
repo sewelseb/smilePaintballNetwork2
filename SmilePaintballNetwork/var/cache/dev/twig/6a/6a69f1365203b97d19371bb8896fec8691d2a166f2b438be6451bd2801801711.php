@@ -10,13 +10,16 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
         $this->parent = false;
 
         $this->blocks = array(
+            'pageHeader' => array($this, 'block_pageHeader'),
+            'leftCollumn' => array($this, 'block_leftCollumn'),
+            'rightCollumn' => array($this, 'block_rightCollumn'),
         );
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_a74ba222655b1d1081d1a8734e5385f369be503595b3a1de6620566f799bee2f = $this->env->getExtension("native_profiler");
-        $__internal_a74ba222655b1d1081d1a8734e5385f369be503595b3a1de6620566f799bee2f->enter($__internal_a74ba222655b1d1081d1a8734e5385f369be503595b3a1de6620566f799bee2f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/layout.html.twig"));
+        $__internal_0aea86bec8eeb145ce8c7cbd385775cc3f0b25fc5fc33ddbbd139c197a902b59 = $this->env->getExtension("native_profiler");
+        $__internal_0aea86bec8eeb145ce8c7cbd385775cc3f0b25fc5fc33ddbbd139c197a902b59->enter($__internal_0aea86bec8eeb145ce8c7cbd385775cc3f0b25fc5fc33ddbbd139c197a902b59_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/layout.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -134,27 +137,25 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
     <!-- Page Heading -->
     <div class=\"row\">
         <div class=\"col-lg-12\">
-            <h1 class=\"page-header\">
-                Smile Paintball Network
-            </h1>
-        </div>
+            ";
+        // line 72
+        $this->displayBlock('pageHeader', $context, $blocks);
+        // line 77
+        echo "        </div>
     </div>
     <!-- /.row -->
     <div class=\"col-md-9\" id=\"postsNews\">
-
         ";
-        // line 80
-        echo twig_include($this->env, $context, "SmilePlatformBundle:Default:Blocs/allPosts.html.twig");
-        echo "
-
-
-    </div>
+        // line 81
+        $this->displayBlock('leftCollumn', $context, $blocks);
+        // line 85
+        echo "    </div>
     <div class=\"col-md-3\">
-        <h3>Project One</h3>
-        <h4>Subheading</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-        <a class=\"btn btn-primary\" href=\"#\">View Project <span class=\"glyphicon glyphicon-chevron-right\"></span></a>
-    </div>
+        ";
+        // line 87
+        $this->displayBlock('rightCollumn', $context, $blocks);
+        // line 93
+        echo "    </div>
 
     <!-- /.row -->
 
@@ -182,7 +183,57 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 
 </html>";
         
-        $__internal_a74ba222655b1d1081d1a8734e5385f369be503595b3a1de6620566f799bee2f->leave($__internal_a74ba222655b1d1081d1a8734e5385f369be503595b3a1de6620566f799bee2f_prof);
+        $__internal_0aea86bec8eeb145ce8c7cbd385775cc3f0b25fc5fc33ddbbd139c197a902b59->leave($__internal_0aea86bec8eeb145ce8c7cbd385775cc3f0b25fc5fc33ddbbd139c197a902b59_prof);
+
+    }
+
+    // line 72
+    public function block_pageHeader($context, array $blocks = array())
+    {
+        $__internal_ac88e3e71192c99645ca6771952d511ca0eccf51c44fa484d7e21afb987b35b6 = $this->env->getExtension("native_profiler");
+        $__internal_ac88e3e71192c99645ca6771952d511ca0eccf51c44fa484d7e21afb987b35b6->enter($__internal_ac88e3e71192c99645ca6771952d511ca0eccf51c44fa484d7e21afb987b35b6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
+
+        // line 73
+        echo "                <h1 class=\"page-header\">
+                    Smile Paintball Network
+                </h1>
+            ";
+        
+        $__internal_ac88e3e71192c99645ca6771952d511ca0eccf51c44fa484d7e21afb987b35b6->leave($__internal_ac88e3e71192c99645ca6771952d511ca0eccf51c44fa484d7e21afb987b35b6_prof);
+
+    }
+
+    // line 81
+    public function block_leftCollumn($context, array $blocks = array())
+    {
+        $__internal_670ded2511b60ed097e63c13803d4d9151b91e4a743a46d7de8b965d43e9e03c = $this->env->getExtension("native_profiler");
+        $__internal_670ded2511b60ed097e63c13803d4d9151b91e4a743a46d7de8b965d43e9e03c->enter($__internal_670ded2511b60ed097e63c13803d4d9151b91e4a743a46d7de8b965d43e9e03c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
+
+        // line 82
+        echo "            ";
+        echo twig_include($this->env, $context, "SmilePlatformBundle:Default:Blocs/allPosts.html.twig");
+        echo "
+
+        ";
+        
+        $__internal_670ded2511b60ed097e63c13803d4d9151b91e4a743a46d7de8b965d43e9e03c->leave($__internal_670ded2511b60ed097e63c13803d4d9151b91e4a743a46d7de8b965d43e9e03c_prof);
+
+    }
+
+    // line 87
+    public function block_rightCollumn($context, array $blocks = array())
+    {
+        $__internal_c28154658e7083dda996509af5381071c37f9dc70bc80123bd88af0ed1484280 = $this->env->getExtension("native_profiler");
+        $__internal_c28154658e7083dda996509af5381071c37f9dc70bc80123bd88af0ed1484280->enter($__internal_c28154658e7083dda996509af5381071c37f9dc70bc80123bd88af0ed1484280_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
+
+        // line 88
+        echo "            <h3>Project One</h3>
+            <h4>Subheading</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+            <a class=\"btn btn-primary\" href=\"#\">View Project <span class=\"glyphicon glyphicon-chevron-right\"></span></a>
+        ";
+        
+        $__internal_c28154658e7083dda996509af5381071c37f9dc70bc80123bd88af0ed1484280->leave($__internal_c28154658e7083dda996509af5381071c37f9dc70bc80123bd88af0ed1484280_prof);
 
     }
 
@@ -198,7 +249,7 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 
     public function getDebugInfo()
     {
-        return array (  147 => 80,  130 => 65,  128 => 64,  113 => 51,  87 => 49,  83 => 42,  71 => 32,  65 => 30,  62 => 29,  55 => 30,  52 => 29,  48 => 25,  22 => 1,);
+        return array (  230 => 88,  224 => 87,  213 => 82,  207 => 81,  197 => 73,  191 => 72,  158 => 93,  156 => 87,  152 => 85,  150 => 81,  144 => 77,  142 => 72,  133 => 65,  131 => 64,  116 => 51,  90 => 49,  86 => 42,  74 => 32,  68 => 30,  65 => 29,  58 => 30,  55 => 29,  51 => 25,  25 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -272,23 +323,27 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 /*     <!-- Page Heading -->*/
 /*     <div class="row">*/
 /*         <div class="col-lg-12">*/
-/*             <h1 class="page-header">*/
-/*                 Smile Paintball Network*/
-/*             </h1>*/
+/*             {% block pageHeader %}*/
+/*                 <h1 class="page-header">*/
+/*                     Smile Paintball Network*/
+/*                 </h1>*/
+/*             {% endblock %}*/
 /*         </div>*/
 /*     </div>*/
 /*     <!-- /.row -->*/
 /*     <div class="col-md-9" id="postsNews">*/
+/*         {% block leftCollumn %}*/
+/*             {{ include ('SmilePlatformBundle:Default:Blocs/allPosts.html.twig') }}*/
 /* */
-/*         {{ include ('SmilePlatformBundle:Default:Blocs/allPosts.html.twig') }}*/
-/* */
-/* */
+/*         {% endblock %}*/
 /*     </div>*/
 /*     <div class="col-md-3">*/
-/*         <h3>Project One</h3>*/
-/*         <h4>Subheading</h4>*/
-/*         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>*/
-/*         <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>*/
+/*         {% block rightCollumn %}*/
+/*             <h3>Project One</h3>*/
+/*             <h4>Subheading</h4>*/
+/*             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>*/
+/*             <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>*/
+/*         {% endblock %}*/
 /*     </div>*/
 /* */
 /*     <!-- /.row -->*/
