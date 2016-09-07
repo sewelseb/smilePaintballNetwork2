@@ -31,9 +31,30 @@ class PostController extends Controller
             ->add('eventName',     TextType::class)
             ->add('picture', PostPicType::class)
             ->add('save',      SubmitType::class)
+            ->add('url',     TextType::class)
         ;
 
         $form = $formBuilder->getForm();
+
+        if ($request->isMethod('POST') && $form->handleRequest($request)->isValid()) {
+
+            $post->setCreationTime(time());
+            $post->setUser($this->getUser());
+            $post->getPicture()->upload($post);
+
+            $em = $this->getDoctrine()->getManager();
+
+            $em->persist($post);
+
+            $em->flush();
+
+
+            $request->getSession()->getFlashBag()->add('notice', 'Post created.');
+
+
+
+
+        }
 
         return $this->render('SmilePlatformBundle::Default/form/addNewPost.html.twig', array(
 
