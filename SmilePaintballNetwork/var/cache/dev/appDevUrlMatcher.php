@@ -40,21 +40,29 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        if (0 === strpos($pathinfo, '/js/63a3082')) {
-            // _assetic_63a3082
-            if ($pathinfo === '/js/63a3082.js') {
-                return array (  '_controller' => 'assetic.controller:render',  'name' => '63a3082',  'pos' => NULL,  '_format' => 'js',  '_route' => '_assetic_63a3082',);
+        if (0 === strpos($pathinfo, '/js/874e11e')) {
+            // _assetic_874e11e
+            if ($pathinfo === '/js/874e11e.js') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => '874e11e',  'pos' => NULL,  '_format' => 'js',  '_route' => '_assetic_874e11e',);
             }
 
-            if (0 === strpos($pathinfo, '/js/63a3082_a')) {
-                // _assetic_63a3082_0
-                if ($pathinfo === '/js/63a3082_app_1.js') {
-                    return array (  '_controller' => 'assetic.controller:render',  'name' => '63a3082',  'pos' => 0,  '_format' => 'js',  '_route' => '_assetic_63a3082_0',);
+            if (0 === strpos($pathinfo, '/js/874e11e_')) {
+                if (0 === strpos($pathinfo, '/js/874e11e_a')) {
+                    // _assetic_874e11e_0
+                    if ($pathinfo === '/js/874e11e_app_1.js') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => '874e11e',  'pos' => 0,  '_format' => 'js',  '_route' => '_assetic_874e11e_0',);
+                    }
+
+                    // _assetic_874e11e_1
+                    if ($pathinfo === '/js/874e11e_allPostsCtrl_2.js') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => '874e11e',  'pos' => 1,  '_format' => 'js',  '_route' => '_assetic_874e11e_1',);
+                    }
+
                 }
 
-                // _assetic_63a3082_1
-                if ($pathinfo === '/js/63a3082_allPostsCtrl_2.js') {
-                    return array (  '_controller' => 'assetic.controller:render',  'name' => '63a3082',  'pos' => 1,  '_format' => 'js',  '_route' => '_assetic_63a3082_1',);
+                // _assetic_874e11e_2
+                if ($pathinfo === '/js/874e11e_jqwery_3.js') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => '874e11e',  'pos' => 2,  '_format' => 'js',  '_route' => '_assetic_874e11e_2',);
                 }
 
             }

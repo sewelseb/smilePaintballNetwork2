@@ -1,0 +1,16 @@
+/**
+ * Created by sebastien on 07-09-16.
+ */
+
+
+setInterval(updateFb(), 6000);
+
+function updateFb(){
+    if(typeof FB !== 'undefined')
+    {
+        FB.XFBML.parse();
+
+    }
+    console.log('update facebook');
+
+}

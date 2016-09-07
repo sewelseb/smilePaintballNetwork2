@@ -23,22 +23,24 @@ return array (
       ),
     ),
   ),
-  '63a3082' => 
+  '874e11e' => 
   array (
     0 => 
     array (
       0 => '@SmilePlatformBundle/public/js/Angular/app.js',
       1 => '@SmilePlatformBundle/public/js/Angular/Controllers/allPostsCtrl.js',
+      2 => '@SmilePlatformBundle/public/js/jqwery.js',
     ),
     1 => 
     array (
       0 => 'cssrewrite',
       1 => 'cssrewrite',
+      2 => 'cssrewrite',
     ),
     2 => 
     array (
-      'output' => '_controller/js/63a3082.js',
-      'name' => '63a3082',
+      'output' => '_controller/js/874e11e.js',
+      'name' => '874e11e',
       'debug' => NULL,
       'combine' => NULL,
       'vars' => 

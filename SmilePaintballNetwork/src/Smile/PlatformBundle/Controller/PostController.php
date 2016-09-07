@@ -58,9 +58,21 @@ class PostController extends Controller
                         "//www.youtube.com/embed/$2",
                         $post->getUrl()));
                     $post->setType('video_youtube');
-                }else{
-                    echo "Sorry, not a youtube URL";
                 }
+
+                $urlFb = explode('facebook.com', $post->getUrl());
+                $urlVideoFb=0;
+                if(count($urlFb)>1)
+                {
+                    $urlVideoFb = explode('/videos/', $post->getUrl());
+                }
+
+                if (count($urlVideoFb)>1)
+                {
+                    $post->setType('video_facebook');
+                }
+
+
 
 
                 $em = $this->getDoctrine()->getManager();

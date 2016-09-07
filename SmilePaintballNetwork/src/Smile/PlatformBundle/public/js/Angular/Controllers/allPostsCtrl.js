@@ -3,7 +3,7 @@
  * allPostsCtrl
  */
 
-myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope) {
+myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
 
     $scope.posts = [];
 
@@ -21,12 +21,17 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope) {
                 console.log(news);
 
                 $scope.posts=news;
+
                 $scope.safeApply();
 
+                $q.defer(function(){
+                    scope.$apply();
+                    FB.XFBML.parse();
+                });
 
                 //console.log($scope.newsList);
                 $('#spiningWheelAllPosts').hide("slow");
-                $('#contentAllPosts').show("slow");
+                $('#contentAllPosts').show("slow", $scope.facebookSafeApply());
 
 
 
@@ -41,6 +46,11 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope) {
 
             }
         });
+    };
+
+    $scope.facebookSafeApply = function(){
+        console.log('test');
+        FB.XFBML.parse();
     };
 
     $scope.trustAsResourceUrl = function(url)
