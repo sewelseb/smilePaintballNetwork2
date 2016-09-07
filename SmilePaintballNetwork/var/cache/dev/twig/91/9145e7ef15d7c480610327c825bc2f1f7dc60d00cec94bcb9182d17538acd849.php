@@ -15,8 +15,8 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_08dc709fab76d27c625dd6c55cbc8f94d946e59dfa0474e04171504eed030220 = $this->env->getExtension("native_profiler");
-        $__internal_08dc709fab76d27c625dd6c55cbc8f94d946e59dfa0474e04171504eed030220->enter($__internal_08dc709fab76d27c625dd6c55cbc8f94d946e59dfa0474e04171504eed030220_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
+        $__internal_640366421deee47d1eafab5aa6f120aaf9fce2aa692aec44cd139c65466e0b38 = $this->env->getExtension("native_profiler");
+        $__internal_640366421deee47d1eafab5aa6f120aaf9fce2aa692aec44cd139c65466e0b38->enter($__internal_640366421deee47d1eafab5aa6f120aaf9fce2aa692aec44cd139c65466e0b38_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
 
         // line 1
         echo "<!-- Project One -->
@@ -33,7 +33,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
     <div id=\"contentAllPosts\" hidden>
         <div ng-repeat=\"post in posts | orderBy: '-creationTime'\">
             ";
-        // line 38
+        // line 41
         echo "
                 <div class=\"row\" >
                     <div class=\"col-md-7\">
@@ -47,6 +47,9 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
                             </div>
                             <div ng-if=\"post.type=='picture_facebook'\">
                                 <div data-width=\"460px\" class=\"fb-post\" data-href=\"{{ post.url }}\"></div>
+                            </div>
+                            <div ng-if=\"post.type=='picture_externalUrl'\">
+                                <img class=\"img-responsive\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" alt=\"\">
                             </div>
                             <div ng-if=\"post.type=='picture_local'\">
                                 <img class=\"img-responsive\" ng-src=\"{{post.picture.uploadDir}}{{post.picture.url}}\" alt=\"\">
@@ -74,7 +77,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
 ";
         
-        $__internal_08dc709fab76d27c625dd6c55cbc8f94d946e59dfa0474e04171504eed030220->leave($__internal_08dc709fab76d27c625dd6c55cbc8f94d946e59dfa0474e04171504eed030220_prof);
+        $__internal_640366421deee47d1eafab5aa6f120aaf9fce2aa692aec44cd139c65466e0b38->leave($__internal_640366421deee47d1eafab5aa6f120aaf9fce2aa692aec44cd139c65466e0b38_prof);
 
     }
 
@@ -90,7 +93,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
     public function getDebugInfo()
     {
-        return array (  37 => 38,  26 => 3,  22 => 1,);
+        return array (  37 => 41,  26 => 3,  22 => 1,);
     }
 }
 /* <!-- Project One -->*/
@@ -116,6 +119,9 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 /*                             </div>*/
 /*                             <div ng-if="post.type=='picture_facebook'">*/
 /*                                 <div data-width="460px" class="fb-post" data-href="{{ post.url }}"></div>*/
+/*                             </div>*/
+/*                             <div ng-if="post.type=='picture_externalUrl'">*/
+/*                                 <img class="img-responsive" ng-src="{{ trustAsResourceUrl(post.url) }}" alt="">*/
 /*                             </div>*/
 /*                             <div ng-if="post.type=='picture_local'">*/
 /*                                 <img class="img-responsive" ng-src="{{post.picture.uploadDir}}{{post.picture.url}}" alt="">*/

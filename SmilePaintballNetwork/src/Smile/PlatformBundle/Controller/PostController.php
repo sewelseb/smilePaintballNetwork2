@@ -41,6 +41,10 @@ class PostController extends Controller
             if($post->getPicture()!=null || $post->getUrl()!=null)
             {
                 $post->setType('picture_local');
+                if ($post->getUrl()!=null)
+                {
+                    $post->setType('picture_externalUrl');
+                }
                 $post->setCreationTime(time());
                 $post->setUser($this->getUser());
                 if($post->getPicture()!=null)
@@ -77,6 +81,8 @@ class PostController extends Controller
                 {
                     $post->setType('picture_facebook');
                 }
+
+
 
 
 

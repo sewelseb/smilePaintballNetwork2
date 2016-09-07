@@ -761,3 +761,12 @@ af3a15,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/css/1-col-portfolio.
 787989,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/js/jquery.js,1473260291,127d5f,200
 127d5f,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/js/jquery.js,1473260292,,404
 888d44,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/api/posts/getLastPosts,1473260294,,200
+6087c1,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DSmilePlatformBundle%253APost%253AaddNew,1473260676,2c0141,200
+2c0141,127.0.0.1,POST,http://smilepaintball2.dev/app_dev.php/,1473260676,,200
+af5fcf,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/js/jquery.js,1473260677,6ed5e2,200
+6ed5e2,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/js/jquery.js,1473260677,,404
+4c287d,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/css/1-col-portfolio.css,1473260677,f605cd,200
+f605cd,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/css/1-col-portfolio.css,1473260677,,404
+9bf70f,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/js/jquery.js,1473260681,efa432,200
+efa432,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/js/jquery.js,1473260681,,404
+33e317,127.0.0.1,GET,http://smilepaintball2.dev/app_dev.php/api/posts/getLastPosts,1473260683,,200
