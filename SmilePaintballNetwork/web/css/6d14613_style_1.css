@@ -5,3 +5,13 @@ body {
 footer {
     margin: 50px 0;
 }
+
+.navbar{
+    background-color: #555c30;
+    background-image: none;
+    color: white;
+}
+
+.yellow-text{
+    color: #f2c716;
+}

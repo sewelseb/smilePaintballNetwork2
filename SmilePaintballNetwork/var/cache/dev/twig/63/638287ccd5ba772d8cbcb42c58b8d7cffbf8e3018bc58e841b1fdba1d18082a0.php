@@ -15,8 +15,8 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_92771a60f139350a2fcb2fe1c719decb1d11899e239863d4f06583f0d1343d4f = $this->env->getExtension("native_profiler");
-        $__internal_92771a60f139350a2fcb2fe1c719decb1d11899e239863d4f06583f0d1343d4f->enter($__internal_92771a60f139350a2fcb2fe1c719decb1d11899e239863d4f06583f0d1343d4f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
+        $__internal_349283b5bba43f8bdc3e8bc76559e4aa53c83d57cce5bcb1e24520a3b7878119 = $this->env->getExtension("native_profiler");
+        $__internal_349283b5bba43f8bdc3e8bc76559e4aa53c83d57cce5bcb1e24520a3b7878119->enter($__internal_349283b5bba43f8bdc3e8bc76559e4aa53c83d57cce5bcb1e24520a3b7878119_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
 
         // line 1
         echo "<!-- Navigation -->
@@ -34,7 +34,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
                     <span class=\"icon-bar\"></span>
                     <span class=\"icon-bar\"></span>
                 </button>
-                <a class=\"navbar-brand\" href=\"#\">Smile Paintball Network</a>
+                <a class=\"navbar-brand yellow-text\" href=\"#\"><span class=\"yellow-text\">Smile Paintball Network</span></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class=\"collapse navbar-collapse pull-right\" id=\"bs-example-navbar-collapse-1\">
@@ -43,7 +43,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
                         <a href=\"";
             // line 19
             echo $this->env->getExtension('routing')->getPath("fos_user_security_logout");
-            echo "\">Logout</a>
+            echo "\" class=\"#f2c716\"><span class=\"yellow-text\">Logout</span></a>
                     </li>
                 </ul>
             </div>
@@ -66,19 +66,19 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
                     <span class=\"icon-bar\"></span>
                     <span class=\"icon-bar\"></span>
                 </button>
-                <a class=\"navbar-brand\" href=\"#\">Smile Paintball Network</a>
+                <a class=\"navbar-brand yellow-text\" href=\"#\"><span class=\"yellow-text\">Smile Paintball Network</span></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class=\"collapse navbar-collapse pull-right\" id=\"bs-example-navbar-collapse-1\">
                 <ul class=\"nav navbar-nav\">
                     <li>
-                        <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\">Login</a>
+                        <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\"><span class=\"yellow-text\">Login</span></a>
                     </li>
                     <li>
-                        <a href=\"#\" data-toggle=\"modal\" data-target=\"#registerModal\">Register</a>
+                        <a href=\"#\" data-toggle=\"modal\" data-target=\"#registerModal\" class=\"yellow-text\"><span class=\"yellow-text\">Register</span></a>
                     </li>
                     <li>
-                        <a href=\"#\">About</a>
+                        <a href=\"#\" class=\"yellow-text\"><span class=\"yellow-text\">About</span></a>
                     </li>
                 </ul>
             </div>
@@ -110,7 +110,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
             <div class=\"modal-content\">
                 <div class=\"modal-header\">
                     <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>
-                    <h4 class=\"modal-title\" id=\"myModalLabel\">Register test</h4>
+                    <h4 class=\"modal-title\" id=\"myModalLabel\">Register</h4>
                 </div>
                 <div class=\"modal-body\">
                     ";
@@ -119,17 +119,20 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
             echo "
                     <div class=\"clearfix\"></div>
                 </div>
+
+                <div class=\"modal-footer\">
+                    <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>
+                    <div class=\"clear-fix\"></div>
+                </div>
                 <div class=\"clear-fix\"></div>
             </div>
-            <div class=\"modal-footer\">
-                <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>
-            </div>
+
         </div>
     </div>
 ";
         }
         
-        $__internal_92771a60f139350a2fcb2fe1c719decb1d11899e239863d4f06583f0d1343d4f->leave($__internal_92771a60f139350a2fcb2fe1c719decb1d11899e239863d4f06583f0d1343d4f_prof);
+        $__internal_349283b5bba43f8bdc3e8bc76559e4aa53c83d57cce5bcb1e24520a3b7878119->leave($__internal_349283b5bba43f8bdc3e8bc76559e4aa53c83d57cce5bcb1e24520a3b7878119_prof);
 
     }
 
@@ -160,13 +163,13 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 /*                     <span class="icon-bar"></span>*/
 /*                     <span class="icon-bar"></span>*/
 /*                 </button>*/
-/*                 <a class="navbar-brand" href="#">Smile Paintball Network</a>*/
+/*                 <a class="navbar-brand yellow-text" href="#"><span class="yellow-text">Smile Paintball Network</span></a>*/
 /*             </div>*/
 /*             <!-- Collect the nav links, forms, and other content for toggling -->*/
 /*             <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">*/
 /*                 <ul class="nav navbar-nav">*/
 /*                     <li>*/
-/*                         <a href="{{ path('fos_user_security_logout') }}">Logout</a>*/
+/*                         <a href="{{ path('fos_user_security_logout') }}" class="#f2c716"><span class="yellow-text">Logout</span></a>*/
 /*                     </li>*/
 /*                 </ul>*/
 /*             </div>*/
@@ -187,19 +190,19 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 /*                     <span class="icon-bar"></span>*/
 /*                     <span class="icon-bar"></span>*/
 /*                 </button>*/
-/*                 <a class="navbar-brand" href="#">Smile Paintball Network</a>*/
+/*                 <a class="navbar-brand yellow-text" href="#"><span class="yellow-text">Smile Paintball Network</span></a>*/
 /*             </div>*/
 /*             <!-- Collect the nav links, forms, and other content for toggling -->*/
 /*             <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">*/
 /*                 <ul class="nav navbar-nav">*/
 /*                     <li>*/
-/*                         <a href="#" data-toggle="modal" data-target="#loginModal">Login</a>*/
+/*                         <a href="#" data-toggle="modal" data-target="#loginModal" class="yellow-text"><span class="yellow-text">Login</span></a>*/
 /*                     </li>*/
 /*                     <li>*/
-/*                         <a href="#" data-toggle="modal" data-target="#registerModal">Register</a>*/
+/*                         <a href="#" data-toggle="modal" data-target="#registerModal" class="yellow-text"><span class="yellow-text">Register</span></a>*/
 /*                     </li>*/
 /*                     <li>*/
-/*                         <a href="#">About</a>*/
+/*                         <a href="#" class="yellow-text"><span class="yellow-text">About</span></a>*/
 /*                     </li>*/
 /*                 </ul>*/
 /*             </div>*/
@@ -228,17 +231,20 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 /*             <div class="modal-content">*/
 /*                 <div class="modal-header">*/
 /*                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>*/
-/*                     <h4 class="modal-title" id="myModalLabel">Register test</h4>*/
+/*                     <h4 class="modal-title" id="myModalLabel">Register</h4>*/
 /*                 </div>*/
 /*                 <div class="modal-body">*/
 /*                     {{ render(controller("SmileUserBundle:Registration:register", {'originalRequest': app.request})) }}*/
 /*                     <div class="clearfix"></div>*/
 /*                 </div>*/
+/* */
+/*                 <div class="modal-footer">*/
+/*                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>*/
+/*                     <div class="clear-fix"></div>*/
+/*                 </div>*/
 /*                 <div class="clear-fix"></div>*/
 /*             </div>*/
-/*             <div class="modal-footer">*/
-/*                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>*/
-/*             </div>*/
+/* */
 /*         </div>*/
 /*     </div>*/
 /* {% endif %}*/
