@@ -1,0 +1,21 @@
+{% for post in posts %}
+
+    <div class="spacer-5px">
+        {% if post.type=='video_youtube' %}
+            <iframe  width="100%"  height="300px" src="{{ post.url }}" frameborder="0" allowfullscreen></iframe>
+        {% endif %}
+        {% if post.type=='video_facebook' %}
+            <div class="fb-video" data-href="{{ post.url }}"  data-show-text="false"><blockquote cite="{{ post.url }}" class="fb-xfbml-parse-ignore"><a href="{{ post.url }}"></a>
+                </blockquote></div>
+        {% endif %}
+        {% if post.type=='picture_facebook' %}
+            <div data-width="100%" class="fb-post" data-href="{{ post.url }}"></div>
+        {% endif %}
+        {% if post.type=='picture_externalUrl' %}
+            <img class="img-responsive" src="{{ post.url }}" alt="">
+        {% endif %}
+        {% if post.type=='picture_local' %}
+            <img class="img-responsive" src="{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">
+        {% endif %}
+    </div>
+{% endfor %}

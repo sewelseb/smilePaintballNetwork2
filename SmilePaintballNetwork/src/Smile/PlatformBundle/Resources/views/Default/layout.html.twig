@@ -83,12 +83,88 @@
 
         {% endblock %}
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 right-bar">
         {% block rightCollumn %}
-            <h3>Project One</h3>
-            <h4>Subheading</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-            <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            <div class="row">
+                <h3>Latest Smile Paintball video</h3>
+                <div class="fb-video" data-href="https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater" data-width="700px" data-show-text="false"><blockquote cite="https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater"></a>
+                    </blockquote></div>
+            </div>
+            <hr/>
+            <div class="row">
+                <!-- top 10 -->
+                <h3>Top 10</h3>
+                {{ render(controller('SmilePlatformBundle:Post:topTen')) }}
+            </div>
+            <hr/>
+            <div class="row">
+                <h3>Sponsors</h3>
+                <div class="" >
+                    <a href="http://www.tippmann.com/">
+                        <img src="/images/sponsors/tippmann.png" width="500em">
+                    </a>
+
+                </div>
+
+                <div class="" >
+                    <a href="http://gisportz.com/">
+                        <img src="/images/sponsors/gisportz.png" width="500em">
+                    </a>
+
+                </div>
+
+                <div class="" >
+                    <a href="http://gisportz.com/vforce-goggles.php">
+                        <img src="/images/sponsors/vforce.png" width="500em">
+                    </a>
+
+                </div>
+
+                <div class="" >
+                    <a href="http://www.redbull.com/be/fr">
+                        <img src="/images/sponsors/redbull-com-logo.png" width="500em">
+                    </a>
+
+                </div>
+
+                <div >
+                    <a href="http://www.kg-factory.fr/fr/">
+                        <img src="/images/sponsors/kgfactory.png" width="500em">
+                    </a>
+
+                </div>
+
+                <div >
+                    <a href="http://www.patch-werk.com/index.php/en/">
+                        <img src="/images/sponsors/patch-werk.png" width="500em">
+                    </a>
+
+                </div>
+
+                <div >
+                    <a href="http://www.enolagaye.com">
+                        <img src="/images/sponsors/g-n.jpeg" width="500em">
+                    </a>
+
+                </div>
+
+                <div >
+                    <a href="http://maxxloader.com/">
+                        <img src="http://maxxloader.com/wp-content/uploads/2015/03/MaxXloader-Logo-R35.png" width="500em">
+                    </a>
+
+                </div>
+
+                <div >
+                    <a href="http://shop.customgunrails.com/">
+                        <img src="http://shop.customgunrails.com/images/CGR_LOGOlight.png">
+                    </a>
+
+                </div>
+
+            </div>
+
+
         {% endblock %}
     </div>
 

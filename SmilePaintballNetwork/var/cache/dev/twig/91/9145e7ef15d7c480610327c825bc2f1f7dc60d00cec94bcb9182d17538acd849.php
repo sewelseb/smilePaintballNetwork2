@@ -15,8 +15,8 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_467d49786bdfbbc021645a5c910af81b8ae05a08815f40ba0265239ad82a938c = $this->env->getExtension("native_profiler");
-        $__internal_467d49786bdfbbc021645a5c910af81b8ae05a08815f40ba0265239ad82a938c->enter($__internal_467d49786bdfbbc021645a5c910af81b8ae05a08815f40ba0265239ad82a938c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
+        $__internal_d004677b4efeec08b8974614b127ab4017cbe66334682e59c4ed1095d1b5178f = $this->env->getExtension("native_profiler");
+        $__internal_d004677b4efeec08b8974614b127ab4017cbe66334682e59c4ed1095d1b5178f->enter($__internal_d004677b4efeec08b8974614b127ab4017cbe66334682e59c4ed1095d1b5178f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
 
         // line 1
         echo "<!-- Project One -->
@@ -41,7 +41,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
     <div id=\"contentAllPosts\" hidden>
         <div ng-repeat=\"post in posts | orderBy: '-creationTime'\">
             ";
-        // line 62
+        // line 70
         echo "
                 <div class=\"row\" >
                     <div class=\"col-md-7\">
@@ -50,7 +50,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
                                 <iframe  width=\"100%\"  height=\"300px\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" frameborder=\"0\" allowfullscreen></iframe>
                             </div>
                             <div ng-if=\"post.type=='video_facebook'\">
-                                <div class=\"fb-video\" data-href=\"{{ post.url }}\" data-width=\"700px\" data-show-text=\"false\"><blockquote cite=\"{{ post.url }}\" class=\"fb-xfbml-parse-ignore\"><a href=\"{{ post.url }}\"></a>
+                                <div class=\"fb-video\" data-href=\"{{ post.url }}\" data-width=\"460px\" data-show-text=\"false\"><blockquote cite=\"{{ post.url }}\" class=\"fb-xfbml-parse-ignore\"><a href=\"{{ post.url }}\"></a>
                                 </blockquote></div>
                             </div>
                             <div ng-if=\"post.type=='picture_facebook'\">
@@ -67,17 +67,23 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
                     </div>
                     <div class=\"col-md-5\">
                         <h3>{{ post.title }}</h3>
-                        <h4>{{ post.event }}</h4>
+                        <h4>{{ post.event_name }}</h4>
                         <p>
                             <div id=\"updownVote_{{post.id}}\">
                                 <div class=\"col-md-6\">
                                     <a href=\"\">
-                                        <span ng-click=\"upvote(post.id)\">Upvote</span>
+                                        <span ng-click=\"upvote(post.id)\">
+                                            <img src=\"/images/upvote.png\" class=\"vote-img\">
+                                            
+                                        </span>
                                     </a>
                                 </div>
                                 <div class=\"col-md-6\">
                                     <a href=\"\">
-                                        <span ng-click=\"downvote(post.id)\">Downvote</span>
+                                        <span ng-click=\"downvote(post.id)\">
+                                            <img src=\"/images/downvote.png\" class=\"vote-img\">
+
+                                        </span>
                                     </a>
                                 </div>
                             </div>
@@ -88,7 +94,9 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
                                 downvoted :(
                             </div>
                         </p>
-                        <a class=\"btn btn-primary\" href=\"#\">View Project <span class=\"glyphicon glyphicon-chevron-right\"></span></a>
+                        <div>
+                            {{ post.upvotes-post.downvotes }} points
+                        </div>
                     </div>
                 </div>
             ";
@@ -104,7 +112,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
 ";
         
-        $__internal_467d49786bdfbbc021645a5c910af81b8ae05a08815f40ba0265239ad82a938c->leave($__internal_467d49786bdfbbc021645a5c910af81b8ae05a08815f40ba0265239ad82a938c_prof);
+        $__internal_d004677b4efeec08b8974614b127ab4017cbe66334682e59c4ed1095d1b5178f->leave($__internal_d004677b4efeec08b8974614b127ab4017cbe66334682e59c4ed1095d1b5178f_prof);
 
     }
 
@@ -120,7 +128,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
     public function getDebugInfo()
     {
-        return array (  45 => 62,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
+        return array (  45 => 70,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
     }
 }
 /* <!-- Project One -->*/
@@ -143,7 +151,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 /*                                 <iframe  width="100%"  height="300px" ng-src="{{ trustAsResourceUrl(post.url) }}" frameborder="0" allowfullscreen></iframe>*/
 /*                             </div>*/
 /*                             <div ng-if="post.type=='video_facebook'">*/
-/*                                 <div class="fb-video" data-href="{{ post.url }}" data-width="700px" data-show-text="false"><blockquote cite="{{ post.url }}" class="fb-xfbml-parse-ignore"><a href="{{ post.url }}"></a>*/
+/*                                 <div class="fb-video" data-href="{{ post.url }}" data-width="460px" data-show-text="false"><blockquote cite="{{ post.url }}" class="fb-xfbml-parse-ignore"><a href="{{ post.url }}"></a>*/
 /*                                 </blockquote></div>*/
 /*                             </div>*/
 /*                             <div ng-if="post.type=='picture_facebook'">*/
@@ -160,17 +168,23 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 /*                     </div>*/
 /*                     <div class="col-md-5">*/
 /*                         <h3>{{ post.title }}</h3>*/
-/*                         <h4>{{ post.event }}</h4>*/
+/*                         <h4>{{ post.event_name }}</h4>*/
 /*                         <p>*/
 /*                             <div id="updownVote_{{post.id}}">*/
 /*                                 <div class="col-md-6">*/
 /*                                     <a href="">*/
-/*                                         <span ng-click="upvote(post.id)">Upvote</span>*/
+/*                                         <span ng-click="upvote(post.id)">*/
+/*                                             <img src="/images/upvote.png" class="vote-img">*/
+/*                                             */
+/*                                         </span>*/
 /*                                     </a>*/
 /*                                 </div>*/
 /*                                 <div class="col-md-6">*/
 /*                                     <a href="">*/
-/*                                         <span ng-click="downvote(post.id)">Downvote</span>*/
+/*                                         <span ng-click="downvote(post.id)">*/
+/*                                             <img src="/images/downvote.png" class="vote-img">*/
+/* */
+/*                                         </span>*/
 /*                                     </a>*/
 /*                                 </div>*/
 /*                             </div>*/
@@ -181,7 +195,9 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 /*                                 downvoted :(*/
 /*                             </div>*/
 /*                         </p>*/
-/*                         <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>*/
+/*                         <div>*/
+/*                             {{ post.upvotes-post.downvotes }} points*/
+/*                         </div>*/
 /*                     </div>*/
 /*                 </div>*/
 /*             {% endverbatim %}*/

@@ -15,8 +15,8 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_31403fefe81d50f3183ee5b1e1eada2a7ae0029d2f5d10a3200d1ab9da333746 = $this->env->getExtension("native_profiler");
-        $__internal_31403fefe81d50f3183ee5b1e1eada2a7ae0029d2f5d10a3200d1ab9da333746->enter($__internal_31403fefe81d50f3183ee5b1e1eada2a7ae0029d2f5d10a3200d1ab9da333746_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
+        $__internal_f8a2ae7f256fb0600d49b8fabb431697ab82242f3ac5df0c9fdc8be6ae36a90f = $this->env->getExtension("native_profiler");
+        $__internal_f8a2ae7f256fb0600d49b8fabb431697ab82242f3ac5df0c9fdc8be6ae36a90f->enter($__internal_f8a2ae7f256fb0600d49b8fabb431697ab82242f3ac5df0c9fdc8be6ae36a90f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
 
         // line 1
         echo "<!-- Navigation -->
@@ -34,7 +34,10 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
                     <span class=\"icon-bar\"></span>
                     <span class=\"icon-bar\"></span>
                 </button>
-                <a class=\"navbar-brand yellow-text\" href=\"#\"><span class=\"yellow-text\"><img class=\"logo\" src=\"/images/logo.png\" alt=\"SMILE\"></span></a>
+                <a class=\"navbar-brand yellow-text\" href=\"";
+            // line 13
+            echo $this->env->getExtension('routing')->getPath("smile_platform_homepage");
+            echo "\"><span class=\"yellow-text\"><img class=\"logo\" src=\"/images/logo.png\" alt=\"SMILE\"></span></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class=\"collapse navbar-collapse pull-right\" id=\"bs-example-navbar-collapse-1\">
@@ -160,7 +163,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 ";
         }
         
-        $__internal_31403fefe81d50f3183ee5b1e1eada2a7ae0029d2f5d10a3200d1ab9da333746->leave($__internal_31403fefe81d50f3183ee5b1e1eada2a7ae0029d2f5d10a3200d1ab9da333746_prof);
+        $__internal_f8a2ae7f256fb0600d49b8fabb431697ab82242f3ac5df0c9fdc8be6ae36a90f->leave($__internal_f8a2ae7f256fb0600d49b8fabb431697ab82242f3ac5df0c9fdc8be6ae36a90f_prof);
 
     }
 
@@ -176,7 +179,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 
     public function getDebugInfo()
     {
-        return array (  146 => 106,  128 => 91,  87 => 52,  74 => 42,  54 => 25,  48 => 22,  27 => 3,  25 => 2,  22 => 1,);
+        return array (  149 => 106,  131 => 91,  90 => 52,  77 => 42,  57 => 25,  51 => 22,  39 => 13,  27 => 3,  25 => 2,  22 => 1,);
     }
 }
 /* <!-- Navigation -->*/
@@ -191,7 +194,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 /*                     <span class="icon-bar"></span>*/
 /*                     <span class="icon-bar"></span>*/
 /*                 </button>*/
-/*                 <a class="navbar-brand yellow-text" href="#"><span class="yellow-text"><img class="logo" src="/images/logo.png" alt="SMILE"></span></a>*/
+/*                 <a class="navbar-brand yellow-text" href="{{ path('smile_platform_homepage') }}"><span class="yellow-text"><img class="logo" src="/images/logo.png" alt="SMILE"></span></a>*/
 /*             </div>*/
 /*             <!-- Collect the nav links, forms, and other content for toggling -->*/
 /*             <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">*/

@@ -21,26 +21,26 @@
                     <div data-width="460px" class="fb-post" data-href="{{ post.url }}"></div>
                 {% endif %}
                 {% if post.type=='picture_externalUrl' %}
-                    <img class="img-responsive" ng-src="{{ post.url }}" alt="">
+                    <img class="img-responsive" src="{{ post.url }}" alt="">
                 {% endif %}
                 {% if post.type=='picture_local' %}
-                    <img class="img-responsive" ng-src="{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">
+                    <img class="img-responsive" src="{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">
                 {% endif %}
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 ">
 
                     <h3>{{ post.title }}</h3>
                     <h4>{{ post.eventName }}</h4>
                     <p>
                     <div id="updownVote_{{post.id}}">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-6 col-xs-6">
                             <a href="">
-                                <span onclick="upvote({{ post.id }})">Upvote</span>
+                                <span onclick="upvote({{ post.id }})"><img src="/images/upvote.png" class="vote-img"></span>
                             </a>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-6 col-xs-6">
                             <a href="">
-                                <span onclick="downvote({{ post.id }})">Downvote</span>
+                                <span onclick="downvote({{ post.id }})"><img src="/images/downvote.png" class="vote-img"></span>
                             </a>
                         </div>
                     </div>
@@ -51,8 +51,11 @@
                         downvoted :(
                     </div>
                     </p>
-                    <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-                </div>
+
+                    <div>
+                        {{ post.upvotes-post.downvotes }} points
+                    </div>
+            </div>
 
 
         </div>

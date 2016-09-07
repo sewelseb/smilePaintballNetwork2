@@ -35,4 +35,15 @@ class PostRepository extends \Doctrine\ORM\EntityRepository
             ->getResult()
             ;
     }
+
+    public function getTopTen()
+    {
+        $qb = $this->createQueryBuilder('a');
+        $qb->orderBy('a.upvotes - a.downvotes', 'DESC')
+            ->setMaxResults(10);
+        return $qb
+            ->getQuery()
+            ->getResult()
+            ;
+    }
 }

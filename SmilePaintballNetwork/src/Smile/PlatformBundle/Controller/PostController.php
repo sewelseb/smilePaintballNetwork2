@@ -110,4 +110,18 @@ class PostController extends Controller
         ));
 
     }
+
+    public function topTenAction()
+    {
+        $postRepo = $this
+            ->getDoctrine()
+            ->getManager()
+            ->getRepository('SmilePlatformBundle:Post');
+        $posts = $postRepo->getTopTen();
+        return $this->render('SmilePlatformBundle::Default/Blocs/topTen.html.twig', array(
+
+            'posts' => $posts,
+
+        ));
+    }
 }
