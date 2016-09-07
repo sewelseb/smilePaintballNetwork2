@@ -16,6 +16,9 @@
             <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
+                        <a href="" data-toggle="modal" data-target="#newPostModal"><span class="yellow-text">+ Post</span></a>
+                    </li>
+                    <li>
                         <a href="{{ path('fos_user_security_logout') }}" class="#f2c716"><span class="yellow-text">Logout</span></a>
                     </li>
                 </ul>
@@ -24,6 +27,21 @@
         </div>
         <!-- /.container -->
     </nav>
+
+    <div class="modal fade" id="newPostModal" tabindex="-1" role="dialog" aria-labelledby="loginModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">NewPost</h4>
+                </div>
+                <div class="modal-body">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 {% else %}
