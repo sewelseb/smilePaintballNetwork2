@@ -3,6 +3,7 @@
 namespace Smile\PlatformBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Smile\PlatformBundle\Entity\PostPic;
 
 /**
  * Post
@@ -50,7 +51,7 @@ class Post
     /**
      * @var string
      *
-     * @ORM\Column(name="event_name", type="string", length=255)
+     * @ORM\Column(name="event_name", type="string", length=255, nullable=true)
      */
     private $eventName;
 
@@ -62,7 +63,7 @@ class Post
     private $creationTime;
 
     /**
-     * @ORM\OneToOne(targetEntity="Smile\PlatformBundle\Entity\PostPics",cascade={"persist", "remove"}, nullable=true)
+     * @ORM\OneToOne(targetEntity="Smile\PlatformBundle\Entity\PostPic",cascade={"persist", "remove"})
      * @ORM\JoinColumn(nullable=true)
      */
     private $picture;

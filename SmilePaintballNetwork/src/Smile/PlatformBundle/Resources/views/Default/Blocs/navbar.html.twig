@@ -36,7 +36,7 @@
                     <h4 class="modal-title" id="myModalLabel">NewPost</h4>
                 </div>
                 <div class="modal-body">
-
+                    {{ render(controller('SmilePlatformBundle:Post:addNew', {'request': app.request})) }}
                 </div>
 
             </div>

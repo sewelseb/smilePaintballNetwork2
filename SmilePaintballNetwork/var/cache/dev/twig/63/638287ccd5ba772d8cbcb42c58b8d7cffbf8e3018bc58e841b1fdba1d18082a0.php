@@ -15,8 +15,8 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_349283b5bba43f8bdc3e8bc76559e4aa53c83d57cce5bcb1e24520a3b7878119 = $this->env->getExtension("native_profiler");
-        $__internal_349283b5bba43f8bdc3e8bc76559e4aa53c83d57cce5bcb1e24520a3b7878119->enter($__internal_349283b5bba43f8bdc3e8bc76559e4aa53c83d57cce5bcb1e24520a3b7878119_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
+        $__internal_fd563c34dbb3abdec43d1d5b9e5e454bccb06d9d3c5fee1dddbff325b030fddc = $this->env->getExtension("native_profiler");
+        $__internal_fd563c34dbb3abdec43d1d5b9e5e454bccb06d9d3c5fee1dddbff325b030fddc->enter($__internal_fd563c34dbb3abdec43d1d5b9e5e454bccb06d9d3c5fee1dddbff325b030fddc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
 
         // line 1
         echo "<!-- Navigation -->
@@ -40,8 +40,11 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
             <div class=\"collapse navbar-collapse pull-right\" id=\"bs-example-navbar-collapse-1\">
                 <ul class=\"nav navbar-nav\">
                     <li>
+                        <a href=\"\" data-toggle=\"modal\" data-target=\"#newPostModal\"><span class=\"yellow-text\">+ Post</span></a>
+                    </li>
+                    <li>
                         <a href=\"";
-            // line 19
+            // line 22
             echo $this->env->getExtension('routing')->getPath("fos_user_security_logout");
             echo "\" class=\"#f2c716\"><span class=\"yellow-text\">Logout</span></a>
                     </li>
@@ -52,10 +55,28 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
         <!-- /.container -->
     </nav>
 
+    <div class=\"modal fade\" id=\"newPostModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"loginModal\">
+        <div class=\"modal-dialog\" role=\"document\">
+            <div class=\"modal-content\">
+                <div class=\"modal-header\">
+                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>
+                    <h4 class=\"modal-title\" id=\"myModalLabel\">NewPost</h4>
+                </div>
+                <div class=\"modal-body\">
+                    ";
+            // line 39
+            echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("SmilePlatformBundle:Post:addNew", array("request" => $this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()))));
+            echo "
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
 ";
         } else {
-            // line 30
+            // line 48
             echo "    <nav class=\"navbar navbar-inverse navbar-fixed-top\" role=\"navigation\">
         <div class=\"container\">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -96,7 +117,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
                 </div>
                 <div class=\"modal-body\">
                     ";
-            // line 69
+            // line 87
             echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("FOSUserBundle:Security:login"));
             echo "
                 </div>
@@ -114,7 +135,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
                 </div>
                 <div class=\"modal-body\">
                     ";
-            // line 84
+            // line 102
             echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("SmileUserBundle:Registration:register", array("originalRequest" => $this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()))));
             echo "
                     <div class=\"clearfix\"></div>
@@ -132,7 +153,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 ";
         }
         
-        $__internal_349283b5bba43f8bdc3e8bc76559e4aa53c83d57cce5bcb1e24520a3b7878119->leave($__internal_349283b5bba43f8bdc3e8bc76559e4aa53c83d57cce5bcb1e24520a3b7878119_prof);
+        $__internal_fd563c34dbb3abdec43d1d5b9e5e454bccb06d9d3c5fee1dddbff325b030fddc->leave($__internal_fd563c34dbb3abdec43d1d5b9e5e454bccb06d9d3c5fee1dddbff325b030fddc_prof);
 
     }
 
@@ -148,7 +169,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 
     public function getDebugInfo()
     {
-        return array (  118 => 84,  100 => 69,  59 => 30,  45 => 19,  27 => 3,  25 => 2,  22 => 1,);
+        return array (  139 => 102,  121 => 87,  80 => 48,  68 => 39,  48 => 22,  27 => 3,  25 => 2,  22 => 1,);
     }
 }
 /* <!-- Navigation -->*/
@@ -169,6 +190,9 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 /*             <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">*/
 /*                 <ul class="nav navbar-nav">*/
 /*                     <li>*/
+/*                         <a href="" data-toggle="modal" data-target="#newPostModal"><span class="yellow-text">+ Post</span></a>*/
+/*                     </li>*/
+/*                     <li>*/
 /*                         <a href="{{ path('fos_user_security_logout') }}" class="#f2c716"><span class="yellow-text">Logout</span></a>*/
 /*                     </li>*/
 /*                 </ul>*/
@@ -177,6 +201,21 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 /*         </div>*/
 /*         <!-- /.container -->*/
 /*     </nav>*/
+/* */
+/*     <div class="modal fade" id="newPostModal" tabindex="-1" role="dialog" aria-labelledby="loginModal">*/
+/*         <div class="modal-dialog" role="document">*/
+/*             <div class="modal-content">*/
+/*                 <div class="modal-header">*/
+/*                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>*/
+/*                     <h4 class="modal-title" id="myModalLabel">NewPost</h4>*/
+/*                 </div>*/
+/*                 <div class="modal-body">*/
+/*                     {{ render(controller('SmilePlatformBundle:Post:addNew', {'request': app.request})) }}*/
+/*                 </div>*/
+/* */
+/*             </div>*/
+/*         </div>*/
+/*     </div>*/
 /* */
 /* */
 /* {% else %}*/
