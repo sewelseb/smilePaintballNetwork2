@@ -15,8 +15,8 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_2b6ed80ae17969bba80202e63d710e1a959a1057a816de04b8e8ecc28266a463 = $this->env->getExtension("native_profiler");
-        $__internal_2b6ed80ae17969bba80202e63d710e1a959a1057a816de04b8e8ecc28266a463->enter($__internal_2b6ed80ae17969bba80202e63d710e1a959a1057a816de04b8e8ecc28266a463_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
+        $__internal_253a56069607c1515d122ac5262a557c5303319db2b163b3d775c576513dfd7e = $this->env->getExtension("native_profiler");
+        $__internal_253a56069607c1515d122ac5262a557c5303319db2b163b3d775c576513dfd7e->enter($__internal_253a56069607c1515d122ac5262a557c5303319db2b163b3d775c576513dfd7e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
 
         // line 1
         echo "<!-- Project One -->
@@ -31,12 +31,18 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
     <div id=\"contentAllPosts\" hidden>
         <div ng-repeat=\"post in posts | orderBy: '-creationTime'\">
             ";
-        // line 23
+        // line 29
         echo "
                 <div class=\"row\" >
                     <div class=\"col-md-7\">
                         <a href=\"#\">
-                            <img class=\"img-responsive\" src=\"http://placehold.it/700x300\" alt=\"\">
+                            <div ng-if=\"post.type=='video_youtube'\">
+                                <iframe  width=\"100%\"  height=\"300px\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" frameborder=\"0\" allowfullscreen></iframe>
+                            </div>
+                            <div ng-if=\"post.type=='picture_local'\">
+                                <img class=\"img-responsive\" ng-src=\"{{post.picture.uploadDir}}{{post.picture.url}}\" alt=\"\">
+                            </div>
+
                         </a>
                     </div>
                     <div class=\"col-md-5\">
@@ -56,9 +62,10 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
 
 </div>
+
 ";
         
-        $__internal_2b6ed80ae17969bba80202e63d710e1a959a1057a816de04b8e8ecc28266a463->leave($__internal_2b6ed80ae17969bba80202e63d710e1a959a1057a816de04b8e8ecc28266a463_prof);
+        $__internal_253a56069607c1515d122ac5262a557c5303319db2b163b3d775c576513dfd7e->leave($__internal_253a56069607c1515d122ac5262a557c5303319db2b163b3d775c576513dfd7e_prof);
 
     }
 
@@ -74,7 +81,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
     public function getDebugInfo()
     {
-        return array (  35 => 23,  26 => 3,  22 => 1,);
+        return array (  35 => 29,  26 => 3,  22 => 1,);
     }
 }
 /* <!-- Project One -->*/
@@ -89,7 +96,13 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 /*                 <div class="row" >*/
 /*                     <div class="col-md-7">*/
 /*                         <a href="#">*/
-/*                             <img class="img-responsive" src="http://placehold.it/700x300" alt="">*/
+/*                             <div ng-if="post.type=='video_youtube'">*/
+/*                                 <iframe  width="100%"  height="300px" ng-src="{{ trustAsResourceUrl(post.url) }}" frameborder="0" allowfullscreen></iframe>*/
+/*                             </div>*/
+/*                             <div ng-if="post.type=='picture_local'">*/
+/*                                 <img class="img-responsive" ng-src="{{post.picture.uploadDir}}{{post.picture.url}}" alt="">*/
+/*                             </div>*/
+/* */
 /*                         </a>*/
 /*                     </div>*/
 /*                     <div class="col-md-5">*/
@@ -108,4 +121,5 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 /* */
 /* */
 /* </div>*/
+/* */
 /* */

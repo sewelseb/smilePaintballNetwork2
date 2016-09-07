@@ -15,8 +15,8 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_0c5d98ea2ee880cb906b12a17dfab352dbcea5fa48dd309d309b4d6f3eeb29e3 = $this->env->getExtension("native_profiler");
-        $__internal_0c5d98ea2ee880cb906b12a17dfab352dbcea5fa48dd309d309b4d6f3eeb29e3->enter($__internal_0c5d98ea2ee880cb906b12a17dfab352dbcea5fa48dd309d309b4d6f3eeb29e3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/layout.html.twig"));
+        $__internal_bca7d0d2e5d29c0a686280cadb1831dff2f20f4a92ba45c9fd1aebc0e46b9fde = $this->env->getExtension("native_profiler");
+        $__internal_bca7d0d2e5d29c0a686280cadb1831dff2f20f4a92ba45c9fd1aebc0e46b9fde->enter($__internal_bca7d0d2e5d29c0a686280cadb1831dff2f20f4a92ba45c9fd1aebc0e46b9fde_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/layout.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -107,7 +107,7 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
         echo "
 </head>
 
-<body ng-app=\"smile\">
+<body >
 
 ";
         // line 56
@@ -115,7 +115,7 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
         // line 57
         echo "
 <!-- Page Content -->
-<div class=\"container\">
+<div class=\"container\" ng-app=\"smile\">
 
     <!-- Page Heading -->
     <div class=\"row\">
@@ -168,7 +168,7 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 
 </html>";
         
-        $__internal_0c5d98ea2ee880cb906b12a17dfab352dbcea5fa48dd309d309b4d6f3eeb29e3->leave($__internal_0c5d98ea2ee880cb906b12a17dfab352dbcea5fa48dd309d309b4d6f3eeb29e3_prof);
+        $__internal_bca7d0d2e5d29c0a686280cadb1831dff2f20f4a92ba45c9fd1aebc0e46b9fde->leave($__internal_bca7d0d2e5d29c0a686280cadb1831dff2f20f4a92ba45c9fd1aebc0e46b9fde_prof);
 
     }
 
@@ -240,12 +240,12 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 /* */
 /* </head>*/
 /* */
-/* <body ng-app="smile">*/
+/* <body >*/
 /* */
 /* {% include 'SmilePlatformBundle::Default/Blocs/navbar.html.twig' %}*/
 /* */
 /* <!-- Page Content -->*/
-/* <div class="container">*/
+/* <div class="container" ng-app="smile">*/
 /* */
 /*     <!-- Page Heading -->*/
 /*     <div class="row">*/

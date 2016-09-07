@@ -40,9 +40,28 @@ class PostController extends Controller
 
             if($post->getPicture()!=null || $post->getUrl()!=null)
             {
+                $post->setType('picture_local');
                 $post->setCreationTime(time());
                 $post->setUser($this->getUser());
-                $post->getPicture()->upload($post);
+                if($post->getPicture()!=null)
+                {
+                    $post->getPicture()->upload($post);
+                }
+
+
+                $regex_youtube_pattern = "/(youtube.com|youtu.be)\/(watch)?(\?v=)?(\S+)?/";
+
+
+                if(preg_match($regex_youtube_pattern, $post->getUrl(), $match)){
+                    $post->setUrl(preg_replace(
+                        "/\s*[a-zA-Z\/\/:\.]*youtu(be.com\/watch\?v=|.be\/)([a-zA-Z0-9\-_]+)([a-zA-Z0-9\/\*\-\_\?\&\;\%\=\.]*)/i",
+                        "//www.youtube.com/embed/$2",
+                        $post->getUrl()));
+                    $post->setType('video_youtube');
+                }else{
+                    echo "Sorry, not a youtube URL";
+                }
+
 
                 $em = $this->getDoctrine()->getManager();
 

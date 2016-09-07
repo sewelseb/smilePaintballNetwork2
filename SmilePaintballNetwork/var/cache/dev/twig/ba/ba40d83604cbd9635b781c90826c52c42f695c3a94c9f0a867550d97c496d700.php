@@ -15,8 +15,8 @@ class __TwigTemplate_4194c7909cee61a408471cf4b6c7de72dbcf28ddf9c6ef59547f16e534d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b98209dc7f6f43139aaa1000369358f253ec5c1e24a313b4f36e2642838479b8 = $this->env->getExtension("native_profiler");
-        $__internal_b98209dc7f6f43139aaa1000369358f253ec5c1e24a313b4f36e2642838479b8->enter($__internal_b98209dc7f6f43139aaa1000369358f253ec5c1e24a313b4f36e2642838479b8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/form/addNewPost.html.twig"));
+        $__internal_bb041f9311ab3a91323e1492c3509674e58868cf50fee25e84a538ea8583c4d0 = $this->env->getExtension("native_profiler");
+        $__internal_bb041f9311ab3a91323e1492c3509674e58868cf50fee25e84a538ea8583c4d0->enter($__internal_bb041f9311ab3a91323e1492c3509674e58868cf50fee25e84a538ea8583c4d0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/form/addNewPost.html.twig"));
 
         // line 1
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start');
@@ -75,7 +75,7 @@ class __TwigTemplate_4194c7909cee61a408471cf4b6c7de72dbcf28ddf9c6ef59547f16e534d
         // line 28
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
         
-        $__internal_b98209dc7f6f43139aaa1000369358f253ec5c1e24a313b4f36e2642838479b8->leave($__internal_b98209dc7f6f43139aaa1000369358f253ec5c1e24a313b4f36e2642838479b8_prof);
+        $__internal_bb041f9311ab3a91323e1492c3509674e58868cf50fee25e84a538ea8583c4d0->leave($__internal_bb041f9311ab3a91323e1492c3509674e58868cf50fee25e84a538ea8583c4d0_prof);
 
     }
 
