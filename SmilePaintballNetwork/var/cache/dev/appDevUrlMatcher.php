@@ -277,6 +277,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
             }
 
+            // smile_platform_contactUs
+            if ($pathinfo === '/platform/contact') {
+                return array (  '_controller' => 'Smile\\PlatformBundle\\Controller\\DefaultController::contactAction',  '_route' => 'smile_platform_contactUs',);
+            }
+
         }
 
         // homepage

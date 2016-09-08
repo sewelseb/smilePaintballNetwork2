@@ -10,3 +10,7 @@ smile_platform_profile:
 smile_platform_post:
   path: /post/{postId}
   defaults: { _controller: SmilePlatformBundle:Post:showPost }
+
+smile_platform_contactUs:
+  path: /contact
+  defaults: { _controller: SmilePlatformBundle:Default:contact }

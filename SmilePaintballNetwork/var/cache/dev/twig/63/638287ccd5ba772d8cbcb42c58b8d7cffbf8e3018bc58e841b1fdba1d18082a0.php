@@ -15,8 +15,8 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f8a2ae7f256fb0600d49b8fabb431697ab82242f3ac5df0c9fdc8be6ae36a90f = $this->env->getExtension("native_profiler");
-        $__internal_f8a2ae7f256fb0600d49b8fabb431697ab82242f3ac5df0c9fdc8be6ae36a90f->enter($__internal_f8a2ae7f256fb0600d49b8fabb431697ab82242f3ac5df0c9fdc8be6ae36a90f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
+        $__internal_cb2d126e01367f6430cfafbd6f43adb0cb0c235ca919e64fe4a44cd9ddb45609 = $this->env->getExtension("native_profiler");
+        $__internal_cb2d126e01367f6430cfafbd6f43adb0cb0c235ca919e64fe4a44cd9ddb45609->enter($__internal_cb2d126e01367f6430cfafbd6f43adb0cb0c235ca919e64fe4a44cd9ddb45609_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
 
         // line 1
         echo "<!-- Navigation -->
@@ -57,6 +57,12 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
             echo $this->env->getExtension('routing')->getPath("fos_user_security_logout");
             echo "\" class=\"#f2c716\"><span class=\"yellow-text\">Logout</span></a>
                     </li>
+                    <li>
+                        <a href=\"";
+            // line 28
+            echo $this->env->getExtension('routing')->getPath("smile_platform_contactUs");
+            echo "\" class=\"#f2c716\"><span class=\"yellow-text\">Contact us</span></a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -73,7 +79,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
                 </div>
                 <div class=\"modal-body\">
                     ";
-            // line 42
+            // line 45
             echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("SmilePlatformBundle:Post:addNew", array("request" => $this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()))));
             echo "
                     <div class=\"clearfix\"></div>
@@ -86,7 +92,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 
 ";
         } else {
-            // line 52
+            // line 55
             echo "    <nav class=\"navbar navbar-inverse navbar-fixed-top\" role=\"navigation\">
         <div class=\"container\">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -127,7 +133,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
                 </div>
                 <div class=\"modal-body\">
                     ";
-            // line 91
+            // line 94
             echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("FOSUserBundle:Security:login"));
             echo "
                 </div>
@@ -145,7 +151,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
                 </div>
                 <div class=\"modal-body\">
                     ";
-            // line 106
+            // line 109
             echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("SmileUserBundle:Registration:register", array("originalRequest" => $this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()))));
             echo "
                     <div class=\"clearfix\"></div>
@@ -163,7 +169,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 ";
         }
         
-        $__internal_f8a2ae7f256fb0600d49b8fabb431697ab82242f3ac5df0c9fdc8be6ae36a90f->leave($__internal_f8a2ae7f256fb0600d49b8fabb431697ab82242f3ac5df0c9fdc8be6ae36a90f_prof);
+        $__internal_cb2d126e01367f6430cfafbd6f43adb0cb0c235ca919e64fe4a44cd9ddb45609->leave($__internal_cb2d126e01367f6430cfafbd6f43adb0cb0c235ca919e64fe4a44cd9ddb45609_prof);
 
     }
 
@@ -179,7 +185,7 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 
     public function getDebugInfo()
     {
-        return array (  149 => 106,  131 => 91,  90 => 52,  77 => 42,  57 => 25,  51 => 22,  39 => 13,  27 => 3,  25 => 2,  22 => 1,);
+        return array (  155 => 109,  137 => 94,  96 => 55,  83 => 45,  63 => 28,  57 => 25,  51 => 22,  39 => 13,  27 => 3,  25 => 2,  22 => 1,);
     }
 }
 /* <!-- Navigation -->*/
@@ -207,6 +213,9 @@ class __TwigTemplate_c128092282ce753e809b80f4f782a89cd7b37195489998204f419650cd6
 /*                     </li>*/
 /*                     <li>*/
 /*                         <a href="{{ path('fos_user_security_logout') }}" class="#f2c716"><span class="yellow-text">Logout</span></a>*/
+/*                     </li>*/
+/*                     <li>*/
+/*                         <a href="{{ path('smile_platform_contactUs') }}" class="#f2c716"><span class="yellow-text">Contact us</span></a>*/
 /*                     </li>*/
 /*                 </ul>*/
 /*             </div>*/

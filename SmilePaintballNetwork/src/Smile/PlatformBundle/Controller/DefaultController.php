@@ -10,4 +10,9 @@ class DefaultController extends Controller
     {
         return $this->render('SmilePlatformBundle:Default:index.html.twig');
     }
+
+    public function contactAction()
+    {
+        return $this->render('SmilePlatformBundle:Default:contact.html.twig');
+    }
 }
