@@ -15,8 +15,8 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_094674aae788d0eb3ded934ea293fe7fda3210d6b89daee4ddbb21cd0c0c5942 = $this->env->getExtension("native_profiler");
-        $__internal_094674aae788d0eb3ded934ea293fe7fda3210d6b89daee4ddbb21cd0c0c5942->enter($__internal_094674aae788d0eb3ded934ea293fe7fda3210d6b89daee4ddbb21cd0c0c5942_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
+        $__internal_2805c9bc66340943d1de4c4a5a47ee85b4e65d98ed1c18e20d122a371a3e165f = $this->env->getExtension("native_profiler");
+        $__internal_2805c9bc66340943d1de4c4a5a47ee85b4e65d98ed1c18e20d122a371a3e165f->enter($__internal_2805c9bc66340943d1de4c4a5a47ee85b4e65d98ed1c18e20d122a371a3e165f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
 
         // line 1
         echo "<!-- Project One -->
@@ -45,7 +45,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
     <div id=\"contentAllPosts\" hidden>
         <div ng-repeat=\"post in posts | orderBy: '-creationTime'\">
             ";
-        // line 81
+        // line 103
         echo "
                 <div class=\"row\" >
                     <div class=\"col-md-7\">
@@ -80,7 +80,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
                         <h4><a ng-href=\"/app_dev.php/platform/post/{{ post.id }}\">{{ post.event_name }}</a></h4>
                         <a ng-href=\"/app_dev.php/platform/profile/{{ post.user.id }}\">
                             by <strong>{{ post.user.username }}</strong>
-                            <img src=\"{{ post.user.picture.uploadDir }}/{{ post.user.picture.url }}\"  class=\"comment-profile-pic\"><br/>
+                            <br/>
                         </a>
                         <p>
                             <div id=\"updownVote_{{post.id}}\">
@@ -111,7 +111,29 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
                         <div>
                             <a ng-href=\"/app_dev.php/platform/post/{{ post.id }}\">{{ post.upvotes-post.downvotes }} points, {{ post.comments }} comments</a>
                         </div>
+                        <div>
+                            <div class=\"spacer-5px\">
+                                <div class=\"fb-share-button\"
+                                data-href=\"http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}\"
+                                data-layout=\"button_count\">
+                            </div>
+                            </div>
+                            <div class=\"spacer-5px\">
+                                <a
+                        href=\"https://twitter.com/intent/tweet?text={{post.title}}&url=http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}\">
+                                <button class=\"btn twitter-share-button\">Tweet</button></a>
+                            </div>
+                            <div class=\"spacer-5px\">
+                                <script type=\"IN/Share\" data-url=\"http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}\" data-counter=\"right\"></script>
+                            </div>
+                            <div class=\"spacer-5px\">
+                                Share: <input class=\" form-control input-lg\" value=\"http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}\">
+                            </div>
+
+
+                        </div>
                     </div>
+
                 </div>
             ";
         echo "
@@ -129,7 +151,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
 ";
         
-        $__internal_094674aae788d0eb3ded934ea293fe7fda3210d6b89daee4ddbb21cd0c0c5942->leave($__internal_094674aae788d0eb3ded934ea293fe7fda3210d6b89daee4ddbb21cd0c0c5942_prof);
+        $__internal_2805c9bc66340943d1de4c4a5a47ee85b4e65d98ed1c18e20d122a371a3e165f->leave($__internal_2805c9bc66340943d1de4c4a5a47ee85b4e65d98ed1c18e20d122a371a3e165f_prof);
 
     }
 
@@ -145,7 +167,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
     public function getDebugInfo()
     {
-        return array (  49 => 81,  38 => 6,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
+        return array (  49 => 103,  38 => 6,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
     }
 }
 /* <!-- Project One -->*/
@@ -195,7 +217,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 /*                         <h4><a ng-href="/app_dev.php/platform/post/{{ post.id }}">{{ post.event_name }}</a></h4>*/
 /*                         <a ng-href="/app_dev.php/platform/profile/{{ post.user.id }}">*/
 /*                             by <strong>{{ post.user.username }}</strong>*/
-/*                             <img src="{{ post.user.picture.uploadDir }}/{{ post.user.picture.url }}"  class="comment-profile-pic"><br/>*/
+/*                             <br/>*/
 /*                         </a>*/
 /*                         <p>*/
 /*                             <div id="updownVote_{{post.id}}">*/
@@ -226,7 +248,29 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 /*                         <div>*/
 /*                             <a ng-href="/app_dev.php/platform/post/{{ post.id }}">{{ post.upvotes-post.downvotes }} points, {{ post.comments }} comments</a>*/
 /*                         </div>*/
+/*                         <div>*/
+/*                             <div class="spacer-5px">*/
+/*                                 <div class="fb-share-button"*/
+/*                                 data-href="http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}"*/
+/*                                 data-layout="button_count">*/
+/*                             </div>*/
+/*                             </div>*/
+/*                             <div class="spacer-5px">*/
+/*                                 <a*/
+/*                         href="https://twitter.com/intent/tweet?text={{post.title}}&url=http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}">*/
+/*                                 <button class="btn twitter-share-button">Tweet</button></a>*/
+/*                             </div>*/
+/*                             <div class="spacer-5px">*/
+/*                                 <script type="IN/Share" data-url="http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}" data-counter="right"></script>*/
+/*                             </div>*/
+/*                             <div class="spacer-5px">*/
+/*                                 Share: <input class=" form-control input-lg" value="http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}">*/
+/*                             </div>*/
+/* */
+/* */
+/*                         </div>*/
 /*                     </div>*/
+/* */
 /*                 </div>*/
 /*             {% endverbatim %}*/
 /*             <!-- /.row -->*/

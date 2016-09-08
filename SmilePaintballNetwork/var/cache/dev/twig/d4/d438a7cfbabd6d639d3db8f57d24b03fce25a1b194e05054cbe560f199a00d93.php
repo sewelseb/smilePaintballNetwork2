@@ -23,34 +23,34 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_28e946436fc0b77517ab6729173bb4d37c8e5be971d665d07a9307fa17825da3 = $this->env->getExtension("native_profiler");
-        $__internal_28e946436fc0b77517ab6729173bb4d37c8e5be971d665d07a9307fa17825da3->enter($__internal_28e946436fc0b77517ab6729173bb4d37c8e5be971d665d07a9307fa17825da3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:profile.html.twig"));
+        $__internal_11665f68124843909df5d493c0a5d3b9d165e95075e12146001895a12000da38 = $this->env->getExtension("native_profiler");
+        $__internal_11665f68124843909df5d493c0a5d3b9d165e95075e12146001895a12000da38->enter($__internal_11665f68124843909df5d493c0a5d3b9d165e95075e12146001895a12000da38_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:profile.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_28e946436fc0b77517ab6729173bb4d37c8e5be971d665d07a9307fa17825da3->leave($__internal_28e946436fc0b77517ab6729173bb4d37c8e5be971d665d07a9307fa17825da3_prof);
+        $__internal_11665f68124843909df5d493c0a5d3b9d165e95075e12146001895a12000da38->leave($__internal_11665f68124843909df5d493c0a5d3b9d165e95075e12146001895a12000da38_prof);
 
     }
 
     // line 3
     public function block_pageHeader($context, array $blocks = array())
     {
-        $__internal_ad2dd4155ebb0ee91087dab37a823d6cac8bc4dbde03df0ad7b3abcf450ae8ee = $this->env->getExtension("native_profiler");
-        $__internal_ad2dd4155ebb0ee91087dab37a823d6cac8bc4dbde03df0ad7b3abcf450ae8ee->enter($__internal_ad2dd4155ebb0ee91087dab37a823d6cac8bc4dbde03df0ad7b3abcf450ae8ee_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
+        $__internal_e3725c0235217e000add85630cb7c37f4a96f6d89263df8d56311d98ae0fd729 = $this->env->getExtension("native_profiler");
+        $__internal_e3725c0235217e000add85630cb7c37f4a96f6d89263df8d56311d98ae0fd729->enter($__internal_e3725c0235217e000add85630cb7c37f4a96f6d89263df8d56311d98ae0fd729_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
 
         // line 4
         echo "
 ";
         
-        $__internal_ad2dd4155ebb0ee91087dab37a823d6cac8bc4dbde03df0ad7b3abcf450ae8ee->leave($__internal_ad2dd4155ebb0ee91087dab37a823d6cac8bc4dbde03df0ad7b3abcf450ae8ee_prof);
+        $__internal_e3725c0235217e000add85630cb7c37f4a96f6d89263df8d56311d98ae0fd729->leave($__internal_e3725c0235217e000add85630cb7c37f4a96f6d89263df8d56311d98ae0fd729_prof);
 
     }
 
     // line 7
     public function block_leftCollumn($context, array $blocks = array())
     {
-        $__internal_ee1ba5a35d333e53b36b7df23bb0f59b580a485d5afadbabc72fefa947a30c67 = $this->env->getExtension("native_profiler");
-        $__internal_ee1ba5a35d333e53b36b7df23bb0f59b580a485d5afadbabc72fefa947a30c67->enter($__internal_ee1ba5a35d333e53b36b7df23bb0f59b580a485d5afadbabc72fefa947a30c67_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
+        $__internal_baafc091cf12d24659021ed7d53e9cdc91922a1d7320557edee37e7059d51be7 = $this->env->getExtension("native_profiler");
+        $__internal_baafc091cf12d24659021ed7d53e9cdc91922a1d7320557edee37e7059d51be7->enter($__internal_baafc091cf12d24659021ed7d53e9cdc91922a1d7320557edee37e7059d51be7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
 
         // line 8
         echo "    ";
@@ -217,6 +217,42 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
             echo " comments
                         </a>
                     </div>
+
+                    <div>
+                        <div class=\"spacer-5px\">
+                            <div class=\"fb-share-button\"
+                                 data-href=\"http://smilepaintball.com/app_dev.php/platform/post/";
+            // line 77
+            echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "id", array()), "html", null, true);
+            echo "\"
+                                 data-layout=\"button_count\">
+                            </div>
+                        </div>
+                        <div class=\"spacer-5px\">
+                            <a
+                                    href=\"https://twitter.com/intent/tweet?text=";
+            // line 83
+            echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "title", array()), "html", null, true);
+            echo "&url=http://smilepaintball.com/app_dev.php/platform/post/";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "id", array()), "html", null, true);
+            echo "\">
+                                <button class=\"btn twitter-share-button\">Tweet</button></a>
+                        </div>
+                        <div class=\"spacer-5px\">
+                            <script type=\"IN/Share\" data-url=\"http://smilepaintball.com/app_dev.php/platform/post/";
+            // line 87
+            echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "id", array()), "html", null, true);
+            echo "\" data-counter=\"right\"></script>
+                        </div>
+                        <div class=\"spacer-5px\">
+                            Share: <input class=\" form-control input-lg\" value=\"http://smilepaintball.com/app_dev.php/platform/post/";
+            // line 90
+            echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "id", array()), "html", null, true);
+            echo "\">
+                        </div>
+
+
+                    </div>
             </div>
 
 
@@ -228,20 +264,20 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['post'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         
-        $__internal_ee1ba5a35d333e53b36b7df23bb0f59b580a485d5afadbabc72fefa947a30c67->leave($__internal_ee1ba5a35d333e53b36b7df23bb0f59b580a485d5afadbabc72fefa947a30c67_prof);
+        $__internal_baafc091cf12d24659021ed7d53e9cdc91922a1d7320557edee37e7059d51be7->leave($__internal_baafc091cf12d24659021ed7d53e9cdc91922a1d7320557edee37e7059d51be7_prof);
 
     }
 
-    // line 81
+    // line 103
     public function block_rightCollumn($context, array $blocks = array())
     {
-        $__internal_035b7823a4e5604b499d69e875a411a11a9d6b7e012f97d000b55cece12b85b3 = $this->env->getExtension("native_profiler");
-        $__internal_035b7823a4e5604b499d69e875a411a11a9d6b7e012f97d000b55cece12b85b3->enter($__internal_035b7823a4e5604b499d69e875a411a11a9d6b7e012f97d000b55cece12b85b3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
+        $__internal_c011c3884d81c492552a13b8b07f35b1e2e256b02a3f5aa6ac011d46a91cb163 = $this->env->getExtension("native_profiler");
+        $__internal_c011c3884d81c492552a13b8b07f35b1e2e256b02a3f5aa6ac011d46a91cb163->enter($__internal_c011c3884d81c492552a13b8b07f35b1e2e256b02a3f5aa6ac011d46a91cb163_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
 
-        // line 82
+        // line 104
         echo "    ";
         if (($this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "picture", array()) != null)) {
-            // line 83
+            // line 105
             echo "        <img class=\"img-responsive\" src=\"";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "picture", array()), "uploadDir", array()), "html", null, true);
             echo "/";
@@ -251,49 +287,49 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
             echo "\">
     ";
         } else {
-            // line 85
+            // line 107
             echo "
     ";
         }
-        // line 87
+        // line 109
         echo "    ";
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "username", array()), "html", null, true);
         echo "<br/>
     ";
-        // line 88
+        // line 110
         if ($this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "firstname", array())) {
-            // line 89
+            // line 111
             echo "        ";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "firstname", array()), "html", null, true);
             echo "
     ";
         }
-        // line 91
+        // line 113
         echo "    ";
         if ($this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "lastname", array())) {
-            // line 92
+            // line 114
             echo "        ";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "lastname", array()), "html", null, true);
             echo "
     ";
         }
-        // line 93
+        // line 115
         echo "<br/>
 
     <H3>Team:</H3>
     ";
-        // line 96
+        // line 118
         if ($this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "teamName", array())) {
-            // line 97
+            // line 119
             echo "        ";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "teamName", array()), "html", null, true);
             echo "<br/>
     ";
         }
-        // line 99
+        // line 121
         echo "    ";
         if ($this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "teamPicture", array())) {
-            // line 100
+            // line 122
             echo "        <img class=\"img-responsive\" src=\"";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "teamPicture", array()), "uploadDir", array()), "html", null, true);
             echo "/";
@@ -303,17 +339,17 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
             echo "\">
     ";
         }
-        // line 102
+        // line 124
         echo "
     <div>
         ";
-        // line 104
+        // line 126
         if (($this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "id", array()) == $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()), "id", array()))) {
-            // line 105
+            // line 127
             echo "            <button class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#editProfileModal\">Edit my profile</button>
         ";
         }
-        // line 107
+        // line 129
         echo "    </div>
 
     <div class=\"modal fade\" id=\"editProfileModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"loginModal\">
@@ -325,7 +361,7 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
                 </div>
                 <div class=\"modal-body\">
                     ";
-        // line 117
+        // line 139
         echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("SmilePlatformBundle:User:editMyProfile", array("request" => $this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()))));
         echo "
                     <div class=\"clearfix\"></div>
@@ -337,7 +373,7 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
 
 ";
         
-        $__internal_035b7823a4e5604b499d69e875a411a11a9d6b7e012f97d000b55cece12b85b3->leave($__internal_035b7823a4e5604b499d69e875a411a11a9d6b7e012f97d000b55cece12b85b3_prof);
+        $__internal_c011c3884d81c492552a13b8b07f35b1e2e256b02a3f5aa6ac011d46a91cb163->leave($__internal_c011c3884d81c492552a13b8b07f35b1e2e256b02a3f5aa6ac011d46a91cb163_prof);
 
     }
 
@@ -353,7 +389,7 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
 
     public function getDebugInfo()
     {
-        return array (  329 => 117,  317 => 107,  313 => 105,  311 => 104,  307 => 102,  297 => 100,  294 => 99,  288 => 97,  286 => 96,  281 => 93,  275 => 92,  272 => 91,  266 => 89,  264 => 88,  259 => 87,  255 => 85,  245 => 83,  242 => 82,  236 => 81,  214 => 70,  210 => 69,  201 => 63,  195 => 60,  188 => 56,  180 => 51,  174 => 48,  167 => 44,  161 => 43,  157 => 42,  151 => 39,  147 => 38,  143 => 37,  139 => 35,  131 => 32,  126 => 31,  123 => 30,  117 => 27,  112 => 26,  109 => 25,  103 => 22,  98 => 21,  95 => 20,  84 => 17,  81 => 16,  75 => 14,  73 => 13,  68 => 11,  64 => 10,  61 => 9,  56 => 8,  50 => 7,  42 => 4,  36 => 3,  11 => 1,);
+        return array (  365 => 139,  353 => 129,  349 => 127,  347 => 126,  343 => 124,  333 => 122,  330 => 121,  324 => 119,  322 => 118,  317 => 115,  311 => 114,  308 => 113,  302 => 111,  300 => 110,  295 => 109,  291 => 107,  281 => 105,  278 => 104,  272 => 103,  250 => 90,  244 => 87,  235 => 83,  226 => 77,  214 => 70,  210 => 69,  201 => 63,  195 => 60,  188 => 56,  180 => 51,  174 => 48,  167 => 44,  161 => 43,  157 => 42,  151 => 39,  147 => 38,  143 => 37,  139 => 35,  131 => 32,  126 => 31,  123 => 30,  117 => 27,  112 => 26,  109 => 25,  103 => 22,  98 => 21,  95 => 20,  84 => 17,  81 => 16,  75 => 14,  73 => 13,  68 => 11,  64 => 10,  61 => 9,  56 => 8,  50 => 7,  42 => 4,  36 => 3,  11 => 1,);
     }
 }
 /* {% extends "SmilePlatformBundle::Default/layout.html.twig" %}*/
@@ -427,6 +463,28 @@ class __TwigTemplate_c6322f89ef7df983b9d6a3ecc37cef0585ee91e272d97a4a233836a3df3
 /*                         <a href="{{ path('smile_platform_post', {'postId': post.getId })  }}">*/
 /*                             {{ post.upvotes-post.downvotes }} points, {{ post.comments }} comments*/
 /*                         </a>*/
+/*                     </div>*/
+/* */
+/*                     <div>*/
+/*                         <div class="spacer-5px">*/
+/*                             <div class="fb-share-button"*/
+/*                                  data-href="http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}"*/
+/*                                  data-layout="button_count">*/
+/*                             </div>*/
+/*                         </div>*/
+/*                         <div class="spacer-5px">*/
+/*                             <a*/
+/*                                     href="https://twitter.com/intent/tweet?text={{post.title}}&url=http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}">*/
+/*                                 <button class="btn twitter-share-button">Tweet</button></a>*/
+/*                         </div>*/
+/*                         <div class="spacer-5px">*/
+/*                             <script type="IN/Share" data-url="http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}" data-counter="right"></script>*/
+/*                         </div>*/
+/*                         <div class="spacer-5px">*/
+/*                             Share: <input class=" form-control input-lg" value="http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}">*/
+/*                         </div>*/
+/* */
+/* */
 /*                     </div>*/
 /*             </div>*/
 /* */

@@ -1,0 +1,60 @@
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.navbar{
+    background-color: #555c30;
+    background-image: none;
+    color: white;
+}
+
+.yellow-text{
+    color: #f2c716;
+}
+
+.btn{
+    border-radius: 0px;
+}
+
+.btn-primary{
+    border-radius: 0px;
+    background-color: #555c30;
+    border-color: #555c30;
+    background-image: none;
+    color: #f2c716;
+}
+
+.logo{
+    height: 1.5em;
+}
+
+.spacer-5px{
+    padding-top: 5px;
+}
+
+
+@media (max-width: 991px) {
+    .right-bar{
+        display: none;
+    }
+}
+
+.comment-profile-pic{
+    max-width: 14px;
+    max-height: 14px;
+}
+
+a{
+    color:black;
+}
+
+.twitter-share-button{
+    background-color: #4099FF;
+    color: white;
+
+    border-radius: 3px;
+}

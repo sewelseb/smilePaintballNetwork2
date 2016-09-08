@@ -22,34 +22,34 @@ class __TwigTemplate_a0fff5a2876031889bad0be075ee524006978439889aff66024de88ad4f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c2af2b0dc5a1ea723aa9a2b9c4710bb5dba85e1aa98d7065e2ce1fa29d6b3d1c = $this->env->getExtension("native_profiler");
-        $__internal_c2af2b0dc5a1ea723aa9a2b9c4710bb5dba85e1aa98d7065e2ce1fa29d6b3d1c->enter($__internal_c2af2b0dc5a1ea723aa9a2b9c4710bb5dba85e1aa98d7065e2ce1fa29d6b3d1c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/post.html.twig"));
+        $__internal_9e5978894876eb47087f19a40234b1efa194233c315ff1bbda1c548a02ce3823 = $this->env->getExtension("native_profiler");
+        $__internal_9e5978894876eb47087f19a40234b1efa194233c315ff1bbda1c548a02ce3823->enter($__internal_9e5978894876eb47087f19a40234b1efa194233c315ff1bbda1c548a02ce3823_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/post.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_c2af2b0dc5a1ea723aa9a2b9c4710bb5dba85e1aa98d7065e2ce1fa29d6b3d1c->leave($__internal_c2af2b0dc5a1ea723aa9a2b9c4710bb5dba85e1aa98d7065e2ce1fa29d6b3d1c_prof);
+        $__internal_9e5978894876eb47087f19a40234b1efa194233c315ff1bbda1c548a02ce3823->leave($__internal_9e5978894876eb47087f19a40234b1efa194233c315ff1bbda1c548a02ce3823_prof);
 
     }
 
     // line 3
     public function block_pageHeader($context, array $blocks = array())
     {
-        $__internal_f4666d7617356b3a4fbd371d4e1eaad6a36ce49609fdb6b8f9c5f064b6e82ad2 = $this->env->getExtension("native_profiler");
-        $__internal_f4666d7617356b3a4fbd371d4e1eaad6a36ce49609fdb6b8f9c5f064b6e82ad2->enter($__internal_f4666d7617356b3a4fbd371d4e1eaad6a36ce49609fdb6b8f9c5f064b6e82ad2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
+        $__internal_cca1557b5c69a51aa251d3c88a28c05a53175f14f215e5f9aa3519ead9a553a9 = $this->env->getExtension("native_profiler");
+        $__internal_cca1557b5c69a51aa251d3c88a28c05a53175f14f215e5f9aa3519ead9a553a9->enter($__internal_cca1557b5c69a51aa251d3c88a28c05a53175f14f215e5f9aa3519ead9a553a9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
 
         // line 4
         echo "
 ";
         
-        $__internal_f4666d7617356b3a4fbd371d4e1eaad6a36ce49609fdb6b8f9c5f064b6e82ad2->leave($__internal_f4666d7617356b3a4fbd371d4e1eaad6a36ce49609fdb6b8f9c5f064b6e82ad2_prof);
+        $__internal_cca1557b5c69a51aa251d3c88a28c05a53175f14f215e5f9aa3519ead9a553a9->leave($__internal_cca1557b5c69a51aa251d3c88a28c05a53175f14f215e5f9aa3519ead9a553a9_prof);
 
     }
 
     // line 7
     public function block_leftCollumn($context, array $blocks = array())
     {
-        $__internal_5aa5c4867aeee6dd4248167a5f422a98547c8fe2f25eb75d6cdffd94e3a83029 = $this->env->getExtension("native_profiler");
-        $__internal_5aa5c4867aeee6dd4248167a5f422a98547c8fe2f25eb75d6cdffd94e3a83029->enter($__internal_5aa5c4867aeee6dd4248167a5f422a98547c8fe2f25eb75d6cdffd94e3a83029_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
+        $__internal_fb830bd20ab0559d45d5c666ab51eef938c93093a6beaa1240315fb3915ecc03 = $this->env->getExtension("native_profiler");
+        $__internal_fb830bd20ab0559d45d5c666ab51eef938c93093a6beaa1240315fb3915ecc03->enter($__internal_fb830bd20ab0559d45d5c666ab51eef938c93093a6beaa1240315fb3915ecc03_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
 
         // line 8
         echo "    <div class=\"row\" >
@@ -171,53 +171,88 @@ class __TwigTemplate_a0fff5a2876031889bad0be075ee524006978439889aff66024de88ad4f
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "comments", array()), "html", null, true);
         echo " comments
             </div>
+            <div>
+                <div class=\"spacer-5px\">
+                    <div class=\"fb-share-button\"
+                         data-href=\"http://smilepaintball.com/app_dev.php/platform/post/";
+        // line 61
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "id", array()), "html", null, true);
+        echo "\"
+                         data-layout=\"button_count\">
+                    </div>
+                </div>
+                <div class=\"spacer-5px\">
+                    <a
+                            href=\"https://twitter.com/intent/tweet?text=";
+        // line 67
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "title", array()), "html", null, true);
+        echo "&url=http://smilepaintball.com/app_dev.php/platform/post/";
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "id", array()), "html", null, true);
+        echo "\">
+                        <button class=\"btn twitter-share-button\">Tweet</button></a>
+                </div>
+                <div class=\"spacer-5px\">
+                    <script type=\"IN/Share\" data-url=\"http://smilepaintball.com/app_dev.php/platform/post/";
+        // line 71
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "id", array()), "html", null, true);
+        echo "\" data-counter=\"right\"></script>
+                </div>
+                <div class=\"spacer-5px\">
+                    Share: <input class=\" form-control input-lg\" value=\"http://smilepaintball.com/app_dev.php/platform/post/";
+        // line 74
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "id", array()), "html", null, true);
+        echo "\">
+                </div>
+
+
+            </div>
             <div class=\"col-md-11\">
                 <span id=\"postCommentUrl\" hidden>";
-        // line 59
+        // line 80
         echo $this->env->getExtension('routing')->getPath("smile_api_comment_addNew");
         echo "</span>
                 <strong>Comments:</strong>
                 ";
-        // line 61
+        // line 82
         if ($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array())) {
-            // line 62
+            // line 83
             echo "                    <textarea class=\"form-control input-lg\" placeholder=\"Your comment...\" with=\"95%\" id=\"textToUseToComment\"></textarea><br/>
                     <div class=\"clearfix\"></div>
                     <button class=\"btn btn-primary\" onclick=\"sendComment(";
-            // line 64
+            // line 85
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "id", array()), "html", null, true);
             echo ")\">Send</button>
                 ";
         }
-        // line 66
+        // line 87
         echo "
                 <div id=\"sendedMessage\" hidden>
                     Sent ;)
                 </div>
                 ";
-        // line 70
+        // line 91
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["comments"]) ? $context["comments"] : $this->getContext($context, "comments")));
         foreach ($context['_seq'] as $context["_key"] => $context["comment"]) {
-            // line 71
+            // line 92
             echo "                    <div class=\"row\">
                         <a href=\"";
-            // line 72
+            // line 93
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("smile_platform_profile", array("userId" => $this->getAttribute($this->getAttribute($context["comment"], "user", array()), "getId", array()))), "html", null, true);
             echo "\">
                             <img src=\"";
-            // line 73
+            // line 94
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["comment"], "user", array()), "picture", array()), "uploadDir", array()), "html", null, true);
             echo "/";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["comment"], "user", array()), "picture", array()), "url", array()), "html", null, true);
             echo "\"  class=\"comment-profile-pic\">
                             <strong>";
-            // line 74
+            // line 95
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["comment"], "user", array()), "username", array()), "html", null, true);
             echo "</strong><br>
                         </a>
                         ";
-            // line 76
+            // line 97
             echo twig_escape_filter($this->env, $this->getAttribute($context["comment"], "text", array()), "html", null, true);
             echo "
                     </div>
@@ -226,7 +261,7 @@ class __TwigTemplate_a0fff5a2876031889bad0be075ee524006978439889aff66024de88ad4f
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['comment'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 79
+        // line 100
         echo "            </div>
         </div>
 
@@ -234,7 +269,7 @@ class __TwigTemplate_a0fff5a2876031889bad0be075ee524006978439889aff66024de88ad4f
     </div>
 ";
         
-        $__internal_5aa5c4867aeee6dd4248167a5f422a98547c8fe2f25eb75d6cdffd94e3a83029->leave($__internal_5aa5c4867aeee6dd4248167a5f422a98547c8fe2f25eb75d6cdffd94e3a83029_prof);
+        $__internal_fb830bd20ab0559d45d5c666ab51eef938c93093a6beaa1240315fb3915ecc03->leave($__internal_fb830bd20ab0559d45d5c666ab51eef938c93093a6beaa1240315fb3915ecc03_prof);
 
     }
 
@@ -250,7 +285,7 @@ class __TwigTemplate_a0fff5a2876031889bad0be075ee524006978439889aff66024de88ad4f
 
     public function getDebugInfo()
     {
-        return array (  230 => 79,  221 => 76,  216 => 74,  210 => 73,  206 => 72,  203 => 71,  199 => 70,  193 => 66,  188 => 64,  184 => 62,  182 => 61,  177 => 59,  169 => 56,  160 => 50,  154 => 47,  147 => 43,  139 => 38,  133 => 35,  128 => 33,  122 => 29,  114 => 27,  111 => 26,  105 => 24,  102 => 23,  96 => 21,  93 => 20,  82 => 17,  79 => 16,  73 => 14,  71 => 13,  66 => 11,  62 => 10,  58 => 9,  55 => 8,  49 => 7,  41 => 4,  35 => 3,  11 => 1,);
+        return array (  265 => 100,  256 => 97,  251 => 95,  245 => 94,  241 => 93,  238 => 92,  234 => 91,  228 => 87,  223 => 85,  219 => 83,  217 => 82,  212 => 80,  203 => 74,  197 => 71,  188 => 67,  179 => 61,  169 => 56,  160 => 50,  154 => 47,  147 => 43,  139 => 38,  133 => 35,  128 => 33,  122 => 29,  114 => 27,  111 => 26,  105 => 24,  102 => 23,  96 => 21,  93 => 20,  82 => 17,  79 => 16,  73 => 14,  71 => 13,  66 => 11,  62 => 10,  58 => 9,  55 => 8,  49 => 7,  41 => 4,  35 => 3,  11 => 1,);
     }
 }
 /* {% extends "SmilePlatformBundle::Default/layout.html.twig" %}*/
@@ -309,6 +344,27 @@ class __TwigTemplate_a0fff5a2876031889bad0be075ee524006978439889aff66024de88ad4f
 /* */
 /*             <div>*/
 /*                 {{ post.upvotes-post.downvotes }} points, {{ post.comments }} comments*/
+/*             </div>*/
+/*             <div>*/
+/*                 <div class="spacer-5px">*/
+/*                     <div class="fb-share-button"*/
+/*                          data-href="http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}"*/
+/*                          data-layout="button_count">*/
+/*                     </div>*/
+/*                 </div>*/
+/*                 <div class="spacer-5px">*/
+/*                     <a*/
+/*                             href="https://twitter.com/intent/tweet?text={{post.title}}&url=http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}">*/
+/*                         <button class="btn twitter-share-button">Tweet</button></a>*/
+/*                 </div>*/
+/*                 <div class="spacer-5px">*/
+/*                     <script type="IN/Share" data-url="http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}" data-counter="right"></script>*/
+/*                 </div>*/
+/*                 <div class="spacer-5px">*/
+/*                     Share: <input class=" form-control input-lg" value="http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}">*/
+/*                 </div>*/
+/* */
+/* */
 /*             </div>*/
 /*             <div class="col-md-11">*/
 /*                 <span id="postCommentUrl" hidden>{{ path('smile_api_comment_addNew') }}</span>*/

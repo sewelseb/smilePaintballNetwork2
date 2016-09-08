@@ -73,6 +73,7 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
                 $q.defer(function(){
                     scope.$apply();
                     FB.XFBML.parse();
+
                 });
 
                 //console.log($scope.newsList);
@@ -158,6 +159,7 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
         }
+
 
     };
 

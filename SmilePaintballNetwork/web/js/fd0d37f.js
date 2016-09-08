@@ -830,6 +830,7 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
                 $q.defer(function(){
                     scope.$apply();
                     FB.XFBML.parse();
+
                 });
 
                 //console.log($scope.newsList);
@@ -915,6 +916,7 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
         }
+
 
     };
 
@@ -1046,4 +1048,19 @@ $('#textToUseToComment').change(function(){
     $('#sendedMessage').hide('slow');
 });
 
-
+function connectToIo()
+{
+    $.ajax({
+        url: '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-578e0c34094f3158',
+        dataType: "script",
+        setTimeout : 5000,
+        success: function(data)
+        {
+            addthis.init();
+        },
+        error:function()
+        {
+            errorToConnect();
+        }
+    });
+}

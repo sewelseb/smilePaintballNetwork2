@@ -45,7 +45,7 @@
                         <h4><a ng-href="/app_dev.php/platform/post/{{ post.id }}">{{ post.event_name }}</a></h4>
                         <a ng-href="/app_dev.php/platform/profile/{{ post.user.id }}">
                             by <strong>{{ post.user.username }}</strong>
-                            <img src="{{ post.user.picture.uploadDir }}/{{ post.user.picture.url }}"  class="comment-profile-pic"><br/>
+                            <br/>
                         </a>
                         <p>
                             <div id="updownVote_{{post.id}}">
@@ -76,7 +76,29 @@
                         <div>
                             <a ng-href="/app_dev.php/platform/post/{{ post.id }}">{{ post.upvotes-post.downvotes }} points, {{ post.comments }} comments</a>
                         </div>
+                        <div>
+                            <div class="spacer-5px">
+                                <div class="fb-share-button"
+                                data-href="http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}"
+                                data-layout="button_count">
+                            </div>
+                            </div>
+                            <div class="spacer-5px">
+                                <a
+                        href="https://twitter.com/intent/tweet?text={{post.title}}&url=http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}">
+                                <button class="btn twitter-share-button">Tweet</button></a>
+                            </div>
+                            <div class="spacer-5px">
+                                <script type="IN/Share" data-url="http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}" data-counter="right"></script>
+                            </div>
+                            <div class="spacer-5px">
+                                Share: <input class=" form-control input-lg" value="http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}">
+                            </div>
+
+
+                        </div>
                     </div>
+
                 </div>
             {% endverbatim %}
             <!-- /.row -->
