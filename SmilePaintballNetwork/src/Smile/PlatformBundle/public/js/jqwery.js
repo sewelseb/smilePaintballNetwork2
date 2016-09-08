@@ -89,3 +89,4 @@ $('#textToUseToComment').change(function(){
     $('#sendedMessage').hide('slow');
 });
 
+

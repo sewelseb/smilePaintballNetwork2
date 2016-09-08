@@ -15,8 +15,8 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_a48f8a897f27941a5aabfcd645636a3710c53118ec5b9782ad3acf626343f906 = $this->env->getExtension("native_profiler");
-        $__internal_a48f8a897f27941a5aabfcd645636a3710c53118ec5b9782ad3acf626343f906->enter($__internal_a48f8a897f27941a5aabfcd645636a3710c53118ec5b9782ad3acf626343f906_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
+        $__internal_094674aae788d0eb3ded934ea293fe7fda3210d6b89daee4ddbb21cd0c0c5942 = $this->env->getExtension("native_profiler");
+        $__internal_094674aae788d0eb3ded934ea293fe7fda3210d6b89daee4ddbb21cd0c0c5942->enter($__internal_094674aae788d0eb3ded934ea293fe7fda3210d6b89daee4ddbb21cd0c0c5942_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
 
         // line 1
         echo "<!-- Project One -->
@@ -25,12 +25,16 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
         // line 3
         echo $this->env->getExtension('routing')->getPath("smile_api_getlastPosts");
         echo "</span>
-    <span id=\"smileApiUpvoteUrl\" hidden>";
+    <span id=\"smileApiGetOlder\" hidden>";
         // line 4
+        echo $this->env->getExtension('routing')->getPath("smile_api_getOlderPosts_url");
+        echo "</span>
+    <span id=\"smileApiUpvoteUrl\" hidden>";
+        // line 5
         echo $this->env->getExtension('routing')->getPath("smile_api_post_upvote_url");
         echo "</span>
     <span id=\"smileApiDownvoteUrl\" hidden>";
-        // line 5
+        // line 6
         echo $this->env->getExtension('routing')->getPath("smile_api_post_downvote_url");
         echo "</span>
     <div id=\"spiningWheelAllPosts\">
@@ -41,7 +45,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
     <div id=\"contentAllPosts\" hidden>
         <div ng-repeat=\"post in posts | orderBy: '-creationTime'\">
             ";
-        // line 76
+        // line 81
         echo "
                 <div class=\"row\" >
                     <div class=\"col-md-7\">
@@ -59,10 +63,14 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
                                 </a>
                             </div>
                             <div ng-if=\"post.type=='picture_externalUrl'\">
-                                <img class=\"img-responsive\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" alt=\"\">
+                                <a ng-href=\"/app_dev.php/platform/post/{{ post.id }}\">
+                                    <img class=\"img-responsive\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" alt=\"\">
+                                </a>
                             </div>
                             <div ng-if=\"post.type=='picture_local'\">
-                                <img class=\"img-responsive\" ng-src=\"{{post.picture.uploadDir}}/{{post.picture.url}}\" alt=\"\">
+                                <a ng-href=\"/app_dev.php/platform/post/{{ post.id }}\">
+                                    <img class=\"img-responsive\" ng-src=\"{{post.picture.uploadDir}}/{{post.picture.url}}\" alt=\"\">
+                                </a>
                             </div>
 
 
@@ -101,7 +109,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
                             </div>
                         </p>
                         <div>
-                            {{ post.upvotes-post.downvotes }} points, {{ post.comments }} comments
+                            <a ng-href=\"/app_dev.php/platform/post/{{ post.id }}\">{{ post.upvotes-post.downvotes }} points, {{ post.comments }} comments</a>
                         </div>
                     </div>
                 </div>
@@ -113,12 +121,15 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
     </div>
     <!--  end ng-repeat -->
 
+    <div id=\"bottomOfThePage\">
+
+    </div>
 
 </div>
 
 ";
         
-        $__internal_a48f8a897f27941a5aabfcd645636a3710c53118ec5b9782ad3acf626343f906->leave($__internal_a48f8a897f27941a5aabfcd645636a3710c53118ec5b9782ad3acf626343f906_prof);
+        $__internal_094674aae788d0eb3ded934ea293fe7fda3210d6b89daee4ddbb21cd0c0c5942->leave($__internal_094674aae788d0eb3ded934ea293fe7fda3210d6b89daee4ddbb21cd0c0c5942_prof);
 
     }
 
@@ -134,12 +145,13 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 
     public function getDebugInfo()
     {
-        return array (  45 => 76,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
+        return array (  49 => 81,  38 => 6,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
     }
 }
 /* <!-- Project One -->*/
 /* <div ng-controller="allPostsCtrl">*/
 /*     <span id="smileApiGetLastPostsUrl" hidden>{{ path ('smile_api_getlastPosts') }}</span>*/
+/*     <span id="smileApiGetOlder" hidden>{{ path('smile_api_getOlderPosts_url') }}</span>*/
 /*     <span id="smileApiUpvoteUrl" hidden>{{ path ('smile_api_post_upvote_url') }}</span>*/
 /*     <span id="smileApiDownvoteUrl" hidden>{{ path ('smile_api_post_downvote_url') }}</span>*/
 /*     <div id="spiningWheelAllPosts">*/
@@ -166,10 +178,14 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 /*                                 </a>*/
 /*                             </div>*/
 /*                             <div ng-if="post.type=='picture_externalUrl'">*/
-/*                                 <img class="img-responsive" ng-src="{{ trustAsResourceUrl(post.url) }}" alt="">*/
+/*                                 <a ng-href="/app_dev.php/platform/post/{{ post.id }}">*/
+/*                                     <img class="img-responsive" ng-src="{{ trustAsResourceUrl(post.url) }}" alt="">*/
+/*                                 </a>*/
 /*                             </div>*/
 /*                             <div ng-if="post.type=='picture_local'">*/
-/*                                 <img class="img-responsive" ng-src="{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">*/
+/*                                 <a ng-href="/app_dev.php/platform/post/{{ post.id }}">*/
+/*                                     <img class="img-responsive" ng-src="{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">*/
+/*                                 </a>*/
 /*                             </div>*/
 /* */
 /* */
@@ -208,7 +224,7 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 /*                             </div>*/
 /*                         </p>*/
 /*                         <div>*/
-/*                             {{ post.upvotes-post.downvotes }} points, {{ post.comments }} comments*/
+/*                             <a ng-href="/app_dev.php/platform/post/{{ post.id }}">{{ post.upvotes-post.downvotes }} points, {{ post.comments }} comments</a>*/
 /*                         </div>*/
 /*                     </div>*/
 /*                 </div>*/
@@ -219,6 +235,9 @@ class __TwigTemplate_41a145771b1d6d62870604b76df5e724af2588a7553a4853d5290045621
 /*     </div>*/
 /*     <!--  end ng-repeat -->*/
 /* */
+/*     <div id="bottomOfThePage">*/
+/* */
+/*     </div>*/
 /* */
 /* </div>*/
 /* */

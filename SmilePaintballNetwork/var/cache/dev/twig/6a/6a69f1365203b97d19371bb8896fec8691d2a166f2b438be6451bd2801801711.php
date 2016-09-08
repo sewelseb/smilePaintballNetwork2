@@ -18,8 +18,8 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_2064af3611bef28dd9f138f1d55a4de9642a7b8dc17200d30ecb8c01f30fc8bb = $this->env->getExtension("native_profiler");
-        $__internal_2064af3611bef28dd9f138f1d55a4de9642a7b8dc17200d30ecb8c01f30fc8bb->enter($__internal_2064af3611bef28dd9f138f1d55a4de9642a7b8dc17200d30ecb8c01f30fc8bb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/layout.html.twig"));
+        $__internal_eb0a6ab9a92390608ad3a711fa03d6ddd938c92766e780a3917bfb53b6a40a67 = $this->env->getExtension("native_profiler");
+        $__internal_eb0a6ab9a92390608ad3a711fa03d6ddd938c92766e780a3917bfb53b6a40a67->enter($__internal_eb0a6ab9a92390608ad3a711fa03d6ddd938c92766e780a3917bfb53b6a40a67_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/layout.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -87,35 +87,59 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
     ";
         // line 45
         if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
-            // asset "874e11e_0"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_874e11e_0") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/874e11e_app_1.js");
-            // line 52
+            // asset "fd0d37f_0"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_fd0d37f_0") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/fd0d37f_waypoint_1.js");
+            // line 56
             echo "    <script type=\"text/javascript\" src=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"></script>
     ";
-            // asset "874e11e_1"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_874e11e_1") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/874e11e_allPostsCtrl_2.js");
+            // asset "fd0d37f_1"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_fd0d37f_1") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/fd0d37f_noframework_2.js");
             echo "    <script type=\"text/javascript\" src=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"></script>
     ";
-            // asset "874e11e_2"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_874e11e_2") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/874e11e_jqwery_3.js");
+            // asset "fd0d37f_2"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_fd0d37f_2") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/fd0d37f_context_3.js");
+            echo "    <script type=\"text/javascript\" src=\"";
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"></script>
+    ";
+            // asset "fd0d37f_3"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_fd0d37f_3") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/fd0d37f_group_4.js");
+            echo "    <script type=\"text/javascript\" src=\"";
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"></script>
+    ";
+            // asset "fd0d37f_4"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_fd0d37f_4") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/fd0d37f_app_5.js");
+            echo "    <script type=\"text/javascript\" src=\"";
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"></script>
+    ";
+            // asset "fd0d37f_5"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_fd0d37f_5") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/fd0d37f_allPostsCtrl_6.js");
+            echo "    <script type=\"text/javascript\" src=\"";
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"></script>
+    ";
+            // asset "fd0d37f_6"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_fd0d37f_6") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/fd0d37f_jqwery_7.js");
             echo "    <script type=\"text/javascript\" src=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"></script>
     ";
         } else {
-            // asset "874e11e"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_874e11e") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/874e11e.js");
+            // asset "fd0d37f"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_fd0d37f") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/fd0d37f.js");
             echo "    <script type=\"text/javascript\" src=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"></script>
     ";
         }
         unset($context["asset_url"]);
-        // line 54
+        // line 58
         echo "
 </head>
 
@@ -130,9 +154,9 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
     }(document, 'script', 'facebook-jssdk'));</script>
 
 ";
-        // line 67
-        $this->loadTemplate("SmilePlatformBundle::Default/Blocs/navbar.html.twig", "SmilePlatformBundle::Default/layout.html.twig", 67)->display($context);
-        // line 68
+        // line 71
+        $this->loadTemplate("SmilePlatformBundle::Default/Blocs/navbar.html.twig", "SmilePlatformBundle::Default/layout.html.twig", 71)->display($context);
+        // line 72
         echo "
 <!-- Page Content -->
 <div class=\"container\" >
@@ -141,23 +165,23 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
     <div class=\"row\">
         <div class=\"col-lg-12\">
             ";
-        // line 75
+        // line 79
         $this->displayBlock('pageHeader', $context, $blocks);
-        // line 80
+        // line 84
         echo "        </div>
     </div>
     <!-- /.row -->
     <div class=\"col-md-9\" id=\"postsNews\" ng-app=\"smile\">
         ";
-        // line 84
-        $this->displayBlock('leftCollumn', $context, $blocks);
         // line 88
+        $this->displayBlock('leftCollumn', $context, $blocks);
+        // line 92
         echo "    </div>
     <div class=\"col-md-3 right-bar\">
         ";
-        // line 90
+        // line 94
         $this->displayBlock('rightCollumn', $context, $blocks);
-        // line 172
+        // line 176
         echo "    </div>
 
     <!-- /.row -->
@@ -185,50 +209,50 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 
 </html>";
         
-        $__internal_2064af3611bef28dd9f138f1d55a4de9642a7b8dc17200d30ecb8c01f30fc8bb->leave($__internal_2064af3611bef28dd9f138f1d55a4de9642a7b8dc17200d30ecb8c01f30fc8bb_prof);
+        $__internal_eb0a6ab9a92390608ad3a711fa03d6ddd938c92766e780a3917bfb53b6a40a67->leave($__internal_eb0a6ab9a92390608ad3a711fa03d6ddd938c92766e780a3917bfb53b6a40a67_prof);
 
     }
 
-    // line 75
+    // line 79
     public function block_pageHeader($context, array $blocks = array())
     {
-        $__internal_99cf251a9da7430f2ad5c60341e9fd31b577c5938b51234125ed90767764d241 = $this->env->getExtension("native_profiler");
-        $__internal_99cf251a9da7430f2ad5c60341e9fd31b577c5938b51234125ed90767764d241->enter($__internal_99cf251a9da7430f2ad5c60341e9fd31b577c5938b51234125ed90767764d241_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
+        $__internal_868a1bb5a7b3d02544a83517a9b42d230ea76a22c64d15fd692c933cb8b9b471 = $this->env->getExtension("native_profiler");
+        $__internal_868a1bb5a7b3d02544a83517a9b42d230ea76a22c64d15fd692c933cb8b9b471->enter($__internal_868a1bb5a7b3d02544a83517a9b42d230ea76a22c64d15fd692c933cb8b9b471_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
 
-        // line 76
+        // line 80
         echo "                <h1 class=\"page-header\">
                     Smile Paintball Network
                 </h1>
             ";
         
-        $__internal_99cf251a9da7430f2ad5c60341e9fd31b577c5938b51234125ed90767764d241->leave($__internal_99cf251a9da7430f2ad5c60341e9fd31b577c5938b51234125ed90767764d241_prof);
+        $__internal_868a1bb5a7b3d02544a83517a9b42d230ea76a22c64d15fd692c933cb8b9b471->leave($__internal_868a1bb5a7b3d02544a83517a9b42d230ea76a22c64d15fd692c933cb8b9b471_prof);
 
     }
 
-    // line 84
+    // line 88
     public function block_leftCollumn($context, array $blocks = array())
     {
-        $__internal_aa5cbcc6d6bbef4c5cbb461043829642368fe20c52e4e6237f65491315d1566a = $this->env->getExtension("native_profiler");
-        $__internal_aa5cbcc6d6bbef4c5cbb461043829642368fe20c52e4e6237f65491315d1566a->enter($__internal_aa5cbcc6d6bbef4c5cbb461043829642368fe20c52e4e6237f65491315d1566a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
+        $__internal_3bbd044c5811711146d32ea0c3fd5e1cf7727bfa57bd2bb664335b112b7307b5 = $this->env->getExtension("native_profiler");
+        $__internal_3bbd044c5811711146d32ea0c3fd5e1cf7727bfa57bd2bb664335b112b7307b5->enter($__internal_3bbd044c5811711146d32ea0c3fd5e1cf7727bfa57bd2bb664335b112b7307b5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
 
-        // line 85
+        // line 89
         echo "            ";
         echo twig_include($this->env, $context, "SmilePlatformBundle:Default:Blocs/allPosts.html.twig");
         echo "
 
         ";
         
-        $__internal_aa5cbcc6d6bbef4c5cbb461043829642368fe20c52e4e6237f65491315d1566a->leave($__internal_aa5cbcc6d6bbef4c5cbb461043829642368fe20c52e4e6237f65491315d1566a_prof);
+        $__internal_3bbd044c5811711146d32ea0c3fd5e1cf7727bfa57bd2bb664335b112b7307b5->leave($__internal_3bbd044c5811711146d32ea0c3fd5e1cf7727bfa57bd2bb664335b112b7307b5_prof);
 
     }
 
-    // line 90
+    // line 94
     public function block_rightCollumn($context, array $blocks = array())
     {
-        $__internal_ae2641a9e0b5f5f039352127b8de9930016f1e7299397daf086e4a204944d6cc = $this->env->getExtension("native_profiler");
-        $__internal_ae2641a9e0b5f5f039352127b8de9930016f1e7299397daf086e4a204944d6cc->enter($__internal_ae2641a9e0b5f5f039352127b8de9930016f1e7299397daf086e4a204944d6cc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
+        $__internal_91a770db61d91f74d689fc3ef40601617247265800fa479f1c8b6fdf93cc7a55 = $this->env->getExtension("native_profiler");
+        $__internal_91a770db61d91f74d689fc3ef40601617247265800fa479f1c8b6fdf93cc7a55->enter($__internal_91a770db61d91f74d689fc3ef40601617247265800fa479f1c8b6fdf93cc7a55_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
 
-        // line 91
+        // line 95
         echo "            <div class=\"row\">
                 <h3>Latest Smile Paintball video</h3>
                 <div class=\"fb-video\" data-href=\"https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater\" data-width=\"700px\" data-show-text=\"false\"><blockquote cite=\"https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater\" class=\"fb-xfbml-parse-ignore\"><a href=\"https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater\"></a>
@@ -239,7 +263,7 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
                 <!-- top 10 -->
                 <h3>Top 10</h3>
                 ";
-        // line 100
+        // line 104
         echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("SmilePlatformBundle:Post:topTen"));
         echo "
             </div>
@@ -314,7 +338,7 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 
         ";
         
-        $__internal_ae2641a9e0b5f5f039352127b8de9930016f1e7299397daf086e4a204944d6cc->leave($__internal_ae2641a9e0b5f5f039352127b8de9930016f1e7299397daf086e4a204944d6cc_prof);
+        $__internal_91a770db61d91f74d689fc3ef40601617247265800fa479f1c8b6fdf93cc7a55->leave($__internal_91a770db61d91f74d689fc3ef40601617247265800fa479f1c8b6fdf93cc7a55_prof);
 
     }
 
@@ -330,7 +354,7 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 
     public function getDebugInfo()
     {
-        return array (  243 => 100,  232 => 91,  226 => 90,  215 => 85,  209 => 84,  199 => 76,  193 => 75,  161 => 172,  159 => 90,  155 => 88,  153 => 84,  147 => 80,  145 => 75,  136 => 68,  134 => 67,  119 => 54,  93 => 52,  89 => 45,  77 => 35,  71 => 33,  68 => 32,  61 => 33,  58 => 32,  54 => 28,  25 => 1,);
+        return array (  267 => 104,  256 => 95,  250 => 94,  239 => 89,  233 => 88,  223 => 80,  217 => 79,  185 => 176,  183 => 94,  179 => 92,  177 => 88,  171 => 84,  169 => 79,  160 => 72,  158 => 71,  143 => 58,  93 => 56,  89 => 45,  77 => 35,  71 => 33,  68 => 32,  61 => 33,  58 => 32,  54 => 28,  25 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -378,6 +402,10 @@ class __TwigTemplate_25290286895ed5a4a2cf5d79e823b1f36d4ed726b67d50fb3f50b1742a7
 /*     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>*/
 /*     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-sanitize.min.js"></script>*/
 /*     {% javascripts*/
+/*     '@SmilePlatformBundle/public/js/waypoint.js' filter='cssrewrite'*/
+/*     '@SmilePlatformBundle/public/js/noframework.js' filter='cssrewrite'*/
+/*     '@SmilePlatformBundle/public/js/context.js' filter='cssrewrite'*/
+/*     '@SmilePlatformBundle/public/js/group.js' filter='cssrewrite'*/
 /*     '@SmilePlatformBundle/public/js/Angular/app.js' filter='cssrewrite'*/
 /*     '@SmilePlatformBundle/public/js/Angular/Controllers/allPostsCtrl.js' filter='cssrewrite'*/
 /*     '@SmilePlatformBundle/public/js/jqwery.js' filter='cssrewrite'*/

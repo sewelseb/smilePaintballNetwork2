@@ -1,6 +1,7 @@
 <!-- Project One -->
 <div ng-controller="allPostsCtrl">
     <span id="smileApiGetLastPostsUrl" hidden>{{ path ('smile_api_getlastPosts') }}</span>
+    <span id="smileApiGetOlder" hidden>{{ path('smile_api_getOlderPosts_url') }}</span>
     <span id="smileApiUpvoteUrl" hidden>{{ path ('smile_api_post_upvote_url') }}</span>
     <span id="smileApiDownvoteUrl" hidden>{{ path ('smile_api_post_downvote_url') }}</span>
     <div id="spiningWheelAllPosts">
@@ -84,6 +85,9 @@
     </div>
     <!--  end ng-repeat -->
 
+    <div id="bottomOfThePage">
+
+    </div>
 
 </div>
 

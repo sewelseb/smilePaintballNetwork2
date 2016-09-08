@@ -23,6 +23,20 @@ class PostRepository extends \Doctrine\ORM\EntityRepository
             ;
     }
 
+    public function findOlderThen($postId, $numberOfPosts = 10)
+    {
+        $qb = $this->createQueryBuilder('a');
+
+        $qb->where('a.id < :id')
+            ->orderBy('a.creationTime', 'DESC')
+            ->setMaxResults($numberOfPosts)
+            ->setParameter('id', $postId);
+        return $qb
+            ->getQuery()
+            ->getResult()
+            ;
+    }
+
     public function getUsersPost(User $user){
         $qb = $this->createQueryBuilder('a');
 

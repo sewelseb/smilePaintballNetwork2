@@ -117,6 +117,21 @@ class PostsController extends FOSRestController
         return $this->handleView($view);
     }
 
+    public function getOlderPostsAction($postId)
+    {
+        $postRepo = $this
+            ->getDoctrine()
+            ->getManager()
+            ->getRepository('SmilePlatformBundle:Post');
+        $posts = $postRepo->findOlderThen($postId);
+
+        $view = $this->view($posts, 200)
+            ->setTemplate("SmileApiBundle:Default:index.html.twig")
+            ->setTemplateVar('posts')
+        ;
+
+        return $this->handleView($view);
+    }
 
 
 
