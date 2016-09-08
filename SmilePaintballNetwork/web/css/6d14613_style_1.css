@@ -58,3 +58,8 @@ a{
     margin: 0px;
     border-radius: 3px;
 }
+
+.btn-register-facebook{
+    background-color: #3b5998;
+    color: white;
+}

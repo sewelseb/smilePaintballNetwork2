@@ -62,7 +62,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand yellow-text" href="#"><span class="yellow-text">Smile Paintball Network</span></a>
+                <a class="navbar-brand yellow-text" href="{{ path('smile_platform_homepage') }}"><span class="yellow-text"><img class="logo" src="/images/logo.png" alt="SMILE"></span></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
@@ -72,9 +72,6 @@
                     </li>
                     <li>
                         <a href="#" data-toggle="modal" data-target="#registerModal" class="yellow-text"><span class="yellow-text">Register</span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="yellow-text"><span class="yellow-text">About</span></a>
                     </li>
                 </ul>
             </div>
@@ -91,6 +88,9 @@
                     <h4 class="modal-title" id="myModalLabel">Login</h4>
                 </div>
                 <div class="modal-body">
+                    <div class="form-group text-center">
+                        <a class="btn btn-register-facebook" href="#" onclick="fb_login();">Connect with Facebook</a>
+                    </div>
                     {{ render(controller('FOSUserBundle:Security:login')) }}
                 </div>
 
@@ -106,6 +106,10 @@
                     <h4 class="modal-title" id="myModalLabel">Register</h4>
                 </div>
                 <div class="modal-body">
+                    <div class="form-group text-center">
+                        <a class="btn btn-register-facebook" href="#" onclick="fb_login();">Connect with Facebook</a>
+                    </div>
+
                     {{ render(controller("SmileUserBundle:Registration:register", {'originalRequest': app.request})) }}
                     <div class="clearfix"></div>
                 </div>

@@ -1,5 +1,27 @@
 {% extends "SmilePlatformBundle::Default/layout.html.twig" %}
 
+{% block openGraph %}
+    <meta property="og:title" content="Smile Paintball Network - {{ post.title }}" />
+    {% if post.type=='video_youtube' %}
+        <meta property="og:image" content="https://smilepaintball.com/images/logo.png" />
+    {% endif %}
+    {% if post.type=='video_facebook' %}
+        <meta property="og:image" content="https://smilepaintball.com/images/logo.png" />
+    {% endif %}
+    {% if post.type=='picture_facebook' %}
+        <meta property="og:image" content="https://smilepaintball.com/images/logo.png" />
+    {% endif %}
+    {% if post.type=='picture_externalUrl' %}
+        <meta property="og:image" content="{{ post.url }}" />
+    {% endif %}
+    {% if post.type=='picture_local' %}
+        <meta property="og:image" content="https://smilepaintball.com{{post.picture.uploadDir}}/{{post.picture.url}}" />
+    {% endif %}
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://smilepaintball.com/platform/post/{{ post.id }}" />
+
+{% endblock %}
+
 {% block pageHeader %}
 
 {% endblock %}
@@ -58,20 +80,20 @@
             <div>
                 <div class="spacer-5px">
                     <div class="fb-share-button"
-                         data-href="http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}"
+                         data-href="http://smilepaintball.com/platform/post/{{ post.id }}"
                          data-layout="button_count">
                     </div>
                 </div>
                 <div class="spacer-5px">
                     <a
-                            href="https://twitter.com/intent/tweet?text={{post.title}}&url=http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}">
+                            href="https://twitter.com/intent/tweet?text={{post.title}}&url=http://smilepaintball.com/platform/post/{{ post.id }}">
                         <button class="btn twitter-share-button">Tweet</button></a>
                 </div>
                 <div class="spacer-5px">
-                    <script type="IN/Share" data-url="http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}" data-counter="right"></script>
+                    <script type="IN/Share" data-url="http://smilepaintball.com/platform/post/{{ post.id }}" data-counter="right"></script>
                 </div>
                 <div class="spacer-5px">
-                    Share: <input class=" form-control input-lg" value="http://smilepaintball.com/app_dev.php/platform/post/{{ post.id }}">
+                    Share: <input class=" form-control input-lg" value="http://smilepaintball.com/platform/post/{{ post.id }}">
                 </div>
 
 

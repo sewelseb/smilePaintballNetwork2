@@ -64,10 +64,10 @@ class User extends \Smile\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'id', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'picture', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'firstName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'lastName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamPicture', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'locked', 'expired', 'expiresAt', 'roles', 'credentialsExpired', 'credentialsExpireAt'];
+            return ['__isInitialized__', 'id', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'picture', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'firstName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'lastName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamPicture', 'facebook_id', 'facebook_access_token', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'locked', 'expired', 'expiresAt', 'roles', 'credentialsExpired', 'credentialsExpireAt'];
         }
 
-        return ['__isInitialized__', 'id', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'picture', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'firstName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'lastName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamPicture', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'locked', 'expired', 'expiresAt', 'roles', 'credentialsExpired', 'credentialsExpireAt'];
+        return ['__isInitialized__', 'id', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'picture', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'firstName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'lastName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamPicture', 'facebook_id', 'facebook_access_token', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'locked', 'expired', 'expiresAt', 'roles', 'credentialsExpired', 'credentialsExpireAt'];
     }
 
     /**
@@ -296,6 +296,50 @@ class User extends \Smile\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setTeamPicture', [$teamPicture]);
 
         return parent::setTeamPicture($teamPicture);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getFacebookId()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFacebookId', []);
+
+        return parent::getFacebookId();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setFacebookId($facebook_id)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setFacebookId', [$facebook_id]);
+
+        return parent::setFacebookId($facebook_id);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getFacebookAccessToken()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFacebookAccessToken', []);
+
+        return parent::getFacebookAccessToken();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setFacebookAccessToken($facebook_access_token)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setFacebookAccessToken', [$facebook_access_token]);
+
+        return parent::setFacebookAccessToken($facebook_access_token);
     }
 
     /**

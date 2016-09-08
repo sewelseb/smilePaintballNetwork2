@@ -145,7 +145,7 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
 
     $scope.facebookSafeApply = function(){
         console.log('test');
-        if(FB != null)
+        if(typeof FB != 'undefined')
         {
             FB.XFBML.parse();
         }

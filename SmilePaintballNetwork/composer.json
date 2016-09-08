@@ -32,7 +32,8 @@
         "leafo/scssphp": "~0.6",
         "patchwork/jsqueeze": "~1.0",
         "friendsofsymfony/user-bundle": "dev-master",
-        "friendsofsymfony/rest-bundle": "^2.0"
+        "friendsofsymfony/rest-bundle": "^2.0",
+        "hwi/oauth-bundle": "0.5.*-dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",

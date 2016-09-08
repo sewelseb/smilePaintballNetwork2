@@ -104,3 +104,33 @@ fos_rest:
         default_engine: twig
     routing_loader:
         default_format: json
+
+hwi_oauth:
+    # list of names of the firewalls in which this bundle is active, this setting MUST be set
+    connect:
+        account_connector: my_user_provider
+    firewall_names: [main]
+    fosub:
+        username_iterations: 30
+        properties:
+          # these properties will be used/redefined later in the custom FOSUBUserProvider service.
+          facebook: facebook_id
+    resource_owners:
+        facebook:
+            type:                facebook
+            client_id:           1274219895951492
+            client_secret:       31195a54ecb601fc836d1e8fcb83c15f
+            scope:         "email"
+            infos_url:     "https://graph.facebook.com/me?fields=id,name,email,picture.type(large),first_name,last_name"
+            paths:
+              email: email
+              profilepicture: picture.data.url
+              firstname: first_name
+              lastname: last_name
+              birthday: birthday
+            options:
+                display: popup #dialog is optimized for popup window
+                auth_type: rerequest # Re-asking for Declined Permissions
+#services:
+ #   hwi_oauth.user.provider.entity:
+  #      class: HWI\Bundle\OAuthBundle\Security\Core\User\OAuthUserProvider

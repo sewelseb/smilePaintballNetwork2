@@ -1,7 +1,7 @@
 <?php
 namespace Smile\UserBundle\Security\Core\User;
 
-use Smile\UserBundle\Entity\ProfilePicture;
+use Smile\UserBundle\Entity\ProfilePic;
 use HWI\Bundle\OAuthBundle\OAuth\Response\UserResponseInterface;
 use HWI\Bundle\OAuthBundle\Security\Core\User\FOSUBUserProvider as BaseClass;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -65,9 +65,9 @@ class FOSUBUserProvider extends BaseClass
         var_dump($response->getResponse());
         //var_dump($user);
         $data = ob_get_clean();
-        $fp = fopen("/var/www/bamsell.com/test.txt", "w");
-        fwrite($fp, $data);
-        fclose($fp);
+        //$fp = fopen("/var/www/bamsell.com/test.txt", "w");
+        //fwrite($fp, $data);
+        //fclose($fp);
         //when the user is registrating
         if (!is_object($user) ) {
             $service = $response->getResourceOwner()->getName();
@@ -80,7 +80,7 @@ class FOSUBUserProvider extends BaseClass
             $user->$setter_token($response->getAccessToken());
             //I have set all requested data with the user's username
             //modify here with relevant data
-            $user->setUsername($response->getUsername());
+            $user->setUsername($response->getFirstName().' '.$response->getLastName().time());
             $user->setFacebookId($response->getUsername());
             $name = basename($response->getProfilePicture());
             list($txt, $ext) = explode(".", $name);
@@ -89,10 +89,10 @@ class FOSUBUserProvider extends BaseClass
             $name = explode("?", $name)[0];
             file_put_contents("uploads/profilePics/".$name,file_get_contents($response->getProfilePicture()));
 
-            $profilePic=new ProfilePicture();
+            $profilePic=new ProfilePic();
             $profilePic->setUrl($name);
             $profilePic->setAlt($name);
-            $user->setProfilePic($profilePic);
+            $user->setPicture($profilePic);
             $user->setFirstname($response->getFirstName());
             $user->setLastname($response->getLastName());
 

@@ -127,7 +127,7 @@ class PostPic
 
         //$extention = $this->getFile()->getClientOriginalName()->explode('.', $this->file->getClientOriginalName())[1];
         $extention = $this->getFile()->guessExtension();
-        $name = $post->getUser()->getUsername().'_'.$post->getTitle().'_'.time().'.'.$extention;
+        $name = $post->getUser()->getUsername().'_'.time().'.'.$extention;
         // On déplace le fichier envoyé dans le répertoire de notre choix
         $this->file->move($this->getUploadRootDir(), $name);
         // On sauvegarde le nom de fichier dans notre attribut $url

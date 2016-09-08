@@ -27,6 +27,158 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
         $context = $this->context;
         $request = $this->request;
 
+        if (0 === strpos($pathinfo, '/css/6d14613')) {
+            // _assetic_6d14613
+            if ($pathinfo === '/css/6d14613.css') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => '6d14613',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_6d14613',);
+            }
+
+            // _assetic_6d14613_0
+            if ($pathinfo === '/css/6d14613_style_1.css') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => '6d14613',  'pos' => 0,  '_format' => 'css',  '_route' => '_assetic_6d14613_0',);
+            }
+
+        }
+
+        if (0 === strpos($pathinfo, '/js/fd0d37f')) {
+            // _assetic_fd0d37f
+            if ($pathinfo === '/js/fd0d37f.js') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => NULL,  '_format' => 'js',  '_route' => '_assetic_fd0d37f',);
+            }
+
+            if (0 === strpos($pathinfo, '/js/fd0d37f_')) {
+                // _assetic_fd0d37f_0
+                if ($pathinfo === '/js/fd0d37f_waypoint_1.js') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => 0,  '_format' => 'js',  '_route' => '_assetic_fd0d37f_0',);
+                }
+
+                // _assetic_fd0d37f_1
+                if ($pathinfo === '/js/fd0d37f_noframework_2.js') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => 1,  '_format' => 'js',  '_route' => '_assetic_fd0d37f_1',);
+                }
+
+                // _assetic_fd0d37f_2
+                if ($pathinfo === '/js/fd0d37f_context_3.js') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => 2,  '_format' => 'js',  '_route' => '_assetic_fd0d37f_2',);
+                }
+
+                // _assetic_fd0d37f_3
+                if ($pathinfo === '/js/fd0d37f_group_4.js') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => 3,  '_format' => 'js',  '_route' => '_assetic_fd0d37f_3',);
+                }
+
+                if (0 === strpos($pathinfo, '/js/fd0d37f_a')) {
+                    // _assetic_fd0d37f_4
+                    if ($pathinfo === '/js/fd0d37f_app_5.js') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => 4,  '_format' => 'js',  '_route' => '_assetic_fd0d37f_4',);
+                    }
+
+                    // _assetic_fd0d37f_5
+                    if ($pathinfo === '/js/fd0d37f_allPostsCtrl_6.js') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => 5,  '_format' => 'js',  '_route' => '_assetic_fd0d37f_5',);
+                    }
+
+                }
+
+                // _assetic_fd0d37f_6
+                if ($pathinfo === '/js/fd0d37f_jqwery_7.js') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => 6,  '_format' => 'js',  '_route' => '_assetic_fd0d37f_6',);
+                }
+
+            }
+
+        }
+
+        if (0 === strpos($pathinfo, '/connect')) {
+            // hwi_oauth_service_redirect
+            if (preg_match('#^/connect/(?P<service>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'hwi_oauth_service_redirect')), array (  '_controller' => 'HWI\\Bundle\\OAuthBundle\\Controller\\ConnectController::redirectToServiceAction',));
+            }
+
+            // hwi_oauth_connect_service
+            if (0 === strpos($pathinfo, '/connect/service') && preg_match('#^/connect/service/(?P<service>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'hwi_oauth_connect_service')), array (  '_controller' => 'HWI\\Bundle\\OAuthBundle\\Controller\\ConnectController::connectServiceAction',));
+            }
+
+            // hwi_oauth_connect_registration
+            if (0 === strpos($pathinfo, '/connect/registration') && preg_match('#^/connect/registration/(?P<key>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'hwi_oauth_connect_registration')), array (  '_controller' => 'HWI\\Bundle\\OAuthBundle\\Controller\\ConnectController::registrationAction',));
+            }
+
+        }
+
+        if (0 === strpos($pathinfo, '/login')) {
+            // hwi_oauth_connect
+            if (rtrim($pathinfo, '/') === '/login') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'hwi_oauth_connect');
+                }
+
+                return array (  '_controller' => 'HWI\\Bundle\\OAuthBundle\\Controller\\ConnectController::connectAction',  '_route' => 'hwi_oauth_connect',);
+            }
+
+            // facebook_login
+            if ($pathinfo === '/login/check-facebook') {
+                return array('_route' => 'facebook_login');
+            }
+
+        }
+
+        if (0 === strpos($pathinfo, '/api')) {
+            // smile_api_getlastPosts
+            if (0 === strpos($pathinfo, '/api/posts/getLastPosts') && preg_match('#^/api/posts/getLastPosts(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'smile_api_getlastPosts')), array (  '_controller' => 'Smile\\ApiBundle\\Controller\\PostsController::getLastPostsAction',  '_format' => 'json',));
+            }
+
+            if (0 === strpos($pathinfo, '/api/getOlderPosts')) {
+                // smile_api_getOlderPosts
+                if (preg_match('#^/api/getOlderPosts/(?P<postId>[^/\\.]++)(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'smile_api_getOlderPosts')), array (  '_controller' => 'Smile\\ApiBundle\\Controller\\PostsController::getOlderPostsAction',  '_format' => 'json',));
+                }
+
+                // smile_api_getOlderPosts_url
+                if (0 === strpos($pathinfo, '/api/getOlderPosts/') && preg_match('#^/api/getOlderPosts/(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'smile_api_getOlderPosts_url')), array (  '_format' => 'json',));
+                }
+
+            }
+
+            if (0 === strpos($pathinfo, '/api/post')) {
+                if (0 === strpos($pathinfo, '/api/post/upvote')) {
+                    // smile_api_post_upvote
+                    if (preg_match('#^/api/post/upvote/(?P<postId>[^/\\.]++)(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'smile_api_post_upvote')), array (  '_controller' => 'Smile\\ApiBundle\\Controller\\PostsController::upvoteAction',  '_format' => 'json',));
+                    }
+
+                    // smile_api_post_upvote_url
+                    if (0 === strpos($pathinfo, '/api/post/upvote/') && preg_match('#^/api/post/upvote/(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'smile_api_post_upvote_url')), array (  '_controller' => 'Smile\\ApiBundle\\Controller\\PostsController::upvoteAction',  '_format' => 'json',));
+                    }
+
+                }
+
+                if (0 === strpos($pathinfo, '/api/post/downvote')) {
+                    // smile_api_post_udownvote
+                    if (preg_match('#^/api/post/downvote/(?P<postId>[^/\\.]++)(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'smile_api_post_udownvote')), array (  '_controller' => 'Smile\\ApiBundle\\Controller\\PostsController::downvoteAction',  '_format' => 'json',));
+                    }
+
+                    // smile_api_post_downvote_url
+                    if (0 === strpos($pathinfo, '/api/post/downvote/') && preg_match('#^/api/post/downvote/(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'smile_api_post_downvote_url')), array (  '_controller' => 'Smile\\ApiBundle\\Controller\\PostsController::downvoteAction',  '_format' => 'json',));
+                    }
+
+                }
+
+            }
+
+            // smile_api_comment_addNew
+            if (0 === strpos($pathinfo, '/api/comment/addNew') && preg_match('#^/api/comment/addNew(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'smile_api_comment_addNew')), array (  '_controller' => 'Smile\\ApiBundle\\Controller\\CommentController::newCommentAction',  '_format' => 'json',));
+            }
+
+        }
+
         // smile_platform_homepage
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {
@@ -36,9 +188,30 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
             return array (  '_controller' => 'Smile\\PlatformBundle\\Controller\\DefaultController::indexAction',  '_route' => 'smile_platform_homepage',);
         }
 
-        // smile_platform_homepage_co
-        if ($pathinfo === '/platform/co') {
-            return array (  '_controller' => 'Smile\\PlatformBundle\\Controller\\DefaultController::indexAction',  '_route' => 'smile_platform_homepage_co',);
+        if (0 === strpos($pathinfo, '/platform')) {
+            // smile_platform_homepage_co
+            if ($pathinfo === '/platform/co') {
+                return array (  '_controller' => 'Smile\\PlatformBundle\\Controller\\DefaultController::indexAction',  '_route' => 'smile_platform_homepage_co',);
+            }
+
+            if (0 === strpos($pathinfo, '/platform/p')) {
+                // smile_platform_profile
+                if (0 === strpos($pathinfo, '/platform/profile') && preg_match('#^/platform/profile/(?P<userId>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'smile_platform_profile')), array (  '_controller' => 'Smile\\PlatformBundle\\Controller\\UserController::userProfileAction',));
+                }
+
+                // smile_platform_post
+                if (0 === strpos($pathinfo, '/platform/post') && preg_match('#^/platform/post/(?P<postId>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'smile_platform_post')), array (  '_controller' => 'Smile\\PlatformBundle\\Controller\\PostController::showPostAction',));
+                }
+
+            }
+
+            // smile_platform_contactUs
+            if ($pathinfo === '/platform/contact') {
+                return array (  '_controller' => 'Smile\\PlatformBundle\\Controller\\DefaultController::contactAction',  '_route' => 'smile_platform_contactUs',);
+            }
+
         }
 
         // homepage
@@ -78,8 +251,8 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
 
             // fos_user_security_logout
             if ($pathinfo === '/logout') {
-                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
                     goto not_fos_user_security_logout;
                 }
 
