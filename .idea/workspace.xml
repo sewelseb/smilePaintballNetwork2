@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd7a3751-cd3c-446f-9dee-7e194977a505" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdUrlGenerator.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/sessions/prod/sess_im21llqehlokbnu7pgvmh9flf0" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/sessions/prod/sess_im21llqehlokbnu7pgvmh9flf0" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/navbar.html.twig" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/navbar.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/css/style.css" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/23/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572247465616d50696374757265405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/23/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572247465616d50696374757265405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/2f/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572247465616d4e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/2f/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572247465616d4e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/3e/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722466616365626f6f6b5f6163636573735f746f6b656e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/3e/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722466616365626f6f6b5f6163636573735f746f6b656e405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/54/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722466616365626f6f6b5f6964405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/54/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722466616365626f6f6b5f6964405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/82/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722470696374757265405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/82/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722470696374757265405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/98/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/98/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/a8/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722466697273744e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/a8/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722466697273744e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/ab/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572246964405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/ab/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572246964405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/e0/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572246c6173744e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/e0/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572246c6173744e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/e7/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572247465616d73405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/e7/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572247465616d73405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/appDevDebugProjectContainer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/appDevDebugProjectContainer.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/twig/b0/b0fd904cf958bcc046bdac39110644fce7a3c0a4bc0c9e9c3ce7f7d09f8b85ce.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/twig/b0/b0fd904cf958bcc046bdac39110644fce7a3c0a4bc0c9e9c3ce7f7d09f8b85ce.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/logs/dev.log" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/logs/dev.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/logs/prod.log" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/logs/prod.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/web/css/6d14613.css" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/web/css/6d14613.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/web/css/6d14613_style_1.css" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/web/css/6d14613_style_1.css" />
@@ -130,7 +116,7 @@
         <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/navbar.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="488">
-              <caret line="53" column="115" selection-start-line="53" selection-start-column="115" selection-end-line="53" selection-end-column="115" />
+              <caret line="53" column="129" selection-start-line="53" selection-start-column="129" selection-end-line="53" selection-end-column="129" />
               <folding />
             </state>
           </provider>
@@ -161,8 +147,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="66" column="21" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="21" />
+            <state relative-caret-position="576">
+              <caret line="77" column="1" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -1127,12 +1113,12 @@
       <workItem from="1473313511523" duration="15953000" />
       <workItem from="1473347622096" duration="5743000" />
       <workItem from="1473421138431" duration="4572000" />
-      <workItem from="1473752645389" duration="12455000" />
+      <workItem from="1473752645389" duration="12951000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122527000" />
+    <option name="totallyTimeSpent" value="123023000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2391" y="-9" width="2418" height="1318" extended-state="6" />
@@ -1544,8 +1530,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="66" column="21" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="21" />
+        <state relative-caret-position="576">
+          <caret line="77" column="1" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1553,7 +1539,7 @@
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/navbar.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
-          <caret line="53" column="115" selection-start-line="53" selection-start-column="115" selection-end-line="53" selection-end-column="115" />
+          <caret line="53" column="129" selection-start-line="53" selection-start-column="129" selection-end-line="53" selection-end-column="129" />
           <folding />
         </state>
       </provider>

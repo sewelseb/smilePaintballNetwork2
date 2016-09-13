@@ -15,8 +15,8 @@ class __TwigTemplate_2bf693a95c2011f83b0e0eccff63fdc6a6601629a72714eb8f52d6dcdd1
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f6f069f208a83056139c0fa87bfe13ff4d4a4b91cb01c6cc68094472a319e57f = $this->env->getExtension("native_profiler");
-        $__internal_f6f069f208a83056139c0fa87bfe13ff4d4a4b91cb01c6cc68094472a319e57f->enter($__internal_f6f069f208a83056139c0fa87bfe13ff4d4a4b91cb01c6cc68094472a319e57f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
+        $__internal_9f55437eb95962a3d7f0c1825054e79736dfef1dadcacc4504157ffcaccae2a1 = $this->env->getExtension("native_profiler");
+        $__internal_9f55437eb95962a3d7f0c1825054e79736dfef1dadcacc4504157ffcaccae2a1->enter($__internal_9f55437eb95962a3d7f0c1825054e79736dfef1dadcacc4504157ffcaccae2a1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
 
         // line 1
         echo "<!-- Navigation -->
@@ -90,8 +90,8 @@ class __TwigTemplate_2bf693a95c2011f83b0e0eccff63fdc6a6601629a72714eb8f52d6dcdd1
     </div>
 
 
-    <button  data-toggle=\"modal\" data-target=\"#newPostModal\" class=\"btn btn-primary btn-circle smartphonePostButton\" >
-        <strong class=\"yellow-text\">+</strong>
+    <button  data-toggle=\"modal\" data-target=\"#newPostModal\" class=\"btn btn-primary btn-circle smartphonePostButton front-z-index\" >
+        <strong class=\"yellow-text \">+ POST</strong>
     </button>
 
 
@@ -181,7 +181,7 @@ class __TwigTemplate_2bf693a95c2011f83b0e0eccff63fdc6a6601629a72714eb8f52d6dcdd1
 ";
         }
         
-        $__internal_f6f069f208a83056139c0fa87bfe13ff4d4a4b91cb01c6cc68094472a319e57f->leave($__internal_f6f069f208a83056139c0fa87bfe13ff4d4a4b91cb01c6cc68094472a319e57f_prof);
+        $__internal_9f55437eb95962a3d7f0c1825054e79736dfef1dadcacc4504157ffcaccae2a1->leave($__internal_9f55437eb95962a3d7f0c1825054e79736dfef1dadcacc4504157ffcaccae2a1_prof);
 
     }
 
@@ -253,8 +253,8 @@ class __TwigTemplate_2bf693a95c2011f83b0e0eccff63fdc6a6601629a72714eb8f52d6dcdd1
 /*     </div>*/
 /* */
 /* */
-/*     <button  data-toggle="modal" data-target="#newPostModal" class="btn btn-primary btn-circle smartphonePostButton" >*/
-/*         <strong class="yellow-text">+</strong>*/
+/*     <button  data-toggle="modal" data-target="#newPostModal" class="btn btn-primary btn-circle smartphonePostButton front-z-index" >*/
+/*         <strong class="yellow-text ">+ POST</strong>*/
 /*     </button>*/
 /* */
 /* */
