@@ -3,6 +3,10 @@ smile_platform_homepage_co:
     path:     /co
     defaults: { _controller: SmilePlatformBundle:Default:index }
 
+Smile_platform_homepage:
+  path:     /co
+  defaults: { _controller: SmilePlatformBundle:Default:index }
+
 smile_platform_profile:
   path: /profile/{userId}
   defaults: { _controller: SmilePlatformBundle:User:userProfile }
@@ -14,3 +18,7 @@ smile_platform_post:
 smile_platform_contactUs:
   path: /contact
   defaults: { _controller: SmilePlatformBundle:Default:contact }
+
+smile_platform_team:
+  path: /team/{id}
+  defaults: { _controller: SmilePlatformBundle:Team:team }

@@ -1,6 +1,7 @@
 <?php
 
 namespace Smile\UserBundle\Repository;
+use Smile\PlatformBundle\Entity\Team;
 
 /**
  * UserRepository
@@ -10,4 +11,14 @@ namespace Smile\UserBundle\Repository;
  */
 class UserRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function getUsersByTeam(Team $team)
+    {
+        $qb = $this->createQueryBuilder('u');
+        $qb->join('u.teams', 't')
+            ->where($qb->expr()->eq('t.id', $team->getId()));
+        return $qb
+            ->getQuery()
+            ->getResult()
+            ;
+    }
 }

@@ -3,10 +3,15 @@
 {% block openGraph %}
     <meta property="og:title" content="Smile Paintball Network - {{ post.title }}" />
     {% if post.type=='video_youtube' %}
-        <meta property="og:image" content="https://smilepaintball.com/images/logo.png" />
+        <meta property="og:image" content="http://img.youtube.com/vi/{{ post.getYoutubeId() }}/default.jpg" />
     {% endif %}
     {% if post.type=='video_facebook' %}
-        <meta property="og:image" content="https://smilepaintball.com/images/logo.png" />
+        {% if post.getFacebookId()!='' %}
+            <meta property="og:image" content="https://graph.facebook.com/{{ post.getFacebookId() }}/picture" />
+        {% endif %}
+        {% if post.getFacebookId()=='' %}
+            <meta property="og:image" content="https://smilepaintball.com/images/logo.png" />
+        {% endif %}
     {% endif %}
     {% if post.type=='picture_facebook' %}
         <meta property="og:image" content="https://smilepaintball.com/images/logo.png" />

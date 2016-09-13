@@ -64,10 +64,10 @@ class User extends \Smile\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'id', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'locked', 'expired', 'expiresAt', 'roles', 'credentialsExpired', 'credentialsExpireAt'];
+            return ['__isInitialized__', 'id', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'picture', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'firstName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'lastName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamPicture', 'facebook_id', 'facebook_access_token', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teams', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'locked', 'expired', 'expiresAt', 'roles', 'credentialsExpired', 'credentialsExpireAt'];
         }
 
-        return ['__isInitialized__', 'id', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'locked', 'expired', 'expiresAt', 'roles', 'credentialsExpired', 'credentialsExpireAt'];
+        return ['__isInitialized__', 'id', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'picture', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'firstName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'lastName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamPicture', 'facebook_id', 'facebook_access_token', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teams', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'locked', 'expired', 'expiresAt', 'roles', 'credentialsExpired', 'credentialsExpireAt'];
     }
 
     /**
@@ -176,6 +176,28 @@ class User extends \Smile\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\
     /**
      * {@inheritDoc}
      */
+    public function addTeam(\Smile\PlatformBundle\Entity\Team $team)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addTeam', [$team]);
+
+        return parent::addTeam($team);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function removeTeam(\Smile\PlatformBundle\Entity\Team $team)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeTeam', [$team]);
+
+        return parent::removeTeam($team);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getId()
     {
         if ($this->__isInitialized__ === false) {
@@ -186,6 +208,182 @@ class User extends \Smile\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getId', []);
 
         return parent::getId();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getPicture()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPicture', []);
+
+        return parent::getPicture();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setPicture($picture)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setPicture', [$picture]);
+
+        return parent::setPicture($picture);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getFirstName()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFirstName', []);
+
+        return parent::getFirstName();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setFirstName($firstName)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setFirstName', [$firstName]);
+
+        return parent::setFirstName($firstName);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getLastName()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getLastName', []);
+
+        return parent::getLastName();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setLastName($lastName)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setLastName', [$lastName]);
+
+        return parent::setLastName($lastName);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getTeamName()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getTeamName', []);
+
+        return parent::getTeamName();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setTeamName($teamName)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setTeamName', [$teamName]);
+
+        return parent::setTeamName($teamName);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getTeamPicture()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getTeamPicture', []);
+
+        return parent::getTeamPicture();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setTeamPicture($teamPicture)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setTeamPicture', [$teamPicture]);
+
+        return parent::setTeamPicture($teamPicture);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getFacebookId()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFacebookId', []);
+
+        return parent::getFacebookId();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setFacebookId($facebook_id)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setFacebookId', [$facebook_id]);
+
+        return parent::setFacebookId($facebook_id);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getFacebookAccessToken()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFacebookAccessToken', []);
+
+        return parent::getFacebookAccessToken();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setFacebookAccessToken($facebook_access_token)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setFacebookAccessToken', [$facebook_access_token]);
+
+        return parent::setFacebookAccessToken($facebook_access_token);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getTeams()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getTeams', []);
+
+        return parent::getTeams();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setTeams($teams)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setTeams', [$teams]);
+
+        return parent::setTeams($teams);
     }
 
     /**

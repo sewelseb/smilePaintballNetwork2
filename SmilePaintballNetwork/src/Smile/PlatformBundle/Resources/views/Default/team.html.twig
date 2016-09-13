@@ -1,0 +1,23 @@
+{% extends "SmilePlatformBundle::Default/layout.html.twig" %}
+
+{% block pageHeader %}
+    <H1>{{ team.name }}</H1>
+    {%  if team.teamPicture  %}
+        <img width="100px" class="img-responsive " src="{{team.teamPicture.uploadDir}}/{{team.teamPicture.url}}" alt="{{ team.name }}">
+    {%  endif %}
+    <hr/>
+{% endblock %}
+
+{% block leftCollumn %}
+    <H2>Team members:</H2>
+    {% for user in users %}
+        <div class="row">
+            <a href="{{ path('smile_platform_profile', {'userId': user.getId }) }}">
+                {% if user.picture != null %}
+                    <img width="20px" class="img-responsive pull-left" src="{{user.picture.uploadDir}}/{{user.picture.url}}" alt="{{ user.username }}">
+                {% endif %}
+                {{ user.username }}
+            </a>
+        </div>
+    {% endfor %}
+{% endblock %}

@@ -284,6 +284,42 @@ class Post
         $this->comments = $comments;
     }
 
+    public function getYoutubeId()
+    {
+        $tab = explode("/embed/", $this->getUrl());
+        //return $matches[1];
+        if (isset ($tab[1]))
+        {
+            return $tab[1];
+        }
+        else
+        {
+            return null;
+        }
+
+    }
+
+    public function getFacebookId()
+    {
+
+            $tmp = explode('/', $this->getUrl());
+            if (count($tmp) - 2>=0)
+            {
+                if (strtolower($tmp[count($tmp) - 2] == 'videos'))
+                    return $tmp[count($tmp) - 1];
+            }
+
+            if (isset(parse_url($this->getUrl())['query']))
+            {
+                parse_str(parse_url($this->getUrl())['query'], $query);
+                if (!empty($query['v']))
+                    return $query['v'];
+            }
+
+        return null;
+
+    }
+
 
 
 }

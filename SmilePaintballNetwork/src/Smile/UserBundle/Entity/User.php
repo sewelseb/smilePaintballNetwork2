@@ -5,6 +5,9 @@ namespace Smile\UserBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use FOS\UserBundle\Model\User as BaseUser;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Smile\PlatformBundle\Entity\Team;
+
 /**
  * User
  *
@@ -60,8 +63,31 @@ class User extends BaseUser
     /** @ORM\Column(name="facebook_access_token", type="string", length=255, nullable=true) */
     protected $facebook_access_token;
 
+    /**
+     * @ORM\ManyToMany(targetEntity="Smile\PlatformBundle\Entity\Team", cascade={"persist"})
+     */
+    private $teams;
 
 
+
+    public function __construct()
+    {
+        $this->teams = new ArrayCollection();
+    }
+
+    public function addTeam(Team $team)
+    {
+        // Ici, on utilise l'ArrayCollection vraiment comme un tableau
+        $this->teams[] = $team;
+
+        return $this;
+    }
+
+    public function removeTeam(Team $team)
+    {
+        // Ici on utilise une méthode de l'ArrayCollection, pour supprimer la catégorie en argument
+        $this->teams->removeElement($team);
+    }
 
 
 
@@ -185,6 +211,22 @@ class User extends BaseUser
     public function setFacebookAccessToken($facebook_access_token)
     {
         $this->facebook_access_token = $facebook_access_token;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTeams()
+    {
+        return $this->teams;
+    }
+
+    /**
+     * @param mixed $teams
+     */
+    public function setTeams($teams)
+    {
+        $this->teams = $teams;
     }
 
 
