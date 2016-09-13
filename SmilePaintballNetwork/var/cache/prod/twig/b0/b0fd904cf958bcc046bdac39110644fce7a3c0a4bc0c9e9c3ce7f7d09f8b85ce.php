@@ -15,8 +15,8 @@ class __TwigTemplate_2bf693a95c2011f83b0e0eccff63fdc6a6601629a72714eb8f52d6dcdd1
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b3a9b1a971bfc5cfb56a1af3da5b33dcf836f1abb265e60d42afd3bdde32f193 = $this->env->getExtension("native_profiler");
-        $__internal_b3a9b1a971bfc5cfb56a1af3da5b33dcf836f1abb265e60d42afd3bdde32f193->enter($__internal_b3a9b1a971bfc5cfb56a1af3da5b33dcf836f1abb265e60d42afd3bdde32f193_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
+        $__internal_f6f069f208a83056139c0fa87bfe13ff4d4a4b91cb01c6cc68094472a319e57f = $this->env->getExtension("native_profiler");
+        $__internal_f6f069f208a83056139c0fa87bfe13ff4d4a4b91cb01c6cc68094472a319e57f->enter($__internal_f6f069f208a83056139c0fa87bfe13ff4d4a4b91cb01c6cc68094472a319e57f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
 
         // line 1
         echo "<!-- Navigation -->
@@ -90,9 +90,14 @@ class __TwigTemplate_2bf693a95c2011f83b0e0eccff63fdc6a6601629a72714eb8f52d6dcdd1
     </div>
 
 
+    <button  data-toggle=\"modal\" data-target=\"#newPostModal\" class=\"btn btn-primary btn-circle smartphonePostButton\" >
+        <strong class=\"yellow-text\">+</strong>
+    </button>
+
+
 ";
         } else {
-            // line 55
+            // line 60
             echo "    <nav class=\"navbar navbar-inverse navbar-fixed-top\" role=\"navigation\">
         <div class=\"container\">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -104,7 +109,7 @@ class __TwigTemplate_2bf693a95c2011f83b0e0eccff63fdc6a6601629a72714eb8f52d6dcdd1
                     <span class=\"icon-bar\"></span>
                 </button>
                 <a class=\"navbar-brand yellow-text\" href=\"";
-            // line 65
+            // line 70
             echo $this->env->getExtension('routing')->getPath("smile_platform_homepage");
             echo "\"><span class=\"yellow-text\"><img class=\"logo\" src=\"/images/logo.png\" alt=\"SMILE\"></span></a>
             </div>
@@ -136,7 +141,7 @@ class __TwigTemplate_2bf693a95c2011f83b0e0eccff63fdc6a6601629a72714eb8f52d6dcdd1
                         <a class=\"btn btn-register-facebook\" href=\"#\" onclick=\"fb_login();\">Connect with Facebook</a>
                     </div>
                     ";
-            // line 94
+            // line 99
             echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("FOSUserBundle:Security:login"));
             echo "
                 </div>
@@ -158,7 +163,7 @@ class __TwigTemplate_2bf693a95c2011f83b0e0eccff63fdc6a6601629a72714eb8f52d6dcdd1
                     </div>
 
                     ";
-            // line 113
+            // line 118
             echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("SmileUserBundle:Registration:register", array("originalRequest" => $this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()))));
             echo "
                     <div class=\"clearfix\"></div>
@@ -176,7 +181,7 @@ class __TwigTemplate_2bf693a95c2011f83b0e0eccff63fdc6a6601629a72714eb8f52d6dcdd1
 ";
         }
         
-        $__internal_b3a9b1a971bfc5cfb56a1af3da5b33dcf836f1abb265e60d42afd3bdde32f193->leave($__internal_b3a9b1a971bfc5cfb56a1af3da5b33dcf836f1abb265e60d42afd3bdde32f193_prof);
+        $__internal_f6f069f208a83056139c0fa87bfe13ff4d4a4b91cb01c6cc68094472a319e57f->leave($__internal_f6f069f208a83056139c0fa87bfe13ff4d4a4b91cb01c6cc68094472a319e57f_prof);
 
     }
 
@@ -192,7 +197,7 @@ class __TwigTemplate_2bf693a95c2011f83b0e0eccff63fdc6a6601629a72714eb8f52d6dcdd1
 
     public function getDebugInfo()
     {
-        return array (  162 => 113,  140 => 94,  108 => 65,  96 => 55,  83 => 45,  63 => 28,  57 => 25,  51 => 22,  39 => 13,  27 => 3,  25 => 2,  22 => 1,);
+        return array (  167 => 118,  145 => 99,  113 => 70,  101 => 60,  83 => 45,  63 => 28,  57 => 25,  51 => 22,  39 => 13,  27 => 3,  25 => 2,  22 => 1,);
     }
 }
 /* <!-- Navigation -->*/
@@ -246,6 +251,11 @@ class __TwigTemplate_2bf693a95c2011f83b0e0eccff63fdc6a6601629a72714eb8f52d6dcdd1
 /*             </div>*/
 /*         </div>*/
 /*     </div>*/
+/* */
+/* */
+/*     <button  data-toggle="modal" data-target="#newPostModal" class="btn btn-primary btn-circle smartphonePostButton" >*/
+/*         <strong class="yellow-text">+</strong>*/
+/*     </button>*/
 /* */
 /* */
 /* {% else %}*/
