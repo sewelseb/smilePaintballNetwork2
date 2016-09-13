@@ -225,6 +225,16 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'smile_platform_team')), array (  '_controller' => 'Smile\\PlatformBundle\\Controller\\TeamController::teamAction',));
             }
 
+            // smile_platform_add_to_team
+            if (0 === strpos($pathinfo, '/platform/addToTeam') && preg_match('#^/platform/addToTeam/(?P<teamId>[^/]++)/(?P<userId>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'smile_platform_add_to_team')), array (  '_controller' => 'Smile\\PlatformBundle\\Controller\\TeamController::addToTeamAction',));
+            }
+
+            // smile_platform_leaveTeam
+            if (0 === strpos($pathinfo, '/platform/leaveTeam') && preg_match('#^/platform/leaveTeam/(?P<teamId>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'smile_platform_leaveTeam')), array (  '_controller' => 'Smile\\PlatformBundle\\Controller\\TeamController::leaveTeamAction',));
+            }
+
         }
 
         // homepage

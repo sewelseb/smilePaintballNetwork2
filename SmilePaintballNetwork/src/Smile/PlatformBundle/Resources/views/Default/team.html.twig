@@ -5,7 +5,35 @@
     {%  if team.teamPicture  %}
         <img width="100px" class="img-responsive " src="{{team.teamPicture.uploadDir}}/{{team.teamPicture.url}}" alt="{{ team.name }}">
     {%  endif %}
+    {% if team.admin.id == app.user.id %}
+        <button class="btn btn-primary" data-toggle="modal" data-target="#editTeamModal">Edit team</button>
+    {% else %}
+        {% for user in users %}
+            {% if app.user.id == user.id %}
+                <a href="{{ path('smile_platform_leaveTeam', {'teamId': team.Id }) }}">
+                    <button class="btn btn-primary">Leave team</button>
+                </a>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
     <hr/>
+
+
+    <div class="modal fade" id="editTeamModal" tabindex="-1" role="dialog" aria-labelledby="editTeamModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Edit team</h4>
+                </div>
+                <div class="modal-body">
+                    {{ render(controller('SmilePlatformBundle:Team:edit', {'id': team.id, 'request': app.request})) }}
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 
 {% block leftCollumn %}

@@ -119,7 +119,7 @@
         {% endif %}
     </div>
     <H3>Teams:</H3>
-    {% for team in app.user.teams %}
+    {% for team in user.teams %}
         <div class="row">
             <a href="{{ path('smile_platform_team', {'id': team.id}) }}">
                 {%  if team.teamPicture  %}
@@ -130,19 +130,41 @@
         </div>
         <div class="clearfix"></div>
     {% endfor %}
-    {%  if user.teamName %}
-        {{ user.teamName }}<br/>
-    {%  endif %}
-    {%  if user.teamPicture  %}
-        <img class="img-responsive" src="{{user.teamPicture.uploadDir}}/{{user.teamPicture.url}}" alt="{{ user.teamName }}">
-    {%  endif %}
+
 
     {% if user.id == app.user.id %}
         <button class="btn btn-primary" data-toggle="modal" data-target="#CreateTeamModal">Create a team</button>
+    {% elseif app.user.teams|length !=0 %}
+        <button class="btn btn-primary" data-toggle="modal" data-target="#addToTeamModal">Add to a team</button>
     {% endif %}
 
 
 
+    <div class="modal fade" id="addToTeamModal" tabindex="-1" role="dialog" aria-labelledby="addToTeamModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Add to a team</h4>
+                </div>
+                <div class="modal-body">
+                    {% for team in app.user.teams %}
+                        <div class="row">
+                            <a href="{{ path('smile_platform_add_to_team', {'teamId': team.id, 'userId': user.id}) }}">
+                                {%  if team.teamPicture  %}
+                                    <img width="16px" class="img-responsive pull-left" src="{{team.teamPicture.uploadDir}}/{{team.teamPicture.url}}" alt="{{ team.name }}">
+                                {%  endif %}
+                                <span> {{ team.name }}</span>
+                            </a>
+                        </div>
+                        <div class="clearfix"></div>
+                    {% endfor %}
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="editProfileModal" tabindex="-1" role="dialog" aria-labelledby="edotProfileModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">

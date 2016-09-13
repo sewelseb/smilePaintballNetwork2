@@ -22,3 +22,11 @@ smile_platform_contactUs:
 smile_platform_team:
   path: /team/{id}
   defaults: { _controller: SmilePlatformBundle:Team:team }
+
+smile_platform_add_to_team:
+  path: /addToTeam/{teamId}/{userId}
+  defaults: { _controller: SmilePlatformBundle:Team:addToTeam }
+
+smile_platform_leaveTeam:
+  path: /leaveTeam/{teamId}
+  defaults: { _controller: SmilePlatformBundle:Team:leaveTeam }
