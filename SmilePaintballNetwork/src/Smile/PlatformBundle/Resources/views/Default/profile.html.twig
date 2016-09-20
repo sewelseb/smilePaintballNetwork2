@@ -41,7 +41,11 @@
                     <div>
                         <a href="{{ path('smile_platform_profile', {'userId': post.user.getId })  }}">
                             by
-                            <strong>{{ post.user.username }}</strong><br>
+                            {% if post.user.firstName and post.user.lastName %}
+                                <strong>{{ post.user.firstName }} {{ post.user.lastName }}</strong><br>
+                            {% else %}
+                                <strong>{{ post.user.username }}</strong><br>
+                            {% endif %}
                         </a>
                     </div>
                     <p>

@@ -59,6 +59,16 @@
 
 
             <h4>{{ post.eventName }}</h4>
+            <div>
+                <a href="{{ path('smile_platform_profile', {'userId': post.user.getId })  }}">
+                    by
+                    {% if post.user.firstName and post.user.lastName %}
+                        <strong>{{ post.user.firstName }} {{ post.user.lastName }}</strong><br>
+                    {% else %}
+                        <strong>{{ post.user.username }}</strong><br>
+                    {% endif %}
+                </a>
+            </div>
             <p>
             <div id="updownVote_{{post.id}}">
                 <div class="col-md-6 col-sm-6 col-xs-6">

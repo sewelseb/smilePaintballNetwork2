@@ -83,6 +83,7 @@ class PostController extends Controller
                 $em->flush();
 
 
+
                 $request->getSession()->getFlashBag()->add('notice', 'Post created.');
             }
 

@@ -43,13 +43,22 @@
                     <div class="col-md-5">
                         <h3><a ng-href="/platform/post/{{ post.id }}">{{ post.title }}</a></h3>
                         <h4><a ng-href="/platform/post/{{ post.id }}">{{ post.event_name }}</a></h4>
-                        <a ng-href="/platform/profile/{{ post.user.id }}">
-                            by <strong>{{ post.user.username }}</strong>
-                            <br/>
-                        </a>
+                        <span ng-if="post.user.firstName != '' && post.user.lastName != '' && post.user.firstName != null && post.user.lastName != null">
+                            <a ng-href="/platform/profile/{{ post.user.id }}">
+                                by <strong>{{ post.user.firstName }} {{ post.user.lastName }}</strong>
+                                <br/>
+                            </a>
+                        </span>
+                        <span ng-if="post.user.firstName == '' || post.user.lastName == '' || post.user.firstName == null || post.user.lastName == null">
+                            <a ng-href="/platform/profile/{{ post.user.id }}">
+                                by <strong>{{ post.user.username }}</strong>
+                                <br/>
+                            </a>
+                        </span>
+
                         <p>
                             <div id="updownVote_{{post.id}}">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-xs-6">
                                     <a href="">
                                         <span ng-click="upvote(post.id)">
                                             <img src="/images/upvote.png" class="vote-img">
@@ -57,7 +66,7 @@
                                         </span>
                                     </a>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-xs-6">
                                     <a href="">
                                         <span ng-click="downvote(post.id)">
                                             <img src="/images/downvote.png" class="vote-img">
