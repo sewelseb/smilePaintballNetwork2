@@ -1,1 +1,33 @@
-Hello World!
+{% extends "SmilePlatformBundle::Default/layout.html.twig" %}
+{% block pageHeader %}
+    <h1 class="page-header">
+        Admin of Smile Paintball Network
+    </h1>
+{% endblock %}
+{% block leftCollumn %}
+    {% javascripts
+
+    '@SmilePlatformBundle/public/js/Angular/Controllers/adminStatsCtrl.js' filter='cssrewrite'
+
+
+
+    %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+    <div ng-controller="adminStatsCtrl">
+        <span id="getStatsApiUrl" hidden>{{ path('smile_api_admin_getstats') }}</span>
+        <H2>Statistics:</H2>
+        {% verbatim %}
+            <strong>Number of users: {{ numberOfUsers }}</strong><br/>
+            <strong>Number of posts: {{ numberOfPosts}}</strong><br/>
+            <strong>Number of upvotes: {{ numberOfUpvotes }}</strong><br/>
+            <strong>Number of downvotes: {{ numberOfDownvotes }}</strong><br/>
+            <strong>Number of Comments: {{ numberOfComments }}</strong><br/>
+        {% endverbatim %}
+    </div>
+    <hr>
+{% endblock %}
+
+{% block rightCollumn %}
+
+{% endblock %}

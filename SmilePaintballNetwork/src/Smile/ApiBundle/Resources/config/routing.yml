@@ -25,3 +25,7 @@ smile_api_post_downvote_url:
 smile_api_comment_addNew:
   path: /comment/addNew
   defaults: { _controller: SmileApiBundle:Comment:newComment }
+
+smile_api_admin_getstats:
+  path: /admin/stats
+  defaults: { _controller: SmileApiBundle:Admin:stats }
