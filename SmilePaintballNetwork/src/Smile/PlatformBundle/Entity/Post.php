@@ -10,6 +10,7 @@ use Smile\PlatformBundle\Entity\PostPic;
  *
  * @ORM\Table(name="post")
  * @ORM\Entity(repositoryClass="Smile\PlatformBundle\Repository\PostRepository")
+ * @
  */
 class Post
 {

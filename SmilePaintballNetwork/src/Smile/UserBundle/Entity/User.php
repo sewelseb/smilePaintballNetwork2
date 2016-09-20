@@ -13,6 +13,7 @@ use Smile\PlatformBundle\Entity\Team;
  *
  * @ORM\Table(name="user")
  * @ORM\Entity(repositoryClass="Smile\UserBundle\Repository\UserRepository")
+ *
  */
 class User extends BaseUser
 {
@@ -72,6 +73,7 @@ class User extends BaseUser
 
     public function __construct()
     {
+        parent::__construct();
         $this->teams = new ArrayCollection();
     }
 

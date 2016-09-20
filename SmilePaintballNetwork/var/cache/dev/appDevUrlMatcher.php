@@ -162,6 +162,15 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        // smile_admin_homepage
+        if (rtrim($pathinfo, '/') === '/admin') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'smile_admin_homepage');
+            }
+
+            return array (  '_controller' => 'Smile\\AdminBundle\\Controller\\DefaultController::indexAction',  '_route' => 'smile_admin_homepage',);
+        }
+
         if (0 === strpos($pathinfo, '/connect')) {
             // hwi_oauth_service_redirect
             if (preg_match('#^/connect/(?P<service>[^/]++)$#s', $pathinfo, $matches)) {
@@ -262,9 +271,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
 
         if (0 === strpos($pathinfo, '/platform')) {
-            // smile_platform_homepage_co
-            if ($pathinfo === '/platform/co') {
-                return array (  '_controller' => 'Smile\\PlatformBundle\\Controller\\DefaultController::indexAction',  '_route' => 'smile_platform_homepage_co',);
+            if (0 === strpos($pathinfo, '/platform/co')) {
+                // smile_platform_homepage_co
+                if ($pathinfo === '/platform/co') {
+                    return array (  '_controller' => 'Smile\\PlatformBundle\\Controller\\DefaultController::indexAction',  '_route' => 'smile_platform_homepage_co',);
+                }
+
+                // Smile_platform_homepage
+                if ($pathinfo === '/platform/co') {
+                    return array (  '_controller' => 'Smile\\PlatformBundle\\Controller\\DefaultController::indexAction',  '_route' => 'Smile_platform_homepage',);
+                }
+
             }
 
             if (0 === strpos($pathinfo, '/platform/p')) {
@@ -283,6 +300,21 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             // smile_platform_contactUs
             if ($pathinfo === '/platform/contact') {
                 return array (  '_controller' => 'Smile\\PlatformBundle\\Controller\\DefaultController::contactAction',  '_route' => 'smile_platform_contactUs',);
+            }
+
+            // smile_platform_team
+            if (0 === strpos($pathinfo, '/platform/team') && preg_match('#^/platform/team/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'smile_platform_team')), array (  '_controller' => 'Smile\\PlatformBundle\\Controller\\TeamController::teamAction',));
+            }
+
+            // smile_platform_add_to_team
+            if (0 === strpos($pathinfo, '/platform/addToTeam') && preg_match('#^/platform/addToTeam/(?P<teamId>[^/]++)/(?P<userId>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'smile_platform_add_to_team')), array (  '_controller' => 'Smile\\PlatformBundle\\Controller\\TeamController::addToTeamAction',));
+            }
+
+            // smile_platform_leaveTeam
+            if (0 === strpos($pathinfo, '/platform/leaveTeam') && preg_match('#^/platform/leaveTeam/(?P<teamId>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'smile_platform_leaveTeam')), array (  '_controller' => 'Smile\\PlatformBundle\\Controller\\TeamController::leaveTeamAction',));
             }
 
         }

@@ -16,16 +16,27 @@ use Symfony\Component\HttpFoundation\Request;
 
 
 
+
 class PostsController extends FOSRestController
 {
+
     public function getLastPostsAction()
     {
+
+
 
         $postRepo = $this
             ->getDoctrine()
             ->getManager()
             ->getRepository('SmilePlatformBundle:Post');
         $posts = $postRepo->getLastXPosts();
+
+
+        foreach ($posts as $post)
+        {
+            $post->getUser()->setTeams(array());
+        }
+
 
         $view = $this->view($posts, 200)
             ->setTemplate("SmileApiBundle:Default:index.html.twig")
@@ -117,6 +128,8 @@ class PostsController extends FOSRestController
         return $this->handleView($view);
     }
 
+
+
     public function getOlderPostsAction($postId)
     {
         $postRepo = $this
@@ -124,6 +137,11 @@ class PostsController extends FOSRestController
             ->getManager()
             ->getRepository('SmilePlatformBundle:Post');
         $posts = $postRepo->findOlderThen($postId);
+
+        foreach ($posts as $post)
+        {
+            $post->getUser()->setTeams(array());
+        }
 
         $view = $this->view($posts, 200)
             ->setTemplate("SmileApiBundle:Default:index.html.twig")

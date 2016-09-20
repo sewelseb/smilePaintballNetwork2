@@ -1,3 +1,9 @@
+smile_admin:
+    resource: "@SmileAdminBundle/Resources/config/routing.yml"
+    prefix:   /admin
+
+
+
 hwi_oauth_redirect:
     resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"
     prefix:   /connect

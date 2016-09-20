@@ -14,6 +14,7 @@
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://smilepaintball.com/" />
         <meta property="og:image" content="http://smilepaintball.com/images/logo.png" />
+        <meta property="og:description" content="Contend posted on SmilePaintball.com." />
     {% endblock %}
 
     <title>Smile Paintball Network</title>
@@ -87,7 +88,7 @@
         FB.getLoginStatus(function(response) {
             if (response.status === 'connected') {
                 // connected
-                alert('Already connected, redirect to login page to create token.');
+                //alert('Already connected, redirect to login page to create token.');
                 document.location = "{{ url("hwi_oauth_service_redirect", {service: "facebook"}) }}";
             } else {
                 // not_authorized
@@ -228,7 +229,7 @@
     <footer>
         <div class="row">
             <div class="col-lg-12">
-                <p>Copyright &copy; Your Website 2014</p>
+                <p>Copyright &copy; Smile Paintball Network 2016</p>
             </div>
         </div>
         <!-- /.row -->

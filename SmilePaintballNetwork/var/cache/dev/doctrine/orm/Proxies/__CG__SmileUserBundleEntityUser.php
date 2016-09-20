@@ -64,10 +64,10 @@ class User extends \Smile\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'id', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'picture', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'firstName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'lastName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamPicture', 'facebook_id', 'facebook_access_token', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'locked', 'expired', 'expiresAt', 'roles', 'credentialsExpired', 'credentialsExpireAt'];
+            return ['__isInitialized__', 'id', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'picture', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'firstName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'lastName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamPicture', 'facebook_id', 'facebook_access_token', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teams', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'locked', 'expired', 'expiresAt', 'roles', 'credentialsExpired', 'credentialsExpireAt'];
         }
 
-        return ['__isInitialized__', 'id', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'picture', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'firstName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'lastName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamPicture', 'facebook_id', 'facebook_access_token', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'locked', 'expired', 'expiresAt', 'roles', 'credentialsExpired', 'credentialsExpireAt'];
+        return ['__isInitialized__', 'id', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'picture', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'firstName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'lastName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamPicture', 'facebook_id', 'facebook_access_token', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teams', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'locked', 'expired', 'expiresAt', 'roles', 'credentialsExpired', 'credentialsExpireAt'];
     }
 
     /**
@@ -173,6 +173,28 @@ class User extends \Smile\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\
     }
 
     
+    /**
+     * {@inheritDoc}
+     */
+    public function addTeam(\Smile\PlatformBundle\Entity\Team $team)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addTeam', [$team]);
+
+        return parent::addTeam($team);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function removeTeam(\Smile\PlatformBundle\Entity\Team $team)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeTeam', [$team]);
+
+        return parent::removeTeam($team);
+    }
+
     /**
      * {@inheritDoc}
      */
@@ -340,6 +362,28 @@ class User extends \Smile\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setFacebookAccessToken', [$facebook_access_token]);
 
         return parent::setFacebookAccessToken($facebook_access_token);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getTeams()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getTeams', []);
+
+        return parent::getTeams();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setTeams($teams)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setTeams', [$teams]);
+
+        return parent::setTeams($teams);
     }
 
     /**

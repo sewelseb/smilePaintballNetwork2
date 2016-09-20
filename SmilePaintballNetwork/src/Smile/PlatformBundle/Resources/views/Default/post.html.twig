@@ -1,7 +1,7 @@
 {% extends "SmilePlatformBundle::Default/layout.html.twig" %}
 
 {% block openGraph %}
-    <meta property="og:title" content="Smile Paintball Network - {{ post.title }}" />
+    <meta property="og:title" content="{{ post.title }}" />
     {% if post.type=='video_youtube' %}
         <meta property="og:image" content="http://img.youtube.com/vi/{{ post.getYoutubeId() }}/default.jpg" />
     {% endif %}
@@ -24,6 +24,7 @@
     {% endif %}
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://smilepaintball.com/platform/post/{{ post.id }}" />
+    <meta property="og:description" content="Contend posted on SmilePaintball.com by {{ post.user.username }}." />
 
 {% endblock %}
 

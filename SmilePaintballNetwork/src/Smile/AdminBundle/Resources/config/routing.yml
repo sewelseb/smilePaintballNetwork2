@@ -1,0 +1,3 @@
+smile_admin_homepage:
+    path:     /
+    defaults: { _controller: SmileAdminBundle:Default:index }

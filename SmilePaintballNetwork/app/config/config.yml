@@ -5,6 +5,9 @@ imports:
     - { resource: "@SmilePlatformBundle/Resources/config/services.yml" }
     - { resource: "@SmileUserBundle/Resources/config/services.yml" }
     - { resource: "@SmileApiBundle/Resources/config/services.yml" }
+    - { resource: "@SmileAdminBundle/Resources/config/services.yml" }
+
+
 
 
 # Put parameters here that don't need to change on each machine where the app is deployed
@@ -131,6 +134,7 @@ hwi_oauth:
             options:
                 display: popup #dialog is optimized for popup window
                 auth_type: rerequest # Re-asking for Declined Permissions
+
 #services:
  #   hwi_oauth.user.provider.entity:
   #      class: HWI\Bundle\OAuthBundle\Security\Core\User\OAuthUserProvider

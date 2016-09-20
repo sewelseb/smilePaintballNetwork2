@@ -105,6 +105,7 @@ class FOSUBUserProvider extends BaseClass
 
             $user->setPlainPassword($response->getUsername());
 
+
             $user->setEnabled(true);
             $this->userManager->updateUser($user);
 

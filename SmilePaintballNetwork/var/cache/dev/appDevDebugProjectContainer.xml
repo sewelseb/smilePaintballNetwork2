@@ -23,6 +23,7 @@
       <parameter key="FOSRestBundle">FOS\RestBundle\FOSRestBundle</parameter>
       <parameter key="SmileApiBundle">Smile\ApiBundle\SmileApiBundle</parameter>
       <parameter key="HWIOAuthBundle">HWI\Bundle\OAuthBundle\HWIOAuthBundle</parameter>
+      <parameter key="SmileAdminBundle">Smile\AdminBundle\SmileAdminBundle</parameter>
       <parameter key="DebugBundle">Symfony\Bundle\DebugBundle\DebugBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
@@ -354,6 +355,7 @@
       <parameter>FOSRestBundle</parameter>
       <parameter>SmileApiBundle</parameter>
       <parameter>HWIOAuthBundle</parameter>
+      <parameter>SmileAdminBundle</parameter>
       <parameter>DebugBundle</parameter>
       <parameter>WebProfilerBundle</parameter>
       <parameter>SensioDistributionBundle</parameter>
@@ -720,7 +722,7 @@
                   <tag name="cache.pool"/>
                   <argument>Nu0jsGmjb0</argument>
                   <argument>0</argument>
-                  <argument>Uo7Ut-DR2ZXWm49tSqD-Cg</argument>
+                  <argument>BXph-0TyvWCKts4y3qRyfA</argument>
                   <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\var\cache\dev/pools</argument>
                   <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                   <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -733,7 +735,7 @@
                   <tag name="cache.pool"/>
                   <argument>JbT9uhreDC</argument>
                   <argument>0</argument>
-                  <argument>Uo7Ut-DR2ZXWm49tSqD-Cg</argument>
+                  <argument>BXph-0TyvWCKts4y3qRyfA</argument>
                   <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\var\cache\dev/pools</argument>
                   <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                   <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -1065,7 +1067,7 @@
       <tag name="cache.pool"/>
       <argument>T9m8TNBBth</argument>
       <argument>0</argument>
-      <argument>Uo7Ut-DR2ZXWm49tSqD-Cg</argument>
+      <argument>BXph-0TyvWCKts4y3qRyfA</argument>
       <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -1749,7 +1751,13 @@
               <service class="Symfony\Component\Serializer\Mapping\Factory\ClassMetadataFactory" public="false">
                 <argument type="service">
                   <service class="Symfony\Component\Serializer\Mapping\Loader\LoaderChain" public="false">
-                    <argument type="collection"/>
+                    <argument type="collection">
+                      <argument type="service">
+                        <service class="Symfony\Component\Serializer\Mapping\Loader\YamlFileLoader" public="false">
+                          <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\ApiBundle\Resources\config\serialization.yml</argument>
+                        </service>
+                      </argument>
+                    </argument>
                   </service>
                 </argument>
                 <argument>null</argument>
@@ -2021,7 +2029,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>57d7ee2241ab95.94860833</argument>
+            <argument>57e15351337865.66044825</argument>
           </service>
         </argument>
       </argument>
@@ -2493,7 +2501,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>57d7ee2241ab95.94860833</argument>
+            <argument>57e15351337865.66044825</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2772,6 +2780,7 @@
               <argument>FOSRestBundle</argument>
               <argument>SmileApiBundle</argument>
               <argument>HWIOAuthBundle</argument>
+              <argument>SmileAdminBundle</argument>
               <argument>DebugBundle</argument>
               <argument>WebProfilerBundle</argument>
               <argument>SensioDistributionBundle</argument>
@@ -3592,6 +3601,33 @@
               <argument type="service">
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
+                  <argument>SmileAdminBundle</argument>
+                  <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\app/Resources/SmileAdminBundle/views</argument>
+                  <argument>/\.[^.]+\.twig$/</argument>
+                </service>
+              </argument>
+              <argument type="service">
+                <service class="%assetic.directory_resource.class%" public="false">
+                  <argument type="service" id="templating.loader"/>
+                  <argument>SmileAdminBundle</argument>
+                  <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\AdminBundle/Resources/views</argument>
+                  <argument>/\.[^.]+\.twig$/</argument>
+                </service>
+              </argument>
+            </argument>
+          </service>
+        </argument>
+        <argument>twig</argument>
+      </call>
+      <call method="addResource">
+        <argument type="service">
+          <service class="Symfony\Bundle\AsseticBundle\Factory\Resource\CoalescingDirectoryResource" public="false">
+            <tag name="assetic.templating.twig"/>
+            <tag name="assetic.formula_resource" loader="twig"/>
+            <argument type="collection">
+              <argument type="service">
+                <service class="%assetic.directory_resource.class%" public="false">
+                  <argument type="service" id="templating.loader"/>
                   <argument>DebugBundle</argument>
                   <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\app/Resources/DebugBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
@@ -4330,6 +4366,10 @@
       <call method="addPath">
         <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\vendor\hwi\oauth-bundle/Resources/views</argument>
         <argument>HWIOAuth</argument>
+      </call>
+      <call method="addPath">
+        <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\AdminBundle/Resources/views</argument>
+        <argument>SmileAdmin</argument>
       </call>
       <call method="addPath">
         <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/views</argument>
