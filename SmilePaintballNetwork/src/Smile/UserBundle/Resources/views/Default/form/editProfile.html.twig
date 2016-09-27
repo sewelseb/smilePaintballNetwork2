@@ -11,14 +11,7 @@
     <input type="hidden" name="MAX_FILE_SIZE" value="3000000" />
     {{ form_widget(form.picture.file, {'attr': {'class': '', 'accept':'image/*'}}) }}
 </div>
-<div class="form-group text-center">
-    {{ form_widget(form.teamName, {'attr': {'class': 'form-control input-lg', 'placeholder': 'team name', 'maxlength': '255'}}) }}
-</div>
-<div class="form-group text-center">
-    {{ form_label(form.teamPicture,"Team logo:", {'label_attr': {'class': 'pull-left'}}) }}<br/>
-    <input type="hidden" name="MAX_FILE_SIZE" value="3000000" />
-    {{ form_widget(form.teamPicture.file, {'attr': {'class': '','accept':'image/*'}}) }}
-</div>
+
 <div class="form-group">
     {{ form_widget(form.save, {'attr': {'class': 'btn btn-lg btn-primary pull-right'}}) }}
 </div>

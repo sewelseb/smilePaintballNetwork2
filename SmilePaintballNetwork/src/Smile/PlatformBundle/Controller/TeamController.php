@@ -53,6 +53,11 @@ class TeamController extends Controller
 
             $em->flush();
 
+            return $this->render('SmilePlatformBundle::Default/form/actualise.html.twig', array(
+
+                'form' => $form->createView(),
+
+            ));
 
         }
 
@@ -120,6 +125,11 @@ class TeamController extends Controller
 
                 $em->flush();
 
+                return $this->render('SmilePlatformBundle::Default/form/actualise.html.twig', array(
+
+                    'form' => $form->createView(),
+
+                ));
                 //return $this->redirect($this->generateUrl('smile_platform_team', array('id' => $team->getId())));
                 //return $this->redirectToRoute('smile_platform_team', array('id' => $team->getId()));
             }

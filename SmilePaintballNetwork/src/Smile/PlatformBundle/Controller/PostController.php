@@ -96,6 +96,13 @@ class PostController extends Controller
 
 
                 $request->getSession()->getFlashBag()->add('notice', 'Post created.');
+
+                //return $this->redirect($request->getUri());
+                return $this->render('SmilePlatformBundle::Default/form/actualise.html.twig', array(
+
+                    'form' => $form->createView(),
+
+                ));
             }
 
             $request->getSession()->getFlashBag()->add('notice', 'Nothing to post :(.');

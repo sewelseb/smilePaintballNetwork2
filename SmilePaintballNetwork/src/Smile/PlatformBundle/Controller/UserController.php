@@ -51,8 +51,7 @@ class UserController extends Controller
             ->add('firstName',     TextType::class, array('required' =>false))
             ->add('lastName',     TextType::class, array('required' =>false))
             ->add('picture', ProfilePicType::class, array('required' =>false))
-            ->add('teamName',     TextType::class, array('required' =>false))
-            ->add('teamPicture',     teamPictureType::class, array('required' =>false))
+
             ->add('save',      SubmitType::class)
         ;
 
@@ -80,6 +79,12 @@ class UserController extends Controller
             $em->persist($user);
 
             $em->flush();
+
+            return $this->render('SmilePlatformBundle::Default/form/actualise.html.twig', array(
+
+                'form' => $form->createView(),
+
+            ));
         }
 
         return $this->render('SmileUserBundle::Default/form/editProfile.html.twig', array(
