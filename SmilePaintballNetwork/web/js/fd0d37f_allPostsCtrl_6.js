@@ -213,6 +213,14 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
         }
     });
 
+    $scope.loadMoreBdt = function () {
+        console.log('Load More!');
+        if($scope.loadMore == true)
+        {
+            $scope.searchOlderPost();
+            $scope.loadMore=false;
+        }
+    }
 
 
 });
