@@ -11,7 +11,9 @@ namespace Smile\PlatformBundle\Controller;
 use Smile\PlatformBundle\Entity\Post;
 use Smile\PlatformBundle\Entity\PostPic;
 use Smile\PlatformBundle\Form\PostPicType;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Form\Extension\Core\Type\FormType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -27,8 +29,17 @@ class PostController extends Controller
 
         $formBuilder = $this->get('form.factory')->createBuilder(FormType::class, $post);
 
+        $teams =
+
         $formBuilder
             ->add('title', TextType::class)
+            ->add('team', EntityType::class, array(
+                'class' =>'SmilePlatformBundle:Team',
+                'choices' => $this->getUser()->getTeams(),
+                'choice_label' => 'name',
+                'placeholder' => 'The team to link to the post',
+                'required' => false
+            ))
             ->add('eventName', TextType::class, array('required' => false))
             ->add('picture', PostPicType::class, array('required' => false))
             ->add('url', TextType::class, array('required' => false))

@@ -30,6 +30,12 @@ class Post
     private $user;
 
     /**
+     * @ORM\ManyToOne(targetEntity="Smile\PlatformBundle\Entity\Team")
+     * @ORM\JoinColumn(nullable=true)
+     */
+    private $team;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="title", type="string", length=255)
@@ -320,6 +326,24 @@ class Post
         return null;
 
     }
+
+    /**
+     * @return mixed
+     */
+    public function getTeam()
+    {
+        return $this->team;
+    }
+
+    /**
+     * @param mixed $team
+     */
+    public function setTeam($team)
+    {
+        $this->team = $team;
+    }
+
+
 
 
 

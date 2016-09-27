@@ -69,6 +69,11 @@
                     {% endif %}
                 </a>
             </div>
+            <div>
+                {% if post.team  %}
+                    <a href="/platform/team/{{ post.team.id }}">team: <strong>{{ post.team.name }}</strong></a>
+                {% endif %}
+            </div>
             <p>
             <div id="updownVote_{{post.id}}">
                 <div class="col-md-6 col-sm-6 col-xs-6">

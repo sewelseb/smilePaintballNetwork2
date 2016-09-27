@@ -55,7 +55,13 @@
                                 <br/>
                             </a>
                         </span>
-
+                        <span ng-if="post.team">
+                            <a ng-href="/platform/team/{{ post.team.id }}">team: <strong>{{ post.team.name }}</strong></a>
+                        </span>
+                        <br/>
+                        <span ng-if="post.eventName && post.eventName != ''">
+                            Event: {{ post.eventName }}
+                        </span>
                         <p>
                             <div id="updownVote_{{post.id}}">
                                 <div class="col-md-6 col-xs-6">

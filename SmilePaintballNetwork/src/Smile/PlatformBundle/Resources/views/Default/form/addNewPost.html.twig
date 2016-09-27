@@ -7,6 +7,9 @@
         {{ form_widget(form.eventName, {'attr': {'class': 'form-control input-lg', 'placeholder': 'Event name (optional)', 'maxlength': '255'}}) }}
     </div>
     <div class="form-group text-center">
+        {{ form_widget(form.team, {'attr': {'class': 'form-control input-lg', 'placeholder': 'Team to link to the post', 'maxlength': '255'}}) }}
+    </div>
+    <div class="form-group text-center">
         <div class="col-md-6">
             {{ form_label(form.picture,"Picture:", {'label_attr': {'class': 'pull-left'}}) }}
             <input type="hidden" name="MAX_FILE_SIZE" value="3000000" />
