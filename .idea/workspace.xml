@@ -2,10 +2,80 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd7a3751-cd3c-446f-9dee-7e194977a505" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/appDevUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/appDevUrlGenerator.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdUrlGenerator.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdUrlMatcher.php.meta" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdUrlMatcher.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/allPosts.html.twig" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/allPosts.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/contact.html.twig" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/contact.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/js/Angular/Controllers/allPostsCtrl.js" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/js/Angular/Controllers/allPostsCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/5c/5b5b435d536d696c655c506c6174666f726d42756e646c655c436f6e74726f6c6c65725c506f7374436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/5c/5b5b435d536d696c655c506c6174666f726d42756e646c655c436f6e74726f6c6c65725c506f7374436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/e1/5b5b435d536d696c655c41706942756e646c655c436f6e74726f6c6c65725c506f737473436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/e1/5b5b435d536d696c655c41706942756e646c655c436f6e74726f6c6c65725c506f737473436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/e9/5b5b435d536d696c655c506c6174666f726d42756e646c655c436f6e74726f6c6c65725c506f7374436f6e74726f6c6c657223746f7054656e416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/e9/5b5b435d536d696c655c506c6174666f726d42756e646c655c436f6e74726f6c6c65725c506f7374436f6e74726f6c6c657223746f7054656e416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/f3/_f39a3e345f26fc5231b9897764e7d487073ec9b0946516171dec15b7eb8a85f5.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/annotations/f3/_f39a3e345f26fc5231b9897764e7d487073ec9b0946516171dec15b7eb8a85f5.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/appDevUrlGenerator.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/appDevUrlGenerator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/appDevUrlMatcher.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/appDevUrlMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/profiler/index.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/twig/07/07a682f22a528476ef6e4d740786fcd42d76fa7bee35f341e02de82b7613abc1.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/twig/07/07a682f22a528476ef6e4d740786fcd42d76fa7bee35f341e02de82b7613abc1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/twig/42/4266966c30a5e3c59ff2ddafea877d395a3e8bc451f8efeaa01fb1524e513de9.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/twig/42/4266966c30a5e3c59ff2ddafea877d395a3e8bc451f8efeaa01fb1524e513de9.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/06/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f7374405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/06/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f7374405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/06/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572236765744c6173744e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/06/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572236765744c6173744e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/0e/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f7374246576656e744e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/0e/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f7374246576656e744e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/23/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572247465616d50696374757265405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/23/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572247465616d50696374757265405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/2d/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572237365745465616d4e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/2d/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572237365745465616d4e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/2f/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572247465616d4e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/2f/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572247465616d4e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/3e/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f7374246e756c6c61626c65405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/3e/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f7374246e756c6c61626c65405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/3e/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722466616365626f6f6b5f6163636573735f746f6b656e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/3e/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722466616365626f6f6b5f6163636573735f746f6b656e405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/4a/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f7374247570766f746573405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/4a/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f7374247570766f746573405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/4a/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722373657446616365626f6f6b416363657373546f6b656e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/4a/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722373657446616365626f6f6b416363657373546f6b656e405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/50/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f73742475726c405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/50/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f73742475726c405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/53/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f737424636f6d6d656e7473405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/53/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f737424636f6d6d656e7473405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/54/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722466616365626f6f6b5f6964405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/54/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722466616365626f6f6b5f6964405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/5c/5b5b435d536d696c655c506c6174666f726d42756e646c655c436f6e74726f6c6c65725c506f7374436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/5c/5b5b435d536d696c655c506c6174666f726d42756e646c655c436f6e74726f6c6c65725c506f7374436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/65/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f737424646f776e766f746573405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/65/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f737424646f776e766f746573405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/6d/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722367657446616365626f6f6b4964405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/6d/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722367657446616365626f6f6b4964405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/82/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722470696374757265405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/82/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722470696374757265405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/87/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722372656d6f76655465616d405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/87/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722372656d6f76655465616d405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/8d/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572236765745465616d4e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/8d/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572236765745465616d4e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/8d/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722373657450696374757265405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/8d/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722373657450696374757265405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/90/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722367657450696374757265405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/90/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722367657450696374757265405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/98/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/98/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/99/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722373657446697273744e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/99/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722373657446697273744e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/9c/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f7374246964405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/9c/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f7374246964405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/9c/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722367657446616365626f6f6b416363657373546f6b656e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/9c/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722367657446616365626f6f6b416363657373546f6b656e405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/a8/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722466697273744e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/a8/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722466697273744e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/ab/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572246964405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/ab/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572246964405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/b4/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572236164645465616d405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/b4/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572236164645465616d405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/ba/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f7374246372656174696f6e54696d65405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/ba/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f7374246372656174696f6e54696d65405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/c3/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f7374247469746c65405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/c3/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f7374247469746c65405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/c4/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722373657446616365626f6f6b4964405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/c4/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722373657446616365626f6f6b4964405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/c4/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572237365745465616d50696374757265405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/c4/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572237365745465616d50696374757265405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/c7/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572235f5f636f6e737472756374405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/c7/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572235f5f636f6e737472756374405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/cb/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572236765744964405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/cb/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572236765744964405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/cc/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722367657446697273744e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/cc/5b5b435d536d696c655c5573657242756e646c655c456e746974795c557365722367657446697273744e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/d0/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572237365744c6173744e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/d0/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572237365744c6173744e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/d3/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572236765745465616d73405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/d3/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572236765745465616d73405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/dc/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f73742470696374757265405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/dc/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f73742470696374757265405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/e0/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572246c6173744e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/e0/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572246c6173744e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/e1/5b5b435d536d696c655c41706942756e646c655c436f6e74726f6c6c65725c506f737473436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/e1/5b5b435d536d696c655c41706942756e646c655c436f6e74726f6c6c65725c506f737473436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/e1/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572237365745465616d73405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/e1/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572237365745465616d73405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/e2/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572236765745465616d50696374757265405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/e2/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572236765745465616d50696374757265405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/e7/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572247465616d73405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/e7/5b5b435d536d696c655c5573657242756e646c655c456e746974795c55736572247465616d73405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/e9/5b5b435d536d696c655c506c6174666f726d42756e646c655c436f6e74726f6c6c65725c506f7374436f6e74726f6c6c657223746f7054656e416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/e9/5b5b435d536d696c655c506c6174666f726d42756e646c655c436f6e74726f6c6c65725c506f7374436f6e74726f6c6c657223746f7054656e416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/ef/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f73742474797065405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/ef/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f73742474797065405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/f3/_f39a3e345f26fc5231b9897764e7d487073ec9b0946516171dec15b7eb8a85f5.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/f3/_f39a3e345f26fc5231b9897764e7d487073ec9b0946516171dec15b7eb8a85f5.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/f6/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f73742475736572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/f6/5b5b435d536d696c655c506c6174666f726d42756e646c655c456e746974795c506f73742475736572405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdDebugProjectContainer.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdDebugProjectContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdDebugProjectContainer.php.meta" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdDebugProjectContainer.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdDebugProjectContainer.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdDebugProjectContainerCompiler.log" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdDebugProjectContainerCompiler.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdUrlGenerator.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdUrlGenerator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdUrlMatcher.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdUrlMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/twig/25/25c687247f75b0317167b2ceb02214efc45e25c478a611c7b7575f747dbea30b.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/twig/25/25c687247f75b0317167b2ceb02214efc45e25c478a611c7b7575f747dbea30b.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/twig/ba/baf1825d091c5f67b88cbc0df000000a8da69a8ce0b760420515c2205fdaf8c4.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/twig/ba/baf1825d091c5f67b88cbc0df000000a8da69a8ce0b760420515c2205fdaf8c4.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/logs/dev.log" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/logs/dev.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/logs/prod.log" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/logs/prod.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/web/js/fd0d37f.js" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/web/js/fd0d37f.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/web/js/fd0d37f_allPostsCtrl_6.js" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/web/js/fd0d37f_allPostsCtrl_6.js" />
     </list>
     <ignored path="smilePaintballNetwork2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +98,7 @@
             <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/UserController.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="524">
+                  <state relative-caret-position="1496">
                     <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
                     <folding>
                       <element signature="e#134#175#0#PHP" expanded="true" />
@@ -68,68 +138,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="allPosts.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="allPosts.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/allPosts.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="174" column="51" selection-start-line="174" selection-start-column="51" selection-end-line="174" selection-end-column="51" />
+            <state relative-caret-position="660">
+              <caret line="174" column="53" selection-start-line="174" selection-start-column="53" selection-end-line="174" selection-end-column="53" />
               <folding>
-                <marker date="1474404462322" expanded="true" signature="697:6263" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="741:2417" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="811:1002" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="1072:1376" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="1196:1341" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="1260:1335" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="1448:1705" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="1523:1670" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="1780:2043" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="1855:2008" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="2112:2388" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="2187:2353" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="2460:6239" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="2811:3096" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="2890:3064" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="3250:3509" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="3329:3477" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="3538:3567" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="3600:4453" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="3664:4007" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="3712:3968" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="3786:3927" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="4071:4418" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="4119:4379" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="4195:4338" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="4518:4598" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="4666:4746" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="4805:4981" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="5011:6212" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="5064:5353" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="5126:5318" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="5406:5711" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="5442:5676" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="5764:5951" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="6004:6179" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="6319:9109" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="6421:7842" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="6478:6695" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="6543:6663" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="6752:6965" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="6813:6933" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="7022:7251" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="7101:7219" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="7308:7537" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="7377:7505" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="7594:7815" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="7662:7783" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="7880:9086" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="7937:8170" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="8016:8138" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="8227:8439" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="8291:8407" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="8496:8753" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="8558:8721" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="8810:9059" ph="..." />
-                <marker date="1474404462322" expanded="true" signature="8881:9027" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="697:6263" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="741:2417" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="811:1002" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="1072:1376" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="1196:1341" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="1260:1335" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="1448:1705" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="1523:1670" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="1780:2043" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="1855:2008" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="2112:2388" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="2187:2353" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="2460:6239" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="2811:3096" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="2890:3064" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="3250:3509" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="3329:3477" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="3538:3567" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="3600:4453" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="3664:4007" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="3712:3968" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="3786:3927" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="4071:4418" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="4119:4379" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="4195:4338" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="4518:4598" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="4666:4746" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="4805:4981" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="5011:6212" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="5064:5353" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="5126:5318" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="5406:5711" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="5442:5676" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="5764:5951" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="6004:6179" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="6319:9109" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="6421:7842" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="6478:6695" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="6543:6663" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="6752:6965" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="6813:6933" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="7022:7251" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="7101:7219" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="7308:7537" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="7377:7505" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="7594:7815" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="7662:7783" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="7880:9086" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="7937:8170" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="8016:8138" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="8227:8439" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="8291:8407" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="8496:8753" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="8558:8721" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="8810:9059" ph="..." />
+                <marker date="1474984228266" expanded="true" signature="8881:9027" ph="..." />
               </folding>
             </state>
           </provider>
@@ -138,7 +208,7 @@
       <file leaf-file-name="profile.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/profile.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
+            <state relative-caret-position="1078">
               <caret line="49" column="26" selection-start-line="40" selection-start-column="20" selection-end-line="49" selection-end-column="26" />
               <folding />
             </state>
@@ -158,7 +228,7 @@
       <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
+            <state relative-caret-position="3542">
               <caret line="161" column="31" selection-start-line="161" selection-start-column="31" selection-end-line="161" selection-end-column="31" />
               <folding />
             </state>
@@ -170,18 +240,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="484">
               <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
-              <folding>
-                <marker date="1474390708218" expanded="true" signature="586:998" ph="{% verbatim ...%}" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adminStatsCtrl.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="adminStatsCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/js/Angular/Controllers/adminStatsCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
-              <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+            <state relative-caret-position="-44">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -190,7 +258,7 @@
       <file leaf-file-name="PostController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/PostController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
+            <state relative-caret-position="1562">
               <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding />
             </state>
@@ -210,7 +278,7 @@
       <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/ApiBundle/Controller/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
+            <state relative-caret-position="1012">
               <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
               <folding>
                 <element signature="e#6#89#0#PHP" expanded="true" />
@@ -223,8 +291,8 @@
       <file leaf-file-name="allPostsCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/js/Angular/Controllers/allPostsCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="50" column="11" selection-start-line="14" selection-start-column="8" selection-end-line="50" selection-end-column="11" />
+            <state relative-caret-position="528">
+              <caret line="60" column="10" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -264,7 +332,6 @@
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/web/.htaccess" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/web/app_dev.php" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Entity/PostPic.php" />
-        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/js/Angular/Controllers/allPostsCtrl.js" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/app/config/configProd.yml" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/composer.json" />
@@ -296,6 +363,7 @@
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/post.html.twig" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/contact.html.twig" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig" />
+        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/js/Angular/Controllers/allPostsCtrl.js" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/allPosts.html.twig" />
       </list>
     </option>
@@ -675,6 +743,150 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmilePaintballNetwork" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Smile" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Angular" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmilePaintballNetwork" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Smile" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Angular" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmilePaintballNetwork" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Smile" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmilePaintballNetwork" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Smile" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlatformBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -723,100 +935,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Smile" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AdminBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smilePaintballNetwork2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smilePaintballNetwork2" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmilePaintballNetwork" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Smile" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AdminBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Default" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smilePaintballNetwork2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smilePaintballNetwork2" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmilePaintballNetwork" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Smile" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AdminBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smilePaintballNetwork2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smilePaintballNetwork2" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmilePaintballNetwork" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -845,8 +963,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -947,24 +1065,26 @@
       <workItem from="1473778957647" duration="37000" />
       <workItem from="1473780039001" duration="5593000" />
       <workItem from="1473853046539" duration="1806000" />
-      <workItem from="1474382239662" duration="15005000" />
+      <workItem from="1474382239662" duration="15263000" />
+      <workItem from="1474446545944" duration="257000" />
+      <workItem from="1474980347667" duration="3761000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146439000" />
+    <option name="totallyTimeSpent" value="150715000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2391" y="-9" width="2418" height="1318" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27796754" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21648164" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2914137" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14744146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957503" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1087,7 +1207,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,7 +1214,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2266">
           <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,7 +1221,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2398">
           <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1111,7 +1228,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,7 +1235,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1127,7 +1242,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1135,7 +1249,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1143,7 +1256,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1151,15 +1263,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/UserBundle/Resources/views/Default/form/editProfile.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="20" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1167,7 +1270,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1268">
           <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1175,7 +1277,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1183,7 +1284,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1191,7 +1291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1199,7 +1298,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1215,7 +1313,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2240">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1223,7 +1320,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1231,7 +1327,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1239,7 +1334,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3410">
           <caret line="170" column="21" selection-start-line="170" selection-start-column="21" selection-end-line="170" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1247,7 +1341,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1255,9 +1348,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="444">
           <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="41" selection-end-column="44" />
-          <folding>
-            <element signature="e#130#178#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1265,9 +1355,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="674">
           <caret line="56" column="53" selection-start-line="52" selection-start-column="12" selection-end-line="56" selection-end-column="53" />
-          <folding>
-            <element signature="e#130#178#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1275,7 +1362,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-484">
           <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1283,13 +1369,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/ApiBundle/Controller/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
+        <state relative-caret-position="1012">
           <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
           <folding>
             <element signature="e#6#89#0#PHP" expanded="true" />
@@ -1298,21 +1383,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/js/Angular/Controllers/allPostsCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="50" column="11" selection-start-line="14" selection-start-column="8" selection-end-line="50" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/AdminBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
-          <folding>
-            <marker date="1474390708218" expanded="true" signature="586:998" ph="{% verbatim ...%}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1326,41 +1401,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/PostController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
+        <state relative-caret-position="1562">
           <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding>
-            <element signature="e#134#175#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/profile.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
+        <state relative-caret-position="1078">
           <caret line="49" column="26" selection-start-line="40" selection-start-column="20" selection-end-line="49" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/post.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
+        <state relative-caret-position="3542">
           <caret line="161" column="31" selection-start-line="161" selection-start-column="31" selection-end-line="161" selection-end-column="31" />
           <folding />
         </state>
@@ -1374,76 +1431,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/allPosts.html.twig">
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="174" column="51" selection-start-line="174" selection-start-column="51" selection-end-line="174" selection-end-column="51" />
+        <state relative-caret-position="1496">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding>
-            <marker date="1474404462322" expanded="true" signature="697:6263" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="741:2417" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="811:1002" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="1072:1376" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="1196:1341" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="1260:1335" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="1448:1705" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="1523:1670" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="1780:2043" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="1855:2008" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="2112:2388" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="2187:2353" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="2460:6239" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="2811:3096" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="2890:3064" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="3250:3509" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="3329:3477" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="3538:3567" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="3600:4453" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="3664:4007" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="3712:3968" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="3786:3927" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="4071:4418" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="4119:4379" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="4195:4338" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="4518:4598" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="4666:4746" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="4805:4981" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="5011:6212" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="5064:5353" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="5126:5318" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="5406:5711" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="5442:5676" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="5764:5951" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="6004:6179" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="6319:9109" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="6421:7842" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="6478:6695" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="6543:6663" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="6752:6965" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="6813:6933" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="7022:7251" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="7101:7219" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="7308:7537" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="7377:7505" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="7594:7815" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="7662:7783" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="7880:9086" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="7937:8170" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="8016:8138" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="8227:8439" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="8291:8407" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="8496:8753" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="8558:8721" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="8810:9059" ph="..." />
-            <marker date="1474404462322" expanded="true" signature="8881:9027" ph="..." />
+            <element signature="e#134#175#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/UserBundle/Resources/views/Default/form/editProfile.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="20" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/js/Angular/Controllers/adminStatsCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+        <state relative-caret-position="-44">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/post.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/js/Angular/Controllers/allPostsCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="60" column="10" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/allPosts.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="174" column="53" selection-start-line="174" selection-start-column="53" selection-end-line="174" selection-end-column="53" />
+          <folding>
+            <marker date="1474984228266" expanded="true" signature="697:6263" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="741:2417" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="811:1002" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="1072:1376" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="1196:1341" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="1260:1335" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="1448:1705" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="1523:1670" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="1780:2043" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="1855:2008" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="2112:2388" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="2187:2353" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="2460:6239" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="2811:3096" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="2890:3064" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="3250:3509" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="3329:3477" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="3538:3567" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="3600:4453" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="3664:4007" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="3712:3968" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="3786:3927" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="4071:4418" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="4119:4379" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="4195:4338" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="4518:4598" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="4666:4746" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="4805:4981" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="5011:6212" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="5064:5353" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="5126:5318" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="5406:5711" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="5442:5676" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="5764:5951" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="6004:6179" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="6319:9109" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="6421:7842" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="6478:6695" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="6543:6663" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="6752:6965" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="6813:6933" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="7022:7251" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="7101:7219" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="7308:7537" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="7377:7505" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="7594:7815" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="7662:7783" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="7880:9086" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="7937:8170" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="8016:8138" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="8227:8439" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="8291:8407" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="8496:8753" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="8558:8721" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="8810:9059" ph="..." />
+            <marker date="1474984228266" expanded="true" signature="8881:9027" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

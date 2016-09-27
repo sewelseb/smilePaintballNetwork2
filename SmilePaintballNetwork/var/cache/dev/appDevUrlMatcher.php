@@ -40,49 +40,65 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        if (0 === strpos($pathinfo, '/js/fd0d37f')) {
-            // _assetic_fd0d37f
-            if ($pathinfo === '/js/fd0d37f.js') {
-                return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => NULL,  '_format' => 'js',  '_route' => '_assetic_fd0d37f',);
+        if (0 === strpos($pathinfo, '/js/f')) {
+            if (0 === strpos($pathinfo, '/js/fd0d37f')) {
+                // _assetic_fd0d37f
+                if ($pathinfo === '/js/fd0d37f.js') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => NULL,  '_format' => 'js',  '_route' => '_assetic_fd0d37f',);
+                }
+
+                if (0 === strpos($pathinfo, '/js/fd0d37f_')) {
+                    // _assetic_fd0d37f_0
+                    if ($pathinfo === '/js/fd0d37f_waypoint_1.js') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => 0,  '_format' => 'js',  '_route' => '_assetic_fd0d37f_0',);
+                    }
+
+                    // _assetic_fd0d37f_1
+                    if ($pathinfo === '/js/fd0d37f_noframework_2.js') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => 1,  '_format' => 'js',  '_route' => '_assetic_fd0d37f_1',);
+                    }
+
+                    // _assetic_fd0d37f_2
+                    if ($pathinfo === '/js/fd0d37f_context_3.js') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => 2,  '_format' => 'js',  '_route' => '_assetic_fd0d37f_2',);
+                    }
+
+                    // _assetic_fd0d37f_3
+                    if ($pathinfo === '/js/fd0d37f_group_4.js') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => 3,  '_format' => 'js',  '_route' => '_assetic_fd0d37f_3',);
+                    }
+
+                    if (0 === strpos($pathinfo, '/js/fd0d37f_a')) {
+                        // _assetic_fd0d37f_4
+                        if ($pathinfo === '/js/fd0d37f_app_5.js') {
+                            return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => 4,  '_format' => 'js',  '_route' => '_assetic_fd0d37f_4',);
+                        }
+
+                        // _assetic_fd0d37f_5
+                        if ($pathinfo === '/js/fd0d37f_allPostsCtrl_6.js') {
+                            return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => 5,  '_format' => 'js',  '_route' => '_assetic_fd0d37f_5',);
+                        }
+
+                    }
+
+                    // _assetic_fd0d37f_6
+                    if ($pathinfo === '/js/fd0d37f_jqwery_7.js') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => 6,  '_format' => 'js',  '_route' => '_assetic_fd0d37f_6',);
+                    }
+
+                }
+
             }
 
-            if (0 === strpos($pathinfo, '/js/fd0d37f_')) {
-                // _assetic_fd0d37f_0
-                if ($pathinfo === '/js/fd0d37f_waypoint_1.js') {
-                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => 0,  '_format' => 'js',  '_route' => '_assetic_fd0d37f_0',);
+            if (0 === strpos($pathinfo, '/js/f14aeed')) {
+                // _assetic_f14aeed
+                if ($pathinfo === '/js/f14aeed.js') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'f14aeed',  'pos' => NULL,  '_format' => 'js',  '_route' => '_assetic_f14aeed',);
                 }
 
-                // _assetic_fd0d37f_1
-                if ($pathinfo === '/js/fd0d37f_noframework_2.js') {
-                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => 1,  '_format' => 'js',  '_route' => '_assetic_fd0d37f_1',);
-                }
-
-                // _assetic_fd0d37f_2
-                if ($pathinfo === '/js/fd0d37f_context_3.js') {
-                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => 2,  '_format' => 'js',  '_route' => '_assetic_fd0d37f_2',);
-                }
-
-                // _assetic_fd0d37f_3
-                if ($pathinfo === '/js/fd0d37f_group_4.js') {
-                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => 3,  '_format' => 'js',  '_route' => '_assetic_fd0d37f_3',);
-                }
-
-                if (0 === strpos($pathinfo, '/js/fd0d37f_a')) {
-                    // _assetic_fd0d37f_4
-                    if ($pathinfo === '/js/fd0d37f_app_5.js') {
-                        return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => 4,  '_format' => 'js',  '_route' => '_assetic_fd0d37f_4',);
-                    }
-
-                    // _assetic_fd0d37f_5
-                    if ($pathinfo === '/js/fd0d37f_allPostsCtrl_6.js') {
-                        return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => 5,  '_format' => 'js',  '_route' => '_assetic_fd0d37f_5',);
-                    }
-
-                }
-
-                // _assetic_fd0d37f_6
-                if ($pathinfo === '/js/fd0d37f_jqwery_7.js') {
-                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'fd0d37f',  'pos' => 6,  '_format' => 'js',  '_route' => '_assetic_fd0d37f_6',);
+                // _assetic_f14aeed_0
+                if ($pathinfo === '/js/f14aeed_adminStatsCtrl_1.js') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'f14aeed',  'pos' => 0,  '_format' => 'js',  '_route' => '_assetic_f14aeed_0',);
                 }
 
             }
@@ -257,6 +273,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             // smile_api_comment_addNew
             if (0 === strpos($pathinfo, '/api/comment/addNew') && preg_match('#^/api/comment/addNew(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'smile_api_comment_addNew')), array (  '_controller' => 'Smile\\ApiBundle\\Controller\\CommentController::newCommentAction',  '_format' => 'json',));
+            }
+
+            // smile_api_admin_getstats
+            if (0 === strpos($pathinfo, '/api/admin/stats') && preg_match('#^/api/admin/stats(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'smile_api_admin_getstats')), array (  '_controller' => 'Smile\\ApiBundle\\Controller\\AdminController::statsAction',  '_format' => 'json',));
             }
 
         }

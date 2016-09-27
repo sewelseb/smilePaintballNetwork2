@@ -9,6 +9,10 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
 
     $scope.loadMore=false;
 
+
+
+
+
     $scope.postsInitiation = function ()
     {
 
@@ -53,7 +57,19 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
 
     $scope.searchOlderPost = function()
     {
-        var oldestPostId= $scope.posts[$scope.posts.length-1].id;
+        var oldestPostId= $scope.posts[0].id;
+        //console.log(oldestPostId);
+
+        for (i = 0; $scope.posts.length>i; i++)
+        {
+            //console.log('test post:'+$scope.posts[i].id);
+            //console.log('test oldest post:'+oldestPostId);
+            if (parseInt($scope.posts[i].id)<parseInt(oldestPostId))
+            {
+                oldestPostId=$scope.posts[i].id;
+            }
+        }
+
         var url = document.getElementById("smileApiGetOlder").innerHTML+oldestPostId;
         console.log(url);
         $.ajax({
@@ -64,6 +80,7 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
 
 
                 var news = JSON.parse(results);
+                console.log('older posts:');
                 console.log(news);
 
                 $scope.posts=$scope.posts.concat(news);
@@ -144,7 +161,7 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
     };
 
     $scope.facebookSafeApply = function(){
-        console.log('test');
+        //console.log('test');
         if(typeof FB != 'undefined')
         {
             FB.XFBML.parse();
@@ -187,7 +204,7 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
         element: document.getElementById('bottomOfThePage'),
         handler: function(direction) {
             console.log('Scrolled to waypoint!');
-            if($scope.loadMore)
+            if($scope.loadMore == true)
             {
                 $scope.searchOlderPost();
                 $scope.loadMore=false;

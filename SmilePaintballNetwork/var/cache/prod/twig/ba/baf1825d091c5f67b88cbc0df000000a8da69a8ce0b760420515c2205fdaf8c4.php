@@ -19,8 +19,8 @@ class __TwigTemplate_4bf6e67547514f20bbd09eced16ad08c215b74b91f78c2181f6955de329
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_406d0b1196d0a7b46ef10e75b7a1bf2f5d09203db8986c2175a1a85bc9d21e79 = $this->env->getExtension("native_profiler");
-        $__internal_406d0b1196d0a7b46ef10e75b7a1bf2f5d09203db8986c2175a1a85bc9d21e79->enter($__internal_406d0b1196d0a7b46ef10e75b7a1bf2f5d09203db8986c2175a1a85bc9d21e79_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/layout.html.twig"));
+        $__internal_ed8e420402cf229e04d5d028e6d98a136a7e4fc4ee82121d668e478a7ce51a17 = $this->env->getExtension("native_profiler");
+        $__internal_ed8e420402cf229e04d5d028e6d98a136a7e4fc4ee82121d668e478a7ce51a17->enter($__internal_ed8e420402cf229e04d5d028e6d98a136a7e4fc4ee82121d668e478a7ce51a17_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/layout.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -171,7 +171,7 @@ class __TwigTemplate_4bf6e67547514f20bbd09eced16ad08c215b74b91f78c2181f6955de329
         FB.getLoginStatus(function(response) {
             if (response.status === 'connected') {
                 // connected
-                alert('Already connected, redirect to login page to create token.');
+                //alert('Already connected, redirect to login page to create token.');
                 document.location = \"";
         // line 92
         echo $this->env->getExtension('routing')->getUrl("hwi_oauth_service_redirect", array("service" => "facebook"));
@@ -264,15 +264,15 @@ class __TwigTemplate_4bf6e67547514f20bbd09eced16ad08c215b74b91f78c2181f6955de329
 
 </html>";
         
-        $__internal_406d0b1196d0a7b46ef10e75b7a1bf2f5d09203db8986c2175a1a85bc9d21e79->leave($__internal_406d0b1196d0a7b46ef10e75b7a1bf2f5d09203db8986c2175a1a85bc9d21e79_prof);
+        $__internal_ed8e420402cf229e04d5d028e6d98a136a7e4fc4ee82121d668e478a7ce51a17->leave($__internal_ed8e420402cf229e04d5d028e6d98a136a7e4fc4ee82121d668e478a7ce51a17_prof);
 
     }
 
     // line 12
     public function block_openGraph($context, array $blocks = array())
     {
-        $__internal_c0c46efb6e27924aae2c2210c8e49247b73d1b24fc71fd5b0beb198e38362be4 = $this->env->getExtension("native_profiler");
-        $__internal_c0c46efb6e27924aae2c2210c8e49247b73d1b24fc71fd5b0beb198e38362be4->enter($__internal_c0c46efb6e27924aae2c2210c8e49247b73d1b24fc71fd5b0beb198e38362be4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "openGraph"));
+        $__internal_04bff114a538a06cafb93d565e51d6df92e2d941c26fdf3f2aa10f0782a6f9e8 = $this->env->getExtension("native_profiler");
+        $__internal_04bff114a538a06cafb93d565e51d6df92e2d941c26fdf3f2aa10f0782a6f9e8->enter($__internal_04bff114a538a06cafb93d565e51d6df92e2d941c26fdf3f2aa10f0782a6f9e8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "openGraph"));
 
         // line 13
         echo "        <meta property=\"og:title\" content=\"Smile Paintball Network\" />
@@ -282,15 +282,15 @@ class __TwigTemplate_4bf6e67547514f20bbd09eced16ad08c215b74b91f78c2181f6955de329
         <meta property=\"og:description\" content=\"Contend posted on SmilePaintball.com.\" />
     ";
         
-        $__internal_c0c46efb6e27924aae2c2210c8e49247b73d1b24fc71fd5b0beb198e38362be4->leave($__internal_c0c46efb6e27924aae2c2210c8e49247b73d1b24fc71fd5b0beb198e38362be4_prof);
+        $__internal_04bff114a538a06cafb93d565e51d6df92e2d941c26fdf3f2aa10f0782a6f9e8->leave($__internal_04bff114a538a06cafb93d565e51d6df92e2d941c26fdf3f2aa10f0782a6f9e8_prof);
 
     }
 
     // line 125
     public function block_pageHeader($context, array $blocks = array())
     {
-        $__internal_d883ca3e4c73fa13f6d2089365395fc5b2fd282b560e34a39e2c90692e86976a = $this->env->getExtension("native_profiler");
-        $__internal_d883ca3e4c73fa13f6d2089365395fc5b2fd282b560e34a39e2c90692e86976a->enter($__internal_d883ca3e4c73fa13f6d2089365395fc5b2fd282b560e34a39e2c90692e86976a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
+        $__internal_814eb4dfd68b7beb9a5845dc9456d5bfec8ed7feb0cf8c2a5d06ec83d7b8d59e = $this->env->getExtension("native_profiler");
+        $__internal_814eb4dfd68b7beb9a5845dc9456d5bfec8ed7feb0cf8c2a5d06ec83d7b8d59e->enter($__internal_814eb4dfd68b7beb9a5845dc9456d5bfec8ed7feb0cf8c2a5d06ec83d7b8d59e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
 
         // line 126
         echo "                <h1 class=\"page-header\">
@@ -298,15 +298,15 @@ class __TwigTemplate_4bf6e67547514f20bbd09eced16ad08c215b74b91f78c2181f6955de329
                 </h1>
             ";
         
-        $__internal_d883ca3e4c73fa13f6d2089365395fc5b2fd282b560e34a39e2c90692e86976a->leave($__internal_d883ca3e4c73fa13f6d2089365395fc5b2fd282b560e34a39e2c90692e86976a_prof);
+        $__internal_814eb4dfd68b7beb9a5845dc9456d5bfec8ed7feb0cf8c2a5d06ec83d7b8d59e->leave($__internal_814eb4dfd68b7beb9a5845dc9456d5bfec8ed7feb0cf8c2a5d06ec83d7b8d59e_prof);
 
     }
 
     // line 134
     public function block_leftCollumn($context, array $blocks = array())
     {
-        $__internal_6760f049c18a304ecfcf53cfadcf533224debc4c67fccdd242d651c8d0af4043 = $this->env->getExtension("native_profiler");
-        $__internal_6760f049c18a304ecfcf53cfadcf533224debc4c67fccdd242d651c8d0af4043->enter($__internal_6760f049c18a304ecfcf53cfadcf533224debc4c67fccdd242d651c8d0af4043_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
+        $__internal_e793dd45e3308d4e1211266bef2cf1e25282473f17af7c0771e9ccb8e8ba03fe = $this->env->getExtension("native_profiler");
+        $__internal_e793dd45e3308d4e1211266bef2cf1e25282473f17af7c0771e9ccb8e8ba03fe->enter($__internal_e793dd45e3308d4e1211266bef2cf1e25282473f17af7c0771e9ccb8e8ba03fe_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
 
         // line 135
         echo "            ";
@@ -315,15 +315,15 @@ class __TwigTemplate_4bf6e67547514f20bbd09eced16ad08c215b74b91f78c2181f6955de329
 
         ";
         
-        $__internal_6760f049c18a304ecfcf53cfadcf533224debc4c67fccdd242d651c8d0af4043->leave($__internal_6760f049c18a304ecfcf53cfadcf533224debc4c67fccdd242d651c8d0af4043_prof);
+        $__internal_e793dd45e3308d4e1211266bef2cf1e25282473f17af7c0771e9ccb8e8ba03fe->leave($__internal_e793dd45e3308d4e1211266bef2cf1e25282473f17af7c0771e9ccb8e8ba03fe_prof);
 
     }
 
     // line 140
     public function block_rightCollumn($context, array $blocks = array())
     {
-        $__internal_b1d964f98971d284437c5af75ddf0d525212b167b12efca3a3524a54b4d86d7d = $this->env->getExtension("native_profiler");
-        $__internal_b1d964f98971d284437c5af75ddf0d525212b167b12efca3a3524a54b4d86d7d->enter($__internal_b1d964f98971d284437c5af75ddf0d525212b167b12efca3a3524a54b4d86d7d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
+        $__internal_b03416e601f69ccbe3de9cd311545e1273d876377b75ce77f53815f5448e291b = $this->env->getExtension("native_profiler");
+        $__internal_b03416e601f69ccbe3de9cd311545e1273d876377b75ce77f53815f5448e291b->enter($__internal_b03416e601f69ccbe3de9cd311545e1273d876377b75ce77f53815f5448e291b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
 
         // line 141
         echo "            <div class=\"row\">
@@ -345,63 +345,63 @@ class __TwigTemplate_4bf6e67547514f20bbd09eced16ad08c215b74b91f78c2181f6955de329
                 <h3>Sponsors</h3>
                 <div class=\"\" >
                     <a href=\"http://www.tippmann.com/\">
-                        <img src=\"/images/sponsors/tippmann.png\" width=\"500em\">
+                        <img src=\"/images/sponsors/tippmann.png\" width=\"100%\">
                     </a>
 
                 </div>
 
                 <div class=\"\" >
                     <a href=\"http://gisportz.com/\">
-                        <img src=\"/images/sponsors/gisportz.png\" width=\"500em\">
+                        <img src=\"/images/sponsors/gisportz.png\" width=\"100%\">
                     </a>
 
                 </div>
 
                 <div class=\"\" >
                     <a href=\"http://gisportz.com/vforce-goggles.php\">
-                        <img src=\"/images/sponsors/vforce.png\" width=\"500em\">
+                        <img src=\"/images/sponsors/vforce.png\" width=\"100%\">
                     </a>
 
                 </div>
 
                 <div class=\"\" >
                     <a href=\"http://www.redbull.com/be/fr\">
-                        <img src=\"/images/sponsors/redbull-com-logo.png\" width=\"500em\">
+                        <img src=\"/images/sponsors/redbull-com-logo.png\" width=\"100%\">
                     </a>
 
                 </div>
 
                 <div >
                     <a href=\"http://www.kg-factory.fr/fr/\">
-                        <img src=\"/images/sponsors/kgfactory.png\" width=\"500em\">
+                        <img src=\"/images/sponsors/kgfactory.png\" width=\"100%\">
                     </a>
 
                 </div>
 
                 <div >
                     <a href=\"http://www.patch-werk.com/index.php/en/\">
-                        <img src=\"/images/sponsors/patch-werk.png\" width=\"500em\">
+                        <img src=\"/images/sponsors/patch-werk.png\" width=\"100%\">
                     </a>
 
                 </div>
 
                 <div >
                     <a href=\"http://www.enolagaye.com\">
-                        <img src=\"/images/sponsors/g-n.jpeg\" width=\"500em\">
+                        <img src=\"/images/sponsors/g-n.jpeg\" width=\"100%\">
                     </a>
 
                 </div>
 
                 <div >
                     <a href=\"http://maxxloader.com/\">
-                        <img src=\"http://maxxloader.com/wp-content/uploads/2015/03/MaxXloader-Logo-R35.png\" width=\"500em\">
+                        <img src=\"http://maxxloader.com/wp-content/uploads/2015/03/MaxXloader-Logo-R35.png\" width=\"100%\">
                     </a>
 
                 </div>
 
                 <div >
                     <a href=\"http://shop.customgunrails.com/\">
-                        <img src=\"http://shop.customgunrails.com/images/CGR_LOGOlight.png\">
+                        <img src=\"http://shop.customgunrails.com/images/CGR_LOGOlight.png\" width=\"100%\">
                     </a>
 
                 </div>
@@ -411,7 +411,7 @@ class __TwigTemplate_4bf6e67547514f20bbd09eced16ad08c215b74b91f78c2181f6955de329
 
         ";
         
-        $__internal_b1d964f98971d284437c5af75ddf0d525212b167b12efca3a3524a54b4d86d7d->leave($__internal_b1d964f98971d284437c5af75ddf0d525212b167b12efca3a3524a54b4d86d7d_prof);
+        $__internal_b03416e601f69ccbe3de9cd311545e1273d876377b75ce77f53815f5448e291b->leave($__internal_b03416e601f69ccbe3de9cd311545e1273d876377b75ce77f53815f5448e291b_prof);
 
     }
 
@@ -520,7 +520,7 @@ class __TwigTemplate_4bf6e67547514f20bbd09eced16ad08c215b74b91f78c2181f6955de329
 /*         FB.getLoginStatus(function(response) {*/
 /*             if (response.status === 'connected') {*/
 /*                 // connected*/
-/*                 alert('Already connected, redirect to login page to create token.');*/
+/*                 //alert('Already connected, redirect to login page to create token.');*/
 /*                 document.location = "{{ url("hwi_oauth_service_redirect", {service: "facebook"}) }}";*/
 /*             } else {*/
 /*                 // not_authorized*/
@@ -586,63 +586,63 @@ class __TwigTemplate_4bf6e67547514f20bbd09eced16ad08c215b74b91f78c2181f6955de329
 /*                 <h3>Sponsors</h3>*/
 /*                 <div class="" >*/
 /*                     <a href="http://www.tippmann.com/">*/
-/*                         <img src="/images/sponsors/tippmann.png" width="500em">*/
+/*                         <img src="/images/sponsors/tippmann.png" width="100%">*/
 /*                     </a>*/
 /* */
 /*                 </div>*/
 /* */
 /*                 <div class="" >*/
 /*                     <a href="http://gisportz.com/">*/
-/*                         <img src="/images/sponsors/gisportz.png" width="500em">*/
+/*                         <img src="/images/sponsors/gisportz.png" width="100%">*/
 /*                     </a>*/
 /* */
 /*                 </div>*/
 /* */
 /*                 <div class="" >*/
 /*                     <a href="http://gisportz.com/vforce-goggles.php">*/
-/*                         <img src="/images/sponsors/vforce.png" width="500em">*/
+/*                         <img src="/images/sponsors/vforce.png" width="100%">*/
 /*                     </a>*/
 /* */
 /*                 </div>*/
 /* */
 /*                 <div class="" >*/
 /*                     <a href="http://www.redbull.com/be/fr">*/
-/*                         <img src="/images/sponsors/redbull-com-logo.png" width="500em">*/
+/*                         <img src="/images/sponsors/redbull-com-logo.png" width="100%">*/
 /*                     </a>*/
 /* */
 /*                 </div>*/
 /* */
 /*                 <div >*/
 /*                     <a href="http://www.kg-factory.fr/fr/">*/
-/*                         <img src="/images/sponsors/kgfactory.png" width="500em">*/
+/*                         <img src="/images/sponsors/kgfactory.png" width="100%">*/
 /*                     </a>*/
 /* */
 /*                 </div>*/
 /* */
 /*                 <div >*/
 /*                     <a href="http://www.patch-werk.com/index.php/en/">*/
-/*                         <img src="/images/sponsors/patch-werk.png" width="500em">*/
+/*                         <img src="/images/sponsors/patch-werk.png" width="100%">*/
 /*                     </a>*/
 /* */
 /*                 </div>*/
 /* */
 /*                 <div >*/
 /*                     <a href="http://www.enolagaye.com">*/
-/*                         <img src="/images/sponsors/g-n.jpeg" width="500em">*/
+/*                         <img src="/images/sponsors/g-n.jpeg" width="100%">*/
 /*                     </a>*/
 /* */
 /*                 </div>*/
 /* */
 /*                 <div >*/
 /*                     <a href="http://maxxloader.com/">*/
-/*                         <img src="http://maxxloader.com/wp-content/uploads/2015/03/MaxXloader-Logo-R35.png" width="500em">*/
+/*                         <img src="http://maxxloader.com/wp-content/uploads/2015/03/MaxXloader-Logo-R35.png" width="100%">*/
 /*                     </a>*/
 /* */
 /*                 </div>*/
 /* */
 /*                 <div >*/
 /*                     <a href="http://shop.customgunrails.com/">*/
-/*                         <img src="http://shop.customgunrails.com/images/CGR_LOGOlight.png">*/
+/*                         <img src="http://shop.customgunrails.com/images/CGR_LOGOlight.png" width="100%">*/
 /*                     </a>*/
 /* */
 /*                 </div>*/
