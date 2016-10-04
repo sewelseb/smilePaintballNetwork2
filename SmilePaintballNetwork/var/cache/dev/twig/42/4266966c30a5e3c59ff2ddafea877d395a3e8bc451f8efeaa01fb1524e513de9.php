@@ -15,8 +15,8 @@ class __TwigTemplate_7e98372ada452afe98af84ec6c8dde16d18f524ca5fab1485201cdd10e8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ddaf14d1b4351cedeb975536fa3f4afe56964b550a8f20da3fc3c7c97a334cb6 = $this->env->getExtension("native_profiler");
-        $__internal_ddaf14d1b4351cedeb975536fa3f4afe56964b550a8f20da3fc3c7c97a334cb6->enter($__internal_ddaf14d1b4351cedeb975536fa3f4afe56964b550a8f20da3fc3c7c97a334cb6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
+        $__internal_52207b802af1a0f70045114401ad6af579a4b2957f7370d1b42ebbbc5a2fb8f8 = $this->env->getExtension("native_profiler");
+        $__internal_52207b802af1a0f70045114401ad6af579a4b2957f7370d1b42ebbbc5a2fb8f8->enter($__internal_52207b802af1a0f70045114401ad6af579a4b2957f7370d1b42ebbbc5a2fb8f8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
 
         // line 1
         echo "<!-- Project One -->
@@ -124,7 +124,7 @@ class __TwigTemplate_7e98372ada452afe98af84ec6c8dde16d18f524ca5fab1485201cdd10e8
                             </div>
                         </p>
                         <div>
-                            <a ng-href=\"/platform/post/{{ post.id }}\">{{ post.upvotes-post.downvotes }} points, {{ post.comments }} comments</a>
+                            <a ng-href=\"/platform/post/{{ post.id }}\"><span id=\"post_point_{{ post.id }}\">{{ post.upvotes-post.downvotes }}</span> points, {{ post.comments }} comments</a>
                         </div>
                         <div>
                             <div class=\"spacer-5px\">
@@ -200,21 +200,21 @@ class __TwigTemplate_7e98372ada452afe98af84ec6c8dde16d18f524ca5fab1485201cdd10e8
 
                         <div class=\"col-md-1 col-xs-2\">
                             <a href=\"http://www.enolagaye.com\">
-                                <img src=\"/images/sponsors/g-n.jpeg\" width=\"50em\">
+                                <img src=\"/images/sponsors/e-g.png\" width=\"50em\">
                             </a>
 
                         </div>
 
                         <div class=\"col-md-1 col-xs-2\">
                             <a href=\"http://maxxloader.com/\">
-                                <img src=\"http://maxxloader.com/wp-content/uploads/2015/03/MaxXloader-Logo-R35.png\" width=\"50em\">
+                                <img src=\"/images/sponsors/cgr.png\" width=\"50em\">
                             </a>
 
                         </div>
 
                         <div class=\"col-md-1 col-xs-2\">
                             <a href=\"http://shop.customgunrails.com/\">
-                                <img src=\"http://shop.customgunrails.com/images/CGR_LOGOlight.png\" width=\"50em\">
+                                <img src=\"/images/sponsors/cgr.png\" width=\"50em\">
                             </a>
 
                         </div>
@@ -241,7 +241,7 @@ class __TwigTemplate_7e98372ada452afe98af84ec6c8dde16d18f524ca5fab1485201cdd10e8
 
 ";
         
-        $__internal_ddaf14d1b4351cedeb975536fa3f4afe56964b550a8f20da3fc3c7c97a334cb6->leave($__internal_ddaf14d1b4351cedeb975536fa3f4afe56964b550a8f20da3fc3c7c97a334cb6_prof);
+        $__internal_52207b802af1a0f70045114401ad6af579a4b2957f7370d1b42ebbbc5a2fb8f8->leave($__internal_52207b802af1a0f70045114401ad6af579a4b2957f7370d1b42ebbbc5a2fb8f8_prof);
 
     }
 
@@ -351,7 +351,7 @@ class __TwigTemplate_7e98372ada452afe98af84ec6c8dde16d18f524ca5fab1485201cdd10e8
 /*                             </div>*/
 /*                         </p>*/
 /*                         <div>*/
-/*                             <a ng-href="/platform/post/{{ post.id }}">{{ post.upvotes-post.downvotes }} points, {{ post.comments }} comments</a>*/
+/*                             <a ng-href="/platform/post/{{ post.id }}"><span id="post_point_{{ post.id }}">{{ post.upvotes-post.downvotes }}</span> points, {{ post.comments }} comments</a>*/
 /*                         </div>*/
 /*                         <div>*/
 /*                             <div class="spacer-5px">*/
@@ -427,21 +427,21 @@ class __TwigTemplate_7e98372ada452afe98af84ec6c8dde16d18f524ca5fab1485201cdd10e8
 /* */
 /*                         <div class="col-md-1 col-xs-2">*/
 /*                             <a href="http://www.enolagaye.com">*/
-/*                                 <img src="/images/sponsors/g-n.jpeg" width="50em">*/
+/*                                 <img src="/images/sponsors/e-g.png" width="50em">*/
 /*                             </a>*/
 /* */
 /*                         </div>*/
 /* */
 /*                         <div class="col-md-1 col-xs-2">*/
 /*                             <a href="http://maxxloader.com/">*/
-/*                                 <img src="http://maxxloader.com/wp-content/uploads/2015/03/MaxXloader-Logo-R35.png" width="50em">*/
+/*                                 <img src="/images/sponsors/cgr.png" width="50em">*/
 /*                             </a>*/
 /* */
 /*                         </div>*/
 /* */
 /*                         <div class="col-md-1 col-xs-2">*/
 /*                             <a href="http://shop.customgunrails.com/">*/
-/*                                 <img src="http://shop.customgunrails.com/images/CGR_LOGOlight.png" width="50em">*/
+/*                                 <img src="/images/sponsors/cgr.png" width="50em">*/
 /*                             </a>*/
 /* */
 /*                         </div>*/

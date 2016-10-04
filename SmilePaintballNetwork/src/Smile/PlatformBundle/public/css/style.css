@@ -79,8 +79,21 @@ a{
        z-index: 1000;
 }
 
+
+.sponsor-big{
+    margin-bottom: 5px;
+}
+
+.sm-visible{
+    display: block;
+}
+
 @media (min-width: 770px) {
     .smartphonePostButton {
+        display: none;
+    }
+
+    .sm-visible{
         display: none;
     }
 }

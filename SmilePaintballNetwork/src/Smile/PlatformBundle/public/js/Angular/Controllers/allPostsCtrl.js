@@ -117,6 +117,7 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
     {
         $('#updownVote_'+postId).hide('slow');
         $('#upvoted_'+postId).show('slow');
+        document.getElementById('post_point_'+postId).innerHTML = parseInt(document.getElementById('post_point_'+postId).innerHTML) + 1;
         $.ajax({
             url : document.getElementById("smileApiUpvoteUrl").innerHTML+postId,
             type : 'GET',
@@ -141,7 +142,7 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
     {
         $('#updownVote_'+postId).hide('slow');
         $('#downvoted_'+postId).show('slow');
-
+        document.getElementById('post_point_'+postId).innerHTML = parseInt(document.getElementById('post_point_'+postId).innerHTML) - 1;
         $.ajax({
             url : document.getElementById("smileApiDownvoteUrl").innerHTML+postId,
             type : 'GET',

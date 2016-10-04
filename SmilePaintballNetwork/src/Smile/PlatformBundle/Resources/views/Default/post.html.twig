@@ -10,11 +10,11 @@
             <meta property="og:image" content="https://graph.facebook.com/{{ post.getFacebookId() }}/picture" />
         {% endif %}
         {% if post.getFacebookId()=='' %}
-            <meta property="og:image" content="https://smilepaintball.com/images/logo.png" />
+            <meta property="og:image" content="http://smilepaintball.com/images/logo.png" />
         {% endif %}
     {% endif %}
     {% if post.type=='picture_facebook' %}
-        <meta property="og:image" content="https://smilepaintball.com/images/logo.png" />
+        <meta property="og:image" content="http://smilepaintball.com/images/logo.png" />
     {% endif %}
     {% if post.type=='picture_externalUrl' %}
         <meta property="og:image" content="{{ post.url }}" />
@@ -23,7 +23,7 @@
         <meta property="og:image" content="https://smilepaintball.com{{post.picture.uploadDir}}/{{post.picture.url}}" />
     {% endif %}
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://smilepaintball.com/platform/post/{{ post.id }}" />
+    <meta property="og:url" content="http://smilepaintball.com/platform/post/{{ post.id }}" />
     <meta property="og:description" content="Contend posted on SmilePaintball.com by {{ post.user.username }}." />
 
 {% endblock %}
@@ -96,7 +96,7 @@
             </p>
 
             <div>
-                {{ post.upvotes-post.downvotes }} points, {{ post.comments }} comments
+                <span id="post_point_{{ post.id }}">{{ post.upvotes-post.downvotes }}</span> points, <span id="post_comment_{{ post.id }}">{{ post.comments }}</span> comments
             </div>
             <div>
                 <div class="spacer-5px">

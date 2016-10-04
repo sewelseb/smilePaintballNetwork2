@@ -5,6 +5,113 @@
 {% endblock %}
 
 {% block leftCollumn %}
+
+    <div class="modal fade" id="addToTeamModal" tabindex="-1" role="dialog" aria-labelledby="addToTeamModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Add to a team</h4>
+                </div>
+                <div class="modal-body">
+                    {% if app.user %}
+                        {% for team in app.user.teams %}
+                            <div class="row">
+                                <a href="{{ path('smile_platform_add_to_team', {'teamId': team.id, 'userId': user.id}) }}">
+                                    {%  if team.teamPicture  %}
+                                        <img width="16px" class="img-responsive pull-left" src="{{team.teamPicture.uploadDir}}/{{team.teamPicture.url}}" alt="{{ team.name }}">
+                                    {%  endif %}
+                                    <span> {{ team.name }}</span>
+                                </a>
+                            </div>
+                            <div class="clearfix"></div>
+                        {% endfor %}
+                    {% endif %}
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editProfileModal" tabindex="-1" role="dialog" aria-labelledby="edotProfileModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Edit profile</h4>
+                </div>
+                <div class="modal-body">
+                    {{ render(controller('SmilePlatformBundle:User:editMyProfile', {'request': app.request})) }}
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="CreateTeamModal" tabindex="-1" role="dialog" aria-labelledby="CreateTeamModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Create a team</h4>
+                </div>
+                <div class="modal-body">
+                    {{ render(controller('SmilePlatformBundle:Team:createTeam', {'request': app.request})) }}
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sm-visible">
+        <div class="row">
+            <div class="container">
+                {% if user.picture != null %}
+                    <img class="img-responsive" src="{{user.picture.uploadDir}}/{{user.picture.url}}" alt="{{ user.username }}" width="50px">
+                {% else %}
+
+                {% endif %}
+                {{ user.username }}<br/>
+                {% if user.firstname%}
+                    {{ user.firstname }}
+                {% endif %}
+                {% if user.lastname %}
+                    {{ user.lastname }}
+                {% endif %}<br/>
+                <div>
+                    {% if app.user %}
+                        {% if user.id == app.user.id %}
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#editProfileModal">Edit my profile</button>
+                        {% endif %}
+                    {% endif %}
+                </div>
+                <H3>Teams:</H3>
+                {% for team in user.teams %}
+                    <div class="row">
+                        <a href="{{ path('smile_platform_team', {'id': team.id}) }}">
+                            {%  if team.teamPicture  %}
+                                <img width="16px" class="img-responsive pull-left" src="{{team.teamPicture.uploadDir}}/{{team.teamPicture.url}}" alt="{{ team.name }}">
+                            {%  endif %}
+                            <span> {{ team.name }}</span>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                {% endfor %}
+
+                {% if app.user %}
+                    {% if user.id == app.user.id %}
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#CreateTeamModal">Create a team</button>
+                    {% elseif app.user.teams|length !=0 %}
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#addToTeamModal">Add to a team</button>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </div>
+        <hr/>
+    </div>
     {% for post in posts %}
         <div class="row" >
             <span id="smileApiUpvoteUrl" hidden>{{ path ('smile_api_post_upvote_url') }}</span>
@@ -79,7 +186,7 @@
 
                     <div>
                         <a href="{{ path('smile_platform_post', {'postId': post.getId })  }}">
-                            {{ post.upvotes-post.downvotes }} points, {{ post.comments }} comments
+                            <span id="post_point_{{ post.id }}">{{ post.upvotes-post.downvotes }}</span> points, {{ post.comments }} comments
                         </a>
                     </div>
 
@@ -155,63 +262,6 @@
 
 
 
-    <div class="modal fade" id="addToTeamModal" tabindex="-1" role="dialog" aria-labelledby="addToTeamModal">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Add to a team</h4>
-                </div>
-                <div class="modal-body">
-                    {% if app.user %}
-                        {% for team in app.user.teams %}
-                            <div class="row">
-                                <a href="{{ path('smile_platform_add_to_team', {'teamId': team.id, 'userId': user.id}) }}">
-                                    {%  if team.teamPicture  %}
-                                        <img width="16px" class="img-responsive pull-left" src="{{team.teamPicture.uploadDir}}/{{team.teamPicture.url}}" alt="{{ team.name }}">
-                                    {%  endif %}
-                                    <span> {{ team.name }}</span>
-                                </a>
-                            </div>
-                            <div class="clearfix"></div>
-                        {% endfor %}
-                    {% endif %}
-                    <div class="clearfix"></div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="editProfileModal" tabindex="-1" role="dialog" aria-labelledby="edotProfileModal">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Edit profile</h4>
-                </div>
-                <div class="modal-body">
-                    {{ render(controller('SmilePlatformBundle:User:editMyProfile', {'request': app.request})) }}
-                    <div class="clearfix"></div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
 
-    <div class="modal fade" id="CreateTeamModal" tabindex="-1" role="dialog" aria-labelledby="CreateTeamModal">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Create a team</h4>
-                </div>
-                <div class="modal-body">
-                    {{ render(controller('SmilePlatformBundle:Team:createTeam', {'request': app.request})) }}
-                    <div class="clearfix"></div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
 
 {% endblock %}

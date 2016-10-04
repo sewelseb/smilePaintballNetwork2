@@ -15,8 +15,8 @@ class __TwigTemplate_8fde1606c2e9bce69fec9e531571b44b7adcaef39b2d4badb5090e22e6f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_305ad7cf3a23a9af1d1b341fc641c45d51aba27fd953ddb970e844dbdf9adefa = $this->env->getExtension("native_profiler");
-        $__internal_305ad7cf3a23a9af1d1b341fc641c45d51aba27fd953ddb970e844dbdf9adefa->enter($__internal_305ad7cf3a23a9af1d1b341fc641c45d51aba27fd953ddb970e844dbdf9adefa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
+        $__internal_21d950cd4e012b7e89c9e7813c32f9ff063646784a4e9f9017697e475071ebeb = $this->env->getExtension("native_profiler");
+        $__internal_21d950cd4e012b7e89c9e7813c32f9ff063646784a4e9f9017697e475071ebeb->enter($__internal_21d950cd4e012b7e89c9e7813c32f9ff063646784a4e9f9017697e475071ebeb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
 
         // line 1
         echo "<!-- Project One -->
@@ -124,7 +124,7 @@ class __TwigTemplate_8fde1606c2e9bce69fec9e531571b44b7adcaef39b2d4badb5090e22e6f
                             </div>
                         </p>
                         <div>
-                            <a ng-href=\"/platform/post/{{ post.id }}\">{{ post.upvotes-post.downvotes }} points, {{ post.comments }} comments</a>
+                            <a ng-href=\"/platform/post/{{ post.id }}\"><span id=\"post_point_{{ post.id }}\">{{ post.upvotes-post.downvotes }}</span> points, {{ post.comments }} comments</a>
                         </div>
                         <div>
                             <div class=\"spacer-5px\">
@@ -241,7 +241,7 @@ class __TwigTemplate_8fde1606c2e9bce69fec9e531571b44b7adcaef39b2d4badb5090e22e6f
 
 ";
         
-        $__internal_305ad7cf3a23a9af1d1b341fc641c45d51aba27fd953ddb970e844dbdf9adefa->leave($__internal_305ad7cf3a23a9af1d1b341fc641c45d51aba27fd953ddb970e844dbdf9adefa_prof);
+        $__internal_21d950cd4e012b7e89c9e7813c32f9ff063646784a4e9f9017697e475071ebeb->leave($__internal_21d950cd4e012b7e89c9e7813c32f9ff063646784a4e9f9017697e475071ebeb_prof);
 
     }
 
@@ -351,7 +351,7 @@ class __TwigTemplate_8fde1606c2e9bce69fec9e531571b44b7adcaef39b2d4badb5090e22e6f
 /*                             </div>*/
 /*                         </p>*/
 /*                         <div>*/
-/*                             <a ng-href="/platform/post/{{ post.id }}">{{ post.upvotes-post.downvotes }} points, {{ post.comments }} comments</a>*/
+/*                             <a ng-href="/platform/post/{{ post.id }}"><span id="post_point_{{ post.id }}">{{ post.upvotes-post.downvotes }}</span> points, {{ post.comments }} comments</a>*/
 /*                         </div>*/
 /*                         <div>*/
 /*                             <div class="spacer-5px">*/

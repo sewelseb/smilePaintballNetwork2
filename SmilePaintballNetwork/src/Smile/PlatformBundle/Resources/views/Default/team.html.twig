@@ -113,7 +113,7 @@
 
                 <div>
                     <a href="{{ path('smile_platform_post', {'postId': post.getId })  }}">
-                        {{ post.upvotes-post.downvotes }} points, {{ post.comments }} comments
+                        <span id="post_point_{{ post.id }}">{{ post.upvotes-post.downvotes }}</span> points, {{ post.comments }} comments
                     </a>
                 </div>
 
