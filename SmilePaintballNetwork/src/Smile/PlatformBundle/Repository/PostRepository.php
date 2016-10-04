@@ -1,6 +1,7 @@
 <?php
 
 namespace Smile\PlatformBundle\Repository;
+use Smile\PlatformBundle\Entity\Team;
 use Smile\UserBundle\Entity\User;
 
 /**
@@ -44,6 +45,20 @@ class PostRepository extends \Doctrine\ORM\EntityRepository
             ->setParameter('user', $user)
             ->orderBy('a.creationTime', 'DESC')
             ;
+        return $qb
+            ->getQuery()
+            ->getResult()
+            ;
+    }
+
+    public function getPostByTeam(Team $team)
+    {
+        $qb = $this->createQueryBuilder('a');
+
+        $qb->where('a.team = :team')
+            ->setParameter('team', $team)
+            ->orderBy('a.creationTime', 'DESC')
+        ;
         return $qb
             ->getQuery()
             ->getResult()

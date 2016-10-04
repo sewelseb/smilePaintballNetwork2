@@ -82,10 +82,17 @@ class TeamController extends Controller
             ->getRepository('SmileUserBundle:User');
         $users = $userRepo->getUsersByTeam($team);
 
+        $postRepo = $this
+            ->getDoctrine()
+            ->getManager()
+            ->getRepository('SmilePlatformBundle:Post');
+        $posts = $postRepo->getPostByTeam($team);
+
         return $this->render('SmilePlatformBundle::Default/team.html.twig', array(
 
             'team' =>$team,
-            'users' => $users
+            'users' => $users,
+            'posts' => $posts
 
         ));
     }
