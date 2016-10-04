@@ -126,8 +126,10 @@
         {{ user.lastname }}
     {% endif %}<br/>
     <div>
-        {% if user.id == app.user.id %}
-            <button class="btn btn-primary" data-toggle="modal" data-target="#editProfileModal">Edit my profile</button>
+        {% if app.user %}
+            {% if user.id == app.user.id %}
+                <button class="btn btn-primary" data-toggle="modal" data-target="#editProfileModal">Edit my profile</button>
+            {% endif %}
         {% endif %}
     </div>
     <H3>Teams:</H3>
@@ -143,11 +145,12 @@
         <div class="clearfix"></div>
     {% endfor %}
 
-
-    {% if user.id == app.user.id %}
-        <button class="btn btn-primary" data-toggle="modal" data-target="#CreateTeamModal">Create a team</button>
-    {% elseif app.user.teams|length !=0 %}
-        <button class="btn btn-primary" data-toggle="modal" data-target="#addToTeamModal">Add to a team</button>
+    {% if app.user %}
+        {% if user.id == app.user.id %}
+            <button class="btn btn-primary" data-toggle="modal" data-target="#CreateTeamModal">Create a team</button>
+        {% elseif app.user.teams|length !=0 %}
+            <button class="btn btn-primary" data-toggle="modal" data-target="#addToTeamModal">Add to a team</button>
+        {% endif %}
     {% endif %}
 
 
@@ -160,17 +163,19 @@
                     <h4 class="modal-title" id="myModalLabel">Add to a team</h4>
                 </div>
                 <div class="modal-body">
-                    {% for team in app.user.teams %}
-                        <div class="row">
-                            <a href="{{ path('smile_platform_add_to_team', {'teamId': team.id, 'userId': user.id}) }}">
-                                {%  if team.teamPicture  %}
-                                    <img width="16px" class="img-responsive pull-left" src="{{team.teamPicture.uploadDir}}/{{team.teamPicture.url}}" alt="{{ team.name }}">
-                                {%  endif %}
-                                <span> {{ team.name }}</span>
-                            </a>
-                        </div>
-                        <div class="clearfix"></div>
-                    {% endfor %}
+                    {% if app.user %}
+                        {% for team in app.user.teams %}
+                            <div class="row">
+                                <a href="{{ path('smile_platform_add_to_team', {'teamId': team.id, 'userId': user.id}) }}">
+                                    {%  if team.teamPicture  %}
+                                        <img width="16px" class="img-responsive pull-left" src="{{team.teamPicture.uploadDir}}/{{team.teamPicture.url}}" alt="{{ team.name }}">
+                                    {%  endif %}
+                                    <span> {{ team.name }}</span>
+                                </a>
+                            </div>
+                            <div class="clearfix"></div>
+                        {% endfor %}
+                    {% endif %}
                     <div class="clearfix"></div>
                 </div>
                 <div class="clearfix"></div>

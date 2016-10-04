@@ -15,8 +15,8 @@ class __TwigTemplate_7e98372ada452afe98af84ec6c8dde16d18f524ca5fab1485201cdd10e8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_80fc81d51837d54febe1463aec2b831f4fadecd908b4b88c1491799893738e69 = $this->env->getExtension("native_profiler");
-        $__internal_80fc81d51837d54febe1463aec2b831f4fadecd908b4b88c1491799893738e69->enter($__internal_80fc81d51837d54febe1463aec2b831f4fadecd908b4b88c1491799893738e69_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
+        $__internal_ddaf14d1b4351cedeb975536fa3f4afe56964b550a8f20da3fc3c7c97a334cb6 = $this->env->getExtension("native_profiler");
+        $__internal_ddaf14d1b4351cedeb975536fa3f4afe56964b550a8f20da3fc3c7c97a334cb6->enter($__internal_ddaf14d1b4351cedeb975536fa3f4afe56964b550a8f20da3fc3c7c97a334cb6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
 
         // line 1
         echo "<!-- Project One -->
@@ -45,7 +45,7 @@ class __TwigTemplate_7e98372ada452afe98af84ec6c8dde16d18f524ca5fab1485201cdd10e8
     <div id=\"contentAllPosts\" hidden>
         <div ng-repeat=\"post in posts | orderBy: '-creationTime'\">
             ";
-        // line 184
+        // line 189
         echo "
                 <div class=\"row\" >
                     <div class=\"col-md-7\">
@@ -90,7 +90,13 @@ class __TwigTemplate_7e98372ada452afe98af84ec6c8dde16d18f524ca5fab1485201cdd10e8
                                 <br/>
                             </a>
                         </span>
-
+                        <span ng-if=\"post.team\">
+                            <a ng-href=\"/platform/team/{{ post.team.id }}\">team: <strong>{{ post.team.name }}</strong></a>
+                        </span>
+                        <br/>
+                        <span ng-if=\"post.eventName && post.eventName != ''\">
+                            Event: {{ post.eventName }}
+                        </span>
                         <p>
                             <div id=\"updownVote_{{post.id}}\">
                                 <div class=\"col-md-6 col-xs-6\">
@@ -149,65 +155,64 @@ class __TwigTemplate_7e98372ada452afe98af84ec6c8dde16d18f524ca5fab1485201cdd10e8
                     <h3>Sponsors</h3>
                     <div class=\"row\">
 
-                        <div class=\"col-md-5 col-xs-5\" >
+                        <div class=\"col-md-1 col-xs-2\" >
                             <a href=\"http://www.tippmann.com/\">
                                 <img src=\"/images/sponsors/tippmann.png\" width=\"50em\">
                             </a>
 
                         </div>
 
-                        <div class=\"col-md-5 col-xs-5\" >
+                        <div class=\"col-md-1 col-xs-2\" >
                             <a href=\"http://gisportz.com/\">
                                 <img src=\"/images/sponsors/gisportz.png\" width=\"50em\">
                             </a>
 
                         </div>
 
-                        <div class=\"col-md-5 col-xs-5\" >
+                        <div class=\"col-md-1 col-xs-2\" >
                             <a href=\"http://gisportz.com/vforce-goggles.php\">
                                 <img src=\"/images/sponsors/vforce.png\" width=\"50em\">
                             </a>
 
                         </div>
 
-                        <div class=\"col-md-5 col-xs-5\" >
+                        <div class=\"col-md-1 col-xs-2\" >
                             <a href=\"http://www.redbull.com/be/fr\">
                                 <img src=\"/images/sponsors/redbull-com-logo.png\" width=\"50em\">
                             </a>
 
                         </div>
 
-                        <div class=\"col-md-5 col-xs-5\">
+                        <div class=\"col-md-1 col-xs-2\">
                             <a href=\"http://www.kg-factory.fr/fr/\">
                                 <img src=\"/images/sponsors/kgfactory.png\" width=\"50em\">
                             </a>
 
                         </div>
-                    </div>
-                    <div class=\"row\">
 
-                        <div class=\"col-md-5 col-xs-5\">
+
+                        <div class=\"col-md-1 col-xs-2\">
                             <a href=\"http://www.patch-werk.com/index.php/en/\">
                                 <img src=\"/images/sponsors/patch-werk.png\" width=\"50em\">
                             </a>
 
                         </div>
 
-                        <div class=\"col-md-5 col-xs-5\">
+                        <div class=\"col-md-1 col-xs-2\">
                             <a href=\"http://www.enolagaye.com\">
                                 <img src=\"/images/sponsors/g-n.jpeg\" width=\"50em\">
                             </a>
 
                         </div>
 
-                        <div class=\"col-md-5 col-xs-5\">
+                        <div class=\"col-md-1 col-xs-2\">
                             <a href=\"http://maxxloader.com/\">
                                 <img src=\"http://maxxloader.com/wp-content/uploads/2015/03/MaxXloader-Logo-R35.png\" width=\"50em\">
                             </a>
 
                         </div>
 
-                        <div class=\"col-md-5 col-xs-5\">
+                        <div class=\"col-md-1 col-xs-2\">
                             <a href=\"http://shop.customgunrails.com/\">
                                 <img src=\"http://shop.customgunrails.com/images/CGR_LOGOlight.png\" width=\"50em\">
                             </a>
@@ -228,11 +233,15 @@ class __TwigTemplate_7e98372ada452afe98af84ec6c8dde16d18f524ca5fab1485201cdd10e8
 
     </div>
 
+    <div ng-if=\"loadMore == true\">
+        <button class=\"btn btn-primary\" ng-click=\"loadMoreBdt\">Load More</button>
+    </div>
+
 </div>
 
 ";
         
-        $__internal_80fc81d51837d54febe1463aec2b831f4fadecd908b4b88c1491799893738e69->leave($__internal_80fc81d51837d54febe1463aec2b831f4fadecd908b4b88c1491799893738e69_prof);
+        $__internal_ddaf14d1b4351cedeb975536fa3f4afe56964b550a8f20da3fc3c7c97a334cb6->leave($__internal_ddaf14d1b4351cedeb975536fa3f4afe56964b550a8f20da3fc3c7c97a334cb6_prof);
 
     }
 
@@ -248,7 +257,7 @@ class __TwigTemplate_7e98372ada452afe98af84ec6c8dde16d18f524ca5fab1485201cdd10e8
 
     public function getDebugInfo()
     {
-        return array (  49 => 184,  38 => 6,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
+        return array (  49 => 189,  38 => 6,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
     }
 }
 /* <!-- Project One -->*/
@@ -308,7 +317,13 @@ class __TwigTemplate_7e98372ada452afe98af84ec6c8dde16d18f524ca5fab1485201cdd10e8
 /*                                 <br/>*/
 /*                             </a>*/
 /*                         </span>*/
-/* */
+/*                         <span ng-if="post.team">*/
+/*                             <a ng-href="/platform/team/{{ post.team.id }}">team: <strong>{{ post.team.name }}</strong></a>*/
+/*                         </span>*/
+/*                         <br/>*/
+/*                         <span ng-if="post.eventName && post.eventName != ''">*/
+/*                             Event: {{ post.eventName }}*/
+/*                         </span>*/
 /*                         <p>*/
 /*                             <div id="updownVote_{{post.id}}">*/
 /*                                 <div class="col-md-6 col-xs-6">*/
@@ -367,65 +382,64 @@ class __TwigTemplate_7e98372ada452afe98af84ec6c8dde16d18f524ca5fab1485201cdd10e8
 /*                     <h3>Sponsors</h3>*/
 /*                     <div class="row">*/
 /* */
-/*                         <div class="col-md-5 col-xs-5" >*/
+/*                         <div class="col-md-1 col-xs-2" >*/
 /*                             <a href="http://www.tippmann.com/">*/
 /*                                 <img src="/images/sponsors/tippmann.png" width="50em">*/
 /*                             </a>*/
 /* */
 /*                         </div>*/
 /* */
-/*                         <div class="col-md-5 col-xs-5" >*/
+/*                         <div class="col-md-1 col-xs-2" >*/
 /*                             <a href="http://gisportz.com/">*/
 /*                                 <img src="/images/sponsors/gisportz.png" width="50em">*/
 /*                             </a>*/
 /* */
 /*                         </div>*/
 /* */
-/*                         <div class="col-md-5 col-xs-5" >*/
+/*                         <div class="col-md-1 col-xs-2" >*/
 /*                             <a href="http://gisportz.com/vforce-goggles.php">*/
 /*                                 <img src="/images/sponsors/vforce.png" width="50em">*/
 /*                             </a>*/
 /* */
 /*                         </div>*/
 /* */
-/*                         <div class="col-md-5 col-xs-5" >*/
+/*                         <div class="col-md-1 col-xs-2" >*/
 /*                             <a href="http://www.redbull.com/be/fr">*/
 /*                                 <img src="/images/sponsors/redbull-com-logo.png" width="50em">*/
 /*                             </a>*/
 /* */
 /*                         </div>*/
 /* */
-/*                         <div class="col-md-5 col-xs-5">*/
+/*                         <div class="col-md-1 col-xs-2">*/
 /*                             <a href="http://www.kg-factory.fr/fr/">*/
 /*                                 <img src="/images/sponsors/kgfactory.png" width="50em">*/
 /*                             </a>*/
 /* */
 /*                         </div>*/
-/*                     </div>*/
-/*                     <div class="row">*/
 /* */
-/*                         <div class="col-md-5 col-xs-5">*/
+/* */
+/*                         <div class="col-md-1 col-xs-2">*/
 /*                             <a href="http://www.patch-werk.com/index.php/en/">*/
 /*                                 <img src="/images/sponsors/patch-werk.png" width="50em">*/
 /*                             </a>*/
 /* */
 /*                         </div>*/
 /* */
-/*                         <div class="col-md-5 col-xs-5">*/
+/*                         <div class="col-md-1 col-xs-2">*/
 /*                             <a href="http://www.enolagaye.com">*/
 /*                                 <img src="/images/sponsors/g-n.jpeg" width="50em">*/
 /*                             </a>*/
 /* */
 /*                         </div>*/
 /* */
-/*                         <div class="col-md-5 col-xs-5">*/
+/*                         <div class="col-md-1 col-xs-2">*/
 /*                             <a href="http://maxxloader.com/">*/
 /*                                 <img src="http://maxxloader.com/wp-content/uploads/2015/03/MaxXloader-Logo-R35.png" width="50em">*/
 /*                             </a>*/
 /* */
 /*                         </div>*/
 /* */
-/*                         <div class="col-md-5 col-xs-5">*/
+/*                         <div class="col-md-1 col-xs-2">*/
 /*                             <a href="http://shop.customgunrails.com/">*/
 /*                                 <img src="http://shop.customgunrails.com/images/CGR_LOGOlight.png" width="50em">*/
 /*                             </a>*/
@@ -443,6 +457,10 @@ class __TwigTemplate_7e98372ada452afe98af84ec6c8dde16d18f524ca5fab1485201cdd10e8
 /* */
 /*     <div id="bottomOfThePage">*/
 /* */
+/*     </div>*/
+/* */
+/*     <div ng-if="loadMore == true">*/
+/*         <button class="btn btn-primary" ng-click="loadMoreBdt">Load More</button>*/
 /*     </div>*/
 /* */
 /* </div>*/
