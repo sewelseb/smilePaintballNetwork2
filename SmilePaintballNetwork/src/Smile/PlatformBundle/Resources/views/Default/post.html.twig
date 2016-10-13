@@ -24,7 +24,12 @@
     {% endif %}
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://smilepaintball.com/platform/post/{{ post.id }}" />
-    <meta property="og:description" content="Contend posted on SmilePaintball.com by {{ post.user.username }}." />
+    {% if post.team != null %}
+        {% set teamText = " of team "~post.team.name %}
+    {% else %}
+        {% set teamText = "" %}
+    {% endif %}
+    <meta property="og:description" content="{{ post.title }}. Contend posted on SmilePaintball.com by {{ post.user.username }}{{ teamText }}." />
 
 {% endblock %}
 
