@@ -257,12 +257,12 @@ class PostPic extends \Smile\PlatformBundle\Entity\PostPic implements \Doctrine\
     /**
      * {@inheritDoc}
      */
-    public function upload(\Smile\PlatformBundle\Entity\Post $post)
+    public function upload(\Smile\PlatformBundle\Entity\Post $post, $container)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'upload', [$post]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'upload', [$post, $container]);
 
-        return parent::upload($post);
+        return parent::upload($post, $container);
     }
 
     /**

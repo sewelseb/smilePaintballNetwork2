@@ -4,6 +4,7 @@ namespace Smile\PlatformBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\Validator\Constraints as Assert;
 
@@ -42,6 +43,8 @@ class PostPic
      * @Assert\File( maxSize = "3072k", mimeTypesMessage = "The max file size is 3M")
      */
     private $file;
+
+
 
 
 
@@ -118,7 +121,7 @@ class PostPic
     {
         return $this->file;
     }
-    public function upload(Post $post)
+    public function upload(Post $post, $container)
     {
         // Si jamais il n'y a pas de fichier (champ facultatif), on ne fait rien
         if (null === $this->file) {
@@ -128,22 +131,54 @@ class PostPic
         //$extention = $this->getFile()->getClientOriginalName()->explode('.', $this->file->getClientOriginalName())[1];
         $extention = $this->getFile()->guessExtension();
         $name = $post->getUser()->getUsername().'_'.time().'.'.$extention;
-        // On déplace le fichier envoyé dans le répertoire de notre choix
-        $this->file->move($this->getUploadRootDir(), $name);
-        // On sauvegarde le nom de fichier dans notre attribut $url
-        $this->url = $name;
-        // On crée également le futur attribut alt de notre balise <img>
-        $this->alt = $name;
+        $name = str_replace(" ", "", $name);
+        $name = str_replace("'", "", $name);
+        $name = str_replace("/", "", $name);
+        $name = str_replace("\"", "", $name);
+        $name = str_replace("é", "e", $name);
+        $name = str_replace("è", "e", $name);
+        $name = str_replace("ê", "e", $name);
+        $name = urlencode($name);
+        $fs = new Filesystem();
+        if($fs->exists($this->file))
+        {
+            // On déplace le fichier envoyé dans le répertoire de notre choix
+            $this->file->move($this->getUploadDir(), $name);
+            //on redimentionne le fichier
+            $dataManager = $container->get('liip_imagine.data.manager');    // the data manager service
+            $filterManager = $container->get('liip_imagine.filter.manager');// the filter manager service
+            $dataManager = $container->get('liip_imagine.data.manager');    // the data manager service
+            $image = $dataManager->find('profile_pic', $this->getUploadDir().'/'.$name);
+
+
+
+            $thumb = $container->get('liip_imagine.filter.manager')->applyFilter($image, 'profile_pic')->getContent();
+            $f = fopen($this->getUploadDir().'/'.$name, 'w');// create thumbnail file
+            //dump($this->getUploadDir().'/'.$name);
+            fwrite($f, $thumb);                                             // write the thumbnail
+            fclose($f);
+            // On sauvegarde le nom de fichier dans notre attribut $url
+            $this->url = $name;
+            // On crée également le futur attribut alt de notre balise <img>
+            $this->alt = $name;
+        }
+        else
+        {
+            $this->url = null;
+
+            $this->alt = null;
+        }
+
 
     }
     public function getUploadDir()
     {
         // On retourne le chemin relatif vers l'image pour un navigateur (relatif au répertoire /web donc)
-        return '/uploads/postPics';
+        return 'uploads/postPics';
     }
     protected function getUploadRootDir()
     {
-        return __DIR__.'/../../../../web/'.$this->getUploadDir();
+        return 'web/'.$this->getUploadDir();
     }
 }
 

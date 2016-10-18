@@ -103,6 +103,13 @@ class Post
      */
     private $nullable;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="thumbnails", type="string", length=255, nullable=true)
+     */
+    private $thumbnails;
+
 
 
     /**
@@ -290,6 +297,24 @@ class Post
     {
         $this->comments = $comments;
     }
+
+    /**
+     * @return string
+     */
+    public function getThumbnails()
+    {
+        return $this->thumbnails;
+    }
+
+    /**
+     * @param string $thumbnails
+     */
+    public function setThumbnails($thumbnails)
+    {
+        $this->thumbnails = $thumbnails;
+    }
+
+
 
     public function getYoutubeId()
     {

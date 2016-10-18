@@ -57,7 +57,7 @@ class PostController extends Controller
                 $post->setCreationTime(time());
                 $post->setUser($this->getUser());
                 if ($post->getPicture() != null) {
-                    $post->getPicture()->upload($post);
+                    $post->getPicture()->upload($post, $this->container);
                 }
 
 
@@ -70,6 +70,9 @@ class PostController extends Controller
                         "//www.youtube.com/embed/$2",
                         $post->getUrl()));
                     $post->setType('video_youtube');
+                    $picName='uploads/thumbnails/yt_'.time().'.jpg';
+                    file_put_contents($picName, file_get_contents('http://img.youtube.com/vi/'.$post->getYoutubeId().'/mqdefault.jpg'));
+                    $post->setThumbnails($picName);
                 }
 
                 $urlFb = explode('facebook.com', $post->getUrl());
@@ -78,12 +81,23 @@ class PostController extends Controller
                 if (count($urlFb) > 1) {
                     $urlVideoFb = explode('/videos/', $post->getUrl());
                     $urlPictureFb = explode('/photos/', $post->getUrl());
+
                 }
 
                 if (count($urlVideoFb) > 1) {
                     $post->setType('video_facebook');
+
+                    $picName='uploads/thumbnails/yt_'.time().'.jpg';
+                    file_put_contents($picName, file_get_contents('https://graph.facebook.com/'.$post->getFacebookId().'/picture'));
+
+                    //$picName='uploads/thumbnails/fb'.time().'jpg';
+                    //file_put_contents($picName, file_get_contents('https://graph.facebook.com/{{ post.getFacebookId() }}/picture'));
+
+
                 } elseif (count($urlPictureFb) > 1) {
                     $post->setType('picture_facebook');
+                    $picName='uploads/thumbnails/yt_'.time().'.jpg';
+                    file_put_contents($picName, file_get_contents('https://graph.facebook.com/'.$post->getFacebookId().'/picture'));
                 }
 
 

@@ -24,6 +24,7 @@
       <parameter key="SmileApiBundle">Smile\ApiBundle\SmileApiBundle</parameter>
       <parameter key="HWIOAuthBundle">HWI\Bundle\OAuthBundle\HWIOAuthBundle</parameter>
       <parameter key="SmileAdminBundle">Smile\AdminBundle\SmileAdminBundle</parameter>
+      <parameter key="LiipImagineBundle">Liip\ImagineBundle\LiipImagineBundle</parameter>
     </parameter>
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">appProdDebugProjectContainer</parameter>
@@ -104,6 +105,7 @@
     <parameter key="twig.exception_listener.controller">twig.controller.exception:showAction</parameter>
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
+      <parameter>LiipImagineBundle:Form:form_div_layout.html.twig</parameter>
     </parameter>
     <parameter key="monolog.logger.class">Symfony\Bridge\Monolog\Logger</parameter>
     <parameter key="monolog.gelf.publisher.class">Gelf\MessagePublisher</parameter>
@@ -339,6 +341,7 @@
       <parameter>SmileApiBundle</parameter>
       <parameter>HWIOAuthBundle</parameter>
       <parameter>SmileAdminBundle</parameter>
+      <parameter>LiipImagineBundle</parameter>
     </parameter>
     <parameter key="assetic.twig_extension.class">Symfony\Bundle\AsseticBundle\Twig\AsseticExtension</parameter>
     <parameter key="assetic.twig_formula_loader.class">Assetic\Extension\Twig\TwigFormulaLoader</parameter>
@@ -501,6 +504,93 @@
     <parameter key="hwi_oauth.fosub_enabled">true</parameter>
     <parameter key="hwi_oauth.connect.confirmation">true</parameter>
     <parameter key="hwi_oauth.templating.engine">twig</parameter>
+    <parameter key="liip_imagine.filter.configuration.class">Liip\ImagineBundle\Imagine\Filter\FilterConfiguration</parameter>
+    <parameter key="liip_imagine.filter.manager.class">Liip\ImagineBundle\Imagine\Filter\FilterManager</parameter>
+    <parameter key="liip_imagine.data.manager.class">Liip\ImagineBundle\Imagine\Data\DataManager</parameter>
+    <parameter key="liip_imagine.cache.manager.class">Liip\ImagineBundle\Imagine\Cache\CacheManager</parameter>
+    <parameter key="liip_imagine.cache.signer.class">Liip\ImagineBundle\Imagine\Cache\Signer</parameter>
+    <parameter key="liip_imagine.binary.mime_type_guesser.class">Liip\ImagineBundle\Binary\SimpleMimeTypeGuesser</parameter>
+    <parameter key="liip_imagine.controller.class">Liip\ImagineBundle\Controller\ImagineController</parameter>
+    <parameter key="liip_imagine.twig.extension.class">Liip\ImagineBundle\Templating\ImagineExtension</parameter>
+    <parameter key="liip_imagine.templating.helper.class">Liip\ImagineBundle\Templating\Helper\ImagineHelper</parameter>
+    <parameter key="liip_imagine.gd.class">Imagine\Gd\Imagine</parameter>
+    <parameter key="liip_imagine.imagick.class">Imagine\Imagick\Imagine</parameter>
+    <parameter key="liip_imagine.gmagick.class">Imagine\Gmagick\Imagine</parameter>
+    <parameter key="liip_imagine.filter.loader.relative_resize.class">Liip\ImagineBundle\Imagine\Filter\Loader\RelativeResizeFilterLoader</parameter>
+    <parameter key="liip_imagine.filter.loader.resize.class">Liip\ImagineBundle\Imagine\Filter\Loader\ResizeFilterLoader</parameter>
+    <parameter key="liip_imagine.filter.loader.thumbnail.class">Liip\ImagineBundle\Imagine\Filter\Loader\ThumbnailFilterLoader</parameter>
+    <parameter key="liip_imagine.filter.loader.crop.class">Liip\ImagineBundle\Imagine\Filter\Loader\CropFilterLoader</parameter>
+    <parameter key="liip_imagine.filter.loader.grayscale.class">Liip\ImagineBundle\Imagine\Filter\Loader\GrayscaleFilterLoader</parameter>
+    <parameter key="liip_imagine.filter.loader.paste.class">Liip\ImagineBundle\Imagine\Filter\Loader\PasteFilterLoader</parameter>
+    <parameter key="liip_imagine.filter.loader.watermark.class">Liip\ImagineBundle\Imagine\Filter\Loader\WatermarkFilterLoader</parameter>
+    <parameter key="liip_imagine.filter.loader.strip.class">Liip\ImagineBundle\Imagine\Filter\Loader\StripFilterLoader</parameter>
+    <parameter key="liip_imagine.filter.loader.background.class">Liip\ImagineBundle\Imagine\Filter\Loader\BackgroundFilterLoader</parameter>
+    <parameter key="liip_imagine.filter.loader.upscale.class">Liip\ImagineBundle\Imagine\Filter\Loader\UpscaleFilterLoader</parameter>
+    <parameter key="liip_imagine.filter.loader.downscale.class">Liip\ImagineBundle\Imagine\Filter\Loader\DownscaleFilterLoader</parameter>
+    <parameter key="liip_imagine.filter.loader.auto_rotate.class">Liip\ImagineBundle\Imagine\Filter\Loader\AutoRotateFilterLoader</parameter>
+    <parameter key="liip_imagine.filter.loader.rotate.class">Liip\ImagineBundle\Imagine\Filter\Loader\RotateFilterLoader</parameter>
+    <parameter key="liip_imagine.filter.loader.interlace.class">Liip\ImagineBundle\Imagine\Filter\Loader\InterlaceFilterLoader</parameter>
+    <parameter key="liip_imagine.binary.loader.filesystem.class">Liip\ImagineBundle\Binary\Loader\FileSystemLoader</parameter>
+    <parameter key="liip_imagine.binary.loader.stream.class">Liip\ImagineBundle\Binary\Loader\StreamLoader</parameter>
+    <parameter key="liip_imagine.binary.loader.flysystem.class">Liip\ImagineBundle\Binary\Loader\FlysystemLoader</parameter>
+    <parameter key="liip_imagine.cache.resolver.web_path.class">Liip\ImagineBundle\Imagine\Cache\Resolver\WebPathResolver</parameter>
+    <parameter key="liip_imagine.cache.resolver.no_cache_web_path.class">Liip\ImagineBundle\Imagine\Cache\Resolver\NoCacheWebPathResolver</parameter>
+    <parameter key="liip_imagine.cache.resolver.aws_s3.class">Liip\ImagineBundle\Imagine\Cache\Resolver\AwsS3Resolver</parameter>
+    <parameter key="liip_imagine.cache.resolver.cache.class">Liip\ImagineBundle\Imagine\Cache\Resolver\CacheResolver</parameter>
+    <parameter key="liip_imagine.cache.resolver.flysystem.class">Liip\ImagineBundle\Imagine\Cache\Resolver\FlysystemResolver</parameter>
+    <parameter key="liip_imagine.cache.resolver.proxy.class">Liip\ImagineBundle\Imagine\Cache\Resolver\ProxyResolver</parameter>
+    <parameter key="liip_imagine.form.type.image.class">Liip\ImagineBundle\Form\Type\ImageType</parameter>
+    <parameter key="liip_imagine.meta_data.reader.class">Imagine\Image\Metadata\ExifMetadataReader</parameter>
+    <parameter key="liip_imagine.filter.post_processor.jpegoptim.class">Liip\ImagineBundle\Imagine\Filter\PostProcessor\JpegOptimPostProcessor</parameter>
+    <parameter key="liip_imagine.jpegoptim.binary">/usr/bin/jpegoptim</parameter>
+    <parameter key="liip_imagine.jpegoptim.stripall">true</parameter>
+    <parameter key="liip_imagine.jpegoptim.max">null</parameter>
+    <parameter key="liip_imagine.jpegoptim.progressive">true</parameter>
+    <parameter key="liip_imagine.filter.post_processor.optipng.class">Liip\ImagineBundle\Imagine\Filter\PostProcessor\OptiPngPostProcessor</parameter>
+    <parameter key="liip_imagine.optipng.binary">/usr/bin/optipng</parameter>
+    <parameter key="liip_imagine.optipng.level">7</parameter>
+    <parameter key="liip_imagine.optipng.stripall">true</parameter>
+    <parameter key="liip_imagine.filter.post_processor.pngquant.class">Liip\ImagineBundle\Imagine\Filter\PostProcessor\PngquantPostProcessor</parameter>
+    <parameter key="liip_imagine.pngquant.binary">/usr/bin/pngquant</parameter>
+    <parameter key="liip_imagine.filter.post_processor.mozjpeg.class">Liip\ImagineBundle\Imagine\Filter\PostProcessor\MozJpegPostProcessor</parameter>
+    <parameter key="liip_imagine.mozjpeg.binary">/opt/mozjpeg/bin/cjpeg</parameter>
+    <parameter key="liip_imagine.cache.resolver.default">default</parameter>
+    <parameter key="liip_imagine.default_image">null</parameter>
+    <parameter key="liip_imagine.filter_sets" type="collection">
+      <parameter key="cache" type="collection">
+        <parameter key="quality">100</parameter>
+        <parameter key="jpeg_quality">null</parameter>
+        <parameter key="png_compression_level">null</parameter>
+        <parameter key="png_compression_filter">null</parameter>
+        <parameter key="format">null</parameter>
+        <parameter key="animated">false</parameter>
+        <parameter key="cache">null</parameter>
+        <parameter key="data_loader">null</parameter>
+        <parameter key="default_image">null</parameter>
+        <parameter key="filters" type="collection"/>
+        <parameter key="post_processors" type="collection"/>
+      </parameter>
+      <parameter key="profile_pic" type="collection">
+        <parameter key="quality">100</parameter>
+        <parameter key="filters" type="collection">
+          <parameter key="relative_resize" type="collection">
+            <parameter key="heighten">300</parameter>
+          </parameter>
+        </parameter>
+        <parameter key="jpeg_quality">null</parameter>
+        <parameter key="png_compression_level">null</parameter>
+        <parameter key="png_compression_filter">null</parameter>
+        <parameter key="format">null</parameter>
+        <parameter key="animated">false</parameter>
+        <parameter key="cache">null</parameter>
+        <parameter key="data_loader">null</parameter>
+        <parameter key="default_image">null</parameter>
+        <parameter key="post_processors" type="collection"/>
+      </parameter>
+    </parameter>
+    <parameter key="liip_imagine.binary.loader.default">default</parameter>
+    <parameter key="liip_imagine.controller.filter_action">liip_imagine.controller:filterAction</parameter>
+    <parameter key="liip_imagine.controller.filter_runtime_action">liip_imagine.controller:filterRuntimeAction</parameter>
     <parameter key="console.command.ids" type="collection"/>
   </parameters>
   <services>
@@ -634,7 +724,7 @@
                   <tag name="cache.pool"/>
                   <argument>uVWMxz3+Ij</argument>
                   <argument>0</argument>
-                  <argument>H0xjXVSZ8w22-UTIOGf9Zw</argument>
+                  <argument>JZdqGamuwOXPAVRL7tqJYQ</argument>
                   <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\var\cache\prod/pools</argument>
                   <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                   <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -647,7 +737,7 @@
                   <tag name="cache.pool"/>
                   <argument>4MPOVZguig</argument>
                   <argument>0</argument>
-                  <argument>H0xjXVSZ8w22-UTIOGf9Zw</argument>
+                  <argument>JZdqGamuwOXPAVRL7tqJYQ</argument>
                   <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\var\cache\prod/pools</argument>
                   <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                   <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -979,7 +1069,7 @@
       <tag name="cache.pool"/>
       <argument>gD3LdP7u1l</argument>
       <argument>0</argument>
-      <argument>H0xjXVSZ8w22-UTIOGf9Zw</argument>
+      <argument>JZdqGamuwOXPAVRL7tqJYQ</argument>
       <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\var\cache\prod/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -1031,6 +1121,7 @@
               <argument key="FOS\UserBundle\Form\Type\RegistrationFormType">fos_user.registration.form.type</argument>
               <argument key="FOS\UserBundle\Form\Type\ChangePasswordFormType">fos_user.change_password.form.type</argument>
               <argument key="FOS\UserBundle\Form\Type\ResettingFormType">fos_user.resetting.form.type</argument>
+              <argument key="Liip\ImagineBundle\Form\Type\ImageType">liip_imagine.form.type.image</argument>
             </argument>
             <argument type="collection">
               <argument key="Symfony\Component\Form\Extension\Core\Type\FormType" type="collection">
@@ -1769,7 +1860,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>57e921fc921d47.98246076</argument>
+            <argument>58065bae399417.77339748</argument>
           </service>
         </argument>
       </argument>
@@ -1912,6 +2003,25 @@
         <argument type="service" id="service_container"/>
       </call>
     </service>
+    <service id="security.authentication.rememberme.services.simplehash.main" class="Symfony\Component\Security\Http\RememberMe\TokenBasedRememberMeServices" public="false">
+      <argument type="collection">
+        <argument type="service" id="fos_user.user_provider.username_email"/>
+        <argument type="service" id="fos_user.user_provider.username_email"/>
+      </argument>
+      <argument>b47ff8a4d708c564e3dd887eeacfe00d9bbc519e</argument>
+      <argument>main</argument>
+      <argument type="collection">
+        <argument key="lifetime">604800</argument>
+        <argument key="path">/</argument>
+        <argument key="domain">null</argument>
+        <argument key="name">REMEMBERME</argument>
+        <argument key="secure">false</argument>
+        <argument key="httponly">true</argument>
+        <argument key="always_remember_me">false</argument>
+        <argument key="remember_me_parameter">_remember_me</argument>
+      </argument>
+      <argument type="service" id="monolog.logger.security" on-invalid="null"/>
+    </service>
     <service id="security.firewall.map.context.main" class="Symfony\Bundle\SecurityBundle\Security\FirewallContext">
       <argument type="collection">
         <argument type="service">
@@ -2021,27 +2131,7 @@
               </argument>
             </call>
             <call method="addHandler">
-              <argument type="service">
-                <service class="Symfony\Component\Security\Http\RememberMe\TokenBasedRememberMeServices" public="false">
-                  <argument type="collection">
-                    <argument type="service" id="fos_user.user_provider.username_email"/>
-                    <argument type="service" id="fos_user.user_provider.username_email"/>
-                  </argument>
-                  <argument>b47ff8a4d708c564e3dd887eeacfe00d9bbc519e</argument>
-                  <argument>main</argument>
-                  <argument type="collection">
-                    <argument key="lifetime">604800</argument>
-                    <argument key="path">/</argument>
-                    <argument key="domain">null</argument>
-                    <argument key="name">REMEMBERME</argument>
-                    <argument key="secure">false</argument>
-                    <argument key="httponly">true</argument>
-                    <argument key="always_remember_me">false</argument>
-                    <argument key="remember_me_parameter">_remember_me</argument>
-                  </argument>
-                  <argument type="service" id="monolog.logger.security" on-invalid="null"/>
-                </service>
-              </argument>
+              <argument type="service" id="security.authentication.rememberme.services.simplehash.main"/>
             </call>
           </service>
         </argument>
@@ -2101,27 +2191,7 @@
             <argument type="service" id="debug.event_dispatcher" on-invalid="null"/>
             <argument>null</argument>
             <call method="setRememberMeServices">
-              <argument type="service">
-                <service class="Symfony\Component\Security\Http\RememberMe\TokenBasedRememberMeServices" public="false">
-                  <argument type="collection">
-                    <argument type="service" id="fos_user.user_provider.username_email"/>
-                    <argument type="service" id="fos_user.user_provider.username_email"/>
-                  </argument>
-                  <argument>b47ff8a4d708c564e3dd887eeacfe00d9bbc519e</argument>
-                  <argument>main</argument>
-                  <argument type="collection">
-                    <argument key="lifetime">604800</argument>
-                    <argument key="path">/</argument>
-                    <argument key="domain">null</argument>
-                    <argument key="name">REMEMBERME</argument>
-                    <argument key="secure">false</argument>
-                    <argument key="httponly">true</argument>
-                    <argument key="always_remember_me">false</argument>
-                    <argument key="remember_me_parameter">_remember_me</argument>
-                  </argument>
-                  <argument type="service" id="monolog.logger.security" on-invalid="null"/>
-                </service>
-              </argument>
+              <argument type="service" id="security.authentication.rememberme.services.simplehash.main"/>
             </call>
           </service>
         </argument>
@@ -2183,54 +2253,14 @@
               </argument>
             </call>
             <call method="setRememberMeServices">
-              <argument type="service">
-                <service class="Symfony\Component\Security\Http\RememberMe\TokenBasedRememberMeServices" public="false">
-                  <argument type="collection">
-                    <argument type="service" id="fos_user.user_provider.username_email"/>
-                    <argument type="service" id="fos_user.user_provider.username_email"/>
-                  </argument>
-                  <argument>b47ff8a4d708c564e3dd887eeacfe00d9bbc519e</argument>
-                  <argument>main</argument>
-                  <argument type="collection">
-                    <argument key="lifetime">604800</argument>
-                    <argument key="path">/</argument>
-                    <argument key="domain">null</argument>
-                    <argument key="name">REMEMBERME</argument>
-                    <argument key="secure">false</argument>
-                    <argument key="httponly">true</argument>
-                    <argument key="always_remember_me">false</argument>
-                    <argument key="remember_me_parameter">_remember_me</argument>
-                  </argument>
-                  <argument type="service" id="monolog.logger.security" on-invalid="null"/>
-                </service>
-              </argument>
+              <argument type="service" id="security.authentication.rememberme.services.simplehash.main"/>
             </call>
           </service>
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\RememberMeListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument type="service">
-              <service class="Symfony\Component\Security\Http\RememberMe\TokenBasedRememberMeServices" public="false">
-                <argument type="collection">
-                  <argument type="service" id="fos_user.user_provider.username_email"/>
-                  <argument type="service" id="fos_user.user_provider.username_email"/>
-                </argument>
-                <argument>b47ff8a4d708c564e3dd887eeacfe00d9bbc519e</argument>
-                <argument>main</argument>
-                <argument type="collection">
-                  <argument key="lifetime">604800</argument>
-                  <argument key="path">/</argument>
-                  <argument key="domain">null</argument>
-                  <argument key="name">REMEMBERME</argument>
-                  <argument key="secure">false</argument>
-                  <argument key="httponly">true</argument>
-                  <argument key="always_remember_me">false</argument>
-                  <argument key="remember_me_parameter">_remember_me</argument>
-                </argument>
-                <argument type="service" id="monolog.logger.security" on-invalid="null"/>
-              </service>
-            </argument>
+            <argument type="service" id="security.authentication.rememberme.services.simplehash.main"/>
             <argument type="service" id="security.authentication.manager"/>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="debug.event_dispatcher" on-invalid="null"/>
@@ -2241,7 +2271,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>57e921fc921d47.98246076</argument>
+            <argument>58065bae399417.77339748</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2472,6 +2502,7 @@
                   <service class="Symfony\Bridge\Twig\Form\TwigRendererEngine" public="false">
                     <argument type="collection">
                       <argument>form_div_layout.html.twig</argument>
+                      <argument>LiipImagineBundle:Form:form_div_layout.html.twig</argument>
                     </argument>
                   </service>
                 </argument>
@@ -2521,6 +2552,7 @@
               <argument>SmileApiBundle</argument>
               <argument>HWIOAuthBundle</argument>
               <argument>SmileAdminBundle</argument>
+              <argument>LiipImagineBundle</argument>
             </argument>
             <argument type="service">
               <service class="Symfony\Bundle\AsseticBundle\DefaultValueSupplier" public="false">
@@ -2535,6 +2567,14 @@
           <service class="HWI\Bundle\OAuthBundle\Twig\Extension\OAuthExtension" public="false">
             <tag name="twig.extension"/>
             <argument type="service" id="hwi_oauth.templating.helper.oauth"/>
+          </service>
+        </argument>
+      </call>
+      <call method="addExtension">
+        <argument type="service">
+          <service class="Liip\ImagineBundle\Templating\ImagineExtension" public="false">
+            <tag name="twig.extension"/>
+            <argument type="service" id="liip_imagine.cache.manager"/>
           </service>
         </argument>
       </call>
@@ -3351,6 +3391,33 @@
       </call>
       <call method="addResource">
         <argument type="service">
+          <service class="Symfony\Bundle\AsseticBundle\Factory\Resource\CoalescingDirectoryResource" public="false">
+            <tag name="assetic.templating.twig"/>
+            <tag name="assetic.formula_resource" loader="twig"/>
+            <argument type="collection">
+              <argument type="service">
+                <service class="%assetic.directory_resource.class%" public="false">
+                  <argument type="service" id="templating.loader"/>
+                  <argument>LiipImagineBundle</argument>
+                  <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\app/Resources/LiipImagineBundle/views</argument>
+                  <argument>/\.[^.]+\.twig$/</argument>
+                </service>
+              </argument>
+              <argument type="service">
+                <service class="%assetic.directory_resource.class%" public="false">
+                  <argument type="service" id="templating.loader"/>
+                  <argument>LiipImagineBundle</argument>
+                  <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\vendor\liip\imagine-bundle/Resources/views</argument>
+                  <argument>/\.[^.]+\.twig$/</argument>
+                </service>
+              </argument>
+            </argument>
+          </service>
+        </argument>
+        <argument>twig</argument>
+      </call>
+      <call method="addResource">
+        <argument type="service">
           <service class="Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource" public="false">
             <tag name="assetic.templating.twig"/>
             <tag name="assetic.formula_resource" loader="twig"/>
@@ -3432,7 +3499,8 @@
       <argument type="service" id="security.token_storage"/>
       <argument type="service" id="security.user_checker.main"/>
       <argument type="service" id="security.authentication.session_strategy"/>
-      <argument type="service" id="service_container"/>
+      <argument type="service" id="request_stack"/>
+      <argument type="service" id="security.authentication.rememberme.services.simplehash.main"/>
     </service>
     <service id="fos_user.user_provider.username_email" class="FOS\UserBundle\Security\EmailUserProvider" public="false">
       <argument type="service" id="fos_user.user_manager"/>
@@ -3440,7 +3508,7 @@
     <service id="fos_user.util.user_manipulator" class="FOS\UserBundle\Util\UserManipulator">
       <argument type="service" id="fos_user.user_manager"/>
       <argument type="service" id="debug.event_dispatcher"/>
-      <argument type="service" id="service_container"/>
+      <argument type="service" id="request_stack"/>
     </service>
     <service id="fos_user.listener.authentication" class="FOS\UserBundle\EventListener\AuthenticationListener">
       <tag name="kernel.event_subscriber"/>
@@ -3626,6 +3694,263 @@
       <call method="setFormHandler">
         <argument>null</argument>
       </call>
+    </service>
+    <service id="liip_imagine.cache.resolver.default" class="Liip\ImagineBundle\Imagine\Cache\Resolver\WebPathResolver">
+      <tag name="liip_imagine.cache.resolver" resolver="default"/>
+      <argument type="service" id="filesystem"/>
+      <argument type="service" id="router.request_context"/>
+      <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\app/../web</argument>
+      <argument>media/cache</argument>
+    </service>
+    <service id="liip_imagine.binary.loader.default" class="Liip\ImagineBundle\Binary\Loader\FileSystemLoader">
+      <tag name="liip_imagine.binary.loader" loader="default"/>
+      <argument type="service" id="liip_imagine.mime_type_guesser"/>
+      <argument type="service" id="liip_imagine.extension_guesser"/>
+      <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\app/../web</argument>
+    </service>
+    <service id="liip_imagine.filter.manager" class="Liip\ImagineBundle\Imagine\Filter\FilterManager">
+      <argument type="service" id="liip_imagine.filter.configuration"/>
+      <argument type="service" id="liip_imagine"/>
+      <argument type="service" id="liip_imagine.binary.mime_type_guesser"/>
+      <call method="addLoader">
+        <argument>relative_resize</argument>
+        <argument type="service" id="liip_imagine.filter.loader.relative_resize"/>
+      </call>
+      <call method="addLoader">
+        <argument>resize</argument>
+        <argument type="service" id="liip_imagine.filter.loader.resize"/>
+      </call>
+      <call method="addLoader">
+        <argument>thumbnail</argument>
+        <argument type="service" id="liip_imagine.filter.loader.thumbnail"/>
+      </call>
+      <call method="addLoader">
+        <argument>crop</argument>
+        <argument type="service" id="liip_imagine.filter.loader.crop"/>
+      </call>
+      <call method="addLoader">
+        <argument>grayscale</argument>
+        <argument type="service" id="liip_imagine.filter.loader.grayscale"/>
+      </call>
+      <call method="addLoader">
+        <argument>paste</argument>
+        <argument type="service" id="liip_imagine.filter.loader.paste"/>
+      </call>
+      <call method="addLoader">
+        <argument>watermark</argument>
+        <argument type="service" id="liip_imagine.filter.loader.watermark"/>
+      </call>
+      <call method="addLoader">
+        <argument>background</argument>
+        <argument type="service" id="liip_imagine.filter.loader.background"/>
+      </call>
+      <call method="addLoader">
+        <argument>strip</argument>
+        <argument type="service" id="liip_imagine.filter.loader.strip"/>
+      </call>
+      <call method="addLoader">
+        <argument>upscale</argument>
+        <argument type="service" id="liip_imagine.filter.loader.upscale"/>
+      </call>
+      <call method="addLoader">
+        <argument>downscale</argument>
+        <argument type="service" id="liip_imagine.filter.loader.downscale"/>
+      </call>
+      <call method="addLoader">
+        <argument>auto_rotate</argument>
+        <argument type="service" id="liip_imagine.filter.loader.auto_rotate"/>
+      </call>
+      <call method="addLoader">
+        <argument>rotate</argument>
+        <argument type="service" id="liip_imagine.filter.loader.rotate"/>
+      </call>
+      <call method="addLoader">
+        <argument>interlace</argument>
+        <argument type="service" id="liip_imagine.filter.loader.interlace"/>
+      </call>
+      <call method="addPostProcessor">
+        <argument>jpegoptim</argument>
+        <argument type="service" id="liip_imagine.filter.post_processor.jpegoptim"/>
+      </call>
+      <call method="addPostProcessor">
+        <argument>optipng</argument>
+        <argument type="service" id="liip_imagine.filter.post_processor.optipng"/>
+      </call>
+      <call method="addPostProcessor">
+        <argument>pngquant</argument>
+        <argument type="service" id="liip_imagine.filter.post_processor.pngquant"/>
+      </call>
+      <call method="addPostProcessor">
+        <argument>mozjpeg</argument>
+        <argument type="service" id="liip_imagine.filter.post_processor.mozjpeg"/>
+      </call>
+    </service>
+    <service id="liip_imagine.data.manager" class="Liip\ImagineBundle\Imagine\Data\DataManager">
+      <argument type="service" id="liip_imagine.binary.mime_type_guesser"/>
+      <argument type="service" id="liip_imagine.extension_guesser"/>
+      <argument type="service" id="liip_imagine.filter.configuration"/>
+      <argument>default</argument>
+      <argument>null</argument>
+      <call method="addLoader">
+        <argument>default</argument>
+        <argument type="service" id="liip_imagine.binary.loader.default"/>
+      </call>
+    </service>
+    <service id="liip_imagine.cache.manager" class="Liip\ImagineBundle\Imagine\Cache\CacheManager">
+      <argument type="service" id="liip_imagine.filter.configuration"/>
+      <argument type="service" id="router"/>
+      <argument type="service" id="liip_imagine.cache.signer"/>
+      <argument type="service" id="debug.event_dispatcher"/>
+      <argument>default</argument>
+      <call method="addResolver">
+        <argument>default</argument>
+        <argument type="service" id="liip_imagine.cache.resolver.default"/>
+      </call>
+      <call method="addResolver">
+        <argument>no_cache</argument>
+        <argument type="service" id="liip_imagine.cache.resolver.no_cache_web_path"/>
+      </call>
+    </service>
+    <service id="liip_imagine.filter.configuration" class="Liip\ImagineBundle\Imagine\Filter\FilterConfiguration">
+      <argument type="collection">
+        <argument key="cache" type="collection">
+          <argument key="quality">100</argument>
+          <argument key="jpeg_quality">null</argument>
+          <argument key="png_compression_level">null</argument>
+          <argument key="png_compression_filter">null</argument>
+          <argument key="format">null</argument>
+          <argument key="animated">false</argument>
+          <argument key="cache">null</argument>
+          <argument key="data_loader">null</argument>
+          <argument key="default_image">null</argument>
+          <argument key="filters" type="collection"/>
+          <argument key="post_processors" type="collection"/>
+        </argument>
+        <argument key="profile_pic" type="collection">
+          <argument key="quality">100</argument>
+          <argument key="filters" type="collection">
+            <argument key="relative_resize" type="collection">
+              <argument key="heighten">300</argument>
+            </argument>
+          </argument>
+          <argument key="jpeg_quality">null</argument>
+          <argument key="png_compression_level">null</argument>
+          <argument key="png_compression_filter">null</argument>
+          <argument key="format">null</argument>
+          <argument key="animated">false</argument>
+          <argument key="cache">null</argument>
+          <argument key="data_loader">null</argument>
+          <argument key="default_image">null</argument>
+          <argument key="post_processors" type="collection"/>
+        </argument>
+      </argument>
+    </service>
+    <service id="liip_imagine.controller" class="Liip\ImagineBundle\Controller\ImagineController">
+      <argument type="service" id="liip_imagine.data.manager"/>
+      <argument type="service" id="liip_imagine.filter.manager"/>
+      <argument type="service" id="liip_imagine.cache.manager"/>
+      <argument type="service" id="liip_imagine.cache.signer"/>
+      <argument type="service" id="logger" on-invalid="ignore"/>
+    </service>
+    <service id="liip_imagine.templating.helper" class="Liip\ImagineBundle\Templating\Helper\ImagineHelper">
+      <tag name="templating.helper" alias="imagine"/>
+      <argument type="service" id="liip_imagine.cache.manager"/>
+    </service>
+    <service id="liip_imagine.filter.loader.relative_resize" class="Liip\ImagineBundle\Imagine\Filter\Loader\RelativeResizeFilterLoader">
+      <tag name="liip_imagine.filter.loader" loader="relative_resize"/>
+    </service>
+    <service id="liip_imagine.filter.loader.resize" class="Liip\ImagineBundle\Imagine\Filter\Loader\ResizeFilterLoader">
+      <tag name="liip_imagine.filter.loader" loader="resize"/>
+    </service>
+    <service id="liip_imagine.filter.loader.thumbnail" class="Liip\ImagineBundle\Imagine\Filter\Loader\ThumbnailFilterLoader">
+      <tag name="liip_imagine.filter.loader" loader="thumbnail"/>
+    </service>
+    <service id="liip_imagine.filter.loader.crop" class="Liip\ImagineBundle\Imagine\Filter\Loader\CropFilterLoader">
+      <tag name="liip_imagine.filter.loader" loader="crop"/>
+    </service>
+    <service id="liip_imagine.filter.loader.grayscale" class="Liip\ImagineBundle\Imagine\Filter\Loader\GrayscaleFilterLoader">
+      <tag name="liip_imagine.filter.loader" loader="grayscale"/>
+    </service>
+    <service id="liip_imagine.filter.loader.paste" class="Liip\ImagineBundle\Imagine\Filter\Loader\PasteFilterLoader">
+      <tag name="liip_imagine.filter.loader" loader="paste"/>
+      <argument type="service" id="liip_imagine"/>
+      <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\app</argument>
+    </service>
+    <service id="liip_imagine.filter.loader.watermark" class="Liip\ImagineBundle\Imagine\Filter\Loader\WatermarkFilterLoader">
+      <tag name="liip_imagine.filter.loader" loader="watermark"/>
+      <argument type="service" id="liip_imagine"/>
+      <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\app</argument>
+    </service>
+    <service id="liip_imagine.filter.loader.background" class="Liip\ImagineBundle\Imagine\Filter\Loader\BackgroundFilterLoader">
+      <tag name="liip_imagine.filter.loader" loader="background"/>
+      <argument type="service" id="liip_imagine"/>
+    </service>
+    <service id="liip_imagine.filter.loader.strip" class="Liip\ImagineBundle\Imagine\Filter\Loader\StripFilterLoader">
+      <tag name="liip_imagine.filter.loader" loader="strip"/>
+    </service>
+    <service id="liip_imagine.filter.loader.upscale" class="Liip\ImagineBundle\Imagine\Filter\Loader\UpscaleFilterLoader">
+      <tag name="liip_imagine.filter.loader" loader="upscale"/>
+    </service>
+    <service id="liip_imagine.filter.loader.downscale" class="Liip\ImagineBundle\Imagine\Filter\Loader\DownscaleFilterLoader">
+      <tag name="liip_imagine.filter.loader" loader="downscale"/>
+    </service>
+    <service id="liip_imagine.filter.loader.auto_rotate" class="Liip\ImagineBundle\Imagine\Filter\Loader\AutoRotateFilterLoader">
+      <tag name="liip_imagine.filter.loader" loader="auto_rotate"/>
+    </service>
+    <service id="liip_imagine.filter.loader.rotate" class="Liip\ImagineBundle\Imagine\Filter\Loader\RotateFilterLoader">
+      <tag name="liip_imagine.filter.loader" loader="rotate"/>
+    </service>
+    <service id="liip_imagine.filter.loader.interlace" class="Liip\ImagineBundle\Imagine\Filter\Loader\InterlaceFilterLoader">
+      <tag name="liip_imagine.filter.loader" loader="interlace"/>
+    </service>
+    <service id="liip_imagine.binary.loader.prototype.filesystem" class="Liip\ImagineBundle\Binary\Loader\FileSystemLoader">
+      <argument type="service" id="liip_imagine.mime_type_guesser"/>
+      <argument type="service" id="liip_imagine.extension_guesser"/>
+      <argument></argument>
+    </service>
+    <service id="liip_imagine.binary.loader.prototype.stream" class="Liip\ImagineBundle\Binary\Loader\StreamLoader">
+      <argument></argument>
+      <argument></argument>
+    </service>
+    <service id="liip_imagine.cache.resolver.no_cache_web_path" class="Liip\ImagineBundle\Imagine\Cache\Resolver\NoCacheWebPathResolver">
+      <tag name="liip_imagine.cache.resolver" resolver="no_cache"/>
+      <argument type="service" id="router.request_context"/>
+    </service>
+    <service id="liip_imagine.form.type.image" class="Liip\ImagineBundle\Form\Type\ImageType">
+      <tag name="form.type" alias="liip_imagine_image"/>
+    </service>
+    <service id="liip_imagine.mime_type_guesser" class="Symfony\Component\HttpFoundation\File\MimeType\MimeTypeGuesserInterface">
+      <factory class="Symfony\Component\HttpFoundation\File\MimeType\MimeTypeGuesser" method="getInstance"/>
+    </service>
+    <service id="liip_imagine.extension_guesser" class="Symfony\Component\HttpFoundation\File\MimeType\ExtensionGuesserInterface">
+      <factory class="Symfony\Component\HttpFoundation\File\MimeType\ExtensionGuesser" method="getInstance"/>
+    </service>
+    <service id="liip_imagine.binary.mime_type_guesser" class="Liip\ImagineBundle\Binary\SimpleMimeTypeGuesser">
+      <argument type="service" id="liip_imagine.mime_type_guesser"/>
+    </service>
+    <service id="liip_imagine.cache.signer" class="Liip\ImagineBundle\Imagine\Cache\Signer">
+      <argument>b47ff8a4d708c564e3dd887eeacfe00d9bbc519e</argument>
+    </service>
+    <service id="liip_imagine.filter.post_processor.jpegoptim" class="Liip\ImagineBundle\Imagine\Filter\PostProcessor\JpegOptimPostProcessor">
+      <tag name="liip_imagine.filter.post_processor" post_processor="jpegoptim"/>
+      <argument>/usr/bin/jpegoptim</argument>
+      <argument>true</argument>
+      <argument>null</argument>
+      <argument>true</argument>
+    </service>
+    <service id="liip_imagine.filter.post_processor.optipng" class="Liip\ImagineBundle\Imagine\Filter\PostProcessor\OptiPngPostProcessor">
+      <tag name="liip_imagine.filter.post_processor" post_processor="optipng"/>
+      <argument>/usr/bin/optipng</argument>
+      <argument>7</argument>
+      <argument>true</argument>
+    </service>
+    <service id="liip_imagine.filter.post_processor.pngquant" class="Liip\ImagineBundle\Imagine\Filter\PostProcessor\PngquantPostProcessor">
+      <tag name="liip_imagine.filter.post_processor" post_processor="pngquant"/>
+      <argument>/usr/bin/pngquant</argument>
+    </service>
+    <service id="liip_imagine.filter.post_processor.mozjpeg" class="Liip\ImagineBundle\Imagine\Filter\PostProcessor\MozJpegPostProcessor">
+      <tag name="liip_imagine.filter.post_processor" post_processor="mozjpeg"/>
+      <argument>/opt/mozjpeg/bin/cjpeg</argument>
     </service>
     <service id="monolog.logger.request" class="Symfony\Bridge\Monolog\Logger">
       <argument>request</argument>
@@ -3840,6 +4165,10 @@
         <argument>SmileAdmin</argument>
       </call>
       <call method="addPath">
+        <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\vendor\liip\imagine-bundle/Resources/views</argument>
+        <argument>LiipImagine</argument>
+      </call>
+      <call method="addPath">
         <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\app/Resources/views</argument>
       </call>
       <call method="addPath">
@@ -3972,6 +4301,13 @@
       </call>
     </service>
     <service id="fos_rest.inflector" class="FOS\RestBundle\Inflector\DoctrineInflector"/>
+    <service id="liip_imagine" class="Imagine\Gd\Imagine">
+      <call method="setMetadataReader">
+        <argument type="service">
+          <service class="Imagine\Image\Metadata\ExifMetadataReader" public="false"/>
+        </argument>
+      </call>
+    </service>
     <service id="fos_rest.serializer" class="FOS\RestBundle\Serializer\SymfonySerializerAdapter" lazy="true">
       <argument type="service" id="serializer"/>
     </service>
