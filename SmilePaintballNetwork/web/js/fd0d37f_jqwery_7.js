@@ -106,3 +106,22 @@ function connectToIo()
         }
     });
 }
+
+//exploreFacebookVideo('https://www.facebook.com/smilepaintball/videos/1792202604329219/')
+function exploreFacebookVideo(fb_url)
+{
+    var htmlToPrepare = '<div class="fb-video" data-href="'+fb_url+'" data-width="700px" data-show-text="false" id="newFacebookLink"><blockquote cite="'+fb_url+'" class="fb-xfbml-parse-ignore"><a href="'+fb_url+'"></a> </blockquote></div>';
+    document.getElementById('facebookContainer').innerHTML=htmlToPrepare;
+    FB.XFBML.parse(function(){
+        var url = $('._1p6f')[0];
+        //var url =document.getElementsByClassName('._1p6f')[0];
+        console.log(url);
+    });
+    /*
+     FB.XFBML.parse(document.getElementById('facebookContainer'), function(){
+     var url = $('._1p6f')[0].attr('src');
+     console.log('url');
+     });
+     */
+
+}

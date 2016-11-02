@@ -8,6 +8,9 @@
 
 namespace Smile\PlatformBundle\Controller;
 
+use Facebook\Facebook;
+use Facebook\FacebookApp;
+use Facebook\FacebookRequest;
 use Smile\PlatformBundle\Entity\Post;
 use Smile\PlatformBundle\Entity\PostPic;
 use Smile\PlatformBundle\Form\PostPicType;
@@ -73,6 +76,19 @@ class PostController extends Controller
                     $picName='uploads/thumbnails/yt_'.time().'.jpg';
                     file_put_contents($picName, file_get_contents('http://img.youtube.com/vi/'.$post->getYoutubeId().'/mqdefault.jpg'));
                     $post->setThumbnails($picName);
+
+                    $dataManager = $this->get('liip_imagine.data.manager');    // the data manager service
+                    $image = $dataManager->find('profile_pic', $picName);
+
+
+
+                    $thumb = $this->get('liip_imagine.filter.manager')->applyFilter($image, 'profile_pic')->getContent();
+                    $f = fopen($picName, 'w');// create thumbnail file
+                    //dump($this->getUploadDir().'/'.$name);
+                    fwrite($f, $thumb);                                             // write the thumbnail
+                    fclose($f);
+
+
                 }
 
                 $urlFb = explode('facebook.com', $post->getUrl());
@@ -82,13 +98,30 @@ class PostController extends Controller
                     $urlVideoFb = explode('/videos/', $post->getUrl());
                     $urlPictureFb = explode('/photos/', $post->getUrl());
 
+
+
+
+
+
                 }
 
                 if (count($urlVideoFb) > 1) {
                     $post->setType('video_facebook');
 
-                    $picName='uploads/thumbnails/yt_'.time().'.jpg';
+                    $picName='uploads/thumbnails/fb_'.time().'.jpg';
                     file_put_contents($picName, file_get_contents('https://graph.facebook.com/'.$post->getFacebookId().'/picture'));
+                    $post->setThumbnails($picName);
+
+                    $dataManager = $this->get('liip_imagine.data.manager');    // the data manager service
+                    $image = $dataManager->find('profile_pic', $picName);
+
+
+
+                    $thumb = $this->get('liip_imagine.filter.manager')->applyFilter($image, 'profile_pic')->getContent();
+                    $f = fopen($picName, 'w');// create thumbnail file
+                    //dump($this->getUploadDir().'/'.$name);
+                    fwrite($f, $thumb);                                             // write the thumbnail
+                    fclose($f);
 
                     //$picName='uploads/thumbnails/fb'.time().'jpg';
                     //file_put_contents($picName, file_get_contents('https://graph.facebook.com/{{ post.getFacebookId() }}/picture'));
@@ -96,8 +129,20 @@ class PostController extends Controller
 
                 } elseif (count($urlPictureFb) > 1) {
                     $post->setType('picture_facebook');
-                    $picName='uploads/thumbnails/yt_'.time().'.jpg';
+                    $picName='uploads/thumbnails/fb_'.time().'.jpg';
                     file_put_contents($picName, file_get_contents('https://graph.facebook.com/'.$post->getFacebookId().'/picture'));
+                    $post->setThumbnails($picName);
+
+                    $dataManager = $this->get('liip_imagine.data.manager');    // the data manager service
+                    $image = $dataManager->find('profile_pic', $picName);
+
+
+
+                    $thumb = $this->get('liip_imagine.filter.manager')->applyFilter($image, 'profile_pic')->getContent();
+                    $f = fopen($picName, 'w');// create thumbnail file
+                    //dump($this->getUploadDir().'/'.$name);
+                    fwrite($f, $thumb);                                             // write the thumbnail
+                    fclose($f);
                 }
 
 

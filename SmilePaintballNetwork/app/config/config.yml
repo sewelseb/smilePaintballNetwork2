@@ -159,3 +159,7 @@ liip_imagine :
           quality: 100
           filters:
             relative_resize: { heighten: 300 }
+        thumbnails:
+          quality: 100
+          filters:
+            relative_resize: { heighten: 400 }

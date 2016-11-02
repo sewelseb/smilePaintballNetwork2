@@ -8,11 +8,13 @@
       <library name="PHARS">
         <CLASSES>
           <root url="phar://$MODULE_DIR$/SmilePaintballNetwork/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/SmilePaintballNetwork/vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
           <root url="phar://$MODULE_DIR$/SmilePaintballNetwork/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
           <root url="phar://$MODULE_DIR$/symfony.phar/" />
         </CLASSES>
         <SOURCES>
           <root url="phar://$MODULE_DIR$/SmilePaintballNetwork/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/SmilePaintballNetwork/vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
           <root url="phar://$MODULE_DIR$/SmilePaintballNetwork/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
           <root url="phar://$MODULE_DIR$/symfony.phar/" />
         </SOURCES>

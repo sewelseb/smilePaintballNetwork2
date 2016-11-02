@@ -2,19 +2,20 @@
 
 {% block openGraph %}
     <meta property="og:title" content="{{ post.title }}" />
+    <!-- facebook id: {{ post.getFacebookId() }}-->
     {% if post.type=='video_youtube' %}
         <meta property="og:image" content="https://smilepaintball.com/{{ post.getThumbnails() }}" />
     {% endif %}
     {% if post.type=='video_facebook' %}
         {% if post.getFacebookId()!='' %}
-            <meta property="og:image" content="https://smilepaintball.com/{{ post.getThumbnails() }}" />
+            <meta property="og:image" content="https://smilepaintball.com/{{ post.getThumbnails()  }}" />
         {% endif %}
         {% if post.getFacebookId()=='' %}
             <meta property="og:image" content="http://smilepaintball.com/images/logo.png" />
         {% endif %}
     {% endif %}
     {% if post.type=='picture_facebook' %}
-        <meta property="og:image" content="https://smilepaintball.com/{{ post.getThumbnails() }}" />
+        <meta property="og:image" content="https://smilepaintball.com/{{ post.getThumbnails()  }}" />
     {% endif %}
     {% if post.type=='picture_externalUrl' %}
         <meta property="og:image" content="{{ post.url }}" />

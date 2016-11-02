@@ -347,6 +347,21 @@ class Post
                 if (!empty($query['v']))
                     return $query['v'];
             }
+            $tab =array();
+            $i=0;
+            foreach($tmp as $itt)
+            {
+                if (is_numeric($itt) && intval($itt)>1000)
+                {
+                    $tab[$i] = $itt;
+                    $i++;
+                }
+            }
+            if($i>0)
+            {
+                //return 'test';
+                return $tab[count($tab)-1];
+            }
 
         return null;
 
