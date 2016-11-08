@@ -105,6 +105,15 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
 
         }
 
+        // skynet_homepage
+        if (rtrim($pathinfo, '/') === '/skynet') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'skynet_homepage');
+            }
+
+            return array (  '_controller' => 'SkynetBundle\\Controller\\DefaultController::indexAction',  '_route' => 'skynet_homepage',);
+        }
+
         // smile_admin_homepage
         if (rtrim($pathinfo, '/') === '/admin') {
             if (substr($pathinfo, -1) !== '/') {

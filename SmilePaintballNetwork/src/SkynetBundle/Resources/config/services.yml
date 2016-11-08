@@ -1,0 +1,4 @@
+services:
+#    skynet.example:
+#        class: SkynetBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

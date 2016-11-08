@@ -25,6 +25,7 @@ class AppKernel extends Kernel
             new HWI\Bundle\OAuthBundle\HWIOAuthBundle(),
             new Smile\AdminBundle\SmileAdminBundle(),
             new Liip\ImagineBundle\LiipImagineBundle(),
+            new SkynetBundle\SkynetBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

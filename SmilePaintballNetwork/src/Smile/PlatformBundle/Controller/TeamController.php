@@ -55,7 +55,7 @@ class TeamController extends Controller
 
             return $this->render('SmilePlatformBundle::Default/form/actualise.html.twig', array(
 
-                'form' => $form->createView(),
+                'formCreateTeam' => $form->createView(),
 
             ));
 
@@ -63,7 +63,7 @@ class TeamController extends Controller
 
         return $this->render('SmilePlatformBundle::Default/form/createTeam.html.twig', array(
 
-            'form' => $form->createView(),
+            'formCreateTeam' => $form->createView(),
 
         ));
 
@@ -144,7 +144,7 @@ class TeamController extends Controller
 
         return $this->render('SmilePlatformBundle::Default/form/createTeam.html.twig', array(
 
-            'form' => $form->createView(),
+            'formCreateTeam' => $form->createView(),
 
         ));
     }

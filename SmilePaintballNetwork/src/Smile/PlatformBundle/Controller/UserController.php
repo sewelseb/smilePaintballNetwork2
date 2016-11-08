@@ -82,14 +82,14 @@ class UserController extends Controller
 
             return $this->render('SmilePlatformBundle::Default/form/actualise.html.twig', array(
 
-                'form' => $form->createView(),
+                'formEditProfile' => $form->createView(),
 
             ));
         }
 
         return $this->render('SmileUserBundle::Default/form/editProfile.html.twig', array(
 
-            'form' => $form->createView(),
+            'formEditProfile' => $form->createView(),
 
         ));
     }

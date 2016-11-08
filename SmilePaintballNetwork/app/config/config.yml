@@ -6,6 +6,7 @@ imports:
     - { resource: "@SmileUserBundle/Resources/config/services.yml" }
     - { resource: "@SmileApiBundle/Resources/config/services.yml" }
     - { resource: "@SmileAdminBundle/Resources/config/services.yml" }
+    - { resource: "@SkynetBundle/Resources/config/services.yml" }
 
 
 

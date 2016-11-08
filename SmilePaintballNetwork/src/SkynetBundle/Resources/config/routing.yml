@@ -1,0 +1,5 @@
+skynet_homepage:
+    path:     /
+    defaults: { _controller: SkynetBundle:Default:index }
+
+

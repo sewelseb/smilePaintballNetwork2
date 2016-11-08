@@ -1,17 +1,17 @@
-{{ form_start(form) }}
-    {{ form_errors(form) }}
-<div class="form-group text-center">
-    {{ form_widget(form.name, {'attr': {'class': 'form-control input-lg', 'placeholder': 'Team name', 'maxlength': '255'}}) }}
-</div>
-<div class="form-group text-center">
-    {{ form_label(form.teamPicture,"Team logo:", {'label_attr': {'class': 'pull-left'}}) }}<br/>
-    <input type="hidden" name="MAX_FILE_SIZE" value="3000000" />
-    {{ form_widget(form.teamPicture.file, {'attr': {'class': '','accept':'image/*'}}) }}
-</div>
+{{ form_start(formCreateTeam, {'attr': {'class': 'formCreateTeam'}}) }}
+    {{ form_errors(formCreateTeam) }}
+    <div class="form-group text-center">
+        {{ form_widget(formCreateTeam.name, {'attr': {'class': 'form-control input-lg', 'placeholder': 'Team name', 'maxlength': '255'}}) }}
+    </div>
+    <div class="form-group text-center">
+        {{ form_label(formCreateTeam.teamPicture,"Team logo:", {'label_attr': {'class': 'pull-left'}}) }}<br/>
+        <input type="hidden" name="MAX_FILE_SIZE" value="3000000" />
+        {{ form_widget(formCreateTeam.teamPicture.file, {'attr': {'class': '','accept':'image/*'}}) }}
+    </div>
 
-<div class="form-group">
-    {{ form_widget(form.save, {'attr': {'class': 'btn btn-lg btn-primary pull-right'}}) }}
-</div>
+    <div class="form-group">
+        {{ form_widget(formCreateTeam.save, {'attr': {'class': 'btn btn-lg btn-primary pull-right formCreateTeamSubmit','onclick': 'submitNewTeam()'}}) }}
+    </div>
 
-{{ form_rest(form) }}
-{{ form_end(form) }}
+    {{ form_rest(formCreateTeam) }}
+{{ form_end(formCreateTeam) }}

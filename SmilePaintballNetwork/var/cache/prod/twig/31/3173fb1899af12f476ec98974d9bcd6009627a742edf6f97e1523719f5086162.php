@@ -15,8 +15,8 @@ class __TwigTemplate_368f4eed3c28b66460b9bbae10eb9a8c39cbe5e71ce16bc8561c22bf94a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_7d20b08a2be7cebd0eed636a94ff051e3103d196dc7e5ace36d83712ddac9214 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_7d20b08a2be7cebd0eed636a94ff051e3103d196dc7e5ace36d83712ddac9214->enter($__internal_7d20b08a2be7cebd0eed636a94ff051e3103d196dc7e5ace36d83712ddac9214_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/form/addNewPost.html.twig"));
+        $__internal_8e4c9719b6ca068f9666749f2ca583e997cfcdb2d0b2ff5efc7595f7b29fa010 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8e4c9719b6ca068f9666749f2ca583e997cfcdb2d0b2ff5efc7595f7b29fa010->enter($__internal_8e4c9719b6ca068f9666749f2ca583e997cfcdb2d0b2ff5efc7595f7b29fa010_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/form/addNewPost.html.twig"));
 
         // line 1
         echo         $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start');
@@ -52,7 +52,7 @@ class __TwigTemplate_368f4eed3c28b66460b9bbae10eb9a8c39cbe5e71ce16bc8561c22bf94a
             <input type=\"hidden\" name=\"MAX_FILE_SIZE\" value=\"3000000\" />
             ";
         // line 16
-        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock($this->getAttribute($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "picture", array()), "file", array()), 'widget', array("attr" => array("class" => "", "accept" => "image/*")));
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock($this->getAttribute($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "picture", array()), "file", array()), 'widget', array("attr" => array("class" => "image-file", "accept" => "image/*")));
         echo "
         </div>
         <div class=\"col-md-1\">
@@ -72,16 +72,25 @@ class __TwigTemplate_368f4eed3c28b66460b9bbae10eb9a8c39cbe5e71ce16bc8561c22bf94a
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "save", array()), 'widget', array("attr" => array("class" => "btn btn-lg btn-primary pull-right")));
         echo "
     </div>
+    <script type=\"text/javascript\">
+        \$('.image-file').bind('change', function() {
+            if(this.files[0].size>3000000)
+            {
+                alert('This file size is: ' + this.files[0].size/1024/1024 + \"MB, and the maximum accepted is 3MB ;)\");
+            }
+
+        });
+    </script>
 
 ";
-        // line 30
+        // line 39
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'rest');
         echo "
 ";
-        // line 31
+        // line 40
         echo         $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
         
-        $__internal_7d20b08a2be7cebd0eed636a94ff051e3103d196dc7e5ace36d83712ddac9214->leave($__internal_7d20b08a2be7cebd0eed636a94ff051e3103d196dc7e5ace36d83712ddac9214_prof);
+        $__internal_8e4c9719b6ca068f9666749f2ca583e997cfcdb2d0b2ff5efc7595f7b29fa010->leave($__internal_8e4c9719b6ca068f9666749f2ca583e997cfcdb2d0b2ff5efc7595f7b29fa010_prof);
 
     }
 
@@ -97,7 +106,7 @@ class __TwigTemplate_368f4eed3c28b66460b9bbae10eb9a8c39cbe5e71ce16bc8561c22bf94a
 
     public function getDebugInfo()
     {
-        return array (  82 => 31,  78 => 30,  72 => 27,  64 => 22,  55 => 16,  50 => 14,  43 => 10,  37 => 7,  31 => 4,  26 => 2,  22 => 1,);
+        return array (  91 => 40,  87 => 39,  72 => 27,  64 => 22,  55 => 16,  50 => 14,  43 => 10,  37 => 7,  31 => 4,  26 => 2,  22 => 1,);
     }
 
     public function getSource()
@@ -117,7 +126,7 @@ class __TwigTemplate_368f4eed3c28b66460b9bbae10eb9a8c39cbe5e71ce16bc8561c22bf94a
         <div class=\"col-md-6\">
             {{ form_label(form.picture,\"Picture:\", {'label_attr': {'class': 'pull-left'}}) }}
             <input type=\"hidden\" name=\"MAX_FILE_SIZE\" value=\"3000000\" />
-            {{ form_widget(form.picture.file, {'attr': {'class': '', 'accept':'image/*'}}) }}
+            {{ form_widget(form.picture.file, {'attr': {'class': 'image-file', 'accept':'image/*'}}) }}
         </div>
         <div class=\"col-md-1\">
             <H3><strong>OR</strong></H3>
@@ -130,6 +139,15 @@ class __TwigTemplate_368f4eed3c28b66460b9bbae10eb9a8c39cbe5e71ce16bc8561c22bf94a
     <div class=\"form-group\">
         {{ form_widget(form.save, {'attr': {'class': 'btn btn-lg btn-primary pull-right'}}) }}
     </div>
+    <script type=\"text/javascript\">
+        \$('.image-file').bind('change', function() {
+            if(this.files[0].size>3000000)
+            {
+                alert('This file size is: ' + this.files[0].size/1024/1024 + \"MB, and the maximum accepted is 3MB ;)\");
+            }
+
+        });
+    </script>
 
 {{ form_rest(form) }}
 {{ form_end(form) }}";

@@ -114,7 +114,7 @@ function exploreFacebookVideo(fb_url)
     document.getElementById('facebookContainer').innerHTML=htmlToPrepare;
     FB.XFBML.parse(function(){
         var url = $('._1p6f')[0];
-        //var url =document.getElementsByClassName('._1p6f')[0];
+        //var url =document.getElementsByClassName('_1p6f')[0];
         console.log(url);
     });
     /*
@@ -123,5 +123,21 @@ function exploreFacebookVideo(fb_url)
      console.log('url');
      });
      */
+
+}
+
+$('.formCreateTeamSubmit').click(function(){
+    document.getElementsByClassName('formCreateTeam')[0].submit();
+    console.log('test');
+});
+
+function submitEditProfile(){
+    document.getElementsByClassName('formEditProfile')[0].submit();
+    console.log('test');
+
+}
+
+function submitNewTeam(){
+    document.getElementsByClassName('formCreateTeam')[0].submit();
 
 }

@@ -125,3 +125,19 @@ function exploreFacebookVideo(fb_url)
      */
 
 }
+
+$('.formCreateTeamSubmit').click(function(){
+    document.getElementsByClassName('formCreateTeam')[0].submit();
+    console.log('test');
+});
+
+function submitEditProfile(){
+    document.getElementsByClassName('formEditProfile')[0].submit();
+    console.log('test');
+
+}
+
+function submitNewTeam(){
+    document.getElementsByClassName('formCreateTeam')[0].submit();
+
+}
