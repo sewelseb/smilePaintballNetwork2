@@ -110,6 +110,15 @@ class Post
      */
     private $thumbnails;
 
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="first_view", type="boolean", nullable=true)
+     */
+    private $firstView=false;
+
+
+
 
 
     /**
@@ -382,6 +391,23 @@ class Post
     {
         $this->team = $team;
     }
+
+    /**
+     * @return boolean
+     */
+    public function getFirstView()
+    {
+        return $this->firstView;
+    }
+
+    /**
+     * @param boolean $firstView
+     */
+    public function setFirstView($firstView)
+    {
+        $this->firstView = $firstView;
+    }
+
 
 
 

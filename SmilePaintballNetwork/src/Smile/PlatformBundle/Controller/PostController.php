@@ -28,6 +28,8 @@ class PostController extends Controller
 {
     public function addNewAction(Request $request)
     {
+        $redirect = false;
+
         $post = new Post();
 
         $formBuilder = $this->get('form.factory')->createBuilder(FormType::class, $post);
@@ -51,6 +53,9 @@ class PostController extends Controller
         $form = $formBuilder->getForm();
 
         if ($request->isMethod('POST') && $form->handleRequest($request)->isValid()) {
+
+            $redirect = true;
+            $postId = null;
 
             if ($post->getPicture() != null || $post->getUrl() != null) {
                 $post->setType('picture_local');
@@ -152,14 +157,16 @@ class PostController extends Controller
 
                 $em->flush();
 
+                $postId = $post->getId();
 
 
                 $request->getSession()->getFlashBag()->add('notice', 'Post created.');
 
                 //return $this->redirect($request->getUri());
-                return $this->render('SmilePlatformBundle::Default/form/actualise.html.twig', array(
+                return $this->render('SmilePlatformBundle::Default/form/actualiseNewPost.html.twig', array(
 
                     'form' => $form->createView(),
+                    'postId' => $postId
 
                 ));
             }
@@ -172,6 +179,7 @@ class PostController extends Controller
         return $this->render('SmilePlatformBundle::Default/form/addNewPost.html.twig', array(
 
             'form' => $form->createView(),
+
 
         ));
 
@@ -199,6 +207,20 @@ class PostController extends Controller
             ->getRepository('SmilePlatformBundle:Post');
         $post = $postRepo->find(intval($postId));
 
+        $firstView = false;
+
+        if (!$post->getFirstView())
+        {
+            $post->setFirstView(true);
+            //dump($post);
+            $em = $this->getDoctrine()->getManager();
+
+            $em->persist($post);
+
+            $em->flush();
+            $firstView = true;
+        }
+
         $commentRepo = $this
             ->getDoctrine()
             ->getManager()
@@ -207,9 +229,9 @@ class PostController extends Controller
 
 
         return $this->render('SmilePlatformBundle::Default/post.html.twig', array(
-
             'post' => $post,
-            'comments' => $comments
+            'comments' => $comments,
+            'firstView' => $firstView
         ));
     }
 
