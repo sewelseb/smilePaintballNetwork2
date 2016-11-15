@@ -15,8 +15,8 @@ class __TwigTemplate_84fa5c7e2872c12b0f3655ae84ba88855bd91e8051b9f7483db5744a9d3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_690df5a9b0131503d04555ffc5e8d31c9ede680f87daa74d3db7a98dc0d0190d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_690df5a9b0131503d04555ffc5e8d31c9ede680f87daa74d3db7a98dc0d0190d->enter($__internal_690df5a9b0131503d04555ffc5e8d31c9ede680f87daa74d3db7a98dc0d0190d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
+        $__internal_2c6aabdabf8889a0c2af72ba8fcc5fd73b49d1a1d8f8983ebe86e311e8c08746 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_2c6aabdabf8889a0c2af72ba8fcc5fd73b49d1a1d8f8983ebe86e311e8c08746->enter($__internal_2c6aabdabf8889a0c2af72ba8fcc5fd73b49d1a1d8f8983ebe86e311e8c08746_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
 
         // line 1
         echo "<!-- Navigation -->
@@ -117,12 +117,11 @@ class __TwigTemplate_84fa5c7e2872c12b0f3655ae84ba88855bd91e8051b9f7483db5744a9d3
             <div class=\"collapse navbar-collapse pull-right\" id=\"bs-example-navbar-collapse-1\">
                 <ul class=\"nav navbar-nav\">
                     <li>
-                        <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\"><span class=\"yellow-text\">Login</span></a>
+                        <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\"><span class=\"yellow-text\">Connect/Log in</span></a>
                     </li>
-                    <li>
-                        <a href=\"#\" data-toggle=\"modal\" data-target=\"#registerModal\" class=\"yellow-text\"><span class=\"yellow-text\">Register</span></a>
-                    </li>
-                </ul>
+                    ";
+            // line 81
+            echo "                </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -134,16 +133,31 @@ class __TwigTemplate_84fa5c7e2872c12b0f3655ae84ba88855bd91e8051b9f7483db5744a9d3
             <div class=\"modal-content\">
                 <div class=\"modal-header\">
                     <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>
-                    <h4 class=\"modal-title\" id=\"myModalLabel\">Login</h4>
+                    <h4 class=\"modal-title\" id=\"myModalLabel\">Sign up/Login</h4>
                 </div>
                 <div class=\"modal-body\">
-                    <div class=\"form-group text-center\">
+
+                    <div class=\"form-group text-center\" >
                         <a class=\"btn btn-register-facebook\" href=\"#\" onclick=\"fb_login();\">Connect with Facebook</a>
                     </div>
-                    ";
-            // line 99
+                    <H3 class=\"text-center\">OR</H3>
+                    <div class=\"row\">
+                        <div class=\"col-md-6\" style=\"border-right: 1px solid lightgray;\">
+                            <h4>New on Smile ? Sign up !</h4>
+                            ";
+            // line 104
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->renderFragment($this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->controller("SmileUserBundle:Registration:register", array("originalRequest" => $this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()))));
+            echo "
+                        </div>
+                        <div class=\"col-md-6\">
+                            <h4>Already have an account ? Log in !</h4>
+                            ";
+            // line 108
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->renderFragment($this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->controller("FOSUserBundle:Security:login"));
             echo "
+                        </div>
+                    </div>
+                    <div class=\"clearfix\"></div>
                 </div>
 
             </div>
@@ -162,11 +176,9 @@ class __TwigTemplate_84fa5c7e2872c12b0f3655ae84ba88855bd91e8051b9f7483db5744a9d3
                         <a class=\"btn btn-register-facebook\" href=\"#\" onclick=\"fb_login();\">Connect with Facebook</a>
                     </div>
 
-                    ";
-            // line 118
-            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->renderFragment($this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->controller("SmileUserBundle:Registration:register", array("originalRequest" => $this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()))));
-            echo "
-                    <div class=\"clearfix\"></div>
+    ";
+            // line 131
+            echo "                    <div class=\"clearfix\"></div>
                 </div>
 
                 <div class=\"modal-footer\">
@@ -181,7 +193,7 @@ class __TwigTemplate_84fa5c7e2872c12b0f3655ae84ba88855bd91e8051b9f7483db5744a9d3
 ";
         }
         
-        $__internal_690df5a9b0131503d04555ffc5e8d31c9ede680f87daa74d3db7a98dc0d0190d->leave($__internal_690df5a9b0131503d04555ffc5e8d31c9ede680f87daa74d3db7a98dc0d0190d_prof);
+        $__internal_2c6aabdabf8889a0c2af72ba8fcc5fd73b49d1a1d8f8983ebe86e311e8c08746->leave($__internal_2c6aabdabf8889a0c2af72ba8fcc5fd73b49d1a1d8f8983ebe86e311e8c08746_prof);
 
     }
 
@@ -197,7 +209,7 @@ class __TwigTemplate_84fa5c7e2872c12b0f3655ae84ba88855bd91e8051b9f7483db5744a9d3
 
     public function getDebugInfo()
     {
-        return array (  167 => 118,  145 => 99,  113 => 70,  101 => 60,  83 => 45,  63 => 28,  57 => 25,  51 => 22,  39 => 13,  27 => 3,  25 => 2,  22 => 1,);
+        return array (  181 => 131,  156 => 108,  149 => 104,  124 => 81,  113 => 70,  101 => 60,  83 => 45,  63 => 28,  57 => 25,  51 => 22,  39 => 13,  27 => 3,  25 => 2,  22 => 1,);
     }
 
     public function getSource()
@@ -277,11 +289,11 @@ class __TwigTemplate_84fa5c7e2872c12b0f3655ae84ba88855bd91e8051b9f7483db5744a9d3
             <div class=\"collapse navbar-collapse pull-right\" id=\"bs-example-navbar-collapse-1\">
                 <ul class=\"nav navbar-nav\">
                     <li>
-                        <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\"><span class=\"yellow-text\">Login</span></a>
+                        <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\"><span class=\"yellow-text\">Connect/Log in</span></a>
                     </li>
-                    <li>
+                    {#<li>
                         <a href=\"#\" data-toggle=\"modal\" data-target=\"#registerModal\" class=\"yellow-text\"><span class=\"yellow-text\">Register</span></a>
-                    </li>
+                    </li>#}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -294,13 +306,25 @@ class __TwigTemplate_84fa5c7e2872c12b0f3655ae84ba88855bd91e8051b9f7483db5744a9d3
             <div class=\"modal-content\">
                 <div class=\"modal-header\">
                     <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>
-                    <h4 class=\"modal-title\" id=\"myModalLabel\">Login</h4>
+                    <h4 class=\"modal-title\" id=\"myModalLabel\">Sign up/Login</h4>
                 </div>
                 <div class=\"modal-body\">
-                    <div class=\"form-group text-center\">
+
+                    <div class=\"form-group text-center\" >
                         <a class=\"btn btn-register-facebook\" href=\"#\" onclick=\"fb_login();\">Connect with Facebook</a>
                     </div>
-                    {{ render(controller('FOSUserBundle:Security:login')) }}
+                    <H3 class=\"text-center\">OR</H3>
+                    <div class=\"row\">
+                        <div class=\"col-md-6\" style=\"border-right: 1px solid lightgray;\">
+                            <h4>New on Smile ? Sign up !</h4>
+                            {{ render(controller(\"SmileUserBundle:Registration:register\", {'originalRequest': app.request})) }}
+                        </div>
+                        <div class=\"col-md-6\">
+                            <h4>Already have an account ? Log in !</h4>
+                            {{ render(controller('FOSUserBundle:Security:login')) }}
+                        </div>
+                    </div>
+                    <div class=\"clearfix\"></div>
                 </div>
 
             </div>
@@ -319,7 +343,7 @@ class __TwigTemplate_84fa5c7e2872c12b0f3655ae84ba88855bd91e8051b9f7483db5744a9d3
                         <a class=\"btn btn-register-facebook\" href=\"#\" onclick=\"fb_login();\">Connect with Facebook</a>
                     </div>
 
-                    {{ render(controller(\"SmileUserBundle:Registration:register\", {'originalRequest': app.request})) }}
+    {#{{ render(controller(\"SmileUserBundle:Registration:register\", {'originalRequest': app.request})) }}#}
                     <div class=\"clearfix\"></div>
                 </div>
 

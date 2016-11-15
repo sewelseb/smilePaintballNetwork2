@@ -2,48 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd7a3751-cd3c-446f-9dee-7e194977a505" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/web/images/imgForFb.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/web/images/smileyTop.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/sessions/prod/sess_a2t6er2s8r5l5ne18g7iv2qml4" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdUrlGenerator.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdUrlMatcher.php.meta" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdUrlMatcher.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/app/AppKernel.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/app/config/config.yml" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/app/config/routing.yml" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/app/config/security.yml" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/TeamController.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/TeamController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/UserController.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/form/addNewPost.html.twig" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/form/addNewPost.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/form/createTeam.html.twig" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/form/createTeam.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/navbar.html.twig" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/navbar.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/post.html.twig" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/post.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/profile.html.twig" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/profile.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/js/jqwery.js" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/js/jqwery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/UserBundle/Resources/views/Default/form/editProfile.html.twig" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/UserBundle/Resources/views/Default/form/editProfile.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/appDevDebugProjectContainer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/appDevDebugProjectContainer.php.meta" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/appDevDebugProjectContainer.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/appDevDebugProjectContainer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/appDevDebugProjectContainerCompiler.log" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/appDevDebugProjectContainerCompiler.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/23/_23a12d1aa85802e8c4584559288dac38d15b3c5fba1e7019307f2a993a98a796.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/23/_23a12d1aa85802e8c4584559288dac38d15b3c5fba1e7019307f2a993a98a796.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/62/_6282b90c3c35e558f04dc5f180c6060d14842e1ae80b7f2980eaf145c70f72f8.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/62/_6282b90c3c35e558f04dc5f180c6060d14842e1ae80b7f2980eaf145c70f72f8.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/74/5b5b435d536d696c655c506c6174666f726d42756e646c655c436f6e74726f6c6c65725c5465616d436f6e74726f6c6c6572237465616d416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/74/5b5b435d536d696c655c506c6174666f726d42756e646c655c436f6e74726f6c6c65725c5465616d436f6e74726f6c6c6572237465616d416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/83/5b5b435d536d696c655c506c6174666f726d42756e646c655c436f6e74726f6c6c65725c5465616d436f6e74726f6c6c65722365646974416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/83/5b5b435d536d696c655c506c6174666f726d42756e646c655c436f6e74726f6c6c65725c5465616d436f6e74726f6c6c65722365646974416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/da/_dade04c39b872bad9ef72825270797e1a0ed8bdaad4db5771f42ebd79d7c6345.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/da/_dade04c39b872bad9ef72825270797e1a0ed8bdaad4db5771f42ebd79d7c6345.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/e0/5b5b435d536d696c655c506c6174666f726d42756e646c655c436f6e74726f6c6c65725c55736572436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/e0/5b5b435d536d696c655c506c6174666f726d42756e646c655c436f6e74726f6c6c65725c55736572436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/e1/5b5b435d536d696c655c506c6174666f726d42756e646c655c436f6e74726f6c6c65725c5465616d436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/annotations/e1/5b5b435d536d696c655c506c6174666f726d42756e646c655c436f6e74726f6c6c65725c5465616d436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdDebugProjectContainer.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdDebugProjectContainer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdDebugProjectContainer.php.meta" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdDebugProjectContainer.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdDebugProjectContainer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdDebugProjectContainerCompiler.log" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdDebugProjectContainerCompiler.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdUrlGenerator.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdUrlGenerator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdUrlMatcher.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdUrlMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/UserBundle/Resources/views/Registration/register.html.twig" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/UserBundle/Resources/views/Registration/register.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/twig/1f/1ff74ed6d952449de62c05cbc0d06b3611b00a0277bc46229c2413d3622270f2.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/twig/1f/1ff74ed6d952449de62c05cbc0d06b3611b00a0277bc46229c2413d3622270f2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/twig/31/3173fb1899af12f476ec98974d9bcd6009627a742edf6f97e1523719f5086162.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/twig/31/3173fb1899af12f476ec98974d9bcd6009627a742edf6f97e1523719f5086162.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/logs/dev.log" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/logs/dev.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/twig/be/be167d885ea627fa405f53a83d821cb053d529fde5451f1a9b6b3d6fc8712c5f.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/twig/be/be167d885ea627fa405f53a83d821cb053d529fde5451f1a9b6b3d6fc8712c5f.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/twig/e9/e93f1c8b7d13412d72249c45032c17bb643f85327271bf23ae87c358305c848a.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/twig/e9/e93f1c8b7d13412d72249c45032c17bb643f85327271bf23ae87c358305c848a.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/logs/prod.log" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/logs/prod.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/web/js/fd0d37f.js" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/web/js/fd0d37f.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/web/js/fd0d37f_jqwery_7.js" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/web/js/fd0d37f_jqwery_7.js" />
     </list>
     <ignored path="smilePaintballNetwork2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,51 +31,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="addNewPost.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/form/addNewPost.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="32" column="106" selection-start-line="32" selection-start-column="106" selection-end-line="32" selection-end-column="106" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/profile.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3036">
-              <caret line="138" column="62" selection-start-line="138" selection-start-column="62" selection-end-line="138" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="post.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/post.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
+            <state relative-caret-position="739">
               <caret line="60" column="50" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+            <state relative-caret-position="374">
+              <caret line="143" column="30" selection-start-line="143" selection-start-column="30" selection-end-line="143" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/navbar.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1079">
+              <caret line="83" column="14" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
+              <folding>
+                <element signature="e#5396#5438#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostPicType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Form/PostPicType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/UserBundle/Resources/views/Registration/register.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="541">
+              <caret line="47" column="51" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -117,7 +86,7 @@
       <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="739">
               <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
               <folding />
             </state>
@@ -127,7 +96,7 @@
       <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2542">
+            <state relative-caret-position="3608">
               <caret line="164" column="18" selection-start-line="164" selection-start-column="18" selection-end-line="164" selection-end-column="18" />
               <folding />
             </state>
@@ -137,7 +106,7 @@
       <file leaf-file-name="security.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/app/config/security.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
+            <state relative-caret-position="1562">
               <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
               <folding />
             </state>
@@ -154,11 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/app/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="418">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -180,7 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Repository/UpvoteRepository.php" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Repository/DownvoteRepository.php" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/topTen.html.twig" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Entity/Comment.php" />
@@ -195,7 +163,6 @@
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Entity/Team.php" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/UserBundle/Repository/UserRepository.php" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/navbar.html.twig" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/UserBundle/Security/Core/User/FOSUBUserProvider.php" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/ApiBundle/Resources/config/serialization.yml" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/UserBundle/Entity/User.php" />
@@ -227,10 +194,12 @@
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/form/addNewPost.html.twig" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/post.html.twig" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/profile.html.twig" />
-        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/app/config/security.yml" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/SkynetBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/UserBundle/Resources/views/Registration/register.html.twig" />
+        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/navbar.html.twig" />
+        <option value="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig" />
       </list>
     </option>
   </component>
@@ -275,6 +244,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -343,7 +313,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SkynetBundle" />
+              <option name="myItemId" value="Smile" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -365,7 +339,121 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SkynetBundle" />
+              <option name="myItemId" value="Smile" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Security" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmilePaintballNetwork" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Smile" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Registration" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmilePaintballNetwork" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Smile" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmilePaintballNetwork" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Smile" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -391,15 +479,37 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SkynetBundle" />
+              <option name="myItemId" value="Smile" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
+              <option name="myItemId" value="UserBundle" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="Form" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smilePaintballNetwork2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmilePaintballNetwork" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Smile" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -446,7 +556,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -455,19 +564,19 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../rock" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\PlatformBundle\public\js" />
-      <recent name="D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\web\images" />
-      <recent name="D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\web" />
-      <recent name="D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\PlatformBundle\public\js\Angular" />
-      <recent name="D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\UserBundle\Security\Core\User" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\web\images" />
       <recent name="D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\web" />
       <recent name="D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\ApiBundle\Controller" />
       <recent name="D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\PlatformBundle\public" />
       <recent name="D:\wamp64\www\smilePaintballNetwork2" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\PlatformBundle\public\js" />
+      <recent name="D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\web\images" />
+      <recent name="D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\web" />
+      <recent name="D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\PlatformBundle\public\js\Angular" />
+      <recent name="D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\UserBundle\Security\Core\User" />
     </key>
   </component>
   <component name="RunManager">
@@ -566,24 +675,26 @@
       <workItem from="1478109188840" duration="12751000" />
       <workItem from="1478543204238" duration="702000" />
       <workItem from="1478601974352" duration="49000" />
-      <workItem from="1478639225943" duration="1985000" />
+      <workItem from="1478639225943" duration="2638000" />
+      <workItem from="1478764705461" duration="44000" />
+      <workItem from="1479228083551" duration="2152000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223630000" />
+    <option name="totallyTimeSpent" value="226479000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2391" y="-9" width="2418" height="1318" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.206234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21135782" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26539463" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26452732" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957503" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
@@ -604,20 +715,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/UserBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-682">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/public/js/Angular/Controllers/adminStatsCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -704,13 +801,6 @@
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/web/uploads/postPics/seb_1476812196.jpeg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/navbar.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1430">
-          <caret line="98" column="29" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="29" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/composer.json">
@@ -845,7 +935,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7810">
           <caret line="356" column="25" selection-start-line="356" selection-start-column="25" selection-end-line="356" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -853,9 +942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3718">
           <caret line="173" column="34" selection-start-line="173" selection-start-column="20" selection-end-line="173" selection-end-column="34" />
-          <folding>
-            <element signature="e#47#79#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -863,7 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="72" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -871,7 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="148" selection-start-line="12" selection-start-column="119" selection-end-line="12" selection-end-column="148" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -899,33 +983,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/post.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="60" column="50" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2542">
+        <state relative-caret-position="3608">
           <caret line="164" column="18" selection-start-line="164" selection-start-column="18" selection-end-line="164" selection-end-column="18" />
           <folding />
         </state>
@@ -933,7 +993,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
+        <state relative-caret-position="1562">
           <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
           <folding />
         </state>
@@ -949,8 +1009,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="418">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="739">
+          <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/post.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="739">
+          <caret line="60" column="50" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Form/PostPicType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/UserBundle/Resources/views/Registration/register.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="47" column="51" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/navbar.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1079">
+          <caret line="83" column="14" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
+          <folding>
+            <element signature="e#5396#5438#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="143" column="30" selection-start-line="143" selection-start-column="30" selection-end-line="143" selection-end-column="30" />
           <folding />
         </state>
       </provider>

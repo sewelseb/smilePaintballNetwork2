@@ -73,11 +73,11 @@
             <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#" data-toggle="modal" data-target="#loginModal" class="yellow-text"><span class="yellow-text">Login</span></a>
+                        <a href="#" data-toggle="modal" data-target="#loginModal" class="yellow-text"><span class="yellow-text">Connect/Log in</span></a>
                     </li>
-                    <li>
+                    {#<li>
                         <a href="#" data-toggle="modal" data-target="#registerModal" class="yellow-text"><span class="yellow-text">Register</span></a>
-                    </li>
+                    </li>#}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -90,13 +90,25 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Login</h4>
+                    <h4 class="modal-title" id="myModalLabel">Sign up/Login</h4>
                 </div>
                 <div class="modal-body">
-                    <div class="form-group text-center">
+
+                    <div class="form-group text-center" >
                         <a class="btn btn-register-facebook" href="#" onclick="fb_login();">Connect with Facebook</a>
                     </div>
-                    {{ render(controller('FOSUserBundle:Security:login')) }}
+                    <H3 class="text-center">OR</H3>
+                    <div class="row">
+                        <div class="col-md-6" style="border-right: 1px solid lightgray;">
+                            <h4>New on Smile ? Sign up !</h4>
+                            {{ render(controller("SmileUserBundle:Registration:register", {'originalRequest': app.request})) }}
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Already have an account ? Log in !</h4>
+                            {{ render(controller('FOSUserBundle:Security:login')) }}
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
 
             </div>
@@ -115,7 +127,7 @@
                         <a class="btn btn-register-facebook" href="#" onclick="fb_login();">Connect with Facebook</a>
                     </div>
 
-                    {{ render(controller("SmileUserBundle:Registration:register", {'originalRequest': app.request})) }}
+    {#{{ render(controller("SmileUserBundle:Registration:register", {'originalRequest': app.request})) }}#}
                     <div class="clearfix"></div>
                 </div>
 

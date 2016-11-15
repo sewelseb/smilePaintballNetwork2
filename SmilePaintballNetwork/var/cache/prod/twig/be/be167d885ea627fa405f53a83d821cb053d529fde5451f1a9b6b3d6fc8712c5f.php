@@ -16,8 +16,8 @@ class __TwigTemplate_ea2cd563a725c8de83ded36e37e0160a001a197a2cfcc53a3c26345f4dc
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_4930be510bb01d54aa82012b73880f7c5b65d65714e0a8b41a2b958e03958b06 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_4930be510bb01d54aa82012b73880f7c5b65d65714e0a8b41a2b958e03958b06->enter($__internal_4930be510bb01d54aa82012b73880f7c5b65d65714e0a8b41a2b958e03958b06_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle:Registration:register.html.twig"));
+        $__internal_62061b611a220647caf80323798c48b4f70fad8085cd5fa32e66c55e37b06901 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_62061b611a220647caf80323798c48b4f70fad8085cd5fa32e66c55e37b06901->enter($__internal_62061b611a220647caf80323798c48b4f70fad8085cd5fa32e66c55e37b06901_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle:Registration:register.html.twig"));
 
         // line 1
         echo "
@@ -26,14 +26,14 @@ class __TwigTemplate_ea2cd563a725c8de83ded36e37e0160a001a197a2cfcc53a3c26345f4dc
         // line 3
         $this->displayBlock('content', $context, $blocks);
         
-        $__internal_4930be510bb01d54aa82012b73880f7c5b65d65714e0a8b41a2b958e03958b06->leave($__internal_4930be510bb01d54aa82012b73880f7c5b65d65714e0a8b41a2b958e03958b06_prof);
+        $__internal_62061b611a220647caf80323798c48b4f70fad8085cd5fa32e66c55e37b06901->leave($__internal_62061b611a220647caf80323798c48b4f70fad8085cd5fa32e66c55e37b06901_prof);
 
     }
 
     public function block_content($context, array $blocks = array())
     {
-        $__internal_74478a35af720e1a4ce5d62d4dc3ede8eed520cf9b0b2e6cb577a98a37da343a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_74478a35af720e1a4ce5d62d4dc3ede8eed520cf9b0b2e6cb577a98a37da343a->enter($__internal_74478a35af720e1a4ce5d62d4dc3ede8eed520cf9b0b2e6cb577a98a37da343a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_37dad7dbbcb0c0537c2b89c3175ed7a4786b2f57fc8ec8b98c37c145b1a3f978 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_37dad7dbbcb0c0537c2b89c3175ed7a4786b2f57fc8ec8b98c37c145b1a3f978->enter($__internal_37dad7dbbcb0c0537c2b89c3175ed7a4786b2f57fc8ec8b98c37c145b1a3f978_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 4
         echo "    ";
@@ -56,9 +56,9 @@ class __TwigTemplate_ea2cd563a725c8de83ded36e37e0160a001a197a2cfcc53a3c26345f4dc
         echo "    <form action=\"";
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_registration_register");
         echo "\"  method=\"POST\" class=\"fos_user_registration_register\">
-        <div class=\"col-xs-6 col-sm-4\">
+        <div class=\"\">
         </div>
-        <div class=\"col-xs-6 col-sm-4\">
+        <div class=\"\">
             <div class=\"form-group\">
                 <div class=\"input-group\">
                     <span class=\"input-group-addon\" id=\"basic-addon1\"><i class=\"fa fa-user\"></i></span>
@@ -117,14 +117,14 @@ class __TwigTemplate_ea2cd563a725c8de83ded36e37e0160a001a197a2cfcc53a3c26345f4dc
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'widget');
         echo "
             <div class=\"form-inscription-text\">
-                <input type=\"submit\" value=\"Register\" class=\"btn\"/>
+                <input type=\"submit\" value=\"Sign up\" class=\"btn\"/>
             </div>
         </div>
     </form>
 
 ";
         
-        $__internal_74478a35af720e1a4ce5d62d4dc3ede8eed520cf9b0b2e6cb577a98a37da343a->leave($__internal_74478a35af720e1a4ce5d62d4dc3ede8eed520cf9b0b2e6cb577a98a37da343a_prof);
+        $__internal_37dad7dbbcb0c0537c2b89c3175ed7a4786b2f57fc8ec8b98c37c145b1a3f978->leave($__internal_37dad7dbbcb0c0537c2b89c3175ed7a4786b2f57fc8ec8b98c37c145b1a3f978_prof);
 
     }
 
@@ -149,9 +149,9 @@ class __TwigTemplate_ea2cd563a725c8de83ded36e37e0160a001a197a2cfcc53a3c26345f4dc
         </div>
     {% endfor %}
     <form action=\"{{ path('fos_user_registration_register') }}\"  method=\"POST\" class=\"fos_user_registration_register\">
-        <div class=\"col-xs-6 col-sm-4\">
+        <div class=\"\">
         </div>
-        <div class=\"col-xs-6 col-sm-4\">
+        <div class=\"\">
             <div class=\"form-group\">
                 <div class=\"input-group\">
                     <span class=\"input-group-addon\" id=\"basic-addon1\"><i class=\"fa fa-user\"></i></span>
@@ -187,7 +187,7 @@ class __TwigTemplate_ea2cd563a725c8de83ded36e37e0160a001a197a2cfcc53a3c26345f4dc
 
             {{ form_widget(form) }}
             <div class=\"form-inscription-text\">
-                <input type=\"submit\" value=\"Register\" class=\"btn\"/>
+                <input type=\"submit\" value=\"Sign up\" class=\"btn\"/>
             </div>
         </div>
     </form>
