@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd7a3751-cd3c-446f-9dee-7e194977a505" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/appProdUrlGenerator.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/navbar.html.twig" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/navbar.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/UserBundle/Resources/views/Registration/register.html.twig" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/UserBundle/Resources/views/Registration/register.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/twig/1f/1ff74ed6d952449de62c05cbc0d06b3611b00a0277bc46229c2413d3622270f2.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/twig/1f/1ff74ed6d952449de62c05cbc0d06b3611b00a0277bc46229c2413d3622270f2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/twig/be/be167d885ea627fa405f53a83d821cb053d529fde5451f1a9b6b3d6fc8712c5f.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/twig/be/be167d885ea627fa405f53a83d821cb053d529fde5451f1a9b6b3d6fc8712c5f.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/twig/e9/e93f1c8b7d13412d72249c45032c17bb643f85327271bf23ae87c358305c848a.php" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/prod/twig/e9/e93f1c8b7d13412d72249c45032c17bb643f85327271bf23ae87c358305c848a.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/logs/prod.log" afterPath="$PROJECT_DIR$/SmilePaintballNetwork/var/logs/prod.log" />
     </list>
     <ignored path="smilePaintballNetwork2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,8 +37,8 @@
       <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="143" column="30" selection-start-line="143" selection-start-column="30" selection-end-line="143" selection-end-column="30" />
+            <state relative-caret-position="440">
+              <caret line="146" column="47" selection-start-line="146" selection-start-column="47" selection-end-line="146" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -54,8 +47,8 @@
       <file leaf-file-name="navbar.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/navbar.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1079">
-              <caret line="83" column="14" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
+            <state relative-caret-position="248">
+              <caret line="18" column="82" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="82" />
               <folding>
                 <element signature="e#5396#5438#0#HTML" expanded="true" />
               </folding>
@@ -677,16 +670,16 @@
       <workItem from="1478601974352" duration="49000" />
       <workItem from="1478639225943" duration="2638000" />
       <workItem from="1478764705461" duration="44000" />
-      <workItem from="1479228083551" duration="2152000" />
+      <workItem from="1479228083551" duration="2926000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226479000" />
+    <option name="totallyTimeSpent" value="227253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2391" y="-9" width="2418" height="1318" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21135782" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -694,7 +687,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26452732" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26452732" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957503" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1049,8 +1042,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/Blocs/navbar.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1079">
-          <caret line="83" column="14" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
+        <state relative-caret-position="248">
+          <caret line="18" column="82" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="82" />
           <folding>
             <element signature="e#5396#5438#0#HTML" expanded="true" />
           </folding>
@@ -1059,8 +1052,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SmilePaintballNetwork/src/Smile/PlatformBundle/Resources/views/Default/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="143" column="30" selection-start-line="143" selection-start-column="30" selection-end-line="143" selection-end-column="30" />
+        <state relative-caret-position="440">
+          <caret line="146" column="47" selection-start-line="146" selection-start-column="47" selection-end-line="146" selection-end-column="47" />
           <folding />
         </state>
       </provider>

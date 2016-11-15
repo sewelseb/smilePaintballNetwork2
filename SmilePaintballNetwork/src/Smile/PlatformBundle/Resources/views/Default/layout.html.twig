@@ -143,6 +143,10 @@
                 <div>
                     {% if not app.user %}
                         <a class="btn btn-register-facebook" href="#" onclick="fb_login();">Connect with Facebook</a> OR <button class="btn btn-primary"  data-toggle="modal" data-target="#loginModal" > Connect/Sign up</button>
+                    {% else %}
+                        <div class="text-center">
+                            <button class="btn btn-primary text-center" data-toggle="modal" data-target="#newPostModal"><strong>Post your fun</strong></button>
+                        </div>
                     {% endif %}
                 </div>
                 <div class="pull-right">
