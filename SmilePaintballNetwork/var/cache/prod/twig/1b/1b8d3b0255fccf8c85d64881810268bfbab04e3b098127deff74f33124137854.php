@@ -15,8 +15,8 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_36b3db59f4c0b2fa29d2b4551e535cff0080793f9a7e8efc7ea030d998c64ef6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_36b3db59f4c0b2fa29d2b4551e535cff0080793f9a7e8efc7ea030d998c64ef6->enter($__internal_36b3db59f4c0b2fa29d2b4551e535cff0080793f9a7e8efc7ea030d998c64ef6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
+        $__internal_1b80a4cb71182521305b9d6d212a0ba467c163810fbb46c39fba35381b7fe46e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1b80a4cb71182521305b9d6d212a0ba467c163810fbb46c39fba35381b7fe46e->enter($__internal_1b80a4cb71182521305b9d6d212a0ba467c163810fbb46c39fba35381b7fe46e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
 
         // line 1
         echo "<!-- Project One -->
@@ -49,7 +49,7 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
         echo "
                 <div class=\"row\">
                     <a ng-href=\"/platform/profile/{{ post.user.id }}\">
-                        <div class=\"col-md-2 col-xs-3\">
+                        <div class=\"col-md-1 col-xs-3\">
                             <img ng-src=\"/uploads/profilePics/{{post.user.picture.url}}\" class=\"img-responsive profile-pic-small\">
                         </div>
                         <div class=\"col-md-10 col-xs-9\">
@@ -245,7 +245,7 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
 
 ";
         
-        $__internal_36b3db59f4c0b2fa29d2b4551e535cff0080793f9a7e8efc7ea030d998c64ef6->leave($__internal_36b3db59f4c0b2fa29d2b4551e535cff0080793f9a7e8efc7ea030d998c64ef6_prof);
+        $__internal_1b80a4cb71182521305b9d6d212a0ba467c163810fbb46c39fba35381b7fe46e->leave($__internal_1b80a4cb71182521305b9d6d212a0ba467c163810fbb46c39fba35381b7fe46e_prof);
 
     }
 
@@ -282,7 +282,7 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
             {% verbatim %}
                 <div class=\"row\">
                     <a ng-href=\"/platform/profile/{{ post.user.id }}\">
-                        <div class=\"col-md-2 col-xs-3\">
+                        <div class=\"col-md-1 col-xs-3\">
                             <img ng-src=\"/uploads/profilePics/{{post.user.picture.url}}\" class=\"img-responsive profile-pic-small\">
                         </div>
                         <div class=\"col-md-10 col-xs-9\">
