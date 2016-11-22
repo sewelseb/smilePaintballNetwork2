@@ -30,7 +30,7 @@
     {% else %}
         {% set teamText = "" %}
     {% endif %}
-    <meta property="og:description" content="{{ post.title }}. Contend posted on SmilePaintball.com by {{ post.user.username }}{{ teamText }}." />
+    <meta property="og:description" content="{{ post.title }}. Contend posted by {{ post.user.username }}{{ teamText }}." />
 
 {% endblock %}
 
