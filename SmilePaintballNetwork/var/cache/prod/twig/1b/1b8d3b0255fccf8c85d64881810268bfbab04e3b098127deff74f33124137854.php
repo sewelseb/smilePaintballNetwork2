@@ -15,8 +15,8 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d5514fe7a88dcf72aa14d0a2b1428e9882508d595e428d82e5eadd60c777b07c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_d5514fe7a88dcf72aa14d0a2b1428e9882508d595e428d82e5eadd60c777b07c->enter($__internal_d5514fe7a88dcf72aa14d0a2b1428e9882508d595e428d82e5eadd60c777b07c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
+        $__internal_36b3db59f4c0b2fa29d2b4551e535cff0080793f9a7e8efc7ea030d998c64ef6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_36b3db59f4c0b2fa29d2b4551e535cff0080793f9a7e8efc7ea030d998c64ef6->enter($__internal_36b3db59f4c0b2fa29d2b4551e535cff0080793f9a7e8efc7ea030d998c64ef6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
 
         // line 1
         echo "<!-- Project One -->
@@ -45,51 +45,55 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
     <div id=\"contentAllPosts\" hidden>
         <div ng-repeat=\"post in posts | orderBy: '-creationTime'\">
             ";
-        // line 189
+        // line 193
         echo "
+                <div class=\"row\">
+                    <a ng-href=\"/platform/profile/{{ post.user.id }}\">
+                        <div class=\"col-md-2 col-xs-3\">
+                            <img ng-src=\"/uploads/profilePics/{{post.user.picture.url}}\" class=\"img-responsive profile-pic-small\">
+                        </div>
+                        <div class=\"col-md-10 col-xs-9\">
+                            <span ng-if=\"post.user.firstName != '' && post.user.lastName != '' && post.user.firstName != null && post.user.lastName != null\">
+                                 <strong>{{ post.user.firstName }} {{ post.user.lastName }}</strong> posted
+                            </span>
+                            <span ng-if=\"post.user.firstName == '' || post.user.lastName == '' || post.user.firstName == null || post.user.lastName == null\">
+                                <strong>{{ post.user.username }}</strong> posted
+                            </span>
+                        </div>
+                    </a>
+                </div>
                 <div class=\"row\" >
                     <div class=\"col-md-7\">
 
-                            <div ng-if=\"post.type=='video_youtube'\">
-                                <iframe  width=\"100%\"  height=\"300px\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" frameborder=\"0\" allowfullscreen></iframe>
-                            </div>
-                            <div ng-if=\"post.type=='video_facebook'\">
-                                <div class=\"fb-video\" data-href=\"{{ post.url }}\" data-width=\"460px\" data-show-text=\"false\"><blockquote cite=\"{{ post.url }}\" class=\"fb-xfbml-parse-ignore\"><a href=\"{{ post.url }}\"></a>
-                                </blockquote></div>
-                            </div>
-                            <div ng-if=\"post.type=='picture_facebook'\">
-                                <a ng-href=\"/platform/post/{{ post.id }}\">
-                                    <div data-width=\"460px\" class=\"fb-post\" data-href=\"{{ post.url }}\"></div>
-                                </a>
-                            </div>
-                            <div ng-if=\"post.type=='picture_externalUrl'\">
-                                <a ng-href=\"/platform/post/{{ post.id }}\">
-                                    <img class=\"img-responsive\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" alt=\"\">
-                                </a>
-                            </div>
-                            <div ng-if=\"post.type=='picture_local'\">
-                                <a ng-href=\"/platform/post/{{ post.id }}\">
-                                    <img class=\"img-responsive\" ng-src=\"{{post.picture.uploadDir}}/{{post.picture.url}}\" alt=\"\">
-                                </a>
-                            </div>
+                        <div ng-if=\"post.type=='video_youtube'\">
+                            <iframe  width=\"100%\"  height=\"300px\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" frameborder=\"0\" allowfullscreen></iframe>
+                        </div>
+                        <div ng-if=\"post.type=='video_facebook'\">
+                            <div class=\"fb-video\" data-href=\"{{ post.url }}\" data-width=\"460px\" data-show-text=\"false\"><blockquote cite=\"{{ post.url }}\" class=\"fb-xfbml-parse-ignore\"><a href=\"{{ post.url }}\"></a>
+                            </blockquote></div>
+                        </div>
+                        <div ng-if=\"post.type=='picture_facebook'\">
+                            <a ng-href=\"/platform/post/{{ post.id }}\">
+                                <div data-width=\"460px\" class=\"fb-post\" data-href=\"{{ post.url }}\"></div>
+                            </a>
+                        </div>
+                        <div ng-if=\"post.type=='picture_externalUrl'\">
+                            <a ng-href=\"/platform/post/{{ post.id }}\">
+                                <img class=\"img-responsive\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" alt=\"\">
+                            </a>
+                        </div>
+                        <div ng-if=\"post.type=='picture_local'\">
+                            <a ng-href=\"/platform/post/{{ post.id }}\">
+                                <img class=\"img-responsive\" ng-src=\"{{post.picture.uploadDir}}/{{post.picture.url}}\" alt=\"\">
+                            </a>
+                        </div>
 
 
                     </div>
                     <div class=\"col-md-5\">
                         <h3><a ng-href=\"/platform/post/{{ post.id }}\">{{ post.title }}</a></h3>
                         <h4><a ng-href=\"/platform/post/{{ post.id }}\">{{ post.event_name }}</a></h4>
-                        <span ng-if=\"post.user.firstName != '' && post.user.lastName != '' && post.user.firstName != null && post.user.lastName != null\">
-                            <a ng-href=\"/platform/profile/{{ post.user.id }}\">
-                                by <strong>{{ post.user.firstName }} {{ post.user.lastName }}</strong>
-                                <br/>
-                            </a>
-                        </span>
-                        <span ng-if=\"post.user.firstName == '' || post.user.lastName == '' || post.user.firstName == null || post.user.lastName == null\">
-                            <a ng-href=\"/platform/profile/{{ post.user.id }}\">
-                                by <strong>{{ post.user.username }}</strong>
-                                <br/>
-                            </a>
-                        </span>
+
                         <span ng-if=\"post.team\">
                             <a ng-href=\"/platform/team/{{ post.team.id }}\">team: <strong>{{ post.team.name }}</strong></a>
                         </span>
@@ -241,7 +245,7 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
 
 ";
         
-        $__internal_d5514fe7a88dcf72aa14d0a2b1428e9882508d595e428d82e5eadd60c777b07c->leave($__internal_d5514fe7a88dcf72aa14d0a2b1428e9882508d595e428d82e5eadd60c777b07c_prof);
+        $__internal_36b3db59f4c0b2fa29d2b4551e535cff0080793f9a7e8efc7ea030d998c64ef6->leave($__internal_36b3db59f4c0b2fa29d2b4551e535cff0080793f9a7e8efc7ea030d998c64ef6_prof);
 
     }
 
@@ -257,7 +261,7 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
 
     public function getDebugInfo()
     {
-        return array (  49 => 189,  38 => 6,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
+        return array (  49 => 193,  38 => 6,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
     }
 
     public function getSource()
@@ -276,49 +280,53 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
     <div id=\"contentAllPosts\" hidden>
         <div ng-repeat=\"post in posts | orderBy: '-creationTime'\">
             {% verbatim %}
+                <div class=\"row\">
+                    <a ng-href=\"/platform/profile/{{ post.user.id }}\">
+                        <div class=\"col-md-2 col-xs-3\">
+                            <img ng-src=\"/uploads/profilePics/{{post.user.picture.url}}\" class=\"img-responsive profile-pic-small\">
+                        </div>
+                        <div class=\"col-md-10 col-xs-9\">
+                            <span ng-if=\"post.user.firstName != '' && post.user.lastName != '' && post.user.firstName != null && post.user.lastName != null\">
+                                 <strong>{{ post.user.firstName }} {{ post.user.lastName }}</strong> posted
+                            </span>
+                            <span ng-if=\"post.user.firstName == '' || post.user.lastName == '' || post.user.firstName == null || post.user.lastName == null\">
+                                <strong>{{ post.user.username }}</strong> posted
+                            </span>
+                        </div>
+                    </a>
+                </div>
                 <div class=\"row\" >
                     <div class=\"col-md-7\">
 
-                            <div ng-if=\"post.type=='video_youtube'\">
-                                <iframe  width=\"100%\"  height=\"300px\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" frameborder=\"0\" allowfullscreen></iframe>
-                            </div>
-                            <div ng-if=\"post.type=='video_facebook'\">
-                                <div class=\"fb-video\" data-href=\"{{ post.url }}\" data-width=\"460px\" data-show-text=\"false\"><blockquote cite=\"{{ post.url }}\" class=\"fb-xfbml-parse-ignore\"><a href=\"{{ post.url }}\"></a>
-                                </blockquote></div>
-                            </div>
-                            <div ng-if=\"post.type=='picture_facebook'\">
-                                <a ng-href=\"/platform/post/{{ post.id }}\">
-                                    <div data-width=\"460px\" class=\"fb-post\" data-href=\"{{ post.url }}\"></div>
-                                </a>
-                            </div>
-                            <div ng-if=\"post.type=='picture_externalUrl'\">
-                                <a ng-href=\"/platform/post/{{ post.id }}\">
-                                    <img class=\"img-responsive\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" alt=\"\">
-                                </a>
-                            </div>
-                            <div ng-if=\"post.type=='picture_local'\">
-                                <a ng-href=\"/platform/post/{{ post.id }}\">
-                                    <img class=\"img-responsive\" ng-src=\"{{post.picture.uploadDir}}/{{post.picture.url}}\" alt=\"\">
-                                </a>
-                            </div>
+                        <div ng-if=\"post.type=='video_youtube'\">
+                            <iframe  width=\"100%\"  height=\"300px\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" frameborder=\"0\" allowfullscreen></iframe>
+                        </div>
+                        <div ng-if=\"post.type=='video_facebook'\">
+                            <div class=\"fb-video\" data-href=\"{{ post.url }}\" data-width=\"460px\" data-show-text=\"false\"><blockquote cite=\"{{ post.url }}\" class=\"fb-xfbml-parse-ignore\"><a href=\"{{ post.url }}\"></a>
+                            </blockquote></div>
+                        </div>
+                        <div ng-if=\"post.type=='picture_facebook'\">
+                            <a ng-href=\"/platform/post/{{ post.id }}\">
+                                <div data-width=\"460px\" class=\"fb-post\" data-href=\"{{ post.url }}\"></div>
+                            </a>
+                        </div>
+                        <div ng-if=\"post.type=='picture_externalUrl'\">
+                            <a ng-href=\"/platform/post/{{ post.id }}\">
+                                <img class=\"img-responsive\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" alt=\"\">
+                            </a>
+                        </div>
+                        <div ng-if=\"post.type=='picture_local'\">
+                            <a ng-href=\"/platform/post/{{ post.id }}\">
+                                <img class=\"img-responsive\" ng-src=\"{{post.picture.uploadDir}}/{{post.picture.url}}\" alt=\"\">
+                            </a>
+                        </div>
 
 
                     </div>
                     <div class=\"col-md-5\">
                         <h3><a ng-href=\"/platform/post/{{ post.id }}\">{{ post.title }}</a></h3>
                         <h4><a ng-href=\"/platform/post/{{ post.id }}\">{{ post.event_name }}</a></h4>
-                        <span ng-if=\"post.user.firstName != '' && post.user.lastName != '' && post.user.firstName != null && post.user.lastName != null\">
-                            <a ng-href=\"/platform/profile/{{ post.user.id }}\">
-                                by <strong>{{ post.user.firstName }} {{ post.user.lastName }}</strong>
-                                <br/>
-                            </a>
-                        </span>
-                        <span ng-if=\"post.user.firstName == '' || post.user.lastName == '' || post.user.firstName == null || post.user.lastName == null\">
-                            <a ng-href=\"/platform/profile/{{ post.user.id }}\">
-                                by <strong>{{ post.user.username }}</strong>
-                                <br/>
-                            </a>
-                        </span>
+
                         <span ng-if=\"post.team\">
                             <a ng-href=\"/platform/team/{{ post.team.id }}\">team: <strong>{{ post.team.name }}</strong></a>
                         </span>
