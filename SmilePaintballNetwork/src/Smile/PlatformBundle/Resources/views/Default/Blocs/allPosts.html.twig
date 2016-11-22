@@ -71,9 +71,7 @@
                         <h3><a ng-href="/platform/post/{{ post.id }}">{{ post.title }}</a></h3>
                         <h4><a ng-href="/platform/post/{{ post.id }}">{{ post.event_name }}</a></h4>
 
-                        <span ng-if="post.team">
-                            <a ng-href="/platform/team/{{ post.team.id }}">team: <strong>{{ post.team.name }}</strong></a>
-                        </span>
+                        
                         <br/>
                         <span ng-if="post.eventName && post.eventName != ''">
                             Event: {{ post.eventName }}
