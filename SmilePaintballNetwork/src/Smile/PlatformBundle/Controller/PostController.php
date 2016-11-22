@@ -42,7 +42,7 @@ class PostController extends Controller
                 'class' =>'SmilePlatformBundle:Team',
                 'choices' => $this->getUser()->getTeams(),
                 'choice_label' => 'name',
-                'placeholder' => 'The team to link to the post',
+                'placeholder' => 'Post as a team:',
                 'required' => false
             ))
             ->add('eventName', TextType::class, array('required' => false))

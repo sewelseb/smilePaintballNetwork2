@@ -15,8 +15,8 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_1b80a4cb71182521305b9d6d212a0ba467c163810fbb46c39fba35381b7fe46e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_1b80a4cb71182521305b9d6d212a0ba467c163810fbb46c39fba35381b7fe46e->enter($__internal_1b80a4cb71182521305b9d6d212a0ba467c163810fbb46c39fba35381b7fe46e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
+        $__internal_f13520a05ae8b4efcb2623b06de6d952b3e9e3e0544fa4a01ee5c74fa3f34b9d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_f13520a05ae8b4efcb2623b06de6d952b3e9e3e0544fa4a01ee5c74fa3f34b9d->enter($__internal_f13520a05ae8b4efcb2623b06de6d952b3e9e3e0544fa4a01ee5c74fa3f34b9d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
 
         // line 1
         echo "<!-- Project One -->
@@ -45,22 +45,34 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
     <div id=\"contentAllPosts\" hidden>
         <div ng-repeat=\"post in posts | orderBy: '-creationTime'\">
             ";
-        // line 193
+        // line 205
         echo "
                 <div class=\"row\">
-                    <a ng-href=\"/platform/profile/{{ post.user.id }}\">
-                        <div class=\"col-md-1 col-xs-3\">
-                            <img ng-src=\"/uploads/profilePics/{{post.user.picture.url}}\" class=\"img-responsive profile-pic-small\">
-                        </div>
-                        <div class=\"col-md-10 col-xs-9\">
-                            <span ng-if=\"post.user.firstName != '' && post.user.lastName != '' && post.user.firstName != null && post.user.lastName != null\">
-                                 <strong>{{ post.user.firstName }} {{ post.user.lastName }}</strong> posted
-                            </span>
-                            <span ng-if=\"post.user.firstName == '' || post.user.lastName == '' || post.user.firstName == null || post.user.lastName == null\">
-                                <strong>{{ post.user.username }}</strong> posted
-                            </span>
-                        </div>
-                    </a>
+                    <div ng-if=\"post.team\">
+                        <a ng-href=\"/platform/team/{{ post.team.id }}\">
+                            <div class=\"col-md-1 col-xs-3\">
+                                <img ng-src=\"/teamPicture/profilePics/{{post.team.picture.url}}\" class=\"img-responsive profile-pic-small\">
+                            </div>
+                            <div class=\"col-md-10 col-xs-9\">
+                                <strong>{{ post.team.name }}</strong> (team) posted
+                            </div>
+                        </a>
+                    </div>
+                    <div ng-if=\"!post.team\">
+                        <a ng-href=\"/platform/profile/{{ post.user.id }}\">
+                            <div class=\"col-md-1 col-xs-3\">
+                                <img ng-src=\"/uploads/profilePics/{{post.user.picture.url}}\" class=\"img-responsive profile-pic-small\">
+                            </div>
+                            <div class=\"col-md-10 col-xs-9\">
+                                <span ng-if=\"post.user.firstName != '' && post.user.lastName != '' && post.user.firstName != null && post.user.lastName != null\">
+                                     <strong>{{ post.user.firstName }} {{ post.user.lastName }}</strong> posted
+                                </span>
+                                <span ng-if=\"post.user.firstName == '' || post.user.lastName == '' || post.user.firstName == null || post.user.lastName == null\">
+                                    <strong>{{ post.user.username }}</strong> posted
+                                </span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class=\"row\" >
                     <div class=\"col-md-7\">
@@ -245,7 +257,7 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
 
 ";
         
-        $__internal_1b80a4cb71182521305b9d6d212a0ba467c163810fbb46c39fba35381b7fe46e->leave($__internal_1b80a4cb71182521305b9d6d212a0ba467c163810fbb46c39fba35381b7fe46e_prof);
+        $__internal_f13520a05ae8b4efcb2623b06de6d952b3e9e3e0544fa4a01ee5c74fa3f34b9d->leave($__internal_f13520a05ae8b4efcb2623b06de6d952b3e9e3e0544fa4a01ee5c74fa3f34b9d_prof);
 
     }
 
@@ -261,7 +273,7 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
 
     public function getDebugInfo()
     {
-        return array (  49 => 193,  38 => 6,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
+        return array (  49 => 205,  38 => 6,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
     }
 
     public function getSource()
@@ -281,19 +293,31 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
         <div ng-repeat=\"post in posts | orderBy: '-creationTime'\">
             {% verbatim %}
                 <div class=\"row\">
-                    <a ng-href=\"/platform/profile/{{ post.user.id }}\">
-                        <div class=\"col-md-1 col-xs-3\">
-                            <img ng-src=\"/uploads/profilePics/{{post.user.picture.url}}\" class=\"img-responsive profile-pic-small\">
-                        </div>
-                        <div class=\"col-md-10 col-xs-9\">
-                            <span ng-if=\"post.user.firstName != '' && post.user.lastName != '' && post.user.firstName != null && post.user.lastName != null\">
-                                 <strong>{{ post.user.firstName }} {{ post.user.lastName }}</strong> posted
-                            </span>
-                            <span ng-if=\"post.user.firstName == '' || post.user.lastName == '' || post.user.firstName == null || post.user.lastName == null\">
-                                <strong>{{ post.user.username }}</strong> posted
-                            </span>
-                        </div>
-                    </a>
+                    <div ng-if=\"post.team\">
+                        <a ng-href=\"/platform/team/{{ post.team.id }}\">
+                            <div class=\"col-md-1 col-xs-3\">
+                                <img ng-src=\"/teamPicture/profilePics/{{post.team.picture.url}}\" class=\"img-responsive profile-pic-small\">
+                            </div>
+                            <div class=\"col-md-10 col-xs-9\">
+                                <strong>{{ post.team.name }}</strong> (team) posted
+                            </div>
+                        </a>
+                    </div>
+                    <div ng-if=\"!post.team\">
+                        <a ng-href=\"/platform/profile/{{ post.user.id }}\">
+                            <div class=\"col-md-1 col-xs-3\">
+                                <img ng-src=\"/uploads/profilePics/{{post.user.picture.url}}\" class=\"img-responsive profile-pic-small\">
+                            </div>
+                            <div class=\"col-md-10 col-xs-9\">
+                                <span ng-if=\"post.user.firstName != '' && post.user.lastName != '' && post.user.firstName != null && post.user.lastName != null\">
+                                     <strong>{{ post.user.firstName }} {{ post.user.lastName }}</strong> posted
+                                </span>
+                                <span ng-if=\"post.user.firstName == '' || post.user.lastName == '' || post.user.firstName == null || post.user.lastName == null\">
+                                    <strong>{{ post.user.username }}</strong> posted
+                                </span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class=\"row\" >
                     <div class=\"col-md-7\">
