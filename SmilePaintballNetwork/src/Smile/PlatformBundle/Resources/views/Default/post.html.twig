@@ -39,7 +39,7 @@
 {% endblock %}
 
 {% block leftCollumn %}
-    {% if firstView %}
+    {% if firstView %}{# it shows the poster where he can share his content #}
         <div class="modal fade" id="sharePostModal" tabindex="-1" role="dialog" aria-labelledby="sharePostModal">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -57,16 +57,12 @@
                 </div>
             </div>
         </div>
-
         <script>
             $(window).load(function(){
                 $('#sharePostModal').modal('show');
             });
         </script>
-
-    {% endif %}
-
-
+    {% endif %} {# end first view modal #}
     <div class="row" >
         <h1>{{ post.title }}</h1>
       <span id="smileApiUpvoteUrl" hidden>{{ path ('smile_api_post_upvote_url') }}</span>
