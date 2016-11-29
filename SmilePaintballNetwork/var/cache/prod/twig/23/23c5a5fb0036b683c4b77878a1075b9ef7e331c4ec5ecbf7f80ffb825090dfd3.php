@@ -1,6 +1,6 @@
 <?php
 
-/* SkynetBundle:Default:dashboard.html.twig */
+/* SkynetBundle::Default/dashboard.html.twig */
 class __TwigTemplate_8f4932e3c87785deef5cf073f8d7ca8d344d4878d2b03b3c34343845d73a803a extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,7 +8,7 @@ class __TwigTemplate_8f4932e3c87785deef5cf073f8d7ca8d344d4878d2b03b3c34343845d73
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("SmilePlatformBundle::Default/layout.html.twig", "SkynetBundle:Default:dashboard.html.twig", 1);
+        $this->parent = $this->loadTemplate("SmilePlatformBundle::Default/layout.html.twig", "SkynetBundle::Default/dashboard.html.twig", 1);
         $this->blocks = array(
             'pageHeader' => array($this, 'block_pageHeader'),
             'content' => array($this, 'block_content'),
@@ -23,20 +23,20 @@ class __TwigTemplate_8f4932e3c87785deef5cf073f8d7ca8d344d4878d2b03b3c34343845d73
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_bd7646cc78e98eb4f985e776ee15aad18c98e0988c3845bece6f3ad8f2ccec72 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_bd7646cc78e98eb4f985e776ee15aad18c98e0988c3845bece6f3ad8f2ccec72->enter($__internal_bd7646cc78e98eb4f985e776ee15aad18c98e0988c3845bece6f3ad8f2ccec72_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SkynetBundle:Default:dashboard.html.twig"));
+        $__internal_f87c79c9be66452d63dd235aaf6487a14365202e94268a2908382e6f3d76ef92 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_f87c79c9be66452d63dd235aaf6487a14365202e94268a2908382e6f3d76ef92->enter($__internal_f87c79c9be66452d63dd235aaf6487a14365202e94268a2908382e6f3d76ef92_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SkynetBundle::Default/dashboard.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_bd7646cc78e98eb4f985e776ee15aad18c98e0988c3845bece6f3ad8f2ccec72->leave($__internal_bd7646cc78e98eb4f985e776ee15aad18c98e0988c3845bece6f3ad8f2ccec72_prof);
+        $__internal_f87c79c9be66452d63dd235aaf6487a14365202e94268a2908382e6f3d76ef92->leave($__internal_f87c79c9be66452d63dd235aaf6487a14365202e94268a2908382e6f3d76ef92_prof);
 
     }
 
     // line 2
     public function block_pageHeader($context, array $blocks = array())
     {
-        $__internal_b606fa880fd6af2a94b8278904c545680f527676ce9f8f18282b931a8d4f91f2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b606fa880fd6af2a94b8278904c545680f527676ce9f8f18282b931a8d4f91f2->enter($__internal_b606fa880fd6af2a94b8278904c545680f527676ce9f8f18282b931a8d4f91f2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
+        $__internal_e7ae8a50dff791b6096fdcb892753de9f58cce9244ca2541cac970cb5dd99222 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e7ae8a50dff791b6096fdcb892753de9f58cce9244ca2541cac970cb5dd99222->enter($__internal_e7ae8a50dff791b6096fdcb892753de9f58cce9244ca2541cac970cb5dd99222_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
 
         // line 3
         echo "    <h1 class=\"page-header\">
@@ -44,15 +44,15 @@ class __TwigTemplate_8f4932e3c87785deef5cf073f8d7ca8d344d4878d2b03b3c34343845d73
     </h1>
 ";
         
-        $__internal_b606fa880fd6af2a94b8278904c545680f527676ce9f8f18282b931a8d4f91f2->leave($__internal_b606fa880fd6af2a94b8278904c545680f527676ce9f8f18282b931a8d4f91f2_prof);
+        $__internal_e7ae8a50dff791b6096fdcb892753de9f58cce9244ca2541cac970cb5dd99222->leave($__internal_e7ae8a50dff791b6096fdcb892753de9f58cce9244ca2541cac970cb5dd99222_prof);
 
     }
 
     // line 7
     public function block_content($context, array $blocks = array())
     {
-        $__internal_a1abbf60296e8c583ca136b075bb511441487481bd5ce8df10a2339076eccd86 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a1abbf60296e8c583ca136b075bb511441487481bd5ce8df10a2339076eccd86->enter($__internal_a1abbf60296e8c583ca136b075bb511441487481bd5ce8df10a2339076eccd86_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_fd119d9cff893a194147370d65d801080949a583a322962a364c1eb50c8e1d45 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_fd119d9cff893a194147370d65d801080949a583a322962a364c1eb50c8e1d45->enter($__internal_fd119d9cff893a194147370d65d801080949a583a322962a364c1eb50c8e1d45_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 8
         echo "    <div class=\"row\">
@@ -79,37 +79,53 @@ class __TwigTemplate_8f4932e3c87785deef5cf073f8d7ca8d344d4878d2b03b3c34343845d73
         echo "\">Show groups</a>
                 </div>
             </div>
+            <div class=\"panel panel-success\">
+                <div class=\"panel-heading\">
+                    Operations
+                </div>
+                <div class=\"panel-body\">
+                    <a href=\"#\">Show operations</a>
+                </div>
+            </div>
+            <div class=\"panel panel-success\">
+                <div class=\"panel-heading\">
+                    Accounts
+                </div>
+                <div class=\"panel-body\">
+                    <a href=\"#\">Show Accounts</a>
+                </div>
+            </div>
         </div>
         <div class=\"col-md-9\">
             ";
-        // line 28
+        // line 44
         $this->displayBlock('rightCollumn', $context, $blocks);
-        // line 31
+        // line 47
         echo "        </div>
     </div>
 ";
         
-        $__internal_a1abbf60296e8c583ca136b075bb511441487481bd5ce8df10a2339076eccd86->leave($__internal_a1abbf60296e8c583ca136b075bb511441487481bd5ce8df10a2339076eccd86_prof);
+        $__internal_fd119d9cff893a194147370d65d801080949a583a322962a364c1eb50c8e1d45->leave($__internal_fd119d9cff893a194147370d65d801080949a583a322962a364c1eb50c8e1d45_prof);
 
     }
 
-    // line 28
+    // line 44
     public function block_rightCollumn($context, array $blocks = array())
     {
-        $__internal_fc05e6bfbbb7f0afdf03066de0428b1ff9f4585ed8d780c02ebf4ced82f612c1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_fc05e6bfbbb7f0afdf03066de0428b1ff9f4585ed8d780c02ebf4ced82f612c1->enter($__internal_fc05e6bfbbb7f0afdf03066de0428b1ff9f4585ed8d780c02ebf4ced82f612c1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
+        $__internal_6abc4421654e5145b6bc7c87095c3f23c40585dee31e1148eb63c8ae7167324e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_6abc4421654e5145b6bc7c87095c3f23c40585dee31e1148eb63c8ae7167324e->enter($__internal_6abc4421654e5145b6bc7c87095c3f23c40585dee31e1148eb63c8ae7167324e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
 
-        // line 29
+        // line 45
         echo "                Content
             ";
         
-        $__internal_fc05e6bfbbb7f0afdf03066de0428b1ff9f4585ed8d780c02ebf4ced82f612c1->leave($__internal_fc05e6bfbbb7f0afdf03066de0428b1ff9f4585ed8d780c02ebf4ced82f612c1_prof);
+        $__internal_6abc4421654e5145b6bc7c87095c3f23c40585dee31e1148eb63c8ae7167324e->leave($__internal_6abc4421654e5145b6bc7c87095c3f23c40585dee31e1148eb63c8ae7167324e_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "SkynetBundle:Default:dashboard.html.twig";
+        return "SkynetBundle::Default/dashboard.html.twig";
     }
 
     public function isTraitable()
@@ -119,7 +135,7 @@ class __TwigTemplate_8f4932e3c87785deef5cf073f8d7ca8d344d4878d2b03b3c34343845d73
 
     public function getDebugInfo()
     {
-        return array (  103 => 29,  97 => 28,  88 => 31,  86 => 28,  78 => 23,  67 => 15,  58 => 8,  52 => 7,  42 => 3,  36 => 2,  11 => 1,);
+        return array (  119 => 45,  113 => 44,  104 => 47,  102 => 44,  78 => 23,  67 => 15,  58 => 8,  52 => 7,  42 => 3,  36 => 2,  11 => 1,);
     }
 
     public function getSource()
@@ -147,6 +163,22 @@ class __TwigTemplate_8f4932e3c87785deef5cf073f8d7ca8d344d4878d2b03b3c34343845d73
                 </div>
                 <div class=\"panel-body\">
                     <a href=\"{{  path('skynet_group_listGroups') }}\">Show groups</a>
+                </div>
+            </div>
+            <div class=\"panel panel-success\">
+                <div class=\"panel-heading\">
+                    Operations
+                </div>
+                <div class=\"panel-body\">
+                    <a href=\"#\">Show operations</a>
+                </div>
+            </div>
+            <div class=\"panel panel-success\">
+                <div class=\"panel-heading\">
+                    Accounts
+                </div>
+                <div class=\"panel-body\">
+                    <a href=\"#\">Show Accounts</a>
                 </div>
             </div>
         </div>
