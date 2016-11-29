@@ -1,0 +1,34 @@
+{% extends "SmilePlatformBundle::Default/layout.html.twig" %}
+{% block pageHeader %}
+    <h1 class="page-header">
+        Skynet Dashboard
+    </h1>
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-md-3">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    Dashboard
+                </div>
+                <div class="panel-body">
+                    <a href="{{  path('skynet_dashboard') }}">Dashboard</a>
+                </div>
+            </div>
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    Groups
+                </div>
+                <div class="panel-body">
+                    <a href="{{  path('skynet_group_listGroups') }}">Show groups</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            {% block rightCollumn %}
+                Content
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}
+

@@ -15,8 +15,8 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f13520a05ae8b4efcb2623b06de6d952b3e9e3e0544fa4a01ee5c74fa3f34b9d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f13520a05ae8b4efcb2623b06de6d952b3e9e3e0544fa4a01ee5c74fa3f34b9d->enter($__internal_f13520a05ae8b4efcb2623b06de6d952b3e9e3e0544fa4a01ee5c74fa3f34b9d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
+        $__internal_5b736cb8c21aed0d3a693ff7ddbcde993860d30dff82ed1bd56e9081aa8332ce = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5b736cb8c21aed0d3a693ff7ddbcde993860d30dff82ed1bd56e9081aa8332ce->enter($__internal_5b736cb8c21aed0d3a693ff7ddbcde993860d30dff82ed1bd56e9081aa8332ce_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
 
         // line 1
         echo "<!-- Project One -->
@@ -40,18 +40,16 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
     <div id=\"spiningWheelAllPosts\">
         <i class=\"fa fa-spinner fa-spin fa-5x\"></i> <H3>Loading</H3>
     </div>
-
-
     <div id=\"contentAllPosts\" hidden>
         <div ng-repeat=\"post in posts | orderBy: '-creationTime'\">
             ";
-        // line 205
+        // line 173
         echo "
                 <div class=\"row\">
                     <div ng-if=\"post.team\">
                         <a ng-href=\"/platform/team/{{ post.team.id }}\">
                             <div class=\"col-md-1 col-xs-3\">
-                                <img ng-src=\"/teamPicture/profilePics/{{post.team.picture.url}}\" class=\"img-responsive profile-pic-small\">
+                                <img ng-src=\"/teamPicture/profilePics/{{post.team.teamPicture.url}}\" class=\"img-responsive profile-pic-small\">
                             </div>
                             <div class=\"col-md-10 col-xs-9\">
                                 <strong>{{ post.team.name }}</strong> (team) posted
@@ -76,7 +74,6 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
                 </div>
                 <div class=\"row\" >
                     <div class=\"col-md-7\">
-
                         <div ng-if=\"post.type=='video_youtube'\">
                             <iframe  width=\"100%\"  height=\"300px\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" frameborder=\"0\" allowfullscreen></iframe>
                         </div>
@@ -99,16 +96,10 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
                                 <img class=\"img-responsive\" ng-src=\"{{post.picture.uploadDir}}/{{post.picture.url}}\" alt=\"\">
                             </a>
                         </div>
-
-
                     </div>
                     <div class=\"col-md-5\">
                         <h3><a ng-href=\"/platform/post/{{ post.id }}\">{{ post.title }}</a></h3>
                         <h4><a ng-href=\"/platform/post/{{ post.id }}\">{{ post.event_name }}</a></h4>
-
-                        <span ng-if=\"post.team\">
-                            <a ng-href=\"/platform/team/{{ post.team.id }}\">team: <strong>{{ post.team.name }}</strong></a>
-                        </span>
                         <br/>
                         <span ng-if=\"post.eventName && post.eventName != ''\">
                             Event: {{ post.eventName }}
@@ -160,83 +151,60 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
                             <div class=\"spacer-5px\">
                                 Share: <input class=\" form-control input-lg\" value=\"http://smilepaintball.com/platform/post/{{ post.id }}\">
                             </div>
-
-
                         </div>
                     </div>
-
                 </div>
                 <div ng-if=\"(\$index%5)==0\" class=\"row\">
                     <hr/>
                     <h3>Sponsors</h3>
                     <div class=\"row\">
-
                         <div class=\"col-md-1 col-xs-2\" >
                             <a href=\"http://www.tippmann.com/\">
                                 <img src=\"/images/sponsors/tippmann.png\" width=\"50em\">
                             </a>
-
                         </div>
-
                         <div class=\"col-md-1 col-xs-2\" >
                             <a href=\"http://gisportz.com/\">
                                 <img src=\"/images/sponsors/gisportz.png\" width=\"50em\">
                             </a>
-
                         </div>
-
                         <div class=\"col-md-1 col-xs-2\" >
                             <a href=\"http://gisportz.com/vforce-goggles.php\">
                                 <img src=\"/images/sponsors/vforce.png\" width=\"50em\">
                             </a>
-
                         </div>
-
                         <div class=\"col-md-1 col-xs-2\" >
                             <a href=\"http://www.redbull.com/be/fr\">
                                 <img src=\"/images/sponsors/redbull-com-logo.png\" width=\"50em\">
                             </a>
-
                         </div>
-
                         <div class=\"col-md-1 col-xs-2\">
                             <a href=\"http://www.kg-factory.fr/fr/\">
                                 <img src=\"/images/sponsors/kgfactory.png\" width=\"50em\">
                             </a>
-
                         </div>
-
-
                         <div class=\"col-md-1 col-xs-2\">
                             <a href=\"http://www.patch-werk.com/index.php/en/\">
                                 <img src=\"/images/sponsors/patch-werk.png\" width=\"50em\">
                             </a>
-
                         </div>
-
                         <div class=\"col-md-1 col-xs-2\">
                             <a href=\"http://www.enolagaye.com\">
                                 <img src=\"/images/sponsors/e-g.png\" width=\"50em\">
                             </a>
-
                         </div>
-
                         <div class=\"col-md-1 col-xs-2\">
                             <a href=\"http://maxxloader.com/\">
                                 <img src=\"/images/sponsors/maxxloader.png\" width=\"50em\">
                             </a>
-
                         </div>
-
                         <div class=\"col-md-1 col-xs-2\">
                             <a href=\"http://shop.customgunrails.com/\">
                                 <img src=\"/images/sponsors/cgr.png\" width=\"50em\">
                             </a>
-
                         </div>
                     </div>
                 </div>
-
             ";
         echo "
             <!-- /.row -->
@@ -244,20 +212,16 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
         </div>
     </div>
     <!--  end ng-repeat -->
-
     <div id=\"bottomOfThePage\">
-
     </div>
-
     <div ng-if=\"loadMore == true\">
         <button class=\"btn btn-primary\" ng-click=\"loadMoreBdt\">Load More</button>
     </div>
-
 </div>
 
 ";
         
-        $__internal_f13520a05ae8b4efcb2623b06de6d952b3e9e3e0544fa4a01ee5c74fa3f34b9d->leave($__internal_f13520a05ae8b4efcb2623b06de6d952b3e9e3e0544fa4a01ee5c74fa3f34b9d_prof);
+        $__internal_5b736cb8c21aed0d3a693ff7ddbcde993860d30dff82ed1bd56e9081aa8332ce->leave($__internal_5b736cb8c21aed0d3a693ff7ddbcde993860d30dff82ed1bd56e9081aa8332ce_prof);
 
     }
 
@@ -273,7 +237,7 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
 
     public function getDebugInfo()
     {
-        return array (  49 => 205,  38 => 6,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
+        return array (  47 => 173,  38 => 6,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
     }
 
     public function getSource()
@@ -287,8 +251,6 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
     <div id=\"spiningWheelAllPosts\">
         <i class=\"fa fa-spinner fa-spin fa-5x\"></i> <H3>Loading</H3>
     </div>
-
-
     <div id=\"contentAllPosts\" hidden>
         <div ng-repeat=\"post in posts | orderBy: '-creationTime'\">
             {% verbatim %}
@@ -296,7 +258,7 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
                     <div ng-if=\"post.team\">
                         <a ng-href=\"/platform/team/{{ post.team.id }}\">
                             <div class=\"col-md-1 col-xs-3\">
-                                <img ng-src=\"/teamPicture/profilePics/{{post.team.picture.url}}\" class=\"img-responsive profile-pic-small\">
+                                <img ng-src=\"/teamPicture/profilePics/{{post.team.teamPicture.url}}\" class=\"img-responsive profile-pic-small\">
                             </div>
                             <div class=\"col-md-10 col-xs-9\">
                                 <strong>{{ post.team.name }}</strong> (team) posted
@@ -321,7 +283,6 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
                 </div>
                 <div class=\"row\" >
                     <div class=\"col-md-7\">
-
                         <div ng-if=\"post.type=='video_youtube'\">
                             <iframe  width=\"100%\"  height=\"300px\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" frameborder=\"0\" allowfullscreen></iframe>
                         </div>
@@ -344,16 +305,10 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
                                 <img class=\"img-responsive\" ng-src=\"{{post.picture.uploadDir}}/{{post.picture.url}}\" alt=\"\">
                             </a>
                         </div>
-
-
                     </div>
                     <div class=\"col-md-5\">
                         <h3><a ng-href=\"/platform/post/{{ post.id }}\">{{ post.title }}</a></h3>
                         <h4><a ng-href=\"/platform/post/{{ post.id }}\">{{ post.event_name }}</a></h4>
-
-                        <span ng-if=\"post.team\">
-                            <a ng-href=\"/platform/team/{{ post.team.id }}\">team: <strong>{{ post.team.name }}</strong></a>
-                        </span>
                         <br/>
                         <span ng-if=\"post.eventName && post.eventName != ''\">
                             Event: {{ post.eventName }}
@@ -405,98 +360,71 @@ class __TwigTemplate_9fa4f84c046d6381c1c50f9e61de4efe6862f7e4be607fa253749025d87
                             <div class=\"spacer-5px\">
                                 Share: <input class=\" form-control input-lg\" value=\"http://smilepaintball.com/platform/post/{{ post.id }}\">
                             </div>
-
-
                         </div>
                     </div>
-
                 </div>
                 <div ng-if=\"(\$index%5)==0\" class=\"row\">
                     <hr/>
                     <h3>Sponsors</h3>
                     <div class=\"row\">
-
                         <div class=\"col-md-1 col-xs-2\" >
                             <a href=\"http://www.tippmann.com/\">
                                 <img src=\"/images/sponsors/tippmann.png\" width=\"50em\">
                             </a>
-
                         </div>
-
                         <div class=\"col-md-1 col-xs-2\" >
                             <a href=\"http://gisportz.com/\">
                                 <img src=\"/images/sponsors/gisportz.png\" width=\"50em\">
                             </a>
-
                         </div>
-
                         <div class=\"col-md-1 col-xs-2\" >
                             <a href=\"http://gisportz.com/vforce-goggles.php\">
                                 <img src=\"/images/sponsors/vforce.png\" width=\"50em\">
                             </a>
-
                         </div>
-
                         <div class=\"col-md-1 col-xs-2\" >
                             <a href=\"http://www.redbull.com/be/fr\">
                                 <img src=\"/images/sponsors/redbull-com-logo.png\" width=\"50em\">
                             </a>
-
                         </div>
-
                         <div class=\"col-md-1 col-xs-2\">
                             <a href=\"http://www.kg-factory.fr/fr/\">
                                 <img src=\"/images/sponsors/kgfactory.png\" width=\"50em\">
                             </a>
-
                         </div>
-
-
                         <div class=\"col-md-1 col-xs-2\">
                             <a href=\"http://www.patch-werk.com/index.php/en/\">
                                 <img src=\"/images/sponsors/patch-werk.png\" width=\"50em\">
                             </a>
-
                         </div>
-
                         <div class=\"col-md-1 col-xs-2\">
                             <a href=\"http://www.enolagaye.com\">
                                 <img src=\"/images/sponsors/e-g.png\" width=\"50em\">
                             </a>
-
                         </div>
-
                         <div class=\"col-md-1 col-xs-2\">
                             <a href=\"http://maxxloader.com/\">
                                 <img src=\"/images/sponsors/maxxloader.png\" width=\"50em\">
                             </a>
-
                         </div>
-
                         <div class=\"col-md-1 col-xs-2\">
                             <a href=\"http://shop.customgunrails.com/\">
                                 <img src=\"/images/sponsors/cgr.png\" width=\"50em\">
                             </a>
-
                         </div>
                     </div>
                 </div>
-
             {% endverbatim %}
             <!-- /.row -->
             <hr>
         </div>
     </div>
     <!--  end ng-repeat -->
-
     <div id=\"bottomOfThePage\">
-
     </div>
-
     <div ng-if=\"loadMore == true\">
         <button class=\"btn btn-primary\" ng-click=\"loadMoreBdt\">Load More</button>
     </div>
-
 </div>
 
 ";

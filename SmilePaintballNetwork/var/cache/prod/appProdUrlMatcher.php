@@ -105,13 +105,21 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
 
         }
 
-        // skynet_homepage
-        if (rtrim($pathinfo, '/') === '/skynet') {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'skynet_homepage');
+        if (0 === strpos($pathinfo, '/skynet')) {
+            // skynet_dashboard
+            if (rtrim($pathinfo, '/') === '/skynet') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'skynet_dashboard');
+                }
+
+                return array (  '_controller' => 'SkynetBundle\\Controller\\DefaultController::dashboardAction',  '_route' => 'skynet_dashboard',);
             }
 
-            return array (  '_controller' => 'SkynetBundle\\Controller\\DefaultController::indexAction',  '_route' => 'skynet_homepage',);
+            // skynet_group_listGroups
+            if ($pathinfo === '/skynet/showGroups') {
+                return array (  '_controller' => 'SkynetBundle\\Controller\\GroupController::listGroupsAction',  '_route' => 'skynet_group_listGroups',);
+            }
+
         }
 
         // smile_admin_homepage

@@ -1,5 +1,7 @@
-skynet_homepage:
-    path:     /
-    defaults: { _controller: SkynetBundle:Default:index }
+skynet_dashboard:
+  path: /
+  defaults: { _controller: SkynetBundle:Default:dashboard }
 
-
+skynet_group_listGroups:
+  path: /showGroups
+  defaults: { _controller: SkynetBundle:Group:listGroups }

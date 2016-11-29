@@ -10,4 +10,9 @@ class DefaultController extends Controller
     {
         return $this->render('SkynetBundle:Default:index.html.twig');
     }
+
+    public function dashboardAction()
+    {
+        return $this->render('SkynetBundle:Default:dashboard.html.twig');
+    }
 }
