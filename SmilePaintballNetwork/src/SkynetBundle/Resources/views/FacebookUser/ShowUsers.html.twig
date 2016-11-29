@@ -1,0 +1,10 @@
+{% extends "SkynetBundle::Default/dashboard.html.twig" %}
+{% block pageHeader %}
+    <h1 class="page-header">
+        Users
+    </h1>
+{% endblock %}
+
+{% block rightCollumn %}
+    {%  include('SkynetBundle::FacebookUser/Blocs/addUser.html.twig') %}
+{% endblock %}

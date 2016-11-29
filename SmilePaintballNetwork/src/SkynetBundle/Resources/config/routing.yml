@@ -3,5 +3,13 @@ skynet_dashboard:
   defaults: { _controller: SkynetBundle:Default:dashboard }
 
 skynet_group_listGroups:
-  path: /showGroups
+  path: /group/showGroups
   defaults: { _controller: SkynetBundle:Group:listGroups }
+
+skynet_group_addcsv:
+  path: /group/addCSV
+  defaults: { _controller: SkynetBundle:Group:addCSV }
+
+skynet_facebookUser_listUser:
+  path : /facebookUser/showUsers
+  defaults: { _controller: SkynetBundle:facebookUser:listUsers }

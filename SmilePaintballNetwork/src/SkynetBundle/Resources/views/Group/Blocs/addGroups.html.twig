@@ -1,0 +1,16 @@
+<div class="row">
+    <H1>Add Groups</H1>
+    <form action="{{ path('skynet_group_addcsv') }}" method="post">
+        <div class="form-group">
+            <strong>Copy past the csv:</strong>
+            <textarea name="csvFile" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <strong>GMT+</strong>
+            <input class="form-control" name="gmt" type="number">
+        </div>
+        <div class="form-group">
+            <input class="btn btn-primary" type="submit">
+        </div>
+    </form>
+</div>

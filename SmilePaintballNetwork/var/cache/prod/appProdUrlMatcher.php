@@ -115,9 +115,22 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
                 return array (  '_controller' => 'SkynetBundle\\Controller\\DefaultController::dashboardAction',  '_route' => 'skynet_dashboard',);
             }
 
-            // skynet_group_listGroups
-            if ($pathinfo === '/skynet/showGroups') {
-                return array (  '_controller' => 'SkynetBundle\\Controller\\GroupController::listGroupsAction',  '_route' => 'skynet_group_listGroups',);
+            if (0 === strpos($pathinfo, '/skynet/group')) {
+                // skynet_group_listGroups
+                if ($pathinfo === '/skynet/group/showGroups') {
+                    return array (  '_controller' => 'SkynetBundle\\Controller\\GroupController::listGroupsAction',  '_route' => 'skynet_group_listGroups',);
+                }
+
+                // skynet_group_addcsv
+                if ($pathinfo === '/skynet/group/addCSV') {
+                    return array (  '_controller' => 'SkynetBundle\\Controller\\GroupController::addCSVAction',  '_route' => 'skynet_group_addcsv',);
+                }
+
+            }
+
+            // skynet_facebookUser_listUser
+            if ($pathinfo === '/skynet/facebookUser/showUsers') {
+                return array (  '_controller' => 'SkynetBundle\\Controller\\facebookUserController::listUsersAction',  '_route' => 'skynet_facebookUser_listUser',);
             }
 
         }

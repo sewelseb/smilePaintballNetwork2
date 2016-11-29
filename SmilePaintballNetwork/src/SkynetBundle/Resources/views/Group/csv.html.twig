@@ -1,0 +1,5 @@
+{% for line in csv %}
+    {% for collumn in line %}
+        {{ collumn|join }}
+    {% endfor %}
+{% endfor %}
