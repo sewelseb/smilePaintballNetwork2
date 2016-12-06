@@ -10,6 +10,7 @@ namespace Smile\ApiBundle\Controller;
 
 use FOS\RestBundle\Controller\FOSRestController;
 use Smile\PlatformBundle\Entity\Downvote;
+use Smile\PlatformBundle\Entity\Mail;
 use Smile\PlatformBundle\Entity\Post;
 use Smile\PlatformBundle\Entity\Upvote;
 use Symfony\Component\HttpFoundation\Request;
@@ -74,6 +75,11 @@ class PostsController extends FOSRestController
                 $em->persist($upvote);
 
                 $em->flush();
+
+
+                $mail = new Mail($post->getUser(),  $this->get('sendinblue_api'));
+                $mail->postUpvoted($post);
+                $mail->sendMail();
             }
 
 
