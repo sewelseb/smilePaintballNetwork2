@@ -64,10 +64,10 @@ class User extends \Smile\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'id', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'picture', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'firstName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'lastName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamPicture', 'facebook_id', 'facebook_access_token', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teams', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'locked', 'expired', 'expiresAt', 'roles', 'credentialsExpired', 'credentialsExpireAt'];
+            return ['__isInitialized__', 'id', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'picture', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'firstName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'lastName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamPicture', 'facebook_id', 'facebook_access_token', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teams', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'roles'];
         }
 
-        return ['__isInitialized__', 'id', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'picture', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'firstName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'lastName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamPicture', 'facebook_id', 'facebook_access_token', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teams', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'locked', 'expired', 'expiresAt', 'roles', 'credentialsExpired', 'credentialsExpireAt'];
+        return ['__isInitialized__', 'id', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'picture', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'firstName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'lastName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamPicture', 'facebook_id', 'facebook_access_token', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teams', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'roles'];
     }
 
     /**
@@ -587,45 +587,12 @@ class User extends \Smile\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\
     /**
      * {@inheritDoc}
      */
-    public function isCredentialsExpired()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isCredentialsExpired', []);
-
-        return parent::isCredentialsExpired();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function isEnabled()
     {
 
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'isEnabled', []);
 
         return parent::isEnabled();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isExpired()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isExpired', []);
-
-        return parent::isExpired();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isLocked()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isLocked', []);
-
-        return parent::isLocked();
     }
 
     /**
@@ -675,23 +642,12 @@ class User extends \Smile\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\
     /**
      * {@inheritDoc}
      */
-    public function setCredentialsExpireAt(\DateTime $date = NULL)
+    public function setSalt($salt)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCredentialsExpireAt', [$date]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setSalt', [$salt]);
 
-        return parent::setCredentialsExpireAt($date);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setCredentialsExpired($boolean)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCredentialsExpired', [$boolean]);
-
-        return parent::setCredentialsExpired($boolean);
+        return parent::setSalt($salt);
     }
 
     /**
@@ -725,28 +681,6 @@ class User extends \Smile\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setEnabled', [$boolean]);
 
         return parent::setEnabled($boolean);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setExpired($boolean)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setExpired', [$boolean]);
-
-        return parent::setExpired($boolean);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setExpiresAt(\DateTime $date = NULL)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setExpiresAt', [$date]);
-
-        return parent::setExpiresAt($date);
     }
 
     /**
@@ -791,17 +725,6 @@ class User extends \Smile\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setLastLogin', [$time]);
 
         return parent::setLastLogin($time);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setLocked($boolean)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setLocked', [$boolean]);
-
-        return parent::setLocked($boolean);
     }
 
     /**

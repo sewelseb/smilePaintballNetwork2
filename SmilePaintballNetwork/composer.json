@@ -35,7 +35,8 @@
         "friendsofsymfony/rest-bundle": "^2.0",
         "hwi/oauth-bundle": "0.5.*-dev",
         "liip/imagine-bundle": "^1.6",
-        "facebook/graph-sdk": "^5.4"
+        "facebook/graph-sdk": "^5.4",
+        "sendinblue/sendinblue-api-bundle": "2.0.*"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",

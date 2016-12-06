@@ -164,3 +164,8 @@ liip_imagine :
           quality: 100
           filters:
             relative_resize: { heighten: 400 }
+
+sendin_blue_api:
+    api_key: 0v6IzBTd2PN5Vtcn
+    # Our library supports a timeout value, which is an optional parameter, default is 30,000 MS ( 30 secs )
+    timeout: 5000

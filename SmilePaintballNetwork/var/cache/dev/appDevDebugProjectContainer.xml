@@ -77,13 +77,13 @@
     <parameter key="router.options.matcher_class">Symfony\Bundle\FrameworkBundle\Routing\RedirectableUrlMatcher</parameter>
     <parameter key="router.options.matcher_base_class">Symfony\Bundle\FrameworkBundle\Routing\RedirectableUrlMatcher</parameter>
     <parameter key="router.options.matcher_dumper_class">Symfony\Component\Routing\Matcher\Dumper\PhpMatcherDumper</parameter>
-    <parameter key="router.options.matcher.cache_class">appDevUrlMatcher</parameter>
-    <parameter key="router.options.generator.cache_class">appDevUrlGenerator</parameter>
+    <parameter key="router.options.matcher.cache_class">appDevDebugProjectContainerUrlMatcher</parameter>
+    <parameter key="router.options.generator.cache_class">appDevDebugProjectContainerUrlGenerator</parameter>
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
     <parameter key="router.resource">D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\var\cache\dev/assetic/routing.yml</parameter>
-    <parameter key="router.cache_class_prefix">appDev</parameter>
+    <parameter key="router.cache_class_prefix">appDevDebugProjectContainer</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
     <parameter key="serializer.mapping.cache.prefix"></parameter>
@@ -197,6 +197,7 @@
     <parameter key="swiftmailer.mailer.default.transport.smtp.auth_mode">null</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.timeout">30</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.source_ip">null</parameter>
+    <parameter key="swiftmailer.mailer.default.transport.smtp.local_domain">null</parameter>
     <parameter key="swiftmailer.spool.default.memory.path">D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\var\cache\dev/swiftmailer/spool/default</parameter>
     <parameter key="swiftmailer.mailer.default.spool.enabled">true</parameter>
     <parameter key="swiftmailer.mailer.default.plugin.impersonate">null</parameter>
@@ -829,9 +830,9 @@
               <argument type="service">
                 <service class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
                   <tag name="cache.pool"/>
-                  <argument>Nu0jsGmjb0</argument>
+                  <argument>35D9Gz7Bhd</argument>
                   <argument>0</argument>
-                  <argument>UenLDLnfRtrDokvzXn69rw</argument>
+                  <argument>XHgq-nCPJq-LjChd58dZl3</argument>
                   <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\var\cache\dev/pools</argument>
                   <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                   <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -842,9 +843,9 @@
               <argument type="service">
                 <service class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
                   <tag name="cache.pool"/>
-                  <argument>JbT9uhreDC</argument>
+                  <argument>N5rAX92ThI</argument>
                   <argument>0</argument>
-                  <argument>UenLDLnfRtrDokvzXn69rw</argument>
+                  <argument>XHgq-nCPJq-LjChd58dZl3</argument>
                   <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\var\cache\dev/pools</argument>
                   <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                   <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -1165,7 +1166,7 @@
     </service>
     <service id="cache.app" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
       <tag name="cache.pool"/>
-      <argument>c98QyKeiOz</argument>
+      <argument>NKdGqdcxaQ</argument>
       <argument>0</argument>
       <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\var\cache\dev/pools</argument>
       <call method="setLogger">
@@ -1174,9 +1175,9 @@
     </service>
     <service id="cache.system" class="Symfony\Component\Cache\Adapter\AdapterInterface">
       <tag name="cache.pool"/>
-      <argument>T9m8TNBBth</argument>
+      <argument>YLLcqMSs8R</argument>
       <argument>0</argument>
-      <argument>UenLDLnfRtrDokvzXn69rw</argument>
+      <argument>XHgq-nCPJq-LjChd58dZl3</argument>
       <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -1470,7 +1471,7 @@
       <call method="addXmlMappings">
         <argument type="collection">
           <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/config/validation.xml</argument>
-          <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\vendor\friendsofsymfony\user-bundle\Resources\config\validation.xml</argument>
+          <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\vendor\friendsofsymfony\user-bundle/Resources/config/validation.xml</argument>
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -1485,7 +1486,7 @@
           <argument type="service">
             <service class="FOS\UserBundle\Validator\Initializer" public="false">
               <tag name="validator.initializer"/>
-              <argument type="service" id="fos_user.user_manager"/>
+              <argument type="service" id="fos_user.util.canonical_fields_updater"/>
             </service>
           </argument>
         </argument>
@@ -1855,6 +1856,11 @@
           </service>
         </argument>
         <argument type="service">
+          <service class="Symfony\Component\Serializer\Normalizer\ArrayDenormalizer" public="false">
+            <tag name="serializer.normalizer" priority="-990"/>
+          </service>
+        </argument>
+        <argument type="service">
           <service class="Symfony\Component\Serializer\Normalizer\ObjectNormalizer" public="false">
             <tag name="serializer.normalizer" priority="-1000"/>
             <argument type="service">
@@ -1864,7 +1870,7 @@
                     <argument type="collection">
                       <argument type="service">
                         <service class="Symfony\Component\Serializer\Mapping\Loader\YamlFileLoader" public="false">
-                          <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\ApiBundle\Resources\config\serialization.yml</argument>
+                          <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\ApiBundle/Resources/config/serialization.yml</argument>
                         </service>
                       </argument>
                     </argument>
@@ -2062,9 +2068,9 @@
       </call>
     </service>
     <service id="debug.controller_resolver" class="Symfony\Component\HttpKernel\Controller\TraceableControllerResolver">
+      <tag name="monolog.logger" channel="request"/>
       <argument type="service">
         <service class="Symfony\Bundle\FrameworkBundle\Controller\ControllerResolver" public="false">
-          <tag name="monolog.logger" channel="request"/>
           <argument type="service" id="service_container"/>
           <argument type="service" id="controller_name_converter"/>
           <argument type="service" id="monolog.logger.request" on-invalid="ignore"/>
@@ -2139,7 +2145,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>583dc9b7582055.60393355</argument>
+            <argument>5846f622cb8be2.63227051</argument>
           </service>
         </argument>
       </argument>
@@ -2561,7 +2567,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>583dc9b7582055.60393355</argument>
+            <argument>5846f622cb8be2.63227051</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2679,7 +2685,7 @@
         <argument key="form_themes" type="collection">
           <argument>form_div_layout.html.twig</argument>
         </argument>
-        <argument key="autoescape">filename</argument>
+        <argument key="autoescape">name</argument>
         <argument key="cache">D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\var\cache\dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="paths" type="collection"/>
@@ -2948,17 +2954,24 @@
       <argument type="service" id="http_kernel"/>
       <argument>twig.controller.exception:showAction</argument>
     </service>
+    <service id="monolog.processor.psr_log_message" class="Monolog\Processor\PsrLogMessageProcessor" public="false"/>
     <service id="monolog.handler.main" class="Monolog\Handler\StreamHandler">
       <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\var\logs/dev.log</argument>
       <argument>100</argument>
       <argument>true</argument>
       <argument>null</argument>
+      <call method="pushProcessor">
+        <argument type="service" id="monolog.processor.psr_log_message"/>
+      </call>
     </service>
     <service id="monolog.handler.console" class="Symfony\Bridge\Monolog\Handler\ConsoleHandler">
       <tag name="kernel.event_subscriber"/>
       <argument>null</argument>
       <argument>true</argument>
       <argument type="collection"/>
+      <call method="pushProcessor">
+        <argument type="service" id="monolog.processor.psr_log_message"/>
+      </call>
     </service>
     <service id="swiftmailer.email_sender.listener" class="Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener">
       <tag name="kernel.event_subscriber"/>
@@ -3028,7 +3041,8 @@
             <argument type="service">
               <service class="FOS\UserBundle\Doctrine\UserListener" public="false">
                 <tag name="doctrine.event_subscriber"/>
-                <argument type="service" id="service_container"/>
+                <argument type="service" id="fos_user.util.password_updater"/>
+                <argument type="service" id="fos_user.util.canonical_fields_updater"/>
               </service>
             </argument>
           </call>
@@ -3090,6 +3104,7 @@
             <argument type="collection">
               <argument key="SmilePlatformBundle">Smile\PlatformBundle\Entity</argument>
               <argument key="SmileUserBundle">Smile\UserBundle\Entity</argument>
+              <argument key="SkynetBundle">SkynetBundle\Entity</argument>
             </argument>
           </call>
           <call method="setMetadataCacheImpl">
@@ -3111,6 +3126,7 @@
                       <argument type="collection">
                         <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\PlatformBundle\Entity</argument>
                         <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\UserBundle\Entity</argument>
+                        <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\SkynetBundle\Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -3123,10 +3139,24 @@
                       <argument type="collection">
                         <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\PlatformBundle\Entity</argument>
                         <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\UserBundle\Entity</argument>
+                        <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\SkynetBundle\Entity</argument>
                       </argument>
                     </service>
                   </argument>
                   <argument>Smile\UserBundle\Entity</argument>
+                </call>
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
+                      <argument type="service" id="annotation_reader"/>
+                      <argument type="collection">
+                        <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\PlatformBundle\Entity</argument>
+                        <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\Smile\UserBundle\Entity</argument>
+                        <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\src\SkynetBundle\Entity</argument>
+                      </argument>
+                    </service>
+                  </argument>
+                  <argument>SkynetBundle\Entity</argument>
                 </call>
                 <call method="addDriver">
                   <argument type="service">
@@ -3957,6 +3987,13 @@
       <argument type="service" id="debug.event_dispatcher"/>
       <argument type="service" id="request_stack"/>
     </service>
+    <service id="fos_user.util.password_updater" class="FOS\UserBundle\Util\PasswordUpdater" public="false">
+      <argument type="service" id="security.encoder_factory"/>
+    </service>
+    <service id="fos_user.util.canonical_fields_updater" class="FOS\UserBundle\Util\CanonicalFieldsUpdater" public="false">
+      <argument type="service" id="fos_user.util.email_canonicalizer"/>
+      <argument type="service" id="fos_user.util.email_canonicalizer"/>
+    </service>
     <service id="fos_user.listener.authentication" class="FOS\UserBundle\EventListener\AuthenticationListener">
       <tag name="kernel.event_subscriber"/>
       <argument type="service" id="fos_user.security.login_manager"/>
@@ -4541,9 +4578,6 @@
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
       </call>
-      <call method="pushHandler">
-        <argument type="service" id="monolog.handler.debug"/>
-      </call>
     </service>
     <service id="monolog.logger.translation" class="Symfony\Bridge\Monolog\Logger">
       <argument>translation</argument>
@@ -4552,9 +4586,6 @@
       </call>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
-      </call>
-      <call method="pushHandler">
-        <argument type="service" id="monolog.handler.debug"/>
       </call>
     </service>
     <service id="monolog.logger.cache" class="Symfony\Bridge\Monolog\Logger">
@@ -4565,9 +4596,6 @@
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
       </call>
-      <call method="pushHandler">
-        <argument type="service" id="monolog.handler.debug"/>
-      </call>
     </service>
     <service id="monolog.logger.templating" class="Symfony\Bridge\Monolog\Logger">
       <argument>templating</argument>
@@ -4576,9 +4604,6 @@
       </call>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
-      </call>
-      <call method="pushHandler">
-        <argument type="service" id="monolog.handler.debug"/>
       </call>
     </service>
     <service id="monolog.logger.profiler" class="Symfony\Bridge\Monolog\Logger">
@@ -4589,9 +4614,6 @@
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
       </call>
-      <call method="pushHandler">
-        <argument type="service" id="monolog.handler.debug"/>
-      </call>
     </service>
     <service id="monolog.logger.router" class="Symfony\Bridge\Monolog\Logger">
       <argument>router</argument>
@@ -4600,9 +4622,6 @@
       </call>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
-      </call>
-      <call method="pushHandler">
-        <argument type="service" id="monolog.handler.debug"/>
       </call>
     </service>
     <service id="monolog.logger.php" class="Symfony\Bridge\Monolog\Logger">
@@ -4613,14 +4632,11 @@
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
       </call>
-      <call method="pushHandler">
-        <argument type="service" id="monolog.handler.debug"/>
-      </call>
     </service>
     <service id="monolog.logger.event" class="Symfony\Bridge\Monolog\Logger">
       <argument>event</argument>
       <call method="pushHandler">
-        <argument type="service" id="monolog.handler.debug"/>
+        <argument type="service" id="monolog.handler.null_internal"/>
       </call>
     </service>
     <service id="monolog.logger.security" class="Symfony\Bridge\Monolog\Logger">
@@ -4631,17 +4647,11 @@
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
       </call>
-      <call method="pushHandler">
-        <argument type="service" id="monolog.handler.debug"/>
-      </call>
     </service>
     <service id="monolog.logger.doctrine" class="Symfony\Bridge\Monolog\Logger">
       <argument>doctrine</argument>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
-      </call>
-      <call method="pushHandler">
-        <argument type="service" id="monolog.handler.debug"/>
       </call>
     </service>
     <service id="monolog.logger.assetic" class="Symfony\Bridge\Monolog\Logger">
@@ -4652,14 +4662,8 @@
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
       </call>
-      <call method="pushHandler">
-        <argument type="service" id="monolog.handler.debug"/>
-      </call>
     </service>
-    <service id="monolog.handler.debug" class="Symfony\Bridge\Monolog\Handler\DebugHandler">
-      <argument>100</argument>
-      <argument>true</argument>
-    </service>
+    <service id="monolog.handler.null_internal" class="Monolog\Handler\NullHandler"/>
     <service id="session.storage.filesystem" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage">
       <argument>D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\var\cache\dev/sessions</argument>
       <argument>MOCKSESSID</argument>
@@ -4692,11 +4696,11 @@
         <argument key="generator_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
         <argument key="generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
         <argument key="generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\PhpGeneratorDumper</argument>
-        <argument key="generator_cache_class">appDevUrlGenerator</argument>
+        <argument key="generator_cache_class">appDevDebugProjectContainerUrlGenerator</argument>
         <argument key="matcher_class">Symfony\Bundle\FrameworkBundle\Routing\RedirectableUrlMatcher</argument>
         <argument key="matcher_base_class">Symfony\Bundle\FrameworkBundle\Routing\RedirectableUrlMatcher</argument>
         <argument key="matcher_dumper_class">Symfony\Component\Routing\Matcher\Dumper\PhpMatcherDumper</argument>
-        <argument key="matcher_cache_class">appDevUrlMatcher</argument>
+        <argument key="matcher_cache_class">appDevDebugProjectContainerUrlMatcher</argument>
         <argument key="strict_requirements">true</argument>
         <argument key="resource_type">yaml</argument>
       </argument>
@@ -4816,9 +4820,6 @@
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
       </call>
-      <call method="pushHandler">
-        <argument type="service" id="monolog.handler.debug"/>
-      </call>
       <autowiring-type>Psr\Log\LoggerInterface</autowiring-type>
     </service>
     <service id="swiftmailer.mailer.default.transport" class="Swift_Transport_SpoolTransport">
@@ -4879,6 +4880,12 @@
       <call method="setSourceIp">
         <argument>null</argument>
       </call>
+      <configurator method="configure">
+        <service class="Symfony\Bundle\SwiftmailerBundle\DependencyInjection\SmtpTransportConfigurator" public="false">
+          <argument>null</argument>
+          <argument type="service" id="router.request_context" on-invalid="null"/>
+        </service>
+      </configurator>
     </service>
     <service id="fos_user.mailer" class="FOS\UserBundle\Mailer\Mailer">
       <argument type="service" id="swiftmailer.mailer.default"/>
@@ -4898,13 +4905,10 @@
       </argument>
     </service>
     <service id="fos_user.util.email_canonicalizer" class="FOS\UserBundle\Util\Canonicalizer"/>
-    <service id="fos_user.util.token_generator" class="FOS\UserBundle\Util\TokenGenerator">
-      <argument type="service" id="logger" on-invalid="ignore"/>
-    </service>
-    <service id="fos_user.user_manager" class="FOS\UserBundle\Doctrine\UserManager">
-      <argument type="service" id="security.encoder_factory"/>
-      <argument type="service" id="fos_user.util.email_canonicalizer"/>
-      <argument type="service" id="fos_user.util.email_canonicalizer"/>
+    <service id="fos_user.util.token_generator" class="FOS\UserBundle\Util\TokenGenerator"/>
+    <service id="fos_user.user_manager" class="FOS\UserBundle\Doctrine\UserManager" lazy="true">
+      <argument type="service" id="fos_user.util.password_updater"/>
+      <argument type="service" id="fos_user.util.canonical_fields_updater"/>
       <argument type="service">
         <service class="Doctrine\Common\Persistence\ObjectManager" public="false">
           <argument>null</argument>

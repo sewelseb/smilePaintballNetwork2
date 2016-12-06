@@ -26,6 +26,7 @@ class AppKernel extends Kernel
             new Smile\AdminBundle\SmileAdminBundle(),
             new Liip\ImagineBundle\LiipImagineBundle(),
             new SkynetBundle\SkynetBundle(),
+            new SendinBlue\SendinBlueApiBundle\SendinBlueApiBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
