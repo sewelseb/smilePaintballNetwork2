@@ -323,6 +323,11 @@ class Post
         $this->thumbnails = $thumbnails;
     }
 
+    public function getThumbnailsWithoutSlash()
+    {
+        return substr($this->thumbnails, 1);
+    }
+
 
 
     public function getYoutubeId()

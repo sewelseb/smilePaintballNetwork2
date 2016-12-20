@@ -3,19 +3,19 @@
     <div class="spacer-5px">
         <a href="{{ path('smile_platform_post', {postId: post.id}) }}">
             {% if post.type=='video_youtube' %}
-                <img class="img-responsive" src="{{ post.getThumbnails() }}">
+                <img class="img-responsive" src="http://smilepaintball.com/{{ post.getThumbnails() }}">
             {% endif %}
             {% if post.type=='video_facebook' %}
-                <img class="img-responsive" src="{{ post.getThumbnails() }}">
+                <img class="img-responsive" src="http://smilepaintball.com/{{ post.getThumbnails() }}">
             {% endif %}
             {% if post.type=='picture_facebook' %}
-                <img class="img-responsive" src="{{ post.getThumbnails() }}">
+                <img class="img-responsive" src="http://smilepaintball.com/{{ post.getThumbnails() }}">
             {% endif %}
             {% if post.type=='picture_externalUrl' %}
                 <img class="img-responsive" src="{{ post.url }}" alt="">
             {% endif %}
             {% if post.type=='picture_local' %}
-                <img class="img-responsive" src="{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">
+                <img class="img-responsive" src="http://smilepaintball.com/{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">
             {% endif %}
         </a>
     </div>
