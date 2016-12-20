@@ -15,8 +15,8 @@ class __TwigTemplate_5546768e7638b34abb846725ddda600d1c00d5d797c6f781dde1be9e7e0
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_2a71c6e44d11410806102e949ddd30f33b00c302651c4778b047eeb301ee84da = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_2a71c6e44d11410806102e949ddd30f33b00c302651c4778b047eeb301ee84da->enter($__internal_2a71c6e44d11410806102e949ddd30f33b00c302651c4778b047eeb301ee84da_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/topTen.html.twig"));
+        $__internal_953794e7dc3a4b5e36764faa48784a50c71900423c544cfa5b6182702cf28737 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_953794e7dc3a4b5e36764faa48784a50c71900423c544cfa5b6182702cf28737->enter($__internal_953794e7dc3a4b5e36764faa48784a50c71900423c544cfa5b6182702cf28737_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/topTen.html.twig"));
 
         // line 1
         $context['_parent'] = $context;
@@ -33,7 +33,7 @@ class __TwigTemplate_5546768e7638b34abb846725ddda600d1c00d5d797c6f781dde1be9e7e0
             // line 5
             if (($this->getAttribute($context["post"], "type", array()) == "video_youtube")) {
                 // line 6
-                echo "                <img class=\"img-responsive\" src=\"";
+                echo "                <img class=\"img-responsive\" src=\"http://smilepaintball.com/";
                 echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "getThumbnails", array(), "method"), "html", null, true);
                 echo "\">
             ";
@@ -42,7 +42,7 @@ class __TwigTemplate_5546768e7638b34abb846725ddda600d1c00d5d797c6f781dde1be9e7e0
             echo "            ";
             if (($this->getAttribute($context["post"], "type", array()) == "video_facebook")) {
                 // line 9
-                echo "                <img class=\"img-responsive\" src=\"";
+                echo "                <img class=\"img-responsive\" src=\"http://smilepaintball.com/";
                 echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "getThumbnails", array(), "method"), "html", null, true);
                 echo "\">
             ";
@@ -51,7 +51,7 @@ class __TwigTemplate_5546768e7638b34abb846725ddda600d1c00d5d797c6f781dde1be9e7e0
             echo "            ";
             if (($this->getAttribute($context["post"], "type", array()) == "picture_facebook")) {
                 // line 12
-                echo "                <img class=\"img-responsive\" src=\"";
+                echo "                <img class=\"img-responsive\" src=\"http://smilepaintball.com/";
                 echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "getThumbnails", array(), "method"), "html", null, true);
                 echo "\">
             ";
@@ -69,7 +69,7 @@ class __TwigTemplate_5546768e7638b34abb846725ddda600d1c00d5d797c6f781dde1be9e7e0
             echo "            ";
             if (($this->getAttribute($context["post"], "type", array()) == "picture_local")) {
                 // line 18
-                echo "                <img class=\"img-responsive\" src=\"";
+                echo "                <img class=\"img-responsive\" src=\"http://smilepaintball.com/";
                 echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["post"], "picture", array()), "uploadDir", array()), "html", null, true);
                 echo "/";
                 echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["post"], "picture", array()), "url", array()), "html", null, true);
@@ -85,7 +85,7 @@ class __TwigTemplate_5546768e7638b34abb846725ddda600d1c00d5d797c6f781dde1be9e7e0
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['post'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         
-        $__internal_2a71c6e44d11410806102e949ddd30f33b00c302651c4778b047eeb301ee84da->leave($__internal_2a71c6e44d11410806102e949ddd30f33b00c302651c4778b047eeb301ee84da_prof);
+        $__internal_953794e7dc3a4b5e36764faa48784a50c71900423c544cfa5b6182702cf28737->leave($__internal_953794e7dc3a4b5e36764faa48784a50c71900423c544cfa5b6182702cf28737_prof);
 
     }
 
@@ -119,19 +119,19 @@ class __TwigTemplate_5546768e7638b34abb846725ddda600d1c00d5d797c6f781dde1be9e7e0
     <div class=\"spacer-5px\">
         <a href=\"{{ path('smile_platform_post', {postId: post.id}) }}\">
             {% if post.type=='video_youtube' %}
-                <img class=\"img-responsive\" src=\"{{ post.getThumbnails() }}\">
+                <img class=\"img-responsive\" src=\"http://smilepaintball.com/{{ post.getThumbnails() }}\">
             {% endif %}
             {% if post.type=='video_facebook' %}
-                <img class=\"img-responsive\" src=\"{{ post.getThumbnails() }}\">
+                <img class=\"img-responsive\" src=\"http://smilepaintball.com/{{ post.getThumbnails() }}\">
             {% endif %}
             {% if post.type=='picture_facebook' %}
-                <img class=\"img-responsive\" src=\"{{ post.getThumbnails() }}\">
+                <img class=\"img-responsive\" src=\"http://smilepaintball.com/{{ post.getThumbnails() }}\">
             {% endif %}
             {% if post.type=='picture_externalUrl' %}
                 <img class=\"img-responsive\" src=\"{{ post.url }}\" alt=\"\">
             {% endif %}
             {% if post.type=='picture_local' %}
-                <img class=\"img-responsive\" src=\"{{post.picture.uploadDir}}/{{post.picture.url}}\" alt=\"\">
+                <img class=\"img-responsive\" src=\"http://smilepaintball.com/{{post.picture.uploadDir}}/{{post.picture.url}}\" alt=\"\">
             {% endif %}
         </a>
     </div>

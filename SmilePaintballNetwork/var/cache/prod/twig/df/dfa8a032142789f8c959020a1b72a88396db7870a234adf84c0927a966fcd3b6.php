@@ -15,8 +15,8 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_0d555b0d95e8fb3ef7e00d3dbabe21b16b20f7be130c11d18dd58d0e2488ce96 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0d555b0d95e8fb3ef7e00d3dbabe21b16b20f7be130c11d18dd58d0e2488ce96->enter($__internal_0d555b0d95e8fb3ef7e00d3dbabe21b16b20f7be130c11d18dd58d0e2488ce96_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
+        $__internal_6279857a9354fe53a4fc4e91bb68182e189977096e8ab5de223a0398dd6877c1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_6279857a9354fe53a4fc4e91bb68182e189977096e8ab5de223a0398dd6877c1->enter($__internal_6279857a9354fe53a4fc4e91bb68182e189977096e8ab5de223a0398dd6877c1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
 
         // line 1
         echo "<!-- Project One -->
@@ -43,7 +43,7 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
     <div id=\"contentAllPosts\" hidden>
         <div ng-repeat=\"post in posts | orderBy: '-creationTime'\">
             ";
-        // line 173
+        // line 183
         echo "
                 <div class=\"row\">
                     <div ng-if=\"post.team\">
@@ -203,6 +203,16 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
                                 <img src=\"/images/sponsors/cgr.png\" width=\"50em\">
                             </a>
                         </div>
+                        <div class=\"col-md-1 col-xs-2\">
+                            <a href=\"http://www.anthraxpaintball.com/\">
+                                <img src=\"/images/sponsors/anthrax.png\" width=\"50em\">
+                            </a>
+                        </div>
+                        <div class=\"col-md-1 col-xs-2\">
+                            <a href=\"http://www.techtpaintball.com/\">
+                                <img src=\"/images/sponsors/techt.png\" width=\"50em\">
+                            </a>
+                        </div>
                     </div>
                 </div>
             ";
@@ -221,7 +231,7 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
 
 ";
         
-        $__internal_0d555b0d95e8fb3ef7e00d3dbabe21b16b20f7be130c11d18dd58d0e2488ce96->leave($__internal_0d555b0d95e8fb3ef7e00d3dbabe21b16b20f7be130c11d18dd58d0e2488ce96_prof);
+        $__internal_6279857a9354fe53a4fc4e91bb68182e189977096e8ab5de223a0398dd6877c1->leave($__internal_6279857a9354fe53a4fc4e91bb68182e189977096e8ab5de223a0398dd6877c1_prof);
 
     }
 
@@ -237,7 +247,7 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
 
     public function getDebugInfo()
     {
-        return array (  47 => 173,  38 => 6,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
+        return array (  47 => 183,  38 => 6,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -418,6 +428,16 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
                         <div class=\"col-md-1 col-xs-2\">
                             <a href=\"http://shop.customgunrails.com/\">
                                 <img src=\"/images/sponsors/cgr.png\" width=\"50em\">
+                            </a>
+                        </div>
+                        <div class=\"col-md-1 col-xs-2\">
+                            <a href=\"http://www.anthraxpaintball.com/\">
+                                <img src=\"/images/sponsors/anthrax.png\" width=\"50em\">
+                            </a>
+                        </div>
+                        <div class=\"col-md-1 col-xs-2\">
+                            <a href=\"http://www.techtpaintball.com/\">
+                                <img src=\"/images/sponsors/techt.png\" width=\"50em\">
                             </a>
                         </div>
                     </div>

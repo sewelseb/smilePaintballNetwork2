@@ -20,8 +20,8 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_6e78882035d5801673e006c14223a0351e79beb6ae7efec8221ac5ba6f19bfe7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6e78882035d5801673e006c14223a0351e79beb6ae7efec8221ac5ba6f19bfe7->enter($__internal_6e78882035d5801673e006c14223a0351e79beb6ae7efec8221ac5ba6f19bfe7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/layout.html.twig"));
+        $__internal_1a1c3d727e0bfbf26fc598c2e66bdda525a9e5d807de27373ef1bd1d006744a4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1a1c3d727e0bfbf26fc598c2e66bdda525a9e5d807de27373ef1bd1d006744a4->enter($__internal_1a1c3d727e0bfbf26fc598c2e66bdda525a9e5d807de27373ef1bd1d006744a4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/layout.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -250,7 +250,7 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
     ";
         // line 172
         $this->displayBlock('content', $context, $blocks);
-        // line 267
+        // line 281
         echo "
     <hr>
 
@@ -284,15 +284,15 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 
 </html>";
         
-        $__internal_6e78882035d5801673e006c14223a0351e79beb6ae7efec8221ac5ba6f19bfe7->leave($__internal_6e78882035d5801673e006c14223a0351e79beb6ae7efec8221ac5ba6f19bfe7_prof);
+        $__internal_1a1c3d727e0bfbf26fc598c2e66bdda525a9e5d807de27373ef1bd1d006744a4->leave($__internal_1a1c3d727e0bfbf26fc598c2e66bdda525a9e5d807de27373ef1bd1d006744a4_prof);
 
     }
 
     // line 13
     public function block_openGraph($context, array $blocks = array())
     {
-        $__internal_3c6cb6ae795ecfd8c4e87cfa8744f54d6a44830b4426a416f0e62a56e354e87a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_3c6cb6ae795ecfd8c4e87cfa8744f54d6a44830b4426a416f0e62a56e354e87a->enter($__internal_3c6cb6ae795ecfd8c4e87cfa8744f54d6a44830b4426a416f0e62a56e354e87a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "openGraph"));
+        $__internal_427880fc013b942a495a59c2c37b629610b16ab23af78ef8ee0a4c1dcbf6342f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_427880fc013b942a495a59c2c37b629610b16ab23af78ef8ee0a4c1dcbf6342f->enter($__internal_427880fc013b942a495a59c2c37b629610b16ab23af78ef8ee0a4c1dcbf6342f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "openGraph"));
 
         // line 14
         echo "        <meta property=\"og:title\" content=\"Smile Paintball Network\" />
@@ -302,15 +302,15 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
         <meta property=\"og:description\" content=\"Contend posted on SmilePaintball.com.\" />
     ";
         
-        $__internal_3c6cb6ae795ecfd8c4e87cfa8744f54d6a44830b4426a416f0e62a56e354e87a->leave($__internal_3c6cb6ae795ecfd8c4e87cfa8744f54d6a44830b4426a416f0e62a56e354e87a_prof);
+        $__internal_427880fc013b942a495a59c2c37b629610b16ab23af78ef8ee0a4c1dcbf6342f->leave($__internal_427880fc013b942a495a59c2c37b629610b16ab23af78ef8ee0a4c1dcbf6342f_prof);
 
     }
 
     // line 150
     public function block_pageHeader($context, array $blocks = array())
     {
-        $__internal_adb4eebae1f7c0d93a776dee7c05c758ac10374f93da93e671dfc95312b71c04 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_adb4eebae1f7c0d93a776dee7c05c758ac10374f93da93e671dfc95312b71c04->enter($__internal_adb4eebae1f7c0d93a776dee7c05c758ac10374f93da93e671dfc95312b71c04_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
+        $__internal_421fb3bf816ed8e64c6db406e63c7ca136cdb8298a6dd4f3f8d9a915cd705727 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_421fb3bf816ed8e64c6db406e63c7ca136cdb8298a6dd4f3f8d9a915cd705727->enter($__internal_421fb3bf816ed8e64c6db406e63c7ca136cdb8298a6dd4f3f8d9a915cd705727_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
 
         // line 151
         echo "                <h1 class=\"page-header\">
@@ -326,7 +326,7 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
         } else {
             // line 158
             echo "                        <div class=\"text-center\">
-                            <button class=\"btn btn-primary text-center\" data-toggle=\"modal\" data-target=\"#newPostModal\"><strong>Post your fun</strong></button>
+                            <button class=\"btn btn-primary text-center\" data-toggle=\"modal\" data-target=\"#newPostModal\"><H4><strong> + Post your paintball fun </strong></H4></button>
                         </div>
                     ";
         }
@@ -339,15 +339,15 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
                 </div>
             ";
         
-        $__internal_adb4eebae1f7c0d93a776dee7c05c758ac10374f93da93e671dfc95312b71c04->leave($__internal_adb4eebae1f7c0d93a776dee7c05c758ac10374f93da93e671dfc95312b71c04_prof);
+        $__internal_421fb3bf816ed8e64c6db406e63c7ca136cdb8298a6dd4f3f8d9a915cd705727->leave($__internal_421fb3bf816ed8e64c6db406e63c7ca136cdb8298a6dd4f3f8d9a915cd705727_prof);
 
     }
 
     // line 172
     public function block_content($context, array $blocks = array())
     {
-        $__internal_3b62746c1f72475c4427f875e57e22cc4784f756c43f1f310952c50766dc2ab5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_3b62746c1f72475c4427f875e57e22cc4784f756c43f1f310952c50766dc2ab5->enter($__internal_3b62746c1f72475c4427f875e57e22cc4784f756c43f1f310952c50766dc2ab5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_741aa0b8e1d5b0a19ee883189493a43d34abefcde4cb270545f34b8fb48a8da4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_741aa0b8e1d5b0a19ee883189493a43d34abefcde4cb270545f34b8fb48a8da4->enter($__internal_741aa0b8e1d5b0a19ee883189493a43d34abefcde4cb270545f34b8fb48a8da4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 173
         echo "    <div class=\"row\">
@@ -361,21 +361,21 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
             ";
         // line 181
         $this->displayBlock('rightCollumn', $context, $blocks);
-        // line 263
+        // line 277
         echo "        </div>
     </div>
     <!-- /.row -->
     ";
         
-        $__internal_3b62746c1f72475c4427f875e57e22cc4784f756c43f1f310952c50766dc2ab5->leave($__internal_3b62746c1f72475c4427f875e57e22cc4784f756c43f1f310952c50766dc2ab5_prof);
+        $__internal_741aa0b8e1d5b0a19ee883189493a43d34abefcde4cb270545f34b8fb48a8da4->leave($__internal_741aa0b8e1d5b0a19ee883189493a43d34abefcde4cb270545f34b8fb48a8da4_prof);
 
     }
 
     // line 175
     public function block_leftCollumn($context, array $blocks = array())
     {
-        $__internal_deadb59258ce6665746b9e2e04cf4ba9588fa6b1ed92277c25e2cadcd628b6dc = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_deadb59258ce6665746b9e2e04cf4ba9588fa6b1ed92277c25e2cadcd628b6dc->enter($__internal_deadb59258ce6665746b9e2e04cf4ba9588fa6b1ed92277c25e2cadcd628b6dc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
+        $__internal_160ec823517012782ff24bc02d58738ec1e35778a55dc2a4a43970cb1a9b46b3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_160ec823517012782ff24bc02d58738ec1e35778a55dc2a4a43970cb1a9b46b3->enter($__internal_160ec823517012782ff24bc02d58738ec1e35778a55dc2a4a43970cb1a9b46b3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
 
         // line 176
         echo "                ";
@@ -384,19 +384,19 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 
             ";
         
-        $__internal_deadb59258ce6665746b9e2e04cf4ba9588fa6b1ed92277c25e2cadcd628b6dc->leave($__internal_deadb59258ce6665746b9e2e04cf4ba9588fa6b1ed92277c25e2cadcd628b6dc_prof);
+        $__internal_160ec823517012782ff24bc02d58738ec1e35778a55dc2a4a43970cb1a9b46b3->leave($__internal_160ec823517012782ff24bc02d58738ec1e35778a55dc2a4a43970cb1a9b46b3_prof);
 
     }
 
     // line 181
     public function block_rightCollumn($context, array $blocks = array())
     {
-        $__internal_69c99a51e0904604f36511ea9987ba2a42acb16e37e040832645551ae41c4e8e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_69c99a51e0904604f36511ea9987ba2a42acb16e37e040832645551ae41c4e8e->enter($__internal_69c99a51e0904604f36511ea9987ba2a42acb16e37e040832645551ae41c4e8e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
+        $__internal_d1fcfd79e506e376664e4fe8dc8b546597d30916fe6fd108787265c03ec28f75 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d1fcfd79e506e376664e4fe8dc8b546597d30916fe6fd108787265c03ec28f75->enter($__internal_d1fcfd79e506e376664e4fe8dc8b546597d30916fe6fd108787265c03ec28f75_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
 
         // line 182
         echo "                <div class=\"row\">
-                    <h3>Latest Smile Paintball video</h3>
+                    <h3>Latest Smile Team video</h3>
                     <div class=\"fb-video\" data-href=\"https://www.facebook.com/smilepaintball/videos/vb.1552858474930301/1812396948976451/?type=2&theater\" data-width=\"700px\" data-show-text=\"false\"><blockquote cite=\"https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater\" class=\"fb-xfbml-parse-ignore\"><a href=\"https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater\"></a>
                         </blockquote></div>
                 </div>
@@ -475,12 +475,26 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 
                     </div>
 
+                    <div class=\"sponsor-big\">
+                        <a href=\"http://www.anthraxpaintball.com/\">
+                            <img src=\"/images/sponsors/anthrax.png\" width=\"100%\">
+                        </a>
+
+                    </div>
+
+                    <div class=\"sponsor-big\">
+                        <a href=\"http://www.techtpaintball.com/\">
+                            <img src=\"/images/sponsors/techt.png\" width=\"100%\">
+                        </a>
+
+                    </div>
+
                 </div>
 
 
             ";
         
-        $__internal_69c99a51e0904604f36511ea9987ba2a42acb16e37e040832645551ae41c4e8e->leave($__internal_69c99a51e0904604f36511ea9987ba2a42acb16e37e040832645551ae41c4e8e_prof);
+        $__internal_d1fcfd79e506e376664e4fe8dc8b546597d30916fe6fd108787265c03ec28f75->leave($__internal_d1fcfd79e506e376664e4fe8dc8b546597d30916fe6fd108787265c03ec28f75_prof);
 
     }
 
@@ -496,7 +510,7 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 
     public function getDebugInfo()
     {
-        return array (  409 => 191,  398 => 182,  392 => 181,  381 => 176,  375 => 175,  365 => 263,  363 => 181,  359 => 179,  357 => 175,  353 => 173,  347 => 172,  334 => 162,  328 => 158,  324 => 156,  322 => 155,  316 => 151,  310 => 150,  298 => 14,  292 => 13,  254 => 267,  252 => 172,  247 => 169,  245 => 150,  236 => 143,  234 => 142,  203 => 114,  195 => 109,  151 => 67,  101 => 65,  97 => 54,  85 => 44,  79 => 42,  76 => 41,  69 => 42,  66 => 41,  62 => 37,  43 => 20,  41 => 13,  27 => 1,);
+        return array (  409 => 191,  398 => 182,  392 => 181,  381 => 176,  375 => 175,  365 => 277,  363 => 181,  359 => 179,  357 => 175,  353 => 173,  347 => 172,  334 => 162,  328 => 158,  324 => 156,  322 => 155,  316 => 151,  310 => 150,  298 => 14,  292 => 13,  254 => 281,  252 => 172,  247 => 169,  245 => 150,  236 => 143,  234 => 142,  203 => 114,  195 => 109,  151 => 67,  101 => 65,  97 => 54,  85 => 44,  79 => 42,  76 => 41,  69 => 42,  66 => 41,  62 => 37,  43 => 20,  41 => 13,  27 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -667,7 +681,7 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
                         <a class=\"btn btn-register-facebook\" href=\"#\" onclick=\"fb_login();\">Connect with Facebook</a> OR <button class=\"btn btn-primary\"  data-toggle=\"modal\" data-target=\"#loginModal\" > Connect/Sign up</button>
                     {% else %}
                         <div class=\"text-center\">
-                            <button class=\"btn btn-primary text-center\" data-toggle=\"modal\" data-target=\"#newPostModal\"><strong>Post your fun</strong></button>
+                            <button class=\"btn btn-primary text-center\" data-toggle=\"modal\" data-target=\"#newPostModal\"><H4><strong> + Post your paintball fun </strong></H4></button>
                         </div>
                     {% endif %}
                 </div>
@@ -691,7 +705,7 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
         <div class=\"col-md-3 right-bar\">
             {% block rightCollumn %}
                 <div class=\"row\">
-                    <h3>Latest Smile Paintball video</h3>
+                    <h3>Latest Smile Team video</h3>
                     <div class=\"fb-video\" data-href=\"https://www.facebook.com/smilepaintball/videos/vb.1552858474930301/1812396948976451/?type=2&theater\" data-width=\"700px\" data-show-text=\"false\"><blockquote cite=\"https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater\" class=\"fb-xfbml-parse-ignore\"><a href=\"https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater\"></a>
                         </blockquote></div>
                 </div>
@@ -763,6 +777,20 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
                     <div class=\"sponsor-big\">
                         <a href=\"http://shop.customgunrails.com/\">
                             <img src=\"/images/sponsors/cgr.png\" width=\"100%\">
+                        </a>
+
+                    </div>
+
+                    <div class=\"sponsor-big\">
+                        <a href=\"http://www.anthraxpaintball.com/\">
+                            <img src=\"/images/sponsors/anthrax.png\" width=\"100%\">
+                        </a>
+
+                    </div>
+
+                    <div class=\"sponsor-big\">
+                        <a href=\"http://www.techtpaintball.com/\">
+                            <img src=\"/images/sponsors/techt.png\" width=\"100%\">
                         </a>
 
                     </div>
