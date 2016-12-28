@@ -1126,3 +1126,7 @@ function submitNewTeam(){
     document.getElementsByClassName('formCreateTeam')[0].submit();
 
 }
+
+function openModalConnectToVote(){
+    $('#showMandatoryLoginForVotes').show();
+}

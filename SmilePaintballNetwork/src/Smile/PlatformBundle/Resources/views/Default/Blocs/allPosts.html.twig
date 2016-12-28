@@ -70,6 +70,9 @@
                             Event: {{ post.eventName }}
                         </span>
                         <p>
+                            {% endverbatim %}
+                            {% if app.user %}
+                            {% verbatim %}
                             <div id="updownVote_{{post.id}}">
                                 <div class="col-md-6 col-xs-6">
                                     <a href="">
@@ -88,6 +91,22 @@
                                     </a>
                                 </div>
                             </div>
+                            {% endverbatim %}
+                            {% else %}
+                            {% verbatim %}
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <a href="#" data-toggle="modal" data-target="#loginModal" class="yellow-text">
+                                        <span onclick="openModalConnectToVote()"><img src="/images/upvote.png" class="vote-img"></span>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <a href="#" data-toggle="modal" data-target="#loginModal" class="yellow-text">
+                                        <span onclick="openModalConnectToVote()"><img src="/images/downvote.png" class="vote-img"></span>
+                                    </a>
+                                </div>
+                            {% endverbatim %}
+                            {% endif %}
+                            {% verbatim %}
                            <div id="upvoted_{{post.id}}" hidden>
                                   upvoted ;)
                             </div>

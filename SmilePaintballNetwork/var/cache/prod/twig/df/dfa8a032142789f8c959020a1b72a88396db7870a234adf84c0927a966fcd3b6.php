@@ -15,8 +15,8 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_6279857a9354fe53a4fc4e91bb68182e189977096e8ab5de223a0398dd6877c1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6279857a9354fe53a4fc4e91bb68182e189977096e8ab5de223a0398dd6877c1->enter($__internal_6279857a9354fe53a4fc4e91bb68182e189977096e8ab5de223a0398dd6877c1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
+        $__internal_64f1ae7a6e9b8ee2d9fb4bf68cfcfc4faa2892a0261f33e8817093437c52ba50 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_64f1ae7a6e9b8ee2d9fb4bf68cfcfc4faa2892a0261f33e8817093437c52ba50->enter($__internal_64f1ae7a6e9b8ee2d9fb4bf68cfcfc4faa2892a0261f33e8817093437c52ba50_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
 
         // line 1
         echo "<!-- Project One -->
@@ -43,7 +43,7 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
     <div id=\"contentAllPosts\" hidden>
         <div ng-repeat=\"post in posts | orderBy: '-creationTime'\">
             ";
-        // line 183
+        // line 73
         echo "
                 <div class=\"row\">
                     <div ng-if=\"post.team\">
@@ -105,6 +105,15 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
                             Event: {{ post.eventName }}
                         </span>
                         <p>
+                            ";
+        echo "
+                            ";
+        // line 74
+        if ($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "user", array())) {
+            // line 75
+            echo "                            ";
+            // line 94
+            echo "
                             <div id=\"updownVote_{{post.id}}\">
                                 <div class=\"col-md-6 col-xs-6\">
                                     <a href=\"\">
@@ -123,6 +132,32 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
                                     </a>
                                 </div>
                             </div>
+                            ";
+            echo "
+                            ";
+        } else {
+            // line 96
+            echo "                            ";
+            // line 107
+            echo "
+                                <div class=\"col-md-6 col-sm-6 col-xs-6\">
+                                    <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\">
+                                        <span onclick=\"openModalConnectToVote()\"><img src=\"/images/upvote.png\" class=\"vote-img\"></span>
+                                    </a>
+                                </div>
+                                <div class=\"col-md-6 col-sm-6 col-xs-6\">
+                                    <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\">
+                                        <span onclick=\"openModalConnectToVote()\"><img src=\"/images/downvote.png\" class=\"vote-img\"></span>
+                                    </a>
+                                </div>
+                            ";
+            echo "
+                            ";
+        }
+        // line 109
+        echo "                            ";
+        // line 202
+        echo "
                            <div id=\"upvoted_{{post.id}}\" hidden>
                                   upvoted ;)
                             </div>
@@ -231,7 +266,7 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
 
 ";
         
-        $__internal_6279857a9354fe53a4fc4e91bb68182e189977096e8ab5de223a0398dd6877c1->leave($__internal_6279857a9354fe53a4fc4e91bb68182e189977096e8ab5de223a0398dd6877c1_prof);
+        $__internal_64f1ae7a6e9b8ee2d9fb4bf68cfcfc4faa2892a0261f33e8817093437c52ba50->leave($__internal_64f1ae7a6e9b8ee2d9fb4bf68cfcfc4faa2892a0261f33e8817093437c52ba50_prof);
 
     }
 
@@ -247,7 +282,7 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
 
     public function getDebugInfo()
     {
-        return array (  47 => 183,  38 => 6,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
+        return array (  160 => 202,  158 => 109,  142 => 107,  140 => 96,  116 => 94,  114 => 75,  112 => 74,  47 => 73,  38 => 6,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -332,6 +367,9 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
                             Event: {{ post.eventName }}
                         </span>
                         <p>
+                            {% endverbatim %}
+                            {% if app.user %}
+                            {% verbatim %}
                             <div id=\"updownVote_{{post.id}}\">
                                 <div class=\"col-md-6 col-xs-6\">
                                     <a href=\"\">
@@ -350,6 +388,22 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
                                     </a>
                                 </div>
                             </div>
+                            {% endverbatim %}
+                            {% else %}
+                            {% verbatim %}
+                                <div class=\"col-md-6 col-sm-6 col-xs-6\">
+                                    <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\">
+                                        <span onclick=\"openModalConnectToVote()\"><img src=\"/images/upvote.png\" class=\"vote-img\"></span>
+                                    </a>
+                                </div>
+                                <div class=\"col-md-6 col-sm-6 col-xs-6\">
+                                    <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\">
+                                        <span onclick=\"openModalConnectToVote()\"><img src=\"/images/downvote.png\" class=\"vote-img\"></span>
+                                    </a>
+                                </div>
+                            {% endverbatim %}
+                            {% endif %}
+                            {% verbatim %}
                            <div id=\"upvoted_{{post.id}}\" hidden>
                                   upvoted ;)
                             </div>

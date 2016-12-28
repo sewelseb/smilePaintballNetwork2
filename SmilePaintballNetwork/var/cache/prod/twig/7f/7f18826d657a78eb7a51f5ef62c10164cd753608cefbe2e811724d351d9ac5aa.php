@@ -15,8 +15,8 @@ class __TwigTemplate_7a0c3a3cf2e153976f367990e06d457a51d3478dd1e6d130600ce4363df
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_48624bd028fd3975f590127c65ea1e2ba923eb6057d3a0a65cc2416bc2bf144d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_48624bd028fd3975f590127c65ea1e2ba923eb6057d3a0a65cc2416bc2bf144d->enter($__internal_48624bd028fd3975f590127c65ea1e2ba923eb6057d3a0a65cc2416bc2bf144d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
+        $__internal_397ad47c6bd19c29e675d6a807671891ada9d62ff66ba4023e41300d6cd83fb7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_397ad47c6bd19c29e675d6a807671891ada9d62ff66ba4023e41300d6cd83fb7->enter($__internal_397ad47c6bd19c29e675d6a807671891ada9d62ff66ba4023e41300d6cd83fb7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
 
         // line 1
         echo "<!-- Navigation -->
@@ -136,7 +136,9 @@ class __TwigTemplate_7a0c3a3cf2e153976f367990e06d457a51d3478dd1e6d130600ce4363df
                     <h4 class=\"modal-title\" id=\"myModalLabel\">Sign up/Login</h4>
                 </div>
                 <div class=\"modal-body\">
-
+                    <div class=\"row text-center\">
+                        <H3 class=\"text-center text-warning\" id=\"showMandatoryLoginForVotes\" hidden>You must be connected to upvote or downvote ;).</H3>
+                    </div>
                     <div class=\"form-group text-center\" >
                         <a class=\"btn btn-register-facebook\" href=\"#\" onclick=\"fb_login();\">Connect with Facebook</a>
                     </div>
@@ -145,14 +147,14 @@ class __TwigTemplate_7a0c3a3cf2e153976f367990e06d457a51d3478dd1e6d130600ce4363df
                         <div class=\"col-md-6\" style=\"border-right: 1px solid lightgray;\">
                             <h4>New on Smile ? Sign up !</h4>
                             ";
-            // line 104
+            // line 106
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->renderFragment($this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->controller("SmileUserBundle:Registration:register", array("originalRequest" => $this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()))));
             echo "
                         </div>
                         <div class=\"col-md-6\">
                             <h4>Already have an account ? Log in !</h4>
                             ";
-            // line 108
+            // line 110
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->renderFragment($this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->controller("FOSUserBundle:Security:login"));
             echo "
                         </div>
@@ -177,7 +179,7 @@ class __TwigTemplate_7a0c3a3cf2e153976f367990e06d457a51d3478dd1e6d130600ce4363df
                     </div>
 
     ";
-            // line 131
+            // line 133
             echo "                    <div class=\"clearfix\"></div>
                 </div>
 
@@ -193,7 +195,7 @@ class __TwigTemplate_7a0c3a3cf2e153976f367990e06d457a51d3478dd1e6d130600ce4363df
 ";
         }
         
-        $__internal_48624bd028fd3975f590127c65ea1e2ba923eb6057d3a0a65cc2416bc2bf144d->leave($__internal_48624bd028fd3975f590127c65ea1e2ba923eb6057d3a0a65cc2416bc2bf144d_prof);
+        $__internal_397ad47c6bd19c29e675d6a807671891ada9d62ff66ba4023e41300d6cd83fb7->leave($__internal_397ad47c6bd19c29e675d6a807671891ada9d62ff66ba4023e41300d6cd83fb7_prof);
 
     }
 
@@ -209,7 +211,7 @@ class __TwigTemplate_7a0c3a3cf2e153976f367990e06d457a51d3478dd1e6d130600ce4363df
 
     public function getDebugInfo()
     {
-        return array (  181 => 131,  156 => 108,  149 => 104,  124 => 81,  113 => 70,  101 => 60,  83 => 45,  63 => 28,  57 => 25,  51 => 22,  39 => 13,  27 => 3,  25 => 2,  22 => 1,);
+        return array (  183 => 133,  158 => 110,  151 => 106,  124 => 81,  113 => 70,  101 => 60,  83 => 45,  63 => 28,  57 => 25,  51 => 22,  39 => 13,  27 => 3,  25 => 2,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -317,7 +319,9 @@ class __TwigTemplate_7a0c3a3cf2e153976f367990e06d457a51d3478dd1e6d130600ce4363df
                     <h4 class=\"modal-title\" id=\"myModalLabel\">Sign up/Login</h4>
                 </div>
                 <div class=\"modal-body\">
-
+                    <div class=\"row text-center\">
+                        <H3 class=\"text-center text-warning\" id=\"showMandatoryLoginForVotes\" hidden>You must be connected to upvote or downvote ;).</H3>
+                    </div>
                     <div class=\"form-group text-center\" >
                         <a class=\"btn btn-register-facebook\" href=\"#\" onclick=\"fb_login();\">Connect with Facebook</a>
                     </div>

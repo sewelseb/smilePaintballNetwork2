@@ -36,6 +36,11 @@ class PostsController extends FOSRestController
         foreach ($posts as $post)
         {
             $post->getUser()->setTeams(array());
+            if ($post->getTeam())
+            {
+                $post->getTeam()->setAdmin('');
+            }
+
         }
 
 
@@ -147,6 +152,10 @@ class PostsController extends FOSRestController
         foreach ($posts as $post)
         {
             $post->getUser()->setTeams(array());
+            if ($post->getTeam())
+            {
+                $post->getTeam()->setAdmin('');
+            }
         }
 
         $view = $this->view($posts, 200)

@@ -106,16 +106,29 @@
             </div>
             <p>
             <div id="updownVote_{{post.id}}">
-                <div class="col-md-6 col-sm-6 col-xs-6">
-                    <a href="">
-                        <span onclick="upvote({{ post.id }})"><img src="/images/upvote.png" class="vote-img"></span>
-                    </a>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-6">
-                    <a href="">
-                        <span onclick="downvote({{ post.id }})"><img src="/images/downvote.png" class="vote-img"></span>
-                    </a>
-                </div>
+                {% if app.user %}
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="">
+                            <span onclick="upvote({{ post.id }})"><img src="/images/upvote.png" class="vote-img"></span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="">
+                            <span onclick="downvote({{ post.id }})"><img src="/images/downvote.png" class="vote-img"></span>
+                        </a>
+                    </div>
+                {% else %}
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#loginModal" class="yellow-text">
+                            <span onclick="openModalConnectToVote()"><img src="/images/upvote.png" class="vote-img"></span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#loginModal" class="yellow-text">
+                            <span onclick="openModalConnectToVote()"><img src="/images/downvote.png" class="vote-img"></span>
+                        </a>
+                    </div>
+                {% endif %}
             </div>
             <div id="upvoted_{{post.id}}" hidden>
                 upvoted ;)
@@ -162,4 +175,7 @@
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-582b51a0caf3c323"></script>
 
     </div>
+    {% if not app.user %}
+        <H3>To upvote, downvote, comment or post, please <a href="#" data-toggle="modal" data-target="#loginModal" class="yellow-text"><button class="btn btn-primary"><strong>log in</strong></button></a></H3>
+    {% endif %}
 {% endblock %}
