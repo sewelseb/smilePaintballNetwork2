@@ -148,18 +148,8 @@
     <div class="row">
         <div class="col-lg-12">
             {% block pageHeader %}
-                <h1 class="page-header">
-                    Watch, rate and share fun! <img src="/images/smileyTop.png">
-                </h1>
-                <div>
-                    {% if not app.user %}
-                        <a class="btn btn-register-facebook" href="#" onclick="fb_login();">Connect with Facebook</a> OR <button class="btn btn-primary"  data-toggle="modal" data-target="#loginModal" > Connect/Sign up</button>
-                    {% else %}
-                        <div class="text-center">
-                            <button class="btn btn-primary text-center" data-toggle="modal" data-target="#newPostModal"><H4><strong> + Post your paintball fun </strong></H4></button>
-                        </div>
-                    {% endif %}
-                </div>
+                {% include 'SmilePlatformBundle::Default/Blocs/banner.html.twig'%}
+
                 <div class="pull-right">
                     Smile's facebook page:
                     <div class="fb-like" data-href="https://www.facebook.com/smilepaintball/?fref=ts" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>

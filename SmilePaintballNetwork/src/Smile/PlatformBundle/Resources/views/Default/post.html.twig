@@ -63,6 +63,9 @@
             });
         </script>
     {% endif %} {# end first view modal #}
+    <div>
+        {% include 'SmilePlatformBundle::Default/Blocs/banner.html.twig'%}
+    </div>
     <div class="row" >
         <h1>{{ post.title }}</h1>
       <span id="smileApiUpvoteUrl" hidden>{{ path ('smile_api_post_upvote_url') }}</span>
