@@ -118,6 +118,7 @@ function exploreFacebookVideo(fb_url)
         console.log(url);
     });
     /*
+
      FB.XFBML.parse(document.getElementById('facebookContainer'), function(){
      var url = $('._1p6f')[0].attr('src');
      console.log('url');
@@ -145,3 +146,4 @@ function submitNewTeam(){
 function openModalConnectToVote(){
     $('#showMandatoryLoginForVotes').show();
 }
+

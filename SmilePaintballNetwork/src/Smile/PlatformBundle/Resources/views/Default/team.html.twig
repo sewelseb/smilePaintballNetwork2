@@ -63,7 +63,7 @@
                 {% endif %}
                 {% if post.type=='picture_local' %}
                     <a href="{{ path('smile_platform_post', {'postId': post.getId })  }}">
-                        <img class="img-responsive" src="{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">
+                        <img class="img-responsive" src="/{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">
                     </a>
                 {% endif %}
             </div>

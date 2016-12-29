@@ -788,7 +788,7 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
                 $scope.safeApply();
 
                 $q.defer(function(){
-                    scope.$apply();
+                    $scope.$apply();
                     FB.XFBML.parse();
                 });
 
@@ -796,6 +796,7 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
                 $('#spiningWheelAllPosts').hide("slow");
                 $('#contentAllPosts').show("slow", $scope.facebookSafeApply());
                 $scope.loadMore=true;
+                $scope.safeApply();
 
 
 
@@ -1103,6 +1104,7 @@ function exploreFacebookVideo(fb_url)
         console.log(url);
     });
     /*
+
      FB.XFBML.parse(document.getElementById('facebookContainer'), function(){
      var url = $('._1p6f')[0].attr('src');
      console.log('url');
@@ -1130,3 +1132,4 @@ function submitNewTeam(){
 function openModalConnectToVote(){
     $('#showMandatoryLoginForVotes').show();
 }
+

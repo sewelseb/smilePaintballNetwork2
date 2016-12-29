@@ -24,6 +24,7 @@ class Team
     /**
      * @ORM\ManyToOne(targetEntity="Smile\UserBundle\Entity\User")
      * @ORM\JoinColumn(nullable=false)
+     *
      */
     private $admin;
 

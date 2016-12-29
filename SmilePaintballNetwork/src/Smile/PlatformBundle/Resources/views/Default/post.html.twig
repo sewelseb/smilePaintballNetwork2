@@ -23,19 +23,32 @@
     {% if post.type=='picture_local' %}
         <meta property="og:image" content="https://smilepaintball.com/{{post.picture.getUploadDir()}}/{{post.picture.url}}" />
     {% endif %}
-    <meta property="og:type" content="website" />
+    <meta property="og:type"   content="article" />
+
     <meta property="og:url" content="http://smilepaintball.com/platform/post/{{ post.id }}" />
+    <meta property="article:author" content="{{ post.user.getFacebookId }}" />
+
     {% if post.team != null %}
         {% set teamText = " of team "~post.team.name %}
     {% else %}
         {% set teamText = "" %}
     {% endif %}
-    <meta property="og:description" content="{{ post.title }}. Content posted by {{ post.user.username }}{{ teamText }}." />
+
+    {% if post.user.firstName and post.user.lastName %}
+        <meta property="og:description" content="Posted by {{ post.user.firstName }} {{ post.user.lastName }}{{ teamText }}.  :) You too, share your paintball fun on : " />
+    {% else %}
+        <meta property="og:description" content="Posted by {{ post.user.username }}{{ teamText }}. :) You too, share your paintball fun on : " />
+    {% endif %}
 
 {% endblock %}
 
 {% block pageHeader %}
-
+    <div class="pull-right">
+        <!--Smile's facebook page:
+        <div class="fb-like" data-href="https://www.facebook.com/smilepaintball/?fref=ts" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+        -->
+        <a href="https://www.facebook.com/groups/1790079874650463/"><button class="btn btn-register-facebook"><strong>Join our Facebook group</strong></button></a>
+    </div>
 {% endblock %}
 
 {% block leftCollumn %}
@@ -64,7 +77,20 @@
         </script>
     {% endif %} {# end first view modal #}
     <div>
-        {% include 'SmilePlatformBundle::Default/Blocs/banner.html.twig'%}
+        <h1 class="page-header">
+            Watch, rate and share fun!
+        </h1>
+        <div>
+            <a href="{{ path('smile_platform_homepage') }}"><button class="btn btn-primary">See more fun</button></a>
+            OR
+            {% if not app.user %}
+                <button class="btn btn-primary"  data-toggle="modal" data-target="#loginModal" > + Post your paintball fun</button>
+            {% else %}
+                <div class="text-center">
+                    <button class="btn btn-primary text-center" data-toggle="modal" data-target="#newPostModal"><H4><strong> + Post your paintball fun </strong></H4></button>
+                </div>
+            {% endif %}
+        </div>
     </div>
     <div class="row" >
         <h1>{{ post.title }}</h1>

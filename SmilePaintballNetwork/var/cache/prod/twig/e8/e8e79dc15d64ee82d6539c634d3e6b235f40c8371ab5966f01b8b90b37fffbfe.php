@@ -15,12 +15,12 @@ class __TwigTemplate_ba954e7968196231910e0d4ac2d305dc21219a73f8ad32a630297ea5eb8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_9e8428d69b0e656aa5b41478c61af3e8ce256aeb13fa9f0be3c53e466acf1430 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_9e8428d69b0e656aa5b41478c61af3e8ce256aeb13fa9f0be3c53e466acf1430->enter($__internal_9e8428d69b0e656aa5b41478c61af3e8ce256aeb13fa9f0be3c53e466acf1430_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/banner.html.twig"));
+        $__internal_7dc5e6a1b9072e9a4adf071c027b8d7fa01ac3ecf1a77d2b10102f228b85a952 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_7dc5e6a1b9072e9a4adf071c027b8d7fa01ac3ecf1a77d2b10102f228b85a952->enter($__internal_7dc5e6a1b9072e9a4adf071c027b8d7fa01ac3ecf1a77d2b10102f228b85a952_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/banner.html.twig"));
 
         // line 1
         echo "<h1 class=\"page-header\">
-    Watch, rate and share fun! <img src=\"/images/smileyTop.png\">
+    Watch, rate and share fun!
 </h1>
 <div>
     ";
@@ -39,7 +39,7 @@ class __TwigTemplate_ba954e7968196231910e0d4ac2d305dc21219a73f8ad32a630297ea5eb8
         // line 12
         echo "</div>";
         
-        $__internal_9e8428d69b0e656aa5b41478c61af3e8ce256aeb13fa9f0be3c53e466acf1430->leave($__internal_9e8428d69b0e656aa5b41478c61af3e8ce256aeb13fa9f0be3c53e466acf1430_prof);
+        $__internal_7dc5e6a1b9072e9a4adf071c027b8d7fa01ac3ecf1a77d2b10102f228b85a952->leave($__internal_7dc5e6a1b9072e9a4adf071c027b8d7fa01ac3ecf1a77d2b10102f228b85a952_prof);
 
     }
 
@@ -69,7 +69,7 @@ class __TwigTemplate_ba954e7968196231910e0d4ac2d305dc21219a73f8ad32a630297ea5eb8
     public function getSourceContext()
     {
         return new Twig_Source("<h1 class=\"page-header\">
-    Watch, rate and share fun! <img src=\"/images/smileyTop.png\">
+    Watch, rate and share fun!
 </h1>
 <div>
     {% if not app.user %}

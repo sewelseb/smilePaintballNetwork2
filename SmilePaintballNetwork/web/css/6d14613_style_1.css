@@ -64,6 +64,19 @@ a{
     color: white;
 }
 
+.btn-register-facebook-navbar{
+    background-color: #3b5998;
+    color: white;
+}
+.btn-register-facebook-navbar:hover{
+    background-color: #3b5998;
+    color: white;
+}
+.btn-register-facebook-navbar-text{
+
+    color: white;
+}
+
 .smartphonePostButton {
 
     position: fixed;
@@ -102,3 +115,4 @@ a{
         display: none;
     }
 }
+

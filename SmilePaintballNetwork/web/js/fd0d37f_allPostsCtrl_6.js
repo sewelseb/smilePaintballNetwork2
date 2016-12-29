@@ -31,7 +31,7 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
                 $scope.safeApply();
 
                 $q.defer(function(){
-                    scope.$apply();
+                    $scope.$apply();
                     FB.XFBML.parse();
                 });
 
@@ -39,6 +39,7 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
                 $('#spiningWheelAllPosts').hide("slow");
                 $('#contentAllPosts').show("slow", $scope.facebookSafeApply());
                 $scope.loadMore=true;
+                $scope.safeApply();
 
 
 
