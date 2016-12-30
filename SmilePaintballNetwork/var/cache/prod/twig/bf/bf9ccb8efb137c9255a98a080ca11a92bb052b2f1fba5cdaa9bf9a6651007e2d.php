@@ -21,8 +21,8 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_a5d0b9ff2868d26117682bc451d2f052c2e4176bbbb9b0a873923690da921d86 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a5d0b9ff2868d26117682bc451d2f052c2e4176bbbb9b0a873923690da921d86->enter($__internal_a5d0b9ff2868d26117682bc451d2f052c2e4176bbbb9b0a873923690da921d86_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/layout.html.twig"));
+        $__internal_0f27998cc7fd9c33c9c78578b61d24987a9d2b36f1fdd5292dee7190e5917875 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_0f27998cc7fd9c33c9c78578b61d24987a9d2b36f1fdd5292dee7190e5917875->enter($__internal_0f27998cc7fd9c33c9c78578b61d24987a9d2b36f1fdd5292dee7190e5917875_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/layout.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -219,7 +219,7 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
     ";
         // line 174
         $this->displayBlock('content', $context, $blocks);
-        // line 316
+        // line 318
         echo "
     <hr>
 
@@ -242,11 +242,11 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 
 
 ";
-        // line 337
+        // line 339
         if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
             // asset "fd0d37f_0"
             $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_assetic_fd0d37f_0") : $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("_controller/js/fd0d37f_waypoint_1.js");
-            // line 348
+            // line 350
             echo "<script type=\"text/javascript\" src=\"";
             echo twig_escape_filter($this->env, ($context["asset_url"] ?? $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"></script>
@@ -296,7 +296,7 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 ";
         }
         unset($context["asset_url"]);
-        // line 350
+        // line 352
         echo "
 
 
@@ -308,15 +308,15 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 
 </html>";
         
-        $__internal_a5d0b9ff2868d26117682bc451d2f052c2e4176bbbb9b0a873923690da921d86->leave($__internal_a5d0b9ff2868d26117682bc451d2f052c2e4176bbbb9b0a873923690da921d86_prof);
+        $__internal_0f27998cc7fd9c33c9c78578b61d24987a9d2b36f1fdd5292dee7190e5917875->leave($__internal_0f27998cc7fd9c33c9c78578b61d24987a9d2b36f1fdd5292dee7190e5917875_prof);
 
     }
 
     // line 12
     public function block_openGraph($context, array $blocks = array())
     {
-        $__internal_93039016f38ec7c9ddf4606b7ed086c3460cb7e7c85f74d87424752bca83003b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_93039016f38ec7c9ddf4606b7ed086c3460cb7e7c85f74d87424752bca83003b->enter($__internal_93039016f38ec7c9ddf4606b7ed086c3460cb7e7c85f74d87424752bca83003b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "openGraph"));
+        $__internal_d5c393033b8991403bc7990f176e69c1a3730b1cfb0b6e200fc1da404157d0f3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d5c393033b8991403bc7990f176e69c1a3730b1cfb0b6e200fc1da404157d0f3->enter($__internal_d5c393033b8991403bc7990f176e69c1a3730b1cfb0b6e200fc1da404157d0f3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "openGraph"));
 
         // line 13
         echo "        <meta property=\"og:title\" content=\"Smile Paintball Network\" />
@@ -326,15 +326,15 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
         <meta property=\"og:description\" content=\"Contend posted on SmilePaintball.com.\" />
     ";
         
-        $__internal_93039016f38ec7c9ddf4606b7ed086c3460cb7e7c85f74d87424752bca83003b->leave($__internal_93039016f38ec7c9ddf4606b7ed086c3460cb7e7c85f74d87424752bca83003b_prof);
+        $__internal_d5c393033b8991403bc7990f176e69c1a3730b1cfb0b6e200fc1da404157d0f3->leave($__internal_d5c393033b8991403bc7990f176e69c1a3730b1cfb0b6e200fc1da404157d0f3_prof);
 
     }
 
     // line 161
     public function block_pageHeader($context, array $blocks = array())
     {
-        $__internal_40e470c734eec042d99286972f8c6fc629e71dc8d78a0365a200bf510d4d1a6e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_40e470c734eec042d99286972f8c6fc629e71dc8d78a0365a200bf510d4d1a6e->enter($__internal_40e470c734eec042d99286972f8c6fc629e71dc8d78a0365a200bf510d4d1a6e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
+        $__internal_752cc5d23aa00204d2c4c6378b213798a65348154778afc4f3ad042581d2fecb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_752cc5d23aa00204d2c4c6378b213798a65348154778afc4f3ad042581d2fecb->enter($__internal_752cc5d23aa00204d2c4c6378b213798a65348154778afc4f3ad042581d2fecb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
 
         // line 162
         echo "                ";
@@ -349,15 +349,15 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 
             ";
         
-        $__internal_40e470c734eec042d99286972f8c6fc629e71dc8d78a0365a200bf510d4d1a6e->leave($__internal_40e470c734eec042d99286972f8c6fc629e71dc8d78a0365a200bf510d4d1a6e_prof);
+        $__internal_752cc5d23aa00204d2c4c6378b213798a65348154778afc4f3ad042581d2fecb->leave($__internal_752cc5d23aa00204d2c4c6378b213798a65348154778afc4f3ad042581d2fecb_prof);
 
     }
 
     // line 174
     public function block_content($context, array $blocks = array())
     {
-        $__internal_5c9f0a4920d6d9230efd546bde00a7078375b1c2ba01b3c7c7ca6d0dd43350b1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5c9f0a4920d6d9230efd546bde00a7078375b1c2ba01b3c7c7ca6d0dd43350b1->enter($__internal_5c9f0a4920d6d9230efd546bde00a7078375b1c2ba01b3c7c7ca6d0dd43350b1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_e205b24ddfd78a5ee6d9c3cba9fb33946f0e93a1d81739ba366d4c8296a6f0b2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e205b24ddfd78a5ee6d9c3cba9fb33946f0e93a1d81739ba366d4c8296a6f0b2->enter($__internal_e205b24ddfd78a5ee6d9c3cba9fb33946f0e93a1d81739ba366d4c8296a6f0b2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 175
         echo "    <div class=\"row\">
@@ -374,21 +374,21 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
             ";
         // line 210
         $this->displayBlock('rightCollumn', $context, $blocks);
-        // line 312
+        // line 314
         echo "        </div>
     </div>
     <!-- /.row -->
     ";
         
-        $__internal_5c9f0a4920d6d9230efd546bde00a7078375b1c2ba01b3c7c7ca6d0dd43350b1->leave($__internal_5c9f0a4920d6d9230efd546bde00a7078375b1c2ba01b3c7c7ca6d0dd43350b1_prof);
+        $__internal_e205b24ddfd78a5ee6d9c3cba9fb33946f0e93a1d81739ba366d4c8296a6f0b2->leave($__internal_e205b24ddfd78a5ee6d9c3cba9fb33946f0e93a1d81739ba366d4c8296a6f0b2_prof);
 
     }
 
     // line 177
     public function block_postYourFun($context, array $blocks = array())
     {
-        $__internal_39e38fe6fff061f8ed35016672ac8417dbf365acd5e7cef1d88e6fcfb4914424 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_39e38fe6fff061f8ed35016672ac8417dbf365acd5e7cef1d88e6fcfb4914424->enter($__internal_39e38fe6fff061f8ed35016672ac8417dbf365acd5e7cef1d88e6fcfb4914424_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "postYourFun"));
+        $__internal_274a787d69dd02f129832145e2125bff55bbfc653982ca47d9ed3c4a72f12678 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_274a787d69dd02f129832145e2125bff55bbfc653982ca47d9ed3c4a72f12678->enter($__internal_274a787d69dd02f129832145e2125bff55bbfc653982ca47d9ed3c4a72f12678_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "postYourFun"));
 
         // line 178
         echo "                <div class=\"row\">
@@ -426,15 +426,15 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
                 </div>
             ";
         
-        $__internal_39e38fe6fff061f8ed35016672ac8417dbf365acd5e7cef1d88e6fcfb4914424->leave($__internal_39e38fe6fff061f8ed35016672ac8417dbf365acd5e7cef1d88e6fcfb4914424_prof);
+        $__internal_274a787d69dd02f129832145e2125bff55bbfc653982ca47d9ed3c4a72f12678->leave($__internal_274a787d69dd02f129832145e2125bff55bbfc653982ca47d9ed3c4a72f12678_prof);
 
     }
 
     // line 203
     public function block_leftCollumn($context, array $blocks = array())
     {
-        $__internal_21dba8bd882ba7195be7e0596350d9846e2637a97f429abc8ad81a061a766b47 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_21dba8bd882ba7195be7e0596350d9846e2637a97f429abc8ad81a061a766b47->enter($__internal_21dba8bd882ba7195be7e0596350d9846e2637a97f429abc8ad81a061a766b47_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
+        $__internal_0ade68f6eac6c913bfd26545cbbf49734613f4ad5cab37a09866db091bb4119d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_0ade68f6eac6c913bfd26545cbbf49734613f4ad5cab37a09866db091bb4119d->enter($__internal_0ade68f6eac6c913bfd26545cbbf49734613f4ad5cab37a09866db091bb4119d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
 
         // line 204
         echo "
@@ -445,15 +445,15 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 
             ";
         
-        $__internal_21dba8bd882ba7195be7e0596350d9846e2637a97f429abc8ad81a061a766b47->leave($__internal_21dba8bd882ba7195be7e0596350d9846e2637a97f429abc8ad81a061a766b47_prof);
+        $__internal_0ade68f6eac6c913bfd26545cbbf49734613f4ad5cab37a09866db091bb4119d->leave($__internal_0ade68f6eac6c913bfd26545cbbf49734613f4ad5cab37a09866db091bb4119d_prof);
 
     }
 
     // line 210
     public function block_rightCollumn($context, array $blocks = array())
     {
-        $__internal_be108651eb40902b3d5facc95a25dab6e8603f95bd7bd461d43cfa15d0f03601 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_be108651eb40902b3d5facc95a25dab6e8603f95bd7bd461d43cfa15d0f03601->enter($__internal_be108651eb40902b3d5facc95a25dab6e8603f95bd7bd461d43cfa15d0f03601_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
+        $__internal_a832cb0f77ea0a64335b2a46439e1ce32f1b5e2948313e8b54575aceb92cf24e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_a832cb0f77ea0a64335b2a46439e1ce32f1b5e2948313e8b54575aceb92cf24e->enter($__internal_a832cb0f77ea0a64335b2a46439e1ce32f1b5e2948313e8b54575aceb92cf24e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
 
         // line 211
         echo "
@@ -479,77 +479,79 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
                 <hr/>
                 <div class=\"row\">
                     <h3>Sponsors</h3>
-                    <div class=\"sponsor-big\" >
+                    <div class=\"col-md-3\" >
                         <a href=\"http://www.tippmann.com/\">
                             <img src=\"/images/sponsors/tippmann.png\" width=\"100%\">
                         </a>
 
                     </div>
 
-                    <div class=\"sponsor-big\" >
+                    <div class=\"col-md-3\" >
                         <a href=\"http://gisportz.com/\">
                             <img src=\"/images/sponsors/gisportz.png\" width=\"100%\">
                         </a>
 
                     </div>
 
-                    <div class=\"sponsor-big\" >
+                    <div class=\"col-md-3\" >
                         <a href=\"http://gisportz.com/vforce-goggles.php\">
                             <img src=\"/images/sponsors/vforce.png\" width=\"100%\">
                         </a>
 
                     </div>
 
-                    <div class=\"sponsor-big\" >
+                    <div class=\"col-md-3\" >
                         <a href=\"http://www.redbull.com/be/fr\">
                             <img src=\"/images/sponsors/redbull-com-logo.png\" width=\"100%\">
                         </a>
 
                     </div>
-
-                    <div class=\"sponsor-big\">
+                </div>
+                <div class=\"row\">
+                    <div class=\"col-md-3\">
                         <a href=\"http://www.kg-factory.fr/fr/\">
                             <img src=\"/images/sponsors/kgfactory.png\" width=\"100%\">
                         </a>
 
                     </div>
 
-                    <div class=\"sponsor-big\">
+                    <div class=\"col-md-3\">
                         <a href=\"http://www.patch-werk.com/index.php/en/\">
                             <img src=\"/images/sponsors/patch-werk.png\" width=\"100%\">
                         </a>
 
                     </div>
 
-                    <div class=\"sponsor-big\">
+                    <div class=\"col-md-3\">
                         <a href=\"http://www.enolagaye.com\">
                             <img src=\"/images/sponsors/e-g.png\" width=\"100%\">
                         </a>
 
                     </div>
 
-                    <div class=\"sponsor-big\">
+                    <div class=\"col-md-3\">
                         <a href=\"http://maxxloader.com/\">
                             <img src=\"/images/sponsors/maxxloader.png\" width=\"100%\">
                         </a>
 
                     </div>
-
-                    <div class=\"sponsor-big\">
+                </div>
+                <div class=\"row\">
+                    <div class=\"col-md-3\">
                         <a href=\"http://shop.customgunrails.com/\">
                             <img src=\"/images/sponsors/cgr.png\" width=\"100%\">
                         </a>
 
                     </div>
 
-                    <div class=\"sponsor-big\">
+                    <div class=\"col-md-3\">
                         <a href=\"http://www.anthraxpaintball.com/\">
                             <img src=\"/images/sponsors/anthrax.png\" width=\"100%\">
                         </a>
 
                     </div>
 
-                    <div class=\"sponsor-big\">
+                    <div class=\"col-md-3\">
                         <a href=\"http://www.techtpaintball.com/\">
                             <img src=\"/images/sponsors/techt.png\" width=\"100%\">
                         </a>
@@ -561,7 +563,7 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 
             ";
         
-        $__internal_be108651eb40902b3d5facc95a25dab6e8603f95bd7bd461d43cfa15d0f03601->leave($__internal_be108651eb40902b3d5facc95a25dab6e8603f95bd7bd461d43cfa15d0f03601_prof);
+        $__internal_a832cb0f77ea0a64335b2a46439e1ce32f1b5e2948313e8b54575aceb92cf24e->leave($__internal_a832cb0f77ea0a64335b2a46439e1ce32f1b5e2948313e8b54575aceb92cf24e_prof);
 
     }
 
@@ -577,7 +579,7 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 
     public function getDebugInfo()
     {
-        return array (  476 => 226,  459 => 211,  453 => 210,  443 => 205,  440 => 204,  434 => 203,  422 => 197,  408 => 185,  402 => 183,  400 => 182,  394 => 178,  388 => 177,  378 => 312,  376 => 210,  372 => 208,  369 => 203,  367 => 177,  363 => 175,  357 => 174,  343 => 163,  340 => 162,  334 => 161,  322 => 13,  316 => 12,  300 => 350,  250 => 348,  246 => 337,  223 => 316,  221 => 174,  216 => 171,  214 => 161,  205 => 154,  203 => 153,  157 => 110,  148 => 104,  87 => 45,  81 => 43,  78 => 42,  71 => 43,  68 => 42,  64 => 38,  43 => 19,  41 => 12,  28 => 1,);
+        return array (  476 => 226,  459 => 211,  453 => 210,  443 => 205,  440 => 204,  434 => 203,  422 => 197,  408 => 185,  402 => 183,  400 => 182,  394 => 178,  388 => 177,  378 => 314,  376 => 210,  372 => 208,  369 => 203,  367 => 177,  363 => 175,  357 => 174,  343 => 163,  340 => 162,  334 => 161,  322 => 13,  316 => 12,  300 => 352,  250 => 350,  246 => 339,  223 => 318,  221 => 174,  216 => 171,  214 => 161,  205 => 154,  203 => 153,  157 => 110,  148 => 104,  87 => 45,  81 => 43,  78 => 42,  71 => 43,  68 => 42,  64 => 38,  43 => 19,  41 => 12,  28 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -820,77 +822,79 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
                 <hr/>
                 <div class=\"row\">
                     <h3>Sponsors</h3>
-                    <div class=\"sponsor-big\" >
+                    <div class=\"col-md-3\" >
                         <a href=\"http://www.tippmann.com/\">
                             <img src=\"/images/sponsors/tippmann.png\" width=\"100%\">
                         </a>
 
                     </div>
 
-                    <div class=\"sponsor-big\" >
+                    <div class=\"col-md-3\" >
                         <a href=\"http://gisportz.com/\">
                             <img src=\"/images/sponsors/gisportz.png\" width=\"100%\">
                         </a>
 
                     </div>
 
-                    <div class=\"sponsor-big\" >
+                    <div class=\"col-md-3\" >
                         <a href=\"http://gisportz.com/vforce-goggles.php\">
                             <img src=\"/images/sponsors/vforce.png\" width=\"100%\">
                         </a>
 
                     </div>
 
-                    <div class=\"sponsor-big\" >
+                    <div class=\"col-md-3\" >
                         <a href=\"http://www.redbull.com/be/fr\">
                             <img src=\"/images/sponsors/redbull-com-logo.png\" width=\"100%\">
                         </a>
 
                     </div>
-
-                    <div class=\"sponsor-big\">
+                </div>
+                <div class=\"row\">
+                    <div class=\"col-md-3\">
                         <a href=\"http://www.kg-factory.fr/fr/\">
                             <img src=\"/images/sponsors/kgfactory.png\" width=\"100%\">
                         </a>
 
                     </div>
 
-                    <div class=\"sponsor-big\">
+                    <div class=\"col-md-3\">
                         <a href=\"http://www.patch-werk.com/index.php/en/\">
                             <img src=\"/images/sponsors/patch-werk.png\" width=\"100%\">
                         </a>
 
                     </div>
 
-                    <div class=\"sponsor-big\">
+                    <div class=\"col-md-3\">
                         <a href=\"http://www.enolagaye.com\">
                             <img src=\"/images/sponsors/e-g.png\" width=\"100%\">
                         </a>
 
                     </div>
 
-                    <div class=\"sponsor-big\">
+                    <div class=\"col-md-3\">
                         <a href=\"http://maxxloader.com/\">
                             <img src=\"/images/sponsors/maxxloader.png\" width=\"100%\">
                         </a>
 
                     </div>
-
-                    <div class=\"sponsor-big\">
+                </div>
+                <div class=\"row\">
+                    <div class=\"col-md-3\">
                         <a href=\"http://shop.customgunrails.com/\">
                             <img src=\"/images/sponsors/cgr.png\" width=\"100%\">
                         </a>
 
                     </div>
 
-                    <div class=\"sponsor-big\">
+                    <div class=\"col-md-3\">
                         <a href=\"http://www.anthraxpaintball.com/\">
                             <img src=\"/images/sponsors/anthrax.png\" width=\"100%\">
                         </a>
 
                     </div>
 
-                    <div class=\"sponsor-big\">
+                    <div class=\"col-md-3\">
                         <a href=\"http://www.techtpaintball.com/\">
                             <img src=\"/images/sponsors/techt.png\" width=\"100%\">
                         </a>

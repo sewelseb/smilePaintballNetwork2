@@ -158,3 +158,16 @@ $('.postOpenSignIn').focus(function () {
 $('.titleAddPost').click(function(){
     $('.restOfTheForm').show('slow');
 });
+
+$('.btn-see-more-top-10').click(function(){
+    $('.btn-see-more-top-10').hide('slow');
+    $('.hidden-top-ten').show('slow');
+});
+
+$('.row-top10').hover(function(){
+    $('.hidden-top-ten').show('slow');
+});
+
+$(".ignore-click").click(function(){
+    return false;
+})

@@ -15,62 +15,81 @@ class __TwigTemplate_5546768e7638b34abb846725ddda600d1c00d5d797c6f781dde1be9e7e0
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_0800e423e25e13a2ef81f7090b58bfce81cb7443be7a9b7ada4ea3abd66abbd5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0800e423e25e13a2ef81f7090b58bfce81cb7443be7a9b7ada4ea3abd66abbd5->enter($__internal_0800e423e25e13a2ef81f7090b58bfce81cb7443be7a9b7ada4ea3abd66abbd5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/topTen.html.twig"));
+        $__internal_94e15b6552044ec42acf8372596dcbefc0303fc944aae4d10620a93ed57bbcaa = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_94e15b6552044ec42acf8372596dcbefc0303fc944aae4d10620a93ed57bbcaa->enter($__internal_94e15b6552044ec42acf8372596dcbefc0303fc944aae4d10620a93ed57bbcaa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/topTen.html.twig"));
 
         // line 1
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["posts"] ?? $this->getContext($context, "posts")));
+        $context['loop'] = array(
+          'parent' => $context['_parent'],
+          'index0' => 0,
+          'index'  => 1,
+          'first'  => true,
+        );
+        if (is_array($context['_seq']) || (is_object($context['_seq']) && $context['_seq'] instanceof Countable)) {
+            $length = count($context['_seq']);
+            $context['loop']['revindex0'] = $length - 1;
+            $context['loop']['revindex'] = $length;
+            $context['loop']['length'] = $length;
+            $context['loop']['last'] = 1 === $length;
+        }
         foreach ($context['_seq'] as $context["_key"] => $context["post"]) {
             // line 2
-            echo "
-    <div class=\"spacer-5px\">
+            echo "    ";
+            if (($this->getAttribute($context["loop"], "index", array()) == 4)) {
+                // line 3
+                echo "    <div class=\"hidden-top-ten\" hidden>
+    ";
+            }
+            // line 5
+            echo "    <div class=\"spacer-5px\">
         <a href=\"";
-            // line 4
+            // line 6
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("smile_platform_post", array("postId" => $this->getAttribute($context["post"], "id", array()))), "html", null, true);
             echo "\">
             <div class=\"row\">
                 <div class=\"col-md-6\">
                     ";
-            // line 7
+            // line 9
             if (($this->getAttribute($context["post"], "type", array()) == "video_youtube")) {
-                // line 8
+                // line 10
                 echo "                        <img class=\"img-responsive top-10\" src=\"http://smilepaintball.com/";
                 echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "getThumbnails", array(), "method"), "html", null, true);
                 echo "\">
                     ";
             }
-            // line 10
+            // line 12
             echo "                    ";
             if (($this->getAttribute($context["post"], "type", array()) == "video_facebook")) {
-                // line 11
+                // line 13
                 echo "                        <img class=\"img-responsive  top-10\" src=\"http://smilepaintball.com/";
                 echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "getThumbnails", array(), "method"), "html", null, true);
                 echo "\">
                     ";
             }
-            // line 13
+            // line 15
             echo "                    ";
             if (($this->getAttribute($context["post"], "type", array()) == "picture_facebook")) {
-                // line 14
+                // line 16
                 echo "                        <img class=\"img-responsive top-10\" src=\"http://smilepaintball.com/";
                 echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "getThumbnails", array(), "method"), "html", null, true);
                 echo "\">
                     ";
             }
-            // line 16
+            // line 18
             echo "                    ";
             if (($this->getAttribute($context["post"], "type", array()) == "picture_externalUrl")) {
-                // line 17
+                // line 19
                 echo "                        <img class=\"img-responsive top-10\" src=\"";
                 echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "url", array()), "html", null, true);
                 echo "\" alt=\"\">
                     ";
             }
-            // line 19
+            // line 21
             echo "                    ";
             if (($this->getAttribute($context["post"], "type", array()) == "picture_local")) {
-                // line 20
+                // line 22
                 echo "                        <img class=\"img-responsive top-10\" src=\"http://smilepaintball.com/";
                 echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["post"], "picture", array()), "uploadDir", array()), "html", null, true);
                 echo "/";
@@ -78,42 +97,56 @@ class __TwigTemplate_5546768e7638b34abb846725ddda600d1c00d5d797c6f781dde1be9e7e0
                 echo "\" alt=\"\">
                     ";
             }
-            // line 22
+            // line 24
             echo "                </div>
                 <div class=\"col-md-6\">
                     <H4><strong>";
-            // line 24
-            echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "title", array()), "html", null, true);
+            // line 26
+            echo twig_escape_filter($this->env, (((twig_length_filter($this->env, $this->getAttribute($context["post"], "title", array())) > 15)) ? ((twig_slice($this->env, $this->getAttribute($context["post"], "title", array()), 0, 12) . "...")) : ($this->getAttribute($context["post"], "title", array()))), "html", null, true);
             echo "</strong></H4>
                     ";
-            // line 25
+            // line 27
             echo twig_escape_filter($this->env, ($this->getAttribute($context["post"], "upvotes", array()) - $this->getAttribute($context["post"], "downvotes", array())), "html", null, true);
             echo " points<br/>
                     ";
-            // line 26
+            // line 28
             if (($this->getAttribute($context["post"], "comments", array()) < 1)) {
-                // line 27
+                // line 29
                 echo "                        0 comments
                     ";
             } else {
-                // line 29
+                // line 31
                 echo "                        ";
                 echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "comments", array()), "html", null, true);
                 echo " comments
                     ";
             }
-            // line 31
+            // line 33
             echo "                </div>
             </div>
         </a>
     </div>
 ";
+            ++$context['loop']['index0'];
+            ++$context['loop']['index'];
+            $context['loop']['first'] = false;
+            if (isset($context['loop']['length'])) {
+                --$context['loop']['revindex0'];
+                --$context['loop']['revindex'];
+                $context['loop']['last'] = 0 === $context['loop']['revindex0'];
+            }
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['post'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 38
+        echo "    </div>
+    <div class=\"text-center\">
+        <a href=\"\" class=\"ignore-click\"><span class=\"btn-see-more-top-10\">See more <i class=\"fa fa-caret-down\" aria-hidden=\"true\"></i></span></a>
+    </div>
+";
         
-        $__internal_0800e423e25e13a2ef81f7090b58bfce81cb7443be7a9b7ada4ea3abd66abbd5->leave($__internal_0800e423e25e13a2ef81f7090b58bfce81cb7443be7a9b7ada4ea3abd66abbd5_prof);
+        $__internal_94e15b6552044ec42acf8372596dcbefc0303fc944aae4d10620a93ed57bbcaa->leave($__internal_94e15b6552044ec42acf8372596dcbefc0303fc944aae4d10620a93ed57bbcaa_prof);
 
     }
 
@@ -129,7 +162,7 @@ class __TwigTemplate_5546768e7638b34abb846725ddda600d1c00d5d797c6f781dde1be9e7e0
 
     public function getDebugInfo()
     {
-        return array (  106 => 31,  100 => 29,  96 => 27,  94 => 26,  90 => 25,  86 => 24,  82 => 22,  74 => 20,  71 => 19,  65 => 17,  62 => 16,  56 => 14,  53 => 13,  47 => 11,  44 => 10,  38 => 8,  36 => 7,  30 => 4,  26 => 2,  22 => 1,);
+        return array (  143 => 38,  125 => 33,  119 => 31,  115 => 29,  113 => 28,  109 => 27,  105 => 26,  101 => 24,  93 => 22,  90 => 21,  84 => 19,  81 => 18,  75 => 16,  72 => 15,  66 => 13,  63 => 12,  57 => 10,  55 => 9,  49 => 6,  46 => 5,  42 => 3,  39 => 2,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -143,7 +176,9 @@ class __TwigTemplate_5546768e7638b34abb846725ddda600d1c00d5d797c6f781dde1be9e7e0
     public function getSourceContext()
     {
         return new Twig_Source("{% for post in posts %}
-
+    {% if loop.index == 4 %}
+    <div class=\"hidden-top-ten\" hidden>
+    {% endif %}
     <div class=\"spacer-5px\">
         <a href=\"{{ path('smile_platform_post', {postId: post.id}) }}\">
             <div class=\"row\">
@@ -165,7 +200,7 @@ class __TwigTemplate_5546768e7638b34abb846725ddda600d1c00d5d797c6f781dde1be9e7e0
                     {% endif %}
                 </div>
                 <div class=\"col-md-6\">
-                    <H4><strong>{{ post.title }}</strong></H4>
+                    <H4><strong>{{ post.title|length > 15 ? post.title|slice(0, 12) ~ '...' : post.title  }}</strong></H4>
                     {{ post.upvotes-post.downvotes }} points<br/>
                     {% if post.comments<1 %}
                         0 comments
@@ -176,6 +211,11 @@ class __TwigTemplate_5546768e7638b34abb846725ddda600d1c00d5d797c6f781dde1be9e7e0
             </div>
         </a>
     </div>
-{% endfor %}", "SmilePlatformBundle::Default/Blocs/topTen.html.twig", "D:\\wamp64\\www\\smilePaintballNetwork2\\SmilePaintballNetwork\\src\\Smile\\PlatformBundle/Resources/views/Default/Blocs/topTen.html.twig");
+{% endfor %}
+    </div>
+    <div class=\"text-center\">
+        <a href=\"\" class=\"ignore-click\"><span class=\"btn-see-more-top-10\">See more <i class=\"fa fa-caret-down\" aria-hidden=\"true\"></i></span></a>
+    </div>
+", "SmilePlatformBundle::Default/Blocs/topTen.html.twig", "D:\\wamp64\\www\\smilePaintballNetwork2\\SmilePaintballNetwork\\src\\Smile\\PlatformBundle/Resources/views/Default/Blocs/topTen.html.twig");
     }
 }
