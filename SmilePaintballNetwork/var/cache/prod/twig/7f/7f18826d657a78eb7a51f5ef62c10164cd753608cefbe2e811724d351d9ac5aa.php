@@ -15,8 +15,8 @@ class __TwigTemplate_7a0c3a3cf2e153976f367990e06d457a51d3478dd1e6d130600ce4363df
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_4435aa09f8367df1fcfa89fc32bb73ca81fec1cd206b5499dbf55611169476ef = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_4435aa09f8367df1fcfa89fc32bb73ca81fec1cd206b5499dbf55611169476ef->enter($__internal_4435aa09f8367df1fcfa89fc32bb73ca81fec1cd206b5499dbf55611169476ef_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
+        $__internal_d7c454f0785b4da99eaf6edba36c8c895ad6af01a789b8902435b454e6e2bf2c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d7c454f0785b4da99eaf6edba36c8c895ad6af01a789b8902435b454e6e2bf2c->enter($__internal_d7c454f0785b4da99eaf6edba36c8c895ad6af01a789b8902435b454e6e2bf2c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
 
         // line 1
         echo "<!-- Navigation -->
@@ -45,21 +45,31 @@ class __TwigTemplate_7a0c3a3cf2e153976f367990e06d457a51d3478dd1e6d130600ce4363df
                     <li>
                         <a href=\"\" data-toggle=\"modal\" data-target=\"#newPostModal\"><span class=\"yellow-text\">+ Post</span></a>
                     </li>
-                    <li>
+                    <li class=\"visible-md visible-lg\">
                         <a href=\"";
             // line 22
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("smile_platform_profile", array("userId" => $this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "user", array()), "getId", array()))), "html", null, true);
+            echo "\"><img class=\"img-navbar\"  src=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "user", array()), "picture", array()), "uploadDir", array()), "html", null, true);
+            echo "/";
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "user", array()), "picture", array()), "url", array()), "html", null, true);
+            echo "\"></a>
+                    </li>
+                    <li >
+                        <a href=\"";
+            // line 25
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("smile_platform_profile", array("userId" => $this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "user", array()), "getId", array()))), "html", null, true);
             echo "\"><span class=\"yellow-text\">My profile</span></a>
                     </li>
                     <li>
                         <a href=\"";
-            // line 25
+            // line 28
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_security_logout");
             echo "\" class=\"#f2c716\"><span class=\"yellow-text\">Logout</span></a>
                     </li>
                     <li>
                         <a href=\"";
-            // line 28
+            // line 31
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("smile_platform_contactUs");
             echo "\" class=\"#f2c716\"><span class=\"yellow-text\">Contact us</span></a>
                     </li>
@@ -79,7 +89,7 @@ class __TwigTemplate_7a0c3a3cf2e153976f367990e06d457a51d3478dd1e6d130600ce4363df
                 </div>
                 <div class=\"modal-body\">
                     ";
-            // line 45
+            // line 48
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->renderFragment($this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->controller("SmilePlatformBundle:Post:addNew", array("request" => $this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()))));
             echo "
                     <div class=\"clearfix\"></div>
@@ -97,7 +107,7 @@ class __TwigTemplate_7a0c3a3cf2e153976f367990e06d457a51d3478dd1e6d130600ce4363df
 
 ";
         } else {
-            // line 60
+            // line 63
             echo "    <nav class=\"navbar navbar-inverse navbar-fixed-top\" role=\"navigation\">
         <div class=\"container\">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -109,7 +119,7 @@ class __TwigTemplate_7a0c3a3cf2e153976f367990e06d457a51d3478dd1e6d130600ce4363df
                     <span class=\"icon-bar\"></span>
                 </button>
                 <a class=\"navbar-brand yellow-text\" href=\"";
-            // line 70
+            // line 73
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("smile_platform_homepage");
             echo "\"><span class=\"yellow-text\"><img class=\"logo\" src=\"/images/logo.png\" alt=\"SMILE\"></span></a>
             </div>
@@ -123,7 +133,7 @@ class __TwigTemplate_7a0c3a3cf2e153976f367990e06d457a51d3478dd1e6d130600ce4363df
                         <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\"><span class=\"yellow-text\">Connect/Log in</span></a>
                     </li>
                     ";
-            // line 84
+            // line 87
             echo "                </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -141,6 +151,8 @@ class __TwigTemplate_7a0c3a3cf2e153976f367990e06d457a51d3478dd1e6d130600ce4363df
                 <div class=\"modal-body\">
                     <div class=\"row text-center\">
                         <H3 class=\"text-center text-warning\" id=\"showMandatoryLoginForVotes\" hidden>You must be connected to upvote or downvote ;).</H3>
+                        <H3 class=\"text-center text-warning\" id=\"showMandatoryLoginForPost\" hidden>You must be connected to post ;).</H3>
+
                     </div>
                     <div class=\"form-group text-center\" >
                         <a class=\"btn btn-register-facebook\" href=\"#\" onclick=\"fb_login();\">Connect with Facebook</a>
@@ -150,14 +162,14 @@ class __TwigTemplate_7a0c3a3cf2e153976f367990e06d457a51d3478dd1e6d130600ce4363df
                         <div class=\"col-md-6\" style=\"border-right: 1px solid lightgray;\">
                             <h4>New on Smile ? Sign up !</h4>
                             ";
-            // line 109
+            // line 114
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->renderFragment($this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->controller("SmileUserBundle:Registration:register", array("originalRequest" => $this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()))));
             echo "
                         </div>
                         <div class=\"col-md-6\">
                             <h4>Already have an account ? Log in !</h4>
                             ";
-            // line 113
+            // line 118
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->renderFragment($this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->controller("FOSUserBundle:Security:login"));
             echo "
                         </div>
@@ -182,7 +194,7 @@ class __TwigTemplate_7a0c3a3cf2e153976f367990e06d457a51d3478dd1e6d130600ce4363df
                     </div>
 
     ";
-            // line 136
+            // line 141
             echo "                    <div class=\"clearfix\"></div>
                 </div>
 
@@ -198,7 +210,7 @@ class __TwigTemplate_7a0c3a3cf2e153976f367990e06d457a51d3478dd1e6d130600ce4363df
 ";
         }
         
-        $__internal_4435aa09f8367df1fcfa89fc32bb73ca81fec1cd206b5499dbf55611169476ef->leave($__internal_4435aa09f8367df1fcfa89fc32bb73ca81fec1cd206b5499dbf55611169476ef_prof);
+        $__internal_d7c454f0785b4da99eaf6edba36c8c895ad6af01a789b8902435b454e6e2bf2c->leave($__internal_d7c454f0785b4da99eaf6edba36c8c895ad6af01a789b8902435b454e6e2bf2c_prof);
 
     }
 
@@ -214,7 +226,7 @@ class __TwigTemplate_7a0c3a3cf2e153976f367990e06d457a51d3478dd1e6d130600ce4363df
 
     public function getDebugInfo()
     {
-        return array (  186 => 136,  161 => 113,  154 => 109,  127 => 84,  113 => 70,  101 => 60,  83 => 45,  63 => 28,  57 => 25,  51 => 22,  39 => 13,  27 => 3,  25 => 2,  22 => 1,);
+        return array (  198 => 141,  173 => 118,  166 => 114,  137 => 87,  123 => 73,  111 => 63,  93 => 48,  73 => 31,  67 => 28,  61 => 25,  51 => 22,  39 => 13,  27 => 3,  25 => 2,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -247,7 +259,10 @@ class __TwigTemplate_7a0c3a3cf2e153976f367990e06d457a51d3478dd1e6d130600ce4363df
                     <li>
                         <a href=\"\" data-toggle=\"modal\" data-target=\"#newPostModal\"><span class=\"yellow-text\">+ Post</span></a>
                     </li>
-                    <li>
+                    <li class=\"visible-md visible-lg\">
+                        <a href=\"{{ path('smile_platform_profile', {'userId': app.user.getId }) }}\"><img class=\"img-navbar\"  src=\"{{app.user.picture.uploadDir}}/{{app.user.picture.url}}\"></a>
+                    </li>
+                    <li >
                         <a href=\"{{ path('smile_platform_profile', {'userId': app.user.getId }) }}\"><span class=\"yellow-text\">My profile</span></a>
                     </li>
                     <li>
@@ -327,6 +342,8 @@ class __TwigTemplate_7a0c3a3cf2e153976f367990e06d457a51d3478dd1e6d130600ce4363df
                 <div class=\"modal-body\">
                     <div class=\"row text-center\">
                         <H3 class=\"text-center text-warning\" id=\"showMandatoryLoginForVotes\" hidden>You must be connected to upvote or downvote ;).</H3>
+                        <H3 class=\"text-center text-warning\" id=\"showMandatoryLoginForPost\" hidden>You must be connected to post ;).</H3>
+
                     </div>
                     <div class=\"form-group text-center\" >
                         <a class=\"btn btn-register-facebook\" href=\"#\" onclick=\"fb_login();\">Connect with Facebook</a>

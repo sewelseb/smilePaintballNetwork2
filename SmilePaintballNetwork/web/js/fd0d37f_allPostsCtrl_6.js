@@ -226,3 +226,6 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
 
 
 });
+
+
+

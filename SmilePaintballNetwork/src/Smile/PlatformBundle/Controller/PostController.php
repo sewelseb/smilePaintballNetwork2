@@ -185,6 +185,165 @@ class PostController extends Controller
 
     }
 
+    public function addNewInPageAction(Request $request)
+    {
+        $redirect = false;
+
+        $post = new Post();
+
+        $formBuilder = $this->get('form.factory')->createBuilder(FormType::class, $post);
+
+        $teams =
+
+            $formBuilder
+                ->add('title', TextType::class)
+                ->add('team', EntityType::class, array(
+                    'class' =>'SmilePlatformBundle:Team',
+                    'choices' => $this->getUser()->getTeams(),
+                    'choice_label' => 'name',
+                    'placeholder' => 'Post as a team:',
+                    'required' => false
+                ))
+                ->add('eventName', TextType::class, array('required' => false))
+                ->add('picture', PostPicType::class, array('required' => false))
+                ->add('url', TextType::class, array('required' => false))
+                ->add('save', SubmitType::class);
+
+        $form = $formBuilder->getForm();
+
+        if ($request->isMethod('POST') && $form->handleRequest($request)->isValid()) {
+
+            $redirect = true;
+            $postId = null;
+
+            if ($post->getPicture() != null || $post->getUrl() != null) {
+                $post->setType('picture_local');
+                if ($post->getUrl() != null) {
+                    $post->setType('picture_externalUrl');
+                }
+                $post->setCreationTime(time());
+                $post->setUser($this->getUser());
+                if ($post->getPicture() != null) {
+                    $post->getPicture()->upload($post, $this->container);
+                }
+
+
+                $regex_youtube_pattern = "/(youtube.com|youtu.be)\/(watch)?(\?v=)?(\S+)?/";
+
+
+                if (preg_match($regex_youtube_pattern, $post->getUrl(), $match)) {
+                    $post->setUrl(preg_replace(
+                        "/\s*[a-zA-Z\/\/:\.]*youtu(be.com\/watch\?v=|.be\/)([a-zA-Z0-9\-_]+)([a-zA-Z0-9\/\*\-\_\?\&\;\%\=\.]*)/i",
+                        "//www.youtube.com/embed/$2",
+                        $post->getUrl()));
+                    $post->setType('video_youtube');
+                    $picName='uploads/thumbnails/yt_'.time().'.jpg';
+                    file_put_contents($picName, file_get_contents('http://img.youtube.com/vi/'.$post->getYoutubeId().'/mqdefault.jpg'));
+                    $post->setThumbnails($picName);
+
+                    $dataManager = $this->get('liip_imagine.data.manager');    // the data manager service
+                    $image = $dataManager->find('profile_pic', $picName);
+
+
+
+                    $thumb = $this->get('liip_imagine.filter.manager')->applyFilter($image, 'profile_pic')->getContent();
+                    $f = fopen($picName, 'w');// create thumbnail file
+                    //dump($this->getUploadDir().'/'.$name);
+                    fwrite($f, $thumb);                                             // write the thumbnail
+                    fclose($f);
+
+
+                }
+
+                $urlFb = explode('facebook.com', $post->getUrl());
+                $urlVideoFb = 0;
+                $urlPictureFb = 0;
+                if (count($urlFb) > 1) {
+                    $urlVideoFb = explode('/videos/', $post->getUrl());
+                    $urlPictureFb = explode('/photos/', $post->getUrl());
+
+
+
+
+
+
+                }
+
+                if (count($urlVideoFb) > 1) {
+                    $post->setType('video_facebook');
+
+                    $picName='uploads/thumbnails/fb_'.time().'.jpg';
+                    file_put_contents($picName, file_get_contents('https://graph.facebook.com/'.$post->getFacebookId().'/picture'));
+                    $post->setThumbnails($picName);
+
+                    $dataManager = $this->get('liip_imagine.data.manager');    // the data manager service
+                    $image = $dataManager->find('profile_pic', $picName);
+
+
+
+                    $thumb = $this->get('liip_imagine.filter.manager')->applyFilter($image, 'profile_pic')->getContent();
+                    $f = fopen($picName, 'w');// create thumbnail file
+                    //dump($this->getUploadDir().'/'.$name);
+                    fwrite($f, $thumb);                                             // write the thumbnail
+                    fclose($f);
+
+                    //$picName='uploads/thumbnails/fb'.time().'jpg';
+                    //file_put_contents($picName, file_get_contents('https://graph.facebook.com/{{ post.getFacebookId() }}/picture'));
+
+
+                } elseif (count($urlPictureFb) > 1) {
+                    $post->setType('picture_facebook');
+                    $picName='uploads/thumbnails/fb_'.time().'.jpg';
+                    file_put_contents($picName, file_get_contents('https://graph.facebook.com/'.$post->getFacebookId().'/picture'));
+                    $post->setThumbnails($picName);
+
+                    $dataManager = $this->get('liip_imagine.data.manager');    // the data manager service
+                    $image = $dataManager->find('profile_pic', $picName);
+
+
+
+                    $thumb = $this->get('liip_imagine.filter.manager')->applyFilter($image, 'profile_pic')->getContent();
+                    $f = fopen($picName, 'w');// create thumbnail file
+                    //dump($this->getUploadDir().'/'.$name);
+                    fwrite($f, $thumb);                                             // write the thumbnail
+                    fclose($f);
+                }
+
+
+                $em = $this->getDoctrine()->getManager();
+
+                $em->persist($post);
+
+                $em->flush();
+
+                $postId = $post->getId();
+
+
+                $request->getSession()->getFlashBag()->add('notice', 'Post created.');
+
+                //return $this->redirect($request->getUri());
+                return $this->render('SmilePlatformBundle::Default/form/actualiseNewPost.html.twig', array(
+
+                    'form' => $form->createView(),
+                    'postId' => $postId
+
+                ));
+            }
+
+            $request->getSession()->getFlashBag()->add('notice', 'Nothing to post :(.');
+
+
+        }
+
+        return $this->render('SmilePlatformBundle::Default/form/addNewPostInPage.html.twig', array(
+
+            'form' => $form->createView(),
+
+
+        ));
+
+    }
+
     public function topTenAction()
     {
         $postRepo = $this

@@ -13,6 +13,7 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
             'openGraph' => array($this, 'block_openGraph'),
             'pageHeader' => array($this, 'block_pageHeader'),
             'content' => array($this, 'block_content'),
+            'postYourFun' => array($this, 'block_postYourFun'),
             'leftCollumn' => array($this, 'block_leftCollumn'),
             'rightCollumn' => array($this, 'block_rightCollumn'),
         );
@@ -20,8 +21,8 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_16206737215abea46f57f36f0865384322bb6e0308b399fc728319dc1e77545f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_16206737215abea46f57f36f0865384322bb6e0308b399fc728319dc1e77545f->enter($__internal_16206737215abea46f57f36f0865384322bb6e0308b399fc728319dc1e77545f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/layout.html.twig"));
+        $__internal_a5d0b9ff2868d26117682bc451d2f052c2e4176bbbb9b0a873923690da921d86 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_a5d0b9ff2868d26117682bc451d2f052c2e4176bbbb9b0a873923690da921d86->enter($__internal_a5d0b9ff2868d26117682bc451d2f052c2e4176bbbb9b0a873923690da921d86_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/layout.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -54,7 +55,7 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
     <link href=\"//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css\" rel=\"stylesheet\">
 
     <!-- jQuery -->
-    <script src=\"js/jquery.js\"></script><script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js\"></script>
+    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js\"></script>
 
     <!-- Custom CSS -->
     <link href=\"css/1-col-portfolio.css\" rel=\"stylesheet\">
@@ -93,63 +94,8 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 
     <script type=\"text/javascript\" src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js\"></script>
     <script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-sanitize.min.js\"></script>
-    ";
-        // line 55
-        if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
-            // asset "fd0d37f_0"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_assetic_fd0d37f_0") : $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("_controller/js/fd0d37f_waypoint_1.js");
-            // line 66
-            echo "    <script type=\"text/javascript\" src=\"";
-            echo twig_escape_filter($this->env, ($context["asset_url"] ?? $this->getContext($context, "asset_url")), "html", null, true);
-            echo "\"></script>
-    ";
-            // asset "fd0d37f_1"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_assetic_fd0d37f_1") : $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("_controller/js/fd0d37f_noframework_2.js");
-            echo "    <script type=\"text/javascript\" src=\"";
-            echo twig_escape_filter($this->env, ($context["asset_url"] ?? $this->getContext($context, "asset_url")), "html", null, true);
-            echo "\"></script>
-    ";
-            // asset "fd0d37f_2"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_assetic_fd0d37f_2") : $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("_controller/js/fd0d37f_context_3.js");
-            echo "    <script type=\"text/javascript\" src=\"";
-            echo twig_escape_filter($this->env, ($context["asset_url"] ?? $this->getContext($context, "asset_url")), "html", null, true);
-            echo "\"></script>
-    ";
-            // asset "fd0d37f_3"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_assetic_fd0d37f_3") : $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("_controller/js/fd0d37f_group_4.js");
-            echo "    <script type=\"text/javascript\" src=\"";
-            echo twig_escape_filter($this->env, ($context["asset_url"] ?? $this->getContext($context, "asset_url")), "html", null, true);
-            echo "\"></script>
-    ";
-            // asset "fd0d37f_4"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_assetic_fd0d37f_4") : $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("_controller/js/fd0d37f_app_5.js");
-            echo "    <script type=\"text/javascript\" src=\"";
-            echo twig_escape_filter($this->env, ($context["asset_url"] ?? $this->getContext($context, "asset_url")), "html", null, true);
-            echo "\"></script>
-    ";
-            // asset "fd0d37f_5"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_assetic_fd0d37f_5") : $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("_controller/js/fd0d37f_allPostsCtrl_6.js");
-            echo "    <script type=\"text/javascript\" src=\"";
-            echo twig_escape_filter($this->env, ($context["asset_url"] ?? $this->getContext($context, "asset_url")), "html", null, true);
-            echo "\"></script>
-    ";
-            // asset "fd0d37f_6"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_assetic_fd0d37f_6") : $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("_controller/js/fd0d37f_jqwery_7.js");
-            echo "    <script type=\"text/javascript\" src=\"";
-            echo twig_escape_filter($this->env, ($context["asset_url"] ?? $this->getContext($context, "asset_url")), "html", null, true);
-            echo "\"></script>
-    ";
-        } else {
-            // asset "fd0d37f"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_assetic_fd0d37f") : $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("_controller/js/fd0d37f.js");
-            echo "    <script type=\"text/javascript\" src=\"";
-            echo twig_escape_filter($this->env, ($context["asset_url"] ?? $this->getContext($context, "asset_url")), "html", null, true);
-            echo "\"></script>
-    ";
-        }
-        unset($context["asset_url"]);
-        // line 68
-        echo "
+
+
 </head>
 
 <body >
@@ -179,7 +125,7 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
             version    : 'v2.7'
         });
 
-            alert('test');
+            //alert('test');
             console.log('test');
             getSmileGroup();
 
@@ -198,7 +144,7 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
                 // connected
                 //alert('Already connected, redirect to login page to create token.');
                 document.location = \"";
-        // line 116
+        // line 104
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getUrl("hwi_oauth_service_redirect", array("service" => "facebook"));
         echo "\";
 
@@ -207,7 +153,7 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
                 FB.login(function(response) {
                     if (response.authResponse) {
                         document.location = \"";
-        // line 122
+        // line 110
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getUrl("hwi_oauth_service_redirect", array("service" => "facebook"));
         echo "\";
                     } else {
@@ -219,12 +165,13 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
     }
 
     function getSmileGroup(){
+
         FB.api(
-            \"/1790079874650463\",
+            \"/1790079874650463/members?summary=true\",
             function (response) {
+                console.log('group:');
                 console.log(response);
                 if (response && !response.error) {
-                    /* handle the result */
 
                 }
             }
@@ -252,9 +199,9 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 </script>
 
 ";
-        // line 164
-        $this->loadTemplate("SmilePlatformBundle::Default/Blocs/navbar.html.twig", "SmilePlatformBundle::Default/layout.html.twig", 164)->display($context);
-        // line 165
+        // line 153
+        $this->loadTemplate("SmilePlatformBundle::Default/Blocs/navbar.html.twig", "SmilePlatformBundle::Default/layout.html.twig", 153)->display($context);
+        // line 154
         echo "
 <!-- Page Content -->
 <div class=\"container\" >
@@ -263,16 +210,16 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
     <div class=\"row\">
         <div class=\"col-lg-12\">
             ";
-        // line 172
+        // line 161
         $this->displayBlock('pageHeader', $context, $blocks);
-        // line 181
+        // line 171
         echo "        </div>
     </div>
     <!-- /.row -->
     ";
-        // line 184
+        // line 174
         $this->displayBlock('content', $context, $blocks);
-        // line 294
+        // line 316
         echo "
     <hr>
 
@@ -294,8 +241,63 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 
 
 
-
-
+";
+        // line 337
+        if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
+            // asset "fd0d37f_0"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_assetic_fd0d37f_0") : $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("_controller/js/fd0d37f_waypoint_1.js");
+            // line 348
+            echo "<script type=\"text/javascript\" src=\"";
+            echo twig_escape_filter($this->env, ($context["asset_url"] ?? $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"></script>
+";
+            // asset "fd0d37f_1"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_assetic_fd0d37f_1") : $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("_controller/js/fd0d37f_noframework_2.js");
+            echo "<script type=\"text/javascript\" src=\"";
+            echo twig_escape_filter($this->env, ($context["asset_url"] ?? $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"></script>
+";
+            // asset "fd0d37f_2"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_assetic_fd0d37f_2") : $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("_controller/js/fd0d37f_context_3.js");
+            echo "<script type=\"text/javascript\" src=\"";
+            echo twig_escape_filter($this->env, ($context["asset_url"] ?? $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"></script>
+";
+            // asset "fd0d37f_3"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_assetic_fd0d37f_3") : $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("_controller/js/fd0d37f_group_4.js");
+            echo "<script type=\"text/javascript\" src=\"";
+            echo twig_escape_filter($this->env, ($context["asset_url"] ?? $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"></script>
+";
+            // asset "fd0d37f_4"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_assetic_fd0d37f_4") : $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("_controller/js/fd0d37f_app_5.js");
+            echo "<script type=\"text/javascript\" src=\"";
+            echo twig_escape_filter($this->env, ($context["asset_url"] ?? $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"></script>
+";
+            // asset "fd0d37f_5"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_assetic_fd0d37f_5") : $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("_controller/js/fd0d37f_allPostsCtrl_6.js");
+            echo "<script type=\"text/javascript\" src=\"";
+            echo twig_escape_filter($this->env, ($context["asset_url"] ?? $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"></script>
+";
+            // asset "fd0d37f_6"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_assetic_fd0d37f_6") : $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("_controller/js/fd0d37f_jqwery_7.js");
+            echo "<script type=\"text/javascript\" src=\"";
+            echo twig_escape_filter($this->env, ($context["asset_url"] ?? $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"></script>
+";
+        } else {
+            // asset "fd0d37f"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("_assetic_fd0d37f") : $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("_controller/js/fd0d37f.js");
+            echo "<script type=\"text/javascript\" src=\"";
+            echo twig_escape_filter($this->env, ($context["asset_url"] ?? $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"></script>
+";
+        }
+        unset($context["asset_url"]);
+        // line 350
+        echo "
 
 
 <script src=\"//platform.linkedin.com/in.js\" type=\"text/javascript\"> lang: en_US</script>
@@ -306,15 +308,15 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 
 </html>";
         
-        $__internal_16206737215abea46f57f36f0865384322bb6e0308b399fc728319dc1e77545f->leave($__internal_16206737215abea46f57f36f0865384322bb6e0308b399fc728319dc1e77545f_prof);
+        $__internal_a5d0b9ff2868d26117682bc451d2f052c2e4176bbbb9b0a873923690da921d86->leave($__internal_a5d0b9ff2868d26117682bc451d2f052c2e4176bbbb9b0a873923690da921d86_prof);
 
     }
 
     // line 12
     public function block_openGraph($context, array $blocks = array())
     {
-        $__internal_becff315ff0faebe32eedaf8065679281adc89a52c1c2b858140a2bb41786fb7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_becff315ff0faebe32eedaf8065679281adc89a52c1c2b858140a2bb41786fb7->enter($__internal_becff315ff0faebe32eedaf8065679281adc89a52c1c2b858140a2bb41786fb7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "openGraph"));
+        $__internal_93039016f38ec7c9ddf4606b7ed086c3460cb7e7c85f74d87424752bca83003b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_93039016f38ec7c9ddf4606b7ed086c3460cb7e7c85f74d87424752bca83003b->enter($__internal_93039016f38ec7c9ddf4606b7ed086c3460cb7e7c85f74d87424752bca83003b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "openGraph"));
 
         // line 13
         echo "        <meta property=\"og:title\" content=\"Smile Paintball Network\" />
@@ -324,96 +326,153 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
         <meta property=\"og:description\" content=\"Contend posted on SmilePaintball.com.\" />
     ";
         
-        $__internal_becff315ff0faebe32eedaf8065679281adc89a52c1c2b858140a2bb41786fb7->leave($__internal_becff315ff0faebe32eedaf8065679281adc89a52c1c2b858140a2bb41786fb7_prof);
+        $__internal_93039016f38ec7c9ddf4606b7ed086c3460cb7e7c85f74d87424752bca83003b->leave($__internal_93039016f38ec7c9ddf4606b7ed086c3460cb7e7c85f74d87424752bca83003b_prof);
 
     }
 
-    // line 172
+    // line 161
     public function block_pageHeader($context, array $blocks = array())
     {
-        $__internal_da53385eb4aea667a8e11b544168fe21adc1803dd718f51c4acb01cd9574898d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_da53385eb4aea667a8e11b544168fe21adc1803dd718f51c4acb01cd9574898d->enter($__internal_da53385eb4aea667a8e11b544168fe21adc1803dd718f51c4acb01cd9574898d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
+        $__internal_40e470c734eec042d99286972f8c6fc629e71dc8d78a0365a200bf510d4d1a6e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_40e470c734eec042d99286972f8c6fc629e71dc8d78a0365a200bf510d4d1a6e->enter($__internal_40e470c734eec042d99286972f8c6fc629e71dc8d78a0365a200bf510d4d1a6e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
 
-        // line 173
+        // line 162
         echo "                ";
-        $this->loadTemplate("SmilePlatformBundle::Default/Blocs/banner.html.twig", "SmilePlatformBundle::Default/layout.html.twig", 173)->display($context);
-        // line 174
-        echo "
-                <div class=\"pull-right\">
-                    Smile's facebook page:
+        $this->loadTemplate("SmilePlatformBundle::Default/Blocs/banner.html.twig", "SmilePlatformBundle::Default/layout.html.twig", 162)->display($context);
+        // line 163
+        echo "                <div class=\"pull-right\">
+                    <!--Smile's facebook page:
                     <div class=\"fb-like\" data-href=\"https://www.facebook.com/smilepaintball/?fref=ts\" data-layout=\"button_count\" data-action=\"like\" data-size=\"large\" data-show-faces=\"true\" data-share=\"true\"></div>
-
+                    -->
+                    <a href=\"https://www.facebook.com/groups/1790079874650463/\"><button class=\"btn btn-register-facebook\"><strong>Join our Facebook group</strong></button></a>
                 </div>
+
             ";
         
-        $__internal_da53385eb4aea667a8e11b544168fe21adc1803dd718f51c4acb01cd9574898d->leave($__internal_da53385eb4aea667a8e11b544168fe21adc1803dd718f51c4acb01cd9574898d_prof);
+        $__internal_40e470c734eec042d99286972f8c6fc629e71dc8d78a0365a200bf510d4d1a6e->leave($__internal_40e470c734eec042d99286972f8c6fc629e71dc8d78a0365a200bf510d4d1a6e_prof);
 
     }
 
-    // line 184
+    // line 174
     public function block_content($context, array $blocks = array())
     {
-        $__internal_a698586d3c12474de5817c56c80497d69a7b052e823315636018351de4b8b77e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a698586d3c12474de5817c56c80497d69a7b052e823315636018351de4b8b77e->enter($__internal_a698586d3c12474de5817c56c80497d69a7b052e823315636018351de4b8b77e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_5c9f0a4920d6d9230efd546bde00a7078375b1c2ba01b3c7c7ca6d0dd43350b1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5c9f0a4920d6d9230efd546bde00a7078375b1c2ba01b3c7c7ca6d0dd43350b1->enter($__internal_5c9f0a4920d6d9230efd546bde00a7078375b1c2ba01b3c7c7ca6d0dd43350b1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
-        // line 185
+        // line 175
         echo "    <div class=\"row\">
         <div class=\"col-md-9\" id=\"postsNews\" ng-app=\"smile\">
             ";
-        // line 187
+        // line 177
+        $this->displayBlock('postYourFun', $context, $blocks);
+        // line 203
+        echo "            ";
         $this->displayBlock('leftCollumn', $context, $blocks);
-        // line 191
+        // line 208
         echo "        </div>
         <div class=\"col-md-3 right-bar\">
             ";
-        // line 193
+        // line 210
         $this->displayBlock('rightCollumn', $context, $blocks);
-        // line 290
+        // line 312
         echo "        </div>
     </div>
     <!-- /.row -->
     ";
         
-        $__internal_a698586d3c12474de5817c56c80497d69a7b052e823315636018351de4b8b77e->leave($__internal_a698586d3c12474de5817c56c80497d69a7b052e823315636018351de4b8b77e_prof);
+        $__internal_5c9f0a4920d6d9230efd546bde00a7078375b1c2ba01b3c7c7ca6d0dd43350b1->leave($__internal_5c9f0a4920d6d9230efd546bde00a7078375b1c2ba01b3c7c7ca6d0dd43350b1_prof);
 
     }
 
-    // line 187
+    // line 177
+    public function block_postYourFun($context, array $blocks = array())
+    {
+        $__internal_39e38fe6fff061f8ed35016672ac8417dbf365acd5e7cef1d88e6fcfb4914424 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_39e38fe6fff061f8ed35016672ac8417dbf365acd5e7cef1d88e6fcfb4914424->enter($__internal_39e38fe6fff061f8ed35016672ac8417dbf365acd5e7cef1d88e6fcfb4914424_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "postYourFun"));
+
+        // line 178
+        echo "                <div class=\"row\">
+                    <div class=\"container\">
+                        <div class=\"col-md-9\">
+                            <div class=\"form-group\">
+                                ";
+        // line 182
+        if ($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "user", array())) {
+            // line 183
+            echo "                                    ";
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->renderFragment($this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->controller("SmilePlatformBundle:Post:addNewInPage"));
+            echo "
+                                ";
+        } else {
+            // line 185
+            echo "
+                                    <H2><strong>+ POST your Fun</strong></H2>
+                                    <div class=\"form-group postOpenSignIn\">
+                                        <input class=\"form-control input-lg postOpenSignIn\" id=\"postTitleOpenSignIn\" placeholder=\"Post Title\">
+                                    </div>
+                                    <div class=\"form-group postOpenSignIn\">
+                                        <div class=\"pull-right\">
+                                            <button class=\"btn btn-primary postOpenSignIn\"><strong>POST</strong></button>
+                                        </div>
+                                    </div>
+
+                                ";
+        }
+        // line 197
+        echo "                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            ";
+        
+        $__internal_39e38fe6fff061f8ed35016672ac8417dbf365acd5e7cef1d88e6fcfb4914424->leave($__internal_39e38fe6fff061f8ed35016672ac8417dbf365acd5e7cef1d88e6fcfb4914424_prof);
+
+    }
+
+    // line 203
     public function block_leftCollumn($context, array $blocks = array())
     {
-        $__internal_e44939574e451ac5d08b412debcae5326cd3b2187414809b85fe1dde9434ad82 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e44939574e451ac5d08b412debcae5326cd3b2187414809b85fe1dde9434ad82->enter($__internal_e44939574e451ac5d08b412debcae5326cd3b2187414809b85fe1dde9434ad82_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
+        $__internal_21dba8bd882ba7195be7e0596350d9846e2637a97f429abc8ad81a061a766b47 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_21dba8bd882ba7195be7e0596350d9846e2637a97f429abc8ad81a061a766b47->enter($__internal_21dba8bd882ba7195be7e0596350d9846e2637a97f429abc8ad81a061a766b47_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
 
-        // line 188
-        echo "                ";
+        // line 204
+        echo "
+                ";
+        // line 205
         echo twig_include($this->env, $context, "SmilePlatformBundle:Default:Blocs/allPosts.html.twig");
         echo "
 
             ";
         
-        $__internal_e44939574e451ac5d08b412debcae5326cd3b2187414809b85fe1dde9434ad82->leave($__internal_e44939574e451ac5d08b412debcae5326cd3b2187414809b85fe1dde9434ad82_prof);
+        $__internal_21dba8bd882ba7195be7e0596350d9846e2637a97f429abc8ad81a061a766b47->leave($__internal_21dba8bd882ba7195be7e0596350d9846e2637a97f429abc8ad81a061a766b47_prof);
 
     }
 
-    // line 193
+    // line 210
     public function block_rightCollumn($context, array $blocks = array())
     {
-        $__internal_04c4dcb8fe6db0b6e9beb1de321f6e70f1965c8ac49d31286c91aaf9ffc01b9b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_04c4dcb8fe6db0b6e9beb1de321f6e70f1965c8ac49d31286c91aaf9ffc01b9b->enter($__internal_04c4dcb8fe6db0b6e9beb1de321f6e70f1965c8ac49d31286c91aaf9ffc01b9b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
+        $__internal_be108651eb40902b3d5facc95a25dab6e8603f95bd7bd461d43cfa15d0f03601 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_be108651eb40902b3d5facc95a25dab6e8603f95bd7bd461d43cfa15d0f03601->enter($__internal_be108651eb40902b3d5facc95a25dab6e8603f95bd7bd461d43cfa15d0f03601_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "rightCollumn"));
 
-        // line 194
-        echo "                <div class=\"row\">
+        // line 211
+        echo "
+                <div class=\"row\">
                     <h3>Latest Smile Team video</h3>
                     <iframe  src=\"https://www.youtube.com/embed/ahEIa4VdGJY\" frameborder=\"0\" allowfullscreen></iframe>
+                    <div class=\"text-center\">
+                        <a href=\"https://www.youtube.com/user/mrfiesta007\">See more on Youtube</a>
+                    </div>
+
                     <!--<div class=\"fb-video\" data-href=\"https://www.facebook.com/smilepaintball/videos/vb.1552858474930301/1812396948976451/?type=2&theater\" data-width=\"700px\" data-show-text=\"false\"><blockquote cite=\"https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater\" class=\"fb-xfbml-parse-ignore\"><a href=\"https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater\"></a>
                         </blockquote></div>-->
                 </div>
                 <hr/>
-                <div class=\"row\">
+                <div class=\"row row-top10\">
                     <!-- top 10 -->
                     <h3>Top 10</h3>
                     ";
-        // line 204
+        // line 226
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->renderFragment($this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->controller("SmilePlatformBundle:Post:topTen"));
         echo "
                 </div>
@@ -502,7 +561,7 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 
             ";
         
-        $__internal_04c4dcb8fe6db0b6e9beb1de321f6e70f1965c8ac49d31286c91aaf9ffc01b9b->leave($__internal_04c4dcb8fe6db0b6e9beb1de321f6e70f1965c8ac49d31286c91aaf9ffc01b9b_prof);
+        $__internal_be108651eb40902b3d5facc95a25dab6e8603f95bd7bd461d43cfa15d0f03601->leave($__internal_be108651eb40902b3d5facc95a25dab6e8603f95bd7bd461d43cfa15d0f03601_prof);
 
     }
 
@@ -518,7 +577,7 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 
     public function getDebugInfo()
     {
-        return array (  417 => 204,  405 => 194,  399 => 193,  388 => 188,  382 => 187,  372 => 290,  370 => 193,  366 => 191,  364 => 187,  360 => 185,  354 => 184,  341 => 174,  338 => 173,  332 => 172,  320 => 13,  314 => 12,  276 => 294,  274 => 184,  269 => 181,  267 => 172,  258 => 165,  256 => 164,  211 => 122,  202 => 116,  152 => 68,  102 => 66,  98 => 55,  86 => 45,  80 => 43,  77 => 42,  70 => 43,  67 => 42,  63 => 38,  42 => 19,  40 => 12,  27 => 1,);
+        return array (  476 => 226,  459 => 211,  453 => 210,  443 => 205,  440 => 204,  434 => 203,  422 => 197,  408 => 185,  402 => 183,  400 => 182,  394 => 178,  388 => 177,  378 => 312,  376 => 210,  372 => 208,  369 => 203,  367 => 177,  363 => 175,  357 => 174,  343 => 163,  340 => 162,  334 => 161,  322 => 13,  316 => 12,  300 => 350,  250 => 348,  246 => 337,  223 => 316,  221 => 174,  216 => 171,  214 => 161,  205 => 154,  203 => 153,  157 => 110,  148 => 104,  87 => 45,  81 => 43,  78 => 42,  71 => 43,  68 => 42,  64 => 38,  43 => 19,  41 => 12,  28 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -564,7 +623,7 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
     <link href=\"//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css\" rel=\"stylesheet\">
 
     <!-- jQuery -->
-    <script src=\"js/jquery.js\"></script><script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js\"></script>
+    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js\"></script>
 
     <!-- Custom CSS -->
     <link href=\"css/1-col-portfolio.css\" rel=\"stylesheet\">
@@ -585,19 +644,7 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 
     <script type=\"text/javascript\" src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js\"></script>
     <script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-sanitize.min.js\"></script>
-    {% javascripts
-    '@SmilePlatformBundle/public/js/waypoint.js' filter='cssrewrite'
-    '@SmilePlatformBundle/public/js/noframework.js' filter='cssrewrite'
-    '@SmilePlatformBundle/public/js/context.js' filter='cssrewrite'
-    '@SmilePlatformBundle/public/js/group.js' filter='cssrewrite'
-    '@SmilePlatformBundle/public/js/Angular/app.js' filter='cssrewrite'
-    '@SmilePlatformBundle/public/js/Angular/Controllers/allPostsCtrl.js' filter='cssrewrite'
-    '@SmilePlatformBundle/public/js/jqwery.js' filter='cssrewrite'
 
-
-    %}
-    <script type=\"text/javascript\" src=\"{{ asset_url }}\"></script>
-    {% endjavascripts %}
 
 </head>
 
@@ -628,7 +675,7 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
             version    : 'v2.7'
         });
 
-            alert('test');
+            //alert('test');
             console.log('test');
             getSmileGroup();
 
@@ -662,12 +709,13 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
     }
 
     function getSmileGroup(){
+
         FB.api(
-            \"/1790079874650463\",
+            \"/1790079874650463/members?summary=true\",
             function (response) {
+                console.log('group:');
                 console.log(response);
                 if (response && !response.error) {
-                    /* handle the result */
 
                 }
             }
@@ -704,12 +752,13 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
         <div class=\"col-lg-12\">
             {% block pageHeader %}
                 {% include 'SmilePlatformBundle::Default/Blocs/banner.html.twig'%}
-
                 <div class=\"pull-right\">
-                    Smile's facebook page:
+                    <!--Smile's facebook page:
                     <div class=\"fb-like\" data-href=\"https://www.facebook.com/smilepaintball/?fref=ts\" data-layout=\"button_count\" data-action=\"like\" data-size=\"large\" data-show-faces=\"true\" data-share=\"true\"></div>
-
+                    -->
+                    <a href=\"https://www.facebook.com/groups/1790079874650463/\"><button class=\"btn btn-register-facebook\"><strong>Join our Facebook group</strong></button></a>
                 </div>
+
             {% endblock %}
         </div>
     </div>
@@ -717,21 +766,53 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
     {% block content %}
     <div class=\"row\">
         <div class=\"col-md-9\" id=\"postsNews\" ng-app=\"smile\">
+            {% block postYourFun %}
+                <div class=\"row\">
+                    <div class=\"container\">
+                        <div class=\"col-md-9\">
+                            <div class=\"form-group\">
+                                {% if app.user %}
+                                    {{  render(controller('SmilePlatformBundle:Post:addNewInPage')) }}
+                                {% else %}
+
+                                    <H2><strong>+ POST your Fun</strong></H2>
+                                    <div class=\"form-group postOpenSignIn\">
+                                        <input class=\"form-control input-lg postOpenSignIn\" id=\"postTitleOpenSignIn\" placeholder=\"Post Title\">
+                                    </div>
+                                    <div class=\"form-group postOpenSignIn\">
+                                        <div class=\"pull-right\">
+                                            <button class=\"btn btn-primary postOpenSignIn\"><strong>POST</strong></button>
+                                        </div>
+                                    </div>
+
+                                {% endif %}
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            {% endblock %}
             {% block leftCollumn %}
+
                 {{ include ('SmilePlatformBundle:Default:Blocs/allPosts.html.twig') }}
 
             {% endblock %}
         </div>
         <div class=\"col-md-3 right-bar\">
             {% block rightCollumn %}
+
                 <div class=\"row\">
                     <h3>Latest Smile Team video</h3>
                     <iframe  src=\"https://www.youtube.com/embed/ahEIa4VdGJY\" frameborder=\"0\" allowfullscreen></iframe>
+                    <div class=\"text-center\">
+                        <a href=\"https://www.youtube.com/user/mrfiesta007\">See more on Youtube</a>
+                    </div>
+
                     <!--<div class=\"fb-video\" data-href=\"https://www.facebook.com/smilepaintball/videos/vb.1552858474930301/1812396948976451/?type=2&theater\" data-width=\"700px\" data-show-text=\"false\"><blockquote cite=\"https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater\" class=\"fb-xfbml-parse-ignore\"><a href=\"https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater\"></a>
                         </blockquote></div>-->
                 </div>
                 <hr/>
-                <div class=\"row\">
+                <div class=\"row row-top10\">
                     <!-- top 10 -->
                     <h3>Top 10</h3>
                     {{ render(controller('SmilePlatformBundle:Post:topTen')) }}
@@ -845,7 +926,19 @@ class __TwigTemplate_7bb7373c513b631c58f27b9b6fbfb544c61448c5f7b61d81bc0e9435977
 
 
 
+{% javascripts
+'@SmilePlatformBundle/public/js/waypoint.js' filter='cssrewrite'
+'@SmilePlatformBundle/public/js/noframework.js' filter='cssrewrite'
+'@SmilePlatformBundle/public/js/context.js' filter='cssrewrite'
+'@SmilePlatformBundle/public/js/group.js' filter='cssrewrite'
+'@SmilePlatformBundle/public/js/Angular/app.js' filter='cssrewrite'
+'@SmilePlatformBundle/public/js/Angular/Controllers/allPostsCtrl.js' filter='cssrewrite'
+'@SmilePlatformBundle/public/js/jqwery.js' filter='cssrewrite'
 
+
+%}
+<script type=\"text/javascript\" src=\"{{ asset_url }}\"></script>
+{% endjavascripts %}
 
 
 

@@ -984,6 +984,9 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
 
 });
 
+
+
+
 /**
  * Created by sebastien on 07-09-16.
  */
@@ -1133,3 +1136,14 @@ function openModalConnectToVote(){
     $('#showMandatoryLoginForVotes').show();
 }
 
+
+
+$('.postOpenSignIn').focus(function () {
+    //alert('test');
+    $('#showMandatoryLoginForPost').show();
+    $('#loginModal').modal('show');
+});
+
+$('.titleAddPost').click(function(){
+    $('.restOfTheForm').show('slow');
+});

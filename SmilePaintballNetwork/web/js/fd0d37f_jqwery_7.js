@@ -147,3 +147,14 @@ function openModalConnectToVote(){
     $('#showMandatoryLoginForVotes').show();
 }
 
+
+
+$('.postOpenSignIn').focus(function () {
+    //alert('test');
+    $('#showMandatoryLoginForPost').show();
+    $('#loginModal').modal('show');
+});
+
+$('.titleAddPost').click(function(){
+    $('.restOfTheForm').show('slow');
+});

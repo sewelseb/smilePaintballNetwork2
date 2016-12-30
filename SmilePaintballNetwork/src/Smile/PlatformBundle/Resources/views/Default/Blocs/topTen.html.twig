@@ -2,21 +2,34 @@
 
     <div class="spacer-5px">
         <a href="{{ path('smile_platform_post', {postId: post.id}) }}">
-            {% if post.type=='video_youtube' %}
-                <img class="img-responsive" src="http://smilepaintball.com/{{ post.getThumbnails() }}">
-            {% endif %}
-            {% if post.type=='video_facebook' %}
-                <img class="img-responsive" src="http://smilepaintball.com/{{ post.getThumbnails() }}">
-            {% endif %}
-            {% if post.type=='picture_facebook' %}
-                <img class="img-responsive" src="http://smilepaintball.com/{{ post.getThumbnails() }}">
-            {% endif %}
-            {% if post.type=='picture_externalUrl' %}
-                <img class="img-responsive" src="{{ post.url }}" alt="">
-            {% endif %}
-            {% if post.type=='picture_local' %}
-                <img class="img-responsive" src="http://smilepaintball.com/{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">
-            {% endif %}
+            <div class="row">
+                <div class="col-md-6">
+                    {% if post.type=='video_youtube' %}
+                        <img class="img-responsive top-10" src="http://smilepaintball.com/{{ post.getThumbnails() }}">
+                    {% endif %}
+                    {% if post.type=='video_facebook' %}
+                        <img class="img-responsive  top-10" src="http://smilepaintball.com/{{ post.getThumbnails() }}">
+                    {% endif %}
+                    {% if post.type=='picture_facebook' %}
+                        <img class="img-responsive top-10" src="http://smilepaintball.com/{{ post.getThumbnails() }}">
+                    {% endif %}
+                    {% if post.type=='picture_externalUrl' %}
+                        <img class="img-responsive top-10" src="{{ post.url }}" alt="">
+                    {% endif %}
+                    {% if post.type=='picture_local' %}
+                        <img class="img-responsive top-10" src="http://smilepaintball.com/{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">
+                    {% endif %}
+                </div>
+                <div class="col-md-6">
+                    <H4><strong>{{ post.title }}</strong></H4>
+                    {{ post.upvotes-post.downvotes }} points<br/>
+                    {% if post.comments<1 %}
+                        0 comments
+                    {% else %}
+                        {{ post.comments }} comments
+                    {% endif %}
+                </div>
+            </div>
         </a>
     </div>
 {% endfor %}
