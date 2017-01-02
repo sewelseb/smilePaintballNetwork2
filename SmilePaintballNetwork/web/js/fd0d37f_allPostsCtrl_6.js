@@ -49,14 +49,20 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
                     });
                 });*/
 
-                var waypointSeen = new Waypoint({
-                    element: document.getElementsByClassName('postSeen'),
-                    handler: function(direction) {
-                        console.log('post Seen !');
+                $('.postSeen').each(function(){
+                    new Waypoint({
+                        element: this,
+                        handler: function(direction) {
+                            //console.log(this);
+                            var id = $(this.element).attr('data-postId');
+                            //console.log('post Seen ! id: '+id);
+                            $scope.addVueToPost(id);
 
 
-                    }
-                });
+                        }
+                    });
+                })
+
 
 
 
@@ -72,6 +78,27 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
 
             }
         });
+    };
+
+    $scope.addVueToPost = function (id)
+    {
+        var url = document.getElementById('addViewUrl').innerHTML;
+        $.ajax({
+            url : url+id,
+            type : 'GET',
+            dataType : 'html',
+            success : function(results, status){
+
+            },
+            error : function(results, status, error){
+                console.log(results);
+                console.log(results.responseText);
+            },
+            complete : function(results, status){
+
+            }
+        });
+
     };
 
     $scope.searchOlderPost = function()
@@ -123,7 +150,19 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
                         //$(this).addClass('on');
                     });
                 });*/
+                $('.postSeen').each(function(){
+                    new Waypoint({
+                        element: this,
+                        handler: function(direction) {
+                            //console.log(this);
+                            var id = $(this.element).attr('data-postId');
+                            //console.log('post Seen ! id: '+id);
+                            $scope.addVueToPost(id);
 
+
+                        }
+                    });
+                })
 
 
 
@@ -241,14 +280,16 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
         }
     });
 
-    var waypointSeen = new Waypoint({
+    /*var waypointSeen = new Waypoint({
         element: document.getElementById('postSeen'),
         handler: function(direction) {
             console.log('post Seen !');
 
 
         }
-    });
+    });*/
+
+
 
 
 

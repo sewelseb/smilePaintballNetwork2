@@ -8,6 +8,8 @@ use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\Common\Collections\ArrayCollection;
 use Smile\PlatformBundle\Entity\Team;
 
+
+
 /**
  * User
  *
@@ -69,12 +71,19 @@ class User extends BaseUser
      */
     private $teams;
 
+    /**
+     *
+     * @ORM\ManyToMany(targetEntity="Smile\PlatformBundle\Entity\Event", mappedBy="userComing")
+     */
+    private $eventAttending;
+
 
 
     public function __construct()
     {
         parent::__construct();
         $this->teams = new ArrayCollection();
+        $this->eventAttending = new ArrayCollection();
     }
 
     public function addTeam(Team $team)
@@ -230,6 +239,23 @@ class User extends BaseUser
     {
         $this->teams = $teams;
     }
+
+    /**
+     * @return string
+     */
+    public function getUsername()
+    {
+        return $this->username;
+    }
+
+    /**
+     * @param string $username
+     */
+    public function setUsername($username)
+    {
+        $this->username = $username;
+    }
+
 
 
 

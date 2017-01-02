@@ -186,3 +186,40 @@ $('.nameAddEvent').click(function () {
     });
 });
 */
+
+$(window).load(function () {
+    $('.postSeenPage').each(function(){
+        new Waypoint({
+            element: this,
+            handler: function(direction) {
+                console.log(this);
+                var id = $(this.element).attr('data-postId');
+                console.log('post Seen ! id: '+id);
+                addVueToPost(id);
+            }
+        });
+    });
+});
+
+
+function addVueToPost(id)
+{
+    var url = document.getElementById('addViewUrl').innerHTML+id;
+    console.log(url);
+    $.ajax({
+        url : url,
+        type : 'GET',
+        dataType : 'html',
+        success : function(results, status){
+
+        },
+        error : function(results, status, error){
+            console.log(results);
+            console.log(results.responseText);
+        },
+        complete : function(results, status){
+
+        }
+    });
+}
+

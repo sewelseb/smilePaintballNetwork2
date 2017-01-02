@@ -150,7 +150,19 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
                         //$(this).addClass('on');
                     });
                 });*/
+                $('.postSeen').each(function(){
+                    new Waypoint({
+                        element: this,
+                        handler: function(direction) {
+                            //console.log(this);
+                            var id = $(this.element).attr('data-postId');
+                            //console.log('post Seen ! id: '+id);
+                            $scope.addVueToPost(id);
 
+
+                        }
+                    });
+                })
 
 
 

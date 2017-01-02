@@ -34,13 +34,66 @@
     {% set month = '' %}
     {% set year = '' %}
     {% for event in events %}
-        {% if event.startDate|date('m')==month  and event.startDate|date('Y')==year %}
+        {% if event.startingDate|date('month')==month  and event.startingDate|date('Y')==year %}
 
         {% else %}
-            {% set month = event.startDate|date('m') %}
-            {% set year = event.startDate|date('Y') %}
+            {% set month = event.startingDate|date('M') %}
+            {% set year = event.startingDate|date('Y') %}
+            <div class="row">
+                <H2><strong>{{ month }} {{ year }}</strong></H2>
+            </div>
+
         {% endif %}
-        <H2>{{ event.name }}</H2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/{{event.picture.getUploadDir()}}/{{event.picture.url}}" class="img-responsive">
+            </div>
+            <div class="col-md-8">
+                <strong>{{ event.name }}</strong>
+                <div>
+                    Date: {{ event.startingDate | date('d M Y') }}
+                </div>
+                <div>
+                    Country: {{ event.getFullCountry }}
+                </div>
+                {% if event.prix %}
+                    <div>
+                        Price: {{ event.prix }}
+                    </div>
+                {% endif %}
+                <div>
+                    Team coming:
+                </div>
+                <div>
+                    Player coming:
+                </div>
+                <div>
+                    <button class="btn btn-primary" onclick="">Come </button><button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">As <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuFollowAs">
+                        <li class="non-clickable-dropdown">
+                            Select a team:
+                        </li>
+                        {% for team in app.user.teams %}
+                            <li>
+                                <a href="" onclick="">
+                                    {% if (team.teamPicture) %}
+                                        <span class=""><img src="/{{team.teamPicture.uploadDir}}/{{team.teamPicture.url}}" class="img-responsive img-select-store-item-form-drop-down full-width" id="storePic_{{ team.getId() }}"></span>
+                                    {% else %}
+                                        <span class=""><img src="{{ asset('images/smileyTop.png') }}" class="img-responsive img-select-store-item-form-drop-down full-width" id="storePic_{{ team.getId() }}"></span>
+                                    {% endif %}
+                                    <span class="select-store-store-name">{{ team.getName() }}</span>
+                                </a>
+                            </li>
+                        {% endfor %}
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
     {% endfor %}
 {% endblock %}
 

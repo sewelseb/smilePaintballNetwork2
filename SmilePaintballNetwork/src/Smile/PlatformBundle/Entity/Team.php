@@ -3,6 +3,8 @@
 namespace Smile\PlatformBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
+
 
 /**
  * Team
@@ -40,6 +42,17 @@ class Team
      * @ORM\JoinColumn(nullable=true)
      */
     private $teamPicture;
+
+    /**
+     * Many Groups have Many Users.
+     * @ORM\ManyToMany(targetEntity="Event", mappedBy="teamComing")
+     */
+    private $eventAttending;
+
+    public function __construct()
+    {
+        $this->eventAttending = new ArrayCollection();
+    }
 
 
     /**
@@ -106,6 +119,22 @@ class Team
     public function setAdmin($admin)
     {
         $this->admin = $admin;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEventAttending()
+    {
+        return $this->eventAttending;
+    }
+
+    /**
+     * @param mixed $eventAttending
+     */
+    public function setEventAttending($eventAttending)
+    {
+        $this->eventAttending = $eventAttending;
     }
 
 

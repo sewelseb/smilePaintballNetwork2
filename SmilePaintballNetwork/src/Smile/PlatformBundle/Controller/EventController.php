@@ -13,6 +13,7 @@ use Smile\PlatformBundle\Form\EventProfilePicType;
 use Smile\UserBundle\Form\ProfilePicType;
 use Smile\UserBundle\Form\teamPictureType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Form\Extension\Core\Type\CountryType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Form\Extension\Core\Type\FormType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -56,6 +57,7 @@ class EventController extends Controller
             ->add('prix', TextType::class, array('required' => false))
             ->add('startingDate', DateType::class)
             ->add('endDate', DateType::class)
+            ->add('country', CountryType::class)
             ->add('picture', EventProfilePicType::class)
             ->add('save', SubmitType::class);
 
