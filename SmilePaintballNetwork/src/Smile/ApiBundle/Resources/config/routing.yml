@@ -29,3 +29,10 @@ smile_api_comment_addNew:
 smile_api_admin_getstats:
   path: /admin/stats
   defaults: { _controller: SmileApiBundle:Admin:stats }
+
+smile_api_post_addView:
+  path: /post/addView/{postId}
+  defaults: { _controller: SmileApiBundle:Posts:addViewToPost}
+
+smile_api_post_addView_url:
+  path: /post/addView/

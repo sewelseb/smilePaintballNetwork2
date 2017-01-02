@@ -1,5 +1,5 @@
 <H2><strong>+ POST your Fun</strong></H2>
-{{ form_start(form) }}
+{{ form_start(form, {'attr': {'class': 'form-add-post-in-page'}}) }}
     {{ form_errors(form) }}
 <div class="form-group text-center">
     {{ form_widget(form.title, {'attr': {'class': 'form-control input-lg titleAddPost', 'placeholder': 'Post Title', 'maxlength': '255'}}) }}
@@ -15,7 +15,7 @@
         <div class="col-md-6">
             {{ form_label(form.picture,"Picture:", {'label_attr': {'class': 'pull-left'}}) }}
             <input type="hidden" name="MAX_FILE_SIZE" value="3000000" />
-            {{ form_widget(form.picture.file, {'attr': {'class': 'image-file', 'accept':'image/*'}}) }}
+            {{ form_widget(form.picture.file, {'attr': {'class': 'image-file2', 'accept':'image/*'}}) }}
         </div>
         <div class="col-md-1">
             <H3><strong>OR</strong></H3>
@@ -27,7 +27,8 @@
     </div>
 </div>
 <div class="form-group">
-    <strong>{{ form_widget(form.save, {'attr': {'class': 'btn btn-lg btn-primary pull-right'}, 'label':'POST'}) }}</strong>
+
+    <strong>{{ form_widget(form.save, {'label': '+ POST', 'attr': {'class': 'btn btn-lg btn-primary pull-right btn-save-form-add-post-in-page'}}) }}</strong>
 </div>
 <script type="text/javascript">
     $('.image-file').bind('change', function() {
@@ -36,6 +37,10 @@
             alert('This file size is: ' + this.files[0].size/1024/1024 + "MB, and the maximum accepted is 3MB ;)");
         }
     });
+    $('.btn-save-form-add-post-in-page').click(function(){
+        $('.form-add-post-in-page')[0].submit();
+    });
+
 </script>
 
 {{ form_rest(form) }}

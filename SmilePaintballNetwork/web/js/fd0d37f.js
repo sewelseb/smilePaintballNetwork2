@@ -797,6 +797,24 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
                 $('#contentAllPosts').show("slow", $scope.facebookSafeApply());
                 $scope.loadMore=true;
                 $scope.safeApply();
+                //waypointSeen();
+
+                /*$('.postSeen').each(function() {
+                    $(this).waypoint(function() {
+                        alert('You have scrolled to an entry.');
+                        //$(this).addClass('on');
+                    });
+                });*/
+
+                var waypointSeen = new Waypoint({
+                    element: document.getElementsByClassName('postSeen'),
+                    handler: function(direction) {
+                        console.log('post Seen !');
+
+
+                    }
+                });
+
 
 
 
@@ -855,6 +873,14 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
                 $('#spiningWheelAllPosts').hide("slow");
                 $('#contentAllPosts').show("slow", $scope.facebookSafeApply());
                 $scope.loadMore=true;
+
+                /*$('.postSeen').each(function() {
+                    $(this).waypoint(function() {
+                        alert('You have scrolled to an entry.');
+                        //$(this).addClass('on');
+                    });
+                });*/
+
 
 
 
@@ -971,6 +997,18 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
 
         }
     });
+
+    var waypointSeen = new Waypoint({
+        element: document.getElementById('postSeen'),
+        handler: function(direction) {
+            console.log('post Seen !');
+
+
+        }
+    });
+
+
+
 
     $scope.loadMoreBdt = function () {
         console.log('Load More!');
@@ -1154,9 +1192,24 @@ $('.btn-see-more-top-10').click(function(){
 });
 
 $('.row-top10').hover(function(){
+    $('.btn-see-more-top-10').hide('slow');
     $('.hidden-top-ten').show('slow');
 });
 
-$(".ignore-click").click(function(){
+$('.nameAddEvent').click(function () {
+    $('.restOfTheFormCreateEvent').show('slow');
+});
+
+/*$(".ignore-click").click(function(){
     return false;
 })
+*/
+
+
+/*$('.postSeen').each(function() {
+    $(this).waypoint(function() {
+        alert('You have scrolled to an entry.');
+        //$(this).addClass('on');
+    });
+});
+*/

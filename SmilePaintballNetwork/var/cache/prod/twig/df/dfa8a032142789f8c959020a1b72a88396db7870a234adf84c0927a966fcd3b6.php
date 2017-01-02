@@ -15,8 +15,8 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_64f1ae7a6e9b8ee2d9fb4bf68cfcfc4faa2892a0261f33e8817093437c52ba50 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_64f1ae7a6e9b8ee2d9fb4bf68cfcfc4faa2892a0261f33e8817093437c52ba50->enter($__internal_64f1ae7a6e9b8ee2d9fb4bf68cfcfc4faa2892a0261f33e8817093437c52ba50_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
+        $__internal_0a10901753c2303d4a4b2f681f13f319f65e66178bf0856fb393b5b4892f9bce = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_0a10901753c2303d4a4b2f681f13f319f65e66178bf0856fb393b5b4892f9bce->enter($__internal_0a10901753c2303d4a4b2f681f13f319f65e66178bf0856fb393b5b4892f9bce_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
 
         // line 1
         echo "<!-- Project One -->
@@ -43,7 +43,7 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
     <div id=\"contentAllPosts\" hidden>
         <div ng-repeat=\"post in posts | orderBy: '-creationTime'\">
             ";
-        // line 73
+        // line 94
         echo "
                 <div class=\"row\">
                     <div ng-if=\"post.team\">
@@ -56,6 +56,7 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
                             </div>
                         </a>
                     </div>
+                    <h3><strong><a ng-href=\"/platform/post/{{ post.id }}\">{{ post.title }}</a></strong></h3>
                     <div ng-if=\"!post.team\">
                         <a ng-href=\"/platform/profile/{{ post.user.id }}\">
                             <div class=\"col-md-1 col-xs-3\">
@@ -72,53 +73,73 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
                         </a>
                     </div>
                 </div>
-                <div class=\"row\" >
-                    <div class=\"col-md-7\">
-                        <div ng-if=\"post.type=='video_youtube'\">
-                            <iframe  width=\"100%\"  height=\"300px\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" frameborder=\"0\" allowfullscreen></iframe>
-                        </div>
-                        <div ng-if=\"post.type=='video_facebook'\">
-                            <div class=\"fb-video\" data-href=\"{{ post.url }}\" data-width=\"460px\" data-show-text=\"false\"><blockquote cite=\"{{ post.url }}\" class=\"fb-xfbml-parse-ignore\"><a href=\"{{ post.url }}\"></a>
-                            </blockquote></div>
-                        </div>
-                        <div ng-if=\"post.type=='picture_facebook'\">
-                            <a ng-href=\"/platform/post/{{ post.id }}\">
-                                <div data-width=\"460px\" class=\"fb-post\" data-href=\"{{ post.url }}\"></div>
-                            </a>
-                        </div>
-                        <div ng-if=\"post.type=='picture_externalUrl'\">
-                            <a ng-href=\"/platform/post/{{ post.id }}\">
-                                <img class=\"img-responsive\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" alt=\"\">
-                            </a>
-                        </div>
-                        <div ng-if=\"post.type=='picture_local'\">
-                            <a ng-href=\"/platform/post/{{ post.id }}\">
-                                <img class=\"img-responsive\" ng-src=\"{{post.picture.uploadDir}}/{{post.picture.url}}\" alt=\"\">
-                            </a>
+                <div class=\"row text-center\" >
+                    <div class=\"\">
+                         <div class=\"text-center\">
+                            <div ng-if=\"post.type=='video_youtube'\">
+                                <iframe  width=\"80%\"  height=\"300px\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" frameborder=\"0\" allowfullscreen></iframe>
+                            </div>
+                            <div ng-if=\"post.type=='video_facebook'\">
+                                <div class=\"fb-video\" data-href=\"{{ post.url }}\" data-width=\"460px\" data-show-text=\"false\"><blockquote cite=\"{{ post.url }}\" class=\"fb-xfbml-parse-ignore\"><a href=\"{{ post.url }}\"></a>
+                                </blockquote></div>
+                            </div>
+                            <div ng-if=\"post.type=='picture_facebook'\">
+                                <a ng-href=\"/platform/post/{{ post.id }}\">
+                                    <div data-width=\"460px\" class=\"fb-post\" data-href=\"{{ post.url }}\"></div>
+                                </a>
+                            </div>
+                            <div ng-if=\"post.type=='picture_externalUrl'\">
+                                <a ng-href=\"/platform/post/{{ post.id }}\">
+                                    <img class=\"post-img\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" alt=\"\">
+                                </a>
+                            </div>
+                            <div ng-if=\"post.type=='picture_local'\">
+                                <a ng-href=\"/platform/post/{{ post.id }}\">
+                                    <img class=\"post-img\" ng-src=\"{{post.picture.uploadDir}}/{{post.picture.url}}\" alt=\"\">
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class=\"col-md-5\">
-                        <h3><a ng-href=\"/platform/post/{{ post.id }}\">{{ post.title }}</a></h3>
-                        <h4><a ng-href=\"/platform/post/{{ post.id }}\">{{ post.event_name }}</a></h4>
-                        <br/>
-                        <span ng-if=\"post.eventName && post.eventName != ''\">
-                            Event: {{ post.eventName }}
-                        </span>
-                        <p>
+                </div>
+                <div class=\"row\">
+                    <div class=\"col-md-9 col-sm-9 col-xs-9\">
+                        <div ng-if=\"post.eventName && post.eventName != ''\">
+                            <h4>Event: <a ng-href=\"/platform/post/{{ post.id }}\">{{ post.eventName }}</a></h4>
+                        </div>
+                        <div>
+
+                            <div class=\"fb-share-button\"
+                            data-href=\"http://smilepaintball.com/platform/post/{{ post.id }}\"
+                            data-layout=\"button_count\">
+                            </div>
+
+                            <a href=\"https://twitter.com/intent/tweet?text={{post.title}}&url=http://smilepaintball.com/platform/post/{{ post.id }}\">
+                                <button class=\"btn twitter-share-button\">Tweet</button>
+                            </a>
+                            <script type=\"IN/Share\" data-url=\"http://smilepaintball.com/platform/post/{{ post.id }}\" data-counter=\"right\"></script>
+                             <input class=\" form-control input-lg\" value=\"http://smilepaintball.com/platform/post/{{ post.id }}\">
+
+                        </div>
+                    </div>
+                    <div class=\"col-md-3  sm-hidden\">
+
+
+
+                        <div >
                             ";
         echo "
                             ";
-        // line 74
+        // line 95
         if ($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "user", array())) {
-            // line 75
+            // line 96
             echo "                            ";
-            // line 94
+            // line 115
             echo "
-                            <div id=\"updownVote_{{post.id}}\">
+                            <div class=\"row\" id=\"updownVote_{{post.id}}\">
                                 <div class=\"col-md-6 col-xs-6\">
                                     <a href=\"\">
                                         <span ng-click=\"upvote(post.id)\">
-                                            <img src=\"/images/upvote.png\" class=\"vote-img\">
+                                            <img src=\"/images/upvote.png\" class=\"im-responsive vote-img\">
 
                                         </span>
                                     </a>
@@ -126,7 +147,7 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
                                 <div class=\"col-md-6 col-xs-6\">
                                     <a href=\"\">
                                         <span ng-click=\"downvote(post.id)\">
-                                            <img src=\"/images/downvote.png\" class=\"vote-img\">
+                                            <img src=\"/images/downvote.png\" class=\"im-responsive vote-img\">
 
                                         </span>
                                     </a>
@@ -136,27 +157,27 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
             echo "
                             ";
         } else {
-            // line 96
+            // line 117
             echo "                            ";
-            // line 107
+            // line 128
             echo "
                                 <div class=\"col-md-6 col-sm-6 col-xs-6\">
                                     <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\">
-                                        <span onclick=\"openModalConnectToVote()\"><img src=\"/images/upvote.png\" class=\"vote-img\"></span>
+                                        <span onclick=\"openModalConnectToVote()\"><img src=\"/images/upvote.png\" class=\"im-responsive vote-img\"></span>
                                     </a>
                                 </div>
                                 <div class=\"col-md-6 col-sm-6 col-xs-6\">
                                     <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\">
-                                        <span onclick=\"openModalConnectToVote()\"><img src=\"/images/downvote.png\" class=\"vote-img\"></span>
+                                        <span onclick=\"openModalConnectToVote()\"><img src=\"/images/downvote.png\" class=\"im-responsive vote-img\"></span>
                                     </a>
                                 </div>
                             ";
             echo "
                             ";
         }
-        // line 109
+        // line 130
         echo "                            ";
-        // line 202
+        // line 206
         echo "
                            <div id=\"upvoted_{{post.id}}\" hidden>
                                   upvoted ;)
@@ -164,31 +185,14 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
                             <div id=\"downvoted_{{post.id}}\" hidden>
                                 downvoted :(
                             </div>
-                        </p>
+                        </div>
                         <div>
                             <a ng-href=\"/platform/post/{{ post.id }}\"><span id=\"post_point_{{ post.id }}\">{{ post.upvotes-post.downvotes }}</span> points, {{ post.comments }} comments</a>
                         </div>
-                        <div>
-                            <div class=\"spacer-5px\">
-                                <div class=\"fb-share-button\"
-                                data-href=\"http://smilepaintball.com/platform/post/{{ post.id }}\"
-                                data-layout=\"button_count\">
-                            </div>
-                            </div>
-                            <div class=\"spacer-5px\">
-                                <a
-                        href=\"https://twitter.com/intent/tweet?text={{post.title}}&url=http://smilepaintball.com/platform/post/{{ post.id }}\">
-                                <button class=\"btn twitter-share-button\">Tweet</button></a>
-                            </div>
-                            <div class=\"spacer-5px\">
-                                <script type=\"IN/Share\" data-url=\"http://smilepaintball.com/platform/post/{{ post.id }}\" data-counter=\"right\"></script>
-                            </div>
-                            <div class=\"spacer-5px\">
-                                Share: <input class=\" form-control input-lg\" value=\"http://smilepaintball.com/platform/post/{{ post.id }}\">
-                            </div>
-                        </div>
+
                     </div>
                 </div>
+
                 <div ng-if=\"(\$index%5)==0\" class=\"row\">
                     <hr/>
                     <h3>Sponsors</h3>
@@ -266,7 +270,7 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
 
 ";
         
-        $__internal_64f1ae7a6e9b8ee2d9fb4bf68cfcfc4faa2892a0261f33e8817093437c52ba50->leave($__internal_64f1ae7a6e9b8ee2d9fb4bf68cfcfc4faa2892a0261f33e8817093437c52ba50_prof);
+        $__internal_0a10901753c2303d4a4b2f681f13f319f65e66178bf0856fb393b5b4892f9bce->leave($__internal_0a10901753c2303d4a4b2f681f13f319f65e66178bf0856fb393b5b4892f9bce_prof);
 
     }
 
@@ -282,7 +286,7 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
 
     public function getDebugInfo()
     {
-        return array (  160 => 202,  158 => 109,  142 => 107,  140 => 96,  116 => 94,  114 => 75,  112 => 74,  47 => 73,  38 => 6,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
+        return array (  181 => 206,  179 => 130,  163 => 128,  161 => 117,  137 => 115,  135 => 96,  133 => 95,  47 => 94,  38 => 6,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -318,6 +322,7 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
                             </div>
                         </a>
                     </div>
+                    <h3><strong><a ng-href=\"/platform/post/{{ post.id }}\">{{ post.title }}</a></strong></h3>
                     <div ng-if=\"!post.team\">
                         <a ng-href=\"/platform/profile/{{ post.user.id }}\">
                             <div class=\"col-md-1 col-xs-3\">
@@ -334,47 +339,67 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
                         </a>
                     </div>
                 </div>
-                <div class=\"row\" >
-                    <div class=\"col-md-7\">
-                        <div ng-if=\"post.type=='video_youtube'\">
-                            <iframe  width=\"100%\"  height=\"300px\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" frameborder=\"0\" allowfullscreen></iframe>
-                        </div>
-                        <div ng-if=\"post.type=='video_facebook'\">
-                            <div class=\"fb-video\" data-href=\"{{ post.url }}\" data-width=\"460px\" data-show-text=\"false\"><blockquote cite=\"{{ post.url }}\" class=\"fb-xfbml-parse-ignore\"><a href=\"{{ post.url }}\"></a>
-                            </blockquote></div>
-                        </div>
-                        <div ng-if=\"post.type=='picture_facebook'\">
-                            <a ng-href=\"/platform/post/{{ post.id }}\">
-                                <div data-width=\"460px\" class=\"fb-post\" data-href=\"{{ post.url }}\"></div>
-                            </a>
-                        </div>
-                        <div ng-if=\"post.type=='picture_externalUrl'\">
-                            <a ng-href=\"/platform/post/{{ post.id }}\">
-                                <img class=\"img-responsive\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" alt=\"\">
-                            </a>
-                        </div>
-                        <div ng-if=\"post.type=='picture_local'\">
-                            <a ng-href=\"/platform/post/{{ post.id }}\">
-                                <img class=\"img-responsive\" ng-src=\"{{post.picture.uploadDir}}/{{post.picture.url}}\" alt=\"\">
-                            </a>
+                <div class=\"row text-center\" >
+                    <div class=\"\">
+                         <div class=\"text-center\">
+                            <div ng-if=\"post.type=='video_youtube'\">
+                                <iframe  width=\"80%\"  height=\"300px\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" frameborder=\"0\" allowfullscreen></iframe>
+                            </div>
+                            <div ng-if=\"post.type=='video_facebook'\">
+                                <div class=\"fb-video\" data-href=\"{{ post.url }}\" data-width=\"460px\" data-show-text=\"false\"><blockquote cite=\"{{ post.url }}\" class=\"fb-xfbml-parse-ignore\"><a href=\"{{ post.url }}\"></a>
+                                </blockquote></div>
+                            </div>
+                            <div ng-if=\"post.type=='picture_facebook'\">
+                                <a ng-href=\"/platform/post/{{ post.id }}\">
+                                    <div data-width=\"460px\" class=\"fb-post\" data-href=\"{{ post.url }}\"></div>
+                                </a>
+                            </div>
+                            <div ng-if=\"post.type=='picture_externalUrl'\">
+                                <a ng-href=\"/platform/post/{{ post.id }}\">
+                                    <img class=\"post-img\" ng-src=\"{{ trustAsResourceUrl(post.url) }}\" alt=\"\">
+                                </a>
+                            </div>
+                            <div ng-if=\"post.type=='picture_local'\">
+                                <a ng-href=\"/platform/post/{{ post.id }}\">
+                                    <img class=\"post-img\" ng-src=\"{{post.picture.uploadDir}}/{{post.picture.url}}\" alt=\"\">
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class=\"col-md-5\">
-                        <h3><a ng-href=\"/platform/post/{{ post.id }}\">{{ post.title }}</a></h3>
-                        <h4><a ng-href=\"/platform/post/{{ post.id }}\">{{ post.event_name }}</a></h4>
-                        <br/>
-                        <span ng-if=\"post.eventName && post.eventName != ''\">
-                            Event: {{ post.eventName }}
-                        </span>
-                        <p>
+                </div>
+                <div class=\"row\">
+                    <div class=\"col-md-9 col-sm-9 col-xs-9\">
+                        <div ng-if=\"post.eventName && post.eventName != ''\">
+                            <h4>Event: <a ng-href=\"/platform/post/{{ post.id }}\">{{ post.eventName }}</a></h4>
+                        </div>
+                        <div>
+
+                            <div class=\"fb-share-button\"
+                            data-href=\"http://smilepaintball.com/platform/post/{{ post.id }}\"
+                            data-layout=\"button_count\">
+                            </div>
+
+                            <a href=\"https://twitter.com/intent/tweet?text={{post.title}}&url=http://smilepaintball.com/platform/post/{{ post.id }}\">
+                                <button class=\"btn twitter-share-button\">Tweet</button>
+                            </a>
+                            <script type=\"IN/Share\" data-url=\"http://smilepaintball.com/platform/post/{{ post.id }}\" data-counter=\"right\"></script>
+                             <input class=\" form-control input-lg\" value=\"http://smilepaintball.com/platform/post/{{ post.id }}\">
+
+                        </div>
+                    </div>
+                    <div class=\"col-md-3  sm-hidden\">
+
+
+
+                        <div >
                             {% endverbatim %}
                             {% if app.user %}
                             {% verbatim %}
-                            <div id=\"updownVote_{{post.id}}\">
+                            <div class=\"row\" id=\"updownVote_{{post.id}}\">
                                 <div class=\"col-md-6 col-xs-6\">
                                     <a href=\"\">
                                         <span ng-click=\"upvote(post.id)\">
-                                            <img src=\"/images/upvote.png\" class=\"vote-img\">
+                                            <img src=\"/images/upvote.png\" class=\"im-responsive vote-img\">
 
                                         </span>
                                     </a>
@@ -382,7 +407,7 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
                                 <div class=\"col-md-6 col-xs-6\">
                                     <a href=\"\">
                                         <span ng-click=\"downvote(post.id)\">
-                                            <img src=\"/images/downvote.png\" class=\"vote-img\">
+                                            <img src=\"/images/downvote.png\" class=\"im-responsive vote-img\">
 
                                         </span>
                                     </a>
@@ -393,12 +418,12 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
                             {% verbatim %}
                                 <div class=\"col-md-6 col-sm-6 col-xs-6\">
                                     <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\">
-                                        <span onclick=\"openModalConnectToVote()\"><img src=\"/images/upvote.png\" class=\"vote-img\"></span>
+                                        <span onclick=\"openModalConnectToVote()\"><img src=\"/images/upvote.png\" class=\"im-responsive vote-img\"></span>
                                     </a>
                                 </div>
                                 <div class=\"col-md-6 col-sm-6 col-xs-6\">
                                     <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\">
-                                        <span onclick=\"openModalConnectToVote()\"><img src=\"/images/downvote.png\" class=\"vote-img\"></span>
+                                        <span onclick=\"openModalConnectToVote()\"><img src=\"/images/downvote.png\" class=\"im-responsive vote-img\"></span>
                                     </a>
                                 </div>
                             {% endverbatim %}
@@ -410,31 +435,14 @@ class __TwigTemplate_f3e60d5e0980b9aaa57cebfb5b3db476ef4ba92fec41c0483f3e28284f0
                             <div id=\"downvoted_{{post.id}}\" hidden>
                                 downvoted :(
                             </div>
-                        </p>
+                        </div>
                         <div>
                             <a ng-href=\"/platform/post/{{ post.id }}\"><span id=\"post_point_{{ post.id }}\">{{ post.upvotes-post.downvotes }}</span> points, {{ post.comments }} comments</a>
                         </div>
-                        <div>
-                            <div class=\"spacer-5px\">
-                                <div class=\"fb-share-button\"
-                                data-href=\"http://smilepaintball.com/platform/post/{{ post.id }}\"
-                                data-layout=\"button_count\">
-                            </div>
-                            </div>
-                            <div class=\"spacer-5px\">
-                                <a
-                        href=\"https://twitter.com/intent/tweet?text={{post.title}}&url=http://smilepaintball.com/platform/post/{{ post.id }}\">
-                                <button class=\"btn twitter-share-button\">Tweet</button></a>
-                            </div>
-                            <div class=\"spacer-5px\">
-                                <script type=\"IN/Share\" data-url=\"http://smilepaintball.com/platform/post/{{ post.id }}\" data-counter=\"right\"></script>
-                            </div>
-                            <div class=\"spacer-5px\">
-                                Share: <input class=\" form-control input-lg\" value=\"http://smilepaintball.com/platform/post/{{ post.id }}\">
-                            </div>
-                        </div>
+
                     </div>
                 </div>
+
                 <div ng-if=\"(\$index%5)==0\" class=\"row\">
                     <hr/>
                     <h3>Sponsors</h3>

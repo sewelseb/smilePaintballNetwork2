@@ -168,6 +168,28 @@ class PostsController extends FOSRestController
         return $this->handleView($view);
     }
 
+    public function addViewToPostAction($postId)
+    {
+        $postRepo = $this
+            ->getDoctrine()
+            ->getManager()
+            ->getRepository('SmilePlatformBundle:Post');
+
+        $post = $postRepo->find($postId);
+        $post->setViews($post->getViews()+1);
+
+        $em = $this->getDoctrine()->getEntityManager();
+        $em->persist($post);
+        $em->flush();
+
+        $view = $this->view('', 200)
+            ->setTemplate("SmileApiBundle:Default:index.html.twig")
+            ->setTemplateVar('posts')
+        ;
+
+        return $this->handleView($view);
+    }
+
 
 
 }

@@ -40,6 +40,30 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
                 $('#contentAllPosts').show("slow", $scope.facebookSafeApply());
                 $scope.loadMore=true;
                 $scope.safeApply();
+                //waypointSeen();
+
+                /*$('.postSeen').each(function() {
+                    $(this).waypoint(function() {
+                        alert('You have scrolled to an entry.');
+                        //$(this).addClass('on');
+                    });
+                });*/
+
+                $('.postSeen').each(function(){
+                    new Waypoint({
+                        element: this,
+                        handler: function(direction) {
+                            //console.log(this);
+                            var id = $(this.element).attr('data-postId');
+                            //console.log('post Seen ! id: '+id);
+                            $scope.addVueToPost(id);
+
+
+                        }
+                    });
+                })
+
+
 
 
 
@@ -54,6 +78,27 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
 
             }
         });
+    };
+
+    $scope.addVueToPost = function (id)
+    {
+        var url = document.getElementById('addViewUrl').innerHTML;
+        $.ajax({
+            url : url+id,
+            type : 'GET',
+            dataType : 'html',
+            success : function(results, status){
+
+            },
+            error : function(results, status, error){
+                console.log(results);
+                console.log(results.responseText);
+            },
+            complete : function(results, status){
+
+            }
+        });
+
     };
 
     $scope.searchOlderPost = function()
@@ -98,6 +143,14 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
                 $('#spiningWheelAllPosts').hide("slow");
                 $('#contentAllPosts').show("slow", $scope.facebookSafeApply());
                 $scope.loadMore=true;
+
+                /*$('.postSeen').each(function() {
+                    $(this).waypoint(function() {
+                        alert('You have scrolled to an entry.');
+                        //$(this).addClass('on');
+                    });
+                });*/
+
 
 
 
@@ -214,6 +267,20 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
 
         }
     });
+
+    /*var waypointSeen = new Waypoint({
+        element: document.getElementById('postSeen'),
+        handler: function(direction) {
+            console.log('post Seen !');
+
+
+        }
+    });*/
+
+
+
+
+
 
     $scope.loadMoreBdt = function () {
         console.log('Load More!');

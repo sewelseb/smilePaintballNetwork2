@@ -23,20 +23,20 @@ class __TwigTemplate_b1c08e834572a652afdc38a498084f970c64ef5506b35e1d99dadea2b99
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f5cf83042c87658c7d089869d0cbcfe1c079da1d9f47e875a7124a44711b44bb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f5cf83042c87658c7d089869d0cbcfe1c079da1d9f47e875a7124a44711b44bb->enter($__internal_f5cf83042c87658c7d089869d0cbcfe1c079da1d9f47e875a7124a44711b44bb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/post.html.twig"));
+        $__internal_703563fa170ca430c20864b7f32719a80f4f659d9481d14f437be2587c1d075e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_703563fa170ca430c20864b7f32719a80f4f659d9481d14f437be2587c1d075e->enter($__internal_703563fa170ca430c20864b7f32719a80f4f659d9481d14f437be2587c1d075e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/post.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_f5cf83042c87658c7d089869d0cbcfe1c079da1d9f47e875a7124a44711b44bb->leave($__internal_f5cf83042c87658c7d089869d0cbcfe1c079da1d9f47e875a7124a44711b44bb_prof);
+        $__internal_703563fa170ca430c20864b7f32719a80f4f659d9481d14f437be2587c1d075e->leave($__internal_703563fa170ca430c20864b7f32719a80f4f659d9481d14f437be2587c1d075e_prof);
 
     }
 
     // line 3
     public function block_openGraph($context, array $blocks = array())
     {
-        $__internal_ddda1fb1396924f3984ed2c2313df0cc23d04ea171ad27339abbeedb46ee8073 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_ddda1fb1396924f3984ed2c2313df0cc23d04ea171ad27339abbeedb46ee8073->enter($__internal_ddda1fb1396924f3984ed2c2313df0cc23d04ea171ad27339abbeedb46ee8073_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "openGraph"));
+        $__internal_ac97bb898502789f57867f8055bb87dc286f21a607cf8d9869d65639815716c2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_ac97bb898502789f57867f8055bb87dc286f21a607cf8d9869d65639815716c2->enter($__internal_ac97bb898502789f57867f8055bb87dc286f21a607cf8d9869d65639815716c2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "openGraph"));
 
         // line 4
         echo "    <meta property=\"og:title\" content=\"";
@@ -158,15 +158,15 @@ class __TwigTemplate_b1c08e834572a652afdc38a498084f970c64ef5506b35e1d99dadea2b99
         echo "
 ";
         
-        $__internal_ddda1fb1396924f3984ed2c2313df0cc23d04ea171ad27339abbeedb46ee8073->leave($__internal_ddda1fb1396924f3984ed2c2313df0cc23d04ea171ad27339abbeedb46ee8073_prof);
+        $__internal_ac97bb898502789f57867f8055bb87dc286f21a607cf8d9869d65639815716c2->leave($__internal_ac97bb898502789f57867f8055bb87dc286f21a607cf8d9869d65639815716c2_prof);
 
     }
 
     // line 45
     public function block_pageHeader($context, array $blocks = array())
     {
-        $__internal_94fc2fefbbb77464ff4731eea63c595bf58cb24593920555b2761e0f522c0642 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_94fc2fefbbb77464ff4731eea63c595bf58cb24593920555b2761e0f522c0642->enter($__internal_94fc2fefbbb77464ff4731eea63c595bf58cb24593920555b2761e0f522c0642_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
+        $__internal_06e35d430ef607c501c9e3589f7ae1991cdbc1b34ddd8cd119a3d35bdea049ee = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_06e35d430ef607c501c9e3589f7ae1991cdbc1b34ddd8cd119a3d35bdea049ee->enter($__internal_06e35d430ef607c501c9e3589f7ae1991cdbc1b34ddd8cd119a3d35bdea049ee_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageHeader"));
 
         // line 46
         echo "    <div class=\"pull-right\">
@@ -177,15 +177,15 @@ class __TwigTemplate_b1c08e834572a652afdc38a498084f970c64ef5506b35e1d99dadea2b99
     </div>
 ";
         
-        $__internal_94fc2fefbbb77464ff4731eea63c595bf58cb24593920555b2761e0f522c0642->leave($__internal_94fc2fefbbb77464ff4731eea63c595bf58cb24593920555b2761e0f522c0642_prof);
+        $__internal_06e35d430ef607c501c9e3589f7ae1991cdbc1b34ddd8cd119a3d35bdea049ee->leave($__internal_06e35d430ef607c501c9e3589f7ae1991cdbc1b34ddd8cd119a3d35bdea049ee_prof);
 
     }
 
     // line 54
     public function block_leftCollumn($context, array $blocks = array())
     {
-        $__internal_66dfa72e29b343d0304b0faf02a6729720a3ab5772931baff084e250dfbbf9f3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_66dfa72e29b343d0304b0faf02a6729720a3ab5772931baff084e250dfbbf9f3->enter($__internal_66dfa72e29b343d0304b0faf02a6729720a3ab5772931baff084e250dfbbf9f3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
+        $__internal_8110a876d1293968957ad113b6b733e72277744482a1b3fd611f3940fc0f910a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8110a876d1293968957ad113b6b733e72277744482a1b3fd611f3940fc0f910a->enter($__internal_8110a876d1293968957ad113b6b733e72277744482a1b3fd611f3940fc0f910a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "leftCollumn"));
 
         // line 55
         echo "    ";
@@ -219,58 +219,42 @@ class __TwigTemplate_b1c08e834572a652afdc38a498084f970c64ef5506b35e1d99dadea2b99
         echo " ";
         // line 79
         echo "    <div>
-        <h1 class=\"page-header\">
-            Watch, rate and share fun!
-        </h1>
         <div>
             <a href=\"";
-        // line 84
+        // line 81
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("smile_platform_homepage");
-        echo "\"><button class=\"btn btn-primary\">See more fun</button></a>
-            OR
-            ";
-        // line 86
-        if ( !$this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "user", array())) {
-            // line 87
-            echo "                <button class=\"btn btn-primary\"  data-toggle=\"modal\" data-target=\"#loginModal\" > + Post your paintball fun</button>
-            ";
-        } else {
-            // line 89
-            echo "                <div class=\"text-center\">
-                    <button class=\"btn btn-primary text-center\" data-toggle=\"modal\" data-target=\"#newPostModal\"><H4><strong> + Post your paintball fun </strong></H4></button>
-                </div>
-            ";
-        }
-        // line 93
-        echo "        </div>
+        echo "\"><button class=\"btn btn-primary\"><i class=\"fa fa-arrow-left\" aria-hidden=\"true\"></i> See more fun</button></a>
+
+        </div>
     </div>
     <div class=\"row\" >
         <h1>";
-        // line 96
+        // line 86
         echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "title", array()), "html", null, true);
         echo "</h1>
+
       <span id=\"smileApiUpvoteUrl\" hidden>";
-        // line 97
+        // line 88
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("smile_api_post_upvote_url");
         echo "</span>
         <span id=\"smileApiDownvoteUrl\" hidden>";
-        // line 98
+        // line 89
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("smile_api_post_downvote_url");
         echo "</span>
-        <div class=\"col-md-7\">
+        <div class=\"text-center\">
             ";
-        // line 100
+        // line 91
         if (($this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "type", array()) == "video_youtube")) {
-            // line 101
-            echo "                <iframe  width=\"100%\"  height=\"300px\" ng-src=\"";
+            // line 92
+            echo "                <iframe  width=\"80%\"  height=\"300px\" ng-src=\"";
             echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "url", array()), "html", null, true);
             echo "\" frameborder=\"0\" allowfullscreen></iframe>
             ";
         }
-        // line 103
+        // line 94
         echo "            ";
         if (($this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "type", array()) == "video_facebook")) {
-            // line 104
+            // line 95
             echo "                <div class=\"fb-video\" data-href=\"";
             echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "url", array()), "html", null, true);
             echo "\" data-width=\"700px\" data-show-text=\"false\"><blockquote cite=\"";
@@ -281,54 +265,51 @@ class __TwigTemplate_b1c08e834572a652afdc38a498084f970c64ef5506b35e1d99dadea2b99
                     </blockquote></div>
             ";
         }
-        // line 107
+        // line 98
         echo "            ";
         if (($this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "type", array()) == "picture_facebook")) {
-            // line 108
+            // line 99
             echo "                <div data-width=\"460px\" class=\"fb-post\" data-href=\"";
             echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "url", array()), "html", null, true);
             echo "\"></div>
             ";
         }
-        // line 110
+        // line 101
         echo "            ";
         if (($this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "type", array()) == "picture_externalUrl")) {
-            // line 111
-            echo "                <img class=\"img-responsive\" src=\"";
+            // line 102
+            echo "                <img class=\" post-img\"   src=\"";
             echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "url", array()), "html", null, true);
             echo "\" alt=\"\">
             ";
         }
-        // line 113
+        // line 104
         echo "            ";
         if (($this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "type", array()) == "picture_local")) {
-            // line 114
-            echo "                <img class=\"img-responsive\" src=\"/";
+            // line 105
+            echo "                <img class=\" post-img\"   src=\"/";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "picture", array()), "getUploadDir", array(), "method"), "html", null, true);
             echo "/";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "picture", array()), "url", array()), "html", null, true);
             echo "\" alt=\"\">
             ";
         }
-        // line 116
+        // line 107
         echo "        </div>
-        <div class=\"col-md-5 \">
+    </div>
 
-
-            <h4>";
-        // line 120
-        echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "eventName", array()), "html", null, true);
-        echo "</h4>
-            <div>
+    <div class=\"row\">
+        <div class=\"\">
+            <div class=\"col-md-9 col-sm-9 col-xs-9\">
                 <a href=\"";
-        // line 122
+        // line 113
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("smile_platform_profile", array("userId" => $this->getAttribute($this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "user", array()), "getId", array()))), "html", null, true);
         echo "\">
                     by
                     ";
-        // line 124
+        // line 115
         if (($this->getAttribute($this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "user", array()), "firstName", array()) && $this->getAttribute($this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "user", array()), "lastName", array()))) {
-            // line 125
+            // line 116
             echo "                        <strong>";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "user", array()), "firstName", array()), "html", null, true);
             echo " ";
@@ -336,88 +317,99 @@ class __TwigTemplate_b1c08e834572a652afdc38a498084f970c64ef5506b35e1d99dadea2b99
             echo "</strong><br>
                     ";
         } else {
-            // line 127
+            // line 118
             echo "                        <strong>";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "user", array()), "username", array()), "html", null, true);
             echo "</strong><br>
                     ";
         }
-        // line 129
+        // line 120
         echo "                </a>
-            </div>
-            <div>
-                ";
-        // line 132
+                <div>
+                    ";
+        // line 122
         if ($this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "team", array())) {
-            // line 133
-            echo "                    <a href=\"/platform/team/";
+            // line 123
+            echo "                        <a href=\"/platform/team/";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "team", array()), "id", array()), "html", null, true);
             echo "\">team: <strong>";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "team", array()), "name", array()), "html", null, true);
             echo "</strong></a>
+                    ";
+        }
+        // line 125
+        echo "                </div>
+                ";
+        // line 126
+        if (($this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "eventName", array()) && ($this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "eventName", array()) != ""))) {
+            // line 127
+            echo "                    <h4>Event: ";
+            echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "eventName", array()), "html", null, true);
+            echo "</h4>
                 ";
         }
-        // line 135
-        echo "            </div>
-            <p>
-            <div id=\"updownVote_";
-        // line 137
+        // line 129
+        echo "                <div>
+                    <div class=\"addthis_inline_share_toolbox\"></div>
+                </div>
+            </div>
+            <div class=\"col-md-3  sm-hidden\">
+                <div class=\"row\" id=\"updownVote_";
+        // line 134
         echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "id", array()), "html", null, true);
         echo "\">
-                ";
-        // line 138
+                    ";
+        // line 135
         if ($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "user", array())) {
-            // line 139
-            echo "                    <div class=\"col-md-6 col-sm-6 col-xs-6\">
-                        <a href=\"\">
-                            <span onclick=\"upvote(";
-            // line 141
+            // line 136
+            echo "                        <div class=\"col-md-6 col-sm-6 col-xs-6\">
+                            <a href=\"\">
+                                <span onclick=\"upvote(";
+            // line 138
             echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "id", array()), "html", null, true);
-            echo ")\"><img src=\"/images/upvote.png\" class=\"vote-img\"></span>
-                        </a>
-                    </div>
-                    <div class=\"col-md-6 col-sm-6 col-xs-6\">
-                        <a href=\"\">
-                            <span onclick=\"downvote(";
-            // line 146
+            echo ")\"><img src=\"/images/upvote.png\" class=\"vote-img img-responsive\"></span>
+                            </a>
+                        </div>
+                        <div class=\"col-md-6 col-sm-6 col-xs-6\">
+                            <a href=\"\">
+                                <span onclick=\"downvote(";
+            // line 143
             echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "id", array()), "html", null, true);
-            echo ")\"><img src=\"/images/downvote.png\" class=\"vote-img\"></span>
-                        </a>
-                    </div>
-                ";
+            echo ")\"><img src=\"/images/downvote.png\" class=\"vote-img img-responsive\"></span>
+                            </a>
+                        </div>
+                    ";
         } else {
-            // line 150
-            echo "                    <div class=\"col-md-6 col-sm-6 col-xs-6\">
-                        <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\">
-                            <span onclick=\"openModalConnectToVote()\"><img src=\"/images/upvote.png\" class=\"vote-img\"></span>
-                        </a>
-                    </div>
-                    <div class=\"col-md-6 col-sm-6 col-xs-6\">
-                        <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\">
-                            <span onclick=\"openModalConnectToVote()\"><img src=\"/images/downvote.png\" class=\"vote-img\"></span>
-                        </a>
-                    </div>
-                ";
+            // line 147
+            echo "                        <div class=\"col-md-6 col-sm-6 col-xs-6\">
+                            <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\">
+                                <span onclick=\"openModalConnectToVote()\"><img src=\"/images/upvote.png\" class=\"vote-img img-responsive\"></span>
+                            </a>
+                        </div>
+                        <div class=\"col-md-6 col-sm-6 col-xs-6\">
+                            <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\">
+                                <span onclick=\"openModalConnectToVote()\"><img src=\"/images/downvote.png\" class=\"vote-img img-responsive\"></span>
+                            </a>
+                        </div>
+                    ";
         }
-        // line 161
-        echo "            </div>
-            <div id=\"upvoted_";
+        // line 158
+        echo "                </div>
+                <div id=\"upvoted_";
+        // line 159
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "id", array()), "html", null, true);
+        echo "\" hidden>
+                    upvoted ;)
+                </div>
+                <div id=\"downvoted_";
         // line 162
         echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "id", array()), "html", null, true);
         echo "\" hidden>
-                upvoted ;)
-            </div>
-            <div id=\"downvoted_";
-        // line 165
-        echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "id", array()), "html", null, true);
-        echo "\" hidden>
-                downvoted :(
-            </div>
-            </p>
-
-            <div>
-                <span id=\"post_point_";
-        // line 171
+                    downvoted :(
+                </div>
+                <div>
+                    <span id=\"post_point_";
+        // line 166
         echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "id", array()), "html", null, true);
         echo "\">";
         echo twig_escape_filter($this->env, ($this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "upvotes", array()) - $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "downvotes", array())), "html", null, true);
@@ -426,85 +418,84 @@ class __TwigTemplate_b1c08e834572a652afdc38a498084f970c64ef5506b35e1d99dadea2b99
         echo "\">";
         echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "comments", array()), "html", null, true);
         echo "</span> comments
+                </div>
             </div>
-            <div>
-                <div class=\"addthis_inline_share_toolbox\"></div>
-
-
-            </div>
-            <div class=\"col-md-11\">
-                <span id=\"postCommentUrl\" hidden>";
-        // line 179
+        </div>
+    </div>
+    <div class=\"row\">
+        <div class=\"col-md-11\">
+            <span id=\"postCommentUrl\" hidden>";
+        // line 173
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("smile_api_comment_addNew");
         echo "</span>
-                <strong>Comments:</strong>
-                ";
-        // line 181
+            <strong>Comments:</strong>
+            ";
+        // line 175
         if ($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "user", array())) {
-            // line 182
-            echo "                    <textarea class=\"form-control input-lg\" placeholder=\"Your comment...\" with=\"95%\" id=\"textToUseToComment\"></textarea><br/>
-                    <div class=\"clearfix\"></div>
-                    <button class=\"btn btn-primary\" onclick=\"sendComment(";
-            // line 184
+            // line 176
+            echo "                <textarea class=\"form-control input-lg\" placeholder=\"Your comment...\" with=\"95%\" id=\"textToUseToComment\"></textarea><br/>
+                <div class=\"clearfix\"></div>
+                <button class=\"btn btn-primary\" onclick=\"sendComment(";
+            // line 178
             echo twig_escape_filter($this->env, $this->getAttribute(($context["post"] ?? $this->getContext($context, "post")), "id", array()), "html", null, true);
             echo ")\">Send</button>
-                ";
+            ";
         }
-        // line 186
+        // line 180
         echo "
-                <div id=\"sendedMessage\" hidden>
-                    Sent ;)
-                </div>
-                ";
-        // line 190
+            <div id=\"sendedMessage\" hidden>
+                Sent ;)
+            </div>
+            ";
+        // line 184
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["comments"] ?? $this->getContext($context, "comments")));
         foreach ($context['_seq'] as $context["_key"] => $context["comment"]) {
-            // line 191
-            echo "                    <div class=\"row\">
-                        <a href=\"";
-            // line 192
+            // line 185
+            echo "                <div class=\"row\">
+                    <a href=\"";
+            // line 186
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("smile_platform_profile", array("userId" => $this->getAttribute($this->getAttribute($context["comment"], "user", array()), "getId", array()))), "html", null, true);
             echo "\">
-                            <img src=\"";
-            // line 193
+                        <img src=\"";
+            // line 187
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["comment"], "user", array()), "picture", array()), "uploadDir", array()), "html", null, true);
             echo "/";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["comment"], "user", array()), "picture", array()), "url", array()), "html", null, true);
             echo "\"  class=\"comment-profile-pic\">
-                            <strong>";
-            // line 194
+                        <strong>";
+            // line 188
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["comment"], "user", array()), "username", array()), "html", null, true);
             echo "</strong><br>
-                        </a>
-                        ";
-            // line 196
+                    </a>
+                    ";
+            // line 190
             echo twig_escape_filter($this->env, $this->getAttribute($context["comment"], "text", array()), "html", null, true);
             echo "
-                    </div>
-                ";
+                </div>
+            ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['comment'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 199
-        echo "            </div>
-        </div>
+        // line 193
+        echo "        </div>
+    </div>
 
 
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
         <script type=\"text/javascript\" src=\"//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-582b51a0caf3c323\"></script>
 
-    </div>
+
     ";
-        // line 207
+        // line 201
         if ( !$this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "user", array())) {
-            // line 208
+            // line 202
             echo "        <H3>To upvote, downvote, comment or post, please <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\"><button class=\"btn btn-primary\"><strong>log in</strong></button></a></H3>
     ";
         }
         
-        $__internal_66dfa72e29b343d0304b0faf02a6729720a3ab5772931baff084e250dfbbf9f3->leave($__internal_66dfa72e29b343d0304b0faf02a6729720a3ab5772931baff084e250dfbbf9f3_prof);
+        $__internal_8110a876d1293968957ad113b6b733e72277744482a1b3fd611f3940fc0f910a->leave($__internal_8110a876d1293968957ad113b6b733e72277744482a1b3fd611f3940fc0f910a_prof);
 
     }
 
@@ -520,7 +511,7 @@ class __TwigTemplate_b1c08e834572a652afdc38a498084f970c64ef5506b35e1d99dadea2b99
 
     public function getDebugInfo()
     {
-        return array (  503 => 208,  501 => 207,  491 => 199,  482 => 196,  477 => 194,  471 => 193,  467 => 192,  464 => 191,  460 => 190,  454 => 186,  449 => 184,  445 => 182,  443 => 181,  438 => 179,  421 => 171,  412 => 165,  406 => 162,  403 => 161,  390 => 150,  383 => 146,  375 => 141,  371 => 139,  369 => 138,  365 => 137,  361 => 135,  353 => 133,  351 => 132,  346 => 129,  340 => 127,  332 => 125,  330 => 124,  325 => 122,  320 => 120,  314 => 116,  306 => 114,  303 => 113,  297 => 111,  294 => 110,  288 => 108,  285 => 107,  274 => 104,  271 => 103,  265 => 101,  263 => 100,  258 => 98,  254 => 97,  250 => 96,  245 => 93,  239 => 89,  235 => 87,  233 => 86,  228 => 84,  221 => 79,  219 => 78,  194 => 56,  191 => 55,  185 => 54,  172 => 46,  166 => 45,  158 => 42,  151 => 40,  142 => 38,  140 => 37,  137 => 36,  134 => 35,  131 => 34,  128 => 33,  125 => 32,  123 => 31,  118 => 29,  114 => 28,  110 => 26,  102 => 24,  99 => 23,  93 => 21,  90 => 20,  84 => 18,  81 => 17,  78 => 16,  74 => 14,  71 => 13,  65 => 11,  62 => 10,  59 => 9,  53 => 7,  51 => 6,  47 => 5,  42 => 4,  36 => 3,  11 => 1,);
+        return array (  494 => 202,  492 => 201,  482 => 193,  473 => 190,  468 => 188,  462 => 187,  458 => 186,  455 => 185,  451 => 184,  445 => 180,  440 => 178,  436 => 176,  434 => 175,  429 => 173,  413 => 166,  406 => 162,  400 => 159,  397 => 158,  384 => 147,  377 => 143,  369 => 138,  365 => 136,  363 => 135,  359 => 134,  352 => 129,  346 => 127,  344 => 126,  341 => 125,  333 => 123,  331 => 122,  327 => 120,  321 => 118,  313 => 116,  311 => 115,  306 => 113,  298 => 107,  290 => 105,  287 => 104,  281 => 102,  278 => 101,  272 => 99,  269 => 98,  258 => 95,  255 => 94,  249 => 92,  247 => 91,  242 => 89,  238 => 88,  233 => 86,  225 => 81,  221 => 79,  219 => 78,  194 => 56,  191 => 55,  185 => 54,  172 => 46,  166 => 45,  158 => 42,  151 => 40,  142 => 38,  140 => 37,  137 => 36,  134 => 35,  131 => 34,  128 => 33,  125 => 32,  123 => 31,  118 => 29,  114 => 28,  110 => 26,  102 => 24,  99 => 23,  93 => 21,  90 => 20,  84 => 18,  81 => 17,  78 => 16,  74 => 14,  71 => 13,  65 => 11,  62 => 10,  59 => 9,  53 => 7,  51 => 6,  47 => 5,  42 => 4,  36 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -612,28 +603,19 @@ class __TwigTemplate_b1c08e834572a652afdc38a498084f970c64ef5506b35e1d99dadea2b99
         </script>
     {% endif %} {# end first view modal #}
     <div>
-        <h1 class=\"page-header\">
-            Watch, rate and share fun!
-        </h1>
         <div>
-            <a href=\"{{ path('smile_platform_homepage') }}\"><button class=\"btn btn-primary\">See more fun</button></a>
-            OR
-            {% if not app.user %}
-                <button class=\"btn btn-primary\"  data-toggle=\"modal\" data-target=\"#loginModal\" > + Post your paintball fun</button>
-            {% else %}
-                <div class=\"text-center\">
-                    <button class=\"btn btn-primary text-center\" data-toggle=\"modal\" data-target=\"#newPostModal\"><H4><strong> + Post your paintball fun </strong></H4></button>
-                </div>
-            {% endif %}
+            <a href=\"{{ path('smile_platform_homepage') }}\"><button class=\"btn btn-primary\"><i class=\"fa fa-arrow-left\" aria-hidden=\"true\"></i> See more fun</button></a>
+
         </div>
     </div>
     <div class=\"row\" >
         <h1>{{ post.title }}</h1>
+
       <span id=\"smileApiUpvoteUrl\" hidden>{{ path ('smile_api_post_upvote_url') }}</span>
         <span id=\"smileApiDownvoteUrl\" hidden>{{ path ('smile_api_post_downvote_url') }}</span>
-        <div class=\"col-md-7\">
+        <div class=\"text-center\">
             {% if post.type=='video_youtube' %}
-                <iframe  width=\"100%\"  height=\"300px\" ng-src=\"{{ post.url }}\" frameborder=\"0\" allowfullscreen></iframe>
+                <iframe  width=\"80%\"  height=\"300px\" ng-src=\"{{ post.url }}\" frameborder=\"0\" allowfullscreen></iframe>
             {% endif %}
             {% if post.type=='video_facebook' %}
                 <div class=\"fb-video\" data-href=\"{{ post.url }}\" data-width=\"700px\" data-show-text=\"false\"><blockquote cite=\"{{ post.url }}\" class=\"fb-xfbml-parse-ignore\"><a href=\"{{ post.url }}\"></a>
@@ -643,17 +625,17 @@ class __TwigTemplate_b1c08e834572a652afdc38a498084f970c64ef5506b35e1d99dadea2b99
                 <div data-width=\"460px\" class=\"fb-post\" data-href=\"{{ post.url }}\"></div>
             {% endif %}
             {% if post.type=='picture_externalUrl' %}
-                <img class=\"img-responsive\" src=\"{{ post.url }}\" alt=\"\">
+                <img class=\" post-img\"   src=\"{{ post.url }}\" alt=\"\">
             {% endif %}
             {% if post.type=='picture_local' %}
-                <img class=\"img-responsive\" src=\"/{{post.picture.getUploadDir()}}/{{post.picture.url}}\" alt=\"\">
+                <img class=\" post-img\"   src=\"/{{post.picture.getUploadDir()}}/{{post.picture.url}}\" alt=\"\">
             {% endif %}
         </div>
-        <div class=\"col-md-5 \">
+    </div>
 
-
-            <h4>{{ post.eventName }}</h4>
-            <div>
+    <div class=\"row\">
+        <div class=\"\">
+            <div class=\"col-md-9 col-sm-9 col-xs-9\">
                 <a href=\"{{ path('smile_platform_profile', {'userId': post.user.getId })  }}\">
                     by
                     {% if post.user.firstName and post.user.lastName %}
@@ -662,83 +644,86 @@ class __TwigTemplate_b1c08e834572a652afdc38a498084f970c64ef5506b35e1d99dadea2b99
                         <strong>{{ post.user.username }}</strong><br>
                     {% endif %}
                 </a>
-            </div>
-            <div>
-                {% if post.team  %}
-                    <a href=\"/platform/team/{{ post.team.id }}\">team: <strong>{{ post.team.name }}</strong></a>
-                {% endif %}
-            </div>
-            <p>
-            <div id=\"updownVote_{{post.id}}\">
-                {% if app.user %}
-                    <div class=\"col-md-6 col-sm-6 col-xs-6\">
-                        <a href=\"\">
-                            <span onclick=\"upvote({{ post.id }})\"><img src=\"/images/upvote.png\" class=\"vote-img\"></span>
-                        </a>
-                    </div>
-                    <div class=\"col-md-6 col-sm-6 col-xs-6\">
-                        <a href=\"\">
-                            <span onclick=\"downvote({{ post.id }})\"><img src=\"/images/downvote.png\" class=\"vote-img\"></span>
-                        </a>
-                    </div>
-                {% else %}
-                    <div class=\"col-md-6 col-sm-6 col-xs-6\">
-                        <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\">
-                            <span onclick=\"openModalConnectToVote()\"><img src=\"/images/upvote.png\" class=\"vote-img\"></span>
-                        </a>
-                    </div>
-                    <div class=\"col-md-6 col-sm-6 col-xs-6\">
-                        <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\">
-                            <span onclick=\"openModalConnectToVote()\"><img src=\"/images/downvote.png\" class=\"vote-img\"></span>
-                        </a>
-                    </div>
-                {% endif %}
-            </div>
-            <div id=\"upvoted_{{post.id}}\" hidden>
-                upvoted ;)
-            </div>
-            <div id=\"downvoted_{{post.id}}\" hidden>
-                downvoted :(
-            </div>
-            </p>
-
-            <div>
-                <span id=\"post_point_{{ post.id }}\">{{ post.upvotes-post.downvotes }}</span> points, <span id=\"post_comment_{{ post.id }}\">{{ post.comments }}</span> comments
-            </div>
-            <div>
-                <div class=\"addthis_inline_share_toolbox\"></div>
-
-
-            </div>
-            <div class=\"col-md-11\">
-                <span id=\"postCommentUrl\" hidden>{{ path('smile_api_comment_addNew') }}</span>
-                <strong>Comments:</strong>
-                {% if app.user %}
-                    <textarea class=\"form-control input-lg\" placeholder=\"Your comment...\" with=\"95%\" id=\"textToUseToComment\"></textarea><br/>
-                    <div class=\"clearfix\"></div>
-                    <button class=\"btn btn-primary\" onclick=\"sendComment({{ post.id }})\">Send</button>
-                {% endif %}
-
-                <div id=\"sendedMessage\" hidden>
-                    Sent ;)
+                <div>
+                    {% if post.team  %}
+                        <a href=\"/platform/team/{{ post.team.id }}\">team: <strong>{{ post.team.name }}</strong></a>
+                    {% endif %}
                 </div>
-                {% for comment in comments %}
-                    <div class=\"row\">
-                        <a href=\"{{ path('smile_platform_profile', {'userId': comment.user.getId })  }}\">
-                            <img src=\"{{ comment.user.picture.uploadDir }}/{{ comment.user.picture.url }}\"  class=\"comment-profile-pic\">
-                            <strong>{{ comment.user.username }}</strong><br>
-                        </a>
-                        {{ comment.text }}
-                    </div>
-                {% endfor %}
+                {% if post.eventName and post.eventName != \"\" %}
+                    <h4>Event: {{ post.eventName }}</h4>
+                {% endif %}
+                <div>
+                    <div class=\"addthis_inline_share_toolbox\"></div>
+                </div>
+            </div>
+            <div class=\"col-md-3  sm-hidden\">
+                <div class=\"row\" id=\"updownVote_{{post.id}}\">
+                    {% if app.user %}
+                        <div class=\"col-md-6 col-sm-6 col-xs-6\">
+                            <a href=\"\">
+                                <span onclick=\"upvote({{ post.id }})\"><img src=\"/images/upvote.png\" class=\"vote-img img-responsive\"></span>
+                            </a>
+                        </div>
+                        <div class=\"col-md-6 col-sm-6 col-xs-6\">
+                            <a href=\"\">
+                                <span onclick=\"downvote({{ post.id }})\"><img src=\"/images/downvote.png\" class=\"vote-img img-responsive\"></span>
+                            </a>
+                        </div>
+                    {% else %}
+                        <div class=\"col-md-6 col-sm-6 col-xs-6\">
+                            <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\">
+                                <span onclick=\"openModalConnectToVote()\"><img src=\"/images/upvote.png\" class=\"vote-img img-responsive\"></span>
+                            </a>
+                        </div>
+                        <div class=\"col-md-6 col-sm-6 col-xs-6\">
+                            <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\">
+                                <span onclick=\"openModalConnectToVote()\"><img src=\"/images/downvote.png\" class=\"vote-img img-responsive\"></span>
+                            </a>
+                        </div>
+                    {% endif %}
+                </div>
+                <div id=\"upvoted_{{post.id}}\" hidden>
+                    upvoted ;)
+                </div>
+                <div id=\"downvoted_{{post.id}}\" hidden>
+                    downvoted :(
+                </div>
+                <div>
+                    <span id=\"post_point_{{ post.id }}\">{{ post.upvotes-post.downvotes }}</span> points, <span id=\"post_comment_{{ post.id }}\">{{ post.comments }}</span> comments
+                </div>
             </div>
         </div>
+    </div>
+    <div class=\"row\">
+        <div class=\"col-md-11\">
+            <span id=\"postCommentUrl\" hidden>{{ path('smile_api_comment_addNew') }}</span>
+            <strong>Comments:</strong>
+            {% if app.user %}
+                <textarea class=\"form-control input-lg\" placeholder=\"Your comment...\" with=\"95%\" id=\"textToUseToComment\"></textarea><br/>
+                <div class=\"clearfix\"></div>
+                <button class=\"btn btn-primary\" onclick=\"sendComment({{ post.id }})\">Send</button>
+            {% endif %}
+
+            <div id=\"sendedMessage\" hidden>
+                Sent ;)
+            </div>
+            {% for comment in comments %}
+                <div class=\"row\">
+                    <a href=\"{{ path('smile_platform_profile', {'userId': comment.user.getId })  }}\">
+                        <img src=\"{{ comment.user.picture.uploadDir }}/{{ comment.user.picture.url }}\"  class=\"comment-profile-pic\">
+                        <strong>{{ comment.user.username }}</strong><br>
+                    </a>
+                    {{ comment.text }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 
 
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
         <script type=\"text/javascript\" src=\"//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-582b51a0caf3c323\"></script>
 
-    </div>
+
     {% if not app.user %}
         <H3>To upvote, downvote, comment or post, please <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\"><button class=\"btn btn-primary\"><strong>log in</strong></button></a></H3>
     {% endif %}

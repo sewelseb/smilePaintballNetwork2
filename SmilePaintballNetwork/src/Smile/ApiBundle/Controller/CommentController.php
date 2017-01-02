@@ -34,6 +34,8 @@ class CommentController extends FOSRestController
             $em->persist($comment);
             $em->flush();
 
+            $comment->getUser()->setTeams(array());
+
             $view = $this->view($comment, 200)
                 ->setTemplate("SmileApiBundle:Default:index.html.twig")
                 ->setTemplateVar('posts')

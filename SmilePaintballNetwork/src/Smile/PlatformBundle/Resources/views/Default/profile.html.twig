@@ -114,6 +114,7 @@
     </div>
     {% for post in posts %}
         <div class="row" >
+            <span class="postSeenPage" data-postId="{{ post.id }}"></span>
             <span id="smileApiUpvoteUrl" hidden>{{ path ('smile_api_post_upvote_url') }}</span>
             <span id="smileApiDownvoteUrl" hidden>{{ path ('smile_api_post_downvote_url') }}</span>
             <div class="col-md-7">

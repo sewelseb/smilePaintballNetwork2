@@ -134,3 +134,12 @@ a{
     overflow-y: scroll;*/
 }
 
+.post-img{
+    /*max-height: 500px;*/
+    min-width: 40%;
+    max-width: 80%;
+
+
+
+}
+

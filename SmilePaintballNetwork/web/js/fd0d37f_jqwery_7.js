@@ -165,9 +165,24 @@ $('.btn-see-more-top-10').click(function(){
 });
 
 $('.row-top10').hover(function(){
+    $('.btn-see-more-top-10').hide('slow');
     $('.hidden-top-ten').show('slow');
 });
 
-$(".ignore-click").click(function(){
+$('.nameAddEvent').click(function () {
+    $('.restOfTheFormCreateEvent').show('slow');
+});
+
+/*$(".ignore-click").click(function(){
     return false;
 })
+*/
+
+
+/*$('.postSeen').each(function() {
+    $(this).waypoint(function() {
+        alert('You have scrolled to an entry.');
+        //$(this).addClass('on');
+    });
+});
+*/

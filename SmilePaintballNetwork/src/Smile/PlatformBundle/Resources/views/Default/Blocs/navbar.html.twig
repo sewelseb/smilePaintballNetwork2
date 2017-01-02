@@ -19,7 +19,9 @@
                         <a href="" data-toggle="modal" data-target="#newPostModal"><span class="yellow-text">+ Post</span></a>
                     </li>
                     <li class="visible-md visible-lg">
-                        <a href="{{ path('smile_platform_profile', {'userId': app.user.getId }) }}"><img class="img-navbar"  src="{{app.user.picture.uploadDir}}/{{app.user.picture.url}}"></a>
+                        {%  if app.user.picture  %}
+                            <a href="{{ path('smile_platform_profile', {'userId': app.user.getId }) }}"><img class="img-navbar"  src="{{app.user.picture.uploadDir}}/{{app.user.picture.url}}"></a>
+                        {%  endif  %}
                     </li>
                     <li >
                         <a href="{{ path('smile_platform_profile', {'userId': app.user.getId }) }}"><span class="yellow-text">My profile</span></a>

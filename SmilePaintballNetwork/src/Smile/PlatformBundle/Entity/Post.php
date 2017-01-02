@@ -117,6 +117,13 @@ class Post
      */
     private $firstView=false;
 
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="views", type="bigint", nullable=true)
+     */
+    private $views=0;
+
 
 
 
@@ -411,6 +418,22 @@ class Post
     public function setFirstView($firstView)
     {
         $this->firstView = $firstView;
+    }
+
+    /**
+     * @return int
+     */
+    public function getViews()
+    {
+        return $this->views;
+    }
+
+    /**
+     * @param int $views
+     */
+    public function setViews($views)
+    {
+        $this->views = $views;
     }
 
 

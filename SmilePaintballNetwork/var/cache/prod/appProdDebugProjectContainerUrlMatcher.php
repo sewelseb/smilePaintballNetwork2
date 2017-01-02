@@ -295,6 +295,11 @@ class appProdDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBun
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'smile_platform_leaveTeam')), array (  '_controller' => 'Smile\\PlatformBundle\\Controller\\TeamController::leaveTeamAction',));
             }
 
+            // smile_platform_events
+            if ($pathinfo === '/platform/events') {
+                return array (  '_controller' => 'Smile\\PlatformBundle\\Controller\\EventController::seeAllAction',  '_route' => 'smile_platform_events',);
+            }
+
         }
 
         // homepage

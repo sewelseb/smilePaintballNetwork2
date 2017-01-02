@@ -368,6 +368,8 @@ class PostController extends Controller
 
         $firstView = false;
 
+        $post->setViews($post->getViews()+1);
+
         if (!$post->getFirstView())
         {
             $post->setFirstView(true);
@@ -378,6 +380,14 @@ class PostController extends Controller
 
             $em->flush();
             $firstView = true;
+        }
+        else
+        {
+            $em = $this->getDoctrine()->getManager();
+
+            $em->persist($post);
+
+            $em->flush();
         }
 
         $commentRepo = $this
