@@ -223,3 +223,25 @@ function addVueToPost(id)
     });
 }
 
+function goToEventAsMe(eventId)
+{
+    $('#goingToEvent_'+eventId).show('slow');
+    var url = document.getElementById('goToAnEventAsMeUrl').innerHTML+eventId;
+    console.log(url);
+    $.ajax({
+        url : url,
+        type : 'GET',
+        dataType : 'html',
+        success : function(results, status){
+            $('#goingToEvent_'+eventId).hide('slow');
+        },
+        error : function(results, status, error){
+            console.log(results);
+            console.log(results.responseText);
+        },
+        complete : function(results, status){
+
+        }
+    });
+}
+

@@ -65,10 +65,10 @@
                     Team coming:
                 </div>
                 <div>
-                    Player coming:
+                    Player coming: {{ event.userComing|length }}
                 </div>
                 <div>
-                    <button class="btn btn-primary" onclick="">Come </button><button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">As <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                    <button class="btn btn-primary" onclick="goToEventAsMe({{ event.id }})"><span id="goingToEvent_{{ event.id }}" hidden><i class="fa fa-spin fa-spinner"></i></span> Going </button><button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">As <i class="fa fa-caret-down" aria-hidden="true"></i></button>
 
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuFollowAs">
                         <li class="non-clickable-dropdown">
@@ -86,7 +86,6 @@
                                 </a>
                             </li>
                         {% endfor %}
-
                     </ul>
                 </div>
             </div>

@@ -295,10 +295,11 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
 
 
     $scope.loadMoreBdt = function () {
-        console.log('Load More!');
+        console.log('Load More btn!');
+        $scope.searchOlderPost();
         if($scope.loadMore == true)
         {
-            $scope.searchOlderPost();
+
             $scope.loadMore=false;
         }
     }

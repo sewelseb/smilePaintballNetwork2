@@ -36,3 +36,15 @@ smile_api_post_addView:
 
 smile_api_post_addView_url:
   path: /post/addView/
+
+smile_api_event_addUserComing:
+  path: /event/iAmComing/{eventId}
+  defaults: { _controller: SmileApiBundle:Event:attendAsMeToEvent}
+smile_api_event_addUserComing_url:
+  path: /event/iAmComing/
+smile_api_event_addTeamComing:
+  path: /event/teamComing/{eventId}/{teamId}
+  defaults: { _controller: SmileApiBundle:Event:attendAsTeamToEvent}
+smile_api_event_addTeamComing_url:
+  path: /event/teamComing/
+  defaults: { _controller: SmileApiBundle:Event:attendAsTeamToEvent}
