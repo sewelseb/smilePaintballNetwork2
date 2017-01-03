@@ -102,7 +102,11 @@
                 <img class=" post-img"   src="{{ post.url }}" alt="">
             {% endif %}
             {% if post.type=='picture_local' %}
-                <img class=" post-img"   src="/{{post.picture.getUploadDir()}}/{{post.picture.url}}" alt="">
+                {% if post.picture %}
+                    <img class=" post-img"   src="/{{post.picture.getUploadDir()}}/{{post.picture.url}}" alt="">
+                {% else %}
+                    It seems the picture doesn't exist on the server. Please contact us if you think it is a bug ;)
+                {% endif %}
             {% endif %}
         </div>
     </div>
@@ -187,7 +191,9 @@
             {% for comment in comments %}
                 <div class="row">
                     <a href="{{ path('smile_platform_profile', {'userId': comment.user.getId })  }}">
-                        <img src="{{ comment.user.picture.uploadDir }}/{{ comment.user.picture.url }}"  class="comment-profile-pic">
+                        {% if comment.user.picture %}
+                            <img src="{{ comment.user.picture.uploadDir }}/{{ comment.user.picture.url }}"  class="comment-profile-pic">
+                        {% endif %}
                         <strong>{{ comment.user.username }}</strong><br>
                     </a>
                     {{ comment.text }}

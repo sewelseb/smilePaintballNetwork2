@@ -284,14 +284,8 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
         element: document.getElementById('postSeen'),
         handler: function(direction) {
             console.log('post Seen !');
-
-
         }
     });*/
-
-
-
-
 
 
     $scope.loadMoreBdt = function () {
@@ -299,7 +293,6 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
         $scope.searchOlderPost();
         if($scope.loadMore == true)
         {
-
             $scope.loadMore=false;
         }
     }

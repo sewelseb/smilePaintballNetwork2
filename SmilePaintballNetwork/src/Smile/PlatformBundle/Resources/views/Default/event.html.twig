@@ -4,38 +4,109 @@
 
 {% endblock %}
 {% block postYourFun %}
-    <div class="row">
-        <div class="container">
-            <div class="col-md-9">
-                <div class="form-group">
-                    {% if app.user %}
-                        {{  render(controller('SmilePlatformBundle:Event:addNew', {'request': app.request})) }}
-                    {% else %}
 
-                        <H2><strong>+ CREATE an event</strong></H2>
-                        <div class="form-group postOpenSignIn">
-                            <input class="form-control input-lg postOpenSignIn" id="postTitleOpenSignIn" placeholder="Event Title">
-                        </div>
-                        <div class="form-group postOpenSignIn">
-                            <div class="pull-right">
-                                <button class="btn btn-primary postOpenSignIn"><strong>CREATE</strong></button>
-                            </div>
-                        </div>
-
-                    {% endif %}
-                </div>
-            </div>
-
-        </div>
-    </div>
 {% endblock %}
 
 {% block leftCollumn %}
     <h1>{{ event.name }}</h1>
+    <hr>
+    <div class="row">
+        {{ event.description }}
+    </div>
+    {% if event.teamComing|length>=0 %}
+        <hr>
+        <div class="row">
+            <h3>Teams coming ({{ event.teamComing|length }})</h3>
+            {% for team in event.teamComing %}
+                <a href="{{ path('smile_platform_team', {'id': team.id}) }}">
+                    <div class="userAndTeamForEventPage col-md-1  small-tab-profile">
+                        <div class="text-center" >
+                        <span  class="pull-left">
+                            {% if team.teamPicture %}
+                                <img class="img-responsive " src="{{team.teamPicture.uploadDir}}/{{team.teamPicture.url}}" alt="{{ team.name }}">
+                            {% endif %}
+                        </span>
+                            <span>
+                            {{ team.name }}
+                        </span>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    {% endif %}
+    {% if event.teamComing|length>=0 %}
+        <hr>
+        <div class="row">
+            <h3>Users coming ({{ event.userComing|length }})</h3>
+            {% for user in event.userComing %}
+                <a href="{{ path('smile_platform_profile', {'userId': user.id}) }}">
+                    <div class="userAndTeamForEventPage col-md-1  small-tab-profile">
+                        <div class="text-center" >
+                            <span  class="pull-left">
+                                {% if user.picture != null %}
+                                    <img class="img-responsive " src="{{user.picture.uploadDir}}/{{user.picture.url}}" alt="{{ user.username }}">
+                                {% endif %}
+                            </span>
+                            <span>
+                                {{ user.getEasyName }}
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    {% endif %}
 {% endblock %}
 
 {% block rightCollumn %}
+    <div class="row">
+        <img src="/{{event.picture.getUploadDir()}}/{{event.picture.url}}" class="img-responsive">
+    </div>
+    <div class="row">
+        <strong>{{ event.name }}</strong>
+        <div>
+            Start Date: {{ event.startingDate | date('d M Y') }}
+        </div>
+        <div>
+            End Date: {{ event.endDate | date('d M Y') }}
+        </div>
+        <div>
+            Country: {{ event.getFullCountry }}
+        </div>
+        {% if event.prix %}
+            <div>
+                Price: {{ event.prix }}
+            </div>
+        {% endif %}
+        <div>
+            Team coming: {{ event.teamComing|length }}
+        </div>
+        <div>
+            Player coming: {{ event.userComing|length }}
+        </div>
+    </div>
+    <div class="row">
+        <button class="btn btn-primary" onclick="goToEventAsMe({{ event.id }})"><span id="goingToEvent_{{ event.id }}" hidden><i class="fa fa-spin fa-spinner"></i></span> Going </button><button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">As <i class="fa fa-caret-down" aria-hidden="true"></i></button>
 
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuFollowAs">
+            <li class="non-clickable-dropdown">
+                Select a team:
+            </li>
+            {% for team in app.user.teams %}
+                <li>
+                    <a href="" onclick="goToEventAsTeam({{ event.id }}, {{ team.id }})">
+                        {% if (team.teamPicture) %}
+                            <span class=""><img src="/{{team.teamPicture.uploadDir}}/{{team.teamPicture.url}}" class="img-responsive img-select-store-item-form-drop-down full-width" id="storePic_{{ team.getId() }}"></span>
+                        {% else %}
+                            <span class=""><img src="{{ asset('images/smileyTop.png') }}" class="img-responsive img-select-store-item-form-drop-down full-width" id="storePic_{{ team.getId() }}"></span>
+                        {% endif %}
+                        <span class="select-store-store-name">{{ team.getName() }}</span>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
 
 
 

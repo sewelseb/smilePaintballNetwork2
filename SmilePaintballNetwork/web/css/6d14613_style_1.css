@@ -138,8 +138,18 @@ a{
     /*max-height: 500px;*/
     min-width: 40%;
     max-width: 80%;
-
-
-
+}
+.small-tab-profile{
+    margin: 10px;
+    background: #e8e8e8;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
 }
 
+.small-tab-profile{
+    margin: 10px;
+
+    background: #e8e8e8;
+}

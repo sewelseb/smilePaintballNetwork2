@@ -46,27 +46,29 @@
         {% endif %}
         <div class="row">
             <div class="col-md-4">
-                <img src="/{{event.picture.getUploadDir()}}/{{event.picture.url}}" class="img-responsive">
+                <a href="{{ path('smile_platform_event', {'eventId': event.id}) }}"><img src="/{{event.picture.getUploadDir()}}/{{event.picture.url}}" class="img-responsive"></a>
             </div>
             <div class="col-md-8">
-                <strong>{{ event.name }}</strong>
-                <div>
-                    Date: {{ event.startingDate | date('d M Y') }}
-                </div>
-                <div>
-                    Country: {{ event.getFullCountry }}
-                </div>
-                {% if event.prix %}
+                <a href="{{ path('smile_platform_event', {'eventId': event.id}) }}">
+                    <strong>{{ event.name }}</strong>
                     <div>
-                        Price: {{ event.prix }}
+                        Date: {{ event.startingDate | date('d M Y') }}
                     </div>
-                {% endif %}
-                <div>
-                    Team coming: {{ event.teamComing|length }}
-                </div>
-                <div>
-                    Player coming: {{ event.userComing|length }}
-                </div>
+                    <div>
+                        Country: {{ event.getFullCountry }}
+                    </div>
+                    {% if event.prix %}
+                        <div>
+                            Price: {{ event.prix }}
+                        </div>
+                    {% endif %}
+                    <div>
+                        Team coming: {{ event.teamComing|length }}
+                    </div>
+                    <div>
+                        Player coming: {{ event.userComing|length }}
+                    </div>
+                </a>
                 <div>
                     <button class="btn btn-primary" onclick="goToEventAsMe({{ event.id }})"><span id="goingToEvent_{{ event.id }}" hidden><i class="fa fa-spin fa-spinner"></i></span> Going </button><button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">As <i class="fa fa-caret-down" aria-hidden="true"></i></button>
 

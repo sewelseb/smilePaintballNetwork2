@@ -256,6 +256,39 @@ class User extends BaseUser
         $this->username = $username;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getEventAttending()
+    {
+        return $this->eventAttending;
+    }
+
+    /**
+     * @param mixed $eventAttending
+     */
+    public function setEventAttending($eventAttending)
+    {
+        $this->eventAttending = $eventAttending;
+    }
+
+    public function getEasyName()
+    {
+        if($this->getFirstName() && $this->getLastName())
+        {
+            return $this->getFirstName().' '.$this->getLastName();
+        }
+        elseif ($this->getFirstName())
+        {
+            return $this->getFirstName();
+        }
+        else
+        {
+            return $this->getUsername();
+        }
+    }
+
+
 
 
 

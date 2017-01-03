@@ -25,6 +25,7 @@ security:
       main:
         pattern:      ^/
         oauth:
+          remember_me: true
           resource_owners:
               facebook:           "/login/check-facebook"
           login_path:        /login
@@ -45,7 +46,7 @@ security:
           invalidate_session: true
         remember_me:
           secret:      %secret%
-          lifetime: 604800 # 1 week in seconds
+          lifetime: 31536000 #1 year
           path:     /
           domain: ~ # Defaults to the current domain from $_SERVER
       login:

@@ -36,9 +36,11 @@ class PostsController extends FOSRestController
         foreach ($posts as $post)
         {
             $post->getUser()->setTeams(array());
+            $post->getUser()->setEventAttending(array());
             if ($post->getTeam() != null)
             {
                 $post->getTeam()->setAdmin('');
+                $post->getTeam()->setEventAttending(array());
             }
 
         }
@@ -155,10 +157,12 @@ class PostsController extends FOSRestController
         foreach ($posts as $post)
         {
             $post->getUser()->setTeams(array());
+            $post->getUser()->setEventAttending(array());
 
             if ($post->getTeam() != null)
             {
                 $post->getTeam()->setAdmin('');
+                $post->getTeam()->setEventAttending(array());
             }
 
         }
