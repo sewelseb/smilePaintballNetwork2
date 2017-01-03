@@ -34,3 +34,7 @@ smile_platform_leaveTeam:
 smile_platform_events:
   path: /events
   defaults: { _controller: SmilePlatformBundle:Event:seeAll }
+
+smile_platform_event:
+  path: /event/{eventId}
+  defaults: { _controller: SmilePlatformBundle:Event:show }

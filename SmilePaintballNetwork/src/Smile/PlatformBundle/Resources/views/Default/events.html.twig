@@ -62,7 +62,7 @@
                     </div>
                 {% endif %}
                 <div>
-                    Team coming:
+                    Team coming: {{ event.teamComing|length }}
                 </div>
                 <div>
                     Player coming: {{ event.userComing|length }}
@@ -76,7 +76,7 @@
                         </li>
                         {% for team in app.user.teams %}
                             <li>
-                                <a href="" onclick="">
+                                <a href="" onclick="goToEventAsTeam({{ event.id }}, {{ team.id }})">
                                     {% if (team.teamPicture) %}
                                         <span class=""><img src="/{{team.teamPicture.uploadDir}}/{{team.teamPicture.url}}" class="img-responsive img-select-store-item-form-drop-down full-width" id="storePic_{{ team.getId() }}"></span>
                                     {% else %}

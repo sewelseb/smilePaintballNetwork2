@@ -39,7 +39,8 @@ class Mail
         $this->data["html"] ="
             <H1>Smile Paintball Network</H1>
             <p>
-                Your <a href='https://www.smilepaintball.com/platform/post/".$post->getId()."'>post</a> has been upvoted.
+                Your <a href='https://www.smilepaintball.com/platform/post/".$post->getId()."'>post</a> has been upvoted.<br/>
+                Your post have now ".$post->getUpvotes()-$post->getDownvotes()." points.
             </p>
         ";
     }

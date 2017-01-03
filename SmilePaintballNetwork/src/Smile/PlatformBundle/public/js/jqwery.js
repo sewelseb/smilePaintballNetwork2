@@ -245,3 +245,24 @@ function goToEventAsMe(eventId)
     });
 }
 
+function goToEventAsTeam(eventId, teamId)
+{
+    $('#goingToEvent_'+eventId).show('slow');
+    var url = document.getElementById('goToAnEventAsTeamUrl').innerHTML+eventId+"/"+teamId;
+    console.log(url);
+    $.ajax({
+        url : url,
+        type : 'GET',
+        dataType : 'html',
+        success : function(results, status){
+            $('#goingToEvent_'+eventId).hide('slow');
+        },
+        error : function(results, status, error){
+            console.log(results);
+            console.log(results.responseText);
+        },
+        complete : function(results, status){
+
+        }
+    });
+}

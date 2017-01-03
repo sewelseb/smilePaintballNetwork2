@@ -102,4 +102,17 @@ class EventController extends Controller
         ));
 
     }
+
+    public function showAction($eventId)
+    {
+        $eventRepo = $this
+            ->getDoctrine()
+            ->getManager()
+            ->getRepository('SmilePlatformBundle:Event');
+        $event = $eventRepo->find($eventId);
+
+        return $this->render('SmilePlatformBundle::Default/event.html.twig', array(
+            'event' => $event
+        ));
+    }
 }

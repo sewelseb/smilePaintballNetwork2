@@ -1,0 +1,44 @@
+{% extends "SmilePlatformBundle::Default/layout.html.twig" %}
+
+{% block pageHeader %}
+
+{% endblock %}
+{% block postYourFun %}
+    <div class="row">
+        <div class="container">
+            <div class="col-md-9">
+                <div class="form-group">
+                    {% if app.user %}
+                        {{  render(controller('SmilePlatformBundle:Event:addNew', {'request': app.request})) }}
+                    {% else %}
+
+                        <H2><strong>+ CREATE an event</strong></H2>
+                        <div class="form-group postOpenSignIn">
+                            <input class="form-control input-lg postOpenSignIn" id="postTitleOpenSignIn" placeholder="Event Title">
+                        </div>
+                        <div class="form-group postOpenSignIn">
+                            <div class="pull-right">
+                                <button class="btn btn-primary postOpenSignIn"><strong>CREATE</strong></button>
+                            </div>
+                        </div>
+
+                    {% endif %}
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+
+{% block leftCollumn %}
+    <h1>{{ event.name }}</h1>
+{% endblock %}
+
+{% block rightCollumn %}
+
+
+
+
+
+
+{% endblock %}

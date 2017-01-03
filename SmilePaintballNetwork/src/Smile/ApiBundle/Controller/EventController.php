@@ -51,8 +51,8 @@ class EventController extends FOSRestController
         $teamRepo = $this
             ->getDoctrine()
             ->getManager()
-            ->getRepository('SmilePlatformBundle:Teamt');
-        $team = $eventRepo->find($teamId);
+            ->getRepository('SmilePlatformBundle:Team');
+        $team = $teamRepo->find($teamId);
 
         if(!$event->getTeamComing()->contains($team) && $this->getUser()->getTeams()->contains($team))
         {

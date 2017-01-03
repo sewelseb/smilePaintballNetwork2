@@ -81,10 +81,13 @@ class PostsController extends FOSRestController
 
                 $em->flush();
 
+                if ($post->getUpvotes()==1 || $post->getUpvotes()%10==0)
+                {
+                    $mail = new Mail($post->getUser(),  $this->get('sendinblue_api'));
+                    $mail->postUpvoted($post);
+                    $mail->sendMail();
+                }
 
-                $mail = new Mail($post->getUser(),  $this->get('sendinblue_api'));
-                $mail->postUpvoted($post);
-                $mail->sendMail();
             }
 
 
