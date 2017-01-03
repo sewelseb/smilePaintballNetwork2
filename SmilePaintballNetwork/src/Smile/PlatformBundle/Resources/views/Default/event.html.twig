@@ -38,7 +38,7 @@
     {% if event.teamComing|length>=0 %}
         <hr>
         <div class="row">
-            <h3>Users coming ({{ event.userComing|length }})</h3>
+            <h3>Players coming ({{ event.userComing|length }})</h3>
             {% for user in event.userComing %}
                 <a href="{{ path('smile_platform_profile', {'userId': user.id}) }}">
                     <div class="userAndTeamForEventPage col-md-1  small-tab-profile">
@@ -106,6 +106,18 @@
                 </li>
             {% endfor %}
         </ul>
+        {% if event.userComing.contains(app.user) %}
+            <div>
+                <button class="btn btn-primary">I won't come</button>
+            </div>
+        {% endif %}
+        {% for team in app.user.teams %}
+            {% if event.teamComing.contains(team) %}
+                <div>
+                    <button class="btn btn-primary">My team {{ team.name }} won't come</button>
+                </div>
+            {% endif %}
+        {% endfor %}
     </div>
 
 
