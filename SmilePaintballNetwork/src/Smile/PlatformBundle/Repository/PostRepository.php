@@ -75,4 +75,14 @@ class PostRepository extends \Doctrine\ORM\EntityRepository
             ->getResult()
             ;
     }
+
+    public function getTotalViews()
+    {
+        $qb = $this->createQueryBuilder('a');
+        $qb->select('SUM(a.views)');
+        return $qb
+            ->getQuery()
+            ->getOneOrNullResult()
+            ;
+    }
 }

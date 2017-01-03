@@ -266,3 +266,56 @@ function goToEventAsTeam(eventId, teamId)
         }
     });
 }
+
+function dontComeAsMe(eventId)
+{
+    var url = document.getElementById('dontComeAsMe').innerHTML+eventId;
+    $('.notgoingToEventAsMe_'+eventId).show('slow');
+    console.log(url);
+    $.ajax({
+        url : url,
+        type : 'GET',
+        dataType : 'html',
+        success : function(results, status){
+
+            $('.notgoingToEventAsMe_btn_'+eventId).hide('slow');
+        },
+        error : function(results, status, error){
+            console.log(results);
+            console.log(results.responseText);
+        },
+        complete : function(results, status){
+            $('.notgoingToEventAsMe_'+eventId).hide('slow');
+        }
+    });
+}
+
+function dontComeAsTeam(eventId, teamId)
+{
+    var url = document.getElementById('dontComeAsTeam').innerHTML+eventId+"/"+teamId;
+    $('.notgoingToEventAsTeam_'+eventId+'_'+teamId).show('slow');
+    console.log(url);
+    $.ajax({
+        url : url,
+        type : 'GET',
+        dataType : 'html',
+        success : function(results, status){
+
+            $('.notgoingToEventAsTeam_btn_'+eventId+'_'+teamId).hide('slow');
+        },
+        error : function(results, status, error){
+            console.log(results);
+            console.log(results.responseText);
+        },
+        complete : function(results, status){
+            $('.notgoingToEventAsTeam_'+eventId+'_'+teamId).hide('slow');
+        }
+    });
+}
+
+$('#notGoingAsCaret').click(function () {
+   $('.notGoingAsTeamBtns').show('slow');
+});
+$('#notGoingButNotMeAsCaret').click(function () {
+    $('.notGoingAsTeamBtns').show('slow');
+});

@@ -71,4 +71,55 @@ class EventController extends FOSRestController
         return $this->handleView($view);
 
     }
+
+    public function dontComeAsMeAction($eventId)
+    {
+        $eventRepo = $this
+            ->getDoctrine()
+            ->getManager()
+            ->getRepository('SmilePlatformBundle:Event');
+        $event = $eventRepo->find($eventId);
+        if($event->getUserComing()->contains($this->getUser()))
+        {
+            $event->removeUserComing($this->getUser());
+
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($event);
+            $em->flush();
+        }
+        $view = $this->view('', 200)
+            ->setTemplate("SmileApiBundle:Default:index.html.twig")
+            ->setTemplateVar('posts')
+        ;
+        return $this->handleView($view);
+    }
+
+    public function dontComeAsTeamAction($eventId, $teamId)
+    {
+        $eventRepo = $this
+            ->getDoctrine()
+            ->getManager()
+            ->getRepository('SmilePlatformBundle:Event');
+        $event = $eventRepo->find($eventId);
+        $teamRepo = $this
+            ->getDoctrine()
+            ->getManager()
+            ->getRepository('SmilePlatformBundle:Team');
+        $team = $teamRepo->find($teamId);
+
+        if($event->getTeamComing()->contains($team) && $this->getUser()->getTeams()->contains($team))
+        {
+            $event->removeTeamComing($team);
+
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($event);
+            $em->flush();
+        }
+
+        $view = $this->view('', 200)
+            ->setTemplate("SmileApiBundle:Default:index.html.twig")
+            ->setTemplateVar('posts')
+        ;
+        return $this->handleView($view);
+    }
 }

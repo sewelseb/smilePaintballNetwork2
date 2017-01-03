@@ -404,4 +404,17 @@ class PostController extends Controller
         ));
     }
 
+    public function numberOfViewsAction()
+    {
+        $postRepo = $this
+            ->getDoctrine()
+            ->getManager()
+            ->getRepository('SmilePlatformBundle:Post');
+        $totalViews = $postRepo->getTotalViews()[1];
+        //dump($totalViews);
+        return $this->render('SmilePlatformBundle::Default/Blocs/postViews.html.twig', array(
+            'totalViews' => $totalViews
+        ));
+    }
+
 }

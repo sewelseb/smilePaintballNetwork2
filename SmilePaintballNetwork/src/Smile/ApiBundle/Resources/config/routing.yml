@@ -48,3 +48,15 @@ smile_api_event_addTeamComing:
 smile_api_event_addTeamComing_url:
   path: /event/teamComing/
   defaults: { _controller: SmileApiBundle:Event:attendAsTeamToEvent}
+
+smile_api_event_dontComeAsMe:
+  path: /event/dontComeAsMe/{eventId}
+  defaults: { _controller: SmileApiBundle:Event:dontComeAsMe}
+smile_api_event_dontComeAsMe_url:
+  path: /event/dontComeAsMe/
+
+smile_api_event_dontComeAsTeam:
+  path: /event/dontComeAsTeam/{eventId}/{teamId}
+  defaults: { _controller: SmileApiBundle:Event:dontComeAsTeam}
+smile_api_event_dontComeAsTeam_url:
+  path: /event/dontComeAsTeam/

@@ -108,18 +108,22 @@
         </ul>
         {% if event.userComing.contains(app.user) %}
             <div>
-                <button class="btn btn-primary">I won't come</button>
+                <button class="notgoingToEventAsMe_btn_{{ event.id }} btn " onclick="dontComeAsMe({{ event.id }})"><span class="notgoingToEventAsMe_{{ event.id }}" hidden><i class="fa fa-spin fa-spinner"></i></span> Not going </button><button class="btn" id="notGoingAsCaret">As <i class="fa fa-caret-down" aria-hidden="true"></i></button>
             </div>
+        {% else %}
+            button class="btn" id="notGoingButNotMeAsCaret">not going as <i class="fa fa-caret-down" aria-hidden="true"></i></button>
         {% endif %}
         {% for team in app.user.teams %}
             {% if event.teamComing.contains(team) %}
-                <div>
-                    <button class="btn btn-primary">My team {{ team.name }} won't come</button>
+                <div class="notGoingAsTeamBtns" hidden>
+                    <button class="notgoingToEventAsTeam_btn_{{ event.id }}_{{ team.id }} btn " onclick="dontComeAsTeam({{ event.id }}, {{ team.id }})"><span class="notgoingToEventAsTeam_{{ event.id }}_{{ team.id }}" hidden><i class="fa fa-spin fa-spinner"></i></span> Not going as {{ team.name }} </button>
                 </div>
             {% endif %}
         {% endfor %}
     </div>
 
+    <span id="dontComeAsMe" hidden>{{ path('smile_api_event_dontComeAsMe_url') }}</span>
+    <span id="dontComeAsTeam" hidden>{{ path('smile_api_event_dontComeAsTeam_url') }}</span>
 
 
 

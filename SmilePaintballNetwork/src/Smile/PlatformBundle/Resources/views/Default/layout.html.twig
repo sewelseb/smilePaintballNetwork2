@@ -14,7 +14,7 @@
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://smilepaintball.com/" />
         <meta property="og:image" content="http://smilepaintball.com/images/ogpic.jpeg" />
-        <meta property="og:description" content="Contend posted on SmilePaintball.com." />
+        <meta property="og:description" content="Content posted on SmilePaintball.com." />
     {% endblock %}
     <meta property="fb:app_id" content="1274219895951492">
     <meta property="og:site_name" content="Watch, rate and share fun! on smilepaintball.com :)" />
@@ -161,10 +161,10 @@
             {% block pageHeader %}
                 {% include 'SmilePlatformBundle::Default/Blocs/banner.html.twig'%}
                 <div class="pull-right">
+                    {{  render(controller('SmilePlatformBundle:Post:numberOfViews')) }}
                     <!--Smile's facebook page:
                     <div class="fb-like" data-href="https://www.facebook.com/smilepaintball/?fref=ts" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
                     -->
-                    <a href="https://www.facebook.com/groups/1790079874650463/"><button class="btn btn-register-facebook"><strong>Join our Facebook group</strong></button></a>
                 </div>
 
             {% endblock %}
@@ -215,6 +215,8 @@
                     <div class="text-center">
                         <a href="https://www.youtube.com/user/mrfiesta007">See more on Youtube</a>
                     </div>
+                    <a href="https://www.facebook.com/groups/1790079874650463/"><button class="btn btn-register-facebook"><strong>Join our Facebook group</strong></button></a>
+
 
                     <!--<div class="fb-video" data-href="https://www.facebook.com/smilepaintball/videos/vb.1552858474930301/1812396948976451/?type=2&theater" data-width="700px" data-show-text="false"><blockquote cite="https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/smilepaintball/videos/vl.674752066004423/1768534383362708/?type=1&theater"></a>
                         </blockquote></div>-->

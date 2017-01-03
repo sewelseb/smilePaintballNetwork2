@@ -1,5 +1,25 @@
 {% extends "SmilePlatformBundle::Default/layout.html.twig" %}
+{% block openGraph %}
 
+
+    {% if team.teamPicture %}
+        <meta property="og:image" content="https://smilepaintball.com/{{team.teamPicture.uploadDir}}/{{team.teamPicture.url}}" />
+    {% else %}
+        <meta property="og:image" content="http://smilepaintball.com/images/ogpic.jpeg" />
+    {% endif %}
+
+
+
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://smilepaintball.com/" />
+    <meta property="og:title" content="Smile Paintball Network" />
+
+
+        <meta property="og:description" content="Team: {{ team.name }}" />
+
+
+{% endblock %}
 {% block pageHeader %}
     <H1>{{ team.name }}</H1>
     {%  if team.teamPicture  %}
