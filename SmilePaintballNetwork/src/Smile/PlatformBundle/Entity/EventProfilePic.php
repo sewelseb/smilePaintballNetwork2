@@ -157,6 +157,10 @@ class EventProfilePic
             //dump($this->getUploadDir().'/'.$name);
             fwrite($f, $thumb);                                             // write the thumbnail
             fclose($f);
+
+            $postPic = new PostPic();
+
+            copy($this->getUploadDir().'/'.$name, $postPic->getUploadDir().'/'.$name);
             // On sauvegarde le nom de fichier dans notre attribut $url
             $this->url = $name;
             // On crée également le futur attribut alt de notre balise <img>

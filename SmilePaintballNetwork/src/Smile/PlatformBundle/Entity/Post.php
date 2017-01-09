@@ -124,6 +124,19 @@ class Post
      */
     private $views=0;
 
+    /**
+    * @var boolean
+    *
+    * @ORM\Column(name="is_event", type="boolean", nullable=true)
+    */
+    private $isEvent = false;
+
+    /**
+     * @ORM\OneToOne(targetEntity="Smile\PlatformBundle\Entity\Event")
+     * @ORM\JoinColumn(nullable=true)
+     */
+    private $event;
+
 
 
 
@@ -434,6 +447,38 @@ class Post
     public function setViews($views)
     {
         $this->views = $views;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isIsEvent()
+    {
+        return $this->isEvent;
+    }
+
+    /**
+     * @param bool $isEvent
+     */
+    public function setIsEvent($isEvent)
+    {
+        $this->isEvent = $isEvent;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEvent()
+    {
+        return $this->event;
+    }
+
+    /**
+     * @param mixed $event
+     */
+    public function setEvent($event)
+    {
+        $this->event = $event;
     }
 
 

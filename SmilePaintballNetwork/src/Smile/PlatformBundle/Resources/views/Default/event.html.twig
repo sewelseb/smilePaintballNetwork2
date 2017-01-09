@@ -111,7 +111,7 @@
                 <button class="notgoingToEventAsMe_btn_{{ event.id }} btn " onclick="dontComeAsMe({{ event.id }})"><span class="notgoingToEventAsMe_{{ event.id }}" hidden><i class="fa fa-spin fa-spinner"></i></span> Not going </button><button class="btn" id="notGoingAsCaret">As <i class="fa fa-caret-down" aria-hidden="true"></i></button>
             </div>
         {% else %}
-            button class="btn" id="notGoingButNotMeAsCaret">not going as <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+            <button class="btn" id="notGoingButNotMeAsCaret">not going as <i class="fa fa-caret-down" aria-hidden="true"></i></button>
         {% endif %}
         {% for team in app.user.teams %}
             {% if event.teamComing.contains(team) %}

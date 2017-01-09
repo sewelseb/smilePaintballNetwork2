@@ -3,7 +3,11 @@
     <div class="hidden-top-ten" hidden>
     {% endif %}
     <div class="spacer-5px">
-        <a href="{{ path('smile_platform_post', {postId: post.id}) }}">
+        {% if post.type!='event_picture' %}
+            <a href="{{ path('smile_platform_post', {postId: post.id}) }}">
+        {% else %}
+            <a href="{{ path('smile_platform_event', {eventId: post.event.id}) }}">
+        {% endif %}
             <div class="row">
                 <div class="col-md-6">
                     {% if post.type=='video_youtube' %}
@@ -20,6 +24,9 @@
                     {% endif %}
                     {% if post.type=='picture_local' %}
                         <img class="img-responsive top-10" src="http://smilepaintball.com/{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">
+                    {% endif %}
+                    {% if post.type=='event_picture' %}
+                        <img class="img-responsive top-10" src="http://smilepaintball.com/{{post.event.picture.uploadDir}}/{{post.event.picture.url}}" alt="">
                     {% endif %}
                 </div>
                 <div class="col-md-6">

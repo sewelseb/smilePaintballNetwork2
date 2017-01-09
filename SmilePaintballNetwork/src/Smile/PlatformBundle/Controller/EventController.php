@@ -9,6 +9,8 @@
 namespace Smile\PlatformBundle\Controller;
 use Doctrine\DBAL\Types\IntegerType;
 use Smile\PlatformBundle\Entity\Event;
+use Smile\PlatformBundle\Entity\Post;
+use Smile\PlatformBundle\Entity\PostPic;
 use Smile\PlatformBundle\Form\EventProfilePicType;
 use Smile\UserBundle\Form\ProfilePicType;
 use Smile\UserBundle\Form\teamPictureType;
@@ -82,9 +84,23 @@ class EventController extends Controller
             $event->setStartingDate($event->getStartingDate()->getTimestamp());
             $event->setEndDate($event->getEndDate()->getTimestamp());
 
+            $post = new Post();
+            $postPic = new PostPic();
+            $postPic->setUrl($event->getPicture()->getUrl());
+            $postPic->setAlt($event->getPicture()->getAlt());
+            $post->setPicture($postPic);
+            $post->setTitle('New Event: '.$event->getName());
+            $post->setCreationTime(time());
+            $post->setUser($this->getUser());
+            $post->setEvent($event);
+            $post->setIsEvent(true);
+            $post->setType('event_picture');
+
+
             $em = $this->getDoctrine()->getManager();
 
             $em->persist($event);
+            $em->persist($post);
 
             $em->flush();
 
