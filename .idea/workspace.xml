@@ -1,7 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd7a3751-cd3c-446f-9dee-7e194977a505" name="Default" comment="" />
+    <list default="true" id="dd7a3751-cd3c-446f-9dee-7e194977a505" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/+/N/SgpcvL-CNzk+zW9mf6mF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/-/I/Dqv+YzkBVFL-pS6YJ6x8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/2/4/1yecBk2x8oMS5o+e8HY7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/5/X/6jbn50QkJCN7-xu6fvgZ" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/6/E/BRba7DZULbwxLIN9rdJM" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/6/E/awJ9DlUil1z5EI5Cv0Am" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/8/W/bjAawEAQgcKnCxMZ4Mqq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/A/Z/tUCOdWHQw4cfGqqWUbov" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/C/X/ZZ8eIAWpA3yb0gfn0PY5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/C/Z/hVDC6dQ6ZJtNbgxo8DBX" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/D/Q/XkZuf8qhIpUxas6iACza" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/D/W/JUioQA8ZctzNoIgUH2NP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/F/+/NiCR31az0b-JXDjA9Tjr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/F/7/uZD9jJTZk15Dl4m3V4FW" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/F/N/qN68GhoI9alufndmLLu9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/H/H/LTWzddR4p9oT6bIsYja9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/H/U/pM1ZiytLduEXyJxHMtRJ" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/I/U/F9DkcsA+i4gEkWaNh-ar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/I/U/Ic+9sa7BvuAvxqUK-b76" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/I/Y/7hduEU7euyv5qaawCMcS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/J/G/Queqz+KiaUS0jToGku9l" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/J/M/-nHlRVFNUCtrOOJKtKnA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/L/F/oCpnSjJEdj46kaPeRwDo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/M/O/7bovEHqhVnMJ5NETdn-G" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/M/X/pfgglRanW0j5j7D+1Lh6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/N/G/EUc-LL-rq2+klEbMQxId" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/O/0/arDXutCcmZZRt6DexhCa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/P/B/gqh5Qf1pHB-3PNr7fWAV" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/P/J/Y6tkSRLtn5vhtB37E+Ua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/Q/G/6qjEFEss7xodS0LdpNjI" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/R/F/l5wttz7tBMNlU7o1SpmV" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/R/K/iY6vjVyVVnLKyXS0ZrcJ" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/T/V/dd5eVNjEPOL3hoS40NOD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/T/X/kV+rV4Awnwmx01P+j4lY" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/T/Y/oI6hiOhCvzsEZC932sLQ" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/W/D/QIk0sPE7oPQoaKyHCpcV" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/W/G/vkvVdWmPsq8yOm2QLqx7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/X/H/904JXyV42pQXUp7xUGDK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/Y/S/uN6vwSSdBplKihzLEfSR" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmilePaintballNetwork/var/cache/dev/pools/OwWqaq7QmN/Z/+/HoH-0FnBVY8ZJ+Le+W3q" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="smilePaintballNetwork2.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -389,6 +431,10 @@
               <option name="myItemId" value="cache" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dev" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -541,12 +587,12 @@
       <workItem from="1473313511523" duration="6584000" />
       <workItem from="1483952944682" duration="494000" />
       <workItem from="1483955117551" duration="6202000" />
-      <workItem from="1483964016609" duration="338000" />
+      <workItem from="1483964016609" duration="369000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97422000" />
+    <option name="totallyTimeSpent" value="97453000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
