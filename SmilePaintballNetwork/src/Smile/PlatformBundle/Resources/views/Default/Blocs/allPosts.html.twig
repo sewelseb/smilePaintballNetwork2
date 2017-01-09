@@ -64,6 +64,11 @@
                                     <img class="post-img" ng-src="{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">
                                 </a>
                             </div>
+                            <div ng-if="post.type=='team_picture'">
+                                <a ng-href="/platform/post/{{ post.id }}">
+                                    <img class="post-img" ng-src="{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

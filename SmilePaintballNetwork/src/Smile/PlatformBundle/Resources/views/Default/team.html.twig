@@ -87,6 +87,11 @@
                         <img class="img-responsive" src="/{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">
                     </a>
                 {% endif %}
+                {% if post.type=='team_picture' %}
+                    <a href="{{ path('smile_platform_post', {'postId': post.getId })  }}">
+                        <img class="img-responsive" src="{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">
+                    </a>
+                {% endif %}
             </div>
             <div class="col-md-5 ">
                 <a href="{{ path('smile_platform_post', {'postId': post.getId })  }}">

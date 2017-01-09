@@ -2,4 +2,4 @@ _assetic:
     resource: .
     type: assetic
 _app:
-    resource: 'D:\wamp64\www\smilePaintballNetwork2\SmilePaintballNetwork\app/config/routing_dev.yml'
+    resource: 'C:\wamp64\www\bamsell\smilePaintballNetwork2\SmilePaintballNetwork\app/config/routing_dev.yml'

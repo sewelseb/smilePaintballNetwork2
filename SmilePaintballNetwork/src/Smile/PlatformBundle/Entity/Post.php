@@ -124,6 +124,20 @@ class Post
      */
     private $views=0;
 
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="is_new_team_pic", type="boolean", nullable=true)
+     */
+    private $isNewTeamPic  =false;
+
+
+    /**
+     * @ORM\OneToOne(targetEntity="Smile\UserBundle\Entity\teamPicture",cascade={"persist", "remove"})
+     * @ORM\JoinColumn(nullable=true)
+     */
+    private $teamPic;
+
 
 
 
@@ -239,7 +253,14 @@ class Post
      */
     public function getPicture()
     {
-        return $this->picture;
+        if ($this->isNewTeamPic)
+        {
+            return $this->teamPic;
+        }
+        else
+        {
+            return $this->picture;
+        }
     }
 
     /**
@@ -434,6 +455,38 @@ class Post
     public function setViews($views)
     {
         $this->views = $views;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isIsNewTeamPic()
+    {
+        return $this->isNewTeamPic;
+    }
+
+    /**
+     * @param bool $isNewTeamPic
+     */
+    public function setIsNewTeamPic($isNewTeamPic)
+    {
+        $this->isNewTeamPic = $isNewTeamPic;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTeamPic()
+    {
+        return $this->teamPic;
+    }
+
+    /**
+     * @param mixed $teamPic
+     */
+    public function setTeamPic($teamPic)
+    {
+        $this->teamPic = $teamPic;
     }
 
 

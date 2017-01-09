@@ -43,9 +43,16 @@ class TeamController extends Controller
 
             $team->setAdmin($this->getUser());
 
-
+            $post= new Post();
+            $post->setTitle("New Team : ".$team->getName());
+            $post->setTeamPic($team->getTeamPicture());
+            $post->setTeam($team);
+            $post->setIsNewTeamPic(true);
+            $post->setUser($this->getUser());
+            $post->setType("team_picture");
             $em = $this->getDoctrine()->getManager();
 
+            $em->persist($post);
             $em->persist($team);
             $this->getUser()->addTeam($team);
 
@@ -125,9 +132,17 @@ class TeamController extends Controller
 
                 $team->setAdmin($this->getUser());
 
+                $post= new Post();
+                $post->setTitle("New Team Photo: ".$team->getName());
+                $post->setTeamPic($team->getTeamPicture());
+                $post->setTeam($team);
+                $post->setIsNewTeamPic(true);
+                $post->setUser($this->getUser());
+                $post->setType("team_picture");
 
                 $em = $this->getDoctrine()->getManager();
 
+               // $em->persist($post);
                 $em->persist($team);
 
                 $em->flush();
