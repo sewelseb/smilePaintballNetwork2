@@ -29,7 +29,7 @@ class Downvote
 
     /**
      * @ORM\ManyToOne(targetEntity="Smile\PlatformBundle\Entity\Post")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=false, onDelete="CASCADE")
      */
     private $post;
 

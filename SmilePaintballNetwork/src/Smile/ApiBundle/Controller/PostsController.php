@@ -93,7 +93,6 @@ class PostsController extends FOSRestController
             }
 
 
-
         }
         $view = $this->view('', 200)
             ->setTemplate("SmileApiBundle:Default:index.html.twig")

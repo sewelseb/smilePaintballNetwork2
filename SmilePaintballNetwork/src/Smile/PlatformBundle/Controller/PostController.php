@@ -11,6 +11,7 @@ namespace Smile\PlatformBundle\Controller;
 use Facebook\Facebook;
 use Facebook\FacebookApp;
 use Facebook\FacebookRequest;
+use Smile\PlatformBundle\Entity\Backup;
 use Smile\PlatformBundle\Entity\Post;
 use Smile\PlatformBundle\Entity\PostPic;
 use Smile\PlatformBundle\Form\PostPicType;
@@ -415,6 +416,37 @@ class PostController extends Controller
         return $this->render('SmilePlatformBundle::Default/Blocs/postViews.html.twig', array(
             'totalViews' => $totalViews
         ));
+    }
+
+    public function deletePostAction($postId)
+    {
+        $postRepo = $this
+            ->getDoctrine()
+            ->getManager()
+            ->getRepository('SmilePlatformBundle:Post');
+        $post = $postRepo->find($postId);
+        if ($post->getUser() == $this->getUser())
+        {
+            $backup = new Backup();
+            $backup->setEntityType('Post');
+            $backup->setEnityJson(json_encode($post));
+            $backup->setTime(time());
+
+            $em = $this->getDoctrine()->getManager();
+
+            $em->persist($backup);
+            $em->remove($post);
+
+            $em->flush();
+
+            return $this->redirectToRoute('Smile_platform_homepage');
+        }
+        else
+        {
+            return $this->redirectToRoute('smile_platform_post', array('postId' => $postId));
+        }
+
+
     }
 
 }

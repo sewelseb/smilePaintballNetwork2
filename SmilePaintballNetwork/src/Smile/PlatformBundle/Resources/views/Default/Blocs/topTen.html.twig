@@ -24,12 +24,8 @@
                 </div>
                 <div class="col-md-6">
                     <H4><strong>{{ post.title|length > 15 ? post.title|slice(0, 12) ~ '...' : post.title  }}</strong></H4>
-                    {{ post.upvotes-post.downvotes }} points<br/>
-                    {% if post.comments<1 %}
-                        0 comments
-                    {% else %}
-                        {{ post.comments }} comments
-                    {% endif %}
+                    {{ post.views }} views<br/>
+                    {{ post.upvotes-post.downvotes }} points
                 </div>
             </div>
         </a>

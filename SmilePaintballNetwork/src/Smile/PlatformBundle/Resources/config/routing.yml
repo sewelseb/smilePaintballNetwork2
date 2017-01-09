@@ -38,3 +38,7 @@ smile_platform_events:
 smile_platform_event:
   path: /event/{eventId}
   defaults: { _controller: SmilePlatformBundle:Event:show }
+
+smile_platform_delete_post:
+  path: /delete/post/{postId}
+  defaults: { _controller: SmilePlatformBundle:Post:deletePost}

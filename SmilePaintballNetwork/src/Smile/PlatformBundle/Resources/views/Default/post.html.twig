@@ -83,6 +83,7 @@
         </div>
     </div>
     <div class="row" >
+
         <h1>{{ post.title }}</h1>
 
       <span id="smileApiUpvoteUrl" hidden>{{ path ('smile_api_post_upvote_url') }}</span>
@@ -169,6 +170,19 @@
                 <div>
                     <span id="post_point_{{ post.id }}">{{ post.upvotes-post.downvotes }}</span> points, <span id="post_comment_{{ post.id }}">{{ post.comments }}</span> comments
                 </div>
+                {%  if app.user == post.user  %}
+                    <div class="">
+                        <div class="dropdown">
+                            <button class="btn  dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Delete
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="{{ path('smile_platform_delete_post', {'postId': post.id}) }}">Confirm Delete post</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                {% endif %}
             </div>
         </div>
     </div>

@@ -40,7 +40,7 @@ class Mail
             <H1>Smile Paintball Network</H1>
             <p>
                 Your <a href='https://www.smilepaintball.com/platform/post/".$post->getId()."'>post</a> has been liked.<br/>
-                Your post now has ".$post->getUpvotes()-$post->getDownvotes()." points.
+                Your post now has ".($post->getUpvotes()-$post->getDownvotes())." points.
             </p>
         ";
     }
