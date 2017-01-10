@@ -41,6 +41,13 @@ class TeamController extends Controller
             {
                 $team->getTeamPicture()->upload($this->getUser());
             }
+            else
+            {
+                $defaultTeamPic = new teamPicture();
+                $defaultTeamPic->setAlt("defaultpic.jpg");
+                $defaultTeamPic->setUrl("defaultpic.jpg");
+                $team->setTeamPicture($defaultTeamPic);
+            }
 
             $team->setAdmin($this->getUser());
 
