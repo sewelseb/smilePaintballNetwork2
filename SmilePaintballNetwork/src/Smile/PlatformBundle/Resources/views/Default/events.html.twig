@@ -9,6 +9,7 @@
             <div class="col-md-9">
                 <div class="form-group">
                     {% if app.user %}
+                        <H2><strong>+ CREATE an event</strong></H2>
                         {{  render(controller('SmilePlatformBundle:Event:addNew', {'request': app.request})) }}
                     {% else %}
 

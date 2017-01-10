@@ -1331,7 +1331,7 @@ function goToEventAsTeam(eventId, teamId)
 
 function dontComeAsMe(eventId)
 {
-    var url = document.getElementById('dontComeAsMe').innerHTML+eventId+"/"+teamId;
+    var url = document.getElementById('dontComeAsMe').innerHTML+eventId;
     $('.notgoingToEventAsMe_'+eventId).show('slow');
     console.log(url);
     $.ajax({
@@ -1374,3 +1374,70 @@ function dontComeAsTeam(eventId, teamId)
         }
     });
 }
+
+$('#notGoingAsCaret').click(function () {
+   $('.notGoingAsTeamBtns').show('slow');
+});
+$('#notGoingButNotMeAsCaret').click(function () {
+    $('.notGoingAsTeamBtns').show('slow');
+});
+
+$('#show-create-post-form').click(function(){
+    $('#show-create-post-form').addClass('active');
+    $('#show-create-event-form').removeClass('active');
+    $('#show-create-team-form').removeClass('active');
+
+    $('.newPostForm').show('slow');
+    $('.newEventForm').hide('slow');
+    $('.newTeamForm').hide('slow');
+});
+$('#show-create-event-form').click(function(){
+    $('#show-create-post-form').removeClass('active');
+    $('#show-create-event-form').addClass('active');
+    $('#show-create-team-form').removeClass('active');
+
+    $('.newEventForm').show('slow');
+    $('.newPostForm').hide('slow');
+    $('.newTeamForm').hide('slow');
+});
+$('#show-create-team-form').click(function(){
+    $('#show-create-post-form').removeClass('active');
+    $('#show-create-event-form').removeClass('active');
+    $('#show-create-team-form').addClass('active');
+
+    $('.newTeamForm').show('slow');
+    $('.newPostForm').hide('slow');
+    $('.newEventForm').hide('slow');
+});
+
+$('.thermsAndAgreementNotif').click(function(){
+    var url = document.getElementById('setCookieThermsAndAgreementsUrl').innerHTML;
+    $('.thermsAndAgreementNotif').hide('slow');
+    $.ajax({
+        url : url,
+        type : 'GET',
+        dataType : 'html',
+        success : function(results, status){
+
+
+        },
+        error : function(results, status, error){
+            console.log(results);
+            console.log(results.responseText);
+        },
+        complete : function(results, status){
+
+        }
+    });
+});
+
+$('.showThermsAndAgreements').click(function(){
+    var win = window.open(document.getElementById('showThermsAndAgreements').innerHTML, '_blank');
+    if (win) {
+        //Browser has allowed it to be opened
+        win.focus();
+    } else {
+        //Browser has blocked it
+        alert('Please allow popups for this website');
+    }
+});

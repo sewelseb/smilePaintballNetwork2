@@ -42,3 +42,7 @@ smile_platform_event:
 smile_platform_delete_post:
   path: /delete/post/{postId}
   defaults: { _controller: SmilePlatformBundle:Post:deletePost}
+
+smile_platform_showThermsAndAgreements:
+  path: /thermsAndAgreements
+  defaults: { _controller: SmilePlatformBundle:Default:showThermsAndAgreements}

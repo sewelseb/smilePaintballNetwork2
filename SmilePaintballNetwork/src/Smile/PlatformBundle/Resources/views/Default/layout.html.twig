@@ -151,6 +151,7 @@
 </script>
 
 {% include 'SmilePlatformBundle::Default/Blocs/navbar.html.twig' %}
+{{  render(controller('SmilePlatformBundle:Default:termsAndAgreements', {'request': app.request})) }}
 
 <!-- Page Content -->
 <div class="container" >
@@ -162,6 +163,8 @@
                 {% include 'SmilePlatformBundle::Default/Blocs/banner.html.twig'%}
                 <div class="pull-right">
                     {{  render(controller('SmilePlatformBundle:Post:numberOfViews')) }}
+
+
                     <!--Smile's facebook page:
                     <div class="fb-like" data-href="https://www.facebook.com/smilepaintball/?fref=ts" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
                     -->
@@ -180,7 +183,22 @@
                         <div class="col-md-9">
                             <div class="form-group">
                                 {% if app.user %}
-                                    {{  render(controller('SmilePlatformBundle:Post:addNewInPage')) }}
+                                    <ul class="nav nav-tabs nav-justified nav-tabs-spacer">
+                                        <li role="presentation" id="show-create-post-form" class="active"><a href="#"><H2><strong>+ POST<span class="postSmallText"> your Fun</span></strong></H2></a></li>
+                                        <li role="presentation" id="show-create-event-form" class=""><a href="#"><H2><strong>+ <span class="eventSmallText" >create an </span>EVENT</strong></H2></a></li>
+                                        <li role="presentation" id="show-create-team-form" class=""><a href="#"><H2><strong>+ <span class="teamSmallText" >create your </span>TEAM</strong></H2></a></li>
+
+                                    </ul>
+                                    <div class="newPostForm">
+                                        {{  render(controller('SmilePlatformBundle:Post:addNewInPage', {'request': app.request})) }}
+                                    </div>
+                                    <div class="newEventForm" hidden>
+                                        {{  render(controller('SmilePlatformBundle:Event:addNew', {'request': app.request})) }}
+                                    </div>
+                                    <div class="newTeamForm" hidden>
+                                        {{  render(controller('SmilePlatformBundle:Team:createTeam', {'request': app.request})) }}
+                                    </div>
+
                                 {% else %}
 
                                     <H2><strong>+ POST your Fun</strong></H2>
@@ -339,6 +357,7 @@
 <span id="addViewUrl" hidden>{{ path('smile_api_post_addView_url') }}</span>
 <span id="goToAnEventAsMeUrl" hidden>{{ path('smile_api_event_addUserComing_url') }}</span>
 <span id="goToAnEventAsTeamUrl" hidden>{{ path('smile_api_event_addTeamComing_url') }}</span>
+
 
 {% javascripts
 '@SmilePlatformBundle/public/js/waypoint.js' filter='cssrewrite'

@@ -60,3 +60,7 @@ smile_api_event_dontComeAsTeam:
   defaults: { _controller: SmileApiBundle:Event:dontComeAsTeam}
 smile_api_event_dontComeAsTeam_url:
   path: /event/dontComeAsTeam/
+
+smile_api_setThermsAndAgreementsCookie:
+  path: /thermsAndAgreementsCookies
+  defaults: { _controller: SmileApiBundle:Default:setThermsAndAgreementsCookie}
