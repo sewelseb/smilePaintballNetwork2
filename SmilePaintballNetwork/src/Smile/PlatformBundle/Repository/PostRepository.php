@@ -97,7 +97,6 @@ class PostRepository extends \Doctrine\ORM\EntityRepository
         ;
 
         $query=$qb->getQuery();
-        dump($query);
         return $qb
             ->getQuery()
             ->getOneOrNullResult()

@@ -123,6 +123,9 @@ class TeamController extends Controller
             ->getRepository('SmilePlatformBundle:Team');
         $team = $teamRepo->find($id);
 
+        $oldTeamName = $team->getName();
+        $oldTeamPicUrl = $team->getTeamPicture()->getUrl();
+
         $formBuilder = $this->get('form.factory')->createBuilder(FormType::class, $team);
 
         $formBuilder
@@ -132,7 +135,6 @@ class TeamController extends Controller
 
 
         $form = $formBuilder->getForm();
-        //dump('test1');
 
         $newTeamPic = new teamPicture();
 
@@ -140,12 +142,8 @@ class TeamController extends Controller
             ->getDoctrine()
             ->getManager()
             ->getRepository('SmilePlatformBundle:Post');
-        dump('test3');
 
         $lastPicTeamPost = $postRepo->findLastPicTeamPost($team);
-        dump('test4');
-        dump($team);
-        dump($lastPicTeamPost);
 
         $newTeamPic->setAlt($lastPicTeamPost->getTeamPic()->getAlt());
         $newTeamPic->setUrl($lastPicTeamPost->getTeamPic()->getUrl());
@@ -156,7 +154,7 @@ class TeamController extends Controller
             //dump('test2');
             if($team->getAdmin() == $this->getUser())
             {
-
+                $postTitle = "";
                 if($team->getTeamPicture() != null)
                 {
 
@@ -164,12 +162,30 @@ class TeamController extends Controller
 
                 }
 
+                if ($team->getTeamPicture()->getUrl() != $oldTeamPicUrl)
+                {
+                    $postTitle = "New Team Logo: ";
+                    if($team->getName() != $oldTeamName)
+                    {
+                        $postTitle = "New Team Logo & Name: ";
+                    }
+                }
+                else
+                {
+                    if($team->getName() != $oldTeamName)
+                    {
+                        $postTitle = "New Team Name: ";
+                    }
+                }
+
+
                 $team->setAdmin($this->getUser());
 
                 $post= new Post();
-                $post->setTitle("New Team Photo: ".$team->getName());
+                $post->setTitle($postTitle.$team->getName());
                 $post->setTeamPic($team->getTeamPicture());
                 $post->setTeam($team);
+                $post->setCreationTime(time());
                 $post->setIsNewTeamPic(true);
                 $post->setUser($this->getUser());
                 $post->setType("team_picture");
@@ -194,7 +210,6 @@ class TeamController extends Controller
                 //return $this->redirect($this->generateUrl('smile_platform_team', array('id' => $team->getId())));
                 //return $this->redirectToRoute('smile_platform_team', array('id' => $team->getId()));
             }
-            dump('test4');
         }
 
         return $this->render('SmilePlatformBundle::Default/form/createTeam.html.twig', array(
