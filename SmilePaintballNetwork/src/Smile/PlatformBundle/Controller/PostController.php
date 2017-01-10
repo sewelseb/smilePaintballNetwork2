@@ -106,9 +106,6 @@ class PostController extends Controller
 
 
 
-
-
-
                 }
 
                 if (count($urlVideoFb) > 1) {

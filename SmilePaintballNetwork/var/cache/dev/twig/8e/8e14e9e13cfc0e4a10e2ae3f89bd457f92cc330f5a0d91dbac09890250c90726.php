@@ -15,8 +15,8 @@ class __TwigTemplate_41c1dda70b6b1ad77112aa5b301c8c497bc575e1636439bcb2dbc182061
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_88bbbe67ce45d995f1cfba67467715f0f961b54b2d25edacafe585cacbd82a70 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_88bbbe67ce45d995f1cfba67467715f0f961b54b2d25edacafe585cacbd82a70->enter($__internal_88bbbe67ce45d995f1cfba67467715f0f961b54b2d25edacafe585cacbd82a70_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
+        $__internal_9c8f9a07cb5351cb61a7884349b59cabd9102c8b37974764ef59371e089a27cb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_9c8f9a07cb5351cb61a7884349b59cabd9102c8b37974764ef59371e089a27cb->enter($__internal_9c8f9a07cb5351cb61a7884349b59cabd9102c8b37974764ef59371e089a27cb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle:Default:Blocs/allPosts.html.twig"));
 
         // line 1
         echo "<!-- Project One -->
@@ -43,7 +43,7 @@ class __TwigTemplate_41c1dda70b6b1ad77112aa5b301c8c497bc575e1636439bcb2dbc182061
     <div id=\"contentAllPosts\" hidden>
         <div ng-repeat=\"post in posts | orderBy: '-creationTime'\">
             ";
-        // line 100
+        // line 105
         echo "
                 <div class=\"row\">
                     <span class=\"postSeen\" data-postId=\"{{ post.id }}\"></span>
@@ -104,6 +104,11 @@ class __TwigTemplate_41c1dda70b6b1ad77112aa5b301c8c497bc575e1636439bcb2dbc182061
                                     <img class=\"post-img\" ng-src=\"/{{post.event.picture.uploadDir}}/{{post.event.picture.url}}\" alt=\"\">
                                 </a>
                             </div>
+                            <div ng-if=\"post.type=='team_picture'\">
+                                <a ng-href=\"/platform/post/{{ post.id }}\">
+                                    <img class=\"post-img\" ng-src=\"{{post.picture.uploadDir}}/{{post.picture.url}}\" alt=\"\">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -135,11 +140,11 @@ class __TwigTemplate_41c1dda70b6b1ad77112aa5b301c8c497bc575e1636439bcb2dbc182061
                             ";
         echo "
                             ";
-        // line 101
+        // line 106
         if ($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "user", array())) {
-            // line 102
+            // line 107
             echo "                            ";
-            // line 121
+            // line 126
             echo "
                             <div class=\"row\" id=\"updownVote_{{post.id}}\">
                                 <div class=\"col-md-6 col-xs-6\">
@@ -163,9 +168,9 @@ class __TwigTemplate_41c1dda70b6b1ad77112aa5b301c8c497bc575e1636439bcb2dbc182061
             echo "
                             ";
         } else {
-            // line 123
+            // line 128
             echo "                            ";
-            // line 134
+            // line 139
             echo "
                                 <div class=\"col-md-6 col-sm-6 col-xs-6\">
                                     <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\">
@@ -181,9 +186,9 @@ class __TwigTemplate_41c1dda70b6b1ad77112aa5b301c8c497bc575e1636439bcb2dbc182061
             echo "
                             ";
         }
-        // line 136
+        // line 141
         echo "                            ";
-        // line 216
+        // line 221
         echo "
                            <div id=\"upvoted_{{post.id}}\" hidden>
                                   upvoted ;)
@@ -280,7 +285,7 @@ class __TwigTemplate_41c1dda70b6b1ad77112aa5b301c8c497bc575e1636439bcb2dbc182061
 
 ";
         
-        $__internal_88bbbe67ce45d995f1cfba67467715f0f961b54b2d25edacafe585cacbd82a70->leave($__internal_88bbbe67ce45d995f1cfba67467715f0f961b54b2d25edacafe585cacbd82a70_prof);
+        $__internal_9c8f9a07cb5351cb61a7884349b59cabd9102c8b37974764ef59371e089a27cb->leave($__internal_9c8f9a07cb5351cb61a7884349b59cabd9102c8b37974764ef59371e089a27cb_prof);
 
     }
 
@@ -296,7 +301,7 @@ class __TwigTemplate_41c1dda70b6b1ad77112aa5b301c8c497bc575e1636439bcb2dbc182061
 
     public function getDebugInfo()
     {
-        return array (  187 => 216,  185 => 136,  169 => 134,  167 => 123,  143 => 121,  141 => 102,  139 => 101,  47 => 100,  38 => 6,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
+        return array (  192 => 221,  190 => 141,  174 => 139,  172 => 128,  148 => 126,  146 => 107,  144 => 106,  47 => 105,  38 => 6,  34 => 5,  30 => 4,  26 => 3,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -378,6 +383,11 @@ class __TwigTemplate_41c1dda70b6b1ad77112aa5b301c8c497bc575e1636439bcb2dbc182061
                             <div ng-if=\"post.type=='event_picture'\">
                                 <a ng-href=\"/platform/event/{{ post.event.id }}\">
                                     <img class=\"post-img\" ng-src=\"/{{post.event.picture.uploadDir}}/{{post.event.picture.url}}\" alt=\"\">
+                                </a>
+                            </div>
+                            <div ng-if=\"post.type=='team_picture'\">
+                                <a ng-href=\"/platform/post/{{ post.id }}\">
+                                    <img class=\"post-img\" ng-src=\"{{post.picture.uploadDir}}/{{post.picture.url}}\" alt=\"\">
                                 </a>
                             </div>
                         </div>

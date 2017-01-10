@@ -190,13 +190,13 @@
 
                                     </ul>
                                     <div class="newPostForm">
-                                        {{  render(controller('SmilePlatformBundle:Post:addNewInPage', {'request': app.request})) }}
+                                        {{  render(controller('SmilePlatformBundle:Post:addNewInPage')) }}
                                     </div>
                                     <div class="newEventForm" hidden>
-                                        {{  render(controller('SmilePlatformBundle:Event:addNew', {'request': app.request})) }}
+                                        {{  render(controller('SmilePlatformBundle:Event:addNew', {request: app.request})) }}
                                     </div>
                                     <div class="newTeamForm" hidden>
-                                        {{  render(controller('SmilePlatformBundle:Team:createTeam', {'request': app.request})) }}
+                                        {{  render(controller('SmilePlatformBundle:Team:createTeam', {request: app.request})) }}
                                     </div>
 
                                 {% else %}

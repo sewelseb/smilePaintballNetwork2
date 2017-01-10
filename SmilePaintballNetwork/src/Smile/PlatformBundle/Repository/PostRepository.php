@@ -85,4 +85,21 @@ class PostRepository extends \Doctrine\ORM\EntityRepository
             ->getOneOrNullResult()
             ;
     }
+
+    public function findLastPicTeamPost(Team $team)
+    {
+        $qb = $this->createQueryBuilder('a');
+        $qb->where('a.team = :team')
+            ->andWhere('a.isNewTeamPic = true')
+            ->setParameter('team', $team)
+            ->orderBy('a.id', 'DESC')
+            ->setMaxResults(1)
+        ;
+
+
+        return $qb
+            ->getQuery()
+            ->getOneOrNullResult()
+            ;
+    }
 }

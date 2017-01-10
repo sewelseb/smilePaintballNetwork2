@@ -71,25 +71,27 @@
                     </div>
                 </a>
                 <div>
-                    <button class="btn btn-primary" onclick="goToEventAsMe({{ event.id }})"><span id="goingToEvent_{{ event.id }}" hidden><i class="fa fa-spin fa-spinner"></i></span> Going </button><button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">As <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                    {% if app.user %}
+                        <button class="btn btn-primary" onclick="goToEventAsMe({{ event.id }})"><span id="goingToEvent_{{ event.id }}" hidden><i class="fa fa-spin fa-spinner"></i></span> Going </button><button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">As <i class="fa fa-caret-down" aria-hidden="true"></i></button>
 
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuFollowAs">
-                        <li class="non-clickable-dropdown">
-                            Select a team:
-                        </li>
-                        {% for team in app.user.teams %}
-                            <li>
-                                <a href="" onclick="goToEventAsTeam({{ event.id }}, {{ team.id }})">
-                                    {% if (team.teamPicture) %}
-                                        <span class=""><img src="/{{team.teamPicture.uploadDir}}/{{team.teamPicture.url}}" class="img-responsive img-select-store-item-form-drop-down full-width" id="storePic_{{ team.getId() }}"></span>
-                                    {% else %}
-                                        <span class=""><img src="{{ asset('images/smileyTop.png') }}" class="img-responsive img-select-store-item-form-drop-down full-width" id="storePic_{{ team.getId() }}"></span>
-                                    {% endif %}
-                                    <span class="select-store-store-name">{{ team.getName() }}</span>
-                                </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuFollowAs">
+                            <li class="non-clickable-dropdown">
+                                Select a team:
                             </li>
-                        {% endfor %}
-                    </ul>
+                            {% for team in app.user.teams %}
+                                <li>
+                                    <a href="" onclick="goToEventAsTeam({{ event.id }}, {{ team.id }})">
+                                        {% if (team.teamPicture) %}
+                                            <span class=""><img src="/{{team.teamPicture.uploadDir}}/{{team.teamPicture.url}}" class="img-responsive img-select-store-item-form-drop-down full-width" id="storePic_{{ team.getId() }}"></span>
+                                        {% else %}
+                                            <span class=""><img src="{{ asset('images/smileyTop.png') }}" class="img-responsive img-select-store-item-form-drop-down full-width" id="storePic_{{ team.getId() }}"></span>
+                                        {% endif %}
+                                        <span class="select-store-store-name">{{ team.getName() }}</span>
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
                 </div>
             </div>
         </div>

@@ -15,8 +15,8 @@ class __TwigTemplate_700cc25985dc1c6e516c560aff0bb7d4f5d3b5f5f606f7df823018586b2
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_a74c6a9b0d80d4c5711ba5a7450f3fd8d33b62c1d9a58aa5165dc9506cefcb0e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a74c6a9b0d80d4c5711ba5a7450f3fd8d33b62c1d9a58aa5165dc9506cefcb0e->enter($__internal_a74c6a9b0d80d4c5711ba5a7450f3fd8d33b62c1d9a58aa5165dc9506cefcb0e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
+        $__internal_4d43acadcd8c5a061f1bb91afd9d5edf71caf04c64524eea0eb88bbeafb28cb9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_4d43acadcd8c5a061f1bb91afd9d5edf71caf04c64524eea0eb88bbeafb28cb9->enter($__internal_4d43acadcd8c5a061f1bb91afd9d5edf71caf04c64524eea0eb88bbeafb28cb9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/navbar.html.twig"));
 
         // line 1
         echo "<!-- Navigation -->
@@ -43,13 +43,19 @@ class __TwigTemplate_700cc25985dc1c6e516c560aff0bb7d4f5d3b5f5f606f7df823018586b2
             <div class=\"collapse navbar-collapse pull-right\" id=\"bs-example-navbar-collapse-1\">
                 <ul class=\"nav navbar-nav\">
                     <li>
+                        <a href=\"";
+            // line 19
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("smile_platform_events");
+            echo "\" class=\"#f2c716\"><span class=\"yellow-text\">Events</span></a>
+                    </li>
+                    <li>
                         <a href=\"\" data-toggle=\"modal\" data-target=\"#newPostModal\"><span class=\"yellow-text\">+ Post</span></a>
                     </li>
                     <li class=\"visible-md visible-lg\">
                         ";
-            // line 22
+            // line 25
             if ($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "user", array()), "picture", array())) {
-                // line 23
+                // line 26
                 echo "                            <a href=\"";
                 echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("smile_platform_profile", array("userId" => $this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "user", array()), "getId", array()))), "html", null, true);
                 echo "\"><img class=\"img-navbar\"  src=\"";
@@ -59,23 +65,23 @@ class __TwigTemplate_700cc25985dc1c6e516c560aff0bb7d4f5d3b5f5f606f7df823018586b2
                 echo "\"></a>
                         ";
             }
-            // line 25
+            // line 28
             echo "                    </li>
                     <li >
                         <a href=\"";
-            // line 27
+            // line 30
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("smile_platform_profile", array("userId" => $this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "user", array()), "getId", array()))), "html", null, true);
             echo "\"><span class=\"yellow-text\">My profile</span></a>
                     </li>
                     <li>
                         <a href=\"";
-            // line 30
+            // line 33
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_security_logout");
             echo "\" class=\"#f2c716\"><span class=\"yellow-text\">Logout</span></a>
                     </li>
                     <li>
                         <a href=\"";
-            // line 33
+            // line 36
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("smile_platform_contactUs");
             echo "\" class=\"#f2c716\"><span class=\"yellow-text\">Contact us</span></a>
                     </li>
@@ -95,7 +101,7 @@ class __TwigTemplate_700cc25985dc1c6e516c560aff0bb7d4f5d3b5f5f606f7df823018586b2
                 </div>
                 <div class=\"modal-body\">
                     ";
-            // line 50
+            // line 53
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->renderFragment($this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->controller("SmilePlatformBundle:Post:addNew", array("request" => $this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()))));
             echo "
                     <div class=\"clearfix\"></div>
@@ -113,7 +119,7 @@ class __TwigTemplate_700cc25985dc1c6e516c560aff0bb7d4f5d3b5f5f606f7df823018586b2
 
 ";
         } else {
-            // line 65
+            // line 68
             echo "    <nav class=\"navbar navbar-inverse navbar-fixed-top\" role=\"navigation\">
         <div class=\"container\">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -125,7 +131,7 @@ class __TwigTemplate_700cc25985dc1c6e516c560aff0bb7d4f5d3b5f5f606f7df823018586b2
                     <span class=\"icon-bar\"></span>
                 </button>
                 <a class=\"navbar-brand yellow-text\" href=\"";
-            // line 75
+            // line 78
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("smile_platform_homepage");
             echo "\"><span class=\"yellow-text\"><img class=\"logo\" src=\"/images/logo.png\" alt=\"SMILE\"></span></a>
             </div>
@@ -133,13 +139,19 @@ class __TwigTemplate_700cc25985dc1c6e516c560aff0bb7d4f5d3b5f5f606f7df823018586b2
             <div class=\"collapse navbar-collapse pull-right\" id=\"bs-example-navbar-collapse-1\">
                 <ul class=\"nav navbar-nav\">
                     <li>
+                        <a href=\"";
+            // line 84
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("smile_platform_events");
+            echo "\" class=\"#f2c716\"><span class=\"yellow-text\">Events</span></a>
+                    </li>
+                    <li>
                         <a class=\"btn  btn-register-facebook-navbar\" href=\"#\" onclick=\"fb_login();\"><span class=\"btn-register-facebook-navbar-text\">Connect with Facebook</span></a>
                     </li>
                     <li>
                         <a href=\"#\" data-toggle=\"modal\" data-target=\"#loginModal\" class=\"yellow-text\"><span class=\"yellow-text\">Connect/Log in</span></a>
                     </li>
                     ";
-            // line 89
+            // line 95
             echo "                </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -168,14 +180,14 @@ class __TwigTemplate_700cc25985dc1c6e516c560aff0bb7d4f5d3b5f5f606f7df823018586b2
                         <div class=\"col-md-6\" style=\"border-right: 1px solid lightgray;\">
                             <h4>New on Smile ? Sign up !</h4>
                             ";
-            // line 116
+            // line 122
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->renderFragment($this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->controller("SmileUserBundle:Registration:register", array("originalRequest" => $this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()))));
             echo "
                         </div>
                         <div class=\"col-md-6\">
                             <h4>Already have an account ? Log in !</h4>
                             ";
-            // line 120
+            // line 126
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->renderFragment($this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->controller("FOSUserBundle:Security:login"));
             echo "
                         </div>
@@ -200,7 +212,7 @@ class __TwigTemplate_700cc25985dc1c6e516c560aff0bb7d4f5d3b5f5f606f7df823018586b2
                     </div>
 
     ";
-            // line 143
+            // line 149
             echo "                    <div class=\"clearfix\"></div>
                 </div>
 
@@ -216,7 +228,7 @@ class __TwigTemplate_700cc25985dc1c6e516c560aff0bb7d4f5d3b5f5f606f7df823018586b2
 ";
         }
         
-        $__internal_a74c6a9b0d80d4c5711ba5a7450f3fd8d33b62c1d9a58aa5165dc9506cefcb0e->leave($__internal_a74c6a9b0d80d4c5711ba5a7450f3fd8d33b62c1d9a58aa5165dc9506cefcb0e_prof);
+        $__internal_4d43acadcd8c5a061f1bb91afd9d5edf71caf04c64524eea0eb88bbeafb28cb9->leave($__internal_4d43acadcd8c5a061f1bb91afd9d5edf71caf04c64524eea0eb88bbeafb28cb9_prof);
 
     }
 
@@ -232,7 +244,7 @@ class __TwigTemplate_700cc25985dc1c6e516c560aff0bb7d4f5d3b5f5f606f7df823018586b2
 
     public function getDebugInfo()
     {
-        return array (  204 => 143,  179 => 120,  172 => 116,  143 => 89,  129 => 75,  117 => 65,  99 => 50,  79 => 33,  73 => 30,  67 => 27,  63 => 25,  53 => 23,  51 => 22,  39 => 13,  27 => 3,  25 => 2,  22 => 1,);
+        return array (  216 => 149,  191 => 126,  184 => 122,  155 => 95,  144 => 84,  135 => 78,  123 => 68,  105 => 53,  85 => 36,  79 => 33,  73 => 30,  69 => 28,  59 => 26,  57 => 25,  48 => 19,  39 => 13,  27 => 3,  25 => 2,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -262,6 +274,9 @@ class __TwigTemplate_700cc25985dc1c6e516c560aff0bb7d4f5d3b5f5f606f7df823018586b2
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class=\"collapse navbar-collapse pull-right\" id=\"bs-example-navbar-collapse-1\">
                 <ul class=\"nav navbar-nav\">
+                    <li>
+                        <a href=\"{{ path('smile_platform_events') }}\" class=\"#f2c716\"><span class=\"yellow-text\">Events</span></a>
+                    </li>
                     <li>
                         <a href=\"\" data-toggle=\"modal\" data-target=\"#newPostModal\"><span class=\"yellow-text\">+ Post</span></a>
                     </li>
@@ -324,6 +339,9 @@ class __TwigTemplate_700cc25985dc1c6e516c560aff0bb7d4f5d3b5f5f606f7df823018586b2
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class=\"collapse navbar-collapse pull-right\" id=\"bs-example-navbar-collapse-1\">
                 <ul class=\"nav navbar-nav\">
+                    <li>
+                        <a href=\"{{ path('smile_platform_events') }}\" class=\"#f2c716\"><span class=\"yellow-text\">Events</span></a>
+                    </li>
                     <li>
                         <a class=\"btn  btn-register-facebook-navbar\" href=\"#\" onclick=\"fb_login();\"><span class=\"btn-register-facebook-navbar-text\">Connect with Facebook</span></a>
                     </li>

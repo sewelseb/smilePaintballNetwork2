@@ -12,6 +12,7 @@ use Smile\PlatformBundle\Entity\Post;
 use Smile\PlatformBundle\Entity\PostPic;
 use Smile\PlatformBundle\Entity\Team;
 use Smile\PlatformBundle\Form\PostPicType;
+use Smile\UserBundle\Entity\teamPicture;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Form\Extension\Core\Type\FormType;
@@ -40,12 +41,29 @@ class TeamController extends Controller
             {
                 $team->getTeamPicture()->upload($this->getUser());
             }
+            else
+            {
+                $defaultTeamPic = new teamPicture();
+                $defaultTeamPic->setAlt("defaultpic.jpg");
+                $defaultTeamPic->setUrl("defaultpic.jpg");
+                $team->setTeamPicture($defaultTeamPic);
+            }
 
             $team->setAdmin($this->getUser());
 
 
+
+            $post= new Post();
+            $post->setTitle("New Team : ".$team->getName());
+            $post->setTeamPic($team->getTeamPicture());
+            $post->setTeam($team);
+            $post->setCreationTime(time());
+            $post->setIsNewTeamPic(true);
+            $post->setUser($this->getUser());
+            $post->setType("team_picture");
             $em = $this->getDoctrine()->getManager();
 
+            $em->persist($post);
             $em->persist($team);
             $this->getUser()->addTeam($team);
 
@@ -105,6 +123,9 @@ class TeamController extends Controller
             ->getRepository('SmilePlatformBundle:Team');
         $team = $teamRepo->find($id);
 
+        $oldTeamName = $team->getName();
+        $oldTeamPicUrl = $team->getTeamPicture()->getUrl();
+
         $formBuilder = $this->get('form.factory')->createBuilder(FormType::class, $team);
 
         $formBuilder
@@ -115,23 +136,72 @@ class TeamController extends Controller
 
         $form = $formBuilder->getForm();
 
+        $newTeamPic = new teamPicture();
+
+        $postRepo = $this
+            ->getDoctrine()
+            ->getManager()
+            ->getRepository('SmilePlatformBundle:Post');
+
+        $lastPicTeamPost = $postRepo->findLastPicTeamPost($team);
+
+        $newTeamPic->setAlt($lastPicTeamPost->getTeamPic()->getAlt());
+        $newTeamPic->setUrl($lastPicTeamPost->getTeamPic()->getUrl());
+
+        $lastPicTeamPost->setTeamPic($newTeamPic);
+
         if ($request->isMethod('POST') && $form->handleRequest($request)->isValid()) {
+            //dump('test2');
             if($team->getAdmin() == $this->getUser())
             {
+                $postTitle = "";
                 if($team->getTeamPicture() != null)
                 {
+
                     $team->getTeamPicture()->upload($this->getUser());
+
                 }
+
+                if ($team->getTeamPicture()->getUrl() != $oldTeamPicUrl)
+                {
+                    $postTitle = "New Team Logo: ";
+                    if($team->getName() != $oldTeamName)
+                    {
+                        $postTitle = "New Team Logo & Name: ";
+                    }
+                }
+                else
+                {
+                    if($team->getName() != $oldTeamName)
+                    {
+                        $postTitle = "New Team Name: ";
+                    }
+                }
+
 
                 $team->setAdmin($this->getUser());
 
+                $post= new Post();
+                $post->setTitle($postTitle.$team->getName());
+                $post->setTeamPic($team->getTeamPicture());
+                $post->setTeam($team);
+                $post->setCreationTime(time());
+                $post->setIsNewTeamPic(true);
+                $post->setUser($this->getUser());
+                $post->setType("team_picture");
 
                 $em = $this->getDoctrine()->getManager();
 
+                $em->persist($lastPicTeamPost);
+                $em->flush();
+
+                $em = $this->getDoctrine()->getManager();
+
+                $em->persist($post);
                 $em->persist($team);
 
                 $em->flush();
-
+                dump('test5');
                 return $this->render('SmilePlatformBundle::Default/form/actualise.html.twig', array(
 
                     'form' => $form->createView(),

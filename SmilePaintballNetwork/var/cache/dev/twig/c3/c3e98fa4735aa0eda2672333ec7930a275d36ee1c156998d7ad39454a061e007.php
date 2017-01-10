@@ -15,8 +15,8 @@ class __TwigTemplate_f66f9502ad04017299ecb9518043d6efd81dafb98311c53bde4f2bbcc4f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_274d13822e9b781242cd85be74fb184c972213956ebfc4ffec9c6ba07fbe7566 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_274d13822e9b781242cd85be74fb184c972213956ebfc4ffec9c6ba07fbe7566->enter($__internal_274d13822e9b781242cd85be74fb184c972213956ebfc4ffec9c6ba07fbe7566_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/topTen.html.twig"));
+        $__internal_724c309e45eb2ccaed8cf58dc1fe327c27c3a69556795e07cbbbc182aecc0418 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_724c309e45eb2ccaed8cf58dc1fe327c27c3a69556795e07cbbbc182aecc0418->enter($__internal_724c309e45eb2ccaed8cf58dc1fe327c27c3a69556795e07cbbbc182aecc0418_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/Blocs/topTen.html.twig"));
 
         // line 1
         $context['_parent'] = $context;
@@ -119,20 +119,29 @@ class __TwigTemplate_f66f9502ad04017299ecb9518043d6efd81dafb98311c53bde4f2bbcc4f
                 echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["post"], "event", array()), "picture", array()), "url", array()), "html", null, true);
                 echo "\" alt=\"\">
                     ";
+            } elseif (($this->getAttribute(            // line 30
+$context["post"], "type", array()) == "team_picture")) {
+                // line 31
+                echo "                        <img class=\"img-responsive top-10\" src=\"";
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["post"], "picture", array()), "uploadDir", array()), "html", null, true);
+                echo "/";
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["post"], "picture", array()), "url", array()), "html", null, true);
+                echo "\" alt=\"\">
+                    ";
             }
-            // line 31
+            // line 33
             echo "                </div>
                 <div class=\"col-md-6\">
                     <H4><strong>";
-            // line 33
+            // line 35
             echo twig_escape_filter($this->env, (((twig_length_filter($this->env, $this->getAttribute($context["post"], "title", array())) > 15)) ? ((twig_slice($this->env, $this->getAttribute($context["post"], "title", array()), 0, 12) . "...")) : ($this->getAttribute($context["post"], "title", array()))), "html", null, true);
             echo "</strong></H4>
                     ";
-            // line 34
+            // line 36
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "views", array()), "html", null, true);
             echo " views<br/>
                     ";
-            // line 35
+            // line 37
             echo twig_escape_filter($this->env, ($this->getAttribute($context["post"], "upvotes", array()) - $this->getAttribute($context["post"], "downvotes", array())), "html", null, true);
             echo " points
                 </div>
@@ -152,14 +161,14 @@ class __TwigTemplate_f66f9502ad04017299ecb9518043d6efd81dafb98311c53bde4f2bbcc4f
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['post'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 41
+        // line 43
         echo "    </div>
     <div class=\"text-center\">
         <a href=\"\" class=\"ignore-click\"><span class=\"btn-see-more-top-10\">See more <i class=\"fa fa-caret-down\" aria-hidden=\"true\"></i></span></a>
     </div>
 ";
         
-        $__internal_274d13822e9b781242cd85be74fb184c972213956ebfc4ffec9c6ba07fbe7566->leave($__internal_274d13822e9b781242cd85be74fb184c972213956ebfc4ffec9c6ba07fbe7566_prof);
+        $__internal_724c309e45eb2ccaed8cf58dc1fe327c27c3a69556795e07cbbbc182aecc0418->leave($__internal_724c309e45eb2ccaed8cf58dc1fe327c27c3a69556795e07cbbbc182aecc0418_prof);
 
     }
 
@@ -175,7 +184,7 @@ class __TwigTemplate_f66f9502ad04017299ecb9518043d6efd81dafb98311c53bde4f2bbcc4f
 
     public function getDebugInfo()
     {
-        return array (  156 => 41,  136 => 35,  132 => 34,  128 => 33,  124 => 31,  116 => 29,  113 => 28,  105 => 26,  102 => 25,  96 => 23,  93 => 22,  87 => 20,  84 => 19,  78 => 17,  75 => 16,  69 => 14,  67 => 13,  63 => 11,  57 => 9,  51 => 7,  49 => 6,  46 => 5,  42 => 3,  39 => 2,  22 => 1,);
+        return array (  165 => 43,  145 => 37,  141 => 36,  137 => 35,  133 => 33,  125 => 31,  123 => 30,  116 => 29,  113 => 28,  105 => 26,  102 => 25,  96 => 23,  93 => 22,  87 => 20,  84 => 19,  78 => 17,  75 => 16,  69 => 14,  67 => 13,  63 => 11,  57 => 9,  51 => 7,  49 => 6,  46 => 5,  42 => 3,  39 => 2,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -217,6 +226,8 @@ class __TwigTemplate_f66f9502ad04017299ecb9518043d6efd81dafb98311c53bde4f2bbcc4f
                     {% endif %}
                     {% if post.type=='event_picture' %}
                         <img class=\"img-responsive top-10\" src=\"http://smilepaintball.com/{{post.event.picture.uploadDir}}/{{post.event.picture.url}}\" alt=\"\">
+                    {% elseif post.type=='team_picture' %}
+                        <img class=\"img-responsive top-10\" src=\"{{post.picture.uploadDir}}/{{post.picture.url}}\" alt=\"\">
                     {% endif %}
                 </div>
                 <div class=\"col-md-6\">

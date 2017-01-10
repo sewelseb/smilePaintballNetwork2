@@ -87,39 +87,41 @@
         </div>
     </div>
     <div class="row">
-        <button class="btn btn-primary" onclick="goToEventAsMe({{ event.id }})"><span id="goingToEvent_{{ event.id }}" hidden><i class="fa fa-spin fa-spinner"></i></span> Going </button><button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">As <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        {% if app.user %}
+            <button class="btn btn-primary" onclick="goToEventAsMe({{ event.id }})"><span id="goingToEvent_{{ event.id }}" hidden><i class="fa fa-spin fa-spinner"></i></span> Going </button><button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">As <i class="fa fa-caret-down" aria-hidden="true"></i></button>
 
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuFollowAs">
-            <li class="non-clickable-dropdown">
-                Select a team:
-            </li>
-            {% for team in app.user.teams %}
-                <li>
-                    <a href="" onclick="goToEventAsTeam({{ event.id }}, {{ team.id }})">
-                        {% if (team.teamPicture) %}
-                            <span class=""><img src="/{{team.teamPicture.uploadDir}}/{{team.teamPicture.url}}" class="img-responsive img-select-store-item-form-drop-down full-width" id="storePic_{{ team.getId() }}"></span>
-                        {% else %}
-                            <span class=""><img src="{{ asset('images/smileyTop.png') }}" class="img-responsive img-select-store-item-form-drop-down full-width" id="storePic_{{ team.getId() }}"></span>
-                        {% endif %}
-                        <span class="select-store-store-name">{{ team.getName() }}</span>
-                    </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuFollowAs">
+                <li class="non-clickable-dropdown">
+                    Select a team:
                 </li>
-            {% endfor %}
-        </ul>
-        {% if event.userComing.contains(app.user) %}
-            <div>
-                <button class="notgoingToEventAsMe_btn_{{ event.id }} btn " onclick="dontComeAsMe({{ event.id }})"><span class="notgoingToEventAsMe_{{ event.id }}" hidden><i class="fa fa-spin fa-spinner"></i></span> Not going </button><button class="btn" id="notGoingAsCaret">As <i class="fa fa-caret-down" aria-hidden="true"></i></button>
-            </div>
-        {% else %}
-            <button class="btn" id="notGoingButNotMeAsCaret">not going as <i class="fa fa-caret-down" aria-hidden="true"></i></button>
-        {% endif %}
-        {% for team in app.user.teams %}
-            {% if event.teamComing.contains(team) %}
-                <div class="notGoingAsTeamBtns" hidden>
-                    <button class="notgoingToEventAsTeam_btn_{{ event.id }}_{{ team.id }} btn " onclick="dontComeAsTeam({{ event.id }}, {{ team.id }})"><span class="notgoingToEventAsTeam_{{ event.id }}_{{ team.id }}" hidden><i class="fa fa-spin fa-spinner"></i></span> Not going as {{ team.name }} </button>
+                {% for team in app.user.teams %}
+                    <li>
+                        <a href="" onclick="goToEventAsTeam({{ event.id }}, {{ team.id }})">
+                            {% if (team.teamPicture) %}
+                                <span class=""><img src="/{{team.teamPicture.uploadDir}}/{{team.teamPicture.url}}" class="img-responsive img-select-store-item-form-drop-down full-width" id="storePic_{{ team.getId() }}"></span>
+                            {% else %}
+                                <span class=""><img src="{{ asset('images/smileyTop.png') }}" class="img-responsive img-select-store-item-form-drop-down full-width" id="storePic_{{ team.getId() }}"></span>
+                            {% endif %}
+                            <span class="select-store-store-name">{{ team.getName() }}</span>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+            {% if event.userComing.contains(app.user) %}
+                <div>
+                    <button class="notgoingToEventAsMe_btn_{{ event.id }} btn " onclick="dontComeAsMe({{ event.id }})"><span class="notgoingToEventAsMe_{{ event.id }}" hidden><i class="fa fa-spin fa-spinner"></i></span> Not going </button><button class="btn" id="notGoingAsCaret">As <i class="fa fa-caret-down" aria-hidden="true"></i></button>
                 </div>
+            {% else %}
+                <button class="btn" id="notGoingButNotMeAsCaret">not going as <i class="fa fa-caret-down" aria-hidden="true"></i></button>
             {% endif %}
-        {% endfor %}
+            {% for team in app.user.teams %}
+                {% if event.teamComing.contains(team) %}
+                    <div class="notGoingAsTeamBtns" hidden>
+                        <button class="notgoingToEventAsTeam_btn_{{ event.id }}_{{ team.id }} btn " onclick="dontComeAsTeam({{ event.id }}, {{ team.id }})"><span class="notgoingToEventAsTeam_{{ event.id }}_{{ team.id }}" hidden><i class="fa fa-spin fa-spinner"></i></span> Not going as {{ team.name }} </button>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
     </div>
 
     <span id="dontComeAsMe" hidden>{{ path('smile_api_event_dontComeAsMe_url') }}</span>

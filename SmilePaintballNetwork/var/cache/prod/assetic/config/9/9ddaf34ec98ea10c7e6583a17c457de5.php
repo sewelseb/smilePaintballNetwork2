@@ -14,7 +14,7 @@ return array (
     ),
     2 => 
     array (
-      'output' => '_controller/js/f14aeed.js',
+      'output' => 'js/f14aeed.js',
       'name' => 'f14aeed',
       'debug' => NULL,
       'combine' => NULL,

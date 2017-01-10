@@ -64,10 +64,10 @@ class User extends \Smile\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'id', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'picture', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'firstName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'lastName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamPicture', 'facebook_id', 'facebook_access_token', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teams', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'roles'];
+            return ['__isInitialized__', 'id', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'picture', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'firstName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'lastName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamPicture', 'facebook_id', 'facebook_access_token', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teams', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'eventAttending', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'roles'];
         }
 
-        return ['__isInitialized__', 'id', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'picture', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'firstName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'lastName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamPicture', 'facebook_id', 'facebook_access_token', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teams', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'roles'];
+        return ['__isInitialized__', 'id', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'picture', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'firstName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'lastName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamName', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teamPicture', 'facebook_id', 'facebook_access_token', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'teams', '' . "\0" . 'Smile\\UserBundle\\Entity\\User' . "\0" . 'eventAttending', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'roles'];
     }
 
     /**
@@ -389,6 +389,61 @@ class User extends \Smile\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\
     /**
      * {@inheritDoc}
      */
+    public function getUsername()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUsername', []);
+
+        return parent::getUsername();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setUsername($username)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setUsername', [$username]);
+
+        return parent::setUsername($username);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getEventAttending()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEventAttending', []);
+
+        return parent::getEventAttending();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setEventAttending($eventAttending)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setEventAttending', [$eventAttending]);
+
+        return parent::setEventAttending($eventAttending);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getEasyName()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEasyName', []);
+
+        return parent::getEasyName();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function addRole($role)
     {
 
@@ -428,17 +483,6 @@ class User extends \Smile\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'eraseCredentials', []);
 
         return parent::eraseCredentials();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getUsername()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUsername', []);
-
-        return parent::getUsername();
     }
 
     /**
@@ -615,17 +659,6 @@ class User extends \Smile\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeRole', [$role]);
 
         return parent::removeRole($role);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setUsername($username)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setUsername', [$username]);
-
-        return parent::setUsername($username);
     }
 
     /**

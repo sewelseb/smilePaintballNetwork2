@@ -64,10 +64,10 @@ class Team extends \Smile\PlatformBundle\Entity\Team implements \Doctrine\ORM\Pr
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'Smile\\PlatformBundle\\Entity\\Team' . "\0" . 'id', '' . "\0" . 'Smile\\PlatformBundle\\Entity\\Team' . "\0" . 'admin', '' . "\0" . 'Smile\\PlatformBundle\\Entity\\Team' . "\0" . 'name', '' . "\0" . 'Smile\\PlatformBundle\\Entity\\Team' . "\0" . 'teamPicture'];
+            return ['__isInitialized__', '' . "\0" . 'Smile\\PlatformBundle\\Entity\\Team' . "\0" . 'id', '' . "\0" . 'Smile\\PlatformBundle\\Entity\\Team' . "\0" . 'admin', '' . "\0" . 'Smile\\PlatformBundle\\Entity\\Team' . "\0" . 'name', '' . "\0" . 'Smile\\PlatformBundle\\Entity\\Team' . "\0" . 'teamPicture', '' . "\0" . 'Smile\\PlatformBundle\\Entity\\Team' . "\0" . 'eventAttending'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'Smile\\PlatformBundle\\Entity\\Team' . "\0" . 'id', '' . "\0" . 'Smile\\PlatformBundle\\Entity\\Team' . "\0" . 'admin', '' . "\0" . 'Smile\\PlatformBundle\\Entity\\Team' . "\0" . 'name', '' . "\0" . 'Smile\\PlatformBundle\\Entity\\Team' . "\0" . 'teamPicture'];
+        return ['__isInitialized__', '' . "\0" . 'Smile\\PlatformBundle\\Entity\\Team' . "\0" . 'id', '' . "\0" . 'Smile\\PlatformBundle\\Entity\\Team' . "\0" . 'admin', '' . "\0" . 'Smile\\PlatformBundle\\Entity\\Team' . "\0" . 'name', '' . "\0" . 'Smile\\PlatformBundle\\Entity\\Team' . "\0" . 'teamPicture', '' . "\0" . 'Smile\\PlatformBundle\\Entity\\Team' . "\0" . 'eventAttending'];
     }
 
     /**
@@ -252,6 +252,28 @@ class Team extends \Smile\PlatformBundle\Entity\Team implements \Doctrine\ORM\Pr
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setAdmin', [$admin]);
 
         return parent::setAdmin($admin);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getEventAttending()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEventAttending', []);
+
+        return parent::getEventAttending();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setEventAttending($eventAttending)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setEventAttending', [$eventAttending]);
+
+        return parent::setEventAttending($eventAttending);
     }
 
 }
