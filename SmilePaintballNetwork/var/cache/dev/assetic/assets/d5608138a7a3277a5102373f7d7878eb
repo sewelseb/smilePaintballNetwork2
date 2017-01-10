@@ -1,0 +1,150 @@
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.navbar{
+    background-color: #555c30;
+    background-image: none;
+    color: white;
+}
+
+.yellow-text{
+    color: #f2c716;
+}
+
+.btn{
+    border-radius: 0px;
+}
+
+.btn-primary{
+    border-radius: 0px;
+    background-color: #555c30;
+    border-color: #555c30;
+    background-image: none;
+    color: #f2c716;
+}
+
+.logo{
+    height: 1.5em;
+}
+
+.spacer-5px{
+    padding-top: 5px;
+}
+
+
+@media (max-width: 991px) {
+    .right-bar{
+        display: none;
+    }
+}
+
+.comment-profile-pic{
+    max-width: 14px;
+    max-height: 14px;
+}
+
+a{
+    color:black;
+}
+
+.twitter-share-button{
+    background-color: #4099FF;
+    color: white;
+    margin: 0px;
+    border-radius: 3px;
+}
+
+.btn-register-facebook{
+    background-color: #3b5998;
+    color: white;
+}
+
+.btn-register-facebook-navbar{
+    background-color: #3b5998;
+    color: white;
+}
+.btn-register-facebook-navbar:hover{
+    background-color: #3b5998;
+    color: white;
+}
+.btn-register-facebook-navbar-text{
+
+    color: white;
+}
+
+.smartphonePostButton {
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: #555c30;
+
+
+}
+
+.front-z-index{
+       z-index: 1000;
+}
+
+
+.sponsor-big{
+    margin-bottom: 5px;
+}
+
+.sm-visible{
+    display: block;
+}
+
+.profile-pic-small{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+@media (min-width: 770px) {
+    .smartphonePostButton {
+        display: none;
+    }
+
+    .sm-visible{
+        display: none;
+    }
+}
+
+
+.img-navbar{
+    max-height: 20px;
+    margin-right: -30px;
+}
+
+.top-10{
+    object-fit: cover;
+    width: 100%;
+    height: 100px;
+}
+
+.row-top10{
+    /*max-height: 500px;
+    overflow: hidden;
+    overflow-y: scroll;*/
+}
+
+.post-img{
+    /*max-height: 500px;*/
+    min-width: 40%;
+    max-width: 80%;
+}
+.small-tab-profile{
+    margin: 10px;
+    background: #e8e8e8;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
