@@ -87,9 +87,16 @@
                         <img class="img-responsive" src="/{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">
                     </a>
                 {% endif %}
+
                 {% if post.type=='event_picture' %}
                     <a href="{{ path('smile_platform_event', {'eventId': post.event.getId })  }}">
                         <img class="img-responsive" src="/{{post.event.picture.uploadDir}}/{{post.event.picture.url}}" alt="">
+                    </a>
+                    {% endif %}
+                {% if post.type=='team_picture' %}
+                    <a href="{{ path('smile_platform_post', {'postId': post.getId })  }}">
+                        <img class="img-responsive" src="{{post.picture.uploadDir}}/{{post.picture.url}}" alt="">
+
                     </a>
                 {% endif %}
             </div>

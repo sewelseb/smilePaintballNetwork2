@@ -33,7 +33,7 @@
         "patchwork/jsqueeze": "~1.0",
         "friendsofsymfony/user-bundle": "dev-master",
         "friendsofsymfony/rest-bundle": "^2.0",
-        "hwi/oauth-bundle": "0.5.*-dev",
+        "hwi/oauth-bundle": "0.6.x-dev",
         "liip/imagine-bundle": "^1.6",
         "facebook/graph-sdk": "^5.4",
         "sendinblue/sendinblue-api-bundle": "2.0.*"
