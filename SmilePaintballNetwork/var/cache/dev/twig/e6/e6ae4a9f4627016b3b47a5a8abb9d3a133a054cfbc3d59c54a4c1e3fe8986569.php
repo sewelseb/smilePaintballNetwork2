@@ -15,15 +15,15 @@ class __TwigTemplate_5b32d704a247048a1afc13fd92e5d8cbb334571367c91358dd686cf1a04
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ff196376c5d47e3d192adf7a425eba3a2636f32cf58b68c623cb8e90a4f04974 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_ff196376c5d47e3d192adf7a425eba3a2636f32cf58b68c623cb8e90a4f04974->enter($__internal_ff196376c5d47e3d192adf7a425eba3a2636f32cf58b68c623cb8e90a4f04974_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/form/actualise.html.twig"));
+        $__internal_a334cdc45fed0dde1042d9fc1b56c7969ed5cdc6a745fd5aa388db6f788ebcef = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_a334cdc45fed0dde1042d9fc1b56c7969ed5cdc6a745fd5aa388db6f788ebcef->enter($__internal_a334cdc45fed0dde1042d9fc1b56c7969ed5cdc6a745fd5aa388db6f788ebcef_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SmilePlatformBundle::Default/form/actualise.html.twig"));
 
         // line 1
         echo "<script>
     window.location.href=document.location.href;
 </script>";
         
-        $__internal_ff196376c5d47e3d192adf7a425eba3a2636f32cf58b68c623cb8e90a4f04974->leave($__internal_ff196376c5d47e3d192adf7a425eba3a2636f32cf58b68c623cb8e90a4f04974_prof);
+        $__internal_a334cdc45fed0dde1042d9fc1b56c7969ed5cdc6a745fd5aa388db6f788ebcef->leave($__internal_a334cdc45fed0dde1042d9fc1b56c7969ed5cdc6a745fd5aa388db6f788ebcef_prof);
 
     }
 

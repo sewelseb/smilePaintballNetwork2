@@ -12,6 +12,7 @@ use Smile\PlatformBundle\Entity\Post;
 use Smile\PlatformBundle\Entity\PostPic;
 use Smile\PlatformBundle\Entity\Team;
 use Smile\PlatformBundle\Form\PostPicType;
+use Smile\UserBundle\Entity\teamPicture;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Form\Extension\Core\Type\FormType;
@@ -42,6 +43,8 @@ class TeamController extends Controller
             }
 
             $team->setAdmin($this->getUser());
+
+
 
             $post= new Post();
             $post->setTitle("New Team : ".$team->getName());
@@ -95,6 +98,7 @@ class TeamController extends Controller
             ->getRepository('SmilePlatformBundle:Post');
         $posts = $postRepo->getPostByTeam($team);
 
+
         return $this->render('SmilePlatformBundle::Default/team.html.twig', array(
 
             'team' =>$team,
@@ -121,13 +125,36 @@ class TeamController extends Controller
 
 
         $form = $formBuilder->getForm();
+        //dump('test1');
+
+        $newTeamPic = new teamPicture();
+
+        $postRepo = $this
+            ->getDoctrine()
+            ->getManager()
+            ->getRepository('SmilePlatformBundle:Post');
+        dump('test3');
+
+        $lastPicTeamPost = $postRepo->findLastPicTeamPost($team);
+        dump('test4');
+        dump($team);
+        dump($lastPicTeamPost);
+
+        $newTeamPic->setAlt($lastPicTeamPost->getTeamPic()->getAlt());
+        $newTeamPic->setUrl($lastPicTeamPost->getTeamPic()->getUrl());
+
+        $lastPicTeamPost->setTeamPic($newTeamPic);
 
         if ($request->isMethod('POST') && $form->handleRequest($request)->isValid()) {
+            //dump('test2');
             if($team->getAdmin() == $this->getUser())
             {
+
                 if($team->getTeamPicture() != null)
                 {
+
                     $team->getTeamPicture()->upload($this->getUser());
+
                 }
 
                 $team->setAdmin($this->getUser());
@@ -142,11 +169,16 @@ class TeamController extends Controller
 
                 $em = $this->getDoctrine()->getManager();
 
-               // $em->persist($post);
+                $em->persist($lastPicTeamPost);
+                $em->flush();
+
+                $em = $this->getDoctrine()->getManager();
+
+                $em->persist($post);
                 $em->persist($team);
 
                 $em->flush();
-
+                dump('test5');
                 return $this->render('SmilePlatformBundle::Default/form/actualise.html.twig', array(
 
                     'form' => $form->createView(),
@@ -155,6 +187,7 @@ class TeamController extends Controller
                 //return $this->redirect($this->generateUrl('smile_platform_team', array('id' => $team->getId())));
                 //return $this->redirectToRoute('smile_platform_team', array('id' => $team->getId()));
             }
+            dump('test4');
         }
 
         return $this->render('SmilePlatformBundle::Default/form/createTeam.html.twig', array(
