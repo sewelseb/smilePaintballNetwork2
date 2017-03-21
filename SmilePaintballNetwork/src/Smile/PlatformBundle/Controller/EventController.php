@@ -35,7 +35,7 @@ class EventController extends Controller
             ->getRepository('SmilePlatformBundle:Event');
         $events = $eventRepo->getUpcomingEvents();
 
-        dump($events);
+        //dump($events);
 
         return $this->render('SmilePlatformBundle:Default:events.html.twig',array(
             'events' => $events

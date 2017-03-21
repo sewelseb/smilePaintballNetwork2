@@ -531,6 +531,26 @@ class Post
         return $this->teamPic;
     }
 
+    public function optimisePostAPI()
+    {
+        $this->getUser()->setTeams(null);
+        $this->getUser()->setEventAttending(null);
+
+        if($this->isEvent)
+        {
+            $this->getEvent()->getUser()->setTeams(null);
+            $this->getEvent()->getUser()->setEventAttending(null);
+            $this->getEvent()->setTeamComing(null);
+            $this->getEvent()->setUserComing(null);
+        }
+        elseif ($this->isNewTeamPic)
+        {
+
+        }
+
+
+    }
+
 
 
 }

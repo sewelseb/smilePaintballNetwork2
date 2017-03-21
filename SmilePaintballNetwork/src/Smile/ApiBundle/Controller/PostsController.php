@@ -45,6 +45,7 @@ class PostsController extends FOSRestController
 
         }
 
+        $this->postOptimisation($posts);
 
         $view = $this->view($posts, 200)
             ->setTemplate("SmileApiBundle:Default:index.html.twig")
@@ -166,6 +167,8 @@ class PostsController extends FOSRestController
 
         }
 
+        $this->postOptimisation($posts);
+
         $view = $this->view($posts, 200)
             ->setTemplate("SmileApiBundle:Default:index.html.twig")
             ->setTemplateVar('posts')
@@ -194,6 +197,14 @@ class PostsController extends FOSRestController
         ;
 
         return $this->handleView($view);
+    }
+
+    public function postOptimisation(&$posts)
+    {
+        foreach ($posts as $post)
+        {
+            $post->optimisePostAPI();
+        }
     }
 
 

@@ -243,8 +243,6 @@ myApp.controller("allPostsCtrl", function($scope, $sce,$rootScope,$q) {
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
         }
-
-
     };
 
     $scope.trustAsResourceUrl = function(url)

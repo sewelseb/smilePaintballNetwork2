@@ -14,7 +14,7 @@ return array (
     ),
     2 => 
     array (
-      'output' => 'css/6d14613.css',
+      'output' => '_controller/css/6d14613.css',
       'name' => '6d14613',
       'debug' => NULL,
       'combine' => NULL,
@@ -47,7 +47,7 @@ return array (
     ),
     2 => 
     array (
-      'output' => 'js/fd0d37f.js',
+      'output' => '_controller/js/fd0d37f.js',
       'name' => 'fd0d37f',
       'debug' => NULL,
       'combine' => NULL,
